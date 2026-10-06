@@ -10,7 +10,8 @@ coins: gp 100, pp 1000 rare, ep 50 rare, sp 10, cp 1
 # How long a round lasts (p. 84): in a scene with turns, a duration of up to a minute becomes rounds.
 round: 6 seconds
 # The fields of a character sheet: status lists them until there is a player character; write says which are missing when a character joins the party, and status until they are written.
-sheet: [level, xp, hp, temp-hp, hit-dice, ac, speed, str, dex, con, int, wis, cha, proficiency, saves, skills, passive-perception, languages, exhaustion, death-successes, death-failures]
+# Only what is written: the system works out the rest (computed, below).
+sheet: [level, xp, hp-base, hp, temp-hp, hit-dice, ac, speed, str, dex, con, int, wis, cha, save-proficiencies, skill-proficiencies, languages, exhaustion, death-successes, death-failures]
 # What the line of the player character and the companions shows, in status and in scenes, in order; with ? a field usually at zero: shown, and reported by a recipe, only when it is not.
 status-line: [level, hp, temp-hp?, ac, passive-perception, hit-dice, slots-1, slots-2, slots-3, slots-4, slots-5, slots-6, slots-7, slots-8, slots-9, exhaustion?, death-successes?, death-failures?]
 # A counter of the player character or a companion at a value, or at every change: the rule to read (pp. 97–98, 358).
@@ -77,7 +78,6 @@ fields:
   # The character sheet (pp. 56, 97–99, 358): xp has no maximum, the death saves and exhaustion count up to 3 and 6.
   level: number
   xp: counter
-  proficiency: number
   hit-dice: counter
   temp-hp: counter
   exhaustion: counter
@@ -94,3 +94,87 @@ fields:
   rarity: text
   magic: text
   bonus: number
+  # The sheet as choices (pp. 12, 15, 77–78): the hit points the dice gave without Constitution, and what the character is proficient in, by the SRD's names.
+  hp-base: number
+  save-proficiencies: list
+  skill-proficiencies: list
+  expertise: list
+  # Worked out, shown with their sign (D-199).
+  str-mod: modifier
+  dex-mod: modifier
+  con-mod: modifier
+  int-mod: modifier
+  wis-mod: modifier
+  cha-mod: modifier
+  proficiency: modifier
+  str-save: modifier
+  dex-save: modifier
+  con-save: modifier
+  int-save: modifier
+  wis-save: modifier
+  cha-save: modifier
+  acrobatics: modifier
+  animal-handling: modifier
+  arcana: modifier
+  athletics: modifier
+  deception: modifier
+  history: modifier
+  insight: modifier
+  intimidation: modifier
+  investigation: modifier
+  medicine: modifier
+  nature: modifier
+  perception: modifier
+  performance: modifier
+  persuasion: modifier
+  religion: modifier
+  sleight-of-hand: modifier
+  stealth: modifier
+  survival: modifier
+  initiative: modifier
+  # What effects add, such as a ring and a cloak of protection together (pp. 104, 214, 237): different effects add up (D-200).
+  bonus-saves: bonus
+  bonus-skills: bonus
+  bonus-initiative: bonus
+# The proficiency bonus by level (p. 56).
+tables:
+  proficiency-by-level: {1: 2, 5: 3, 9: 4, 13: 5, 17: 6}
+# What the system works out from the sheet (D-199): ability modifiers (p. 76), the proficiency bonus (p. 56), saving throws (p. 83), skills with proficiency
+# and expertise (pp. 77–78, 13, 39), initiative, a Dexterity check (p. 90), and the passive Wisdom (Perception) (p. 78).
+computed:
+  str-mod: floor((str - 10) / 2)
+  dex-mod: floor((dex - 10) / 2)
+  con-mod: floor((con - 10) / 2)
+  int-mod: floor((int - 10) / 2)
+  wis-mod: floor((wis - 10) / 2)
+  cha-mod: floor((cha - 10) / 2)
+  proficiency: table(proficiency-by-level, level)
+  str-save: str-mod + proficiency * has(save-proficiencies, str) + bonus-saves
+  dex-save: dex-mod + proficiency * has(save-proficiencies, dex) + bonus-saves
+  con-save: con-mod + proficiency * has(save-proficiencies, con) + bonus-saves
+  int-save: int-mod + proficiency * has(save-proficiencies, int) + bonus-saves
+  wis-save: wis-mod + proficiency * has(save-proficiencies, wis) + bonus-saves
+  cha-save: cha-mod + proficiency * has(save-proficiencies, cha) + bonus-saves
+  acrobatics: dex-mod + proficiency * (has(skill-proficiencies, Acrobatics) + has(expertise, Acrobatics)) + bonus-skills
+  animal-handling: wis-mod + proficiency * (has(skill-proficiencies, Animal Handling) + has(expertise, Animal Handling)) + bonus-skills
+  arcana: int-mod + proficiency * (has(skill-proficiencies, Arcana) + has(expertise, Arcana)) + bonus-skills
+  athletics: str-mod + proficiency * (has(skill-proficiencies, Athletics) + has(expertise, Athletics)) + bonus-skills
+  deception: cha-mod + proficiency * (has(skill-proficiencies, Deception) + has(expertise, Deception)) + bonus-skills
+  history: int-mod + proficiency * (has(skill-proficiencies, History) + has(expertise, History)) + bonus-skills
+  insight: wis-mod + proficiency * (has(skill-proficiencies, Insight) + has(expertise, Insight)) + bonus-skills
+  intimidation: cha-mod + proficiency * (has(skill-proficiencies, Intimidation) + has(expertise, Intimidation)) + bonus-skills
+  investigation: int-mod + proficiency * (has(skill-proficiencies, Investigation) + has(expertise, Investigation)) + bonus-skills
+  medicine: wis-mod + proficiency * (has(skill-proficiencies, Medicine) + has(expertise, Medicine)) + bonus-skills
+  nature: int-mod + proficiency * (has(skill-proficiencies, Nature) + has(expertise, Nature)) + bonus-skills
+  perception: wis-mod + proficiency * (has(skill-proficiencies, Perception) + has(expertise, Perception)) + bonus-skills
+  performance: cha-mod + proficiency * (has(skill-proficiencies, Performance) + has(expertise, Performance)) + bonus-skills
+  persuasion: cha-mod + proficiency * (has(skill-proficiencies, Persuasion) + has(expertise, Persuasion)) + bonus-skills
+  religion: int-mod + proficiency * (has(skill-proficiencies, Religion) + has(expertise, Religion)) + bonus-skills
+  sleight-of-hand: dex-mod + proficiency * (has(skill-proficiencies, Sleight of Hand) + has(expertise, Sleight of Hand)) + bonus-skills
+  stealth: dex-mod + proficiency * (has(skill-proficiencies, Stealth) + has(expertise, Stealth)) + bonus-skills
+  survival: wis-mod + proficiency * (has(skill-proficiencies, Survival) + has(expertise, Survival)) + bonus-skills
+  initiative: dex-mod + bonus-initiative
+  passive-perception: 10 + perception
+# The hit point maximum (pp. 12, 56): what the dice gave, and the Constitution modifier at every level, which follows the modifier when it changes.
+counters:
+  hp: {max: hp-base + level * con-mod}
