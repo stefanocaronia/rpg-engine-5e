@@ -9,11 +9,27 @@ attribution: >-
 coins: gp 100, pp 1000 rare, ep 50 rare, sp 10, cp 1
 # How long a round lasts (p. 84): in a scene with turns, a duration of up to a minute becomes rounds.
 round: 6 seconds
-# The fields of a character sheet: status lists them until there is a player character; write says which are missing when a character joins the party, and status until they are written.
-# Only what is written: the system works out the rest (computed, below).
-sheet: [level, xp, hp-base, hp, temp-hp, hit-dice, ac, speed, str, dex, con, int, wis, cha, save-proficiencies, skill-proficiencies, languages, exhaustion, death-successes, death-failures]
+# The character sheet, in groups (D-207, DAT-2): show gives a character so, and Page#Group one group with how each number is made. A field in parentheses
+# is shown beside the one before it. Only what the system does not work out (computed, below) is written: status lists it until there is a player character,
+# and reminds what a character still lacks; with ? a field written only when it applies, never reminded.
+sheet:
+  Character: [level, xp, inspiration?]
+  Personality: [traits?, ideals?, bonds?, flaws?]
+  Abilities: [str (str-mod), dex (dex-mod), con (con-mod), int (int-mod), wis (wis-mod), cha (cha-mod), proficiency]
+  Saving Throws: [str-save, dex-save, con-save, int-save, wis-save, cha-save]
+  Skills: [acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival]
+  Combat: [ac, initiative, speed, hp-base, hp, temp-hp?, hit-dice, passive-perception, death-successes?, death-failures?, exhaustion?]
+  Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, languages]
+# What write says of a group once, when a character joins the party (D-206).
+sheet-notes:
+  Personality: "traits, ideals, bonds and flaws are the player's, in their words, with links to what they name: propose some if they ask, never write one they did not choose."
+# The names a list takes (pp. 77, 83, 13, 39): write refuses others, giving these, and validate reports those written by hand.
+values:
+  save-proficiencies: [str, dex, con, int, wis, cha]
+  skill-proficiencies: [Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, Survival]
+  expertise: [Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, Survival, Thieves' Tools]
 # What the line of the player character and the companions shows, in status and in scenes, in order; with ? a field usually at zero: shown, and reported by a recipe, only when it is not.
-status-line: [level, hp, temp-hp?, ac, passive-perception, hit-dice, slots-1, slots-2, slots-3, slots-4, slots-5, slots-6, slots-7, slots-8, slots-9, exhaustion?, death-successes?, death-failures?]
+status-line: [level, hp, temp-hp?, ac, passive-perception, hit-dice, slots-1, slots-2, slots-3, slots-4, slots-5, slots-6, slots-7, slots-8, slots-9, inspiration?, exhaustion?, death-successes?, death-failures?]
 # A counter of the player character or a companion at a value, or at every change: the rule to read (pp. 97–98, 358).
 thresholds:
   hp 0: Dropping to 0 Hit Points
@@ -94,6 +110,12 @@ fields:
   rarity: text
   magic: text
   bonus: number
+  # Inspiration, which a character has or has not (p. 60), and the personality (p. 60), as the player says it.
+  inspiration: number
+  traits: text
+  ideals: text
+  bonds: text
+  flaws: text
   # The sheet as choices (pp. 12, 15, 77–78): the hit points the dice gave without Constitution, and what the character is proficient in, by the SRD's names.
   hp-base: number
   save-proficiencies: list
