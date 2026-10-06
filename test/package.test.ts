@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { loadWorld } from "../../../src/pages/index.ts";
+import { readRuleBook, ruleFiles } from "../../../src/rules/index.ts";
 import { findSystem } from "../../../src/systems/index.ts";
 import { testSystemFolders } from "../../../test/support.ts";
 
@@ -29,5 +30,17 @@ describe("the 5e system", () => {
         expect(fields("Shield")).toMatchObject({ cost: "10 gp", "armor-class": "+2", weight: "6 lb" });
         expect(fields("Longsword")).toMatchObject({ cost: "15 gp", damage: "1d8 slashing", weight: "3 lb", properties: ["versatile (1d10)"] });
         expect(fields("Healer's Kit")).toMatchObject({ uses: "10/10" });
+    });
+
+    it("keeps the text of the SRD 5.1 in seven chapters of rules, as these parts of it show (D-177)", () => {
+        const rules = join(folder, "rules");
+        expect(ruleFiles(rules)).toEqual(["Adventuring", "Combat", "Conditions", "Equipment", "Spellcasting", "Traps", "Using Ability Scores"]);
+        const book = readRuleBook(rules, "5e");
+        const text = (path: string): string => book.find((section) => section.path.join(" › ") === path)?.text ?? "";
+        // SRD 5.1, p. 87 (Long Rest), p. 95 (Grappling), p. 358 (Exhaustion), p. 358–359 (the conditions).
+        expect(text("Adventuring › Resting › Long Rest")).toContain("A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps");
+        expect(text("Combat › Making an Attack › Melee Attacks › Grappling")).toContain("***Escaping a Grapple.***");
+        expect(text("Appendix PH-A: Conditions › Exhaustion")).toContain("| 6 | Death |");
+        expect(book.filter((section) => section.file === "Conditions" && section.level === 2)).toHaveLength(15);
     });
 });
