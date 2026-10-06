@@ -1,0 +1,52 @@
+# The fifth edition, from the System Reference Document 5.1 (D-162): see LICENSE.md.
+title: the fifth edition from the SRD 5.1, the 2014 rules
+language: en
+attribution: >-
+  This work includes material taken from the System Reference Document 5.1 ("SRD 5.1") by Wizards of the Coast LLC and available at
+  https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License
+  available at https://creativecommons.org/licenses/by/4.0/legalcode.
+# How the engine reads each field (SYS-8): only counters are counted; numbers, text and lists never are, nor are they money.
+fields:
+  size: text
+  category: text
+  alignment: text
+  ac: number
+  # The Armor Class of armor and shields, as the armor table writes it: "11 + Dex modifier", "+2".
+  armor-class: text
+  armor: text
+  hp: counter
+  hp-dice: text
+  speed: text
+  fly: text
+  swim: text
+  climb: text
+  burrow: text
+  str: number
+  dex: number
+  con: number
+  int: number
+  wis: number
+  cha: number
+  saves: list
+  skills: list
+  damage-vulnerabilities: list
+  damage-resistances: list
+  damage-immunities: list
+  condition-immunities: list
+  darkvision: text
+  blindsight: text
+  tremorsense: text
+  truesight: text
+  passive-perception: number
+  languages: list
+  cr: text
+  slots-1: counter
+  cost: text
+  damage: text
+  weight: text
+  properties: list
+  length: text
+  uses: counter
+  rarity: text
+  magic: text
+  bonus: number
