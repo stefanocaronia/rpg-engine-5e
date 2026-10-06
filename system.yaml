@@ -1,11 +1,36 @@
-# The fifth edition, from the System Reference Document 5.1 (D-162): see LICENSE.md.
+# The fifth edition, from the System Reference Document 5.1: see LICENSE.md.
 title: the fifth edition from the SRD 5.1, the 2014 rules
 language: en
 attribution: >-
   This work includes material taken from the System Reference Document 5.1 ("SRD 5.1") by Wizards of the Coast LLC and available at
   https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License
   available at https://creativecommons.org/licenses/by/4.0/legalcode.
-# How the engine reads each field (SYS-8): only counters are counted; numbers, text and lists never are, nor are they money.
+# The coins, as config takes them (Standard Exchange Rates, p. 62): the first counts the totals, a rare one is never given as change.
+coins: gp 100, pp 1000 rare, ep 50 rare, sp 10, cp 1
+# How long a round lasts (p. 84): in a scene with turns, a duration of up to a minute becomes rounds.
+round: 6 seconds
+# The fields of a character sheet: status lists them until there is a player character; write says which are missing when a character joins the party, and status until they are written.
+sheet: [level, xp, hp, temp-hp, hit-dice, ac, speed, str, dex, con, int, wis, cha, proficiency, saves, skills, passive-perception, languages, exhaustion, death-successes, death-failures]
+# What the line of the player character and the companions shows, in status and in scenes, in order; with ? a field usually at zero: shown, and reported by a recipe, only when it is not.
+status-line: [level, hp, temp-hp?, ac, passive-perception, hit-dice, slots-1, slots-2, slots-3, slots-4, slots-5, slots-6, slots-7, slots-8, slots-9, exhaustion?, death-successes?, death-failures?]
+# A counter of the player character or a companion at a value, or at every change: the rule to read (pp. 97–98, 358).
+thresholds:
+  hp 0: Dropping to 0 Hit Points
+  death-failures 3: Death Saving Throws
+  death-successes 3: Stabilizing a Creature
+  exhaustion: Exhaustion
+# The rests (pp. 87, 99, 100): the fields they bring to their maximum or to a value, the effects they end, and the titles of the rules for what they leave to the master.
+recipes:
+  long rest:
+    set: { hp: max, temp-hp: 0, slots-*: max }
+    ends: [long rest, short rest]
+    rules: [Long Rest]
+  short rest:
+    ends: [short rest]
+    rules: [Short Rest]
+# The conditions (Appendix PH-A, pp. 358–359): an effect with one of these names shows its rule.
+conditions: [Blinded, Charmed, Deafened, Frightened, Grappled, Incapacitated, Invisible, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned, Unconscious]
+# How the engine reads each field: only counters are counted; numbers, text and lists never are, nor are they money.
 fields:
   size: text
   category: text
@@ -41,6 +66,25 @@ fields:
   languages: list
   cr: text
   slots-1: counter
+  slots-2: counter
+  slots-3: counter
+  slots-4: counter
+  slots-5: counter
+  slots-6: counter
+  slots-7: counter
+  slots-8: counter
+  slots-9: counter
+  # The character sheet (pp. 56, 97–99, 358): xp has no maximum, the death saves and exhaustion count up to 3 and 6.
+  level: number
+  xp: counter
+  proficiency: number
+  hit-dice: counter
+  temp-hp: counter
+  exhaustion: counter
+  death-successes: counter
+  death-failures: counter
+  spell-save-dc: number
+  spell-attack: number
   cost: text
   damage: text
   weight: text
