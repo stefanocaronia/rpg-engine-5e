@@ -14,7 +14,7 @@ round: 6 seconds
 settings:
   advancement:
     xp: {means: "experience points, as the SRD: scene close says those of the creatures overcome, and you give more with change, as you judge, for what the story rewards, to one character or to all"}
-    milestones: {means: "the characters rise when the story reaches a milestone, such as the end of an adventure or a great goal: you say when", without: [xp]}
+    milestones: {means: "the characters rise when the story reaches a milestone, such as the end of an adventure or a great goal: agree with the player which kind, write it in table, and you say when", without: [xp]}
 # The character sheet, in groups (D-207, DAT-2): show gives a character so, and Page#Group one group with how each number is made. A field in parentheses
 # is shown beside the one before it. Only what the system does not work out (computed, below) is written: status lists it until there is a player character,
 # and reminds what a character still lacks; with ? a field written only when it applies, never reminded.
@@ -35,7 +35,7 @@ sheet-notes:
   Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it. Armor and weapons by the names the class page uses, in English, such as weapon-proficiencies: [simple weapons, martial weapons]: the attacks read them."
   Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. Slots, save DC and attack are worked out: never write them."
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries, each an item of the campaign derived from the system's, such as item=[[Chain Mail]]: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex."
-  Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand. A monk weapon rolls the Martial Arts die instead of its own when that is higher. A campaign weapon whose dice differ from its kind's writes its own damage-roll, as the kind's page does."
+  Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's writes its own damage-roll, as the kind's page does."
   Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
 # The names a list takes (pp. 77, 83): write refuses others, giving these, and validate reports those written by hand. Only lists the game closes:
 # expertise is open, since a feature may give it in any tool (D-216).
@@ -50,8 +50,9 @@ progression:
   features: Features
   skip: [Proficiency Bonus, 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th]
   parts: {list: subclasses, field: class}
-  # What write says when a class rises (pp. 12, 56, D-226): the hit points of the new level go into hp-base.
-  level-up: "A new level gives hit points: roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add it to hp-base with write; the system adds con-mod by itself. A first level in another class follows rules \"Multiclassing\", with its prerequisites and the few proficiencies it gives."
+  # What write says when a class rises (each class's Hit Points, pp. 8–55; p. 56; D-226): the hit points of each new level go into hp-base, and the choices
+  # the new features ask are the player's, or the master's for a companion (D-205, D-209).
+  level-up: "Each new level gives hit points: for each, roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add them to hp-base with write, without con-mod, which the system adds by itself. Then go through the new features and the columns that grew (show Page#Feature): the choices they ask, such as an Ability Score Improvement, a subclass or the spells a wizard adds to the spellbook, are the player's for the player character, yours for a companion unless the player made it, written in their lists. A first level in another class follows rules \"Multiclassing\", with its prerequisites and the few proficiencies it gives."
   # The experience points each level needs (p. 56, D-205, PRO-6): the line says how many the next one needs, and status when one is due.
   experience: {field: xp, table: xp-by-level, rules: Beyond 1st Level}
 # The fields whose value on the page of each item of a list is a formula worked out on the character, once for each item (PRO-5, D-227): a class's save DC,
@@ -81,7 +82,10 @@ recipes:
   short rest:
     ends: [short rest]
     rules: [Short Rest]
-# What the creatures overcome in a scene give the party (p. 258, D-205, DAT-11): scene close says the xp of those at 0 hit points, shared among the party there.
+# What write says when a quest is done or failed (D-233): what the story rewards, with either way of gaining levels.
+quest-ends: "What the story rewards: with xp, give it with change, as you judge, to one character or to all; with milestones, if this was one, level up the characters with the player."
+# What the creatures overcome in a scene give the party (D-205, DAT-11): scene close says the xp of those at 0 hit points (p. 258), shared among the party there,
+# as the game is played (the SRD 5.1 does not write it).
 rewards:
   xp: {from: xp-value, overcome: hp 0}
 # The conditions (Appendix PH-A, pp. 358–359): an effect with one of these names shows its rule.
@@ -313,8 +317,8 @@ tables:
   slots-9-by-caster-level: {17: 1}
 # What the system works out from the sheet (D-199): ability modifiers (p. 76), the proficiency bonus (p. 56), saving throws (p. 83), skills with proficiency
 # and expertise, which doubles a proficiency the character has (pp. 77–78, 13, 39), initiative, a Dexterity check (p. 90), and the passive Perception, Insight
-# and Investigation (p. 78, D-218). A field with two formulas takes the first that has a value (D-210): a character's, which needs a level, then a creature's,
-# from the totals its stat block lists in saves and skills, such as Perception +3 (p. 254). A character's adds what its features give (D-222): Jack of All
+# and Investigation (p. 78, D-218). A field with several formulas takes the first that has a value (D-210): the total a creature's stat block lists in saves
+# and skills, such as Perception +3 (p. 254), also for a creature or companion that has a level; then a character's, which needs a level; then a creature's own. A character's adds what its features give (D-222): Jack of All
 # Trades, half the proficiency bonus rounded down to a check without it (p. 12); Remarkable Athlete, half rounded up to a Strength, Dexterity or Constitution
 # check without it, the larger of the two when both apply (p. 25); Aura of Protection, the Charisma modifier, at least 1, to its own saves (p. 32).
 computed:
@@ -327,77 +331,101 @@ computed:
   level: sum(classes)
   proficiency: table(proficiency-by-level, level)
   str-save:
+    - item(saves, Str) / has(saves, Str) + bonus-saves
     - str-mod + proficiency * has(save-proficiencies, str) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
-    - str-mod + has(saves, Str) * (item(saves, Str) - str-mod) + bonus-saves
+    - str-mod + bonus-saves
   dex-save:
+    - item(saves, Dex) / has(saves, Dex) + bonus-saves
     - dex-mod + proficiency * has(save-proficiencies, dex) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
-    - dex-mod + has(saves, Dex) * (item(saves, Dex) - dex-mod) + bonus-saves
+    - dex-mod + bonus-saves
   con-save:
+    - item(saves, Con) / has(saves, Con) + bonus-saves
     - con-mod + proficiency * has(save-proficiencies, con) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
-    - con-mod + has(saves, Con) * (item(saves, Con) - con-mod) + bonus-saves
+    - con-mod + bonus-saves
   int-save:
+    - item(saves, Int) / has(saves, Int) + bonus-saves
     - int-mod + proficiency * has(save-proficiencies, int) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
-    - int-mod + has(saves, Int) * (item(saves, Int) - int-mod) + bonus-saves
+    - int-mod + bonus-saves
   wis-save:
+    - item(saves, Wis) / has(saves, Wis) + bonus-saves
     - wis-mod + proficiency * has(save-proficiencies, wis) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
-    - wis-mod + has(saves, Wis) * (item(saves, Wis) - wis-mod) + bonus-saves
+    - wis-mod + bonus-saves
   cha-save:
+    - item(saves, Cha) / has(saves, Cha) + bonus-saves
     - cha-mod + proficiency * has(save-proficiencies, cha) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
-    - cha-mod + has(saves, Cha) * (item(saves, Cha) - cha-mod) + bonus-saves
+    - cha-mod + bonus-saves
   acrobatics:
+    - item(skills, Acrobatics) / has(skills, Acrobatics) + bonus-skills
     - dex-mod + proficiency * has(skill-proficiencies, Acrobatics) * (1 + has(expertise, Acrobatics)) + (1 - has(skill-proficiencies, Acrobatics)) * max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-skills
-    - dex-mod + has(skills, Acrobatics) * (item(skills, Acrobatics) - dex-mod) + bonus-skills
+    - dex-mod + bonus-skills
   animal-handling:
+    - item(skills, Animal Handling) / has(skills, Animal Handling) + bonus-skills
     - wis-mod + proficiency * has(skill-proficiencies, Animal Handling) * (1 + has(expertise, Animal Handling)) + (1 - has(skill-proficiencies, Animal Handling)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - wis-mod + has(skills, Animal Handling) * (item(skills, Animal Handling) - wis-mod) + bonus-skills
+    - wis-mod + bonus-skills
   arcana:
+    - item(skills, Arcana) / has(skills, Arcana) + bonus-skills
     - int-mod + proficiency * has(skill-proficiencies, Arcana) * (1 + has(expertise, Arcana)) + (1 - has(skill-proficiencies, Arcana)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - int-mod + has(skills, Arcana) * (item(skills, Arcana) - int-mod) + bonus-skills
+    - int-mod + bonus-skills
   athletics:
+    - item(skills, Athletics) / has(skills, Athletics) + bonus-skills
     - str-mod + proficiency * has(skill-proficiencies, Athletics) * (1 + has(expertise, Athletics)) + (1 - has(skill-proficiencies, Athletics)) * max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-skills
-    - str-mod + has(skills, Athletics) * (item(skills, Athletics) - str-mod) + bonus-skills
+    - str-mod + bonus-skills
   deception:
+    - item(skills, Deception) / has(skills, Deception) + bonus-skills
     - cha-mod + proficiency * has(skill-proficiencies, Deception) * (1 + has(expertise, Deception)) + (1 - has(skill-proficiencies, Deception)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - cha-mod + has(skills, Deception) * (item(skills, Deception) - cha-mod) + bonus-skills
+    - cha-mod + bonus-skills
   history:
+    - item(skills, History) / has(skills, History) + bonus-skills
     - int-mod + proficiency * has(skill-proficiencies, History) * (1 + has(expertise, History)) + (1 - has(skill-proficiencies, History)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - int-mod + has(skills, History) * (item(skills, History) - int-mod) + bonus-skills
+    - int-mod + bonus-skills
   insight:
+    - item(skills, Insight) / has(skills, Insight) + bonus-skills
     - wis-mod + proficiency * has(skill-proficiencies, Insight) * (1 + has(expertise, Insight)) + (1 - has(skill-proficiencies, Insight)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - wis-mod + has(skills, Insight) * (item(skills, Insight) - wis-mod) + bonus-skills
+    - wis-mod + bonus-skills
   intimidation:
+    - item(skills, Intimidation) / has(skills, Intimidation) + bonus-skills
     - cha-mod + proficiency * has(skill-proficiencies, Intimidation) * (1 + has(expertise, Intimidation)) + (1 - has(skill-proficiencies, Intimidation)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - cha-mod + has(skills, Intimidation) * (item(skills, Intimidation) - cha-mod) + bonus-skills
+    - cha-mod + bonus-skills
   investigation:
+    - item(skills, Investigation) / has(skills, Investigation) + bonus-skills
     - int-mod + proficiency * has(skill-proficiencies, Investigation) * (1 + has(expertise, Investigation)) + (1 - has(skill-proficiencies, Investigation)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - int-mod + has(skills, Investigation) * (item(skills, Investigation) - int-mod) + bonus-skills
+    - int-mod + bonus-skills
   medicine:
+    - item(skills, Medicine) / has(skills, Medicine) + bonus-skills
     - wis-mod + proficiency * has(skill-proficiencies, Medicine) * (1 + has(expertise, Medicine)) + (1 - has(skill-proficiencies, Medicine)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - wis-mod + has(skills, Medicine) * (item(skills, Medicine) - wis-mod) + bonus-skills
+    - wis-mod + bonus-skills
   nature:
+    - item(skills, Nature) / has(skills, Nature) + bonus-skills
     - int-mod + proficiency * has(skill-proficiencies, Nature) * (1 + has(expertise, Nature)) + (1 - has(skill-proficiencies, Nature)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - int-mod + has(skills, Nature) * (item(skills, Nature) - int-mod) + bonus-skills
+    - int-mod + bonus-skills
   perception:
+    - item(skills, Perception) / has(skills, Perception) + bonus-skills
     - wis-mod + proficiency * has(skill-proficiencies, Perception) * (1 + has(expertise, Perception)) + (1 - has(skill-proficiencies, Perception)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - wis-mod + has(skills, Perception) * (item(skills, Perception) - wis-mod) + bonus-skills
+    - wis-mod + bonus-skills
   performance:
+    - item(skills, Performance) / has(skills, Performance) + bonus-skills
     - cha-mod + proficiency * has(skill-proficiencies, Performance) * (1 + has(expertise, Performance)) + (1 - has(skill-proficiencies, Performance)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - cha-mod + has(skills, Performance) * (item(skills, Performance) - cha-mod) + bonus-skills
+    - cha-mod + bonus-skills
   persuasion:
+    - item(skills, Persuasion) / has(skills, Persuasion) + bonus-skills
     - cha-mod + proficiency * has(skill-proficiencies, Persuasion) * (1 + has(expertise, Persuasion)) + (1 - has(skill-proficiencies, Persuasion)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - cha-mod + has(skills, Persuasion) * (item(skills, Persuasion) - cha-mod) + bonus-skills
+    - cha-mod + bonus-skills
   religion:
+    - item(skills, Religion) / has(skills, Religion) + bonus-skills
     - int-mod + proficiency * has(skill-proficiencies, Religion) * (1 + has(expertise, Religion)) + (1 - has(skill-proficiencies, Religion)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - int-mod + has(skills, Religion) * (item(skills, Religion) - int-mod) + bonus-skills
+    - int-mod + bonus-skills
   sleight-of-hand:
+    - item(skills, Sleight of Hand) / has(skills, Sleight of Hand) + bonus-skills
     - dex-mod + proficiency * has(skill-proficiencies, Sleight of Hand) * (1 + has(expertise, Sleight of Hand)) + (1 - has(skill-proficiencies, Sleight of Hand)) * max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-skills
-    - dex-mod + has(skills, Sleight of Hand) * (item(skills, Sleight of Hand) - dex-mod) + bonus-skills
+    - dex-mod + bonus-skills
   stealth:
+    - item(skills, Stealth) / has(skills, Stealth) + bonus-skills
     - dex-mod + proficiency * has(skill-proficiencies, Stealth) * (1 + has(expertise, Stealth)) + (1 - has(skill-proficiencies, Stealth)) * max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-skills
-    - dex-mod + has(skills, Stealth) * (item(skills, Stealth) - dex-mod) + bonus-skills
+    - dex-mod + bonus-skills
   survival:
+    - item(skills, Survival) / has(skills, Survival) + bonus-skills
     - wis-mod + proficiency * has(skill-proficiencies, Survival) * (1 + has(expertise, Survival)) + (1 - has(skill-proficiencies, Survival)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
-    - wis-mod + has(skills, Survival) * (item(skills, Survival) - wis-mod) + bonus-skills
+    - wis-mod + bonus-skills
   initiative:
     - dex-mod + max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-initiative
     - dex-mod + bonus-initiative
@@ -411,11 +439,11 @@ computed:
   ac:
     - armor-class + armor-class-bonus + has(fighting-styles, Defense) + bonus-ac
     - best((10 + dex-mod) / min(1, count(classes)), unarmored-base + dex-mod, unarmored-ac) + armor-class-bonus + bonus-ac
-  # The caster level for spell slots (p. 57): every level in a full caster's class, half in a half caster's, rounded down; with a single spellcasting
+  # The caster level for spell slots (p. 58): every level in a full caster's class, half in a half caster's, rounded down; with a single spellcasting
   # class, a half caster's is its own table, rounded up from 2nd level. No value without a spellcasting class, so no slots. A paladin and a ranger together
-  # count half the sum of their levels, as p. 57 reads (half of each, rounded down, is another reading).
+  # count half the sum of their levels, as p. 58 reads (half of each, rounded down, is another reading).
   caster-level: "(sum(classes, spellcasting = full) + floor(sum(classes, spellcasting = half) / 2) + (min(1, count(classes, spellcasting = full) + count(classes, spellcasting = half)) - min(1, max(0, count(classes, spellcasting = full) + count(classes, spellcasting = half) - 1))) * (ceil(sum(classes, spellcasting = half) / 2) - floor(sum(classes, spellcasting = half) / 2)) * min(1, floor(sum(classes, spellcasting = half) / 2))) / min(1, count(classes, spellcasting = full) + count(classes, spellcasting = half))"
-# The hit point maximum (pp. 12, 56): what the dice gave, and at every level the Constitution modifier, which follows it when it changes, and the hit
+# The hit point maximum (each class's Hit Points, pp. 8–55; p. 56): what the dice gave, and at every level the Constitution modifier, which follows it when it changes, and the hit
 # points a race adds; at every sorcerer level the Draconic Bloodline's hit point (p. 45). A hit die for each level in a class, of that class's die, counted
 # only for a character with classes, from the die its page writes, of the system or the campaign (p. 56, D-215); inspiration, which a character has or has not (p. 60).
 counters:
@@ -450,7 +478,7 @@ counters:
   eldritch-master: {max: "has(features, Eldritch Master)", refill: long rest}
   breath-weapon: {refill: short rest}
   relentless-endurance: {refill: long rest}
-  # Spell slots by caster level (p. 57); a warlock's Pact Magic slots from its table, back with a short rest (p. 47), and its Mystic Arcanum; a wizard's
+  # Spell slots by caster level (p. 58); a warlock's Pact Magic slots from its table, back with a short rest (p. 47), and its Mystic Arcanum; a wizard's
   # two Signature Spells, each once a short rest (p. 54).
   slots-1: {max: "table(slots-1-by-caster-level, caster-level)"}
   slots-2: {max: "table(slots-2-by-caster-level, caster-level)"}
