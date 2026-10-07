@@ -16,10 +16,10 @@ sheet:
   Character: [level, xp, inspiration?]
   Personality: [personality-traits?, ideal?, bond?, flaw?]
   Abilities: [str (str-mod), dex (dex-mod), con (con-mod), int (int-mod), wis (wis-mod), cha (cha-mod), proficiency]
-  Saving Throws: [str-save, dex-save, con-save, int-save, wis-save, cha-save]
+  Saving Throws: [str-save, dex-save, con-save, int-save, wis-save, cha-save, save-notes?]
   Skills: [acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival]
-  Combat: [ac, initiative, speed, hp-base, hp, temp-hp?, hit-dice, passive-perception, death-successes?, death-failures?, exhaustion?]
-  Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, languages]
+  Combat: [ac, initiative, speed, hp-base, hp, temp-hp?, hit-dice, passive-perception, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?]
+  Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies?, tool-proficiencies?, languages]
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: propose some if they ask, never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
@@ -122,6 +122,11 @@ fields:
   # Hit points at every level from a race or a class, such as a hill dwarf's Dwarven Toughness (p. 4) or Draconic Resilience (p. 45).
   hp-per-level: bonus
   save-proficiencies: list
+  # What a race or a class gives beside the numbers (pp. 3–7): advantages on saving throws, as the race says them, and the proficiencies it grants.
+  save-notes: list
+  armor-proficiencies: list
+  weapon-proficiencies: list
+  tool-proficiencies: list
   skill-proficiencies: list
   expertise: list
   # Worked out, shown with their sign (D-199).
