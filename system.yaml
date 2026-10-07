@@ -236,8 +236,10 @@ tables:
   indomitable-uses: {0: 0, 9: 1, 13: 2, 17: 3}
 # What the system works out from the sheet (D-199): ability modifiers (p. 76), the proficiency bonus (p. 56), saving throws (p. 83), skills with proficiency
 # and expertise, which doubles a proficiency the character has (pp. 77–78, 13, 39), initiative, a Dexterity check (p. 90), and the passive Perception, Insight
-# and Investigation (p. 78, D-218). A field with two formulas takes the first that has a value (D-210): a character's, which needs a level, then a creature's, from the totals its stat
-# block lists in saves and skills, such as Perception +3 (p. 254).
+# and Investigation (p. 78, D-218). A field with two formulas takes the first that has a value (D-210): a character's, which needs a level, then a creature's,
+# from the totals its stat block lists in saves and skills, such as Perception +3 (p. 254). A character's adds what its features give (D-222): Jack of All
+# Trades, half the proficiency bonus rounded down to a check without it (p. 12); Remarkable Athlete, half rounded up to a Strength, Dexterity or Constitution
+# check without it, the larger of the two when both apply (p. 25); Aura of Protection, the Charisma modifier, at least 1, to its own saves (p. 32).
 computed:
   str-mod: floor((str - 10) / 2)
   dex-mod: floor((dex - 10) / 2)
@@ -248,78 +250,80 @@ computed:
   level: sum(classes)
   proficiency: table(proficiency-by-level, level)
   str-save:
-    - str-mod + proficiency * has(save-proficiencies, str) + bonus-saves
+    - str-mod + proficiency * has(save-proficiencies, str) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
     - str-mod + has(saves, Str) * (item(saves, Str) - str-mod) + bonus-saves
   dex-save:
-    - dex-mod + proficiency * has(save-proficiencies, dex) + bonus-saves
+    - dex-mod + proficiency * has(save-proficiencies, dex) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
     - dex-mod + has(saves, Dex) * (item(saves, Dex) - dex-mod) + bonus-saves
   con-save:
-    - con-mod + proficiency * has(save-proficiencies, con) + bonus-saves
+    - con-mod + proficiency * has(save-proficiencies, con) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
     - con-mod + has(saves, Con) * (item(saves, Con) - con-mod) + bonus-saves
   int-save:
-    - int-mod + proficiency * has(save-proficiencies, int) + bonus-saves
+    - int-mod + proficiency * has(save-proficiencies, int) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
     - int-mod + has(saves, Int) * (item(saves, Int) - int-mod) + bonus-saves
   wis-save:
-    - wis-mod + proficiency * has(save-proficiencies, wis) + bonus-saves
+    - wis-mod + proficiency * has(save-proficiencies, wis) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
     - wis-mod + has(saves, Wis) * (item(saves, Wis) - wis-mod) + bonus-saves
   cha-save:
-    - cha-mod + proficiency * has(save-proficiencies, cha) + bonus-saves
+    - cha-mod + proficiency * has(save-proficiencies, cha) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves
     - cha-mod + has(saves, Cha) * (item(saves, Cha) - cha-mod) + bonus-saves
   acrobatics:
-    - dex-mod + proficiency * has(skill-proficiencies, Acrobatics) * (1 + has(expertise, Acrobatics)) + bonus-skills
+    - dex-mod + proficiency * has(skill-proficiencies, Acrobatics) * (1 + has(expertise, Acrobatics)) + (1 - has(skill-proficiencies, Acrobatics)) * max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-skills
     - dex-mod + has(skills, Acrobatics) * (item(skills, Acrobatics) - dex-mod) + bonus-skills
   animal-handling:
-    - wis-mod + proficiency * has(skill-proficiencies, Animal Handling) * (1 + has(expertise, Animal Handling)) + bonus-skills
+    - wis-mod + proficiency * has(skill-proficiencies, Animal Handling) * (1 + has(expertise, Animal Handling)) + (1 - has(skill-proficiencies, Animal Handling)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - wis-mod + has(skills, Animal Handling) * (item(skills, Animal Handling) - wis-mod) + bonus-skills
   arcana:
-    - int-mod + proficiency * has(skill-proficiencies, Arcana) * (1 + has(expertise, Arcana)) + bonus-skills
+    - int-mod + proficiency * has(skill-proficiencies, Arcana) * (1 + has(expertise, Arcana)) + (1 - has(skill-proficiencies, Arcana)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - int-mod + has(skills, Arcana) * (item(skills, Arcana) - int-mod) + bonus-skills
   athletics:
-    - str-mod + proficiency * has(skill-proficiencies, Athletics) * (1 + has(expertise, Athletics)) + bonus-skills
+    - str-mod + proficiency * has(skill-proficiencies, Athletics) * (1 + has(expertise, Athletics)) + (1 - has(skill-proficiencies, Athletics)) * max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-skills
     - str-mod + has(skills, Athletics) * (item(skills, Athletics) - str-mod) + bonus-skills
   deception:
-    - cha-mod + proficiency * has(skill-proficiencies, Deception) * (1 + has(expertise, Deception)) + bonus-skills
+    - cha-mod + proficiency * has(skill-proficiencies, Deception) * (1 + has(expertise, Deception)) + (1 - has(skill-proficiencies, Deception)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - cha-mod + has(skills, Deception) * (item(skills, Deception) - cha-mod) + bonus-skills
   history:
-    - int-mod + proficiency * has(skill-proficiencies, History) * (1 + has(expertise, History)) + bonus-skills
+    - int-mod + proficiency * has(skill-proficiencies, History) * (1 + has(expertise, History)) + (1 - has(skill-proficiencies, History)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - int-mod + has(skills, History) * (item(skills, History) - int-mod) + bonus-skills
   insight:
-    - wis-mod + proficiency * has(skill-proficiencies, Insight) * (1 + has(expertise, Insight)) + bonus-skills
+    - wis-mod + proficiency * has(skill-proficiencies, Insight) * (1 + has(expertise, Insight)) + (1 - has(skill-proficiencies, Insight)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - wis-mod + has(skills, Insight) * (item(skills, Insight) - wis-mod) + bonus-skills
   intimidation:
-    - cha-mod + proficiency * has(skill-proficiencies, Intimidation) * (1 + has(expertise, Intimidation)) + bonus-skills
+    - cha-mod + proficiency * has(skill-proficiencies, Intimidation) * (1 + has(expertise, Intimidation)) + (1 - has(skill-proficiencies, Intimidation)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - cha-mod + has(skills, Intimidation) * (item(skills, Intimidation) - cha-mod) + bonus-skills
   investigation:
-    - int-mod + proficiency * has(skill-proficiencies, Investigation) * (1 + has(expertise, Investigation)) + bonus-skills
+    - int-mod + proficiency * has(skill-proficiencies, Investigation) * (1 + has(expertise, Investigation)) + (1 - has(skill-proficiencies, Investigation)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - int-mod + has(skills, Investigation) * (item(skills, Investigation) - int-mod) + bonus-skills
   medicine:
-    - wis-mod + proficiency * has(skill-proficiencies, Medicine) * (1 + has(expertise, Medicine)) + bonus-skills
+    - wis-mod + proficiency * has(skill-proficiencies, Medicine) * (1 + has(expertise, Medicine)) + (1 - has(skill-proficiencies, Medicine)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - wis-mod + has(skills, Medicine) * (item(skills, Medicine) - wis-mod) + bonus-skills
   nature:
-    - int-mod + proficiency * has(skill-proficiencies, Nature) * (1 + has(expertise, Nature)) + bonus-skills
+    - int-mod + proficiency * has(skill-proficiencies, Nature) * (1 + has(expertise, Nature)) + (1 - has(skill-proficiencies, Nature)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - int-mod + has(skills, Nature) * (item(skills, Nature) - int-mod) + bonus-skills
   perception:
-    - wis-mod + proficiency * has(skill-proficiencies, Perception) * (1 + has(expertise, Perception)) + bonus-skills
+    - wis-mod + proficiency * has(skill-proficiencies, Perception) * (1 + has(expertise, Perception)) + (1 - has(skill-proficiencies, Perception)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - wis-mod + has(skills, Perception) * (item(skills, Perception) - wis-mod) + bonus-skills
   performance:
-    - cha-mod + proficiency * has(skill-proficiencies, Performance) * (1 + has(expertise, Performance)) + bonus-skills
+    - cha-mod + proficiency * has(skill-proficiencies, Performance) * (1 + has(expertise, Performance)) + (1 - has(skill-proficiencies, Performance)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - cha-mod + has(skills, Performance) * (item(skills, Performance) - cha-mod) + bonus-skills
   persuasion:
-    - cha-mod + proficiency * has(skill-proficiencies, Persuasion) * (1 + has(expertise, Persuasion)) + bonus-skills
+    - cha-mod + proficiency * has(skill-proficiencies, Persuasion) * (1 + has(expertise, Persuasion)) + (1 - has(skill-proficiencies, Persuasion)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - cha-mod + has(skills, Persuasion) * (item(skills, Persuasion) - cha-mod) + bonus-skills
   religion:
-    - int-mod + proficiency * has(skill-proficiencies, Religion) * (1 + has(expertise, Religion)) + bonus-skills
+    - int-mod + proficiency * has(skill-proficiencies, Religion) * (1 + has(expertise, Religion)) + (1 - has(skill-proficiencies, Religion)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - int-mod + has(skills, Religion) * (item(skills, Religion) - int-mod) + bonus-skills
   sleight-of-hand:
-    - dex-mod + proficiency * has(skill-proficiencies, Sleight of Hand) * (1 + has(expertise, Sleight of Hand)) + bonus-skills
+    - dex-mod + proficiency * has(skill-proficiencies, Sleight of Hand) * (1 + has(expertise, Sleight of Hand)) + (1 - has(skill-proficiencies, Sleight of Hand)) * max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-skills
     - dex-mod + has(skills, Sleight of Hand) * (item(skills, Sleight of Hand) - dex-mod) + bonus-skills
   stealth:
-    - dex-mod + proficiency * has(skill-proficiencies, Stealth) * (1 + has(expertise, Stealth)) + bonus-skills
+    - dex-mod + proficiency * has(skill-proficiencies, Stealth) * (1 + has(expertise, Stealth)) + (1 - has(skill-proficiencies, Stealth)) * max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-skills
     - dex-mod + has(skills, Stealth) * (item(skills, Stealth) - dex-mod) + bonus-skills
   survival:
-    - wis-mod + proficiency * has(skill-proficiencies, Survival) * (1 + has(expertise, Survival)) + bonus-skills
+    - wis-mod + proficiency * has(skill-proficiencies, Survival) * (1 + has(expertise, Survival)) + (1 - has(skill-proficiencies, Survival)) * floor(proficiency / 2) * has(features, Jack of All Trades) + bonus-skills
     - wis-mod + has(skills, Survival) * (item(skills, Survival) - wis-mod) + bonus-skills
-  initiative: dex-mod + bonus-initiative
+  initiative:
+    - dex-mod + max(floor(proficiency / 2) * has(features, Jack of All Trades), ceil(proficiency / 2) * has(features, Remarkable Athlete)) + bonus-initiative
+    - dex-mod + bonus-initiative
   passive-perception: 10 + perception
   passive-insight: 10 + insight
   passive-investigation: 10 + investigation
