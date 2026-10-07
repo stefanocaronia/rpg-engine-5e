@@ -2,7 +2,7 @@
 // Each armor gives its Armor Class and each weapon its attack and damage as formulas worked out on who has it equipped (PRO-5, D-231).
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { parse, stringify } from "yaml";
+import { pageText } from "./pages.mjs";
 
 const system = join(import.meta.dirname, "..");
 const items = join(system, "world", "items");
@@ -151,19 +151,6 @@ function description(title)
     }
 
     return paragraphs.join("\n\n");
-}
-
-/** A page: its fields as YAML, each value in quotes only when it would not read back as itself, then its text. */
-function pageText(fields, body)
-{
-    const lines = Object.entries(fields).map(([field, value]) => `${field}: ${Array.isArray(value) ? `[${value.map(scalar).join(", ")}]` : scalar(value)}`);
-    return `---\n${lines.join("\n")}\n---\n${body === "" ? "" : `\n${body}\n`}`;
-}
-
-function scalar(value)
-{
-    const text = stringify(value, { lineWidth: 0 }).trimEnd();
-    return parse(text) === value && !/[,[\]]/.test(text) ? text : JSON.stringify(value);
 }
 
 /** The names of the system's pages that are not armor or weapons, in lower case: an armor or weapon cannot take one. */

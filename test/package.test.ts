@@ -38,13 +38,61 @@ describe("the 5e system", () => {
         expect(fields("Rapier")?.attack).toBe("max(str-mod, dex-mod) + proficiency * max(has(weapon-proficiencies, martial weapons), has(weapon-proficiencies, Rapier), has(weapon-proficiencies, rapiers)) + bonus");
         expect(fields("Longbow")?.["damage-roll"]).toBe("1d8 + dex-mod + bonus piercing");
         expect(fields("Net")?.damage).toBeUndefined();
-        const equipment = pages.filter((page) => /armor|shield|weapon$/.test(String(page.fields.category)) && page.fields.category !== "weapon (any)");
+        const equipment = pages.filter((page) => /^((light|medium|heavy) armor|shield|(simple|martial) (melee|ranged) weapon)$/.test(String(page.fields.category)));
         expect(equipment.length).toBe(50);
         expect(fields("Longsword")).toMatchObject({ cost: "15 gp", damage: "1d8 slashing", weight: "3 lb", properties: ["versatile (1d10)"] });
         expect(fields("Healer's Kit")).toMatchObject({ uses: "10/10" });
     });
 
-    it("keeps the text of the SRD 5.1 in seventeen chapters of rules, as these parts of it show (D-177)", () => {
+    it("keeps the SRD 5.1's gear, packs, tools, tack and vehicles, with the columns of their table as fields and their description as text (pp. 66–74)", () => {
+        const pages = loadWorld(folder).pages;
+        const page = (name: string) => pages.find((other) => other.name === name);
+        const items = pages.filter((other) => other.type === "item");
+        // Beside the 50 arms and armor and the 240 magic items, 159 pages of gear: the rest of the Equipment chapter but its mounts, which are creatures at the
+        // table, its trade goods, expenses and stabling.
+        expect([items.length, items.filter((item) => item.fields.rarity !== undefined).length]).toEqual([449, 240]);
+        expect(page("Riding Horse")).toBeUndefined();
+        // SRD 5.1, pp. 68–69 (the Adventuring Gear table and descriptions), p. 70 (packs and tools), p. 71 (tool descriptions), pp. 71–72 (mounts and vehicles).
+        expect(page("Bullseye Lantern")?.fields).toEqual({ aliases: ["Lantern, bullseye"], category: "adventuring gear", cost: "10 gp", weight: "2 lb" });
+        expect(page("Bullseye Lantern")?.body).toContain("A bullseye lantern casts bright light in a 60-foot cone");
+        expect(page("Silk Rope")?.fields).toMatchObject({ aliases: ["Rope, silk (50 feet)"], cost: "10 gp", weight: "5 lb", length: "50 feet" });
+        expect(page("Crystal")?.fields).toEqual({ category: "arcane focus", cost: "10 gp", weight: "1 lb" });
+        expect(page("Crystal")?.body).toContain("An arcane focus is a special item");
+        expect(page("Burglar's Pack")?.fields).toEqual({ category: "equipment pack", cost: "16 gp" });
+        expect(page("Burglar's Pack")?.body).toContain("a bag of 1,000 ball bearings");
+        expect(page("Alchemist's Supplies")?.fields).toEqual({ category: "artisan's tools", cost: "50 gp", weight: "8 lb" });
+        // The PDF indents the disguise kit under Artisan's tools, but its description is its own (p. 71).
+        expect(page("Disguise Kit")?.fields).toEqual({ category: "tool", cost: "25 gp", weight: "3 lb" });
+        expect(page("Thieves' Tools")?.body).toContain("a set of lock picks");
+        expect(page("Exotic Saddle")?.fields).toEqual({ category: "saddle", cost: "60 gp", weight: "40 lb" });
+        expect(page("Galley")?.fields).toEqual({ category: "waterborne vehicle", cost: "30,000 gp", speed: "4 mph" });
+    });
+
+    it("keeps the 240 magic items of the SRD 5.1, with their type line as fields and the SRD's text alone, without ours (pp. 206–253, D-170)", () => {
+        const pages = loadWorld(folder).pages;
+        const page = (name: string) => pages.find((other) => other.name === name);
+        // SRD 5.1, p. 225 (Holy Avenger), p. 237 (Ring of Shooting Stars), p. 220 (Dwarven Plate), p. 207 (Ammunition), p. 246 (Stone of Good Luck), p. 252 (the Orb).
+        expect(page("Holy Avenger")?.fields).toEqual({ category: "weapon (any sword)", rarity: "legendary", attunement: "by a paladin" });
+        expect(page("Ring of Shooting Stars")?.fields).toEqual({ category: "ring", rarity: "very rare", attunement: "outdoors at night" });
+        expect(page("Dwarven Plate")?.fields).toEqual({ category: "armor (plate)", rarity: "very rare" });
+        expect(page("Dwarven Plate")?.body).toContain("While wearing this armor, you gain a +2 bonus to AC.");
+        expect(page("Ammunition, +1, +2, or +3")?.fields.rarity).toBe("uncommon (+1), rare (+2), or very rare (+3)");
+        expect(page("Stone of Good Luck")?.fields).toEqual({ aliases: ["Stone of Good Luck (Luckstone)"], category: "wondrous item", rarity: "uncommon", attunement: true });
+        expect(page("Orb of Dragonkind")?.fields).toMatchObject({ rarity: "artifact", attunement: true });
+        // p. 234, with the price, the weight and the sentence on drinking it of the adventuring gear entry (pp. 68–69), after the magic item's text; the table of
+        // p. 208, which runs on in the next column; the stat block of p. 218, a quotation that ends before the next card.
+        expect(page("Potion of Healing")?.fields).toEqual({ category: "potion", rarity: "varies", cost: "50 gp (common)", weight: "1/2 lb" });
+        expect(page("Potion of Healing")?.body).toContain("glimmers when agitated.\n\n**Potions of Healing**");
+        expect(page("Potion of Healing")?.body).toContain("| Supreme healing | Very rare | 10d4 + 20 |\n\nDrinking or administering a potion takes an action.");
+        expect(page("Apparatus of the Crab")?.body).toContain("| 10 | The rear hatch unseals and opens. | The rear hatch closes and seals. |");
+        expect(page("Deck of Many Things")?.body).toContain("> **Avatar of Death**\n>\n> *Medium undead, neutral evil*\n>\n> **Armor Class** 20");
+        expect(page("Deck of Many Things")?.body).toContain("plus 4 (1d8) necrotic damage.\n\n***Star.***");
+        // The SRD's text only: no section of ours, such as how a magic weapon of the campaign is written, which the sheet's note on the attacks says.
+        const magic = pages.filter((other) => other.fields.rarity !== undefined);
+        expect(magic.filter((item) => sectionTitles(item.body).length > 0).map((item) => item.name)).toEqual([]);
+    });
+
+    it("keeps the text of the SRD 5.1 in eighteen chapters of rules, as these parts of it show (D-177)", () => {
         const rules = join(folder, "rules");
         expect(ruleFiles(rules)).toEqual([
             "Adventuring",
@@ -55,6 +103,7 @@ describe("the 5e system", () => {
             "Equipment",
             "Fantasy-Historical Pantheons",
             "Madness",
+            "Magic Items",
             "Monsters",
             "Nonplayer Characters",
             "Objects",
@@ -90,6 +139,12 @@ describe("the 5e system", () => {
         expect(text("Monsters › Legendary Creatures › A Legendary Creature’s Lair › Lair Actions")).toContain("On initiative count 20 (losing all initiative ties)");
         expect(text("Monsters › Half-Dragon Template")).toContain("| Huge | As a young dragon | Challenge 7 or higher |");
         expect(text("Appendix PH-B: Fantasy-Historical Pantheons › The Norse Pantheon › Norse Deities")).toContain("| Thor, god of storms and thunder | CG | Tempest, War | Hammer |");
+        // SRD 5.1, p. 69 (the Adventuring Gear table), p. 72 (the mounts, in the rules alone), p. 70 (the Equipment Packs sidebar), p. 206 (Attunement), p. 252 (Conflict).
+        expect(text("Equipment › Adventuring Gear › Adventuring Gear")).toContain("| Spyglass | 1,000 gp | 1 lb. |");
+        expect(text("Equipment › Mounts and Vehicles › Mounts and Other Animals")).toContain("| Horse, riding | 75 gp | 60 ft. | 480 lb. |");
+        expect(text("Equipment › Adventuring Gear › Equipment Packs")).toContain("***Burglar’s Pack (16 gp).*** Includes a backpack");
+        expect(text("Magic Items › Attunement")).toContain("a creature can be attuned to no more than three magic items at a time");
+        expect(text("Magic Items › Sentient Magic Items › Conflict")).toContain("with a DC equal to 12 + the item’s Charisma modifier");
     });
 
     it("keeps the 319 spells of the SRD 5.1, with their header as fields and the classes whose spell list names them", () => {

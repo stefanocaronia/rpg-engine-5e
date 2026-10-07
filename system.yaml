@@ -35,7 +35,7 @@ sheet-notes:
   Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it. Armor and weapons by the names the class page uses, in English, such as weapon-proficiencies: [simple weapons, martial weapons]: the attacks read them."
   Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. Slots, save DC and attack are worked out: never write them."
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries, each an item of the campaign derived from the system's, such as item=[[Chain Mail]]: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex."
-  Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's writes its own damage-roll, as the kind's page does."
+  Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's writes its own damage-roll, as the kind's page does. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
   Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
 # The names a list takes (pp. 77, 83): write refuses others, giving these, and validate reports those written by hand. Only lists the game closes:
 # expertise is open, since a feature may give it in any tool (D-216).
@@ -223,7 +223,9 @@ fields:
   properties: list
   length: text
   uses: counter
+  # A magic item's rarity, and the attunement it requires: true, or what it asks, as the SRD writes it, such as by a paladin (p. 206).
   rarity: text
+  attunement: text
   magic: text
   bonus: bonus
   # A spell (pp. 114–194): its level, 0 for a cantrip, its school and the lines of its header as the SRD writes them; ritual and concentration only when
@@ -291,7 +293,7 @@ fields:
   # What effects add, such as a ring and a cloak of protection together (pp. 104, 214, 237): different effects add up (D-200).
   bonus-saves: bonus
   bonus-skills: bonus
-  # What an item adds to the save DC and the attack of every spell, as a Robe of the Archmagi or a Rod of the Pact Keeper.
+  # What an item adds to the save DC and the attack of every spell, as a Robe of the Archmagi to both and a Wand of the War Mage to the attack (pp. 239, 249).
   bonus-spell-dc: bonus
   bonus-spell-attack: bonus
   bonus-initiative: bonus

@@ -1,0 +1,7 @@
+---
+category: wondrous item
+rarity: uncommon
+attunement: true
+---
+
+While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the *magic missile* spell.

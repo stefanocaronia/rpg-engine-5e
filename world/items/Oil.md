@@ -1,5 +1,5 @@
 ---
-aliases: ["Oil (flask)"]
+aliases: [Oil (flask)]
 category: adventuring gear
 cost: 1 sp
 weight: 1 lb
