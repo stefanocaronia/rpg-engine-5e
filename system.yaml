@@ -23,12 +23,13 @@ sheet:
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: propose some if they ask, never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
+  Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it."
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level."
-# The names a list takes (pp. 77, 83, 13, 39): write refuses others, giving these, and validate reports those written by hand.
+# The names a list takes (pp. 77, 83): write refuses others, giving these, and validate reports those written by hand. Only lists the game closes:
+# expertise is open, since a feature may give it in any tool (D-216).
 values:
   save-proficiencies: [str, dex, con, int, wis, cha]
   skill-proficiencies: [Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, Survival]
-  expertise: [Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, Survival, Thieves' Tools]
 # What the line of the player character and the companions shows, in status and in scenes, in order; with ? a field usually at zero: shown, and reported by a recipe, only when it is not.
 status-line: [level, hp, temp-hp?, ac, passive-perception, hit-dice-d6, hit-dice-d8, hit-dice-d10, hit-dice-d12, slots-1, slots-2, slots-3, slots-4, slots-5, slots-6, slots-7, slots-8, slots-9, inspiration?, exhaustion?, death-successes?, death-failures?]
 # A counter of the player character or a companion at a value, or at every change: the rule to read (pp. 97–98, 358).
@@ -268,11 +269,11 @@ computed:
   passive-perception: 10 + perception
 # The hit point maximum (pp. 12, 56): what the dice gave, and at every level the Constitution modifier, which follows it when it changes, and the hit
 # points a race adds; at every sorcerer level the Draconic Bloodline's hit point (p. 45). A hit die for each level in a class, of that class's die, counted
-# only for a character with classes (p. 56); inspiration, which a character has or has not (p. 60).
+# only for a character with classes, from the die its page writes, of the system or the campaign (p. 56, D-215); inspiration, which a character has or has not (p. 60).
 counters:
   hp: {max: "hp-base + level * (con-mod + hp-per-level) + has(subclasses, Draconic Bloodline) * item(classes, Sorcerer)"}
-  hit-dice-d6: {max: "item(classes, Sorcerer) + item(classes, Wizard) + 0 * sum(classes)"}
-  hit-dice-d8: {max: "item(classes, Bard) + item(classes, Cleric) + item(classes, Druid) + item(classes, Monk) + item(classes, Rogue) + item(classes, Warlock) + 0 * sum(classes)"}
-  hit-dice-d10: {max: "item(classes, Fighter) + item(classes, Paladin) + item(classes, Ranger) + 0 * sum(classes)"}
-  hit-dice-d12: {max: "item(classes, Barbarian) + 0 * sum(classes)"}
+  hit-dice-d6: {max: "sum(classes, hit-die = d6)"}
+  hit-dice-d8: {max: "sum(classes, hit-die = d8)"}
+  hit-dice-d10: {max: "sum(classes, hit-die = d10)"}
+  hit-dice-d12: {max: "sum(classes, hit-die = d12)"}
   inspiration: {max: 1}
