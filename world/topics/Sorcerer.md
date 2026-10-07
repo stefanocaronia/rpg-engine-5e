@@ -1,8 +1,8 @@
 ---
 category: class
 spellcasting: full
-spell-save-dc: "8 + proficiency + cha-mod"
-spell-attack: "proficiency + cha-mod"
+spell-save-dc: "8 + proficiency + cha-mod + bonus-spell-dc"
+spell-attack: "proficiency + cha-mod + bonus-spell-attack"
 hit-die: d6
 save-proficiencies: [con, cha]
 weapon-proficiencies: [daggers, darts, slings, quarterstaffs, light crossbows]

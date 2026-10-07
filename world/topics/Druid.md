@@ -1,8 +1,8 @@
 ---
 category: class
 spellcasting: full
-spell-save-dc: "8 + proficiency + wis-mod"
-spell-attack: "proficiency + wis-mod"
+spell-save-dc: "8 + proficiency + wis-mod + bonus-spell-dc"
+spell-attack: "proficiency + wis-mod + bonus-spell-attack"
 max-prepared: "max(1, wis-mod + item(classes, Druid))"
 hit-die: d8
 save-proficiencies: [int, wis]

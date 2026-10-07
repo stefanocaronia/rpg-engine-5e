@@ -1,8 +1,8 @@
 ---
 category: class
 spellcasting: full
-spell-save-dc: "8 + proficiency + int-mod"
-spell-attack: "proficiency + int-mod"
+spell-save-dc: "8 + proficiency + int-mod + bonus-spell-dc"
+spell-attack: "proficiency + int-mod + bonus-spell-attack"
 max-prepared: "max(1, int-mod + item(classes, Wizard))"
 hit-die: d6
 save-proficiencies: [int, wis]

@@ -21,11 +21,12 @@ sheet:
   Combat: [ac, initiative, speed, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?]
   Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies?, tool-proficiencies?, languages]
   Features: [features]
-  Spells: [caster-level?, spell-save-dc?, spell-attack?, slots-1?, slots-2?, slots-3?, slots-4?, slots-5?, slots-6?, slots-7?, slots-8?, slots-9?, spell-slots?, mystic-arcanum?, signature-spells?, max-prepared?, spells?, prepared?]
+  Spells: [caster-level?, spell-save-dc?, spell-attack?, slots-1?, slots-2?, slots-3?, slots-4?, slots-5?, slots-6?, slots-7?, slots-8?, slots-9?, spell-slots?, mystic-arcanum-6?, mystic-arcanum-7?, mystic-arcanum-8?, mystic-arcanum-9?, signature-spell-1?, signature-spell-2?, max-prepared?, spells?, prepared?]
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: propose some if they ask, never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
   Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it."
+  Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. Slots, save DC and attack are worked out: never write them."
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level."
 # The names a list takes (pp. 77, 83): write refuses others, giving these, and validate reports those written by hand. Only lists the game closes:
 # expertise is open, since a feature may give it in any tool (D-216).
@@ -171,8 +172,12 @@ fields:
   spell-attack: modifier
   max-prepared: number
   caster-level: number
-  mystic-arcanum: counter
-  signature-spells: counter
+  mystic-arcanum-6: counter
+  mystic-arcanum-7: counter
+  mystic-arcanum-8: counter
+  mystic-arcanum-9: counter
+  signature-spell-1: counter
+  signature-spell-2: counter
   spellcasting: text
   spells: list
   prepared: list
@@ -250,6 +255,9 @@ fields:
   # What effects add, such as a ring and a cloak of protection together (pp. 104, 214, 237): different effects add up (D-200).
   bonus-saves: bonus
   bonus-skills: bonus
+  # What an item adds to the save DC and the attack of every spell, as a Robe of the Archmagi or a Rod of the Pact Keeper.
+  bonus-spell-dc: bonus
+  bonus-spell-attack: bonus
   bonus-initiative: bonus
 # The proficiency bonus by level (p. 56).
 tables:
@@ -259,8 +267,6 @@ tables:
   indomitable-uses: {0: 0, 9: 1, 13: 2, 17: 3}
   # Paladins and rangers cast from 2nd level (pp. 31, 36): before it a class's spellcasting formulas have no value.
   half-caster-start: {2: 0}
-  # A warlock's Mystic Arcanum, one spell of each level from 6th to 9th, once a long rest (p. 49).
-  mystic-arcanum-uses: {11: 1, 13: 2, 15: 3, 17: 4}
   # The Multiclass Spellcaster table (p. 58), by caster level; for a single class it gives the class's own table.
   slots-1-by-caster-level: {1: 2, 2: 3, 3: 4}
   slots-2-by-caster-level: {3: 2, 4: 3}
@@ -365,7 +371,8 @@ computed:
   passive-insight: 10 + insight
   passive-investigation: 10 + investigation
   # The caster level for spell slots (p. 57): every level in a full caster's class, half in a half caster's, rounded down; with a single spellcasting
-  # class, a half caster's is its own table, rounded up from 2nd level. No value without a spellcasting class, so no slots.
+  # class, a half caster's is its own table, rounded up from 2nd level. No value without a spellcasting class, so no slots. A paladin and a ranger together
+  # count half the sum of their levels, as p. 57 reads (half of each, rounded down, is another reading).
   caster-level: "(sum(classes, spellcasting = full) + floor(sum(classes, spellcasting = half) / 2) + (min(1, count(classes, spellcasting = full) + count(classes, spellcasting = half)) - min(1, max(0, count(classes, spellcasting = full) + count(classes, spellcasting = half) - 1))) * (ceil(sum(classes, spellcasting = half) / 2) - floor(sum(classes, spellcasting = half) / 2)) * min(1, floor(sum(classes, spellcasting = half) / 2))) / min(1, count(classes, spellcasting = full) + count(classes, spellcasting = half))"
 # The hit point maximum (pp. 12, 56): what the dice gave, and at every level the Constitution modifier, which follows it when it changes, and the hit
 # points a race adds; at every sorcerer level the Draconic Bloodline's hit point (p. 45). A hit die for each level in a class, of that class's die, counted
@@ -414,5 +421,11 @@ counters:
   slots-8: {max: "table(slots-8-by-caster-level, caster-level)"}
   slots-9: {max: "table(slots-9-by-caster-level, caster-level)"}
   spell-slots: {refill: short rest}
-  mystic-arcanum: {max: "table(mystic-arcanum-uses, item(classes, Warlock))", refill: long rest}
-  signature-spells: {max: "2 * has(features, Signature Spells)", refill: short rest}
+  # Mystic Arcanum: one spell of each level, 6th to 9th, from the 11th, 13th, 15th and 17th warlock level, each once a long rest (p. 49).
+  mystic-arcanum-6: {max: "min(1, floor(item(classes, Warlock) / 11))", refill: long rest}
+  mystic-arcanum-7: {max: "min(1, floor(item(classes, Warlock) / 13))", refill: long rest}
+  mystic-arcanum-8: {max: "min(1, floor(item(classes, Warlock) / 15))", refill: long rest}
+  mystic-arcanum-9: {max: "min(1, floor(item(classes, Warlock) / 17))", refill: long rest}
+  # Signature Spells: two 3rd-level spells, each once a short rest (p. 54).
+  signature-spell-1: {max: "has(features, Signature Spells)", refill: short rest}
+  signature-spell-2: {max: "has(features, Signature Spells)", refill: short rest}

@@ -1,4 +1,6 @@
 // Writes the spells of the SRD 5.1 as pages in world/topics, from the text and the outline of its PDF: node systems/5e/build/spells.mjs <srd51-norm.txt> <srd51-outline.tsv>
+// Its inputs come from the SRD's PDF with pdfplumber: outline.py writes the headings (srd51-outline.tsv), extract.py the text by columns; srd51-norm.txt
+// is that text after a cleanup not kept here yet: the import of the whole SRD will keep it.
 import { readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse, stringify } from "yaml";
@@ -116,6 +118,11 @@ for (const spell of spells) {
     const shared = taken.has(spell.name.toLowerCase());
     const aliases = shared ? [`${spell.name} spell`] : spell.heading.includes("/") ? [spell.heading] : [];
     writeFileSync(join(world, "topics", `${fileName(spell, taken)}.md`), pageText(spell, lists.get(spell.name) ?? [], aliases));
+}
+
+// Each class's list (pp. 105–113) as a page, a section for each level, linking its spells by their pages' names.
+for (const [owner, levels] of readClassLists(linesOf(pages, listPages))) {
+    writeFileSync(join(world, "topics", `${owner} Spells.md`), listText(owner, levels, (name) => fileName({ name }, taken)));
 }
 
 report(spells, lists, taken);
@@ -243,6 +250,38 @@ function readSpellLists(lines, names)
     }
 
     return result;
+}
+
+/** Each class's spell list as the SRD gives it (pp. 105–113): by class, its levels in order, each with its spells. */
+function readClassLists(lines)
+{
+    const result = new Map();
+    let owner;
+    let level;
+
+    for (const { text } of lines) {
+        const heading = /^(\w+) Spells$/.exec(text);
+
+        if (heading !== null) {
+            owner = heading[1];
+            level = undefined;
+            result.set(owner, []);
+        } else if (owner !== undefined && /^(Cantrips \(0 Level\)|\d(st|nd|rd|th) Level)$/.test(text)) {
+            level = { title: text, names: [] };
+            result.get(owner).push(level);
+        } else if (level !== undefined) {
+            level.names.push(pageName(text));
+        }
+    }
+
+    return result;
+}
+
+/** The page of a class's spell list: what it is, and a section for each level with a link to each spell. */
+function listText(owner, levels, pageOf)
+{
+    const sections = levels.map((level) => `## ${level.title}\n\n${level.names.map((name) => `- [[${pageOf(name)}]]`).join("\n")}`);
+    return `---\ncategory: spell list\n---\n\nThe ${owner.toLowerCase()}'s spells, by level.\n\n${sections.join("\n\n")}\n`;
 }
 
 /** The description as markdown: paragraphs rejoined, list items, tables, and run-in headings in bold italics. */
@@ -409,9 +448,10 @@ function removeSpellPages()
     }
 }
 
+/** A page this script writes: a spell, or a class's spell list. */
 function isSpellPage(path)
 {
-    return /^---\n(?:.*\n)*?category: spell\n/.test(readFileSync(path, "utf8").replaceAll("\r\n", "\n"));
+    return /^---\n(?:.*\n)*?category: spell( list)?\n/.test(readFileSync(path, "utf8").replaceAll("\r\n", "\n"));
 }
 
 function report(spells, lists, taken)
