@@ -1,5 +1,6 @@
 ---
 category: class
+unarmored-ac: "10 + dex-mod + con-mod"
 hit-die: d12
 save-proficiencies: [str, con]
 armor-proficiencies: [light armor, medium armor, shields]

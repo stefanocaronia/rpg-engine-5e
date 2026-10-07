@@ -1,0 +1,9 @@
+---
+category: martial melee weapon
+cost: 20 gp
+damage: 1d10 slashing
+weight: 6 lb
+properties: [heavy, reach, two-handed]
+attack: "str-mod + proficiency * max(has(weapon-proficiencies, martial weapons), has(weapon-proficiencies, Glaive), has(weapon-proficiencies, glaives)) + bonus"
+damage-roll: 1d10 + str-mod + bonus slashing
+---

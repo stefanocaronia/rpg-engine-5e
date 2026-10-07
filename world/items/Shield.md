@@ -1,7 +1,7 @@
 ---
 category: shield
 cost: 10 gp
-armor-class: "+2"
+armor-class-bonus: 2 + bonus
 weight: 6 lb
 ---
 

@@ -1,5 +1,6 @@
 ---
 category: class
+unarmored-ac: "(13 + dex-mod) / has(subclasses, Draconic Bloodline)"
 spellcasting: full
 spell-save-dc: "8 + proficiency + cha-mod + bonus-spell-dc"
 spell-attack: "proficiency + cha-mod + bonus-spell-attack"

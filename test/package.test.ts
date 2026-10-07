@@ -29,7 +29,17 @@ describe("the 5e system", () => {
         // SRD 5.1, p. 393 (Wolf), p. 356–357 (Zombie), p. 63–64 and 66 (armor and weapons), p. 67 (Healer's Kit).
         expect(fields("Wolf")).toMatchObject({ ac: 13, hp: "11/11", "hp-dice": "2d8 + 2", speed: "40 ft", str: 12, dex: 15, cr: "1/4 (50 XP)" });
         expect(fields("Zombie")).toMatchObject({ ac: 8, hp: "22/22", "hp-dice": "3d8 + 9", speed: "20 ft", saves: ["Wis +0"] });
-        expect(fields("Shield")).toMatchObject({ cost: "10 gp", "armor-class": "+2", weight: "6 lb" });
+        expect(fields("Shield")).toMatchObject({ cost: "10 gp", "armor-class-bonus": "2 + bonus", weight: "6 lb" });
+        // The Armor table and the Weapons table (pp. 63, 65–66), as formulas on who wears or wields them (D-231).
+        expect(fields("Half Plate Armor")).toMatchObject({ aliases: ["Half plate"], category: "medium armor", cost: "750 gp", "armor-class": "15 + min(dex-mod, 2) + bonus", "stealth-disadvantage": true, weight: "40 lb" });
+        expect(fields("Plate Armor")).toMatchObject({ "armor-class": "18 + bonus", "strength-required": 15 });
+        expect(fields("Studded Leather Armor")?.["armor-class"]).toBe("12 + dex-mod + bonus");
+        expect(fields("Light Crossbow")).toMatchObject({ aliases: ["Crossbow, light"], category: "simple ranged weapon", damage: "1d8 piercing", properties: ["ammunition (range 80/320)", "loading", "two-handed"] });
+        expect(fields("Rapier")?.attack).toBe("max(str-mod, dex-mod) + proficiency * max(has(weapon-proficiencies, martial weapons), has(weapon-proficiencies, Rapier), has(weapon-proficiencies, rapiers)) + bonus");
+        expect(fields("Longbow")?.["damage-roll"]).toBe("1d8 + dex-mod + bonus piercing");
+        expect(fields("Net")?.damage).toBeUndefined();
+        const equipment = pages.filter((page) => /armor|shield|weapon$/.test(String(page.fields.category)) && page.fields.category !== "weapon (any)");
+        expect(equipment.length).toBe(50);
         expect(fields("Longsword")).toMatchObject({ cost: "15 gp", damage: "1d8 slashing", weight: "3 lb", properties: ["versatile (1d10)"] });
         expect(fields("Healer's Kit")).toMatchObject({ uses: "10/10" });
     });

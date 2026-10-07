@@ -18,16 +18,18 @@ sheet:
   Abilities: [str (str-mod), dex (dex-mod), con (con-mod), int (int-mod), wis (wis-mod), cha (cha-mod), proficiency]
   Saving Throws: [str-save, dex-save, con-save, int-save, wis-save, cha-save, save-notes?]
   Skills: [acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival]
-  Combat: [ac, initiative, speed, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?]
+  Combat: [ac, initiative, speed, equipped?, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?]
   Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies?, tool-proficiencies?, languages]
-  Features: [features]
+  Features: [features, fighting-styles?]
+  Attacks: [attack, damage-roll]
   Spells: [caster-level?, spell-save-dc?, spell-attack?, slots-1?, slots-2?, slots-3?, slots-4?, slots-5?, slots-6?, slots-7?, slots-8?, slots-9?, spell-slots?, mystic-arcanum-6?, mystic-arcanum-7?, mystic-arcanum-8?, mystic-arcanum-9?, signature-spell-1?, signature-spell-2?, max-prepared?, spells?, prepared?]
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: propose some if they ask, never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
   Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it."
   Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. Slots, save DC and attack are worked out: never write them."
-  Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level."
+  Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor, shield and weapons the character wears and wields, among what it carries, each an item of the campaign derived from the system's, such as item=[[Chain Mail]]: the armor class and the attacks follow it."
+  Features: "a choice a feature asks for goes in the list of its kind, such as fighting-styles: [Archery]; its bonuses follow."
 # The names a list takes (pp. 77, 83): write refuses others, giving these, and validate reports those written by hand. Only lists the game closes:
 # expertise is open, since a feature may give it in any tool (D-216).
 values:
@@ -41,10 +43,14 @@ progression:
   features: Features
   skip: [Proficiency Bonus, 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th]
   parts: {list: subclasses, field: class}
-  # Formulas a class page gives, worked out on the character once for each class (D-227, p. 58): each spell uses its class's ability.
-  formulas: [spell-save-dc, spell-attack, max-prepared]
   # What write says when a class rises (pp. 12, 56, D-226): the hit points of the new level go into hp-base.
   level-up: "A new level gives hit points: roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add it to hp-base with write; the system adds con-mod by itself."
+# The fields whose value on the page of each item of a list is a formula worked out on the character, once for each item (PRO-5, D-227): a class's save DC,
+# attack and prepared spells, since each spell uses its class's ability (p. 58).
+item-formulas:
+  classes: [spell-save-dc, spell-attack, max-prepared, unarmored-ac]
+  # What an armor, a shield and a weapon give who has it equipped (pp. 63, 65, D-231): the armor class and its bonus, the attack and the damage.
+  equipped: [armor-class, armor-class-bonus, attack, damage-roll]
 # The lists that mark the numbers of the sheet that read them (D-217): a proficiency, and expertise beside it, as on the paper sheet.
 marks: [save-proficiencies, skill-proficiencies, expertise]
 # What the line of the player character and the companions shows, in status and in scenes, in order; with ? a field usually at zero: shown, and reported by a recipe, only when it is not.
@@ -74,8 +80,20 @@ fields:
   category: text
   alignment: text
   ac: number
-  # The Armor Class of armor and shields, as the armor table writes it: "11 + Dex modifier", "+2".
+  # The Armor Class of an armor and a shield as formulas on who wears them (p. 63): "11 + dex-mod + bonus", the bonus a magic one adds; what the Armor table
+  # says of Strength and Stealth (p. 63). A weapon's attack and damage, with its ability, its proficiency and its bonus (pp. 65, 146).
   armor-class: text
+  armor-class-bonus: bonus
+  strength-required: number
+  stealth-disadvantage: text
+  attack: modifier
+  damage-roll: text
+  # A character's armor class without armor (pp. 9, 26, 45): what a class gives, as Unarmored Defense; what an effect gives, as Mage Armor's 13
+  # (unarmored-base); what effects add, as a Ring of Protection (bonus-ac); the fighting styles chosen (p. 24).
+  unarmored-ac: number
+  unarmored-base: number
+  bonus-ac: bonus
+  fighting-styles: list
   armor: text
   hp: counter
   hp-dice: text
@@ -189,7 +207,7 @@ fields:
   uses: counter
   rarity: text
   magic: text
-  bonus: number
+  bonus: bonus
   # A spell (pp. 114–194): its level, 0 for a cantrip, its school and the lines of its header as the SRD writes them; ritual and concentration only when
   # true; the classes whose spell list names it (pp. 105–113). Never level or classes, which are a character's.
   spell-level: number
@@ -267,6 +285,8 @@ tables:
   indomitable-uses: {0: 0, 9: 1, 13: 2, 17: 3}
   # Paladins and rangers cast from 2nd level (pp. 31, 36): before it a class's spellcasting formulas have no value.
   half-caster-start: {2: 0}
+  # A character's armor class without armor and without anything that changes it (p. 14): 10, from 1st level; a creature has its own, in its stat block.
+  unarmored-ac-base: {1: 10}
   # The Multiclass Spellcaster table (p. 58), by caster level; for a single class it gives the class's own table.
   slots-1-by-caster-level: {1: 2, 2: 3, 3: 4}
   slots-2-by-caster-level: {3: 2, 4: 3}
@@ -370,6 +390,12 @@ computed:
   passive-perception: 10 + perception
   passive-insight: 10 + insight
   passive-investigation: 10 + investigation
+  # The armor class (pp. 14, 63, D-231): with armor, the armor's and the shield's, with Defense (p. 24); without, the best of 10 + Dex, what a class gives,
+  # as Unarmored Defense (pp. 9, 26) or Draconic Resilience (p. 45), and Mage Armor (p. 157), with the shield; and what effects add. A creature has none,
+  # and keeps the AC of its stat block.
+  ac:
+    - armor-class + armor-class-bonus + has(fighting-styles, Defense) + bonus-ac
+    - best(table(unarmored-ac-base, level) + dex-mod, unarmored-base + dex-mod, unarmored-ac) + armor-class-bonus + bonus-ac
   # The caster level for spell slots (p. 57): every level in a full caster's class, half in a half caster's, rounded down; with a single spellcasting
   # class, a half caster's is its own table, rounded up from 2nd level. No value without a spellcasting class, so no slots. A paladin and a ranger together
   # count half the sum of their levels, as p. 57 reads (half of each, rounded down, is another reading).

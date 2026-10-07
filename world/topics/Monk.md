@@ -1,5 +1,6 @@
 ---
 category: class
+unarmored-ac: "(10 + dex-mod + wis-mod) / (1 - min(1, armor-class-bonus))"
 hit-die: d8
 save-proficiencies: [str, dex]
 weapon-proficiencies: [simple weapons, shortswords]
