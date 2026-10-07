@@ -1,6 +1,7 @@
 ---
 category: medium armor
 cost: 400 gp
+bonus: 0
 armor-class: "14 + min(dex-mod, 2) + bonus"
 weight: 20 lb
 ---

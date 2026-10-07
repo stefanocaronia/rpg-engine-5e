@@ -19,17 +19,18 @@ sheet:
   Saving Throws: [str-save, dex-save, con-save, int-save, wis-save, cha-save, save-notes?]
   Skills: [acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival]
   Combat: [ac, initiative, speed, equipped?, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?]
-  Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies?, tool-proficiencies?, languages]
+  Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies, tool-proficiencies?, languages]
   Features: [features, fighting-styles?]
   Attacks: [attack, damage-roll]
   Spells: [caster-level?, spell-save-dc?, spell-attack?, slots-1?, slots-2?, slots-3?, slots-4?, slots-5?, slots-6?, slots-7?, slots-8?, slots-9?, spell-slots?, mystic-arcanum-6?, mystic-arcanum-7?, mystic-arcanum-8?, mystic-arcanum-9?, signature-spell-1?, signature-spell-2?, max-prepared?, spells?, prepared?]
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: propose some if they ask, never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
-  Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it."
+  Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it. Armor and weapons by the names the class page uses, in English, such as weapon-proficiencies: [simple weapons, martial weapons]: the attacks read them."
   Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. Slots, save DC and attack are worked out: never write them."
-  Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor, shield and weapons the character wears and wields, among what it carries, each an item of the campaign derived from the system's, such as item=[[Chain Mail]]: the armor class and the attacks follow it."
-  Features: "a choice a feature asks for goes in the list of its kind, such as fighting-styles: [Archery]; its bonuses follow."
+  Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries, each an item of the campaign derived from the system's, such as item=[[Chain Mail]]: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex."
+  Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand. A monk weapon rolls the Martial Arts die instead of its own when that is higher. A campaign weapon whose dice differ from its kind's writes its own damage-roll, as the kind's page does."
+  Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
 # The names a list takes (pp. 77, 83): write refuses others, giving these, and validate reports those written by hand. Only lists the game closes:
 # expertise is open, since a feature may give it in any tool (D-216).
 values:
@@ -88,7 +89,7 @@ fields:
   stealth-disadvantage: text
   attack: modifier
   damage-roll: text
-  # A character's armor class without armor (pp. 9, 26, 45): what a class gives, as Unarmored Defense; what an effect gives, as Mage Armor's 13
+  # A character's armor class without armor (pp. 8, 26, 45): what a class gives, as Unarmored Defense; what an effect gives, as Mage Armor's 13
   # (unarmored-base); what effects add, as a Ring of Protection (bonus-ac); the fighting styles chosen (p. 24).
   unarmored-ac: number
   unarmored-base: number
@@ -285,8 +286,6 @@ tables:
   indomitable-uses: {0: 0, 9: 1, 13: 2, 17: 3}
   # Paladins and rangers cast from 2nd level (pp. 31, 36): before it a class's spellcasting formulas have no value.
   half-caster-start: {2: 0}
-  # A character's armor class without armor and without anything that changes it (p. 14): 10, from 1st level; a creature has its own, in its stat block.
-  unarmored-ac-base: {1: 10}
   # The Multiclass Spellcaster table (p. 58), by caster level; for a single class it gives the class's own table.
   slots-1-by-caster-level: {1: 2, 2: 3, 3: 4}
   slots-2-by-caster-level: {3: 2, 4: 3}
@@ -390,12 +389,13 @@ computed:
   passive-perception: 10 + perception
   passive-insight: 10 + insight
   passive-investigation: 10 + investigation
-  # The armor class (pp. 14, 63, D-231): with armor, the armor's and the shield's, with Defense (p. 24); without, the best of 10 + Dex, what a class gives,
-  # as Unarmored Defense (pp. 9, 26) or Draconic Resilience (p. 45), and Mage Armor (p. 157), with the shield; and what effects add. A creature has none,
-  # and keeps the AC of its stat block.
+  # The armor class (p. 63, D-231): with armor, the armor's and the shield's, with Defense (p. 24); without, the best of 10 + Dex, as the game is played
+  # (the SRD 5.1 does not write it), what a class gives, as Unarmored Defense (pp. 8, 26), the first class's (p. 57), or Draconic Resilience (p. 45), and
+  # Mage Armor (p. 160), with the shield; and what effects add. Only a character with classes: a creature, or a companion with a level and no classes,
+  # keeps the AC of its stat block.
   ac:
     - armor-class + armor-class-bonus + has(fighting-styles, Defense) + bonus-ac
-    - best(table(unarmored-ac-base, level) + dex-mod, unarmored-base + dex-mod, unarmored-ac) + armor-class-bonus + bonus-ac
+    - best((10 + dex-mod) / min(1, count(classes)), unarmored-base + dex-mod, unarmored-ac) + armor-class-bonus + bonus-ac
   # The caster level for spell slots (p. 57): every level in a full caster's class, half in a half caster's, rounded down; with a single spellcasting
   # class, a half caster's is its own table, rounded up from 2nd level. No value without a spellcasting class, so no slots. A paladin and a ranger together
   # count half the sum of their levels, as p. 57 reads (half of each, rounded down, is another reading).

@@ -3,6 +3,7 @@ category: martial ranged weapon
 cost: 1 gp
 weight: 3 lb
 properties: [special, thrown (range 5/15)]
+bonus: 0
 attack: "dex-mod + proficiency * max(has(weapon-proficiencies, martial weapons), has(weapon-proficiencies, Net), has(weapon-proficiencies, nets)) + bonus + 2 * has(fighting-styles, Archery)"
 ---
 

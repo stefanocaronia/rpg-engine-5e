@@ -2,6 +2,7 @@
 aliases: [Splint]
 category: heavy armor
 cost: 200 gp
+bonus: 0
 armor-class: 17 + bonus
 strength-required: 15
 stealth-disadvantage: true

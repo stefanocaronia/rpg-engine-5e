@@ -22,9 +22,6 @@ const names = {
     "Crossbow, heavy": "Heavy Crossbow",
 };
 
-// What weapons a character's weapons count, for Dueling: one weapon in one hand and no other (p. 24).
-const weapons = ["simple melee weapon", "martial melee weapon", "simple ranged weapon", "martial ranged weapon"].map((category) => `count(equipped, category = ${category})`).join(" - ");
-
 const taken = otherPageNames();
 const written = [...readTable("Armor").map(armorPage), ...readTable("Weapons").map(weaponPage)];
 
@@ -64,7 +61,10 @@ function readTable(caption)
     return rows;
 }
 
-/** An armor's page: its Armor Class as a formula, plus the bonus of a magic one; Strength and Stealth as the table gives them (p. 63). */
+/**
+ * An armor's page: its Armor Class as a formula, plus the bonus of a magic one, 0 for these, so that the formula never reads one of who wears it; Strength
+ * and Stealth as the table gives them (p. 63).
+ */
 function armorPage({ category, cells })
 {
     const [srdName, cost, armorClass, strength, stealth, weight] = cells;
@@ -76,6 +76,7 @@ function armorPage({ category, cells })
         ...aliases(srdName, name),
         category: shield ? "shield" : category,
         cost,
+        bonus: 0,
         ...(shield ? { "armor-class-bonus": `${armorClass.replace("+", "")} + bonus` } : { "armor-class": formula }),
         ...(strength === "—" ? {} : { "strength-required": Number(strength.replace("Str ", "")) }),
         ...(stealth === "Disadvantage" ? { "stealth-disadvantage": true } : {}),
@@ -84,17 +85,22 @@ function armorPage({ category, cells })
     return { name, text: pageText(fields, description(shield ? "Shields" : srdName)) };
 }
 
-/** A weapon's page: its damage as the table gives it, and its attack and damage as formulas (pp. 65–66), with what Archery and Dueling add (p. 24). */
+/**
+ * A weapon's page: its damage as the table gives it, and its attack and damage as formulas (pp. 65–66), with the bonus of a magic one, 0 for these, and what
+ * Archery and Dueling add (p. 24). Dueling counts on every melee weapon not two-handed, as on the sheets of play: one weapon in hand is the master's to judge.
+ */
 function weaponPage({ category, cells })
 {
     const [srdName, cost, damage, weight, properties] = cells;
     const name = names[srdName] ?? titled(srdName);
     const kept = properties === "—" ? [] : properties.split(/,\s*(?![^()]*\))/).map((property) => property.toLowerCase());
     const ranged = category.includes("ranged");
-    const ability = ranged ? "dex-mod" : kept.includes("finesse") ? "max(str-mod, dex-mod)" : "str-mod";
+    // A monk's weapons, simple melee ones neither two-handed nor heavy, take Dexterity with Martial Arts (p. 26); a shortsword is a finesse weapon already.
+    const monk = category === "simple melee weapon" && !kept.includes("two-handed") && !kept.includes("heavy");
+    const ability = kept.includes("finesse") ? "max(str-mod, dex-mod)" : ranged ? "dex-mod" : monk ? "best(str-mod, dex-mod / has(features, Martial Arts))" : "str-mod";
     const proficient = `proficiency * max(has(weapon-proficiencies, ${category.split(" ")[0]} weapons), has(weapon-proficiencies, ${name}), has(weapon-proficiencies, ${name.toLowerCase()}s))`;
     const archery = ranged ? " + 2 * has(fighting-styles, Archery)" : "";
-    const dueling = !ranged && !kept.includes("two-handed") ? ` + 2 * has(fighting-styles, Dueling) * max(0, 2 - ${weapons})` : "";
+    const dueling = !ranged && !kept.includes("two-handed") ? " + 2 * has(fighting-styles, Dueling)" : "";
     const [, amount, type] = /^(\S+) (.+)$/.exec(damage) ?? [];
     const fields = {
         ...aliases(srdName, name),
@@ -103,6 +109,7 @@ function weaponPage({ category, cells })
         ...(amount === undefined ? {} : { damage }),
         ...(weight === "—" ? {} : { weight: weight.replace(/\.$/, "") }),
         ...(kept.length === 0 ? {} : { properties: kept }),
+        bonus: 0,
         attack: `${ability} + ${proficient} + bonus${archery}`,
         ...(amount === undefined ? {} : { "damage-roll": `${amount} + ${ability} + bonus${dueling} ${type}` }),
     };
@@ -121,11 +128,11 @@ function titled(text)
     return text.replace(/\b\p{L}/gu, (letter) => letter.toUpperCase());
 }
 
-/** The paragraphs after a run-in title of the chapter, such as "***Padded.***", up to the next title, heading or table. */
+/** The paragraphs after a run-in title of the chapter, such as "***Half Plate.***" for the table's "Half plate", up to the next title, heading or table. */
 function description(title)
 {
     const lines = chapter.split("\n");
-    const start = lines.findIndex((line) => line.startsWith(`***${title}.***`));
+    const start = lines.findIndex((line) => line.toLowerCase().startsWith(`***${title.toLowerCase()}.***`));
 
     if (start === -1) {
         return "";

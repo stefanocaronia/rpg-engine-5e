@@ -2,6 +2,7 @@
 aliases: [Hide]
 category: medium armor
 cost: 10 gp
+bonus: 0
 armor-class: "12 + min(dex-mod, 2) + bonus"
 weight: 12 lb
 ---

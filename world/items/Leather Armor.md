@@ -2,6 +2,7 @@
 aliases: [Leather]
 category: light armor
 cost: 10 gp
+bonus: 0
 armor-class: 11 + dex-mod + bonus
 weight: 10 lb
 ---
