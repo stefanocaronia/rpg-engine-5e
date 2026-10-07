@@ -3,7 +3,6 @@ category: class
 hit-die: d6
 save-proficiencies: [con, cha]
 weapon-proficiencies: [daggers, darts, slings, quarterstaffs, light crossbows]
-subclasses: ["[[Draconic Bloodline]]"]
 ---
 
 **The Sorcerer**

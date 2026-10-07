@@ -4,7 +4,6 @@ hit-die: d12
 save-proficiencies: [str, con]
 armor-proficiencies: [light armor, medium armor, shields]
 weapon-proficiencies: [simple weapons, martial weapons]
-subclasses: ["[[Path of the Berserker]]"]
 ---
 
 **The Barbarian**

@@ -3,7 +3,6 @@ category: class
 hit-die: d8
 save-proficiencies: [str, dex]
 weapon-proficiencies: [simple weapons, shortswords]
-subclasses: ["[[Way of the Open Hand]]"]
 ---
 
 **The Monk**

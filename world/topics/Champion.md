@@ -1,5 +1,7 @@
 ---
 category: subclass
+class: "[[Fighter]]"
+features: [Improved Critical 3, Remarkable Athlete 7, Additional Fighting Style 10, Superior Critical 15, Survivor 18]
 ---
 
 The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.

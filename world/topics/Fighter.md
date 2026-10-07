@@ -4,7 +4,6 @@ hit-die: d10
 save-proficiencies: [str, con]
 armor-proficiencies: [all armor, shields]
 weapon-proficiencies: [simple weapons, martial weapons]
-subclasses: ["[[Champion]]"]
 ---
 
 **The Fighter**

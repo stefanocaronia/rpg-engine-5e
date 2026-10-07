@@ -1,5 +1,7 @@
 ---
 category: subclass
+class: "[[Barbarian]]"
+features: [Frenzy 3, Mindless Rage 6, Intimidating Presence 10, Retaliation 14]
 ---
 
 For some barbarians, rage is a means to an end—that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.

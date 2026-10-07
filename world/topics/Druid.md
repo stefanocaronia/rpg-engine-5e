@@ -5,7 +5,6 @@ save-proficiencies: [int, wis]
 armor-proficiencies: [light armor, medium armor, shields]
 weapon-proficiencies: [clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears]
 tool-proficiencies: [herbalism kit]
-subclasses: ["[[Circle of the Land]]"]
 ---
 
 **The Druid**

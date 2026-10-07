@@ -4,7 +4,6 @@ hit-die: d10
 save-proficiencies: [wis, cha]
 armor-proficiencies: [all armor, shields]
 weapon-proficiencies: [simple weapons, martial weapons]
-subclasses: ["[[Oath of Devotion]]"]
 ---
 
 **The Paladin**

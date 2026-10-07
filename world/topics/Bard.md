@@ -4,7 +4,6 @@ hit-die: d8
 save-proficiencies: [dex, cha]
 armor-proficiencies: [light armor]
 weapon-proficiencies: [simple weapons, hand crossbows, longswords, rapiers, shortswords]
-subclasses: ["[[College of Lore]]"]
 ---
 
 **The Bard**

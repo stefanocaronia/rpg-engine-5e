@@ -2,7 +2,9 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { loadWorld } from "../../../src/pages/index.ts";
+import { listItems } from "../../../src/core/formula.ts";
+import { loadWorld, sectionTitles } from "../../../src/pages/index.ts";
+import { featureParts, gainedFeatures, levelledFeatures, levelTable } from "../../../src/progression/index.ts";
 import { readRuleBook, ruleFiles } from "../../../src/rules/index.ts";
 import { findSystem } from "../../../src/systems/index.ts";
 import { testSystemFolders } from "../../../test/support.ts";
@@ -42,5 +44,31 @@ describe("the 5e system", () => {
         expect(text("Combat › Making an Attack › Melee Attacks › Grappling")).toContain("***Escaping a Grapple.***");
         expect(text("Appendix PH-A: Conditions › Exhaustion")).toContain("| 6 | Death |");
         expect(book.filter((section) => section.file === "Conditions" && section.level === 2)).toHaveLength(15);
+    });
+
+    it("gives each class a table of twenty levels whose features are its sections, and each subclass its class and its features by level (D-219)", () => {
+        const pages = loadWorld(folder).pages;
+        const classes = pages.filter((page) => page.fields.category === "class");
+        const subclasses = pages.filter((page) => page.fields.category === "subclass");
+        expect(classes).toHaveLength(12);
+        expect(subclasses).toHaveLength(12);
+
+        for (const page of classes) {
+            const table = levelTable(page.body, "Features");
+            const titles = sectionTitles(page.body).map((title) => title.toLowerCase());
+            expect([...(table?.rows.keys() ?? [])], page.name).toEqual(Array.from({ length: 20 }, (_, index) => index + 1));
+            // Every entry of the column is a feature, or says what the subclass gives or what improves (PRO-3).
+            const all = gainedFeatures(table!, "Features", 20, (name) => name).map((feature) => featureParts(feature.name).name);
+            const others = all.filter((name) => !titles.includes(name.toLowerCase()) && !titles.includes(`${name.toLowerCase()}s`));
+            expect(others.filter((name) => !/ (feature|improvements?)$/.test(name)), page.name).toEqual([]);
+        }
+
+        for (const page of subclasses) {
+            const owner = listItems(page.fields.class)[0]?.name;
+            expect(classes.map((other) => other.name), page.name).toContain(owner);
+            const features = levelledFeatures(listItems(page.fields.features).map((item) => `${item.name} ${item.number ?? ""}`.trim()));
+            expect(features.every((feature) => feature !== undefined && feature.level >= 1 && feature.level <= 20), page.name).toBe(true);
+            expect(features.map((feature) => feature?.name).filter((name) => !sectionTitles(page.body).includes(name ?? "")), page.name).toEqual([]);
+        }
     });
 });

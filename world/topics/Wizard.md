@@ -3,7 +3,6 @@ category: class
 hit-die: d6
 save-proficiencies: [int, wis]
 weapon-proficiencies: [daggers, darts, slings, quarterstaffs, light crossbows]
-subclasses: ["[[School of Evocation]]"]
 ---
 
 **The Wizard**

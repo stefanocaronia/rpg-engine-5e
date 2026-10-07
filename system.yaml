@@ -20,6 +20,7 @@ sheet:
   Skills: [acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival]
   Combat: [ac, initiative, speed, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?]
   Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies?, tool-proficiencies?, languages]
+  Features: [features]
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: propose some if they ask, never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
@@ -30,6 +31,14 @@ sheet-notes:
 values:
   save-proficiencies: [str, dex, con, int, wis, cha]
   skill-proficiencies: [Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, Survival]
+# The classes give the row of their table at the character's level in each (pp. 8–55, D-201, D-219): its columns as values of the sheet, such as Rage Damage,
+# and the features gained up to that level, a subclass adding those it lists at the level of its class. The proficiency bonus is worked out from the
+# character's level (p. 56), and the spell slots come with the spells.
+progression:
+  list: classes
+  features: Features
+  skip: [Proficiency Bonus, 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th]
+  parts: {list: subclasses, field: class}
 # The lists that mark the numbers of the sheet that read them (D-217): a proficiency, and expertise beside it, as on the paper sheet.
 marks: [save-proficiencies, skill-proficiencies, expertise]
 # What the line of the player character and the companions shows, in status and in scenes, in order; with ? a field usually at zero: shown, and reported by a recipe, only when it is not.
@@ -107,6 +116,22 @@ fields:
   background: text
   feats: list
   hit-die: text
+  # The features of a character, which its classes give; on a subclass, those it gives with the level of its class, and the class it belongs to (D-219).
+  features: list
+  class: text
+  # The columns of the classes' tables (pp. 8–55), at the character's level in each.
+  rages: number
+  rage-damage: modifier
+  martial-arts: text
+  ki-points: number
+  unarmored-movement: text
+  sneak-attack: text
+  sorcery-points: number
+  cantrips-known: number
+  spells-known: number
+  spell-slots: number
+  slot-level: text
+  invocations-known: number
   hit-dice-d6: counter
   hit-dice-d8: counter
   hit-dice-d10: counter

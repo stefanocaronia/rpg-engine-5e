@@ -1,5 +1,7 @@
 ---
 category: subclass
+class: "[[Druid]]"
+features: [Bonus Cantrip 2, Natural Recovery 2, Circle Spells 3, Land's Stride 6, Nature's Ward 10, Nature's Sanctuary 14]
 ---
 
 The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites.

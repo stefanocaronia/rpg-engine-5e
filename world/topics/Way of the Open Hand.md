@@ -1,5 +1,7 @@
 ---
 category: subclass
+class: "[[Monk]]"
+features: [Open Hand Technique 3, Wholeness of Body 6, Tranquility 11, Quivering Palm 17]
 ---
 
 Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.

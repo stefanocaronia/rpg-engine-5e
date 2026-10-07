@@ -4,7 +4,6 @@ hit-die: d8
 save-proficiencies: [wis, cha]
 armor-proficiencies: [light armor, medium armor, shields]
 weapon-proficiencies: [simple weapons]
-subclasses: ["[[Life Domain]]"]
 ---
 
 **The Cleric**

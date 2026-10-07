@@ -5,7 +5,6 @@ save-proficiencies: [dex, int]
 armor-proficiencies: [light armor]
 weapon-proficiencies: [simple weapons, hand crossbows, longswords, rapiers, shortswords]
 tool-proficiencies: [thieves' tools]
-subclasses: ["[[Thief]]"]
 ---
 
 **The Rogue**

@@ -4,7 +4,6 @@ hit-die: d10
 save-proficiencies: [str, dex]
 armor-proficiencies: [light armor, medium armor, shields]
 weapon-proficiencies: [simple weapons, martial weapons]
-subclasses: ["[[Hunter]]"]
 ---
 
 **The Ranger**
