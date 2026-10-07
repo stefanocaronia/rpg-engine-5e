@@ -25,7 +25,7 @@ xp-value: 50
 The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 ### Pack Tactics
-The wolf has advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
+The wolf has advantage on attack rolls against a creature if at least one of the wolf’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
 
 ## Actions
 

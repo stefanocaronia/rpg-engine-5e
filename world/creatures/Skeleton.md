@@ -18,7 +18,7 @@ damage-immunities: [poison]
 condition-immunities: [exhaustion, poisoned]
 darkvision: 60 ft
 passive-perception: 9
-languages: [understands all languages it knew in life but can't speak]
+languages: [understands all languages it knew in life but can’t speak]
 cr: "1/4"
 xp-value: 50
 ---

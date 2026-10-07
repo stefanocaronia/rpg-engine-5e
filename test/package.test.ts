@@ -2,8 +2,9 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
+import { withWorkedOut } from "../../../src/commands/worked-out.ts";
 import { listItems } from "../../../src/core/formula.ts";
-import { loadWorld, sectionTitles } from "../../../src/pages/index.ts";
+import { loadWorld, readSection, sectionTitles } from "../../../src/pages/index.ts";
 import { featureParts, gainedFeatures, levelledFeatures, levelTable } from "../../../src/progression/index.ts";
 import { readRuleBook, ruleFiles } from "../../../src/rules/index.ts";
 import { findSystem } from "../../../src/systems/index.ts";
@@ -51,7 +52,7 @@ describe("the 5e system", () => {
         // Beside the 50 arms and armor and the 240 magic items, 159 pages of gear: the rest of the Equipment chapter but its mounts, which are creatures at the
         // table, its trade goods, expenses and stabling.
         expect([items.length, items.filter((item) => item.fields.rarity !== undefined).length]).toEqual([449, 240]);
-        expect(page("Riding Horse")).toBeUndefined();
+        expect(items.find((item) => item.name === "Riding Horse")).toBeUndefined();
         // SRD 5.1, pp. 68–69 (the Adventuring Gear table and descriptions), p. 70 (packs and tools), p. 71 (tool descriptions), pp. 71–72 (mounts and vehicles).
         expect(page("Bullseye Lantern")?.fields).toEqual({ aliases: ["Lantern, bullseye"], category: "adventuring gear", cost: "10 gp", weight: "2 lb" });
         expect(page("Bullseye Lantern")?.body).toContain("A bullseye lantern casts bright light in a 60-foot cone");
@@ -177,6 +178,117 @@ describe("the 5e system", () => {
         expect(page("Teleport")?.body).toContain("| False destination | 01–50 | 51–100 | — | — |");
         expect(spells.filter((spell) => listItems(spell.fields["spell-lists"]).length === 0).map((spell) => spell.name)).toEqual([]);
         expect(spells.flatMap((spell) => listItems(spell.fields["spell-lists"]).map((item) => item.name)).filter((name) => !classes.includes(name))).toEqual([]);
+    });
+
+    it("keeps the 317 stat blocks of the SRD 5.1, their header as fields and each trait and action a section, with the SRD's italics", () => {
+        const creatures = loadWorld(folder).pages.filter((page) => page.fields.cr !== undefined);
+        const page = (name: string) => creatures.find((creature) => creature.name === name);
+        const body = (name: string): string => page(name)?.body ?? "";
+        expect(creatures).toHaveLength(317);
+        // SRD 5.1, p. 261 (Aboleth), p. 286 (Ancient Red Dragon), p. 326 (Werebear), pp. 395–396 (Archmage).
+        expect(page("Aboleth")?.fields).toEqual({
+            size: "Large",
+            category: "aberration",
+            alignment: "lawful evil",
+            ac: 17,
+            armor: "natural armor",
+            hp: "135/135",
+            "hp-dice": "18d10 + 36",
+            speed: "10 ft",
+            swim: "40 ft",
+            str: 21,
+            dex: 9,
+            con: 15,
+            int: 18,
+            wis: 15,
+            cha: 18,
+            saves: ["Con +6", "Int +8", "Wis +6"],
+            skills: ["History +12", "Perception +10"],
+            darkvision: "120 ft",
+            "passive-perception": 20,
+            languages: ["Deep Speech", "telepathy 120 ft"],
+            cr: "10",
+            "xp-value": 5900,
+        });
+        expect(sectionTitles(body("Aboleth"))).toEqual([
+            "Traits",
+            "Amphibious",
+            "Mucous Cloud",
+            "Probing Telepathy",
+            "Actions",
+            "Multiattack",
+            "Tentacle",
+            "Tail",
+            "Enslave (3/Day)",
+            "Legendary Actions",
+            "Detect",
+            "Tail Swipe",
+            "Psychic Drain (Costs 2 Actions)",
+        ]);
+        expect(readSection(body("Aboleth"), "Tentacle")).toContain("*Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 12 (2d6 + 5) bludgeoning damage.");
+        expect(readSection(body("Aboleth"), "Tentacle")).toContain("removed only by *heal* or another disease-curing spell");
+        expect(page("Ancient Red Dragon")?.fields).toMatchObject({
+            size: "Gargantuan",
+            ac: 22,
+            hp: "546/546",
+            "hp-dice": "28d20 + 252",
+            speed: "40 ft",
+            climb: "40 ft",
+            fly: "80 ft",
+            str: 30,
+            saves: ["Dex +7", "Con +16", "Wis +9", "Cha +13"],
+            blindsight: "60 ft",
+            darkvision: "120 ft",
+            "passive-perception": 26,
+            cr: "24",
+            "xp-value": 62000,
+        });
+        expect(page("Werebear")?.fields).toMatchObject({
+            ac: 10,
+            armor: "in humanoid form, 11 (natural armor) in bear and hybrid form",
+            speed: "30 ft (40 ft, climb 30 ft in bear or hybrid form)",
+            "damage-immunities": ["bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons"],
+            languages: ["Common (can’t speak in bear form)"],
+        });
+        expect(page("Archmage")?.fields).toMatchObject({
+            armor: "15 with mage armor",
+            "damage-resistances": ["damage from spells", "nonmagical bludgeoning, piercing, and slashing (from stoneskin)"],
+            "slots-1": "4/4",
+            "slots-9": "1/1",
+        });
+        expect(readSection(body("Archmage"), "Spellcasting")).toContain("- 9th level (1 slot): *time stop*\n\n\\**The archmage casts these spells on itself before combat.*");
+        // Names in natural order, and those a page of another kind has or a file cannot hold, with the SRD's as an alias (pp. 307, 315, 398, 349, 351).
+        expect(page("Drow Elf")?.fields.aliases).toEqual(["Elf, Drow"]);
+        expect(page("Deep Gnome (Svirfneblin)")?.fields.aliases).toEqual(["Gnome, Deep (Svirfneblin)"]);
+        expect(page("Druid (creature)")?.fields.aliases).toEqual(["Druid creature"]);
+        expect(page("Succubus-Incubus")?.fields.aliases).toEqual(["Succubus/Incubus"]);
+        expect(sectionTitles(body("Unicorn"))).toContain("Hooves (legendary action)");
+        // A variant is a section of the creature it varies (pp. 378, 391); the Half-Dragon Template (pp. 320–321) is the rules'.
+        expect(sectionTitles(body("Giant Rat"))).toContain("Variant: Diseased Giant Rats");
+        expect(readSection(body("Swarm of Insects"), "Variant: Insect Swarms")).toContain("***Swarm of Wasps.*** A swarm of wasps has a walking speed of 5 feet");
+        expect(sectionTitles(body("Half-Red Dragon Veteran"))).not.toContain("Half-Dragon Template");
+        // A skill with a note keeps its total in the field and the note on the page (p. 344); an armor without its parentheses (p. 264).
+        expect(page("Shadow")?.fields.skills).toEqual(["Stealth +4"]);
+        expect(body("Shadow")).toMatch(/^\*\*Skills\*\* Stealth \+4 \(\+6 in dim light or darkness\)\n/);
+        expect(page("Ankheg")?.fields.armor).toBe("natural armor, 11 while prone");
+    });
+
+    it("works out each creature's saving throws, skills and passive Perception as the totals of its stat block", () => {
+        const system = findSystem(testSystemFolders, "5e")!;
+        // A campaign with no pages of its own, which reads the system's pages with its formulas.
+        const world = loadWorld(import.meta.dirname, { system });
+        const creatures = (world.system?.pages ?? []).filter((page) => page.fields.cr !== undefined);
+        const differences = creatures.flatMap((page) => {
+            const worked = withWorkedOut(world, page.fields, false);
+            const totals: [string, unknown][] = [
+                ...listItems(page.fields.saves).map((item): [string, unknown] => [`${item.name.toLowerCase()}-save`, item.number]),
+                ...listItems(page.fields.skills).map((item): [string, unknown] => [item.name.toLowerCase().replaceAll(" ", "-"), item.number]),
+                ["passive-perception", page.fields["passive-perception"]],
+            ];
+            return totals.filter(([field, total]) => worked[field] !== total).map(([field, total]) => `${page.name}: ${field} ${String(worked[field])}, the stat block ${String(total)}`);
+        });
+        expect(creatures).toHaveLength(317);
+        expect(differences).toEqual([]);
     });
 
     it("gives each class a table of twenty levels whose features are its sections, and each subclass its class and its features by level (D-219)", () => {
