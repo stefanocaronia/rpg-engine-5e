@@ -1,5 +1,9 @@
 ---
 category: class
+spellcasting: half
+spell-save-dc: "8 + proficiency + cha-mod + table(half-caster-start, item(classes, Paladin))"
+spell-attack: "proficiency + cha-mod + table(half-caster-start, item(classes, Paladin))"
+max-prepared: "max(1, cha-mod + floor(item(classes, Paladin) / 2)) + table(half-caster-start, item(classes, Paladin))"
 hit-die: d10
 save-proficiencies: [wis, cha]
 armor-proficiencies: [all armor, shields]

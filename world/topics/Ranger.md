@@ -1,5 +1,8 @@
 ---
 category: class
+spellcasting: half
+spell-save-dc: "8 + proficiency + wis-mod + table(half-caster-start, item(classes, Ranger))"
+spell-attack: "proficiency + wis-mod + table(half-caster-start, item(classes, Ranger))"
 hit-die: d10
 save-proficiencies: [str, dex]
 armor-proficiencies: [light armor, medium armor, shields]

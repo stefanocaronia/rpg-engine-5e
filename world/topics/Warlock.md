@@ -1,5 +1,7 @@
 ---
 category: class
+spell-save-dc: "8 + proficiency + cha-mod"
+spell-attack: "proficiency + cha-mod"
 hit-die: d8
 save-proficiencies: [wis, cha]
 armor-proficiencies: [light armor]

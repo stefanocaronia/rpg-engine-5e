@@ -1,5 +1,9 @@
 ---
 category: class
+spellcasting: full
+spell-save-dc: "8 + proficiency + int-mod"
+spell-attack: "proficiency + int-mod"
+max-prepared: "max(1, int-mod + item(classes, Wizard))"
 hit-die: d6
 save-proficiencies: [int, wis]
 weapon-proficiencies: [daggers, darts, slings, quarterstaffs, light crossbows]

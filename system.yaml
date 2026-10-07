@@ -21,6 +21,7 @@ sheet:
   Combat: [ac, initiative, speed, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?]
   Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies?, tool-proficiencies?, languages]
   Features: [features]
+  Spells: [caster-level?, spell-save-dc?, spell-attack?, slots-1?, slots-2?, slots-3?, slots-4?, slots-5?, slots-6?, slots-7?, slots-8?, slots-9?, spell-slots?, mystic-arcanum?, signature-spells?, max-prepared?, spells?, prepared?]
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: propose some if they ask, never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
@@ -39,6 +40,8 @@ progression:
   features: Features
   skip: [Proficiency Bonus, 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th]
   parts: {list: subclasses, field: class}
+  # Formulas a class page gives, worked out on the character once for each class (D-227, p. 58): each spell uses its class's ability.
+  formulas: [spell-save-dc, spell-attack, max-prepared]
   # What write says when a class rises (pp. 12, 56, D-226): the hit points of the new level go into hp-base.
   level-up: "A new level gives hit points: roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add it to hp-base with write; the system adds con-mod by itself."
 # The lists that mark the numbers of the sheet that read them (D-217): a proficiency, and expertise beside it, as on the paper sheet.
@@ -133,7 +136,7 @@ fields:
   sorcery-points: counter
   cantrips-known: number
   spells-known: number
-  spell-slots: number
+  spell-slots: counter
   slot-level: text
   invocations-known: number
   # Uses of features and traits (D-204, D-220), named after them.
@@ -165,7 +168,14 @@ fields:
   death-successes: counter
   death-failures: counter
   spell-save-dc: number
-  spell-attack: number
+  spell-attack: modifier
+  max-prepared: number
+  caster-level: number
+  mystic-arcanum: counter
+  signature-spells: counter
+  spellcasting: text
+  spells: list
+  prepared: list
   cost: text
   damage: text
   weight: text
@@ -175,6 +185,17 @@ fields:
   rarity: text
   magic: text
   bonus: number
+  # A spell (pp. 114–194): its level, 0 for a cantrip, its school and the lines of its header as the SRD writes them; ritual and concentration only when
+  # true; the classes whose spell list names it (pp. 105–113). Never level or classes, which are a character's.
+  spell-level: number
+  school: text
+  ritual: text
+  casting-time: text
+  range: text
+  components: text
+  duration: text
+  concentration: text
+  spell-lists: list
   # Inspiration, which a character has or has not (p. 60), and the personality (p. 60), as the player says it.
   inspiration: counter
   personality-traits: text
@@ -236,6 +257,20 @@ tables:
   # The uses of Action Surge and Indomitable by fighter level (pp. 24–25).
   action-surge-uses: {0: 0, 2: 1, 17: 2}
   indomitable-uses: {0: 0, 9: 1, 13: 2, 17: 3}
+  # Paladins and rangers cast from 2nd level (pp. 31, 36): before it a class's spellcasting formulas have no value.
+  half-caster-start: {2: 0}
+  # A warlock's Mystic Arcanum, one spell of each level from 6th to 9th, once a long rest (p. 49).
+  mystic-arcanum-uses: {11: 1, 13: 2, 15: 3, 17: 4}
+  # The Multiclass Spellcaster table (p. 58), by caster level; for a single class it gives the class's own table.
+  slots-1-by-caster-level: {1: 2, 2: 3, 3: 4}
+  slots-2-by-caster-level: {3: 2, 4: 3}
+  slots-3-by-caster-level: {5: 2, 6: 3}
+  slots-4-by-caster-level: {7: 1, 8: 2, 9: 3}
+  slots-5-by-caster-level: {9: 1, 10: 2, 18: 3}
+  slots-6-by-caster-level: {11: 1, 19: 2}
+  slots-7-by-caster-level: {13: 1, 20: 2}
+  slots-8-by-caster-level: {15: 1}
+  slots-9-by-caster-level: {17: 1}
 # What the system works out from the sheet (D-199): ability modifiers (p. 76), the proficiency bonus (p. 56), saving throws (p. 83), skills with proficiency
 # and expertise, which doubles a proficiency the character has (pp. 77–78, 13, 39), initiative, a Dexterity check (p. 90), and the passive Perception, Insight
 # and Investigation (p. 78, D-218). A field with two formulas takes the first that has a value (D-210): a character's, which needs a level, then a creature's,
@@ -329,6 +364,9 @@ computed:
   passive-perception: 10 + perception
   passive-insight: 10 + insight
   passive-investigation: 10 + investigation
+  # The caster level for spell slots (p. 57): every level in a full caster's class, half in a half caster's, rounded down; with a single spellcasting
+  # class, a half caster's is its own table, rounded up from 2nd level. No value without a spellcasting class, so no slots.
+  caster-level: "(sum(classes, spellcasting = full) + floor(sum(classes, spellcasting = half) / 2) + (min(1, count(classes, spellcasting = full) + count(classes, spellcasting = half)) - min(1, max(0, count(classes, spellcasting = full) + count(classes, spellcasting = half) - 1))) * (ceil(sum(classes, spellcasting = half) / 2) - floor(sum(classes, spellcasting = half) / 2)) * min(1, floor(sum(classes, spellcasting = half) / 2))) / min(1, count(classes, spellcasting = full) + count(classes, spellcasting = half))"
 # The hit point maximum (pp. 12, 56): what the dice gave, and at every level the Constitution modifier, which follows it when it changes, and the hit
 # points a race adds; at every sorcerer level the Draconic Bloodline's hit point (p. 45). A hit die for each level in a class, of that class's die, counted
 # only for a character with classes, from the die its page writes, of the system or the campaign (p. 56, D-215); inspiration, which a character has or has not (p. 60).
@@ -364,3 +402,17 @@ counters:
   eldritch-master: {max: "has(features, Eldritch Master)", refill: long rest}
   breath-weapon: {refill: short rest}
   relentless-endurance: {refill: long rest}
+  # Spell slots by caster level (p. 57); a warlock's Pact Magic slots from its table, back with a short rest (p. 47), and its Mystic Arcanum; a wizard's
+  # two Signature Spells, each once a short rest (p. 54).
+  slots-1: {max: "table(slots-1-by-caster-level, caster-level)"}
+  slots-2: {max: "table(slots-2-by-caster-level, caster-level)"}
+  slots-3: {max: "table(slots-3-by-caster-level, caster-level)"}
+  slots-4: {max: "table(slots-4-by-caster-level, caster-level)"}
+  slots-5: {max: "table(slots-5-by-caster-level, caster-level)"}
+  slots-6: {max: "table(slots-6-by-caster-level, caster-level)"}
+  slots-7: {max: "table(slots-7-by-caster-level, caster-level)"}
+  slots-8: {max: "table(slots-8-by-caster-level, caster-level)"}
+  slots-9: {max: "table(slots-9-by-caster-level, caster-level)"}
+  spell-slots: {refill: short rest}
+  mystic-arcanum: {max: "table(mystic-arcanum-uses, item(classes, Warlock))", refill: long rest}
+  signature-spells: {max: "2 * has(features, Signature Spells)", refill: short rest}

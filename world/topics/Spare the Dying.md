@@ -1,0 +1,12 @@
+---
+category: spell
+spell-level: 0
+school: necromancy
+casting-time: 1 action
+range: Touch
+components: V, S
+duration: Instantaneous
+spell-lists: [Cleric]
+---
+
+You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.

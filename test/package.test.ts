@@ -46,6 +46,38 @@ describe("the 5e system", () => {
         expect(book.filter((section) => section.file === "Conditions" && section.level === 2)).toHaveLength(15);
     });
 
+    it("keeps the 319 spells of the SRD 5.1, with their header as fields and the classes whose spell list names them", () => {
+        const pages = loadWorld(folder).pages;
+        const spells = pages.filter((page) => page.fields.category === "spell");
+        const page = (name: string) => spells.find((spell) => spell.name === name);
+        const classes = pages.filter((other) => other.fields.category === "class").map((other) => other.name);
+        expect(spells).toHaveLength(319);
+        // SRD 5.1, p. 144 (Fireball), p. 179 (Shield, the name of an item too), p. 143 (Find Familiar, a ritual), p. 114 (Alter Self), p. 139 (Eldritch Blast), pp. 185–186 (Teleport).
+        expect(page("Fireball")?.fields).toEqual({
+            category: "spell",
+            "spell-level": 3,
+            school: "evocation",
+            "casting-time": "1 action",
+            range: "150 feet",
+            components: "V, S, M (a tiny ball of bat guano and sulfur)",
+            duration: "Instantaneous",
+            "spell-lists": ["Sorcerer", "Wizard"],
+        });
+        expect(page("Shield (spell)")?.fields).toMatchObject({
+            aliases: ["Shield spell"],
+            "spell-level": 1,
+            school: "abjuration",
+            "casting-time": "1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell",
+            duration: "1 round",
+        });
+        expect(page("Find Familiar")?.fields).toMatchObject({ ritual: true, "casting-time": "1 hour", "spell-lists": ["Wizard"] });
+        expect(page("Alter Self")?.fields).toMatchObject({ duration: "Concentration, up to 1 hour", concentration: true, "spell-lists": ["Sorcerer", "Wizard"] });
+        expect(page("Eldritch Blast")?.fields).toMatchObject({ "spell-level": 0, school: "evocation", "spell-lists": ["Warlock"] });
+        expect(page("Teleport")?.body).toContain("| False destination | 01–50 | 51–100 | — | — |");
+        expect(spells.filter((spell) => listItems(spell.fields["spell-lists"]).length === 0).map((spell) => spell.name)).toEqual([]);
+        expect(spells.flatMap((spell) => listItems(spell.fields["spell-lists"]).map((item) => item.name)).filter((name) => !classes.includes(name))).toEqual([]);
+    });
+
     it("gives each class a table of twenty levels whose features are its sections, and each subclass its class and its features by level (D-219)", () => {
         const pages = loadWorld(folder).pages;
         const classes = pages.filter((page) => page.fields.category === "class");
