@@ -26,8 +26,8 @@ describe("the 5e system", () => {
     it("keeps the numbers of the SRD 5.1, as these pages of it give them", () => {
         const pages = loadWorld(folder).pages;
         const fields = (name: string): Record<string, unknown> | undefined => pages.find((page) => page.name === name)?.fields;
-        // SRD 5.1, p. 393 (Wolf), p. 356–357 (Zombie), p. 63–64 and 66 (armor and weapons), p. 67 (Healer's Kit).
-        expect(fields("Wolf")).toMatchObject({ ac: 13, hp: "11/11", "hp-dice": "2d8 + 2", speed: "40 ft", str: 12, dex: 15, cr: "1/4 (50 XP)" });
+        // SRD 5.1, p. 393 (Wolf, its challenge and experience points apart), p. 356–357 (Zombie), p. 63–64 and 66 (armor and weapons), p. 67 (Healer's Kit).
+        expect(fields("Wolf")).toMatchObject({ ac: 13, hp: "11/11", "hp-dice": "2d8 + 2", speed: "40 ft", str: 12, dex: 15, cr: "1/4", "xp-value": 50 });
         expect(fields("Zombie")).toMatchObject({ ac: 8, hp: "22/22", "hp-dice": "3d8 + 9", speed: "20 ft", saves: ["Wis +0"] });
         expect(fields("Shield")).toMatchObject({ cost: "10 gp", "armor-class-bonus": "2 + bonus", weight: "6 lb" });
         // The Armor table and the Weapons table (pp. 63, 65–66), as formulas on who wears or wields them (D-231).
@@ -44,15 +44,18 @@ describe("the 5e system", () => {
         expect(fields("Healer's Kit")).toMatchObject({ uses: "10/10" });
     });
 
-    it("keeps the text of the SRD 5.1 in seven chapters of rules, as these parts of it show (D-177)", () => {
+    it("keeps the text of the SRD 5.1 in eight chapters of rules, as these parts of it show (D-177)", () => {
         const rules = join(folder, "rules");
-        expect(ruleFiles(rules)).toEqual(["Adventuring", "Combat", "Conditions", "Equipment", "Spellcasting", "Traps", "Using Ability Scores"]);
+        expect(ruleFiles(rules)).toEqual(["Adventuring", "Beyond 1st Level", "Combat", "Conditions", "Equipment", "Spellcasting", "Traps", "Using Ability Scores"]);
         const book = readRuleBook(rules, "5e");
         const text = (path: string): string => book.find((section) => section.path.join(" › ") === path)?.text ?? "";
         // SRD 5.1, p. 87 (Long Rest), p. 95 (Grappling), p. 358 (Exhaustion), p. 358–359 (the conditions).
         expect(text("Adventuring › Resting › Long Rest")).toContain("A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps");
         expect(text("Combat › Making an Attack › Melee Attacks › Grappling")).toContain("***Escaping a Grapple.***");
         expect(text("Appendix PH-A: Conditions › Exhaustion")).toContain("| 6 | Death |");
+        // SRD 5.1, p. 56 (Character Advancement), p. 57 (Unarmored Defense when multiclassing).
+        expect(text("Beyond 1st Level")).toContain("| 355,000 | 20 | +6 |");
+        expect(text("Beyond 1st Level › Multiclassing › Class Features › Unarmored Defense")).toContain("If you already have the Unarmored Defense feature, you can’t gain it again from another class.");
         expect(book.filter((section) => section.file === "Conditions" && section.level === 2)).toHaveLength(15);
     });
 

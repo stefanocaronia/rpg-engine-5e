@@ -14,7 +14,8 @@ wis: 10
 cha: 10
 passive-perception: 10
 languages: [any one language (usually Common)]
-cr: 0 (10 XP)
+cr: "0"
+xp-value: 10
 ---
 
 Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.

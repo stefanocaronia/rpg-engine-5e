@@ -16,7 +16,8 @@ cha: 10
 skills: [Perception +2]
 passive-perception: 12
 languages: [any one language (usually Common)]
-cr: 1/8 (25 XP)
+cr: "1/8"
+xp-value: 25
 ---
 
 Guards include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles.

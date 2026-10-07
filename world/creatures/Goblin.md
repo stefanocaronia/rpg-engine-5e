@@ -17,7 +17,8 @@ skills: [Stealth +6]
 darkvision: 60 ft
 passive-perception: 9
 languages: [Common, Goblin]
-cr: 1/4 (50 XP)
+cr: "1/4"
+xp-value: 50
 ---
 
 ## Traits

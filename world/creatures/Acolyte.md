@@ -16,7 +16,8 @@ skills: [Medicine +4, Religion +2]
 passive-perception: 12
 languages: [any one language (usually Common)]
 slots-1: 3/3
-cr: 1/4 (50 XP)
+cr: "1/4"
+xp-value: 50
 ---
 
 Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.

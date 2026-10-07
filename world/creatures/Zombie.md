@@ -18,7 +18,8 @@ condition-immunities: [poisoned]
 darkvision: 60 ft
 passive-perception: 8
 languages: [understands the languages it knew in life but can't speak]
-cr: 1/4 (50 XP)
+cr: "1/4"
+xp-value: 50
 ---
 
 ## Traits

@@ -15,7 +15,8 @@ wis: 12
 cha: 6
 skills: [Perception +3, Stealth +4]
 passive-perception: 13
-cr: 1/4 (50 XP)
+cr: "1/4"
+xp-value: 50
 ---
 
 ## Traits

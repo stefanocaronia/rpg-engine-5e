@@ -9,6 +9,12 @@ attribution: >-
 coins: gp 100, pp 1000 rare, ep 50 rare, sp 10, cp 1
 # How long a round lasts (p. 84): in a scene with turns, a duration of up to a minute becomes rounds.
 round: 6 seconds
+# What the setup asks for this system, with the campaign's settings (DAT-10, D-212): how the characters gain levels, with the experience points of the SRD
+# (p. 56), or at the milestones the story reaches, where xp is neither asked nor shown.
+settings:
+  advancement:
+    xp: {means: "experience points, as the SRD: scene close says those of the creatures overcome, and you give more with change, as you judge, for what the story rewards, to one character or to all"}
+    milestones: {means: "the characters rise when the story reaches a milestone, such as the end of an adventure or a great goal: you say when", without: [xp]}
 # The character sheet, in groups (D-207, DAT-2): show gives a character so, and Page#Group one group with how each number is made. A field in parentheses
 # is shown beside the one before it. Only what the system does not work out (computed, below) is written: status lists it until there is a player character,
 # and reminds what a character still lacks; with ? a field written only when it applies, never reminded.
@@ -45,7 +51,9 @@ progression:
   skip: [Proficiency Bonus, 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th]
   parts: {list: subclasses, field: class}
   # What write says when a class rises (pp. 12, 56, D-226): the hit points of the new level go into hp-base.
-  level-up: "A new level gives hit points: roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add it to hp-base with write; the system adds con-mod by itself."
+  level-up: "A new level gives hit points: roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add it to hp-base with write; the system adds con-mod by itself. A first level in another class follows rules \"Multiclassing\", with its prerequisites and the few proficiencies it gives."
+  # The experience points each level needs (p. 56, D-205, PRO-6): the line says how many the next one needs, and status when one is due.
+  experience: {field: xp, table: xp-by-level, rules: Beyond 1st Level}
 # The fields whose value on the page of each item of a list is a formula worked out on the character, once for each item (PRO-5, D-227): a class's save DC,
 # attack and prepared spells, since each spell uses its class's ability (p. 58).
 item-formulas:
@@ -55,7 +63,7 @@ item-formulas:
 # The lists that mark the numbers of the sheet that read them (D-217): a proficiency, and expertise beside it, as on the paper sheet.
 marks: [save-proficiencies, skill-proficiencies, expertise]
 # What the line of the player character and the companions shows, in status and in scenes, in order; with ? a field usually at zero: shown, and reported by a recipe, only when it is not.
-status-line: [level, hp, temp-hp?, ac, passive-perception, hit-dice-d6, hit-dice-d8, hit-dice-d10, hit-dice-d12, slots-1, slots-2, slots-3, slots-4, slots-5, slots-6, slots-7, slots-8, slots-9, inspiration?, exhaustion?, death-successes?, death-failures?]
+status-line: [level, xp, hp, temp-hp?, ac, passive-perception, hit-dice-d6, hit-dice-d8, hit-dice-d10, hit-dice-d12, slots-1, slots-2, slots-3, slots-4, slots-5, slots-6, slots-7, slots-8, slots-9, inspiration?, exhaustion?, death-successes?, death-failures?]
 # A counter of the player character or a companion at a value, or at every change: the rule to read (pp. 97–98, 358).
 thresholds:
   hp 0: Dropping to 0 Hit Points
@@ -73,6 +81,9 @@ recipes:
   short rest:
     ends: [short rest]
     rules: [Short Rest]
+# What the creatures overcome in a scene give the party (p. 258, D-205, DAT-11): scene close says the xp of those at 0 hit points, shared among the party there.
+rewards:
+  xp: {from: xp-value, overcome: hp 0}
 # The conditions (Appendix PH-A, pp. 358–359): an effect with one of these names shows its rule.
 conditions: [Blinded, Charmed, Deafened, Frightened, Grappled, Incapacitated, Invisible, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned, Unconscious]
 # How the engine reads each field: only counters are counted; numbers, text and lists never are, nor are they money.
@@ -124,6 +135,8 @@ fields:
   passive-investigation: number
   languages: list
   cr: text
+  # The experience points a creature is worth, as its stat block gives them beside its challenge (p. 258): what overcoming it gives the party (DAT-11).
+  xp-value: number
   slots-1: counter
   slots-2: counter
   slots-3: counter
@@ -281,6 +294,8 @@ fields:
 # The proficiency bonus by level (p. 56).
 tables:
   proficiency-by-level: {1: 2, 5: 3, 9: 4, 13: 5, 17: 6}
+  # The experience points each level needs (Character Advancement, p. 56).
+  xp-by-level: {1: 0, 2: 300, 3: 900, 4: 2700, 5: 6500, 6: 14000, 7: 23000, 8: 34000, 9: 48000, 10: 64000, 11: 85000, 12: 100000, 13: 120000, 14: 140000, 15: 165000, 16: 195000, 17: 225000, 18: 265000, 19: 305000, 20: 355000}
   # The uses of Action Surge and Indomitable by fighter level (pp. 24–25).
   action-surge-uses: {0: 0, 2: 1, 17: 2}
   indomitable-uses: {0: 0, 9: 1, 13: 2, 17: 3}
