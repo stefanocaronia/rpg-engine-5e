@@ -50,9 +50,11 @@ thresholds:
   death-successes 3: Stabilizing a Creature
   exhaustion: Exhaustion
 # The rests (pp. 87, 99, 100): the fields they bring to their maximum or to a value, the effects they end, and the titles of the rules for what they leave to the master.
+# The uses below come back with the rests they name; a long rest brings back up to half the hit dice, at least one, of any kind (pp. 57, 87).
 recipes:
   long rest:
     set: { hp: max, temp-hp: 0, slots-*: max }
+    regain: { hit-dice-*: "max(1, floor(level / 2))" }
     ends: [long rest, short rest]
     rules: [Long Rest]
   short rest:
@@ -120,18 +122,38 @@ fields:
   features: list
   class: text
   # The columns of the classes' tables (pp. 8–55), at the character's level in each.
-  rages: number
+  rages: counter
   rage-damage: modifier
   martial-arts: text
-  ki-points: number
+  ki-points: counter
   unarmored-movement: text
   sneak-attack: text
-  sorcery-points: number
+  sorcery-points: counter
   cantrips-known: number
   spells-known: number
   spell-slots: number
   slot-level: text
   invocations-known: number
+  # Uses of features and traits (D-204, D-220), named after them.
+  channel-divinity: counter
+  action-surge: counter
+  second-wind: counter
+  indomitable: counter
+  wild-shape: counter
+  bardic-inspiration: counter
+  divine-sense: counter
+  lay-on-hands: counter
+  cleansing-touch: counter
+  arcane-recovery: counter
+  natural-recovery: counter
+  wholeness-of-body: counter
+  holy-nimbus: counter
+  dark-ones-own-luck: counter
+  hurl-through-hell: counter
+  stroke-of-luck: counter
+  eldritch-master: counter
+  breath-weapon: counter
+  relentless-endurance: counter
   hit-dice-d6: counter
   hit-dice-d8: counter
   hit-dice-d10: counter
@@ -209,6 +231,9 @@ fields:
 # The proficiency bonus by level (p. 56).
 tables:
   proficiency-by-level: {1: 2, 5: 3, 9: 4, 13: 5, 17: 6}
+  # The uses of Action Surge and Indomitable by fighter level (pp. 24–25).
+  action-surge-uses: {0: 0, 2: 1, 17: 2}
+  indomitable-uses: {0: 0, 9: 1, 13: 2, 17: 3}
 # What the system works out from the sheet (D-199): ability modifiers (p. 76), the proficiency bonus (p. 56), saving throws (p. 83), skills with proficiency
 # and expertise, which doubles a proficiency the character has (pp. 77–78, 13, 39), initiative, a Dexterity check (p. 90), and the passive Perception, Insight
 # and Investigation (p. 78, D-218). A field with two formulas takes the first that has a value (D-210): a character's, which needs a level, then a creature's, from the totals its stat
@@ -308,3 +333,28 @@ counters:
   hit-dice-d10: {max: "sum(classes, hit-die = d10)"}
   hit-dice-d12: {max: "sum(classes, hit-die = d12)"}
   inspiration: {max: 1}
+  # The uses of features (D-204, D-220), from their class's table or text, and the rest that brings them back (pp. 8–55). Rages, ki points and sorcery points
+  # take their maximum from the class's row; Channel Divinity counts once from two classes (p. 57); a bard's inspiration comes back with a short rest from
+  # Font of Inspiration, and a sorcerer at 20th level regains 4 sorcery points with one. A race's uses are written on its page, such as Breath Weapon.
+  rages: {refill: long rest}
+  ki-points: {refill: short rest}
+  sorcery-points: {refill: {long rest: max, short rest: "4 * has(features, Sorcerous Restoration)"}}
+  bardic-inspiration: {max: "has(features, Bardic Inspiration) * max(1, cha-mod)", refill: {long rest: max, short rest: "max * has(features, Font of Inspiration)"}}
+  channel-divinity: {max: "max(item(features, Channel Divinity), has(features, Channel Divinity))", refill: short rest}
+  action-surge: {max: "table(action-surge-uses, item(classes, Fighter))", refill: short rest}
+  second-wind: {max: "has(features, Second Wind)", refill: short rest}
+  indomitable: {max: "table(indomitable-uses, item(classes, Fighter))", refill: long rest}
+  wild-shape: {max: "2 * has(features, Wild Shape) * (1 - has(features, Archdruid))", refill: short rest}
+  divine-sense: {max: "has(features, Divine Sense) * (1 + cha-mod)", refill: long rest}
+  lay-on-hands: {max: "5 * item(classes, Paladin)", refill: long rest}
+  cleansing-touch: {max: "has(features, Cleansing Touch) * max(1, cha-mod)", refill: long rest}
+  arcane-recovery: {max: "has(features, Arcane Recovery)", refill: long rest}
+  natural-recovery: {max: "has(features, Natural Recovery)", refill: long rest}
+  wholeness-of-body: {max: "has(features, Wholeness of Body)", refill: long rest}
+  holy-nimbus: {max: "has(features, Holy Nimbus)", refill: long rest}
+  dark-ones-own-luck: {max: "has(features, Dark One's Own Luck)", refill: short rest}
+  hurl-through-hell: {max: "has(features, Hurl Through Hell)", refill: long rest}
+  stroke-of-luck: {max: "has(features, Stroke of Luck)", refill: short rest}
+  eldritch-master: {max: "has(features, Eldritch Master)", refill: long rest}
+  breath-weapon: {refill: short rest}
+  relentless-endurance: {refill: long rest}

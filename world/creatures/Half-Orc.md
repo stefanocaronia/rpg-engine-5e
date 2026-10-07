@@ -5,6 +5,7 @@ speed: 30 ft
 darkvision: 60 ft
 languages: [Common, Orc]
 skill-proficiencies: [Intimidation]
+relentless-endurance: 1/1
 ---
 
 Your half-orc character has certain traits deriving from your orc ancestry.

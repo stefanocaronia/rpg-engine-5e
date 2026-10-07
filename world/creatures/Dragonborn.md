@@ -3,6 +3,7 @@ size: Medium
 category: race
 speed: 30 ft
 languages: [Common, Draconic]
+breath-weapon: 1/1
 ---
 
 Your draconic heritage manifests in a variety of traits you share with other dragonborn.
