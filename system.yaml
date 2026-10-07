@@ -39,6 +39,8 @@ progression:
   features: Features
   skip: [Proficiency Bonus, 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th]
   parts: {list: subclasses, field: class}
+  # What write says when a class rises (pp. 12, 56, D-226): the hit points of the new level go into hp-base.
+  level-up: "A new level gives hit points: roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add it to hp-base with write; the system adds con-mod by itself."
 # The lists that mark the numbers of the sheet that read them (D-217): a proficiency, and expertise beside it, as on the paper sheet.
 marks: [save-proficiencies, skill-proficiencies, expertise]
 # What the line of the player character and the companions shows, in status and in scenes, in order; with ? a field usually at zero: shown, and reported by a recipe, only when it is not.
@@ -338,13 +340,13 @@ counters:
   hit-dice-d12: {max: "sum(classes, hit-die = d12)"}
   inspiration: {max: 1}
   # The uses of features (D-204, D-220), from their class's table or text, and the rest that brings them back (pp. 8–55). Rages, ki points and sorcery points
-  # take their maximum from the class's row; Channel Divinity counts once from two classes (p. 57); a bard's inspiration comes back with a short rest from
+  # take their maximum from the class's row; Channel Divinity counts once from two classes (p. 57), and a paladin has it from the Sacred Oath (p. 32); a bard's inspiration comes back with a short rest from
   # Font of Inspiration, and a sorcerer at 20th level regains 4 sorcery points with one. A race's uses are written on its page, such as Breath Weapon.
   rages: {refill: long rest}
   ki-points: {refill: short rest}
   sorcery-points: {refill: {long rest: max, short rest: "4 * has(features, Sorcerous Restoration)"}}
   bardic-inspiration: {max: "has(features, Bardic Inspiration) * max(1, cha-mod)", refill: {long rest: max, short rest: "max * has(features, Font of Inspiration)"}}
-  channel-divinity: {max: "max(item(features, Channel Divinity), has(features, Channel Divinity))", refill: short rest}
+  channel-divinity: {max: "max(item(features, Channel Divinity), has(features, Channel Divinity), has(features, Sacred Oath))", refill: short rest}
   action-surge: {max: "table(action-surge-uses, item(classes, Fighter))", refill: short rest}
   second-wind: {max: "has(features, Second Wind)", refill: short rest}
   indomitable: {max: "table(indomitable-uses, item(classes, Fighter))", refill: long rest}
