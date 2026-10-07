@@ -1,4 +1,5 @@
 # Extracts the SRD 5.1 PDF as text in reading order: for each page the left column, then the right one; lines rebuilt from word positions.
+# python systems/5e/build/extract.py <SRD_CC_v5.1.pdf> <text>: normalize.mjs then cleans the text into srd51-norm.txt, which the converters read.
 import sys, pathlib, pdfplumber
 source, target = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
 out = []

@@ -1,6 +1,6 @@
 // Writes the spells of the SRD 5.1 as pages in world/topics, from the text and the outline of its PDF: node systems/5e/build/spells.mjs <srd51-norm.txt> <srd51-outline.tsv>
-// Its inputs come from the SRD's PDF with pdfplumber: outline.py writes the headings (srd51-outline.tsv), extract.py the text by columns; srd51-norm.txt
-// is that text after a cleanup not kept here yet: the import of the whole SRD will keep it.
+// Its inputs come from the SRD's PDF with pdfplumber: outline.py writes the headings (srd51-outline.tsv), extract.py the text by columns, which
+// normalize.mjs cleans into srd51-norm.txt.
 import { readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse, stringify } from "yaml";

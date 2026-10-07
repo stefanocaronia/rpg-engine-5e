@@ -44,9 +44,27 @@ describe("the 5e system", () => {
         expect(fields("Healer's Kit")).toMatchObject({ uses: "10/10" });
     });
 
-    it("keeps the text of the SRD 5.1 in eight chapters of rules, as these parts of it show (D-177)", () => {
+    it("keeps the text of the SRD 5.1 in seventeen chapters of rules, as these parts of it show (D-177)", () => {
         const rules = join(folder, "rules");
-        expect(ruleFiles(rules)).toEqual(["Adventuring", "Beyond 1st Level", "Combat", "Conditions", "Equipment", "Spellcasting", "Traps", "Using Ability Scores"]);
+        expect(ruleFiles(rules)).toEqual([
+            "Adventuring",
+            "Beyond 1st Level",
+            "Combat",
+            "Conditions",
+            "Diseases",
+            "Equipment",
+            "Fantasy-Historical Pantheons",
+            "Madness",
+            "Monsters",
+            "Nonplayer Characters",
+            "Objects",
+            "Poisons",
+            "Races",
+            "Spellcasting",
+            "The Planes of Existence",
+            "Traps",
+            "Using Ability Scores",
+        ]);
         const book = readRuleBook(rules, "5e");
         const text = (path: string): string => book.find((section) => section.path.join(" › ") === path)?.text ?? "";
         // SRD 5.1, p. 87 (Long Rest), p. 95 (Grappling), p. 358 (Exhaustion), p. 358–359 (the conditions).
@@ -57,6 +75,21 @@ describe("the 5e system", () => {
         expect(text("Beyond 1st Level")).toContain("| 355,000 | 20 | +6 |");
         expect(text("Beyond 1st Level › Multiclassing › Class Features › Unarmored Defense")).toContain("If you already have the Unarmored Defense feature, you can’t gain it again from another class.");
         expect(book.filter((section) => section.file === "Conditions" && section.level === 2)).toHaveLength(15);
+        // SRD 5.1, p. 3 (Subraces), p. 59 (Exotic Languages), p. 60 (Using Inspiration), pp. 199–200 (Sight Rot), p. 201 (Short-Term Madness), p. 203 (Object
+        // Armor Class), p. 205 (Serpent Venom), p. 256 and p. 258 (the tables by challenge rating, printed in two halves), p. 260 (Lair Actions), p. 321 (the
+        // Half-Dragon Template), p. 362 (Norse Deities).
+        expect(text("Races › Racial Traits › Subraces")).toContain("Members of a subrace have the traits of the parent race in addition to the traits specified for their subrace.");
+        expect(text("Beyond 1st Level › Languages › Exotic Languages")).toContain("| Deep Speech | Aboleths, cloakers | — |");
+        expect(text("Beyond 1st Level › Inspiration › Using Inspiration")).toContain("Spending your inspiration gives you advantage on that roll.");
+        expect(text("Diseases › Sample Diseases › Sight Rot")).toContain("Sight rot can be cured using a rare flower called Eyebright");
+        expect(text("Madness › Madness Effects › Short-Term Madness")).toContain("| 81–90 | The character is stunned. |");
+        expect(text("Objects › Statistics for Objects › Object Armor Class")).toContain("| Adamantine | 23 |");
+        expect(text("Poisons › Sample Poisons › Serpent Venom (Injury)")).toContain("must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save");
+        expect(text("Monsters › Saving Throws › Proficiency Bonus by Challenge Rating")).toContain("| 1/8 | +2 |\n| 1/4 | +2 |");
+        expect(text("Monsters › Challenge › Experience Points › Experience Points by Challenge Rating")).toContain("| 13 | 10,000 |\n| 14 | 11,500 |");
+        expect(text("Monsters › Legendary Creatures › A Legendary Creature’s Lair › Lair Actions")).toContain("On initiative count 20 (losing all initiative ties)");
+        expect(text("Monsters › Half-Dragon Template")).toContain("| Huge | As a young dragon | Challenge 7 or higher |");
+        expect(text("Appendix PH-B: Fantasy-Historical Pantheons › The Norse Pantheon › Norse Deities")).toContain("| Thor, god of storms and thunder | CG | Tempest, War | Hammer |");
     });
 
     it("keeps the 319 spells of the SRD 5.1, with their header as fields and the classes whose spell list names them", () => {
