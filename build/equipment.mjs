@@ -95,8 +95,9 @@ function weaponPage({ category, cells })
     const name = names[srdName] ?? titled(srdName);
     const kept = properties === "—" ? [] : properties.split(/,\s*(?![^()]*\))/).map((property) => property.toLowerCase());
     const ranged = category.includes("ranged");
-    // A monk's weapons, simple melee ones neither two-handed nor heavy, take Dexterity with Martial Arts (p. 26); a shortsword is a finesse weapon already.
-    const monk = category === "simple melee weapon" && !kept.includes("two-handed") && !kept.includes("heavy");
+    // A monk's weapons, shortswords and simple melee ones neither two-handed nor heavy, take Dexterity with Martial Arts, a shortsword being a finesse weapon
+    // already, and roll its die in place of their own when it is larger (p. 26, D-235).
+    const monk = (category === "simple melee weapon" && !kept.includes("two-handed") && !kept.includes("heavy")) || name === "Shortsword";
     const ability = kept.includes("finesse") ? "max(str-mod, dex-mod)" : ranged ? "dex-mod" : monk ? "best(str-mod, dex-mod / has(features, Martial Arts))" : "str-mod";
     const proficient = `proficiency * max(has(weapon-proficiencies, ${category.split(" ")[0]} weapons), has(weapon-proficiencies, ${name}), has(weapon-proficiencies, ${name.toLowerCase()}s))`;
     const archery = ranged ? " + 2 * has(fighting-styles, Archery)" : "";
@@ -111,7 +112,7 @@ function weaponPage({ category, cells })
         ...(kept.length === 0 ? {} : { properties: kept }),
         bonus: 0,
         attack: `${ability} + ${proficient} + bonus${archery}`,
-        ...(amount === undefined ? {} : { "damage-roll": `${amount} + ${ability} + bonus${dueling} ${type}` }),
+        ...(amount === undefined ? {} : { "damage-roll": `${monk ? `dice(${amount}, martial-arts)` : amount} + ${ability} + bonus${dueling} ${type}` }),
     };
     return { name, text: pageText(fields, ["Lance", "Net"].includes(srdName) ? description(srdName) : "") };
 }

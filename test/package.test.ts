@@ -49,9 +49,9 @@ describe("the 5e system", () => {
         const pages = loadWorld(folder).pages;
         const page = (name: string) => pages.find((other) => other.name === name);
         const items = pages.filter((other) => other.type === "item");
-        // Beside the 50 arms and armor and the 240 magic items, 159 pages of gear: the rest of the Equipment chapter but its mounts, which are creatures at the
-        // table, its trade goods, expenses and stabling.
-        expect([items.length, items.filter((item) => item.fields.rarity !== undefined).length]).toEqual([449, 240]);
+        // Beside the 50 arms and armor, the unarmed strike (D-235) and the 240 magic items, 159 pages of gear: the rest of the Equipment chapter but its mounts,
+        // which are creatures at the table, its trade goods, expenses and stabling.
+        expect([items.length, items.filter((item) => item.fields.rarity !== undefined).length]).toEqual([450, 240]);
         expect(items.find((item) => item.name === "Riding Horse")).toBeUndefined();
         // SRD 5.1, pp. 68–69 (the Adventuring Gear table and descriptions), p. 70 (packs and tools), p. 71 (tool descriptions), pp. 71–72 (mounts and vehicles).
         expect(page("Bullseye Lantern")?.fields).toEqual({ aliases: ["Lantern, bullseye"], category: "adventuring gear", cost: "10 gp", weight: "2 lb" });

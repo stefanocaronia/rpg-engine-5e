@@ -6,5 +6,5 @@ weight: 2 lb
 properties: [light]
 bonus: 0
 attack: "best(str-mod, dex-mod / has(features, Martial Arts)) + proficiency * max(has(weapon-proficiencies, simple weapons), has(weapon-proficiencies, Club), has(weapon-proficiencies, clubs)) + bonus"
-damage-roll: "1d4 + best(str-mod, dex-mod / has(features, Martial Arts)) + bonus + 2 * has(fighting-styles, Dueling) bludgeoning"
+damage-roll: "dice(1d4, martial-arts) + best(str-mod, dex-mod / has(features, Martial Arts)) + bonus + 2 * has(fighting-styles, Dueling) bludgeoning"
 ---

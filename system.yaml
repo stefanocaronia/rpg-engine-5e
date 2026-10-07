@@ -35,8 +35,23 @@ sheet-notes:
   Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it. Armor and weapons by the names the class page uses, in English, such as weapon-proficiencies: [simple weapons, martial weapons]: the attacks read them."
   Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. Slots, save DC and attack are worked out: never write them."
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries, each an item of the campaign derived from the system's, such as item=[[Chain Mail]]: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex."
-  Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's writes its own damage-roll, as the kind's page does. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
+  Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's copies the kind's damage-roll with its own dice in place, such as 1d10 + str-mod + bonus + 2 * has(fighting-styles, Dueling) slashing. A companion's natural attacks, such as a wolf's bite, are in its stat block, beside the unarmed strike every sheet shows. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
   Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
+# How the player character is made, which status says until there is one and while its sheet is being made (DAT-12, D-235, D-236): the steps of the
+# game in our words, the ways tables make the ability scores (D-202), and what the table agrees before play.
+creation: >-
+  agree first, and set with config in table: how the ability scores are made, multiclassing, feats, and the hit points of a new level rolled or at
+  average. Every choice is the player's, unless they ask you to make it. Then, in order, with write: race and class at 1st level, creature=[[Hill
+  Dwarf]], classes=[[Fighter]] 1, with the choices its features ask, in their lists, such as a cleric's, sorcerer's or warlock's subclass, a fighting
+  style, expertise. The six ability scores: the set 15, 14, 13, 12, 10, 8; or 27 points, each score from 8, where 9 to 13 cost 1 to 5 in all, 14 costs 7
+  and 15 costs 9; or 4d6 dropping the lowest die, six times, rolled by the player once you have said the net, such as rolling again a set with no score
+  above 13; then add the race's increases to the scores you write: the system does not. The background; with add, the proficiencies and languages of
+  class and background, and the race's choices, such as a language or a cantrip (what it fixes comes with it); one given twice lets them pick another.
+  hp-base, the largest number of the class's hit die. The starting equipment of class and background, or its coins if the table agrees: armor, shield,
+  weapons and what has uses as items of the campaign derived from the system's, in inventory and, when worn or ready, in equipped; the rest as text in
+  inventory, the coins in money. The spells the class gives at 1st level, as its page says. Alignment and personality, in the player's words. Last, read
+  the sheet with the player, and fix what they do not recognise. One who starts higher has the experience points of that level (with advancement xp), in
+  hp-base the die's largest number for the first level and a roll or the average for each other, and makes every level's choices.
 # The names a list takes (pp. 77, 83): write refuses others, giving these, and validate reports those written by hand. Only lists the game closes:
 # expertise is open, since a feature may give it in any tool (D-216).
 values:
@@ -52,7 +67,7 @@ progression:
   parts: {list: subclasses, field: class}
   # What write says when a class rises (each class's Hit Points, pp. 8–55; p. 56; D-226): the hit points of each new level go into hp-base, and the choices
   # the new features ask are the player's, or the master's for a companion (D-205, D-209).
-  level-up: "Each new level gives hit points: for each, roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add them to hp-base with write, without con-mod, which the system adds by itself. Then go through the new features and the columns that grew (show Page#Feature): the choices they ask, such as an Ability Score Improvement, a subclass or the spells a wizard adds to the spellbook, are the player's for the player character, yours for a companion unless the player made it, written in their lists. A first level in another class follows rules \"Multiclassing\", with its prerequisites and the few proficiencies it gives."
+  level-up: "Each new level gives hit points, but a new character's first, which takes the largest number of its class's hit die: for each, roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add them to hp-base with write, without con-mod, which the system adds by itself. Then go through the new features and the columns that grew (show Page#Feature): the choices they ask, such as an Ability Score Improvement, a subclass or the spells a wizard adds to the spellbook, are the player's for the player character, yours for a companion unless the player made it, written in their lists. A first level in another class follows rules \"Multiclassing\", with its prerequisites and the few proficiencies it gives."
   # The experience points each level needs (p. 56, D-205, PRO-6): the line says how many the next one needs, and status when one is due.
   experience: {field: xp, table: xp-by-level, rules: Beyond 1st Level}
 # The fields whose value on the page of each item of a list is a formula worked out on the character, once for each item (PRO-5, D-227): a class's save DC,
@@ -61,6 +76,9 @@ item-formulas:
   classes: [spell-save-dc, spell-attack, max-prepared, unarmored-ac]
   # What an armor, a shield and a weapon give who has it equipped (pp. 63, 65, D-231): the armor class and its bonus, the attack and the damage.
   equipped: [armor-class, armor-class-bonus, attack, damage-roll]
+# What every character with a sheet has in a list without writing it there (DAT-13, D-235): the unarmed strike, always ready, among the attacks as on a sheet (p. 92).
+always-in:
+  equipped: [Unarmed Strike]
 # The lists that mark the numbers of the sheet that read them (D-217): a proficiency, and expertise beside it, as on the paper sheet.
 marks: [save-proficiencies, skill-proficiencies, expertise]
 # What the line of the player character and the companions shows, in status and in scenes, in order; with ? a field usually at zero: shown, and reported by a recipe, only when it is not.
