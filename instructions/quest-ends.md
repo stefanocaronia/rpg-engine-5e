@@ -1,0 +1,1 @@
+What the story rewards: with xp, give it with change, as you judge, to one character or to all; with milestones, if this was one, tell the player in brackets what they achieved and that the characters rise, then level them up with the player, now or at the next rest, as they prefer.
