@@ -2,6 +2,7 @@
 category: subclass
 class: "[[Cleric]]"
 features: [Bonus Proficiency 1, Disciple of Life 1, "Channel Divinity: Preserve Life 2", Blessed Healer 6, Divine Strike 8, Supreme Healing 17]
+prepared: [Bless 1, Cure Wounds 1, Lesser Restoration 3, Spiritual Weapon 3, Beacon of Hope 5, Revivify 5, Death Ward 7, Guardian of Faith 7, Mass Cure Wounds 9, Raise Dead 9]
 ---
 
 The Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities (such as Chauntea, Arawai, and Demeter), sun gods (such as Lathander, Pelor, and Re-Horakhty), gods of healing or endurance (such as Ilmater, Mishakal, Apollo, and Diancecht), and gods of home and community (such as Hestia, Hathor, and Boldrei).

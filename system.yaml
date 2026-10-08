@@ -64,7 +64,8 @@ progression:
   list: classes
   features: Features
   skip: [Proficiency Bonus, 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th]
-  parts: {list: subclasses, field: class}
+  # A subclass adds to prepared the spells it lists by its class's level, always prepared and not counted: a domain's or an oath's (pp. 16, 32; PRO-7).
+  parts: {list: subclasses, field: class, lists: [prepared]}
   # What write says when a class rises (each class's Hit Points, pp. 8–55; p. 56; D-226): the hit points of each new level go into hp-base, and the choices
   # the new features ask are the player's, or the master's for a companion (D-205, D-209).
   level-up: "Each new level gives hit points, but a new character's first, which takes the largest number of its class's hit die: for each, roll the hit die of the class that rose (the player for the player character, you for a companion), or take its average (d6 4, d8 5, d10 6, d12 7), and add them to hp-base with write, without con-mod, which the system adds by itself. Then go through the new features and the columns that grew (show Page#Feature): the choices they ask, such as an Ability Score Improvement, a subclass or the spells a wizard adds to the spellbook, are the player's for the player character, yours for a companion unless the player made it, written in their lists. A first level in another class follows rules \"Multiclassing\", with its prerequisites and the few proficiencies it gives."
