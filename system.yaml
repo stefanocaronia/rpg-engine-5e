@@ -9,6 +9,24 @@ attribution: >-
 coins: gp 100, pp 1000 rare, ep 50 rare, sp 10, cp 1
 # How long a round lasts (p. 84): in a scene with turns, a duration of up to a minute becomes rounds.
 round: 6 seconds
+# What the game's mile and foot are worth in metric (D-262), as the Italian books count them: the engine keeps every measure in metric, and its outputs in
+# imperial give back the SRD's numbers, such as 3 miles an hour for the normal pace.
+imperial: {mile: 1.5 km, foot: 0.3 m}
+# How one travels (TRV-1–TRV-3, TRV-8; Adventuring › Travel Pace and Difficult Terrain): the paces of an hour (4, 3 and 2 miles), 8 hours of travel a day,
+# beyond them a forced march; difficult terrain halves a pace. A river or the sea is travelled only in a waterborne vehicle, at its speed, up to 24 hours a
+# day; going downstream adds the current, typically 3 miles an hour (Keelboat, Rowboat).
+travel:
+  paces: {fast: 6 km, normal: 4.5 km, slow: 3 km}
+  pace: normal
+  hours: 8
+  rule: Travel Pace
+  beyond: Forced March
+  terrain: {difficult: 1/2}
+  kinds:
+    road: {}
+    path: {}
+    river: {vehicle: {category: waterborne vehicle}, speed: speed, hours: 24, current: 4.5 km}
+    sea: {vehicle: {category: waterborne vehicle}, speed: speed, hours: 24}
 # What the setup asks for this system, with the campaign's settings (DAT-10, D-212): how the characters gain levels, with the experience points of the SRD
 # (p. 56), or at the milestones the story reaches, where xp is neither asked nor shown.
 settings:

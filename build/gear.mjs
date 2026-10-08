@@ -94,13 +94,20 @@ function tablePages(table, spec, descriptions)
         const fields = {
             ...(pageName(srdName).toLowerCase() === name.toLowerCase() || group === "Saddle" ? {} : { aliases: [pageName(srdName)] }),
             category: group === undefined ? (drawnVehicles.includes(name) ? "drawn vehicle" : spec.category) : pageName(group).toLowerCase(),
-            ...Object.fromEntries(spec.fields.map((field, index) => [field, values[index].replace(/\.(?= |$)/g, "")]).filter(([, value]) => value !== "—")),
+            ...Object.fromEntries(spec.fields.map((field, index) => [field, valueOf(field, values[index].replace(/\.(?= |$)/g, ""))]).filter(([, value]) => value !== "—")),
             ...(length === undefined ? {} : { length: `${length} feet` }),
             ...counters[name],
         };
         const titles = [describedBy[name], describedBy[group], srdName, srdName.split(",")[0], group].filter((title) => title !== undefined).map(titleKey);
         return { name, fields, body: (descriptions.get(titles.find((title) => descriptions.has(title))) ?? []).join("\n\n") };
     });
+}
+
+/** A column's value as the page writes it: a speed in metric, with the game's factor of 1.5 km a mile, as every measure the engine reads (D-262): 4 mph is 6 km/h. */
+function valueOf(field, value)
+{
+    const mph = field === "speed" ? /^(\d*)(½)? mph$/.exec(value) : null;
+    return mph === null ? value : `${(Number(mph[1] || 0) + (mph[2] === undefined ? 0 : 0.5)) * 1.5} km/h`;
 }
 
 function tableOf(blocks, caption)

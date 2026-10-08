@@ -66,7 +66,7 @@ describe("the 5e system", () => {
         expect(page("Disguise Kit")?.fields).toEqual({ category: "tool", cost: "25 gp", weight: "3 lb" });
         expect(page("Thieves' Tools")?.body).toContain("a set of lock picks");
         expect(page("Exotic Saddle")?.fields).toEqual({ category: "saddle", cost: "60 gp", weight: "40 lb" });
-        expect(page("Galley")?.fields).toEqual({ category: "waterborne vehicle", cost: "30,000 gp", speed: "4 mph" });
+        expect(page("Galley")?.fields).toEqual({ category: "waterborne vehicle", cost: "30,000 gp", speed: "6 km/h" });
     });
 
     it("keeps the 240 magic items of the SRD 5.1, with their type line as fields and the SRD's text alone, without ours (pp. 206–253, D-170)", () => {

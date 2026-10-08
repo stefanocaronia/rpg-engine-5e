@@ -1,5 +1,5 @@
 ---
 category: waterborne vehicle
 cost: "25,000 gp"
-speed: 2½ mph
+speed: 3.75 km/h
 ---
