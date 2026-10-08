@@ -101,7 +101,7 @@ recipes:
     ends: [short rest]
     rules: [Short Rest]
 # What write says when a quest is done or failed (D-233): what the story rewards, with either way of gaining levels.
-quest-ends: "What the story rewards: with xp, give it with change, as you judge, to one character or to all; with milestones, if this was one, level up the characters with the player."
+quest-ends: "What the story rewards: with xp, give it with change, as you judge, to one character or to all; with milestones, if this was one, tell the player in brackets what they achieved and that the characters rise, then level them up with the player, now or at the next rest, as they prefer."
 # What the creatures overcome in a scene give the party (D-205, DAT-11): scene close says the xp of those at 0 hit points (p. 258), shared among the party there,
 # as the game is played (the SRD 5.1 does not write it).
 rewards:
