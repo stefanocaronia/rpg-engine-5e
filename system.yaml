@@ -59,6 +59,11 @@ sheet-notes:
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries, each an item of the campaign derived from the system's, such as item=[[Chain Mail]]: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex."
   Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's copies the kind's damage-roll with its own dice in place, such as 1d10 + str-mod + bonus + 2 * has(fighting-styles, Dueling) slashing. A companion's natural attacks, such as a wolf's bite, are in its stat block, beside the unarmed strike every sheet shows. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
   Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
+# Where the dashboard puts the groups (D-295): in the rail, as on a paper sheet, the abilities and the saving throws; then the skills first, and the rest by how
+# often play needs them.
+sheet-cards:
+  rail: [Abilities, Saving Throws]
+  order: [Skills, Combat, Attacks, Spells, Features, Proficiencies, Character, Personality]
 # The line under a character's name on the dashboard (D-288).
 sheet-headline: "Level {level} {classes}"
 # The icon of each group on the dashboard (D-284): the d of an SVG path on a grid of 24, drawn as a line; drawn for rpg-engine.
