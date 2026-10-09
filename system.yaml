@@ -90,6 +90,8 @@ thresholds:
   death-failures 3: Death Saving Throws
   death-successes 3: Stabilizing a Creature
   exhaustion: Exhaustion
+  # Temporary hit points never add up, and go first (p. 98, D-266).
+  temp-hp: Temporary Hit Points
 # The rests (pp. 87, 99, 100): the fields they bring to their maximum or to a value, the effects they end, and the titles of the rules for what they leave to the master.
 # The uses below come back with the rests they name; a long rest brings back up to half the hit dice, at least one, of any kind (pp. 57, 87).
 recipes:
@@ -107,6 +109,8 @@ rewards:
   xp: {from: xp-value, overcome: hp 0}
 # The conditions (Appendix PH-A, pp. 358–359): an effect with one of these names shows its rule.
 conditions: [Blinded, Charmed, Deafened, Frightened, Grappled, Incapacitated, Invisible, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned, Unconscious]
+# What breaks a spell someone concentrates on (p. 102, D-266, EFF-14): damage, being incapacitated (the last four incapacitate, pp. 358–359), dying.
+keeping: {counter: hp, conditions: [Incapacitated, Paralyzed, Petrified, Stunned, Unconscious], rules: Concentration}
 # How the engine reads each field: only counters are counted; numbers, text and lists never are, nor are they money.
 fields:
   size: text
@@ -467,6 +471,8 @@ computed:
 # only for a character with classes, from the die its page writes, of the system or the campaign (p. 56, D-215); inspiration, which a character has or has not (p. 60).
 counters:
   hp: {max: "hp-base + level * (con-mod + hp-per-level) + has(subclasses, Draconic Bloodline) * item(classes, Sorcerer)"}
+  # Damage takes temporary hit points first (p. 98, D-266, DAT-14).
+  temp-hp: {shields: hp}
   hit-dice-d6: {max: "sum(classes, hit-die = d6)"}
   hit-dice-d8: {max: "sum(classes, hit-die = d8)"}
   hit-dice-d10: {max: "sum(classes, hit-die = d10)"}
