@@ -59,6 +59,18 @@ sheet-notes:
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries, each an item of the campaign derived from the system's, such as item=[[Chain Mail]]: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex."
   Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's copies the kind's damage-roll with its own dice in place, such as 1d10 + str-mod + bonus + 2 * has(fighting-styles, Dueling) slashing. A companion's natural attacks, such as a wolf's bite, are in its stat block, beside the unarmed strike every sheet shows. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
   Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
+# The icon of each group on the dashboard (D-284): the d of an SVG path on a grid of 24, drawn as a line; drawn for rpg-engine.
+sheet-icons:
+  Character: "M12 3.5a4 4 0 1 1 0 8a4 4 0 1 1 0-8Z M4.5 20.5c.6-3.9 3.7-6.5 7.5-6.5s6.9 2.6 7.5 6.5Z"
+  Personality: "M4.5 4.5c5 1.3 10 1.3 15 0V11a7.5 7.5 0 0 1-15 0Z M8 9.6c.7-.6 1.8-.6 2.5 0 M13.5 9.6c.7-.6 1.8-.6 2.5 0 M8.8 13.8a4 4 0 0 0 6.4 0"
+  Abilities: "M4.5 13.5h3v6h-3Z M10.5 5.5h3v14h-3Z M16.5 9.5h3v10h-3Z"
+  Saving Throws: "M12 3 19 5.5V11c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V5.5Z M9 12l2.2 2.2 4-4.2"
+  Skills: "M11 5a8 8 0 1 0 8 8 M11 9a4 4 0 1 0 4 4 M11 13l8-8 M15.5 4.5v4h4"
+  Combat: "M3.5 3.5h3l10 10 M3.5 3.5v3l10 10 M13 17l4-4 M15 15l4 4 M18 20l2-2 M20.5 3.5h-3L12 9 M20.5 3.5v3L15 12 M7 13l4 4 M9 15l-4 4 M4 18l2 2"
+  Proficiencies: "M2.5 9.5 12 5l9.5 4.5L12 14Z M6.5 11.5V16c1.5 1.6 3.5 2.5 5.5 2.5s4-.9 5.5-2.5v-4.5 M21.5 9.5V15"
+  Features: "M12 9.5a5.5 5.5 0 1 0 0 11a5.5 5.5 0 1 0 0-11Z M8.5 10.8 5.5 3.5h4l2.5 6 M15.5 10.8l3-7.3h-4l-1.4 3.4 M12 12.8l.8 1.6 1.8.3-1.3 1.2.3 1.8-1.6-.9-1.6.9.3-1.8-1.3-1.2 1.8-.3Z"
+  Attacks: "M20.5 3.5h-3l-10 10 M20.5 3.5v3l-10 10 M7 13l4 4 M9 15l-4 4 M4 18l2 2"
+  Spells: "M4 20 12.5 11.5 M17 3.5c.4 2 1.5 3.1 3.5 3.5-2 .4-3.1 1.5-3.5 3.5-.4-2-1.5-3.1-3.5-3.5 2-.4 3.1-1.5 3.5-3.5Z M7.5 4v3 M6 5.5h3 M19 14v3 M17.5 15.5h3"
 # The names a list takes (pp. 77, 83): write refuses others, giving these, and validate reports those written by hand. Only lists the game closes:
 # expertise is open, since a feature may give it in any tool (D-216).
 values:
