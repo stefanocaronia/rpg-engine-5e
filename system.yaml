@@ -47,6 +47,10 @@ sheet:
   Features: [features, fighting-styles?]
   Attacks: [attack, damage-roll]
   Spells: [caster-level?, spell-save-dc?, spell-attack?, slots-1?, slots-2?, slots-3?, slots-4?, slots-5?, slots-6?, slots-7?, slots-8?, slots-9?, spell-slots?, mystic-arcanum-6?, mystic-arcanum-7?, mystic-arcanum-8?, mystic-arcanum-9?, signature-spell-1?, signature-spell-2?, max-prepared?, spells?, prepared?]
+# The dice each number of the sheet is rolled with, for the dashboard's free roll (D-280): an ability check, a saving throw and an attack roll each roll a d20
+# and add the number (pp. 77, 83, 94).
+sheet-dice:
+  1d20: [str-mod, dex-mod, con-mod, int-mod, wis-mod, cha-mod, str-save, dex-save, con-save, int-save, wis-save, cha-save, acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival, initiative, attack, spell-attack]
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: propose some if they ask, never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
