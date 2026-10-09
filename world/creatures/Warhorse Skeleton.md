@@ -20,6 +20,7 @@ darkvision: 60 ft
 passive-perception: 9
 cr: "1/2"
 xp-value: 100
+image: "[[desert-skull.svg]]"
 ---
 
 ## Actions

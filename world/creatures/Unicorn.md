@@ -19,6 +19,7 @@ passive-perception: 13
 languages: [Celestial, Elvish, Sylvan, telepathy 60 ft]
 cr: "5"
 xp-value: 1800
+image: "[[unicorn.svg]]"
 ---
 
 ## Traits

@@ -23,6 +23,7 @@ passive-perception: 11
 languages: [Abyssal, telepathy 120 ft]
 cr: "6"
 xp-value: 2300
+image: "[[condor-emblem.svg]]"
 ---
 
 ## Traits

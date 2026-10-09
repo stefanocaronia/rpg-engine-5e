@@ -29,6 +29,7 @@ slots-5: 2/2
 slots-6: 1/1
 cr: "15"
 xp-value: 13000
+image: "[[mummy-head.svg]]"
 ---
 
 ## Traits

@@ -17,6 +17,7 @@ cha: 5
 passive-perception: 11
 cr: "1/2"
 xp-value: 100
+image: "[[seahorse.svg]]"
 ---
 
 Like their smaller kin, giant sea horses are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.

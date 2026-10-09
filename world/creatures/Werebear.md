@@ -19,6 +19,7 @@ passive-perception: 17
 languages: [Common (can’t speak in bear form)]
 cr: "5"
 xp-value: 1800
+image: "[[bear-face.svg]]"
 ---
 
 ## Traits

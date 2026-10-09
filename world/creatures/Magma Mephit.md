@@ -22,6 +22,7 @@ passive-perception: 10
 languages: [Ignan, Terran]
 cr: "1/2"
 xp-value: 100
+image: "[[eruption.svg]]"
 ---
 
 ## Traits

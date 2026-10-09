@@ -18,6 +18,7 @@ blindsight: 30 ft
 passive-perception: 8
 cr: "1/4"
 xp-value: 50
+image: "[[centipede.svg]]"
 ---
 
 ## Actions

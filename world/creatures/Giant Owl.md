@@ -19,6 +19,7 @@ passive-perception: 15
 languages: [Giant Owl, "understands Common, Elvish, and Sylvan but can’t speak them"]
 cr: "1/4"
 xp-value: 50
+image: "[[barn-owl.svg]]"
 ---
 
 Giant owls often befriend fey and other sylvan creatures and are guardians of their woodland realms.

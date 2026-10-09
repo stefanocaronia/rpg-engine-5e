@@ -21,6 +21,7 @@ passive-perception: 12
 languages: [Ignan]
 cr: "11"
 xp-value: 7200
+image: "[[ifrit.svg]]"
 ---
 
 ## Traits

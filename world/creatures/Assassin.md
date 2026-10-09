@@ -20,6 +20,7 @@ passive-perception: 13
 languages: [Thieves’ cant plus any two languages]
 cr: "8"
 xp-value: 3900
+image: "[[hooded-assassin.svg]]"
 ---
 
 Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.

@@ -21,6 +21,7 @@ slots-1: 4/4
 slots-2: 3/3
 cr: "2"
 xp-value: 450
+image: "[[cowled.svg]]"
 ---
 
 Druids dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are tribal shamans who heal the sick, pray to animal spirits, and provide spiritual guidance.

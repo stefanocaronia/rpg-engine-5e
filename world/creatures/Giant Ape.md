@@ -17,6 +17,7 @@ skills: [Athletics +9, Perception +4]
 passive-perception: 14
 cr: "7"
 xp-value: 2900
+image: "[[gorilla.svg]]"
 ---
 
 ## Actions

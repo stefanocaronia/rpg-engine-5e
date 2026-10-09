@@ -16,6 +16,7 @@ cha: 6
 passive-perception: 11
 cr: "0"
 xp-value: 10
+image: "[[mandrill-head.svg]]"
 ---
 
 ## Traits

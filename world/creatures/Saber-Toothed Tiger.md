@@ -16,6 +16,7 @@ skills: [Perception +3, Stealth +6]
 passive-perception: 13
 cr: "2"
 xp-value: 450
+image: "[[saber-toothed-cat-head.svg]]"
 ---
 
 ## Traits

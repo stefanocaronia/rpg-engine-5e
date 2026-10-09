@@ -19,6 +19,7 @@ passive-perception: 17
 languages: [Common, Giant]
 cr: "9"
 xp-value: 5000
+image: "[[giant.svg]]"
 ---
 
 ## Traits

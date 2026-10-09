@@ -19,6 +19,7 @@ passive-perception: 12
 languages: [Common (can’t speak in boar form)]
 cr: "4"
 xp-value: 1100
+image: "[[boar-tusks.svg]]"
 ---
 
 ## Traits

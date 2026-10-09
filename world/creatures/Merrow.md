@@ -19,6 +19,7 @@ passive-perception: 10
 languages: [Abyssal, Aquan]
 cr: "2"
 xp-value: 450
+image: "[[angler-fish.svg]]"
 ---
 
 ## Traits

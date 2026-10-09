@@ -20,6 +20,7 @@ blindsight: 60 ft (blind beyond this radius)
 passive-perception: 8
 cr: "1/2"
 xp-value: 100
+image: "[[slime.svg]]"
 ---
 
 ## Traits

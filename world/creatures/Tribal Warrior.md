@@ -17,6 +17,7 @@ passive-perception: 10
 languages: [any one language]
 cr: "1/8"
 xp-value: 25
+image: "[[tribal-mask.svg]]"
 ---
 
 Tribal warriors live beyond civilization, most often subsisting on fishing and hunting. Each tribe acts in accordance with the wishes of its chief, who is the greatest or oldest warrior of the tribe or a tribe member blessed by the gods.

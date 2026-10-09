@@ -21,6 +21,7 @@ passive-perception: 9
 languages: [understands Abyssal but can’t speak]
 cr: "2"
 xp-value: 450
+image: "[[animal-skull.svg]]"
 ---
 
 ## Traits

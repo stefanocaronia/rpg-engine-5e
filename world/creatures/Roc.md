@@ -19,6 +19,7 @@ skills: [Perception +4]
 passive-perception: 14
 cr: "11"
 xp-value: 7200
+image: "[[eagle-emblem.svg]]"
 ---
 
 ## Traits

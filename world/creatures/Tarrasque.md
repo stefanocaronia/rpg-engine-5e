@@ -20,6 +20,7 @@ blindsight: 120 ft
 passive-perception: 10
 cr: "30"
 xp-value: 155000
+image: "[[bestial-fangs.svg]]"
 ---
 
 ## Traits

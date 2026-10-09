@@ -20,6 +20,7 @@ passive-perception: 11
 languages: [Ignan]
 cr: "2"
 xp-value: 450
+image: "[[fluffy-flame.svg]]"
 ---
 
 ## Traits

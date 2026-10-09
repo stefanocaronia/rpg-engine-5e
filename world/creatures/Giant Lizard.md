@@ -18,6 +18,7 @@ darkvision: 30 ft
 passive-perception: 10
 cr: "1/4"
 xp-value: 50
+image: "[[gecko.svg]]"
 ---
 
 A giant lizard can be ridden or used as a draft animal. Lizardfolk also keep them as pets, and subterranean giant lizards are used as mounts and pack animals by drow, duergar, and others.

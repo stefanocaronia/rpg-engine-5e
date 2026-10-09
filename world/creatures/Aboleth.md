@@ -21,6 +21,7 @@ passive-perception: 20
 languages: [Deep Speech, telepathy 120 ft]
 cr: "10"
 xp-value: 5900
+image: "[[fish-monster.svg]]"
 ---
 
 ## Traits

@@ -19,6 +19,7 @@ darkvision: 60 ft
 passive-perception: 14
 cr: "6"
 xp-value: 2300
+image: "[[wyvern.svg]]"
 ---
 
 ## Actions

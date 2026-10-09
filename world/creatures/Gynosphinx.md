@@ -28,6 +28,7 @@ slots-4: 3/3
 slots-5: 1/1
 cr: "11"
 xp-value: 7200
+image: "[[egyptian-sphinx.svg]]"
 ---
 
 ## Traits

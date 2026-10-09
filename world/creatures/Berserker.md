@@ -17,6 +17,7 @@ passive-perception: 10
 languages: [any one language (usually Common)]
 cr: "2"
 xp-value: 450
+image: "[[viking-head.svg]]"
 ---
 
 Hailing from uncivilized lands, unpredictable berserkers come together in war parties and seek conflict wherever they can find it.

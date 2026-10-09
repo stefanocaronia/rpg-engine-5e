@@ -16,6 +16,7 @@ skills: [Perception +3, Stealth +5]
 passive-perception: 13
 cr: "0"
 xp-value: 10
+image: "[[ermine.svg]]"
 ---
 
 ## Traits

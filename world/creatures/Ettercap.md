@@ -19,6 +19,7 @@ darkvision: 60 ft
 passive-perception: 13
 cr: "2"
 xp-value: 450
+image: "[[hanging-spider.svg]]"
 ---
 
 ## Traits

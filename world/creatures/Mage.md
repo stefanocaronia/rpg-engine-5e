@@ -24,6 +24,7 @@ slots-4: 3/3
 slots-5: 1/1
 cr: "6"
 xp-value: 2300
+image: "[[pointy-hat.svg]]"
 ---
 
 Mages spend their lives in the study and practice of magic. Good-aligned mages offer counsel to nobles and others in power, while evil mages dwell in isolated sites to perform unspeakable experiments without interference.

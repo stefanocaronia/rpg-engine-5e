@@ -17,6 +17,7 @@ darkvision: 60 ft
 passive-perception: 11
 cr: "1/2"
 xp-value: 100
+image: "[[rooster.svg]]"
 ---
 
 ## Actions

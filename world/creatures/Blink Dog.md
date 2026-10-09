@@ -17,6 +17,7 @@ passive-perception: 13
 languages: [Blink Dog, understands Sylvan but can’t speak it]
 cr: "1/4"
 xp-value: 50
+image: "[[jumping-dog.svg]]"
 ---
 
 A blink dog takes its name from its ability to blink in and out of existence, a talent it uses to aid its attacks and to avoid harm.

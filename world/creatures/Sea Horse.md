@@ -16,6 +16,7 @@ cha: 2
 passive-perception: 10
 cr: "0"
 xp-value: 0
+image: "[[seahorse.svg]]"
 ---
 
 ## Traits

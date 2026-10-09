@@ -19,6 +19,7 @@ passive-perception: 14
 languages: [Common]
 cr: "6"
 xp-value: 2300
+image: "[[medusa-head.svg]]"
 ---
 
 ## Traits

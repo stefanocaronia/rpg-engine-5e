@@ -18,6 +18,7 @@ blindsight: 60 ft
 passive-perception: 10
 cr: "1/2"
 xp-value: 100
+image: "[[squid.svg]]"
 ---
 
 ## Traits

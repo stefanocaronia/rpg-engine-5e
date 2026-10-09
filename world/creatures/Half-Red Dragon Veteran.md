@@ -21,6 +21,7 @@ passive-perception: 12
 languages: [Common, Draconic]
 cr: "5"
 xp-value: 1800
+image: "[[dragon-shield.svg]]"
 ---
 
 ## Actions

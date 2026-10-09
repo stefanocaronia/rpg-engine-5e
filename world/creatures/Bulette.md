@@ -20,6 +20,7 @@ tremorsense: 60 ft
 passive-perception: 16
 cr: "5"
 xp-value: 1800
+image: "[[shark-fin.svg]]"
 ---
 
 ## Traits

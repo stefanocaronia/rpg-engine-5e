@@ -2,6 +2,7 @@
 aliases: [Lightfoot]
 creature: "[[Halfling]]"
 category: race
+image: "[[person.svg]]"
 ---
 
 As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others.

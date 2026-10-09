@@ -21,6 +21,7 @@ passive-perception: 13
 languages: [understands Common and Draconic but can’t speak]
 cr: "1/4"
 xp-value: 50
+image: "[[dragon-spiral.svg]]"
 ---
 
 ## Traits

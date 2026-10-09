@@ -2,6 +2,7 @@
 creature: "[[Gnome]]"
 category: race
 tool-proficiencies: [tinker's tools]
+image: "[[bad-gnome.svg]]"
 ---
 
 As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes.

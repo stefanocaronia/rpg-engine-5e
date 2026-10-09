@@ -17,6 +17,7 @@ passive-perception: 8
 languages: [Common, Draconic]
 cr: "1/8"
 xp-value: 25
+image: "[[lizard-tongue.svg]]"
 ---
 
 ## Traits

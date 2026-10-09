@@ -21,6 +21,7 @@ slots-2: 3/3
 slots-3: 2/2
 cr: "2"
 xp-value: 450
+image: "[[sun-priest.svg]]"
 ---
 
 Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites.

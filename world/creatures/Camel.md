@@ -15,6 +15,7 @@ cha: 5
 passive-perception: 9
 cr: "1/8"
 xp-value: 25
+image: "[[camel-head.svg]]"
 ---
 
 ## Actions

@@ -19,6 +19,7 @@ passive-perception: 11
 languages: [any one language (usually Common)]
 cr: "5"
 xp-value: 1800
+image: "[[spartan.svg]]"
 ---
 
 Gladiators battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death.

@@ -21,6 +21,7 @@ passive-perception: 9
 languages: [Abyssal, telepathy 60 ft (works only with creatures that understand Abyssal)]
 cr: "1/4"
 xp-value: 50
+image: "[[evil-minion.svg]]"
 ---
 
 ## Actions

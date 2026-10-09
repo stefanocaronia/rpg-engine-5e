@@ -19,6 +19,7 @@ darkvision: 60 ft
 passive-perception: 14
 cr: "5"
 xp-value: 1800
+image: "[[charging-bull.svg]]"
 ---
 
 ## Traits

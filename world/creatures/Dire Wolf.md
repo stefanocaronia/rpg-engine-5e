@@ -17,6 +17,7 @@ skills: [Perception +3, Stealth +4]
 passive-perception: 13
 cr: "1"
 xp-value: 200
+image: "[[direwolf.svg]]"
 ---
 
 ## Traits

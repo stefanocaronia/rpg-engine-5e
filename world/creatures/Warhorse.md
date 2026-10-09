@@ -15,6 +15,7 @@ cha: 7
 passive-perception: 11
 cr: "1/2"
 xp-value: 100
+image: "[[horse-head-delapouite.svg]]"
 ---
 
 ## Traits

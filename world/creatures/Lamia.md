@@ -19,6 +19,7 @@ passive-perception: 12
 languages: [Abyssal, Common]
 cr: "4"
 xp-value: 1100
+image: "[[bestial-fangs.svg]]"
 ---
 
 ## Traits

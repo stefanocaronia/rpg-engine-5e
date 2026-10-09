@@ -19,6 +19,7 @@ passive-perception: 11
 languages: [Common]
 cr: "3"
 xp-value: 700
+image: "[[spiked-tail.svg]]"
 ---
 
 ## Traits

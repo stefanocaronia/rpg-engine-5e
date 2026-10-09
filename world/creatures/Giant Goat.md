@@ -16,6 +16,7 @@ cha: 6
 passive-perception: 11
 cr: "1/2"
 xp-value: 100
+image: "[[goat.svg]]"
 ---
 
 ## Traits

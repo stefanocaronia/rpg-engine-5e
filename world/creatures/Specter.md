@@ -21,6 +21,7 @@ passive-perception: 10
 languages: [understands all languages it knew in life but can’t speak]
 cr: "1"
 xp-value: 200
+image: "[[spectre.svg]]"
 ---
 
 ## Traits

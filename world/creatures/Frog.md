@@ -18,6 +18,7 @@ darkvision: 30 ft
 passive-perception: 11
 cr: "0"
 xp-value: 0
+image: "[[frog.svg]]"
 ---
 
 A frog has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog’s statistics can also be used to represent a toad.

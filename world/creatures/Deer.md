@@ -15,6 +15,7 @@ cha: 5
 passive-perception: 12
 cr: "0"
 xp-value: 10
+image: "[[deer-head.svg]]"
 ---
 
 ## Actions

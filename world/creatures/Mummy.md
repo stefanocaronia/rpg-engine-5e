@@ -23,6 +23,7 @@ passive-perception: 10
 languages: [the languages it knew in life]
 cr: "3"
 xp-value: 700
+image: "[[mummy-head.svg]]"
 ---
 
 ## Actions

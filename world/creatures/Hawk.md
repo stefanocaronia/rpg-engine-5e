@@ -17,6 +17,7 @@ skills: [Perception +4]
 passive-perception: 14
 cr: "0"
 xp-value: 10
+image: "[[hawk-emblem.svg]]"
 ---
 
 ## Traits

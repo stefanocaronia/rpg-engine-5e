@@ -21,6 +21,7 @@ passive-perception: 11
 languages: [any languages it knew in life]
 cr: "4"
 xp-value: 1100
+image: "[[ghost.svg]]"
 ---
 
 ## Traits

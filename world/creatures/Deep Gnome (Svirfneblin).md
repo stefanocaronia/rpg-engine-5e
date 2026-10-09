@@ -20,6 +20,7 @@ passive-perception: 12
 languages: [Gnomish, Terran, Undercommon]
 cr: "1/2"
 xp-value: 100
+image: "[[bad-gnome.svg]]"
 ---
 
 ## Traits

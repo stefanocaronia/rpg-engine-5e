@@ -19,6 +19,7 @@ passive-perception: 16
 languages: ["understands Celestial, Common, Elvish, and Sylvan but can’t speak"]
 cr: "2"
 xp-value: 450
+image: "[[pegasus.svg]]"
 ---
 
 ## Actions

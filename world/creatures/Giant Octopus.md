@@ -18,6 +18,7 @@ darkvision: 60 ft
 passive-perception: 14
 cr: "1"
 xp-value: 200
+image: "[[octopus.svg]]"
 ---
 
 ## Traits

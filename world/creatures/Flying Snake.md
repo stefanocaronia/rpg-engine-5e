@@ -18,6 +18,7 @@ blindsight: 10 ft
 passive-perception: 11
 cr: "1/8"
 xp-value: 25
+image: "[[snake.svg]]"
 ---
 
 A flying snake is a brightly colored, winged serpent found in remote jungles. Tribespeople and cultists sometimes domesticate flying snakes to serve as messengers that deliver scrolls wrapped in their coils.

@@ -18,6 +18,7 @@ passive-perception: 12
 languages: [Giant]
 cr: "5"
 xp-value: 1800
+image: "[[giant.svg]]"
 ---
 
 ## Actions

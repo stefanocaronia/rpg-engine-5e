@@ -21,6 +21,7 @@ darkvision: 60 ft
 passive-perception: 10
 cr: "1/2"
 xp-value: 100
+image: "[[shadow-follower.svg]]"
 ---
 
 **Skills** Stealth +4 (+6 in dim light or darkness)

@@ -22,6 +22,7 @@ passive-perception: 18
 languages: [Auran, understands Common but doesn’t speak it]
 cr: "6"
 xp-value: 2300
+image: "[[invisible-face.svg]]"
 ---
 
 ## Traits

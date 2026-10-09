@@ -16,6 +16,7 @@ cha: 6
 passive-perception: 10
 cr: "6"
 xp-value: 2300
+image: "[[mammoth.svg]]"
 ---
 
 A mammoth is an elephantine creature with thick fur and long tusks. Stockier and fiercer than normal elephants, mammoths inhabit a wide range of climes, from subarctic to subtropical.

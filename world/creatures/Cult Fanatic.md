@@ -20,6 +20,7 @@ slots-1: 4/4
 slots-2: 3/3
 cr: "2"
 xp-value: 450
+image: "[[cultist-skoll.svg]]"
 ---
 
 Fanatics are often part of a cult’s leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.

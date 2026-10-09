@@ -20,6 +20,7 @@ passive-perception: 15
 languages: [Elvish, Undercommon]
 cr: "6"
 xp-value: 2300
+image: "[[masked-spider.svg]]"
 ---
 
 ## Traits

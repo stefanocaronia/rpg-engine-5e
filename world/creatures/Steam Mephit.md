@@ -20,6 +20,7 @@ passive-perception: 10
 languages: [Aquan, Ignan]
 cr: "1/4"
 xp-value: 50
+image: "[[steam.svg]]"
 ---
 
 ## Traits

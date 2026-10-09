@@ -23,6 +23,7 @@ passive-perception: 14
 languages: [Infernal, telepathy 120 ft]
 cr: "20"
 xp-value: 25000
+image: "[[diablo-skull.svg]]"
 ---
 
 ## Traits

@@ -22,6 +22,7 @@ passive-perception: 15
 languages: [all, telepathy 120 ft]
 cr: "4"
 xp-value: 1100
+image: "[[snake-totem.svg]]"
 ---
 
 ## Traits

@@ -18,6 +18,7 @@ passive-perception: 10
 languages: [Gnoll]
 cr: "1/2"
 xp-value: 100
+image: "[[hyena-head.svg]]"
 ---
 
 ## Traits

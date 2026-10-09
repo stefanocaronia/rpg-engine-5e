@@ -18,6 +18,7 @@ blindsight: 10 ft
 passive-perception: 12
 cr: "2"
 xp-value: 450
+image: "[[snake-spiral.svg]]"
 ---
 
 ## Actions

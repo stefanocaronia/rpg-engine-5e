@@ -17,6 +17,7 @@ blindsight: 30 ft (blind beyond this radius)
 passive-perception: 6
 cr: "1/4"
 xp-value: 50
+image: "[[mushrooms-cluster.svg]]"
 ---
 
 ## Traits

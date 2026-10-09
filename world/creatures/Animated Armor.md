@@ -19,6 +19,7 @@ blindsight: 60 ft (blind beyond this radius)
 passive-perception: 6
 cr: "1"
 xp-value: 200
+image: "[[breastplate.svg]]"
 ---
 
 ## Traits

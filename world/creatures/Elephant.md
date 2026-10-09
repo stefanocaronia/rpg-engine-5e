@@ -16,6 +16,7 @@ cha: 6
 passive-perception: 10
 cr: "4"
 xp-value: 1100
+image: "[[elephant-head.svg]]"
 ---
 
 ## Traits

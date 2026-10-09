@@ -19,6 +19,7 @@ darkvision: 60 ft
 passive-perception: 16
 cr: "8"
 xp-value: 3900
+image: "[[hydra.svg]]"
 ---
 
 ## Traits

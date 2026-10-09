@@ -17,6 +17,7 @@ blindsight: 60 ft
 passive-perception: 11
 cr: "1/4"
 xp-value: 50
+image: "[[evil-bat.svg]]"
 ---
 
 ## Traits

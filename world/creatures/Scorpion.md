@@ -17,6 +17,7 @@ blindsight: 10 ft
 passive-perception: 9
 cr: "0"
 xp-value: 10
+image: "[[scorpion.svg]]"
 ---
 
 ## Actions

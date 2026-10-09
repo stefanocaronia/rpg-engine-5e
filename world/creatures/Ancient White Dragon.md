@@ -25,6 +25,7 @@ passive-perception: 23
 languages: [Common, Draconic]
 cr: "20"
 xp-value: 25000
+image: "[[dragon-head-lorc.svg]]"
 ---
 
 ## Traits

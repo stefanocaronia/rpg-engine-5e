@@ -21,6 +21,7 @@ passive-perception: 12
 languages: [the languages it knew in life]
 cr: "2"
 xp-value: 450
+image: "[[spark-spirit.svg]]"
 ---
 
 ## Traits

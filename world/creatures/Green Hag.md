@@ -19,6 +19,7 @@ passive-perception: 14
 languages: [Common, Draconic, Sylvan]
 cr: "3"
 xp-value: 700
+image: "[[witch-face.svg]]"
 ---
 
 ## Traits

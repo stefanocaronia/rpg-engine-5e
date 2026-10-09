@@ -22,6 +22,7 @@ passive-perception: 16
 languages: [Terran]
 cr: "5"
 xp-value: 1800
+image: "[[carnivore-mouth.svg]]"
 ---
 
 ## Traits

@@ -21,6 +21,7 @@ passive-perception: 13
 languages: [the languages it knew in life]
 cr: "5"
 xp-value: 1800
+image: "[[vampire-dracula.svg]]"
 ---
 
 ## Traits

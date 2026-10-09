@@ -2,6 +2,7 @@
 creature: "[[Dwarf]]"
 category: race
 hp-per-level: 1
+image: "[[dwarf-face.svg]]"
 ---
 
 As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.

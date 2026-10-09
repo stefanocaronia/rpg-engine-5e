@@ -19,6 +19,7 @@ blindsight: 30 ft
 passive-perception: 12
 cr: "1/2"
 xp-value: 100
+image: "[[shark-jaws.svg]]"
 ---
 
 Smaller than giant sharks and hunter sharks, reef sharks inhabit shallow waters and coral reefs, gathering in small packs to hunt. A full-grown specimen measures 6 to 10 feet long.

@@ -24,6 +24,7 @@ passive-perception: 10
 languages: [Terran]
 cr: "5"
 xp-value: 1800
+image: "[[rock-golem.svg]]"
 ---
 
 ## Traits

@@ -22,6 +22,7 @@ passive-perception: 14
 languages: [understands Deep Speech but can’t speak]
 cr: "4"
 xp-value: 1100
+image: "[[crab-claw.svg]]"
 ---
 
 ## Traits

@@ -17,6 +17,7 @@ darkvision: 60 ft
 passive-perception: 13
 cr: "1"
 xp-value: 200
+image: "[[tiger.svg]]"
 ---
 
 ## Traits

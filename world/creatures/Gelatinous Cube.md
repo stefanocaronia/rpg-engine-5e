@@ -17,6 +17,7 @@ blindsight: 60 ft (blind beyond this radius)
 passive-perception: 8
 cr: "2"
 xp-value: 450
+image: "[[cube.svg]]"
 ---
 
 ## Traits

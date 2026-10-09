@@ -22,6 +22,7 @@ passive-perception: 11
 languages: [Infernal, Common]
 cr: "1"
 xp-value: 200
+image: "[[imp.svg]]"
 ---
 
 ## Traits

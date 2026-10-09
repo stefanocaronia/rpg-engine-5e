@@ -19,6 +19,7 @@ passive-perception: 14
 languages: [Giant, Orc]
 cr: "4"
 xp-value: 1100
+image: "[[giant.svg]]"
 ---
 
 ## Traits

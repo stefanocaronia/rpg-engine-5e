@@ -16,6 +16,7 @@ cha: 5
 passive-perception: 8
 cr: "2"
 xp-value: 450
+image: "[[boar.svg]]"
 ---
 
 ## Traits

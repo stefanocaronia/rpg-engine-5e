@@ -17,6 +17,7 @@ passive-perception: 10
 languages: [any one language (usually Common)]
 cr: "1/8"
 xp-value: 25
+image: "[[bandit.svg]]"
 ---
 
 Bandits rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.

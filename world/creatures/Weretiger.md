@@ -19,6 +19,7 @@ passive-perception: 15
 languages: [Common (can’t speak in tiger form)]
 cr: "4"
 xp-value: 1100
+image: "[[tiger.svg]]"
 ---
 
 ## Traits

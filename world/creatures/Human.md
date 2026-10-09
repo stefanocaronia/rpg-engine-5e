@@ -3,6 +3,7 @@ size: Medium
 category: race
 speed: 30 ft
 languages: [Common]
+image: "[[person.svg]]"
 ---
 
 It's hard to make generalizations about humans, but your human character has these traits.

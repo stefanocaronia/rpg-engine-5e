@@ -18,6 +18,7 @@ skills: [Perception +3]
 passive-perception: 13
 cr: "1/2"
 xp-value: 100
+image: "[[bear-head.svg]]"
 ---
 
 ## Traits

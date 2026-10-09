@@ -22,6 +22,7 @@ passive-perception: 12
 languages: [Aquan, Auran]
 cr: "1/2"
 xp-value: 100
+image: "[[icicles-aura.svg]]"
 ---
 
 ## Traits

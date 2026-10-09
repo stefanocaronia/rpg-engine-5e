@@ -20,6 +20,7 @@ passive-perception: 15
 languages: [Sahuagin]
 cr: "1/2"
 xp-value: 100
+image: "[[triton-head.svg]]"
 ---
 
 ## Traits

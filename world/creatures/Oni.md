@@ -21,6 +21,7 @@ passive-perception: 14
 languages: [Common, Giant]
 cr: "7"
 xp-value: 2900
+image: "[[oni.svg]]"
 ---
 
 ## Traits

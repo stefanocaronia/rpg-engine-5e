@@ -16,6 +16,7 @@ passive-perception: 10
 languages: [any one language (usually Common)]
 cr: "0"
 xp-value: 10
+image: "[[farmer.svg]]"
 ---
 
 Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.

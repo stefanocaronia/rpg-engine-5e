@@ -21,6 +21,7 @@ passive-perception: 10
 languages: [Abyssal, Common]
 cr: "1"
 xp-value: 200
+image: "[[imp-laugh.svg]]"
 ---
 
 ## Traits

@@ -16,6 +16,7 @@ cha: 3
 passive-perception: 10
 cr: "1/2"
 xp-value: 100
+image: "[[wasp-sting.svg]]"
 ---
 
 ## Actions

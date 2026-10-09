@@ -18,6 +18,7 @@ passive-perception: 10
 languages: [any one language (usually Common)]
 cr: "1/2"
 xp-value: 100
+image: "[[brute.svg]]"
 ---
 
 Thugs are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.
