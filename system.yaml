@@ -90,8 +90,8 @@ thresholds:
   death-failures 3: Death Saving Throws
   death-successes 3: Stabilizing a Creature
   exhaustion: Exhaustion
-  # Temporary hit points never add up, and go first (p. 98, D-266).
-  temp-hp: Temporary Hit Points
+  # Temporary hit points, named when they come and when they go (p. 98, D-266, D-268); damage takes them first (shields, below).
+  temp-hp 0: Temporary Hit Points
 # The rests (pp. 87, 99, 100): the fields they bring to their maximum or to a value, the effects they end, and the titles of the rules for what they leave to the master.
 # The uses below come back with the rests they name; a long rest brings back up to half the hit dice, at least one, of any kind (pp. 57, 87).
 recipes:
