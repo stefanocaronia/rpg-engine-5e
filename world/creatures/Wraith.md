@@ -21,6 +21,7 @@ passive-perception: 12
 languages: [the languages it knew in life]
 cr: "5"
 xp-value: 1800
+image: "[[grim-reaper.svg]]"
 ---
 
 ## Traits

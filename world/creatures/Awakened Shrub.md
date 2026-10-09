@@ -18,6 +18,7 @@ passive-perception: 10
 languages: [one language known by its creator]
 cr: "0"
 xp-value: 10
+image: "[[berry-bush.svg]]"
 ---
 
 An awakened shrub is an ordinary shrub given sentience and mobility by the *awaken* spell or similar magic.

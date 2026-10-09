@@ -16,6 +16,7 @@ cha: 5
 passive-perception: 10
 cr: "5"
 xp-value: 1800
+image: "[[triceratops-head.svg]]"
 ---
 
 ## Traits

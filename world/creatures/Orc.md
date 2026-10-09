@@ -19,6 +19,7 @@ passive-perception: 10
 languages: [Common, Orc]
 cr: "1/2"
 xp-value: 100
+image: "[[orc-head.svg]]"
 ---
 
 ## Traits

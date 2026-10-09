@@ -20,6 +20,7 @@ passive-perception: 10
 languages: [understands Infernal but can’t speak]
 cr: "0"
 xp-value: 10
+image: "[[devil-mask.svg]]"
 ---
 
 ## Traits

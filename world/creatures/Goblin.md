@@ -19,6 +19,7 @@ passive-perception: 9
 languages: [Common, Goblin]
 cr: "1/4"
 xp-value: 50
+image: "[[goblin-head.svg]]"
 ---
 
 ## Traits

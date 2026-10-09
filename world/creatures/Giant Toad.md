@@ -17,6 +17,7 @@ darkvision: 30 ft
 passive-perception: 10
 cr: "1"
 xp-value: 200
+image: "[[toad-teeth.svg]]"
 ---
 
 ## Traits

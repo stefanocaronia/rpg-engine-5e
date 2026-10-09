@@ -19,6 +19,7 @@ passive-perception: 11
 languages: [Aquan, Common, Giant]
 cr: "2"
 xp-value: 450
+image: "[[witch-face.svg]]"
 ---
 
 ## Traits

@@ -19,6 +19,7 @@ passive-perception: 14
 languages: [Elvish, Sylvan]
 cr: "1"
 xp-value: 200
+image: "[[tree-face.svg]]"
 ---
 
 ## Traits

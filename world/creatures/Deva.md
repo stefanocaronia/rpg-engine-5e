@@ -23,6 +23,7 @@ passive-perception: 19
 languages: [all, telepathy 120 ft]
 cr: "10"
 xp-value: 5900
+image: "[[angel-outfit.svg]]"
 ---
 
 ## Traits

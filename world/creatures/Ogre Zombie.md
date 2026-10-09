@@ -20,6 +20,7 @@ passive-perception: 8
 languages: [understands Common and Giant but can’t speak]
 cr: "2"
 xp-value: 450
+image: "[[shambling-zombie.svg]]"
 ---
 
 ## Traits

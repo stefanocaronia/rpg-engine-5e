@@ -19,6 +19,7 @@ blindsight: 10 ft
 passive-perception: 10
 cr: "2"
 xp-value: 450
+image: "[[rattlesnake.svg]]"
 ---
 
 ## Traits

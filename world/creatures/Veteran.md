@@ -18,6 +18,7 @@ passive-perception: 12
 languages: [any one language (usually Common)]
 cr: "3"
 xp-value: 700
+image: "[[closed-barbute.svg]]"
 ---
 
 Veterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves.

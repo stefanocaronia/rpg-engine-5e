@@ -19,6 +19,7 @@ condition-immunities: [charmed, frightened, grappled, paralyzed, petrified, pron
 passive-perception: 15
 cr: "1/4"
 xp-value: 50
+image: "[[crow-dive.svg]]"
 ---
 
 ## Traits

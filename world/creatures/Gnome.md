@@ -5,6 +5,7 @@ speed: 25 ft
 darkvision: 60 ft
 languages: [Common, Gnomish]
 save-notes: ["advantage on all Intelligence, Wisdom, and Charisma saving throws against magic"]
+image: "[[bad-gnome.svg]]"
 ---
 
 Your gnome character has certain characteristics in common with all other gnomes.

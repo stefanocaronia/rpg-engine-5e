@@ -22,6 +22,7 @@ passive-perception: 12
 languages: [Auran, Terran]
 cr: "1/2"
 xp-value: 100
+image: "[[dust-cloud.svg]]"
 ---
 
 ## Traits

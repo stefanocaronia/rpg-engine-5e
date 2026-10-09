@@ -15,6 +15,7 @@ cha: 6
 passive-perception: 10
 cr: "1/4"
 xp-value: 50
+image: "[[stag-head.svg]]"
 ---
 
 ## Traits

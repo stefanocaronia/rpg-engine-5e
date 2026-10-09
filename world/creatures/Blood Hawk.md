@@ -17,6 +17,7 @@ skills: [Perception +4]
 passive-perception: 14
 cr: "1/8"
 xp-value: 25
+image: "[[hawk-emblem.svg]]"
 ---
 
 Taking its name from its crimson feathers and aggressive nature, the blood hawk fearlessly attacks almost any animal, stabbing it with its daggerlike beak. Blood hawks flock together in large numbers, attacking as a pack to take down prey.

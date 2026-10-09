@@ -20,6 +20,7 @@ passive-perception: 11
 languages: [Deep Speech, Undercommon]
 cr: "8"
 xp-value: 3900
+image: "[[manta-ray.svg]]"
 ---
 
 ## Traits

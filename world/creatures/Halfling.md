@@ -4,6 +4,7 @@ category: race
 speed: 25 ft
 languages: [Common, Halfling]
 save-notes: [advantage on saving throws against being frightened]
+image: "[[person.svg]]"
 ---
 
 Your halfling character has a number of traits in common with all other halflings.

@@ -19,6 +19,7 @@ blindsight: 60 ft (blind beyond this radius)
 passive-perception: 8
 cr: "4"
 xp-value: 1100
+image: "[[acid-blob.svg]]"
 ---
 
 ## Traits

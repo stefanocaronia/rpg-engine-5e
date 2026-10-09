@@ -22,6 +22,7 @@ passive-perception: 14
 languages: ["understands Abyssal, Celestial, Infernal, and Primordial but can’t speak", telepathy 120 ft]
 cr: "23"
 xp-value: 50000
+image: "[[kraken-tentacle.svg]]"
 ---
 
 ## Traits

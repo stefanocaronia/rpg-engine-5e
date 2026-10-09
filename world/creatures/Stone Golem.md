@@ -20,6 +20,7 @@ passive-perception: 10
 languages: [understands the languages of its creator but can’t speak]
 cr: "10"
 xp-value: 5900
+image: "[[golem-head.svg]]"
 ---
 
 ## Traits

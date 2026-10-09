@@ -18,6 +18,7 @@ darkvision: 60 ft
 passive-perception: 13
 cr: "3"
 xp-value: 700
+image: "[[owl.svg]]"
 ---
 
 ## Traits

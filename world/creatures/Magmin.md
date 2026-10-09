@@ -20,6 +20,7 @@ passive-perception: 10
 languages: [Ignan]
 cr: "1/2"
 xp-value: 100
+image: "[[small-fire.svg]]"
 ---
 
 ## Traits

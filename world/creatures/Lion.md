@@ -16,6 +16,7 @@ skills: [Perception +3, Stealth +6]
 passive-perception: 13
 cr: "1"
 xp-value: 200
+image: "[[lion.svg]]"
 ---
 
 ## Traits

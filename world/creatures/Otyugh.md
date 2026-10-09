@@ -19,6 +19,7 @@ passive-perception: 11
 languages: [Otyugh]
 cr: "5"
 xp-value: 1800
+image: "[[eyestalk.svg]]"
 ---
 
 ## Traits

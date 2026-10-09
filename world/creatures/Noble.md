@@ -18,6 +18,7 @@ passive-perception: 12
 languages: [any two languages]
 cr: "1/8"
 xp-value: 25
+image: "[[crown.svg]]"
 ---
 
 Nobles wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.

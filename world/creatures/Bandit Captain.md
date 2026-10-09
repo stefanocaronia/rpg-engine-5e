@@ -19,6 +19,7 @@ passive-perception: 10
 languages: [any two languages]
 cr: "2"
 xp-value: 450
+image: "[[robber.svg]]"
 ---
 
 It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The bandit captain has these qualities in spades.

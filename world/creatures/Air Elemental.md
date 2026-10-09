@@ -21,6 +21,7 @@ passive-perception: 10
 languages: [Auran]
 cr: "5"
 xp-value: 1800
+image: "[[tornado.svg]]"
 ---
 
 ## Traits

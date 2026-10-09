@@ -19,6 +19,7 @@ passive-perception: 10
 languages: [one language known by its creator]
 cr: "2"
 xp-value: 450
+image: "[[evil-tree.svg]]"
 ---
 
 An awakened tree is an ordinary tree given sentience and mobility by the *awaken* spell or similar magic.

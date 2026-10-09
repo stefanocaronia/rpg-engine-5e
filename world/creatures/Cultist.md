@@ -18,6 +18,7 @@ passive-perception: 10
 languages: [any one language (usually Common)]
 cr: "1/8"
 xp-value: 25
+image: "[[cultist-lorc.svg]]"
 ---
 
 Cultists swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.

@@ -22,6 +22,7 @@ passive-perception: 10
 languages: [Terran]
 cr: "2"
 xp-value: 450
+image: "[[gargoyle.svg]]"
 ---
 
 ## Traits

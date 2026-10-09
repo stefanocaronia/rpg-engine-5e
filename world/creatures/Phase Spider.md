@@ -19,6 +19,7 @@ darkvision: 60 ft
 passive-perception: 10
 cr: "3"
 xp-value: 700
+image: "[[angular-spider.svg]]"
 ---
 
 A phase spider possesses the magical ability to phase in and out of the Ethereal Plane. It seems to appear out of nowhere and quickly vanishes after attacking. Its movement on the Ethereal Plane before coming back to the Material Plane makes it seem like it can teleport.

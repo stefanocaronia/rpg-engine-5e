@@ -19,6 +19,7 @@ blindsight: 30 ft
 passive-perception: 9
 cr: "0"
 xp-value: 10
+image: "[[crab.svg]]"
 ---
 
 ## Traits

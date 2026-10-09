@@ -21,6 +21,7 @@ passive-perception: 10
 languages: [understands the languages of its creator but can’t speak]
 cr: "0"
 xp-value: 10
+image: "[[imp-laugh.svg]]"
 ---
 
 ## Traits

@@ -19,6 +19,7 @@ passive-perception: 10
 languages: [Dwarvish, Undercommon]
 cr: "1"
 xp-value: 200
+image: "[[dwarf-helmet.svg]]"
 ---
 
 ## Traits

@@ -17,6 +17,7 @@ darkvision: 60 ft
 passive-perception: 13
 cr: "1/8"
 xp-value: 25
+image: "[[ermine.svg]]"
 ---
 
 ## Traits

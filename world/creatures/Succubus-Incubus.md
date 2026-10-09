@@ -22,6 +22,7 @@ passive-perception: 15
 languages: [Abyssal, Common, Infernal, telepathy 60 ft]
 cr: "4"
 xp-value: 1100
+image: "[[sensuousness.svg]]"
 ---
 
 ## Traits

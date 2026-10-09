@@ -22,6 +22,7 @@ passive-perception: 10
 languages: [Aquan]
 cr: "5"
 xp-value: 1800
+image: "[[big-wave.svg]]"
 ---
 
 ## Traits

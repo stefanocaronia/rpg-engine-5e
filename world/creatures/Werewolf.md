@@ -19,6 +19,7 @@ passive-perception: 14
 languages: [Common (can’t speak in wolf form)]
 cr: "3"
 xp-value: 700
+image: "[[werewolf.svg]]"
 ---
 
 ## Traits

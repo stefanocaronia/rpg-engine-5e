@@ -29,6 +29,7 @@ slots-8: 1/1
 slots-9: 1/1
 cr: "12"
 xp-value: 8400
+image: "[[wizard-face.svg]]"
 ---
 
 Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.

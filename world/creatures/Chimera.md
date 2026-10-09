@@ -20,6 +20,7 @@ passive-perception: 18
 languages: [understands Draconic but can’t speak]
 cr: "6"
 xp-value: 2300
+image: "[[bestial-fangs.svg]]"
 ---
 
 ## Actions

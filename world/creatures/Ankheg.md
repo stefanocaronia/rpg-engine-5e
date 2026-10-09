@@ -19,6 +19,7 @@ tremorsense: 60 ft
 passive-perception: 11
 cr: "2"
 xp-value: 450
+image: "[[insect-jaws.svg]]"
 ---
 
 ## Actions

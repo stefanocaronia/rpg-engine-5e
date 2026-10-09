@@ -20,6 +20,7 @@ darkvision: 60 ft
 passive-perception: 11
 cr: "2"
 xp-value: 450
+image: "[[mimic-chest.svg]]"
 ---
 
 ## Traits

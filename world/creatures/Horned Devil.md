@@ -23,6 +23,7 @@ passive-perception: 13
 languages: [Infernal, telepathy 120 ft]
 cr: "11"
 xp-value: 7200
+image: "[[devil-mask.svg]]"
 ---
 
 ## Traits

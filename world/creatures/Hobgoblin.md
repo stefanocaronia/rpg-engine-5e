@@ -18,6 +18,7 @@ passive-perception: 10
 languages: [Common, Goblin]
 cr: "1/2"
 xp-value: 100
+image: "[[warlord-helmet.svg]]"
 ---
 
 ## Traits

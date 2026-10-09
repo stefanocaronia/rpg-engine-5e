@@ -19,6 +19,7 @@ blindsight: 60 ft
 passive-perception: 13
 cr: "5"
 xp-value: 1800
+image: "[[shark-jaws.svg]]"
 ---
 
 A giant shark is 30 feet long and normally found in deep oceans. Utterly fearless, it preys on anything that crosses its path, including whales and ships.

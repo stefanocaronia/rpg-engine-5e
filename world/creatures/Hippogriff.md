@@ -17,6 +17,7 @@ skills: [Perception +5]
 passive-perception: 15
 cr: "1"
 xp-value: 200
+image: "[[griffin-symbol.svg]]"
 ---
 
 ## Traits

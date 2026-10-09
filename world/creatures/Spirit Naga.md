@@ -26,6 +26,7 @@ slots-4: 3/3
 slots-5: 2/2
 cr: "8"
 xp-value: 3900
+image: "[[snake-tongue.svg]]"
 ---
 
 ## Traits

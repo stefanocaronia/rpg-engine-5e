@@ -18,6 +18,7 @@ passive-perception: 15
 languages: [any one language (usually Common)]
 cr: "1/2"
 xp-value: 100
+image: "[[robin-hood-hat.svg]]"
 ---
 
 Scouts are skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance.

@@ -18,6 +18,7 @@ darkvision: 30 ft
 passive-perception: 12
 cr: "1/4"
 xp-value: 50
+image: "[[frog.svg]]"
 ---
 
 ## Traits

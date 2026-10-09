@@ -19,6 +19,7 @@ darkvision: 60 ft
 passive-perception: 13
 cr: "1/4"
 xp-value: 50
+image: "[[long-legged-spider.svg]]"
 ---
 
 Smaller than a giant spider, a giant wolf spider hunts prey across open ground or hides in a burrow or crevice, or in a hidden cavity beneath debris.

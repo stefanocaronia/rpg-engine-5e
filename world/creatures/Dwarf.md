@@ -7,6 +7,7 @@ darkvision: 60 ft
 languages: [Common, Dwarvish]
 save-notes: [advantage on saving throws against poison]
 weapon-proficiencies: [battleaxe, handaxe, light hammer, warhammer]
+image: "[[dwarf-face.svg]]"
 ---
 
 Your dwarf character has an assortment of inborn abilities, part and parcel of dwarven nature.

@@ -18,6 +18,7 @@ skills: [Stealth +2]
 passive-perception: 10
 cr: "1/2"
 xp-value: 100
+image: "[[croc-jaws.svg]]"
 ---
 
 ## Traits

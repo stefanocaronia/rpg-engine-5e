@@ -19,6 +19,7 @@ blindsight: 120 ft
 passive-perception: 13
 cr: "3"
 xp-value: 700
+image: "[[sperm-whale.svg]]"
 ---
 
 ## Traits

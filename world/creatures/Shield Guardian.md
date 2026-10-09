@@ -21,6 +21,7 @@ passive-perception: 10
 languages: [understands commands given in any language but can’t speak]
 cr: "7"
 xp-value: 2900
+image: "[[robot-golem.svg]]"
 ---
 
 ## Traits

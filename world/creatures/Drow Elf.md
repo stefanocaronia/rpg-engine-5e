@@ -20,6 +20,7 @@ passive-perception: 12
 languages: [Elvish, Undercommon]
 cr: "1/4"
 xp-value: 50
+image: "[[elf-helmet.svg]]"
 ---
 
 ## Traits

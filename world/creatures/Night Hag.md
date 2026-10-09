@@ -21,6 +21,7 @@ passive-perception: 16
 languages: [Abyssal, Common, Infernal, Primordial]
 cr: "5"
 xp-value: 1800
+image: "[[witch-face.svg]]"
 ---
 
 ## Traits

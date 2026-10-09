@@ -6,6 +6,7 @@ darkvision: 60 ft
 languages: [Common, Elvish]
 save-notes: [advantage on saving throws against being charmed]
 skill-proficiencies: [Perception]
+image: "[[woman-elf-face.svg]]"
 ---
 
 Your elf character has a variety of natural abilities, the result of thousands of years of elven refinement.

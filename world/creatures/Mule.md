@@ -15,6 +15,7 @@ cha: 5
 passive-perception: 10
 cr: "1/8"
 xp-value: 25
+image: "[[donkey.svg]]"
 ---
 
 ## Traits

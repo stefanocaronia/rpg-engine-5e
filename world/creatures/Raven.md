@@ -17,6 +17,7 @@ skills: [Perception +3]
 passive-perception: 13
 cr: "0"
 xp-value: 10
+image: "[[raven.svg]]"
 ---
 
 ## Traits

@@ -21,6 +21,7 @@ passive-perception: 16
 languages: [Draconic]
 cr: "11"
 xp-value: 7200
+image: "[[sea-serpent.svg]]"
 ---
 
 ## Actions

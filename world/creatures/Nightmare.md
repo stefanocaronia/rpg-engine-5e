@@ -19,6 +19,7 @@ passive-perception: 11
 languages: ["understands Abyssal, Common, and Infernal but can’t speak"]
 cr: "3"
 xp-value: 700
+image: "[[horse-head-lorc.svg]]"
 ---
 
 ## Traits

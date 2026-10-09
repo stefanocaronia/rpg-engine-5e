@@ -5,6 +5,7 @@ speed: 30 ft
 damage-resistances: [fire]
 darkvision: 60 ft
 languages: [Common, Infernal]
+image: "[[devil-mask.svg]]"
 ---
 
 Tieflings share certain racial traits as a result of their infernal descent.

@@ -19,6 +19,7 @@ passive-perception: 13
 languages: [Undercommon]
 cr: "1/4"
 xp-value: 50
+image: "[[troglodyte.svg]]"
 ---
 
 ## Traits

@@ -19,6 +19,7 @@ passive-perception: 13
 languages: [Common, Elvish, Sylvan]
 cr: "1/4"
 xp-value: 50
+image: "[[fairy.svg]]"
 ---
 
 ## Actions

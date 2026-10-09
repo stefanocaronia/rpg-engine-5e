@@ -18,6 +18,7 @@ darkvision: 30 ft
 passive-perception: 10
 cr: "1/4"
 xp-value: 50
+image: "[[rat.svg]]"
 ---
 
 ## Traits

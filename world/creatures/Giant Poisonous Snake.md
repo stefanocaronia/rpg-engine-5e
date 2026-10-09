@@ -18,6 +18,7 @@ blindsight: 10 ft
 passive-perception: 12
 cr: "1/4"
 xp-value: 50
+image: "[[cobra.svg]]"
 ---
 
 ## Actions

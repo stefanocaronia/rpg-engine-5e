@@ -18,6 +18,7 @@ darkvision: 60 ft
 passive-perception: 15
 cr: "2"
 xp-value: 450
+image: "[[griffin-symbol.svg]]"
 ---
 
 ## Traits

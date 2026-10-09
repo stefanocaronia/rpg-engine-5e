@@ -18,6 +18,7 @@ passive-perception: 12
 languages: [Aquan, Common]
 cr: "1/8"
 xp-value: 25
+image: "[[mermaid.svg]]"
 ---
 
 ## Traits

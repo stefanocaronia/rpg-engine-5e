@@ -22,6 +22,7 @@ passive-perception: 13
 languages: [the languages it knew in life]
 cr: "3"
 xp-value: 700
+image: "[[dread-skull.svg]]"
 ---
 
 ## Traits

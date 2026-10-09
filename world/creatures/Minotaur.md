@@ -19,6 +19,7 @@ passive-perception: 17
 languages: [Abyssal]
 cr: "3"
 xp-value: 700
+image: "[[minotaur.svg]]"
 ---
 
 ## Traits

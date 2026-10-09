@@ -21,6 +21,7 @@ passive-perception: 13
 languages: [Common, Infernal]
 cr: "13"
 xp-value: 10000
+image: "[[tiger-head.svg]]"
 ---
 
 ## Traits

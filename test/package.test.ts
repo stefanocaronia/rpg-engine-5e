@@ -24,6 +24,12 @@ describe("the 5e system", () => {
         expect(license).not.toMatch(/D&D|Dungeons & Dragons/);
     });
 
+    it("gives every creature an icon of game-icons.net, and credits it in its license (D-267)", () => {
+        const pages = loadWorld(folder).pages.filter((page) => page.type === "creature");
+        expect(pages.filter((page) => !/^\[\[[a-z0-9-]+\.svg\]\]$/.test(String(page.fields.image))).map((page) => page.name)).toEqual([]);
+        expect(readFileSync(join(folder, "LICENSE.md"), "utf8")).toMatch(/The icons in `images\/` are from game-icons\.net \(https:\/\/game-icons\.net\), under the Creative Commons Attribution 3\.0 Unported License/);
+    });
+
     it("keeps the numbers of the SRD 5.1, as these pages of it give them", () => {
         const pages = loadWorld(folder).pages;
         const fields = (name: string): Record<string, unknown> | undefined => pages.find((page) => page.name === name)?.fields;
@@ -209,6 +215,7 @@ describe("the 5e system", () => {
             languages: ["Deep Speech", "telepathy 120 ft"],
             cr: "10",
             "xp-value": 5900,
+            image: "[[fish-monster.svg]]",
         });
         expect(sectionTitles(body("Aboleth"))).toEqual([
             "Traits",

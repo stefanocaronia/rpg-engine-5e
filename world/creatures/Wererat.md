@@ -19,6 +19,7 @@ passive-perception: 12
 languages: [Common (can’t speak in rat form)]
 cr: "2"
 xp-value: 450
+image: "[[seated-mouse.svg]]"
 ---
 
 ## Traits

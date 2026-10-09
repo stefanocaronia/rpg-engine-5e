@@ -5,6 +5,7 @@ speed: 30 ft
 darkvision: 60 ft
 languages: [Common, Elvish]
 save-notes: [advantage on saving throws against being charmed]
+image: "[[elf-ear.svg]]"
 ---
 
 Your half-elf character has some qualities in common with elves and some that are unique to half-elves.

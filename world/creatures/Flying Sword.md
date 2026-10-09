@@ -21,6 +21,7 @@ blindsight: 60 ft (blind beyond this radius)
 passive-perception: 7
 cr: "1/4"
 xp-value: 50
+image: "[[winged-sword.svg]]"
 ---
 
 ## Traits

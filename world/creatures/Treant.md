@@ -19,6 +19,7 @@ passive-perception: 13
 languages: [Common, Druidic, Elvish, Sylvan]
 cr: "9"
 xp-value: 5000
+image: "[[ent-mouth.svg]]"
 ---
 
 ## Traits

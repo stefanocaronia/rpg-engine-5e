@@ -16,6 +16,7 @@ skills: [Perception +3]
 passive-perception: 13
 cr: "1/8"
 xp-value: 25
+image: "[[labrador-head.svg]]"
 ---
 
 Mastiffs are impressive hounds prized by humanoids for their loyalty and keen senses. Mastiffs can be trained as guard dogs, hunting dogs, and war dogs. Halflings and other Small humanoids ride them as mounts.

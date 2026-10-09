@@ -17,6 +17,7 @@ passive-perception: 13
 languages: [Elvish, Sylvan]
 cr: "2"
 xp-value: 450
+image: "[[centaur.svg]]"
 ---
 
 ## Traits

@@ -22,6 +22,7 @@ passive-perception: 13
 languages: [Abyssal, telepathy 120 ft]
 cr: "9"
 xp-value: 5000
+image: "[[gooey-daemon.svg]]"
 ---
 
 ## Traits

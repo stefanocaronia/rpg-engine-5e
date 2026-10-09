@@ -17,6 +17,7 @@ blindsight: 60 ft
 passive-perception: 11
 cr: "0"
 xp-value: 10
+image: "[[bat.svg]]"
 ---
 
 ## Traits

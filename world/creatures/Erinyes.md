@@ -23,6 +23,7 @@ passive-perception: 12
 languages: [Infernal, telepathy 120 ft]
 cr: "12"
 xp-value: 8400
+image: "[[evil-wings.svg]]"
 ---
 
 ## Traits

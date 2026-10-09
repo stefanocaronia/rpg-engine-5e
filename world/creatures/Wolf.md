@@ -17,6 +17,7 @@ skills: [Perception +3, Stealth +4]
 passive-perception: 13
 cr: "1/4"
 xp-value: 50
+image: "[[wolf-head.svg]]"
 ---
 
 ## Traits

@@ -21,6 +21,7 @@ passive-perception: 13
 languages: [Auran]
 cr: "11"
 xp-value: 7200
+image: "[[djinn.svg]]"
 ---
 
 ## Traits

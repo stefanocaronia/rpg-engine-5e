@@ -20,6 +20,7 @@ tremorsense: 60 ft
 passive-perception: 9
 cr: "15"
 xp-value: 13000
+image: "[[worm-mouth.svg]]"
 ---
 
 ## Traits

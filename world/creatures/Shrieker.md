@@ -17,6 +17,7 @@ blindsight: 30 ft (blind beyond this radius)
 passive-perception: 6
 cr: "0"
 xp-value: 10
+image: "[[spotted-mushroom.svg]]"
 ---
 
 ## Traits

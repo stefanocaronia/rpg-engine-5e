@@ -20,6 +20,7 @@ passive-perception: 15
 languages: [understands Infernal but can’t speak it]
 cr: "3"
 xp-value: 700
+image: "[[hound.svg]]"
 ---
 
 ## Traits

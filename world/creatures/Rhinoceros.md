@@ -16,6 +16,7 @@ cha: 6
 passive-perception: 11
 cr: "2"
 xp-value: 450
+image: "[[rhinoceros-horn.svg]]"
 ---
 
 ## Traits

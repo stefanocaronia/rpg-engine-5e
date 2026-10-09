@@ -15,6 +15,7 @@ cha: 5
 passive-perception: 10
 cr: "1/4"
 xp-value: 50
+image: "[[cassowary-head.svg]]"
 ---
 
 An axe beak is a tall flightless bird with strong legs and a heavy, wedge-shaped beak. It has a nasty disposition and tends to attack any unfamiliar creature that wanders too close.

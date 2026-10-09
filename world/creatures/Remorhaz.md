@@ -20,6 +20,7 @@ tremorsense: 60 ft
 passive-perception: 10
 cr: "11"
 xp-value: 7200
+image: "[[centipede.svg]]"
 ---
 
 ## Traits

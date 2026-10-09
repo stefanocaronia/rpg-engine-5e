@@ -21,6 +21,7 @@ passive-perception: 10
 languages: [Ignan]
 cr: "5"
 xp-value: 1800
+image: "[[salamander.svg]]"
 ---
 
 ## Traits

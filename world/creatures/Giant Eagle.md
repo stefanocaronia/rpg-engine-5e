@@ -18,6 +18,7 @@ passive-perception: 14
 languages: [Giant Eagle, understands Common and Auran but can’t speak them]
 cr: "1"
 xp-value: 200
+image: "[[eagle-head.svg]]"
 ---
 
 A giant eagle is a noble creature that speaks its own language and understands speech in the Common tongue. A mated pair of giant eagles typically has up to four eggs or young in their nest (treat the young as normal eagles).

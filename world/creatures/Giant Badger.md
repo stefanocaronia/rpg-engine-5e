@@ -17,6 +17,7 @@ darkvision: 30 ft
 passive-perception: 11
 cr: "1/4"
 xp-value: 50
+image: "[[badger.svg]]"
 ---
 
 ## Traits

@@ -17,6 +17,7 @@ skills: [Perception +4, Stealth +6]
 passive-perception: 14
 cr: "1/4"
 xp-value: 50
+image: "[[feline.svg]]"
 ---
 
 ## Traits

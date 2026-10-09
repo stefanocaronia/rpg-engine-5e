@@ -19,6 +19,7 @@ blindsight: 30 ft
 passive-perception: 12
 cr: "2"
 xp-value: 450
+image: "[[shark-jaws.svg]]"
 ---
 
 Smaller than a giant shark but larger and fiercer than a reef shark, a hunter shark haunts deep waters. It usually hunts alone, but multiple hunter sharks might feed in the same area. A fully grown hunter shark is 15 to 20 feet long.

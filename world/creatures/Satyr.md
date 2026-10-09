@@ -18,6 +18,7 @@ passive-perception: 12
 languages: [Common, Elvish, Sylvan]
 cr: "1/2"
 xp-value: 100
+image: "[[pan-flute.svg]]"
 ---
 
 ## Traits

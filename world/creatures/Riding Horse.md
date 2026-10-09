@@ -15,6 +15,7 @@ cha: 7
 passive-perception: 10
 cr: "1/4"
 xp-value: 50
+image: "[[horse-head-delapouite.svg]]"
 ---
 
 ## Actions

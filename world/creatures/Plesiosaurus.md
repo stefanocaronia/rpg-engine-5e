@@ -18,6 +18,7 @@ skills: [Perception +3, Stealth +4]
 passive-perception: 13
 cr: "2"
 xp-value: 450
+image: "[[plesiosaurus.svg]]"
 ---
 
 ## Traits

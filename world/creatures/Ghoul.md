@@ -19,6 +19,7 @@ passive-perception: 10
 languages: [Common]
 cr: "1"
 xp-value: 200
+image: "[[bone-gnawer.svg]]"
 ---
 
 ## Actions

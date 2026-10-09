@@ -19,6 +19,7 @@ darkvision: 60 ft
 passive-perception: 8
 cr: "1"
 xp-value: 200
+image: "[[school-of-fish.svg]]"
 ---
 
 ## Traits

@@ -21,6 +21,7 @@ passive-perception: 11
 languages: [Aquan, Draconic]
 cr: "17"
 xp-value: 18000
+image: "[[turtle.svg]]"
 ---
 
 ## Traits

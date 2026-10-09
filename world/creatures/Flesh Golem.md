@@ -19,6 +19,7 @@ passive-perception: 10
 languages: [understands the languages of its creator but can’t speak]
 cr: "5"
 xp-value: 1800
+image: "[[frankenstein-creature.svg]]"
 ---
 
 ## Traits

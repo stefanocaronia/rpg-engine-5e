@@ -17,6 +17,7 @@ skills: [Perception +4]
 passive-perception: 14
 cr: "8"
 xp-value: 3900
+image: "[[dinosaur-rex.svg]]"
 ---
 
 ## Actions
