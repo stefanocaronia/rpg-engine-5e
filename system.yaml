@@ -60,10 +60,11 @@ sheet-notes:
   Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's copies the kind's damage-roll with its own dice in place, such as 1d10 + str-mod + bonus + 2 * has(fighting-styles, Dueling) slashing. A companion's natural attacks, such as a wolf's bite, are in its stat block, beside the unarmed strike every sheet shows. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
   Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
 # Where the dashboard puts the groups (D-295): in the rail, as on a paper sheet, the abilities and the saving throws; then the skills first, and the rest by how
-# often play needs them.
+# often play needs them; in a fight, at hand, the armor class, initiative, speed and hit points, the attacks and the spells (D-315).
 sheet-cards:
   rail: [Abilities, Saving Throws]
   order: [Skills, Combat, Attacks, Spells, Features, Proficiencies, Character, Personality]
+  at-hand: [ac, initiative, speed, hp, temp-hp, Attacks, Spells]
 # The line under a character's name on the dashboard (D-288).
 sheet-headline: "Level {level} {classes}"
 # The icon of each group on the dashboard (D-284): the d of an SVG path on a grid of 24, drawn as a line; drawn for rpg-engine.
