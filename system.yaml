@@ -27,6 +27,17 @@ travel:
     path: {}
     river: {vehicle: {category: waterborne vehicle}, speed: speed, hours: 24, current: 4.5 km}
     sea: {vehicle: {category: waterborne vehicle}, speed: speed, hours: 24}
+# The map of a place (GRD-4, GRD-5; Combat › Movement and Position, Creature Size): a square is 5 feet; a diagonal step counts as one square (D-327);
+# difficult terrain costs double. The walking speed is the first value of speed; a creature's space comes from its size, 10 feet for Large, 15 for Huge,
+# 20 for Gargantuan. Who leaves the side of another reads Opportunity Attacks.
+grid:
+  square: 1.5 m
+  diagonal: 1
+  difficult: 2
+  speed: speed
+  size: size
+  footprints: {Large: 2, Huge: 3, Gargantuan: 4}
+  leaving: Opportunity Attacks
 # What the setup asks for this system, with the campaign's settings (DAT-10, D-212): how the characters gain levels, with the experience points of the SRD
 # (p. 56), or at the milestones the story reaches, where xp is neither asked nor shown.
 settings:
