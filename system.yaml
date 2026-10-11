@@ -42,6 +42,7 @@ grid:
 # (p. 56), or at the milestones the story reaches, where xp is neither asked nor shown.
 settings:
   advancement:
+    about: how your character levels up
     xp: {means: "experience points, as the SRD: scene close says those of the creatures overcome, and you give more with change, as you judge, for what the story rewards, to one character or to all", player: "your character levels up with experience points, for the foes overcome and what the story rewards"}
     milestones: {means: "the characters rise when the story reaches a milestone, such as the end of an adventure or a great goal: agree with the player which kind, write it in table, and you say when", player: "your character levels up at the big moments of the story", without: [xp]}
 # The character sheet, in groups (D-207, DAT-2): show gives a character so, and Page#Group one group with how each number is made. A field in parentheses
