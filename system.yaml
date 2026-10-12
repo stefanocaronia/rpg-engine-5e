@@ -63,6 +63,11 @@ sheet:
 # and add the number (pp. 77, 83, 94).
 sheet-dice:
   1d20: [str-mod, dex-mod, con-mod, int-mod, wis-mod, cha-mod, str-save, dex-save, con-save, int-save, wis-save, cha-save, acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival, initiative, attack, spell-attack]
+# The names the game gives a roll, by language, which the dashboard writes on a check's button (D-399): a d20 rolled twice, the higher or the lower kept
+# (Advantage and Disadvantage, pp. 76–77).
+roll-names:
+  2d20kh1: {en: with advantage, it: con vantaggio}
+  2d20kl1: {en: with disadvantage, it: con svantaggio}
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: offer their background's tables, rolled or chosen, or propose some; never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
