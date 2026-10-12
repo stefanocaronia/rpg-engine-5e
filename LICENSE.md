@@ -1,10 +1,16 @@
 # The 5e system: license
 
-The pages in `world/`, the rules in `rules/` and the game's data in `system.yaml` (its coins, conditions, the length of a round, the titles of its rules, its proficiency table, the names of its skills, how its numbers are worked out, and the uses of features with the rests that bring them back) are material from the System Reference Document 5.1, under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). The rest of rpg-engine is under the MIT license.
+The pages in `world/`, the rules in `rules/` and the game's data in `system.yaml` (its coins, conditions, the length of a round, the titles of its rules, its proficiency table, the names of its skills, how its numbers are worked out, and the uses of features with the rests that bring them back), and the Italian words of `words/it.yaml` are material from the System Reference Document 5.1, under the Creative Commons Attribution 4.0 International License (CC-BY-4.0). The rest of rpg-engine is under the MIT license.
 
 This work includes material taken from the System Reference Document 5.1 ("SRD 5.1") by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
 The SRD 5.1 notes: "Section 5 of CC-BY-4.0 includes a Disclaimer of Warranties and Limitation of Liability that limits our liability to you."
+
+The Italian words in `words/it.yaml` are taken from the Italian translation of the SRD 5.1 (https://media.dndbeyond.com/compendium-images/srd/5.1/SRD_CC_v5.1_IT.pdf), which gives this attribution:
+
+Questo lavoro include materiale del System Reference Document 5.1 ("SRD 5.1") di Wizards of the Coast LLC disponibile al sito https://dnd.wizards.com/it/resources/systems-reference-document. L'SRD 5.1 è concesso in licenza sotto l'Attribuzione 4.0 Internazionale di Creative Commons disponibile al sito https://creativecommons.org/licenses/by/4.0/legalcode.it.
+
+Changes: `words/it.yaml` is a table of ours from the English names of this system to the words of the Italian SRD 5.1, for what the dashboard shows; a word that the Italian SRD does not have is ours, and marked as such in the file. Only words are taken from it, never its measures in metres, nor its text.
 
 Changes: the material was converted into pages with fields and sections. Names are written in natural order, with the name the SRD gives as an alias when it differs (Leather Armor for "Leather", Hempen Rope for "Rope, hempen (50 feet)", Sledgehammer for "Hammer, sledge", Stone of Good Luck for "Stone of Good Luck (Luckstone)"), a saddle with its kind (Exotic Saddle), and as the stat blocks write them. Units are written without the final period (40 ft, 3 lb). Potion of Healing joins the adventuring gear entry and the magic item, with the gear entry's sentence on drinking it after the magic item's text. A stat block within an item is set off as a quotation.
 

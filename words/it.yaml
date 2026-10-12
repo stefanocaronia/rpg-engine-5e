@@ -1,0 +1,446 @@
+# The words of the 5e system in Italian, as the dashboard shows them (D-403): from the SRD 5.1 in Italian, CC BY 4.0 (see LICENSE.md).
+# Pages are those of the Italian PDF. A word the Italian SRD lacks is ours, marked "# ours". Only words: the measures stay the engine's.
+groups:
+  Character: Personaggio
+  Personality: Personalità
+  Abilities: Caratteristiche
+  Saving Throws: Tiri salvezza
+  Skills: Abilità
+  Combat: Combattimento
+  Proficiencies: Competenze
+  Features: Privilegi
+  Attacks: Attacchi
+  Spells: Incantesimi
+fields:
+  # Character (pp. 2, 60, 63, 64)
+  creature: Razza  # the race of a character (5.1); a companion's is its kind, as Lupo: "Creatura" would fit both
+  size: Taglia
+  classes: Classi
+  subclasses: Sottoclassi  # ours: the 5.1 in Italian names each (Dominio, Archetipo, Giuramento…), never all
+  background: Background
+  feats: Talenti
+  alignment: Allineamento
+  level: Livello
+  xp: PE
+  inspiration: Ispirazione
+  # Personality (pp. 66–67)
+  personality-traits: Tratti caratteriali
+  ideal: Ideale
+  bond: Legame
+  flaw: Difetto
+  # Abilities, as the stat blocks abbreviate them (p. 380)
+  str: FOR
+  dex: DES
+  con: COS
+  int: INT
+  wis: SAG
+  cha: CAR
+  str-mod: Mod. FOR  # ours
+  dex-mod: Mod. DES  # ours
+  con-mod: Mod. COS  # ours
+  int-mod: Mod. INT  # ours
+  wis-mod: Mod. SAG  # ours
+  cha-mod: Mod. CAR  # ours
+  proficiency: Bonus di competenza
+  # Saving throws: "TS" as the SRD writes it (p. 5, "TS Destrezza"); in the narrow rail "FOR" alone would read as the ability
+  str-save: TS Forza
+  dex-save: TS Destrezza
+  con-save: TS Costituzione
+  int-save: TS Intelligenza
+  wis-save: TS Saggezza
+  cha-save: TS Carisma
+  save-notes: Note ai tiri salvezza  # ours
+  # Skills (p. 87)
+  acrobatics: Acrobazia
+  animal-handling: Addestrare animali
+  arcana: Arcano
+  athletics: Atletica
+  deception: Inganno
+  history: Storia
+  insight: Intuizione
+  intimidation: Intimidire
+  investigation: Indagare
+  medicine: Medicina
+  nature: Natura
+  perception: Percezione
+  performance: Intrattenere
+  persuasion: Persuasione
+  religion: Religione
+  sleight-of-hand: Rapidità di mano
+  stealth: Furtività
+  survival: Sopravvivenza
+  # Combat (pp. 8, 107, 110–112, 294–295, 406)
+  ac: CA
+  initiative: Iniziativa
+  speed: Velocità
+  equipped: Equipaggiato  # ours
+  hp-base: PF dai dadi  # ours: the hit points the hit dice gave, without Constitution
+  hp: PF
+  temp-hp: PF temporanei
+  hit-dice-d6: Dadi vita d6
+  hit-dice-d8: Dadi vita d8
+  hit-dice-d10: Dadi vita d10
+  hit-dice-d12: Dadi vita d12
+  passive-perception: Percezione passiva
+  passive-insight: Intuizione passiva  # ours, as Percezione passiva
+  passive-investigation: Indagare passiva  # ours: the passive check of Indagare; a verb takes no adjective well
+  darkvision: Scurovisione
+  blindsight: Vista cieca
+  tremorsense: Percezione tellurica
+  truesight: Vista pura
+  damage-vulnerabilities: Vulnerabilità ai danni
+  damage-resistances: Resistenze ai danni
+  damage-immunities: Immunità ai danni
+  condition-immunities: Immunità alle condizioni
+  death-successes: Successi contro morte  # ours, from "tiro salvezza contro morte" (p. 111)
+  death-failures: Fallimenti contro morte  # ours, as above
+  exhaustion: Indebolimento
+  # Proficiencies, as a class lists them under Competenze (p. 8)
+  save-proficiencies: Tiri salvezza
+  skill-proficiencies: Abilità
+  expertise: Maestria
+  armor-proficiencies: Armature
+  weapon-proficiencies: Armi
+  tool-proficiencies: Strumenti
+  languages: Linguaggi
+  # Features and attacks
+  features: Privilegi
+  fighting-styles: Stili di combattimento
+  attack: Attacco
+  damage-roll: Danni
+  # Spells (pp. 12, 63, 382)
+  caster-level: Livello da incantatore  # ours, from "Incantatore multiclasse" (p. 63)
+  spell-save-dc: CD incantesimi  # short for "CD del tiro salvezza sull'incantesimo" (p. 12)
+  spell-attack: Attacco con incantesimi  # short for "Modificatore di attacco dell'incantesimo" (p. 12)
+  slots-1: Slot di 1° livello
+  slots-2: Slot di 2° livello
+  slots-3: Slot di 3° livello
+  slots-4: Slot di 4° livello
+  slots-5: Slot di 5° livello
+  slots-6: Slot di 6° livello
+  slots-7: Slot di 7° livello
+  slots-8: Slot di 8° livello
+  slots-9: Slot di 9° livello
+  spell-slots: Slot incantesimo
+  slot-level: Livello di slot
+  mystic-arcanum-6: Arcanum Mistico (6° livello)
+  mystic-arcanum-7: Arcanum Mistico (7° livello)
+  mystic-arcanum-8: Arcanum Mistico (8° livello)
+  mystic-arcanum-9: Arcanum Mistico (9° livello)
+  signature-spell-1: Incantesimo personale 1  # ours, from Incantesimi Personali (p. 32)
+  signature-spell-2: Incantesimo personale 2  # ours, as above
+  max-prepared: Incantesimi preparabili  # ours
+  spells: Incantesimi
+  prepared: Preparati
+  cantrips-known: Trucchetti conosciuti
+  spells-known: Incantesimi conosciuti
+  invocations-known: Invocazioni conosciute  # the Warlock table's column (p. 53); its text says "Suppliche conosciute" (p. 54)
+  # The other columns of the class tables (pp. 8, 27, 34, 48)
+  rages: Ira
+  rage-damage: Danni dell'ira
+  martial-arts: Arti marziali
+  ki-points: Punti ki
+  unarmored-movement: Movimento senza armatura
+  sneak-attack: Attacco furtivo
+  sorcery-points: Punti stregoneria
+  # The uses of features, by the features' names (pp. 3–58)
+  channel-divinity: Incanalare Divinità
+  action-surge: Azione Impetuosa
+  second-wind: Recuperare Energie
+  indomitable: Indomabile
+  wild-shape: Forma Selvatica
+  bardic-inspiration: Ispirazione Bardica
+  divine-sense: Percezione del Divino
+  lay-on-hands: Imposizione delle Mani
+  cleansing-touch: Tocco Purificatore
+  arcane-recovery: Recupero Arcano
+  natural-recovery: Recupero naturale
+  wholeness-of-body: Integrità del Corpo
+  holy-nimbus: Nube Sacra
+  dark-ones-own-luck: Fortuna dell'Oscuro
+  hurl-through-hell: Scagliare all'inferno
+  stroke-of-luck: Colpo di Fortuna
+  eldritch-master: Maestro dell'Occulto
+  breath-weapon: Soffio
+  relentless-endurance: Resistenza implacabile
+  # A creature's stat block (pp. 292–296)
+  category: Tipo
+  armor: Armatura
+  hp-dice: Dadi dei PF  # ours: the dice in "Punti Ferita 11 (2d8 + 2)"
+  fly: Volare
+  swim: Nuotare
+  climb: Scalare
+  burrow: Scavare
+  saves: Tiri salvezza
+  skills: Abilità
+  cr: Sfida
+  xp-value: Valore in PE  # ours: "PE" alone is xp's
+words:
+  # Races (pp. 2–7)
+  Dragonborn: Dragonide
+  Dwarf: Nano
+  Hill Dwarf: Nano delle colline
+  Elf: Elfo
+  High Elf: Elfo alto
+  Gnome: Gnomo
+  Rock Gnome: Gnomo delle rocce
+  Half-Elf: Mezzelfo
+  Half-Orc: Mezzorco
+  Halfling: Halfling
+  Lightfoot Halfling: Halfling piedelesto
+  Human: Umano
+  Tiefling: Tiefling
+  # Classes and subclasses (pp. 8–58)
+  Barbarian: Barbaro
+  Path of the Berserker: Cammino del Berserker
+  Bard: Bardo
+  College of Lore: Collegio della Sapienza
+  Cleric: Chierico
+  Life Domain: Dominio della Vita
+  Druid: Druido
+  Circle of the Land: Circolo della Terra
+  Fighter: Guerriero
+  Champion: Campione
+  Monk: Monaco
+  Way of the Open Hand: Via della Mano Aperta
+  Paladin: Paladino
+  Oath of Devotion: Giuramento di Devozione
+  Ranger: Ranger
+  Hunter: Cacciatore
+  Rogue: Ladro
+  Thief: Furfante
+  Sorcerer: Stregone
+  Draconic Bloodline: Discendenza draconica
+  Warlock: Warlock
+  The Fiend: L'Immondo
+  Wizard: Mago
+  School of Evocation: Scuola di invocazione  # so the Italian SRD names the evocation school (p. 32)
+  # Background and feat (pp. 66, 84)
+  Acolyte (background): Accolito
+  Grappler: Lottatore
+  # Fighting styles (p. 24)
+  Archery: Tiro
+  Defense: Difesa
+  Dueling: Duellare
+  Great Weapon Fighting: Combattere con Armi Possenti
+  Protection: Protezione
+  Two-Weapon Fighting: Combattere con Due Armi
+  # The attack every sheet has (p. 108)
+  Unarmed Strike: Colpo senz'armi
+  # Skills as items of a list (p. 87)
+  Acrobatics: Acrobazia
+  Animal Handling: Addestrare animali
+  Arcana: Arcano
+  Athletics: Atletica
+  Deception: Inganno
+  History: Storia
+  Insight: Intuizione
+  Intimidation: Intimidire
+  Investigation: Indagare
+  Medicine: Medicina
+  Nature: Natura
+  Perception: Percezione
+  Performance: Intrattenere
+  Persuasion: Persuasione
+  Religion: Religione
+  Sleight of Hand: Rapidità di mano
+  Stealth: Furtività
+  Survival: Sopravvivenza
+  # Languages (p. 64), and Primordial's dialects
+  Common: Comune
+  Dwarvish: Nanico
+  Elvish: Elfico
+  Giant: Gigante
+  Gnomish: Gnomesco
+  Goblin: Goblin
+  Orc: Orchesco
+  Abyssal: Abissale
+  Celestial: Celestiale
+  Draconic: Draconico
+  Deep Speech: Gergo delle profondità
+  Infernal: Infernale
+  Primordial: Primordiale
+  Sylvan: Silvano
+  Undercommon: Sottocomune
+  Aquan: Aquan
+  Auran: Auran
+  Ignan: Ignan
+  Terran: Terran
+  Druidic: Druidico
+  Thieves' Cant: Gergo Ladresco
+  # Sizes (p. 105)
+  Tiny: Minuscola
+  Small: Piccola
+  Medium: Media
+  Large: Grande
+  Huge: Enorme
+  Gargantuan: Mastodontica
+  # Conditions (pp. 406–407; prone, restrained, stunned and frightened as the stat blocks write them, pp. 270, 382, 385: the appendix lacks them)
+  Blinded: Accecato
+  Charmed: Affascinato
+  Deafened: Assordato
+  Frightened: Spaventato
+  Grappled: Afferrato
+  Incapacitated: Incapacitato
+  Invisible: Invisibile
+  Paralyzed: Paralizzato
+  Petrified: Pietrificato
+  Poisoned: Avvelenato
+  Prone: Prono
+  Restrained: Trattenuto
+  Stunned: Stordito
+  Unconscious: Privo di sensi
+  Exhaustion: Indebolimento
+  # The same in the lists of a stat block, which writes them in lowercase
+  blinded: accecato
+  charmed: affascinato
+  deafened: assordato
+  frightened: spaventato
+  grappled: afferrato
+  incapacitated: incapacitato
+  invisible: invisibile
+  paralyzed: paralizzato
+  petrified: pietrificato
+  poisoned: avvelenato
+  prone: prono
+  restrained: trattenuto
+  stunned: stordito
+  unconscious: privo di sensi
+  exhaustion: indebolimento
+  # Damage types, as a stat block lists them (pp. 110–111, 385)
+  acid: acido
+  bludgeoning: contundenti
+  cold: freddo
+  fire: fuoco
+  force: forza
+  lightning: fulmine
+  necrotic: necrotici
+  piercing: perforanti
+  poison: veleno
+  psychic: psichici
+  radiant: radiosi
+  slashing: taglienti
+  thunder: tuono
+  "bludgeoning, piercing, and slashing from nonmagical attacks": contundenti, perforanti e taglienti da attacchi non magici
+  # What a race or class is proficient in (pp. 4, 6, 8–53, 70, 73)
+  light armor: armature leggere
+  medium armor: armature medie
+  heavy armor: armature pesanti
+  all armor: tutte le armature
+  shields: scudi
+  simple weapons: armi semplici
+  martial weapons: armi da guerra
+  clubs: randelli
+  daggers: pugnali
+  darts: dardi
+  hand crossbows: balestre a mano
+  javelins: giavellotti
+  light crossbows: balestre leggere
+  longswords: spade lunghe
+  maces: mazze
+  quarterstaffs: bastoni ferrati
+  rapiers: stocchi
+  scimitars: scimitarre
+  shortswords: spade corte
+  sickles: falcetti
+  slings: fionde
+  spears: lance
+  battleaxe: ascia da battaglia
+  handaxe: ascia
+  light hammer: martello leggero
+  warhammer: martello da guerra
+  longsword: spada lunga
+  shortsword: spada corta
+  shortbow: arco corto
+  longbow: arco lungo
+  herbalism kit: borsa da erborista
+  thieves' tools: arnesi da scasso
+  tinker's tools: strumenti da inventore
+  # What a race says of its saving throws (pp. 2–6)
+  advantage on saving throws against being charmed: vantaggio ai tiri salvezza per non essere affascinato
+  advantage on saving throws against being frightened: vantaggio ai tiri salvezza per non essere spaventato
+  advantage on saving throws against poison: vantaggio ai tiri salvezza contro il veleno
+  "advantage on all Intelligence, Wisdom, and Charisma saving throws against magic": vantaggio a tutti i tiri salvezza su Intelligenza, Saggezza e Carisma contro la magia
+  # A creature's type (pp. 292–293, 436): lowercase, as our stat blocks write it, with its descriptors
+  aberration: aberrazione
+  beast: bestia
+  celestial: celestiale
+  construct: costrutto
+  dragon: drago
+  elemental: elementale
+  fey: folletto
+  fiend: immondo
+  giant: gigante
+  humanoid: umanoide
+  monstrosity: mostruosità
+  ooze: melma
+  plant: vegetale
+  undead: non morto
+  humanoid (any race): umanoide (qualsiasi razza)
+  humanoid (dwarf): umanoide (nano)
+  humanoid (elf): umanoide (elfo)
+  humanoid (gnoll): umanoide (gnoll)
+  humanoid (gnome): umanoide (gnomo)
+  humanoid (goblinoid): umanoide (goblinoide)
+  humanoid (grimlock): umanoide (grimlock)
+  humanoid (human): umanoide (umano)
+  humanoid (human, shapechanger): umanoide (umano, mutaforma)
+  humanoid (kobold): umanoide (coboldo)
+  humanoid (lizardfolk): umanoide (lucertoloide)
+  humanoid (orc): umanoide (orco)
+  humanoid (sahuagin): umanoide (sahuagin)
+  fiend (demon): immondo (demone)
+  fiend (demon, shapechanger): immondo (demone, mutaforma)
+  fiend (devil): immondo (diavolo)
+  fiend (devil, shapechanger): immondo (diavolo, mutaforma)
+  fiend (shapechanger): immondo (mutaforma)
+  monstrosity (shapechanger): mostruosità (mutaforma)
+  monstrosity (titan): mostruosità (titano)
+  undead (shapechanger): non morto (mutaforma)
+  swarm of Tiny beasts: sciame di bestie Minuscole
+  # Alignments (pp. 63–64, 293), in the masculine: a stat block makes them agree with the creature's name
+  lawful good: legale buono
+  neutral good: neutrale buono
+  chaotic good: caotico buono
+  lawful neutral: legale neutrale
+  neutral: neutrale
+  chaotic neutral: caotico neutrale
+  lawful evil: legale malvagio
+  neutral evil: neutrale malvagio
+  chaotic evil: caotico malvagio
+  unaligned: senza allineamento
+  any alignment: qualsiasi allineamento
+  any chaotic alignment: qualsiasi allineamento caotico
+  any evil alignment: qualsiasi allineamento malvagio
+  any non-good alignment: qualsiasi allineamento non buono
+  any non-lawful alignment: qualsiasi allineamento non legale
+  neutral good (50%) or neutral evil (50%): neutrale buono (50%) o neutrale malvagio (50%)
+  # What a stat block writes after its Armor Class (pp. 69–70, 380, 385)
+  natural armor: armatura naturale
+  leather armor: armatura di cuoio
+  studded leather: cuoio borchiato
+  hide armor: armatura di pelle
+  chain shirt: giaco di maglia
+  scale mail: corazza a scaglie
+  breastplate: corazza di piastre
+  chain mail: cotta di maglia
+  splint: corazza a strisce
+  plate: armatura a piastre
+  natural armor, shield: armatura naturale, scudo
+  leather armor, shield: armatura di cuoio, scudo
+  studded leather, shield: cuoio borchiato, scudo
+  hide armor, shield: armatura di pelle, scudo
+  chain shirt, shield: giaco di maglia, scudo
+  scale mail, shield: corazza a scaglie, scudo
+  chain mail, shield: cotta di maglia, scudo
+  # The setting of the system (system.yaml, settings), as the player reads it
+  advancement: Avanzamento
+  how your character levels up: come il tuo personaggio sale di livello
+  xp: Punti esperienza
+  milestones: Traguardi  # ours: the 5.1 in Italian has no milestones
+  your character levels up with experience points, for the foes overcome and what the story rewards: il tuo personaggio sale di livello con i punti esperienza, per i nemici sconfitti e per ciò che la storia premia
+  your character levels up at the big moments of the story: il tuo personaggio sale di livello nei grandi momenti della storia
+  # The title of system.yaml
+  the fifth edition from the SRD 5.1, the 2014 rules: la quinta edizione dalla SRD 5.1, le regole del 2014
+# "un chierico di 3° livello", as the SRD writes it (p. 16); more classes are joined with " / "
+headline: "{classes} di {level}° livello"
