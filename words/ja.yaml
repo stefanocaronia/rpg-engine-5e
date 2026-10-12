@@ -1,0 +1,418 @@
+# The words of the 5e system in Japanese, as the dashboard shows them (D-403): translated by npm run translate (test/i18n/translate.ts) from the
+# words of words/it.yaml, which come from the system's official Italian translation; with the terms of the official translation in this language, where one is.
+groups:
+  Character: キャラクター
+  Personality: 人格
+  Abilities: 能力値
+  Saving Throws: セーヴィング・スロー
+  Skills: 技能
+  Combat: 戦闘
+  Proficiencies: 習熟
+  Features: 特徴
+  Attacks: 攻撃
+  Spells: 呪文
+fields:
+  creature: 種族
+  size: 大きさ
+  classes: クラス
+  subclasses: サブクラス
+  background: 背景
+  feats: 特技
+  alignment: 属性
+  level: レベル
+  xp: 経験点
+  inspiration: インスピレーション
+  personality-traits: 人格的特徴
+  ideal: 理想
+  bond: 絆
+  flaw: 欠点
+  str: 筋力
+  dex: 敏捷力
+  con: 耐久力
+  int: 知力
+  wis: 判断力
+  cha: 魅力
+  str-mod: 筋力修正
+  dex-mod: 敏捷力修正
+  con-mod: 耐久力修正
+  int-mod: 知力修正
+  wis-mod: 判断力修正
+  cha-mod: 魅力修正
+  proficiency: 習熟ボーナス
+  str-save: 筋力セーヴ
+  dex-save: 敏捷力セーヴ
+  con-save: 耐久力セーヴ
+  int-save: 知力セーヴ
+  wis-save: 判断力セーヴ
+  cha-save: 魅力セーヴ
+  save-notes: セーヴのメモ
+  acrobatics: 軽業
+  animal-handling: 動物使い
+  arcana: 魔法学
+  athletics: 運動
+  deception: ペテン
+  history: 歴史
+  insight: 看破
+  intimidation: 威圧
+  investigation: 捜査
+  medicine: 医術
+  nature: 自然
+  perception: 知覚
+  performance: 芸能
+  persuasion: 説得
+  religion: 宗教
+  sleight-of-hand: 手先の早業
+  stealth: 隠密
+  survival: 生存
+  ac: AC
+  initiative: イニシアチブ
+  speed: 移動速度
+  equipped: 装備中
+  hp-base: ダイスによるHP
+  hp: HP
+  temp-hp: 一時的HP
+  hit-dice-d6: ヒットダイス d6
+  hit-dice-d8: ヒットダイス d8
+  hit-dice-d10: ヒットダイス d10
+  hit-dice-d12: ヒットダイス d12
+  passive-perception: 受動知覚
+  passive-insight: 受動看破
+  passive-investigation: 受動捜査
+  darkvision: 暗視
+  blindsight: 盲目視
+  tremorsense: 振動感知
+  truesight: 真実の視覚
+  damage-vulnerabilities: ダメージ脆弱性
+  damage-resistances: ダメージ抵抗
+  damage-immunities: ダメージ完全耐性
+  condition-immunities: 状態完全耐性
+  death-successes: 死亡セーヴ成功
+  death-failures: 死亡セーヴ失敗
+  exhaustion: 疲労
+  save-proficiencies: セーヴ習熟
+  skill-proficiencies: 技能習熟
+  expertise: 達人
+  armor-proficiencies: 防具
+  weapon-proficiencies: 武器
+  tool-proficiencies: 道具
+  languages: 言語
+  features: 特徴
+  fighting-styles: 戦闘スタイル
+  attack: 攻撃
+  damage-roll: ダメージロール
+  caster-level: 呪文発動者レベル
+  spell-save-dc: 呪文セーヴ難易度
+  spell-attack: 呪文攻撃
+  slots-1: 1レベル呪文スロット
+  slots-2: 2レベル呪文スロット
+  slots-3: 3レベル呪文スロット
+  slots-4: 4レベル呪文スロット
+  slots-5: 5レベル呪文スロット
+  slots-6: 6レベル呪文スロット
+  slots-7: 7レベル呪文スロット
+  slots-8: 8レベル呪文スロット
+  slots-9: 9レベル呪文スロット
+  spell-slots: 呪文スロット
+  slot-level: スロットレベル
+  mystic-arcanum-6: ミスティック・アルカナム(6レベル)
+  mystic-arcanum-7: ミスティック・アルカナム(7レベル)
+  mystic-arcanum-8: ミスティック・アルカナム(8レベル)
+  mystic-arcanum-9: ミスティック・アルカナム(9レベル)
+  signature-spell-1: 得意呪文 1
+  signature-spell-2: 得意呪文 2
+  max-prepared: 準備可能な呪文数
+  spells: 呪文
+  prepared: 準備済み
+  cantrips-known: 習得済みの初級呪文
+  spells-known: 習得済みの呪文
+  invocations-known: 習得済みの魔霊秘咒
+  rages: 激怒
+  rage-damage: 激怒ダメージ
+  martial-arts: マーシャルアーツ
+  ki-points: 気ポイント
+  unarmored-movement: 無鎧移動
+  sneak-attack: 急所攻撃
+  sorcery-points: ソーサリーポイント
+  channel-divinity: 神性発現
+  action-surge: アクション・サージ
+  second-wind: セカンド・ウィンド
+  indomitable: 不屈
+  wild-shape: ワイルドシェイプ
+  bardic-inspiration: バードのインスピレーション
+  divine-sense: 神聖なる感知
+  lay-on-hands: レイ・オン・ハンズ
+  cleansing-touch: 清めの接触
+  arcane-recovery: 秘術回復
+  natural-recovery: 自然回復
+  wholeness-of-body: 肉体の完全性
+  holy-nimbus: 聖なる光輪
+  dark-ones-own-luck: 闇の者の幸運
+  hurl-through-hell: 地獄投げ
+  stroke-of-luck: 幸運の一撃
+  eldritch-master: エルドリッチ・マスター
+  breath-weapon: ブレス攻撃
+  relentless-endurance: 不屈の耐久力
+  category: 種別
+  armor: 鎧
+  hp-dice: HPダイス
+  fly: 飛行
+  swim: 水泳
+  climb: 登攀
+  burrow: 穴掘り
+  saves: セーヴ
+  skills: 技能
+  cr: 脅威度
+  xp-value: XP値
+words:
+  Dragonborn: ドラゴンボーン
+  Dwarf: ドワーフ
+  Hill Dwarf: ヒル・ドワーフ
+  Elf: エルフ
+  High Elf: ハイ・エルフ
+  Gnome: ノーム
+  Rock Gnome: ロック・ノーム
+  Half-Elf: ハーフエルフ
+  Half-Orc: ハーフオーク
+  Halfling: ハーフリング
+  Lightfoot Halfling: ライトフット・ハーフリング
+  Human: ヒューマン
+  Tiefling: ティーフリング
+  Barbarian: バーバリアン
+  Path of the Berserker: 狂戦士の道
+  Bard: バード
+  College of Lore: 知識の college
+  Cleric: クレリック
+  Life Domain: 生命領域
+  Druid: ドルイド
+  Circle of the Land: 大地のサークル
+  Fighter: ファイター
+  Champion: チャンピオン
+  Monk: モンク
+  Way of the Open Hand: 開かれた手の流派
+  Paladin: パラディン
+  Oath of Devotion: 献身の誓い
+  Ranger: レンジャー
+  Hunter: ハンター
+  Rogue: ローグ
+  Thief: 盗賊
+  Sorcerer: ソーサラー
+  Draconic Bloodline: ドラゴンの血統
+  Warlock: ウォーロック
+  The Fiend: 邪悪なる者
+  Wizard: ウィザード
+  School of Evocation: 力術の学派
+  Acolyte (background): アコライト
+  Grappler: グラップラー
+  Archery: 弓術
+  Defense: 防御
+  Dueling: 決闘術
+  Great Weapon Fighting: 大型武器戦闘
+  Protection: 防護
+  Two-Weapon Fighting: 二刀流戦闘
+  Unarmed Strike: 素手打撃
+  Acrobatics: 軽業
+  Animal Handling: 動物使い
+  Arcana: 秘術
+  Athletics: 運動
+  Deception: 欺瞞
+  History: 歴史
+  Insight: 看破
+  Intimidation: 威圧
+  Investigation: 捜査
+  Medicine: 医術
+  Nature: 自然
+  Perception: 知覚
+  Performance: 芸能
+  Persuasion: 説得
+  Religion: 宗教
+  Sleight of Hand: 手先の早業
+  Stealth: 隠密
+  Survival: 生存
+  Common: 共通語
+  Dwarvish: ドワーフ語
+  Elvish: エルフ語
+  Giant: 巨人語
+  Gnomish: ノーム語
+  Goblin: ゴブリン語
+  Orc: オーク語
+  Abyssal: 深淵語
+  Celestial: 天上語
+  Draconic: 竜語
+  Deep Speech: 地底語
+  Infernal: 地獄語
+  Primordial: 原始語
+  Sylvan: 森語
+  Undercommon: 地下共通語
+  Aquan: 水界語
+  Auran: 風界語
+  Ignan: 火界語
+  Terran: 地界語
+  Druidic: ドルイド語
+  Thieves' Cant: 盗賊の符丁
+  Tiny: 超小型
+  Small: 小型
+  Medium: 中型
+  Large: 大型
+  Huge: 超大型
+  Gargantuan: 巨大
+  Blinded: 盲目
+  Charmed: 魅了
+  Deafened: 聴覚喪失
+  Frightened: 恐怖
+  Grappled: 組みつかれ
+  Incapacitated: 行動不能
+  Invisible: 不可視
+  Paralyzed: 麻痺
+  Petrified: 石化
+  Poisoned: 毒
+  Prone: 伏せ
+  Restrained: 拘束
+  Stunned: 朦朧
+  Unconscious: 意識不明
+  Exhaustion: 疲労
+  blinded: 盲目
+  charmed: 魅了
+  deafened: 聴覚喪失
+  frightened: 恐怖
+  grappled: 組みつかれた
+  incapacitated: 行動不能
+  invisible: 不可視
+  paralyzed: 麻痺
+  petrified: 石化
+  poisoned: 毒
+  prone: 伏せ
+  restrained: 拘束
+  stunned: 朦朧
+  unconscious: 意識不明
+  exhaustion: 疲労
+  acid: 酸
+  bludgeoning: 殴打
+  cold: 冷気
+  fire: 火
+  force: 力場
+  lightning: 電撃
+  necrotic: 死霊
+  piercing: 刺突
+  poison: 毒
+  psychic: 精神
+  radiant: 光輝
+  slashing: 斬撃
+  thunder: 雷鳴
+  bludgeoning, piercing, and slashing from nonmagical attacks: 非魔法の攻撃による殴打、刺突、斬撃
+  light armor: 軽装鎧
+  medium armor: 中装鎧
+  heavy armor: 重装鎧
+  all armor: すべての鎧
+  shields: 盾
+  simple weapons: 単純武器
+  martial weapons: 軍用武器
+  clubs: クラブ
+  daggers: ダガー
+  darts: ダート
+  hand crossbows: ハンドクロスボウ
+  javelins: ジャベリン
+  light crossbows: ライトクロスボウ
+  longswords: ロングソード
+  maces: メイス
+  quarterstaffs: クォータースタッフ
+  rapiers: レイピア
+  scimitars: シミター
+  shortswords: ショートソード
+  sickles: 鎌
+  slings: スリング
+  spears: スピア
+  battleaxe: バトルアックス
+  handaxe: ハンドアックス
+  light hammer: ライトハンマー
+  warhammer: ウォーハンマー
+  longsword: ロングソード
+  shortsword: ショートソード
+  shortbow: ショートボウ
+  longbow: ロングボウ
+  herbalism kit: 薬草学キット
+  thieves' tools: 盗賊道具
+  tinker's tools: 鋳掛け道具
+  advantage on saving throws against being charmed: 魅了に対するセーヴィング・スローに有利
+  advantage on saving throws against being frightened: 恐怖に対するセーヴィング・スローに有利
+  advantage on saving throws against poison: 毒に対するセーヴィング・スローに有利
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: 魔法に対する【知力】【判断力】【魅力】のセーヴィング・スローすべてに有利
+  aberration: 異形
+  beast: 獣
+  celestial: 天使
+  construct: 人造
+  dragon: ドラゴン
+  elemental: エレメンタル
+  fey: フェイ
+  fiend: 邪悪な来訪者
+  giant: 巨人
+  humanoid: 人型生物
+  monstrosity: 怪物
+  ooze: 粘体
+  plant: 植物
+  undead: アンデッド
+  humanoid (any race): 人型生物(任意の種族)
+  humanoid (dwarf): 人型生物(ドワーフ)
+  humanoid (elf): 人型生物(エルフ)
+  humanoid (gnoll): 人型生物(ノール)
+  humanoid (gnome): 人型生物(ノーム)
+  humanoid (goblinoid): 人型生物(ゴブリノイド)
+  humanoid (grimlock): 人型生物(グリムロック)
+  humanoid (human): 人型生物(人間)
+  humanoid (human, shapechanger): 人型生物(人間、変身生物)
+  humanoid (kobold): 人型生物(コボルド)
+  humanoid (lizardfolk): 人型生物(リザードフォーク)
+  humanoid (orc): 人型生物(オーク)
+  humanoid (sahuagin): 人型生物(サハギン)
+  fiend (demon): 邪悪な来訪者(デーモン)
+  fiend (demon, shapechanger): 邪悪な来訪者(デーモン、変身生物)
+  fiend (devil): 邪悪な来訪者(デビル)
+  fiend (devil, shapechanger): 邪悪な来訪者(デビル、変身生物)
+  fiend (shapechanger): 邪悪な来訪者(変身生物)
+  monstrosity (shapechanger): 怪物(変身生物)
+  monstrosity (titan): 怪物(タイタン)
+  undead (shapechanger): アンデッド(変身生物)
+  swarm of Tiny beasts: 超小型の獣の群れ
+  lawful good: 秩序にして善
+  neutral good: 中立にして善
+  chaotic good: 混沌にして善
+  lawful neutral: 秩序にして中立
+  neutral: 中立
+  chaotic neutral: 混沌にして中立
+  lawful evil: 秩序にして悪
+  neutral evil: 中立にして悪
+  chaotic evil: 混沌にして悪
+  unaligned: 無属性
+  any alignment: 任意の属性
+  any chaotic alignment: 任意の混沌属性
+  any evil alignment: 任意の悪属性
+  any non-good alignment: 任意の非善属性
+  any non-lawful alignment: 任意の非秩序属性
+  neutral good (50%) or neutral evil (50%): 中立にして善(50%)または中立にして悪(50%)
+  natural armor: 外皮
+  leather armor: レザーアーマー
+  studded leather: スタデッドレザー
+  hide armor: ハイドアーマー
+  chain shirt: チェインシャツ
+  scale mail: スケイルメイル
+  breastplate: ブレストプレート
+  chain mail: チェインメイル
+  splint: スプリント
+  plate: プレート
+  natural armor, shield: 自然鎧、盾
+  leather armor, shield: レザーアーマー、盾
+  studded leather, shield: スタデッドレザー、盾
+  hide armor, shield: ハイドアーマー、盾
+  chain shirt, shield: チェインシャツ、盾
+  scale mail, shield: スケイルメイル、盾
+  chain mail, shield: チェインメイル、盾
+  advancement: 成長
+  how your character levels up: キャラクターのレベルアップの方法
+  xp: 経験点
+  milestones: マイルストーン
+  your character levels up with experience points, for the foes overcome and what the story rewards: キャラクターは、倒した敵や物語での報酬に応じて得られる経験点でレベルアップします
+  your character levels up at the big moments of the story: キャラクターは、物語の大きな節目でレベルアップします
+  the fifth edition from the SRD 5.1, the 2014 rules: SRD 5.1の第5版、2014年のルール
+  long rest: ロングレスト
+  short rest: ショートレスト
+  difficult: 困難
+headline: レベル{level}の{classes}

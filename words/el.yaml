@@ -1,0 +1,418 @@
+# The words of the 5e system in Greek, as the dashboard shows them (D-403): translated by npm run translate (test/i18n/translate.ts) from the
+# words of words/it.yaml, which come from the system's official Italian translation; with the terms of the official translation in this language, where one is.
+groups:
+  Character: Χαρακτήρας
+  Personality: Προσωπικότητα
+  Abilities: Χαρακτηριστικά
+  Saving Throws: Ρίψεις διάσωσης
+  Skills: Δεξιότητες
+  Combat: Μάχη
+  Proficiencies: Ικανότητες
+  Features: Χαρακτηριστικά κλάσης
+  Attacks: Επιθέσεις
+  Spells: Ξόρκια
+fields:
+  creature: φυλή
+  size: μέγεθος
+  classes: κλάσεις
+  subclasses: υποκλάσεις
+  background: υπόβαθρο
+  feats: ταλέντα
+  alignment: ευθυγράμμιση
+  level: επίπεδο
+  xp: Εμπειρία
+  inspiration: έμπνευση
+  personality-traits: χαρακτηριστικά προσωπικότητας
+  ideal: ιδανικό
+  bond: δεσμός
+  flaw: ελάττωμα
+  str: ΔΥΝ
+  dex: ΕΠΙ
+  con: ΑΝΤ
+  int: ΝΟΗ
+  wis: ΣΟΦ
+  cha: ΧΑΡ
+  str-mod: Τροπ. ΔΥΝ
+  dex-mod: Τροπ. ΕΠΙ
+  con-mod: Τροπ. ΑΝΤ
+  int-mod: Τροπ. ΝΟΗ
+  wis-mod: Τροπ. ΣΟΦ
+  cha-mod: Τροπ. ΧΑΡ
+  proficiency: bonus ικανότητας
+  str-save: Διάσωση Δύναμης
+  dex-save: Διάσωση Επιδεξιότητας
+  con-save: Διάσωση Αντοχής
+  int-save: Διάσωση Νοημοσύνης
+  wis-save: Διάσωση Σοφίας
+  cha-save: Διάσωση Χαρίσματος
+  save-notes: σημειώσεις διάσωσης
+  acrobatics: ακροβατική
+  animal-handling: χειρισμός ζώων
+  arcana: μυστηριώδη
+  athletics: αθλητισμός
+  deception: εξαπάτηση
+  history: ιστορία
+  insight: διορατικότητα
+  intimidation: εκφοβισμός
+  investigation: έρευνα
+  medicine: ιατρική
+  nature: φύση
+  perception: αντίληψη
+  performance: παράσταση
+  persuasion: πειθώ
+  religion: θρησκεία
+  sleight-of-hand: ταχυδακτυλουργία
+  stealth: κρυφή κίνηση
+  survival: επιβίωση
+  ac: ΚΘ
+  initiative: πρωτοβουλία
+  speed: ταχύτητα
+  equipped: εξοπλισμένο
+  hp-base: ΣΖ από ζάρια
+  hp: ΣΖ
+  temp-hp: προσωρινά ΣΖ
+  hit-dice-d6: ζάρια ζωής d6
+  hit-dice-d8: ζάρια ζωής d8
+  hit-dice-d10: ζάρια ζωής d10
+  hit-dice-d12: ζάρια ζωής d12
+  passive-perception: παθητική αντίληψη
+  passive-insight: παθητική διορατικότητα
+  passive-investigation: παθητική έρευνα
+  darkvision: νυχτερινή όραση
+  blindsight: τυφλή όραση
+  tremorsense: αίσθηση δονήσεων
+  truesight: αληθινή όραση
+  damage-vulnerabilities: ευπάθειες σε ζημιά
+  damage-resistances: αντοχές σε ζημιά
+  damage-immunities: ανοσίες σε ζημιά
+  condition-immunities: ανοσίες σε καταστάσεις
+  death-successes: επιτυχίες θανάτου
+  death-failures: αποτυχίες θανάτου
+  exhaustion: εξάντληση
+  save-proficiencies: ικανότητες διάσωσης
+  skill-proficiencies: ικανότητες δεξιοτήτων
+  expertise: ειδίκευση
+  armor-proficiencies: ικανότητες σε πανοπλίες
+  weapon-proficiencies: ικανότητες σε όπλα
+  tool-proficiencies: ικανότητες σε εργαλεία
+  languages: γλώσσες
+  features: χαρακτηριστικά
+  fighting-styles: στυλ μάχης
+  attack: επίθεση
+  damage-roll: ρίψη ζημιάς
+  caster-level: επίπεδο ξορκιστή
+  spell-save-dc: ΔΔ ξορκιών
+  spell-attack: επίθεση ξορκιού
+  slots-1: θέσεις 1ου επιπέδου
+  slots-2: θέσεις 2ου επιπέδου
+  slots-3: θέσεις 3ου επιπέδου
+  slots-4: θέσεις 4ου επιπέδου
+  slots-5: θέσεις 5ου επιπέδου
+  slots-6: θέσεις 6ου επιπέδου
+  slots-7: θέσεις 7ου επιπέδου
+  slots-8: θέσεις 8ου επιπέδου
+  slots-9: θέσεις 9ου επιπέδου
+  spell-slots: θέσεις ξορκιών
+  slot-level: επίπεδο θέσης
+  mystic-arcanum-6: μυστικό αρκάνουμ 6
+  mystic-arcanum-7: μυστικό αρκάνουμ 7
+  mystic-arcanum-8: μυστικό αρκάνουμ 8
+  mystic-arcanum-9: μυστικό αρκάνουμ 9
+  signature-spell-1: χαρακτηριστικό ξόρκι 1
+  signature-spell-2: χαρακτηριστικό ξόρκι 2
+  max-prepared: μέγιστα προετοιμασμένα
+  spells: ξόρκια
+  prepared: προετοιμασμένα
+  cantrips-known: γνωστά cantrips
+  spells-known: γνωστά ξόρκια
+  invocations-known: γνωστές επικλήσεις
+  rages: οργές
+  rage-damage: ζημιά οργής
+  martial-arts: πολεμικές τέχνες
+  ki-points: σημεία ki
+  unarmored-movement: κίνηση χωρίς πανοπλία
+  sneak-attack: ύπουλη επίθεση
+  sorcery-points: πόντοι μαγείας
+  channel-divinity: διοχέτευση θεϊκότητας
+  action-surge: εξάρσεις δράσης
+  second-wind: δεύτερη πνοή
+  indomitable: ακατάβλητος
+  wild-shape: άγρια μορφή
+  bardic-inspiration: εμπνευση βάρδου
+  divine-sense: θεϊκή αίσθηση
+  lay-on-hands: θεραπευτικό άγγιγμα
+  cleansing-touch: άγγιγμα καθαρμού
+  arcane-recovery: μυστική ανάκτηση
+  natural-recovery: φυσική ανάκτηση
+  wholeness-of-body: ακεραιότητα σώματος
+  holy-nimbus: ιερό φωτοστέφανο
+  dark-ones-own-luck: τύχη του σκοτεινού
+  hurl-through-hell: εκσφενδόνιση μέσα από την κόλαση
+  stroke-of-luck: τυχερή ευκαιρία
+  eldritch-master: μάστορας του απόκοσμου
+  breath-weapon: όπλο πνοής
+  relentless-endurance: αδυσώπητη αντοχή
+  category: κατηγορία
+  armor: πανοπλία
+  hp-dice: ζάρια ΠΖ
+  fly: πτήση
+  swim: κολύμπι
+  climb: αναρρίχηση
+  burrow: σκάψιμο
+  saves: ζαριές άμυνας
+  skills: δεξιότητες
+  cr: ΒΠ
+  xp-value: αξία XP
+words:
+  Dragonborn: Δρακογέννητος
+  Dwarf: Νάνος
+  Hill Dwarf: Νάνος των Λόφων
+  Elf: Ξωτικό
+  High Elf: Υψηλό Ξωτικό
+  Gnome: Γκνόμος
+  Rock Gnome: Γκνόμος των Βράχων
+  Half-Elf: Ημιξωτικό
+  Half-Orc: Ημιόρκ
+  Halfling: Χάφλινγκ
+  Lightfoot Halfling: Χάφλινγκ Ελαφροπόδαρος
+  Human: Άνθρωπος
+  Tiefling: Τίφλινγκ
+  Barbarian: Βάρβαρος
+  Path of the Berserker: Δρόμος του Μπέρσερκερ
+  Bard: Βάρδος
+  College of Lore: Κολέγιο της Γνώσης
+  Cleric: Κληρικός
+  Life Domain: Επικράτεια της Ζωής
+  Druid: Δρυΐδης
+  Circle of the Land: Κύκλος της Γης
+  Fighter: Μαχητής
+  Champion: Πρωταθλητής
+  Monk: Μοναχός
+  Way of the Open Hand: Δρόμος του Ανοιχτού Χεριού
+  Paladin: Παλαδίνος
+  Oath of Devotion: Όρκος της Αφοσίωσης
+  Ranger: Ρέιντζερ
+  Hunter: Κυνηγός
+  Rogue: Απατεώνας
+  Thief: Κλέφτης
+  Sorcerer: Μάγος της Μαγείας
+  Draconic Bloodline: Δρακονική Γενιά
+  Warlock: Γουόρλοκ
+  The Fiend: Ο Δαίμονας
+  Wizard: Μάγος
+  School of Evocation: Σχολή της Επίκλησης
+  Acolyte (background): Ακόλουθος
+  Grappler: Παλαιστής
+  Archery: Τοξοβολία
+  Defense: Άμυνα
+  Dueling: Μονομαχία
+  Great Weapon Fighting: Μάχη με Μεγάλα Όπλα
+  Protection: Προστασία
+  Two-Weapon Fighting: Μάχη με Δύο Όπλα
+  Unarmed Strike: Άοπλο Χτύπημα
+  Acrobatics: Ακροβατικά
+  Animal Handling: Χειρισμός Ζώων
+  Arcana: Μυστικά
+  Athletics: Αθλητισμός
+  Deception: Εξαπάτηση
+  History: Ιστορία
+  Insight: Διαίσθηση
+  Intimidation: Εκφοβισμός
+  Investigation: Έρευνα
+  Medicine: Ιατρική
+  Nature: Φύση
+  Perception: Αντίληψη
+  Performance: Παράσταση
+  Persuasion: Πειθώ
+  Religion: Θρησκεία
+  Sleight of Hand: Ταχυδακτυλουργία
+  Stealth: Κρυφτό
+  Survival: Επιβίωση
+  Common: Κοινή
+  Dwarvish: Νανική
+  Elvish: Ξωτική
+  Giant: Γιγαντιαία
+  Gnomish: Γκνομική
+  Goblin: Γκόμπλιν
+  Orc: Όρκ
+  Abyssal: Αβυσσική
+  Celestial: Ουράνια
+  Draconic: Δρακονική
+  Deep Speech: Βαθιά Ομιλία
+  Infernal: Κολασμένη
+  Primordial: Αρχέγονη
+  Sylvan: Δασική
+  Undercommon: Υπόγεια Κοινή
+  Aquan: Ακουάν
+  Auran: Αουράν
+  Ignan: Ιγκνάν
+  Terran: Τεράν
+  Druidic: Δρυιδική
+  Thieves' Cant: Γλώσσα των Κλεφτών
+  Tiny: Μικροσκοπικό
+  Small: Μικρό
+  Medium: Μεσαίο
+  Large: Μεγάλο
+  Huge: Τεράστιο
+  Gargantuan: Γιγαντιαίο
+  Blinded: Τυφλωμένος
+  Charmed: Γοητευμένος
+  Deafened: Κωφωμένος
+  Frightened: Φοβισμένος
+  Grappled: Αρπαγμένος
+  Incapacitated: Ανίκανος
+  Invisible: Αόρατος
+  Paralyzed: Παραλυμένος
+  Petrified: Απολιθωμένος
+  Poisoned: Δηλητηριασμένος
+  Prone: Πεσμένος
+  Restrained: Δεσμευμένος
+  Stunned: Ζαλισμένος
+  Unconscious: Αναίσθητος
+  Exhaustion: Εξάντληση
+  blinded: τυφλωμένος
+  charmed: γοητευμένος
+  deafened: κουφός
+  frightened: φοβισμένος
+  grappled: αρπαγμένος
+  incapacitated: ανίκανος
+  invisible: αόρατος
+  paralyzed: παραλυμένος
+  petrified: απολιθωμένος
+  poisoned: δηλητηριασμένος
+  prone: πεσμένος
+  restrained: δεσμευμένος
+  stunned: ζαλισμένος
+  unconscious: αναίσθητος
+  exhaustion: εξάντληση
+  acid: οξύ
+  bludgeoning: συντριπτικό
+  cold: ψύχος
+  fire: φωτιά
+  force: δύναμη
+  lightning: αστραπή
+  necrotic: νεκρωτικό
+  piercing: διατρητικό
+  poison: δηλητήριο
+  psychic: ψυχικό
+  radiant: ακτινοβόλο
+  slashing: κοπτικό
+  thunder: βροντή
+  bludgeoning, piercing, and slashing from nonmagical attacks: συντριπτικό, διατρητικό και κοπτικό από μη μαγικές επιθέσεις
+  light armor: ελαφριές πανοπλίες
+  medium armor: μεσαίες πανοπλίες
+  heavy armor: βαριές πανοπλίες
+  all armor: όλες οι πανοπλίες
+  shields: ασπίδες
+  simple weapons: απλά όπλα
+  martial weapons: πολεμικά όπλα
+  clubs: ρόπαλα
+  daggers: στιλέτα
+  darts: βέλη
+  hand crossbows: χειροβαλλίστρες
+  javelins: ακόντια
+  light crossbows: ελαφριές βαλλίστρες
+  longswords: μακριά ξίφη
+  maces: σφύρες μάχης
+  quarterstaffs: ξύλινες ράβδοι
+  rapiers: ραπίδες
+  scimitars: ξίφη σκιμιτάρ
+  shortswords: κοντά ξίφη
+  sickles: δρεπάνια
+  slings: σφενδόνες
+  spears: δόρατα
+  battleaxe: πολεμικό τσεκούρι
+  handaxe: χειροπέλεκυς
+  light hammer: ελαφρύ σφυρί
+  warhammer: πολεμικό σφυρί
+  longsword: μακρύ ξίφος
+  shortsword: κοντό ξίφος
+  shortbow: κοντό τόξο
+  longbow: μακρύ τόξο
+  herbalism kit: κιτ βοτανολογίας
+  thieves' tools: εργαλεία κλέφτη
+  tinker's tools: εργαλεία μάστορα
+  advantage on saving throws against being charmed: πλεονέκτημα στις διασωστικές ζαριές για να μην γοητευτεί
+  advantage on saving throws against being frightened: πλεονέκτημα στις διασωστικές ζαριές για να μην φοβηθεί
+  advantage on saving throws against poison: πλεονέκτημα στις διασωστικές ζαριές κατά του δηλητηρίου
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: πλεονέκτημα σε όλες τις διασωστικές ζαριές Εξυπνάδας, Σοφίας και Χαρίσματος κατά της μαγείας
+  aberration: εκτροπή
+  beast: θηρίο
+  celestial: ουράνιο
+  construct: κατασκεύασμα
+  dragon: δράκος
+  elemental: στοιχειακό
+  fey: νεράιδα
+  fiend: δαίμονας
+  giant: γίγαντας
+  humanoid: ανθρωποειδές
+  monstrosity: τερατούργημα
+  ooze: βλέννα
+  plant: φυτό
+  undead: απέθαντος
+  humanoid (any race): ανθρωποειδές (οποιαδήποτε φυλή)
+  humanoid (dwarf): ανθρωποειδές (νάνος)
+  humanoid (elf): ανθρωποειδές (ξωτικό)
+  humanoid (gnoll): ανθρωποειδές (γκνολ)
+  humanoid (gnome): ανθρωποειδές (γνώμος)
+  humanoid (goblinoid): ανθρωποειδές (γκομπλινοειδές)
+  humanoid (grimlock): ανθρωποειδές (γκριμλοκ)
+  humanoid (human): ανθρωποειδές (άνθρωπος)
+  humanoid (human, shapechanger): ανθρωποειδές (άνθρωπος, μεταμορφωτής)
+  humanoid (kobold): ανθρωποειδές (κόμπολντ)
+  humanoid (lizardfolk): ανθρωποειδές (σαυρανθρωπος)
+  humanoid (orc): ανθρωποειδές (όρκ)
+  humanoid (sahuagin): ανθρωποειδές (σαχουαγκίν)
+  fiend (demon): δαίμονας (δαιμόνιο)
+  fiend (demon, shapechanger): δαίμονας (δαιμόνιο, μεταμορφωτής)
+  fiend (devil): δαίμονας (διάβολος)
+  fiend (devil, shapechanger): δαίμονας (διάβολος, μεταμορφωτής)
+  fiend (shapechanger): δαίμονας (μεταμορφωτής)
+  monstrosity (shapechanger): τερατούργημα (μεταμορφωτής)
+  monstrosity (titan): τερατούργημα (τιτάνας)
+  undead (shapechanger): απέθαντος (μεταμορφωτής)
+  swarm of Tiny beasts: σμήνος από Ελάχιστα θηρία
+  lawful good: νομοταγής καλός
+  neutral good: ουδέτερος καλός
+  chaotic good: χαοτικός καλός
+  lawful neutral: νομοταγής ουδέτερος
+  neutral: ουδέτερος
+  chaotic neutral: χαοτικός ουδέτερος
+  lawful evil: νομοταγής κακός
+  neutral evil: ουδέτερος κακός
+  chaotic evil: χαοτικός κακός
+  unaligned: χωρίς ευθυγράμμιση
+  any alignment: οποιαδήποτε ευθυγράμμιση
+  any chaotic alignment: οποιαδήποτε χαοτική ευθυγράμμιση
+  any evil alignment: οποιαδήποτε κακή ευθυγράμμιση
+  any non-good alignment: οποιαδήποτε μη καλή ευθυγράμμιση
+  any non-lawful alignment: οποιαδήποτε μη νομοταγής ευθυγράμμιση
+  neutral good (50%) or neutral evil (50%): ουδέτερος καλός (50%) ή ουδέτερος κακός (50%)
+  natural armor: φυσική πανοπλία
+  leather armor: δερμάτινη πανοπλία
+  studded leather: δέρμα με καρφιά
+  hide armor: πανοπλία από δέρμα ζώου
+  chain shirt: αλυσιδωτό πουκάμισο
+  scale mail: λέπια
+  breastplate: θώρακας
+  chain mail: αλυσιδωτή πανοπλία
+  splint: πανοπλία με λωρίδες
+  plate: πλήρης πανοπλία
+  natural armor, shield: φυσική πανοπλία, ασπίδα
+  leather armor, shield: δερμάτινη πανοπλία, ασπίδα
+  studded leather, shield: δερμάτινη πανοπλία με καρφιά, ασπίδα
+  hide armor, shield: πανοπλία από δέρμα ζώου, ασπίδα
+  chain shirt, shield: αλυσιδωτό πουκάμισο, ασπίδα
+  scale mail, shield: λέπια, ασπίδα
+  chain mail, shield: αλυσιδωτή πανοπλία, ασπίδα
+  advancement: Εξέλιξη
+  how your character levels up: πώς ο χαρακτήρας σου ανεβαίνει επίπεδο
+  xp: Πόντοι εμπειρίας
+  milestones: Ορόσημα
+  your character levels up with experience points, for the foes overcome and what the story rewards: ο χαρακτήρας σου ανεβαίνει επίπεδο με πόντους εμπειρίας, για τους εχθρούς που νικάς και ό,τι ανταμείβει η ιστορία
+  your character levels up at the big moments of the story: ο χαρακτήρας σου ανεβαίνει επίπεδο στις μεγάλες στιγμές της ιστορίας
+  the fifth edition from the SRD 5.1, the 2014 rules: η πέμπτη έκδοση από το SRD 5.1, οι κανόνες του 2014
+  long rest: μεγάλη ανάπαυση
+  short rest: σύντομη ανάπαυση
+  difficult: δύσκολο
+headline: "{classes} επιπέδου {level}"

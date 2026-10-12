@@ -1,0 +1,418 @@
+# The words of the 5e system in Russian, as the dashboard shows them (D-403): translated by npm run translate (test/i18n/translate.ts) from the
+# words of words/it.yaml, which come from the system's official Italian translation; with the terms of the official translation in this language, where one is.
+groups:
+  Character: Персонаж
+  Personality: Личность
+  Abilities: Характеристики
+  Saving Throws: Спасброски
+  Skills: Навыки
+  Combat: Бой
+  Proficiencies: Владения
+  Features: Умения
+  Attacks: Атаки
+  Spells: Заклинания
+fields:
+  creature: Раса
+  size: Размер
+  classes: Классы
+  subclasses: Подклассы
+  background: Предыстория
+  feats: Черты
+  alignment: Мировоззрение
+  level: Уровень
+  xp: Опыт
+  inspiration: Вдохновение
+  personality-traits: Черты характера
+  ideal: Идеал
+  bond: Привязанность
+  flaw: Слабость
+  str: СИЛ
+  dex: ЛОВ
+  con: ТЕЛ
+  int: ИНТ
+  wis: МУД
+  cha: ХАР
+  str-mod: Мод. СИЛ
+  dex-mod: Мод. ЛОВ
+  con-mod: Мод. ТЕЛ
+  int-mod: Мод. ИНТ
+  wis-mod: Мод. МУД
+  cha-mod: Мод. ХАР
+  proficiency: Бонус мастерства
+  str-save: Спасбросок Силы
+  dex-save: Спасбросок Ловкости
+  con-save: Спасбросок Телосложения
+  int-save: Спасбросок Интеллекта
+  wis-save: Спасбросок Мудрости
+  cha-save: Спасбросок Харизмы
+  save-notes: Заметки к спасброскам
+  acrobatics: Акробатика
+  animal-handling: Уход за животными
+  arcana: Магия
+  athletics: Атлетика
+  deception: Обман
+  history: История
+  insight: Проницательность
+  intimidation: Запугивание
+  investigation: Анализ
+  medicine: Медицина
+  nature: Природа
+  perception: Внимательность
+  performance: Выступление
+  persuasion: Убеждение
+  religion: Религия
+  sleight-of-hand: Ловкость рук
+  stealth: Скрытность
+  survival: Выживание
+  ac: КД
+  initiative: Инициатива
+  speed: Скорость
+  equipped: Экипировано
+  hp-base: Базовые хиты
+  hp: Хиты
+  temp-hp: Временные хиты
+  hit-dice-d6: Кубики хитов d6
+  hit-dice-d8: Кубики хитов d8
+  hit-dice-d10: Кубики хитов d10
+  hit-dice-d12: Кубики хитов d12
+  passive-perception: Пассивная внимательность
+  passive-insight: Пассивная проницательность
+  passive-investigation: Пассивный анализ
+  darkvision: Тёмное зрение
+  blindsight: Слепое зрение
+  tremorsense: Чувство вибраций
+  truesight: Истинное зрение
+  damage-vulnerabilities: Уязвимость к урону
+  damage-resistances: Сопротивление урону
+  damage-immunities: Иммунитет к урону
+  condition-immunities: Иммунитет к состояниям
+  death-successes: Успехи против смерти
+  death-failures: Провалы против смерти
+  exhaustion: Истощение
+  save-proficiencies: Спасброски
+  skill-proficiencies: Навыки
+  expertise: Компетентность
+  armor-proficiencies: Доспехи
+  weapon-proficiencies: Оружие
+  tool-proficiencies: Инструменты
+  languages: Языки
+  features: Умения
+  fighting-styles: Боевые стили
+  attack: Атака
+  damage-roll: Бросок урона
+  caster-level: Уровень заклинателя
+  spell-save-dc: СЛ заклинаний
+  spell-attack: Атака заклинанием
+  slots-1: Ячейки 1 уровня
+  slots-2: Ячейки 2 уровня
+  slots-3: Ячейки 3 уровня
+  slots-4: Ячейки 4 уровня
+  slots-5: Ячейки 5 уровня
+  slots-6: Ячейки 6 уровня
+  slots-7: Ячейки 7 уровня
+  slots-8: Ячейки 8 уровня
+  slots-9: Ячейки 9 уровня
+  spell-slots: Ячейки заклинаний
+  slot-level: Уровень ячейки
+  mystic-arcanum-6: Мистический арканум (6 уровень)
+  mystic-arcanum-7: Мистический арканум (7 уровень)
+  mystic-arcanum-8: Мистический арканум (8 уровень)
+  mystic-arcanum-9: Мистический арканум (9 уровень)
+  signature-spell-1: Коронное заклинание 1
+  signature-spell-2: Коронное заклинание 2
+  max-prepared: Макс. подготовленных заклинаний
+  spells: Заклинания
+  prepared: Подготовлено
+  cantrips-known: Известные заговоры
+  spells-known: Известные заклинания
+  invocations-known: Известные воззвания
+  rages: Ярости
+  rage-damage: Урон ярости
+  martial-arts: Боевые искусства
+  ki-points: Очки ци
+  unarmored-movement: Движение без доспехов
+  sneak-attack: Скрытая атака
+  sorcery-points: очки чародейства
+  channel-divinity: божественный канал
+  action-surge: всплеск действий
+  second-wind: второе дыхание
+  indomitable: упорство
+  wild-shape: дикий облик
+  bardic-inspiration: бардовское вдохновение
+  divine-sense: божественное чувство
+  lay-on-hands: возложение рук
+  cleansing-touch: очищающее касание
+  arcane-recovery: магическое восстановление
+  natural-recovery: природное восстановление
+  wholeness-of-body: целостность тела
+  holy-nimbus: священный нимб
+  dark-ones-own-luck: удача Тёмного
+  hurl-through-hell: низвержение в преисподнюю
+  stroke-of-luck: удачный миг
+  eldritch-master: мастер мистики
+  breath-weapon: оружие дыхания
+  relentless-endurance: неумолимая стойкость
+  category: категория
+  armor: доспех
+  hp-dice: кубики хитов
+  fly: полёт
+  swim: плавание
+  climb: лазание
+  burrow: копание
+  saves: спасброски
+  skills: навыки
+  cr: ОП
+  xp-value: значение опыта
+words:
+  Dragonborn: Драконорождённый
+  Dwarf: Дварф
+  Hill Dwarf: Холмовой дварф
+  Elf: Эльф
+  High Elf: Высший эльф
+  Gnome: Гном
+  Rock Gnome: Скальный гном
+  Half-Elf: Полуэльф
+  Half-Orc: Полуорк
+  Halfling: Полурослик
+  Lightfoot Halfling: Легконогий полурослик
+  Human: Человек
+  Tiefling: Тифлинг
+  Barbarian: Варвар
+  Path of the Berserker: Путь берсерка
+  Bard: Бард
+  College of Lore: Коллегия знаний
+  Cleric: Жрец
+  Life Domain: Домен жизни
+  Druid: Друид
+  Circle of the Land: Круг земли
+  Fighter: Воин
+  Champion: Чемпион
+  Monk: Монах
+  Way of the Open Hand: Путь открытой ладони
+  Paladin: Паладин
+  Oath of Devotion: Клятва преданности
+  Ranger: Следопыт
+  Hunter: Охотник
+  Rogue: Плут
+  Thief: Вор
+  Sorcerer: Чародей
+  Draconic Bloodline: Драконья кровь
+  Warlock: Колдун
+  The Fiend: Исчадие
+  Wizard: Волшебник
+  School of Evocation: Школа воплощения
+  Acolyte (background): Служитель
+  Grappler: Борец
+  Archery: Стрельба из лука
+  Defense: Оборона
+  Dueling: Дуэлянт
+  Great Weapon Fighting: Сражение большим оружием
+  Protection: Защита
+  Two-Weapon Fighting: Сражение двумя оружиями
+  Unarmed Strike: Безоружный удар
+  Acrobatics: Акробатика
+  Animal Handling: Уход за животными
+  Arcana: Магия
+  Athletics: Атлетика
+  Deception: Обман
+  History: История
+  Insight: Проницательность
+  Intimidation: Запугивание
+  Investigation: Анализ
+  Medicine: Медицина
+  Nature: Природа
+  Perception: Внимательность
+  Performance: Выступление
+  Persuasion: Убеждение
+  Religion: Религия
+  Sleight of Hand: Ловкость рук
+  Stealth: Скрытность
+  Survival: Выживание
+  Common: Общий
+  Dwarvish: Дварфийский
+  Elvish: Эльфийский
+  Giant: Великаний
+  Gnomish: Гномий
+  Goblin: Гоблинский
+  Orc: Орочий
+  Abyssal: Бездны
+  Celestial: Небесный
+  Draconic: Драконий
+  Deep Speech: Глубинная речь
+  Infernal: Инфернальный
+  Primordial: Первичный
+  Sylvan: Сильван
+  Undercommon: Подземный
+  Aquan: Акван
+  Auran: Ауран
+  Ignan: Игнан
+  Terran: Терран
+  Druidic: Друидический
+  Thieves' Cant: Воровской жаргон
+  Tiny: Крошечный
+  Small: Маленький
+  Medium: Средний
+  Large: Большой
+  Huge: Огромный
+  Gargantuan: Громадный
+  Blinded: Ослеплённый
+  Charmed: Очарованный
+  Deafened: Оглохший
+  Frightened: Испуганный
+  Grappled: Схваченный
+  Incapacitated: Выведенный из строя
+  Invisible: Невидимый
+  Paralyzed: Парализованный
+  Petrified: Окаменевший
+  Poisoned: Отравленный
+  Prone: Сбитый с ног
+  Restrained: Опутанный
+  Stunned: Ошеломлённый
+  Unconscious: Без сознания
+  Exhaustion: Истощение
+  blinded: ослеплённый
+  charmed: очарованный
+  deafened: оглохший
+  frightened: испуганный
+  grappled: схваченный
+  incapacitated: выведенный из строя
+  invisible: невидимый
+  paralyzed: парализованный
+  petrified: окаменевший
+  poisoned: отравленный
+  prone: сбитый с ног
+  restrained: опутанный
+  stunned: ошеломлённый
+  unconscious: без сознания
+  exhaustion: истощение
+  acid: кислота
+  bludgeoning: дробящий
+  cold: холод
+  fire: огонь
+  force: силовое поле
+  lightning: электричество
+  necrotic: некротическая энергия
+  piercing: колющий
+  poison: яд
+  psychic: психическая энергия
+  radiant: излучение
+  slashing: рубящий
+  thunder: звук
+  bludgeoning, piercing, and slashing from nonmagical attacks: дробящий, колющий и рубящий от немагических атак
+  light armor: лёгкие доспехи
+  medium armor: средние доспехи
+  heavy armor: тяжёлые доспехи
+  all armor: все доспехи
+  shields: щиты
+  simple weapons: простое оружие
+  martial weapons: воинское оружие
+  clubs: дубинки
+  daggers: кинжалы
+  darts: дротики
+  hand crossbows: ручные арбалеты
+  javelins: метательные копья
+  light crossbows: лёгкие арбалеты
+  longswords: длинные мечи
+  maces: булавы
+  quarterstaffs: боевые посохи
+  rapiers: рапиры
+  scimitars: скимитары
+  shortswords: короткие мечи
+  sickles: серпы
+  slings: пращи
+  spears: копья
+  battleaxe: боевой топор
+  handaxe: ручной топор
+  light hammer: лёгкий молот
+  warhammer: боевой молот
+  longsword: длинный меч
+  shortsword: короткий меч
+  shortbow: короткий лук
+  longbow: длинный лук
+  herbalism kit: набор травника
+  thieves' tools: воровские инструменты
+  tinker's tools: инструменты жестянщика
+  advantage on saving throws against being charmed: преимущество на спасброски от очарования
+  advantage on saving throws against being frightened: преимущество на спасброски от испуга
+  advantage on saving throws against poison: преимущество на спасброски от яда
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: преимущество на все спасброски Интеллекта, Мудрости и Харизмы против магии
+  aberration: аберрация
+  beast: зверь
+  celestial: небожитель
+  construct: конструкт
+  dragon: дракон
+  elemental: элементаль
+  fey: фея
+  fiend: исчадие
+  giant: великан
+  humanoid: гуманоид
+  monstrosity: чудовище
+  ooze: слизь
+  plant: растение
+  undead: нежить
+  humanoid (any race): гуманоид (любая раса)
+  humanoid (dwarf): гуманоид (дварф)
+  humanoid (elf): гуманоид (эльф)
+  humanoid (gnoll): гуманоид (гнолл)
+  humanoid (gnome): гуманоид (гном)
+  humanoid (goblinoid): гуманоид (гоблиноид)
+  humanoid (grimlock): гуманоид (гримлок)
+  humanoid (human): гуманоид (человек)
+  humanoid (human, shapechanger): гуманоид (человек, оборотень)
+  humanoid (kobold): гуманоид (кобольд)
+  humanoid (lizardfolk): гуманоид (ящеролюд)
+  humanoid (orc): гуманоид (орк)
+  humanoid (sahuagin): гуманоид (сахуагин)
+  fiend (demon): исчадие (демон)
+  fiend (demon, shapechanger): исчадие (демон, оборотень)
+  fiend (devil): исчадие (дьявол)
+  fiend (devil, shapechanger): исчадие (дьявол, оборотень)
+  fiend (shapechanger): исчадие (оборотень)
+  monstrosity (shapechanger): чудовище (оборотень)
+  monstrosity (titan): чудовище (титан)
+  undead (shapechanger): нежить (оборотень)
+  swarm of Tiny beasts: стая крошечных зверей
+  lawful good: законно-добрый
+  neutral good: нейтрально-добрый
+  chaotic good: хаотично-добрый
+  lawful neutral: законно-нейтральный
+  neutral: нейтральный
+  chaotic neutral: хаотично-нейтральный
+  lawful evil: законно-злой
+  neutral evil: нейтрально-злой
+  chaotic evil: хаотично-злой
+  unaligned: без мировоззрения
+  any alignment: любое мировоззрение
+  any chaotic alignment: любое хаотичное мировоззрение
+  any evil alignment: любое злое мировоззрение
+  any non-good alignment: любое не доброе мировоззрение
+  any non-lawful alignment: любое не законное мировоззрение
+  neutral good (50%) or neutral evil (50%): нейтрально-добрый (50%) или нейтрально-злой (50%)
+  natural armor: природный доспех
+  leather armor: кожаный доспех
+  studded leather: проклёпанная кожа
+  hide armor: доспех из шкур
+  chain shirt: кольчужная рубаха
+  scale mail: чешуйчатый доспех
+  breastplate: кираса
+  chain mail: кольчуга
+  splint: шинный доспех
+  plate: латы
+  natural armor, shield: природная броня, щит
+  leather armor, shield: кожаный доспех, щит
+  studded leather, shield: проклёпанный кожаный доспех, щит
+  hide armor, shield: доспех из шкур, щит
+  chain shirt, shield: кольчужная рубаха, щит
+  scale mail, shield: чешуйчатый доспех, щит
+  chain mail, shield: кольчуга, щит
+  advancement: Развитие
+  how your character levels up: как ваш персонаж повышает уровень
+  xp: Очки опыта
+  milestones: Вехи
+  your character levels up with experience points, for the foes overcome and what the story rewards: ваш персонаж повышает уровень за очки опыта, получаемые за побеждённых врагов и за то, что поощряет история
+  your character levels up at the big moments of the story: ваш персонаж повышает уровень в важные моменты истории
+  the fifth edition from the SRD 5.1, the 2014 rules: пятая редакция по SRD 5.1, правила 2014 года
+  long rest: продолжительный отдых
+  short rest: короткий отдых
+  difficult: сложный
+headline: "{classes} {level} уровня"

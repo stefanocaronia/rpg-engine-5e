@@ -1,0 +1,418 @@
+# The words of the 5e system in Icelandic, as the dashboard shows them (D-403): translated by npm run translate (test/i18n/translate.ts) from the
+# words of words/it.yaml, which come from the system's official Italian translation; with the terms of the official translation in this language, where one is.
+groups:
+  Character: Persóna
+  Personality: Persónuleiki
+  Abilities: Hæfileikar
+  Saving Throws: Bjargkast
+  Skills: Færni
+  Combat: Bardagi
+  Proficiencies: Þjálfun
+  Features: Eiginleikar
+  Attacks: Árásir
+  Spells: Galdrar
+fields:
+  creature: kyn
+  size: stærð
+  classes: stéttir
+  subclasses: undirstéttir
+  background: bakgrunnur
+  feats: afrek
+  alignment: hneigð
+  level: stig
+  xp: RS
+  inspiration: innblástur
+  personality-traits: persónueinkenni
+  ideal: hugsjón
+  bond: tengsl
+  flaw: galli
+  str: STY
+  dex: FIM
+  con: ÞOL
+  int: GÁF
+  wis: VIS
+  cha: TÖF
+  str-mod: breytir STY
+  dex-mod: breytir FIM
+  con-mod: breytir ÞOL
+  int-mod: breytir GÁF
+  wis-mod: breytir VIS
+  cha-mod: breytir TÖF
+  proficiency: þjálfunarbónus
+  str-save: bjargkast STY
+  dex-save: bjargkast FIM
+  con-save: bjargkast ÞOL
+  int-save: bjargkast GÁF
+  wis-save: bjargkast VIS
+  cha-save: bjargkast TÖF
+  save-notes: athugasemdir við bjargkast
+  acrobatics: fimleikar
+  animal-handling: dýratemjun
+  arcana: launspeki
+  athletics: íþróttir
+  deception: blekking
+  history: saga
+  insight: innsæi
+  intimidation: ógnun
+  investigation: rannsókn
+  medicine: læknisfræði
+  nature: náttúra
+  perception: athygli
+  performance: flutningur
+  persuasion: sannfæring
+  religion: trúfræði
+  sleight-of-hand: fingrafimi
+  stealth: laumuspil
+  survival: lífsbjörg
+  ac: brynja
+  initiative: frumkvæði
+  speed: hraði
+  equipped: útbúið
+  hp-base: grunn-LP
+  hp: LP
+  temp-hp: tímabundin LP
+  hit-dice-d6: lífteningar d6
+  hit-dice-d8: lífteningar d8
+  hit-dice-d10: lífteningar d10
+  hit-dice-d12: lífteningar d12
+  passive-perception: óvirk athygli
+  passive-insight: óvirkt innsæi
+  passive-investigation: óvirk rannsókn
+  darkvision: myrkursýn
+  blindsight: blindsýn
+  tremorsense: skjálftaskyn
+  truesight: sannsýn
+  damage-vulnerabilities: skaðaviðkvæmni
+  damage-resistances: skaðaþol
+  damage-immunities: skaðaónæmi
+  condition-immunities: ástandsónæmi
+  death-successes: árangur gegn dauða
+  death-failures: mistök gegn dauða
+  exhaustion: örmögnun
+  save-proficiencies: bjargkastsþjálfun
+  skill-proficiencies: færniþjálfun
+  expertise: sérfræðikunnátta
+  armor-proficiencies: brynjuþjálfun
+  weapon-proficiencies: vopnaþjálfun
+  tool-proficiencies: verkfæraþjálfun
+  languages: tungumál
+  features: eiginleikar
+  fighting-styles: bardagastílar
+  attack: árás
+  damage-roll: skaðakast
+  caster-level: galdrastig
+  spell-save-dc: erfiðleikastig galdra
+  spell-attack: galdraárás
+  slots-1: raufar á 1. stigi
+  slots-2: raufar á 2. stigi
+  slots-3: raufar á 3. stigi
+  slots-4: raufar á 4. stigi
+  slots-5: raufar á 5. stigi
+  slots-6: raufar á 6. stigi
+  slots-7: raufar á 7. stigi
+  slots-8: raufar á 8. stigi
+  slots-9: raufar á 9. stigi
+  spell-slots: galdraraufar
+  slot-level: raufarstig
+  mystic-arcanum-6: dulið launmál 6
+  mystic-arcanum-7: dulið launmál 7
+  mystic-arcanum-8: dulið launmál 8
+  mystic-arcanum-9: dulið launmál 9
+  signature-spell-1: einkennisgaldur 1
+  signature-spell-2: einkennisgaldur 2
+  max-prepared: hámark undirbúinna
+  spells: galdrar
+  prepared: undirbúið
+  cantrips-known: þekktir smágaldrar
+  spells-known: þekktir galdrar
+  invocations-known: þekktar særingar
+  rages: æði
+  rage-damage: æðisskaði
+  martial-arts: bardagalistir
+  ki-points: ki-stig
+  unarmored-movement: hreyfing án brynju
+  sneak-attack: launárás
+  sorcery-points: galdrapunktar
+  channel-divinity: beislun guðdóms
+  action-surge: aðgerðabylgja
+  second-wind: annað þrek
+  indomitable: óbugandi
+  wild-shape: villigervi
+  bardic-inspiration: innblástur skálds
+  divine-sense: guðleg skynjun
+  lay-on-hands: handayfirlagning
+  cleansing-touch: hreinsandi snerting
+  arcane-recovery: endurheimt dulmagns
+  natural-recovery: náttúruleg endurheimt
+  wholeness-of-body: heilleiki líkamans
+  holy-nimbus: heilagur ljómi
+  dark-ones-own-luck: heppni myrkrahöfðingjans
+  hurl-through-hell: kast gegnum helvíti
+  stroke-of-luck: heppnishögg
+  eldritch-master: fjölkynngimeistari
+  breath-weapon: andgusa
+  relentless-endurance: óbilandi seigla
+  category: flokkur
+  armor: brynja
+  hp-dice: lífsstigateningar
+  fly: fljúga
+  swim: synda
+  climb: klifra
+  burrow: grafa
+  saves: varnarköst
+  skills: færni
+  cr: ÁS
+  xp-value: reynslugildi
+words:
+  Dragonborn: Drekborinn
+  Dwarf: Dvergur
+  Hill Dwarf: Hæðadvergur
+  Elf: Álfur
+  High Elf: Háálfur
+  Gnome: Gnomi
+  Rock Gnome: Bjarggnomi
+  Half-Elf: Hálfálfur
+  Half-Orc: Hálforki
+  Halfling: Halfingur
+  Lightfoot Halfling: Léttfættur halfingur
+  Human: Maður
+  Tiefling: Tiefling
+  Barbarian: Barbari
+  Path of the Berserker: Vegur berserksins
+  Bard: Skáld
+  College of Lore: Fræðaskóli
+  Cleric: Klerkur
+  Life Domain: Lífssvið
+  Druid: Drúíði
+  Circle of the Land: Hringur landsins
+  Fighter: Bardagamaður
+  Champion: Kappi
+  Monk: Munkur
+  Way of the Open Hand: Vegur opnu handarinnar
+  Paladin: Paladín
+  Oath of Devotion: Eiður trúrækninnar
+  Ranger: Skógarvörður
+  Hunter: Veiðimaður
+  Rogue: Þjófur
+  Thief: Smáþjófur
+  Sorcerer: Galdramaður
+  Draconic Bloodline: Drekaætt
+  Warlock: Fjölkynngismaður
+  The Fiend: Skrattinn
+  Wizard: Töframaður
+  School of Evocation: Kvaðningarskóli
+  Acolyte (background): Hofþjónn
+  Grappler: Glímumaður
+  Archery: Bogfimi
+  Defense: Vörn
+  Dueling: Einvígi
+  Great Weapon Fighting: Barist með stórvopn
+  Protection: Vernd
+  Two-Weapon Fighting: Barist með tvö vopn
+  Unarmed Strike: Högg án vopns
+  Acrobatics: Fimleikar
+  Animal Handling: Dýratemjun
+  Arcana: Dulspeki
+  Athletics: Íþróttir
+  Deception: Blekking
+  History: Saga
+  Insight: Innsæi
+  Intimidation: Ógnun
+  Investigation: Rannsókn
+  Medicine: Læknisfræði
+  Nature: Náttúra
+  Perception: Skynjun
+  Performance: Flutningur
+  Persuasion: Sannfæring
+  Religion: Trúarbrögð
+  Sleight of Hand: Fingrafimi
+  Stealth: Laumuspil
+  Survival: Lifun
+  Common: Almenna
+  Dwarvish: Dvergamál
+  Elvish: Álfamál
+  Giant: Risamál
+  Gnomish: Gnomamál
+  Goblin: Goblinamál
+  Orc: Orkamál
+  Abyssal: Undirdjúpamál
+  Celestial: Himnamál
+  Draconic: Drekamál
+  Deep Speech: Djúpmál
+  Infernal: Helvítismál
+  Primordial: Frummál
+  Sylvan: Skógarmál
+  Undercommon: Undirmál
+  Aquan: Vatnamál
+  Auran: Loftmál
+  Ignan: Eldmál
+  Terran: Jarðmál
+  Druidic: Drúídamál
+  Thieves' Cant: Þjófamál
+  Tiny: Agnarsmá
+  Small: Lítil
+  Medium: Meðalstór
+  Large: Stór
+  Huge: Risastór
+  Gargantuan: Gríðarstór
+  Blinded: Blindaður
+  Charmed: Heillaður
+  Deafened: Heyrnarlaus
+  Frightened: Hræddur
+  Grappled: Gripinn
+  Incapacitated: Óvígur
+  Invisible: Ósýnilegur
+  Paralyzed: Lamaður
+  Petrified: Steinrunninn
+  Poisoned: Eitraður
+  Prone: Liggjandi
+  Restrained: Heftur
+  Stunned: Dasaður
+  Unconscious: Meðvitundarlaus
+  Exhaustion: Örmögnun
+  blinded: blindaður
+  charmed: heillaður
+  deafened: heyrnarlaus
+  frightened: hræddur
+  grappled: gripinn
+  incapacitated: óvígur
+  invisible: ósýnilegur
+  paralyzed: lamaður
+  petrified: steinrunninn
+  poisoned: eitraður
+  prone: liggjandi
+  restrained: heftur
+  stunned: dasaður
+  unconscious: meðvitundarlaus
+  exhaustion: örmögnun
+  acid: sýra
+  bludgeoning: högg
+  cold: kuldi
+  fire: eldur
+  force: kraftur
+  lightning: elding
+  necrotic: dauðaorka
+  piercing: stunga
+  poison: eitur
+  psychic: hugarorka
+  radiant: geislun
+  slashing: skurður
+  thunder: þruma
+  bludgeoning, piercing, and slashing from nonmagical attacks: högg, stunga og skurður frá ótöfrandi árásum
+  light armor: létt brynja
+  medium armor: miðlungsbrynja
+  heavy armor: þung brynja
+  all armor: öll brynja
+  shields: skildir
+  simple weapons: einföld vopn
+  martial weapons: hervopn
+  clubs: kylfur
+  daggers: rýtingar
+  darts: pílur
+  hand crossbows: handarmbrjóstar
+  javelins: spjót
+  light crossbows: léttir lásbogar
+  longswords: langsverð
+  maces: stríðsmaukar
+  quarterstaffs: bareflisstafir
+  rapiers: korðar
+  scimitars: sveðjur
+  shortswords: stuttsverð
+  sickles: sigðir
+  slings: slöngvur
+  spears: lensur
+  battleaxe: stríðsöxi
+  handaxe: handöxi
+  light hammer: léttur hamar
+  warhammer: stríðshamar
+  longsword: langsverð
+  shortsword: stuttsverð
+  shortbow: stuttbogi
+  longbow: langbogi
+  herbalism kit: jurtalækningasett
+  thieves' tools: þjófaverkfæri
+  tinker's tools: viðgerðarverkfæri
+  advantage on saving throws against being charmed: yfirburðir í bjargkasti gegn því að verða heillaður
+  advantage on saving throws against being frightened: yfirburðir í bjargkasti gegn því að verða hræddur
+  advantage on saving throws against poison: yfirburðir í bjargkasti gegn eitri
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: yfirburðir í öllum bjargköstum á Greind, Visku og Persónutöfra gegn göldrum
+  aberration: afskræming
+  beast: dýr
+  celestial: himneskur
+  construct: smíði
+  dragon: dreki
+  elemental: frumvera
+  fey: álfavera
+  fiend: djöfull
+  giant: risi
+  humanoid: mannvera
+  monstrosity: furðuskepna
+  ooze: slím
+  plant: jurt
+  undead: drýsill
+  humanoid (any race): mannvera (hvaða kyn sem er)
+  humanoid (dwarf): mannvera (dvergur)
+  humanoid (elf): mannvera (álfur)
+  humanoid (gnoll): mannvera (gnoll)
+  humanoid (gnome): mannvera (gnomi)
+  humanoid (goblinoid): mannvera (goblinkyns)
+  humanoid (grimlock): mannvera (grimlock)
+  humanoid (human): mannvera (maður)
+  humanoid (human, shapechanger): mannvera (maður, hamskiptingur)
+  humanoid (kobold): mannvera (kobold)
+  humanoid (lizardfolk): mannvera (eðlufólk)
+  humanoid (orc): mannvera (orki)
+  humanoid (sahuagin): mannvera (sahuagin)
+  fiend (demon): djöfull (púki)
+  fiend (demon, shapechanger): djöfull (púki, hamskiptingur)
+  fiend (devil): djöfull (andskoti)
+  fiend (devil, shapechanger): djöfull (andskoti, hamskiptingur)
+  fiend (shapechanger): djöfull (hamskiptingur)
+  monstrosity (shapechanger): furðuskepna (hamskiptingur)
+  monstrosity (titan): furðuskepna (títan)
+  undead (shapechanger): drýsill (hamskiptingur)
+  swarm of Tiny beasts: kvik af örsmáum dýrum
+  lawful good: löghlýðinn góður
+  neutral good: hlutlaus góður
+  chaotic good: óreiðukenndur góður
+  lawful neutral: löghlýðinn hlutlaus
+  neutral: hlutlaus
+  chaotic neutral: óreiðukenndur hlutlaus
+  lawful evil: löghlýðinn illur
+  neutral evil: hlutlaus illur
+  chaotic evil: óreiðukenndur illur
+  unaligned: án háttalags
+  any alignment: hvaða háttalag sem er
+  any chaotic alignment: hvaða óreiðukennt háttalag sem er
+  any evil alignment: hvaða illt háttalag sem er
+  any non-good alignment: hvaða háttalag sem er nema gott
+  any non-lawful alignment: hvaða háttalag sem er nema löghlýðið
+  neutral good (50%) or neutral evil (50%): hlutlaus góður (50%) eða hlutlaus illur (50%)
+  natural armor: náttúruleg brynja
+  leather armor: leðurbrynja
+  studded leather: nagluð leðurbrynja
+  hide armor: skinnbrynja
+  chain shirt: hringjaskyrta
+  scale mail: hreistubrynja
+  breastplate: brjóstplata
+  chain mail: hringabrynja
+  splint: spjaldabrynja
+  plate: plötubrynja
+  natural armor, shield: náttúruleg brynja, skjöldur
+  leather armor, shield: leðurbrynja, skjöldur
+  studded leather, shield: nagldt leður, skjöldur
+  hide armor, shield: skinnbrynja, skjöldur
+  chain shirt, shield: hringabrynjuskyrta, skjöldur
+  scale mail, shield: hreistubrynja, skjöldur
+  chain mail, shield: hringabrynja, skjöldur
+  advancement: Framvinda
+  how your character levels up: hvernig persónan þín hækkar um stig
+  xp: reynslustig
+  milestones: Áfangar
+  your character levels up with experience points, for the foes overcome and what the story rewards: persónan þín hækkar um stig með reynslustigum, fyrir sigraða óvini og það sem sagan verðlaunar
+  your character levels up at the big moments of the story: persónan þín hækkar um stig á stóru stundum sögunnar
+  the fifth edition from the SRD 5.1, the 2014 rules: fimmta útgáfa úr SRD 5.1, reglurnar frá 2014
+  long rest: löng hvíld
+  short rest: stutt hvíld
+  difficult: erfitt
+headline: "{classes} á stigi {level}"

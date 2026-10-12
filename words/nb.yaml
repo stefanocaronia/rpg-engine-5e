@@ -1,0 +1,418 @@
+# The words of the 5e system in Norwegian Bokmål, as the dashboard shows them (D-403): translated by npm run translate (test/i18n/translate.ts) from the
+# words of words/it.yaml, which come from the system's official Italian translation; with the terms of the official translation in this language, where one is.
+groups:
+  Character: Karakter
+  Personality: Personlighet
+  Abilities: Egenskaper
+  Saving Throws: Redningskast
+  Skills: Ferdigheter
+  Combat: Kamp
+  Proficiencies: Ferdighetsområder
+  Features: Evner
+  Attacks: Angrep
+  Spells: Trylleformularer
+fields:
+  creature: rase
+  size: størrelse
+  classes: klasser
+  subclasses: underklasser
+  background: bakgrunn
+  feats: talenter
+  alignment: livssyn
+  level: nivå
+  xp: XP
+  inspiration: inspirasjon
+  personality-traits: personlighetstrekk
+  ideal: ideal
+  bond: bånd
+  flaw: svakhet
+  str: STY
+  dex: SMI
+  con: KON
+  int: INT
+  wis: VIS
+  cha: KAR
+  str-mod: Mod. STY
+  dex-mod: Mod. SMI
+  con-mod: Mod. KON
+  int-mod: Mod. INT
+  wis-mod: Mod. VIS
+  cha-mod: Mod. KAR
+  proficiency: ferdighetsbonus
+  str-save: redningskast Styrke
+  dex-save: redningskast Smidighet
+  con-save: redningskast Konstitusjon
+  int-save: redningskast Intelligens
+  wis-save: redningskast Visdom
+  cha-save: redningskast Karisma
+  save-notes: notater om redningskast
+  acrobatics: akrobatikk
+  animal-handling: dyrehåndtering
+  arcana: magikunnskap
+  athletics: atletikk
+  deception: bedrageri
+  history: historie
+  insight: innsikt
+  intimidation: skremming
+  investigation: etterforskning
+  medicine: medisin
+  nature: natur
+  perception: oppmerksomhet
+  performance: opptreden
+  persuasion: overtalelse
+  religion: religion
+  sleight-of-hand: fingerferdighet
+  stealth: snikning
+  survival: overlevelse
+  ac: AC
+  initiative: initiativ
+  speed: hastighet
+  equipped: utstyrt
+  hp-base: basis-HP
+  hp: HP
+  temp-hp: midlertidige HP
+  hit-dice-d6: treffterninger d6
+  hit-dice-d8: treffterninger d8
+  hit-dice-d10: treffterninger d10
+  hit-dice-d12: treffterninger d12
+  passive-perception: passiv oppmerksomhet
+  passive-insight: passiv innsikt
+  passive-investigation: passiv etterforskning
+  darkvision: mørkesyn
+  blindsight: blindsyn
+  tremorsense: skjelvesans
+  truesight: sannsyn
+  damage-vulnerabilities: skadesvakheter
+  damage-resistances: skademotstand
+  damage-immunities: skadeimmunitet
+  condition-immunities: tilstandsimmunitet
+  death-successes: dødssuksesser
+  death-failures: dødsfeil
+  exhaustion: utmattelse
+  save-proficiencies: redningskast
+  skill-proficiencies: ferdigheter
+  expertise: ekspertise
+  armor-proficiencies: rustninger
+  weapon-proficiencies: våpen
+  tool-proficiencies: verktøy
+  languages: språk
+  features: evner
+  fighting-styles: kampstiler
+  attack: angrep
+  damage-roll: skadekast
+  caster-level: trollmannsnivå
+  spell-save-dc: VK for trylleformler
+  spell-attack: trylleangrep
+  slots-1: plasser nivå 1
+  slots-2: plasser nivå 2
+  slots-3: plasser nivå 3
+  slots-4: plasser nivå 4
+  slots-5: plasser nivå 5
+  slots-6: plasser nivå 6
+  slots-7: plasser nivå 7
+  slots-8: plasser nivå 8
+  slots-9: plasser nivå 9
+  spell-slots: formelplasser
+  slot-level: plassnivå
+  mystic-arcanum-6: mystisk arkanum 6
+  mystic-arcanum-7: mystisk arkanum 7
+  mystic-arcanum-8: mystisk arkanum 8
+  mystic-arcanum-9: mystisk arkanum 9
+  signature-spell-1: signaturformel 1
+  signature-spell-2: signaturformel 2
+  max-prepared: maks forberedte
+  spells: trylleformularer
+  prepared: forberedt
+  cantrips-known: kjente småtriks
+  spells-known: kjente trylleformularer
+  invocations-known: kjente påkallelser
+  rages: raseri
+  rage-damage: raseriskade
+  martial-arts: kampsport
+  ki-points: ki-poeng
+  unarmored-movement: bevegelse uten rustning
+  sneak-attack: snikangrep
+  sorcery-points: trolldomspoeng
+  channel-divinity: kanalisere guddommelighet
+  action-surge: handlingsrush
+  second-wind: andre pust
+  indomitable: ukuelig
+  wild-shape: villform
+  bardic-inspiration: bardeinspirasjon
+  divine-sense: guddommelig sans
+  lay-on-hands: håndspåleggelse
+  cleansing-touch: rensende berøring
+  arcane-recovery: arkan gjenoppretting
+  natural-recovery: naturlig gjenoppretting
+  wholeness-of-body: kroppslig helhet
+  holy-nimbus: hellig glorie
+  dark-ones-own-luck: den mørkes egen flaks
+  hurl-through-hell: slynge gjennom helvete
+  stroke-of-luck: lykketreff
+  eldritch-master: okkult mester
+  breath-weapon: pustevåpen
+  relentless-endurance: urokkelig utholdenhet
+  category: kategori
+  armor: rustning
+  hp-dice: HP-terninger
+  fly: flyve
+  swim: svømme
+  climb: klatre
+  burrow: grave
+  saves: redningskast
+  skills: ferdigheter
+  cr: UG
+  xp-value: XP-verdi
+words:
+  Dragonborn: Dragonborn
+  Dwarf: Dverg
+  Hill Dwarf: Bakkedverg
+  Elf: Alv
+  High Elf: Høyalv
+  Gnome: Gnom
+  Rock Gnome: Fjellgnom
+  Half-Elf: Halvalv
+  Half-Orc: Halvork
+  Halfling: Halvling
+  Lightfoot Halfling: Lettfot-halvling
+  Human: Menneske
+  Tiefling: Tiefling
+  Barbarian: Barbar
+  Path of the Berserker: Berserkerens vei
+  Bard: Bard
+  College of Lore: Kunnskapens kollegium
+  Cleric: Prest
+  Life Domain: Livets domene
+  Druid: Druide
+  Circle of the Land: Landets sirkel
+  Fighter: Kriger
+  Champion: Kjempe
+  Monk: Munk
+  Way of the Open Hand: Den åpne hånds vei
+  Paladin: Paladin
+  Oath of Devotion: Hengivenhetens ed
+  Ranger: Ranger
+  Hunter: Jeger
+  Rogue: Slyngel
+  Thief: Tyv
+  Sorcerer: Trollmann
+  Draconic Bloodline: Drakeblodlinje
+  Warlock: Warlock
+  The Fiend: Djevelen
+  Wizard: Magiker
+  School of Evocation: Fremkallingsskolen
+  Acolyte (background): Akolytt
+  Grappler: Bryter
+  Archery: Bueskyting
+  Defense: Forsvar
+  Dueling: Duellering
+  Great Weapon Fighting: Storvåpenkamp
+  Protection: Beskyttelse
+  Two-Weapon Fighting: Tovåpenkamp
+  Unarmed Strike: Ubevæpnet slag
+  Acrobatics: Akrobatikk
+  Animal Handling: Dyrehåndtering
+  Arcana: Arkana
+  Athletics: Atletikk
+  Deception: Bedrag
+  History: Historie
+  Insight: Innsikt
+  Intimidation: Skremming
+  Investigation: Etterforskning
+  Medicine: Medisin
+  Nature: Natur
+  Perception: Persepsjon
+  Performance: Opptreden
+  Persuasion: Overtalelse
+  Religion: Religion
+  Sleight of Hand: Fingerferdighet
+  Stealth: Snikning
+  Survival: Overlevelse
+  Common: Allmenn
+  Dwarvish: Dvergisk
+  Elvish: Alvisk
+  Giant: Gigantisk
+  Gnomish: Gnomisk
+  Goblin: Goblin
+  Orc: Orkisk
+  Abyssal: Abyssal
+  Celestial: Himmelsk
+  Draconic: Drakonisk
+  Deep Speech: Dypspråk
+  Infernal: Infernalsk
+  Primordial: Urkraft
+  Sylvan: Sylvansk
+  Undercommon: Underallmenn
+  Aquan: Aquan
+  Auran: Auran
+  Ignan: Ignan
+  Terran: Terran
+  Druidic: Druidisk
+  Thieves' Cant: Tyvespråk
+  Tiny: Bitteliten
+  Small: Liten
+  Medium: Middels
+  Large: Stor
+  Huge: Enorm
+  Gargantuan: Kjempestor
+  Blinded: Blindet
+  Charmed: Sjarmert
+  Deafened: Døvet
+  Frightened: Redd
+  Grappled: Grepet
+  Incapacitated: Uten handlekraft
+  Invisible: Usynlig
+  Paralyzed: Lammet
+  Petrified: Forsteinet
+  Poisoned: Forgiftet
+  Prone: Liggende
+  Restrained: Fastholdt
+  Stunned: Bedøvet
+  Unconscious: Bevisstløs
+  Exhaustion: Utmattelse
+  blinded: blindet
+  charmed: sjarmert
+  deafened: døvet
+  frightened: skremt
+  grappled: grepet
+  incapacitated: udyktig
+  invisible: usynlig
+  paralyzed: paralysert
+  petrified: forsteinet
+  poisoned: forgiftet
+  prone: liggende
+  restrained: fastholdt
+  stunned: bedøvet
+  unconscious: bevisstløs
+  exhaustion: utmattelse
+  acid: syre
+  bludgeoning: knusing
+  cold: kulde
+  fire: ild
+  force: kraft
+  lightning: lyn
+  necrotic: nekrotisk
+  piercing: stikking
+  poison: gift
+  psychic: psykisk
+  radiant: strålende
+  slashing: hugging
+  thunder: torden
+  bludgeoning, piercing, and slashing from nonmagical attacks: knusing, stikking og hugging fra ikke-magiske angrep
+  light armor: lett rustning
+  medium armor: middels rustning
+  heavy armor: tung rustning
+  all armor: all rustning
+  shields: skjold
+  simple weapons: enkle våpen
+  martial weapons: krigsvåpen
+  clubs: køller
+  daggers: dolker
+  darts: piler
+  hand crossbows: håndarmbrøster
+  javelins: spyd
+  light crossbows: lette armbrøster
+  longswords: langsverd
+  maces: stridskøller
+  quarterstaffs: kjepper
+  rapiers: rapirer
+  scimitars: sabler
+  shortswords: kortsverd
+  sickles: sigder
+  slings: slynger
+  spears: spyd
+  battleaxe: stridsøks
+  handaxe: håndøks
+  light hammer: lett hammer
+  warhammer: krigshammer
+  longsword: langsverd
+  shortsword: kortsverd
+  shortbow: kortbue
+  longbow: langbue
+  herbalism kit: urtekunnskapssett
+  thieves' tools: tyveriverktøy
+  tinker's tools: knoklerverktøy
+  advantage on saving throws against being charmed: fordel på redningskast mot å bli sjarmert
+  advantage on saving throws against being frightened: fordel på redningskast mot å bli skremt
+  advantage on saving throws against poison: fordel på redningskast mot gift
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: fordel på alle redningskast i Intelligens, Visdom og Karisma mot magi
+  aberration: aberrasjon
+  beast: udyr
+  celestial: himmelsk vesen
+  construct: konstruksjon
+  dragon: drage
+  elemental: elementar
+  fey: fe
+  fiend: djevel
+  giant: jotun
+  humanoid: humanoide
+  monstrosity: uhyre
+  ooze: slim
+  plant: plante
+  undead: udød
+  humanoid (any race): humanoide (hvilken som helst rase)
+  humanoid (dwarf): humanoide (dverg)
+  humanoid (elf): humanoide (alv)
+  humanoid (gnoll): humanoide (gnoll)
+  humanoid (gnome): humanoide (gnom)
+  humanoid (goblinoid): humanoide (goblinoid)
+  humanoid (grimlock): humanoide (grimlock)
+  humanoid (human): humanoide (menneske)
+  humanoid (human, shapechanger): humanoide (menneske, formskifter)
+  humanoid (kobold): humanoide (kobold)
+  humanoid (lizardfolk): humanoide (øglefolk)
+  humanoid (orc): humanoide (ork)
+  humanoid (sahuagin): humanoide (sahuagin)
+  fiend (demon): djevel (demon)
+  fiend (demon, shapechanger): djevel (demon, formskifter)
+  fiend (devil): djevel (fandens)
+  fiend (devil, shapechanger): djevel (fandens, formskifter)
+  fiend (shapechanger): djevel (formskifter)
+  monstrosity (shapechanger): uhyre (formskifter)
+  monstrosity (titan): uhyre (titan)
+  undead (shapechanger): udød (formskifter)
+  swarm of Tiny beasts: sverm av bittesmå udyr
+  lawful good: lovlydig god
+  neutral good: nøytral god
+  chaotic good: kaotisk god
+  lawful neutral: lovlydig nøytral
+  neutral: nøytral
+  chaotic neutral: kaotisk nøytral
+  lawful evil: lovlydig ond
+  neutral evil: nøytral ond
+  chaotic evil: kaotisk ond
+  unaligned: uten livssyn
+  any alignment: hvilken som helst livssyn
+  any chaotic alignment: hvilken som helst kaotisk livssyn
+  any evil alignment: hvilken som helst ond livssyn
+  any non-good alignment: hvilken som helst ikke-god livssyn
+  any non-lawful alignment: hvilken som helst ikke-lovlydig livssyn
+  neutral good (50%) or neutral evil (50%): nøytral god (50 %) eller nøytral ond (50 %)
+  natural armor: naturlig rustning
+  leather armor: lærrustning
+  studded leather: nagleskinn
+  hide armor: hudrustning
+  chain shirt: ringbrynje
+  scale mail: skjellpanser
+  breastplate: brystplate
+  chain mail: ringbrynje
+  splint: splintpanser
+  plate: platerustning
+  natural armor, shield: naturlig rustning, skjold
+  leather armor, shield: skinnrustning, skjold
+  studded leather, shield: nagleskinn, skjold
+  hide armor, shield: huderustning, skjold
+  chain shirt, shield: ringskjorte, skjold
+  scale mail, shield: skjellpanser, skjold
+  chain mail, shield: ringbrynje, skjold
+  advancement: Avansement
+  how your character levels up: hvordan karakteren din går opp i nivå
+  xp: Erfaringspoeng
+  milestones: Milepæler
+  your character levels up with experience points, for the foes overcome and what the story rewards: karakteren din går opp i nivå med erfaringspoeng, for beseirede fiender og det historien belønner
+  your character levels up at the big moments of the story: karakteren din går opp i nivå i historiens store øyeblikk
+  the fifth edition from the SRD 5.1, the 2014 rules: femte utgave fra SRD 5.1, reglene fra 2014
+  long rest: lang hvile
+  short rest: kort hvile
+  difficult: vanskelig
+headline: "{classes} nivå {level}"

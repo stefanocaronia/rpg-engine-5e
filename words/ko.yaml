@@ -1,0 +1,418 @@
+# The words of the 5e system in Korean, as the dashboard shows them (D-403): translated by npm run translate (test/i18n/translate.ts) from the
+# words of words/it.yaml, which come from the system's official Italian translation; with the terms of the official translation in this language, where one is.
+groups:
+  Character: 캐릭터
+  Personality: 성격
+  Abilities: 능력치
+  Saving Throws: 내성 굴림
+  Skills: 기술
+  Combat: 전투
+  Proficiencies: 숙련
+  Features: 특징
+  Attacks: 공격
+  Spells: 주문
+fields:
+  creature: 종족
+  size: 크기
+  classes: 클래스
+  subclasses: 서브클래스
+  background: 배경
+  feats: 재주
+  alignment: 성향
+  level: 레벨
+  xp: 경험치
+  inspiration: 영감
+  personality-traits: 성격 특성
+  ideal: 이상
+  bond: 유대
+  flaw: 결점
+  str: 근력
+  dex: 민첩
+  con: 건강
+  int: 지능
+  wis: 지혜
+  cha: 매력
+  str-mod: 근력 수정치
+  dex-mod: 민첩 수정치
+  con-mod: 건강 수정치
+  int-mod: 지능 수정치
+  wis-mod: 지혜 수정치
+  cha-mod: 매력 수정치
+  proficiency: 숙련 보너스
+  str-save: 근력 내성
+  dex-save: 민첩 내성
+  con-save: 건강 내성
+  int-save: 지능 내성
+  wis-save: 지혜 내성
+  cha-save: 매력 내성
+  save-notes: 내성 굴림 메모
+  acrobatics: 곡예
+  animal-handling: 동물 조련
+  arcana: 비전학
+  athletics: 운동
+  deception: 기만
+  history: 역사
+  insight: 통찰
+  intimidation: 위협
+  investigation: 수사
+  medicine: 의학
+  nature: 자연
+  perception: 감지
+  performance: 공연
+  persuasion: 설득
+  religion: 종교
+  sleight-of-hand: 손재주
+  stealth: 은신
+  survival: 생존
+  ac: 방어 등급
+  initiative: 우선권
+  speed: 속도
+  equipped: 장착함
+  hp-base: 주사위 기준 HP
+  hp: HP
+  temp-hp: 임시 HP
+  hit-dice-d6: 히트 주사위 d6
+  hit-dice-d8: 히트 주사위 d8
+  hit-dice-d10: 히트 주사위 d10
+  hit-dice-d12: 히트 주사위 d12
+  passive-perception: 수동 감지
+  passive-insight: 수동 통찰
+  passive-investigation: 수동 수사
+  darkvision: 암시야
+  blindsight: 맹시
+  tremorsense: 진동 감지
+  truesight: 진실 시야
+  damage-vulnerabilities: 피해 취약
+  damage-resistances: 피해 저항
+  damage-immunities: 피해 면역
+  condition-immunities: 상태 이상 면역
+  death-successes: 죽음 내성 성공
+  death-failures: 죽음 내성 실패
+  exhaustion: 탈진
+  save-proficiencies: 내성 굴림
+  skill-proficiencies: 기술
+  expertise: 전문화
+  armor-proficiencies: 방어구
+  weapon-proficiencies: 무기
+  tool-proficiencies: 도구
+  languages: 언어
+  features: 특징
+  fighting-styles: 전투 방식
+  attack: 공격
+  damage-roll: 피해 굴림
+  caster-level: 시전자 레벨
+  spell-save-dc: 주문 내성 DC
+  spell-attack: 주문 공격
+  slots-1: 1레벨 슬롯
+  slots-2: 2레벨 슬롯
+  slots-3: 3레벨 슬롯
+  slots-4: 4레벨 슬롯
+  slots-5: 5레벨 슬롯
+  slots-6: 6레벨 슬롯
+  slots-7: 7레벨 슬롯
+  slots-8: 8레벨 슬롯
+  slots-9: 9레벨 슬롯
+  spell-slots: 주문 슬롯
+  slot-level: 슬롯 레벨
+  mystic-arcanum-6: 신비한 비법 (6레벨)
+  mystic-arcanum-7: 신비한 비법 (7레벨)
+  mystic-arcanum-8: 신비한 비법 (8레벨)
+  mystic-arcanum-9: 신비한 비법 (9레벨)
+  signature-spell-1: 특기 주문 1
+  signature-spell-2: 특기 주문 2
+  max-prepared: 준비 가능 주문 수
+  spells: 주문
+  prepared: 준비됨
+  cantrips-known: 알고 있는 캔트립
+  spells-known: 알고 있는 주문
+  invocations-known: 알고 있는 영창
+  rages: 격노
+  rage-damage: 격노 피해
+  martial-arts: 무술
+  ki-points: 기 포인트
+  unarmored-movement: 비무장 이동
+  sneak-attack: 암습
+  sorcery-points: 소서리 포인트
+  channel-divinity: 신성 전환
+  action-surge: 액션 서지
+  second-wind: 숨 고르기
+  indomitable: 불굴
+  wild-shape: 야생 변신
+  bardic-inspiration: 바드의 영감
+  divine-sense: 신성 감지
+  lay-on-hands: 안수
+  cleansing-touch: 정화의 손길
+  arcane-recovery: 비전 회복
+  natural-recovery: 자연 회복
+  wholeness-of-body: 신체의 온전함
+  holy-nimbus: 성스러운 후광
+  dark-ones-own-luck: 어둠의 존재의 행운
+  hurl-through-hell: 지옥으로 던지기
+  stroke-of-luck: 행운의 일격
+  eldritch-master: 기괴한 대가
+  breath-weapon: 브레스 무기
+  relentless-endurance: 끈질긴 인내
+  category: 분류
+  armor: 방어구
+  hp-dice: HP 주사위
+  fly: 비행
+  swim: 수영
+  climb: 등반
+  burrow: 굴착
+  saves: 내성 굴림
+  skills: 기술
+  cr: 도전 지수
+  xp-value: 경험치
+words:
+  Dragonborn: 드래곤본
+  Dwarf: 드워프
+  Hill Dwarf: 언덕 드워프
+  Elf: 엘프
+  High Elf: 하이 엘프
+  Gnome: 노움
+  Rock Gnome: 바위 노움
+  Half-Elf: 하프엘프
+  Half-Orc: 하프오크
+  Halfling: 하플링
+  Lightfoot Halfling: 가벼운발 하플링
+  Human: 인간
+  Tiefling: 티플링
+  Barbarian: 바바리안
+  Path of the Berserker: 광전사의 길
+  Bard: 바드
+  College of Lore: 지식 학파
+  Cleric: 클레릭
+  Life Domain: 생명 권역
+  Druid: 드루이드
+  Circle of the Land: 대지의 회합
+  Fighter: 파이터
+  Champion: 챔피언
+  Monk: 몽크
+  Way of the Open Hand: 열린 손의 길
+  Paladin: 팔라딘
+  Oath of Devotion: 헌신의 맹세
+  Ranger: 레인저
+  Hunter: 사냥꾼
+  Rogue: 로그
+  Thief: 도적
+  Sorcerer: 소서러
+  Draconic Bloodline: 용의 혈통
+  Warlock: 워락
+  The Fiend: 악마
+  Wizard: 위저드
+  School of Evocation: 방출 학파
+  Acolyte (background): 복사
+  Grappler: 그래플러
+  Archery: 궁술
+  Defense: 방어
+  Dueling: 결투
+  Great Weapon Fighting: 대형 무기 전투
+  Protection: 보호
+  Two-Weapon Fighting: 쌍수 전투
+  Unarmed Strike: 맨손 공격
+  Acrobatics: 곡예
+  Animal Handling: 동물 조련
+  Arcana: 마법학
+  Athletics: 운동
+  Deception: 기만
+  History: 역사
+  Insight: 통찰
+  Intimidation: 위협
+  Investigation: 수사
+  Medicine: 의학
+  Nature: 자연
+  Perception: 지각
+  Performance: 공연
+  Persuasion: 설득
+  Religion: 종교
+  Sleight of Hand: 손놀림
+  Stealth: 은신
+  Survival: 생존
+  Common: 공용어
+  Dwarvish: 드워프어
+  Elvish: 엘프어
+  Giant: 거인어
+  Gnomish: 노움어
+  Goblin: 고블린어
+  Orc: 오크어
+  Abyssal: 심연어
+  Celestial: 천상어
+  Draconic: 용언
+  Deep Speech: 심층어
+  Infernal: 지옥어
+  Primordial: 원초어
+  Sylvan: 숲요정어
+  Undercommon: 저지대 공용어
+  Aquan: 아쿠안어
+  Auran: 아우란어
+  Ignan: 이그난어
+  Terran: 테란어
+  Druidic: 드루이드어
+  Thieves' Cant: 도적 은어
+  Tiny: 초소형
+  Small: 소형
+  Medium: 중형
+  Large: 대형
+  Huge: 특대형
+  Gargantuan: 초대형
+  Blinded: 실명
+  Charmed: 매혹
+  Deafened: 난청
+  Frightened: 공포
+  Grappled: 붙잡힘
+  Incapacitated: 행동불능
+  Invisible: 투명
+  Paralyzed: 마비
+  Petrified: 석화
+  Poisoned: 중독
+  Prone: 넘어짐
+  Restrained: 속박
+  Stunned: 기절
+  Unconscious: 의식 불명
+  Exhaustion: 탈진
+  blinded: 실명
+  charmed: 매혹
+  deafened: 귀먹음
+  frightened: 공포
+  grappled: 붙잡힘
+  incapacitated: 행동 불능
+  invisible: 투명
+  paralyzed: 마비
+  petrified: 석화
+  poisoned: 중독
+  prone: 넘어짐
+  restrained: 속박
+  stunned: 기절
+  unconscious: 의식 불명
+  exhaustion: 탈진
+  acid: 산성
+  bludgeoning: 타격
+  cold: 냉기
+  fire: 화염
+  force: 역장
+  lightning: 번개
+  necrotic: 사령
+  piercing: 관통
+  poison: 독
+  psychic: 정신
+  radiant: 광휘
+  slashing: 참격
+  thunder: 천둥
+  bludgeoning, piercing, and slashing from nonmagical attacks: 비마법 공격에 의한 타격, 관통, 참격
+  light armor: 경갑
+  medium armor: 중갑
+  heavy armor: 중장갑
+  all armor: 모든 갑옷
+  shields: 방패
+  simple weapons: 단순 무기
+  martial weapons: 군용 무기
+  clubs: 곤봉
+  daggers: 단검
+  darts: 다트
+  hand crossbows: 핸드 크로스보우
+  javelins: 투창
+  light crossbows: 라이트 크로스보우
+  longswords: 롱소드
+  maces: 메이스
+  quarterstaffs: 쿼터스태프
+  rapiers: 레이피어
+  scimitars: 시미터
+  shortswords: 숏소드
+  sickles: 낫
+  slings: 투석구
+  spears: 창
+  battleaxe: 배틀액스
+  handaxe: 핸드액스
+  light hammer: 라이트 해머
+  warhammer: 워해머
+  longsword: 롱소드
+  shortsword: 숏소드
+  shortbow: 숏보우
+  longbow: 롱보우
+  herbalism kit: 약초학 키트
+  thieves' tools: 도둑 도구
+  tinker's tools: 땜장이 도구
+  advantage on saving throws against being charmed: 매혹 상태를 막는 내성 굴림에 이점
+  advantage on saving throws against being frightened: 공포 상태를 막는 내성 굴림에 이점
+  advantage on saving throws against poison: 독에 대한 내성 굴림에 이점
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: 마법에 대한 모든 지능, 지혜, 매력 내성 굴림에 이점
+  aberration: 기괴체
+  beast: 야수
+  celestial: 천상체
+  construct: 구조체
+  dragon: 용
+  elemental: 정령
+  fey: 요정
+  fiend: 악마
+  giant: 거인
+  humanoid: 인간형
+  monstrosity: 괴수
+  ooze: 점액체
+  plant: 식물
+  undead: 언데드
+  humanoid (any race): 인간형 (모든 종족)
+  humanoid (dwarf): 인간형 (드워프)
+  humanoid (elf): 인간형 (엘프)
+  humanoid (gnoll): 인간형 (놀)
+  humanoid (gnome): 인간형 (노움)
+  humanoid (goblinoid): 인간형 (고블린류)
+  humanoid (grimlock): 인간형 (그림록)
+  humanoid (human): 인간형 (인간)
+  humanoid (human, shapechanger): 인간형 (인간, 변신자)
+  humanoid (kobold): 인간형 (코볼트)
+  humanoid (lizardfolk): 인간형 (리자드폭)
+  humanoid (orc): 인간형 (오크)
+  humanoid (sahuagin): 인간형 (사후아긴)
+  fiend (demon): 악마 (데몬)
+  fiend (demon, shapechanger): 악마 (데몬, 변신자)
+  fiend (devil): 악마 (데빌)
+  fiend (devil, shapechanger): 악마 (데빌, 변신자)
+  fiend (shapechanger): 악마 (변신자)
+  monstrosity (shapechanger): 괴수 (변신자)
+  monstrosity (titan): 괴수 (티탄)
+  undead (shapechanger): 언데드 (변신자)
+  swarm of Tiny beasts: 초소형 야수 떼
+  lawful good: 질서 선
+  neutral good: 중립 선
+  chaotic good: 혼돈 선
+  lawful neutral: 질서 중립
+  neutral: 중립
+  chaotic neutral: 혼돈 중립
+  lawful evil: 질서 악
+  neutral evil: 중립 악
+  chaotic evil: 혼돈 악
+  unaligned: 성향 없음
+  any alignment: 모든 성향
+  any chaotic alignment: 모든 혼돈 성향
+  any evil alignment: 모든 악 성향
+  any non-good alignment: 선이 아닌 모든 성향
+  any non-lawful alignment: 질서가 아닌 모든 성향
+  neutral good (50%) or neutral evil (50%): 중립 선 (50%) 또는 중립 악 (50%)
+  natural armor: 천연 갑옷
+  leather armor: 가죽 갑옷
+  studded leather: 징 박힌 가죽 갑옷
+  hide armor: 모피 갑옷
+  chain shirt: 사슬 셔츠
+  scale mail: 비늘 갑옷
+  breastplate: 흉갑
+  chain mail: 사슬 갑옷
+  splint: 쇠살 갑옷
+  plate: 판금 갑옷
+  natural armor, shield: 천연 방어구, 방패
+  leather armor, shield: 가죽 갑옷, 방패
+  studded leather, shield: 징박은 가죽 갑옷, 방패
+  hide armor, shield: 모피 갑옷, 방패
+  chain shirt, shield: 사슬 셔츠, 방패
+  scale mail, shield: 비늘 갑옷, 방패
+  chain mail, shield: 사슬 갑옷, 방패
+  advancement: 성장
+  how your character levels up: 캐릭터가 레벨업하는 방식
+  xp: 경험치
+  milestones: 마일스톤
+  your character levels up with experience points, for the foes overcome and what the story rewards: 캐릭터는 물리친 적과 이야기가 보상하는 일에 따라 경험치를 얻어 레벨업합니다
+  your character levels up at the big moments of the story: 캐릭터는 이야기의 중요한 순간에 레벨업합니다
+  the fifth edition from the SRD 5.1, the 2014 rules: SRD 5.1의 5판, 2014년 규칙
+  long rest: 장기 휴식
+  short rest: 단기 휴식
+  difficult: 어려움
+headline: "{level}레벨 {classes}"

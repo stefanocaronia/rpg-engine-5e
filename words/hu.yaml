@@ -1,0 +1,418 @@
+# The words of the 5e system in Hungarian, as the dashboard shows them (D-403): translated by npm run translate (test/i18n/translate.ts) from the
+# words of words/it.yaml, which come from the system's official Italian translation; with the terms of the official translation in this language, where one is.
+groups:
+  Character: Karakter
+  Personality: Személyiség
+  Abilities: Képességek
+  Saving Throws: Mentődobások
+  Skills: Jártasságok
+  Combat: Harc
+  Proficiencies: Képzettségek
+  Features: Jellemzők
+  Attacks: Támadások
+  Spells: Varázslatok
+fields:
+  creature: Faj
+  size: Méret
+  classes: Kasztok
+  subclasses: Alkasztok
+  background: Háttér
+  feats: Erények
+  alignment: Jellem
+  level: Szint
+  xp: TP
+  inspiration: Inspiráció
+  personality-traits: Személyiségjegyek
+  ideal: Eszmény
+  bond: Kötelék
+  flaw: Hiba
+  str: ERŐ
+  dex: ÜGY
+  con: ÁLL
+  int: INT
+  wis: BÖL
+  cha: KAR
+  str-mod: ERŐ módosító
+  dex-mod: ÜGY módosító
+  con-mod: ÁLL módosító
+  int-mod: INT módosító
+  wis-mod: BÖL módosító
+  cha-mod: KAR módosító
+  proficiency: Jártassági bónusz
+  str-save: Erő mentődobás
+  dex-save: Ügyesség mentődobás
+  con-save: Állóképesség mentődobás
+  int-save: Intelligencia mentődobás
+  wis-save: Bölcsesség mentődobás
+  cha-save: Karizma mentődobás
+  save-notes: Mentődobás jegyzetek
+  acrobatics: Akrobatika
+  animal-handling: Állatkezelés
+  arcana: Mágiaismeret
+  athletics: Atlétika
+  deception: Megtévesztés
+  history: Történelem
+  insight: Belátás
+  intimidation: Megfélemlítés
+  investigation: Nyomozás
+  medicine: Gyógyítás
+  nature: Természetismeret
+  perception: Észlelés
+  performance: Előadás
+  persuasion: Meggyőzés
+  religion: Vallás
+  sleight-of-hand: Zsebtolvajlás
+  stealth: Settenkedés
+  survival: Túlélés
+  ac: PÉ
+  initiative: Kezdeményezés
+  speed: Sebesség
+  equipped: Felszerelve
+  hp-base: Alap ÉP (kockákból)
+  hp: ÉP
+  temp-hp: Ideiglenes ÉP
+  hit-dice-d6: Életerőkockák d6
+  hit-dice-d8: Életerőkockák d8
+  hit-dice-d10: Életerőkockák d10
+  hit-dice-d12: Életerőkockák d12
+  passive-perception: Passzív észlelés
+  passive-insight: Passzív belátás
+  passive-investigation: Passzív nyomozás
+  darkvision: Sötétlátás
+  blindsight: Vakérzék
+  tremorsense: Rezgésérzék
+  truesight: Igaz látás
+  damage-vulnerabilities: Sebzés-sebezhetőségek
+  damage-resistances: Sebzésállóságok
+  damage-immunities: Sebzés-immunitások
+  condition-immunities: Állapot-immunitások
+  death-successes: Halálmentő sikerek
+  death-failures: Halálmentő kudarcok
+  exhaustion: Kimerültség
+  save-proficiencies: Mentődobás-jártasságok
+  skill-proficiencies: Jártasságok
+  expertise: Szakértelem
+  armor-proficiencies: Páncélok
+  weapon-proficiencies: Fegyverek
+  tool-proficiencies: Eszközök
+  languages: Nyelvek
+  features: Jellemzők
+  fighting-styles: Harcstílusok
+  attack: Támadás
+  damage-roll: Sebzésdobás
+  caster-level: Varázslói szint
+  spell-save-dc: Varázslat mentődobás ND
+  spell-attack: Varázslat támadás
+  slots-1: 1. szintű helyek
+  slots-2: 2. szintű helyek
+  slots-3: 3. szintű helyek
+  slots-4: 4. szintű helyek
+  slots-5: 5. szintű helyek
+  slots-6: 6. szintű helyek
+  slots-7: 7. szintű helyek
+  slots-8: 8. szintű helyek
+  slots-9: 9. szintű helyek
+  spell-slots: Varázslathelyek
+  slot-level: Hely szintje
+  mystic-arcanum-6: Misztikus arkánum (6. szint)
+  mystic-arcanum-7: Misztikus arkánum (7. szint)
+  mystic-arcanum-8: Misztikus arkánum (8. szint)
+  mystic-arcanum-9: Misztikus arkánum (9. szint)
+  signature-spell-1: Jellegzetes varázslat 1
+  signature-spell-2: Jellegzetes varázslat 2
+  max-prepared: Max. előkészített
+  spells: Varázslatok
+  prepared: Előkészítve
+  cantrips-known: Ismert trükkök
+  spells-known: Ismert varázslatok
+  invocations-known: Ismert invokációk
+  rages: Dühöngések
+  rage-damage: Dühöngés sebzése
+  martial-arts: Harcművészet
+  ki-points: Ki-pontok
+  unarmored-movement: Páncél nélküli mozgás
+  sneak-attack: Alattomos támadás
+  sorcery-points: varázslópontok
+  channel-divinity: isteni csatorna
+  action-surge: akciólöket
+  second-wind: második szél
+  indomitable: megtörhetetlen
+  wild-shape: vadalak
+  bardic-inspiration: bárdi inspiráció
+  divine-sense: isteni érzék
+  lay-on-hands: kézrátétel
+  cleansing-touch: tisztító érintés
+  arcane-recovery: arkánum-regeneráció
+  natural-recovery: természetes regeneráció
+  wholeness-of-body: a test épsége
+  holy-nimbus: szent dicsfény
+  dark-ones-own-luck: a Sötét saját szerencséje
+  hurl-through-hell: pokolba vetés
+  stroke-of-luck: szerencsecsapás
+  eldritch-master: misztikus mester
+  breath-weapon: leheletfegyver
+  relentless-endurance: megállíthatatlan állóképesség
+  category: kategória
+  armor: páncél
+  hp-dice: ÉP kockák
+  fly: repülés
+  swim: úszás
+  climb: mászás
+  burrow: ásás
+  saves: mentők
+  skills: képzettségek
+  cr: KF
+  xp-value: TP-érték
+words:
+  Dragonborn: Sárkányszületett
+  Dwarf: Törpe
+  Hill Dwarf: Dombi törpe
+  Elf: Elf
+  High Elf: Magas elf
+  Gnome: Gnóm
+  Rock Gnome: Szikla gnóm
+  Half-Elf: Félelf
+  Half-Orc: Félork
+  Halfling: Félszerzet
+  Lightfoot Halfling: Fürgelábú félszerzet
+  Human: Ember
+  Tiefling: Tiefling
+  Barbarian: Barbár
+  Path of the Berserker: A berserker útja
+  Bard: Bárd
+  College of Lore: A tudás kollégiuma
+  Cleric: Pap
+  Life Domain: Az élet szférája
+  Druid: Druida
+  Circle of the Land: A föld köre
+  Fighter: Harcos
+  Champion: Bajnok
+  Monk: Szerzetes
+  Way of the Open Hand: A nyitott tenyér útja
+  Paladin: Paladin
+  Oath of Devotion: A odaadás esküje
+  Ranger: Vadász
+  Hunter: Hajtó
+  Rogue: Zsivány
+  Thief: Tolvaj
+  Sorcerer: Varázsló
+  Draconic Bloodline: Sárkányvérvonal
+  Warlock: Warlock
+  The Fiend: A Gonosz
+  Wizard: Mágus
+  School of Evocation: Az idézés iskolája
+  Acolyte (background): Ministráns
+  Grappler: Birkózó
+  Archery: Íjászat
+  Defense: Védekezés
+  Dueling: Párbajozás
+  Great Weapon Fighting: Nagy fegyveres harc
+  Protection: Védelem
+  Two-Weapon Fighting: Két fegyveres harc
+  Unarmed Strike: Fegyvertelen csapás
+  Acrobatics: Akrobatika
+  Animal Handling: Állatkezelés
+  Arcana: Arkánum
+  Athletics: Atlétika
+  Deception: Megtévesztés
+  History: Történelem
+  Insight: Belátás
+  Intimidation: Megfélemlítés
+  Investigation: Nyomozás
+  Medicine: Gyógyítás
+  Nature: Természet
+  Perception: Érzékelés
+  Performance: Előadás
+  Persuasion: Meggyőzés
+  Religion: Vallás
+  Sleight of Hand: Zsebmetszés
+  Stealth: Settenkedés
+  Survival: Túlélés
+  Common: Közös
+  Dwarvish: Törpe
+  Elvish: Elf
+  Giant: Óriás
+  Gnomish: Gnóm
+  Goblin: Goblin
+  Orc: Ork
+  Abyssal: Mélységi
+  Celestial: Mennyei
+  Draconic: Sárkány
+  Deep Speech: Mélynyelv
+  Infernal: Pokoli
+  Primordial: Ősi
+  Sylvan: Erdei
+  Undercommon: Alsó közös
+  Aquan: Aquan
+  Auran: Auran
+  Ignan: Ignan
+  Terran: Terran
+  Druidic: Druida
+  Thieves' Cant: Tolvajnyelv
+  Tiny: Apró
+  Small: Kicsi
+  Medium: Közepes
+  Large: Nagy
+  Huge: Hatalmas
+  Gargantuan: Gigantikus
+  Blinded: Vak
+  Charmed: Elbűvölt
+  Deafened: Süket
+  Frightened: Megrémült
+  Grappled: Megragadott
+  Incapacitated: Cselekvésképtelen
+  Invisible: Láthatatlan
+  Paralyzed: Megbénított
+  Petrified: Kővé dermedt
+  Poisoned: Megmérgezett
+  Prone: Földön fekvő
+  Restrained: Lekötözött
+  Stunned: Kábult
+  Unconscious: Eszméletlen
+  Exhaustion: Kimerültség
+  blinded: megvakított
+  charmed: elbűvölt
+  deafened: megsüketített
+  frightened: megrémült
+  grappled: megragadott
+  incapacitated: cselekvésképtelen
+  invisible: láthatatlan
+  paralyzed: megbénult
+  petrified: kővé dermedt
+  poisoned: megmérgezett
+  prone: földön fekvő
+  restrained: lekötözött
+  stunned: kábult
+  unconscious: eszméletlen
+  exhaustion: kimerültség
+  acid: sav
+  bludgeoning: zúzó
+  cold: hideg
+  fire: tűz
+  force: erő
+  lightning: villám
+  necrotic: nekrotikus
+  piercing: szúró
+  poison: méreg
+  psychic: pszichikus
+  radiant: sugárzó
+  slashing: vágó
+  thunder: mennydörgés
+  bludgeoning, piercing, and slashing from nonmagical attacks: zúzó, szúró és vágó nem mágikus támadásoktól
+  light armor: könnyű páncél
+  medium armor: közepes páncél
+  heavy armor: nehéz páncél
+  all armor: minden páncél
+  shields: pajzsok
+  simple weapons: egyszerű fegyverek
+  martial weapons: harci fegyverek
+  clubs: buzogányok
+  daggers: tőrök
+  darts: dárdák
+  hand crossbows: kézi számszeríjak
+  javelins: gerelyek
+  light crossbows: könnyű számszeríjak
+  longswords: hosszú kardok
+  maces: szöges buzogányok
+  quarterstaffs: bothoz hasonló botok
+  rapiers: szúrókardok
+  scimitars: handzsárok
+  shortswords: rövid kardok
+  sickles: sarlók
+  slings: parittyák
+  spears: lándzsák
+  battleaxe: csatabárd
+  handaxe: kézi balta
+  light hammer: könnyű kalapács
+  warhammer: harci kalapács
+  longsword: hosszú kard
+  shortsword: rövid kard
+  shortbow: rövid íj
+  longbow: hosszú íj
+  herbalism kit: gyógynövényes készlet
+  thieves' tools: tolvajszerszámok
+  tinker's tools: bádogosszerszámok
+  advantage on saving throws against being charmed: előny az elbűvölés elleni mentődobásokra
+  advantage on saving throws against being frightened: előny a megrémítés elleni mentődobásokra
+  advantage on saving throws against poison: előny a méreg elleni mentődobásokra
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: előny minden Intelligencia, Bölcsesség és Karizma mentődobásra a mágia ellen
+  aberration: torzszülött
+  beast: vadállat
+  celestial: mennyei
+  construct: élőbábu
+  dragon: sárkány
+  elemental: elemi
+  fey: tündér
+  fiend: alvilági
+  giant: óriás
+  humanoid: humanoid
+  monstrosity: szörnyeteg
+  ooze: iszap
+  plant: növény
+  undead: élőhalott
+  humanoid (any race): humanoid (bármely faj)
+  humanoid (dwarf): humanoid (törpe)
+  humanoid (elf): humanoid (elf)
+  humanoid (gnoll): humanoid (gnoll)
+  humanoid (gnome): humanoid (gnóm)
+  humanoid (goblinoid): humanoid (goblinoid)
+  humanoid (grimlock): humanoid (grimlock)
+  humanoid (human): humanoid (ember)
+  humanoid (human, shapechanger): humanoid (ember, alakváltó)
+  humanoid (kobold): humanoid (kobold)
+  humanoid (lizardfolk): humanoid (gyíkfolk)
+  humanoid (orc): humanoid (ork)
+  humanoid (sahuagin): humanoid (sahuagin)
+  fiend (demon): alvilági (démon)
+  fiend (demon, shapechanger): alvilági (démon, alakváltó)
+  fiend (devil): alvilági (ördög)
+  fiend (devil, shapechanger): alvilági (ördög, alakváltó)
+  fiend (shapechanger): alvilági (alakváltó)
+  monstrosity (shapechanger): szörnyeteg (alakváltó)
+  monstrosity (titan): szörnyeteg (titán)
+  undead (shapechanger): élőhalott (alakváltó)
+  swarm of Tiny beasts: Apró vadállatok rajja
+  lawful good: törvényes jó
+  neutral good: semleges jó
+  chaotic good: kaotikus jó
+  lawful neutral: törvényes semleges
+  neutral: semleges
+  chaotic neutral: kaotikus semleges
+  lawful evil: törvényes gonosz
+  neutral evil: semleges gonosz
+  chaotic evil: kaotikus gonosz
+  unaligned: beállítottság nélküli
+  any alignment: bármely beállítottság
+  any chaotic alignment: bármely kaotikus beállítottság
+  any evil alignment: bármely gonosz beállítottság
+  any non-good alignment: bármely nem jó beállítottság
+  any non-lawful alignment: bármely nem törvényes beállítottság
+  neutral good (50%) or neutral evil (50%): semleges jó (50%) vagy semleges gonosz (50%)
+  natural armor: természetes páncél
+  leather armor: bőrpáncél
+  studded leather: kivert bőrpáncél
+  hide armor: irhapáncél
+  chain shirt: láncing
+  scale mail: pikkelypáncél
+  breastplate: mellvért
+  chain mail: láncpáncél
+  splint: lemezes páncél
+  plate: teljes lemezpáncél
+  natural armor, shield: természetes páncél, pajzs
+  leather armor, shield: bőrpáncél, pajzs
+  studded leather, shield: szegecselt bőrpáncél, pajzs
+  hide armor, shield: szőrmepáncél, pajzs
+  chain shirt, shield: láncing, pajzs
+  scale mail, shield: pikkelypáncél, pajzs
+  chain mail, shield: láncpáncél, pajzs
+  advancement: Fejlődés
+  how your character levels up: hogyan lép szintet a karaktered
+  xp: Tapasztalati pont
+  milestones: Mérföldkövek
+  your character levels up with experience points, for the foes overcome and what the story rewards: a karaktered tapasztalati pontokkal lép szintet, a legyőzött ellenfelekért és azért, amit a történet jutalmaz
+  your character levels up at the big moments of the story: a karaktered a történet nagy pillanataiban lép szintet
+  the fifth edition from the SRD 5.1, the 2014 rules: az ötödik kiadás az SRD 5.1-ből, a 2014-es szabályok
+  long rest: hosszú pihenő
+  short rest: rövid pihenő
+  difficult: nehéz
+headline: "{level}. szintű {classes}"

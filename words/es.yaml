@@ -1,0 +1,418 @@
+# The words of the 5e system in Spanish, as the dashboard shows them (D-403): translated by npm run translate (test/i18n/translate.ts) from the
+# words of words/it.yaml, which come from the system's official Italian translation; with the terms of the official translation in this language, where one is.
+groups:
+  Character: Personaje
+  Personality: Personalidad
+  Abilities: Características
+  Saving Throws: Tiradas de salvación
+  Skills: Habilidades
+  Combat: Combate
+  Proficiencies: Competencias
+  Features: Rasgos
+  Attacks: Ataques
+  Spells: Conjuros
+fields:
+  creature: raza
+  size: tamaño
+  classes: clases
+  subclasses: subclases
+  background: trasfondo
+  feats: dotes
+  alignment: alineamiento
+  level: nivel
+  xp: PX
+  inspiration: inspiración
+  personality-traits: rasgos de personalidad
+  ideal: ideal
+  bond: vínculo
+  flaw: defecto
+  str: FUE
+  dex: DES
+  con: CON
+  int: INT
+  wis: SAB
+  cha: CAR
+  str-mod: Mod. FUE
+  dex-mod: Mod. DES
+  con-mod: Mod. CON
+  int-mod: Mod. INT
+  wis-mod: Mod. SAB
+  cha-mod: Mod. CAR
+  proficiency: bonificador de competencia
+  str-save: salvación FUE
+  dex-save: salvación DES
+  con-save: salvación CON
+  int-save: salvación INT
+  wis-save: salvación SAB
+  cha-save: salvación CAR
+  save-notes: notas de salvación
+  acrobatics: acrobacias
+  animal-handling: trato con animales
+  arcana: arcanos
+  athletics: atletismo
+  deception: engaño
+  history: historia
+  insight: perspicacia
+  intimidation: intimidación
+  investigation: investigación
+  medicine: medicina
+  nature: naturaleza
+  perception: percepción
+  performance: interpretación
+  persuasion: persuasión
+  religion: religión
+  sleight-of-hand: juego de manos
+  stealth: sigilo
+  survival: supervivencia
+  ac: CA
+  initiative: iniciativa
+  speed: velocidad
+  equipped: equipado
+  hp-base: PG base
+  hp: PG
+  temp-hp: PG temporales
+  hit-dice-d6: dados de golpe d6
+  hit-dice-d8: dados de golpe d8
+  hit-dice-d10: dados de golpe d10
+  hit-dice-d12: dados de golpe d12
+  passive-perception: percepción pasiva
+  passive-insight: perspicacia pasiva
+  passive-investigation: investigación pasiva
+  darkvision: visión en la oscuridad
+  blindsight: vista ciega
+  tremorsense: sentido de la vibración
+  truesight: visión verdadera
+  damage-vulnerabilities: vulnerabilidades al daño
+  damage-resistances: resistencias al daño
+  damage-immunities: inmunidades al daño
+  condition-immunities: inmunidades a estados
+  death-successes: éxitos contra la muerte
+  death-failures: fallos contra la muerte
+  exhaustion: agotamiento
+  save-proficiencies: tiradas de salvación
+  skill-proficiencies: habilidades
+  expertise: pericia
+  armor-proficiencies: armaduras
+  weapon-proficiencies: armas
+  tool-proficiencies: herramientas
+  languages: idiomas
+  features: rasgos
+  fighting-styles: estilos de combate
+  attack: ataque
+  damage-roll: tirada de daño
+  caster-level: nivel de lanzador
+  spell-save-dc: CD de salvación de conjuros
+  spell-attack: ataque de conjuro
+  slots-1: espacios de nivel 1
+  slots-2: espacios de nivel 2
+  slots-3: espacios de nivel 3
+  slots-4: espacios de nivel 4
+  slots-5: espacios de nivel 5
+  slots-6: espacios de nivel 6
+  slots-7: espacios de nivel 7
+  slots-8: espacios de nivel 8
+  slots-9: espacios de nivel 9
+  spell-slots: espacios de conjuro
+  slot-level: nivel de espacio
+  mystic-arcanum-6: arcanum místico (nivel 6)
+  mystic-arcanum-7: arcanum místico (nivel 7)
+  mystic-arcanum-8: arcanum místico (nivel 8)
+  mystic-arcanum-9: arcanum místico (nivel 9)
+  signature-spell-1: conjuro de señal 1
+  signature-spell-2: conjuro de señal 2
+  max-prepared: máx. preparados
+  spells: conjuros
+  prepared: preparados
+  cantrips-known: trucos conocidos
+  spells-known: conjuros conocidos
+  invocations-known: invocaciones conocidas
+  rages: furias
+  rage-damage: daño de furia
+  martial-arts: artes marciales
+  ki-points: puntos de ki
+  unarmored-movement: movimiento sin armadura
+  sneak-attack: ataque furtivo
+  sorcery-points: puntos de hechicería
+  channel-divinity: canalizar divinidad
+  action-surge: oleada de acción
+  second-wind: tomar aliento
+  indomitable: indomable
+  wild-shape: forma salvaje
+  bardic-inspiration: inspiración de bardo
+  divine-sense: sentido divino
+  lay-on-hands: imposición de manos
+  cleansing-touch: toque purificador
+  arcane-recovery: recuperación arcana
+  natural-recovery: recuperación natural
+  wholeness-of-body: integridad corporal
+  holy-nimbus: nimbo sagrado
+  dark-ones-own-luck: suerte del oscuro
+  hurl-through-hell: arrojar al infierno
+  stroke-of-luck: golpe de suerte
+  eldritch-master: maestro sobrenatural
+  breath-weapon: arma de aliento
+  relentless-endurance: resistencia incansable
+  category: categoría
+  armor: armadura
+  hp-dice: dados de PG
+  fly: volar
+  swim: nadar
+  climb: trepar
+  burrow: excavar
+  saves: tiradas de salvación
+  skills: habilidades
+  cr: VD
+  xp-value: valor de PX
+words:
+  Dragonborn: Dracónido
+  Dwarf: Enano
+  Hill Dwarf: Enano de las colinas
+  Elf: Elfo
+  High Elf: Alto elfo
+  Gnome: Gnomo
+  Rock Gnome: Gnomo de las rocas
+  Half-Elf: Semielfo
+  Half-Orc: Semiorco
+  Halfling: Mediano
+  Lightfoot Halfling: Mediano piesligeros
+  Human: Humano
+  Tiefling: Tiefling
+  Barbarian: Bárbaro
+  Path of the Berserker: Senda del Berserker
+  Bard: Bardo
+  College of Lore: Colegio del Conocimiento
+  Cleric: Clérigo
+  Life Domain: Dominio de la Vida
+  Druid: Druida
+  Circle of the Land: Círculo de la Tierra
+  Fighter: Guerrero
+  Champion: Campeón
+  Monk: Monje
+  Way of the Open Hand: Camino de la Mano Abierta
+  Paladin: Paladín
+  Oath of Devotion: Juramento de Devoción
+  Ranger: Explorador
+  Hunter: Cazador
+  Rogue: Pícaro
+  Thief: Ladrón
+  Sorcerer: Hechicero
+  Draconic Bloodline: Linaje Dracónico
+  Warlock: Brujo
+  The Fiend: El Infernal
+  Wizard: Mago
+  School of Evocation: Escuela de Evocación
+  Acolyte (background): Acólito
+  Grappler: Luchador
+  Archery: Tiro con arco
+  Defense: Defensa
+  Dueling: Duelo
+  Great Weapon Fighting: Combate con armas grandes
+  Protection: Protección
+  Two-Weapon Fighting: Combate con dos armas
+  Unarmed Strike: Ataque sin armas
+  Acrobatics: Acrobacias
+  Animal Handling: Trato con animales
+  Arcana: Arcanos
+  Athletics: Atletismo
+  Deception: Engaño
+  History: Historia
+  Insight: Perspicacia
+  Intimidation: Intimidación
+  Investigation: Investigación
+  Medicine: Medicina
+  Nature: Naturaleza
+  Perception: Percepción
+  Performance: Interpretación
+  Persuasion: Persuasión
+  Religion: Religión
+  Sleight of Hand: Juego de manos
+  Stealth: Sigilo
+  Survival: Supervivencia
+  Common: Común
+  Dwarvish: Enano
+  Elvish: Élfico
+  Giant: Gigante
+  Gnomish: Gnomo
+  Goblin: Goblin
+  Orc: Orco
+  Abyssal: Abisal
+  Celestial: Celestial
+  Draconic: Dracónico
+  Deep Speech: Habla profunda
+  Infernal: Infernal
+  Primordial: Primordial
+  Sylvan: Silvano
+  Undercommon: Infracomún
+  Aquan: Aquan
+  Auran: Auran
+  Ignan: Ignan
+  Terran: Terran
+  Druidic: Druídico
+  Thieves' Cant: Jerga de ladrones
+  Tiny: Diminuto
+  Small: Pequeño
+  Medium: Mediano
+  Large: Grande
+  Huge: Enorme
+  Gargantuan: Gigantesco
+  Blinded: Cegado
+  Charmed: Hechizado
+  Deafened: Ensordecido
+  Frightened: Asustado
+  Grappled: Agarrado
+  Incapacitated: Incapacitado
+  Invisible: Invisible
+  Paralyzed: Paralizado
+  Petrified: Petrificado
+  Poisoned: Envenenado
+  Prone: Derribado
+  Restrained: Apresado
+  Stunned: Aturdido
+  Unconscious: Inconsciente
+  Exhaustion: Agotamiento
+  blinded: cegado
+  charmed: hechizado
+  deafened: ensordecido
+  frightened: asustado
+  grappled: agarrado
+  incapacitated: incapacitado
+  invisible: invisible
+  paralyzed: paralizado
+  petrified: petrificado
+  poisoned: envenenado
+  prone: derribado
+  restrained: apresado
+  stunned: aturdido
+  unconscious: inconsciente
+  exhaustion: agotamiento
+  acid: ácido
+  bludgeoning: contundente
+  cold: frío
+  fire: fuego
+  force: fuerza
+  lightning: relámpago
+  necrotic: necrótico
+  piercing: perforante
+  poison: veneno
+  psychic: psíquico
+  radiant: radiante
+  slashing: cortante
+  thunder: trueno
+  bludgeoning, piercing, and slashing from nonmagical attacks: contundente, perforante y cortante de ataques no mágicos
+  light armor: armadura ligera
+  medium armor: armadura media
+  heavy armor: armadura pesada
+  all armor: todas las armaduras
+  shields: escudos
+  simple weapons: armas simples
+  martial weapons: armas marciales
+  clubs: garrotes
+  daggers: dagas
+  darts: dardos
+  hand crossbows: ballestas de mano
+  javelins: jabalinas
+  light crossbows: ballestas ligeras
+  longswords: espadas largas
+  maces: mazas
+  quarterstaffs: bastones
+  rapiers: estoques
+  scimitars: cimitarras
+  shortswords: espadas cortas
+  sickles: hoces
+  slings: hondas
+  spears: lanzas
+  battleaxe: hacha de batalla
+  handaxe: hacha de mano
+  light hammer: martillo ligero
+  warhammer: martillo de guerra
+  longsword: espada larga
+  shortsword: espada corta
+  shortbow: arco corto
+  longbow: arco largo
+  herbalism kit: kit de herboristería
+  thieves' tools: herramientas de ladrón
+  tinker's tools: herramientas de manitas
+  advantage on saving throws against being charmed: ventaja en las tiradas de salvación contra ser hechizado
+  advantage on saving throws against being frightened: ventaja en las tiradas de salvación contra ser asustado
+  advantage on saving throws against poison: ventaja en las tiradas de salvación contra veneno
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: ventaja en todas las tiradas de salvación de Inteligencia, Sabiduría y Carisma contra magia
+  aberration: aberración
+  beast: bestia
+  celestial: celestial
+  construct: constructo
+  dragon: dragón
+  elemental: elemental
+  fey: feérico
+  fiend: infernal
+  giant: gigante
+  humanoid: humanoide
+  monstrosity: monstruosidad
+  ooze: cieno
+  plant: planta
+  undead: muerto viviente
+  humanoid (any race): humanoide (cualquier raza)
+  humanoid (dwarf): humanoide (enano)
+  humanoid (elf): humanoide (elfo)
+  humanoid (gnoll): humanoide (gnoll)
+  humanoid (gnome): humanoide (gnomo)
+  humanoid (goblinoid): humanoide (goblinoide)
+  humanoid (grimlock): humanoide (grimlock)
+  humanoid (human): humanoide (humano)
+  humanoid (human, shapechanger): humanoide (humano, cambiaformas)
+  humanoid (kobold): humanoide (kobold)
+  humanoid (lizardfolk): humanoide (hombre lagarto)
+  humanoid (orc): humanoide (orco)
+  humanoid (sahuagin): humanoide (sahuagin)
+  fiend (demon): infernal (demonio)
+  fiend (demon, shapechanger): infernal (demonio, cambiaformas)
+  fiend (devil): infernal (diablo)
+  fiend (devil, shapechanger): infernal (diablo, cambiaformas)
+  fiend (shapechanger): infernal (cambiaformas)
+  monstrosity (shapechanger): monstruosidad (cambiaformas)
+  monstrosity (titan): monstruosidad (titán)
+  undead (shapechanger): muerto viviente (cambiaformas)
+  swarm of Tiny beasts: enjambre de bestias Diminutas
+  lawful good: legal bueno
+  neutral good: neutral bueno
+  chaotic good: caótico bueno
+  lawful neutral: legal neutral
+  neutral: neutral
+  chaotic neutral: caótico neutral
+  lawful evil: legal malvado
+  neutral evil: neutral malvado
+  chaotic evil: caótico malvado
+  unaligned: sin alineamiento
+  any alignment: cualquier alineamiento
+  any chaotic alignment: cualquier alineamiento caótico
+  any evil alignment: cualquier alineamiento malvado
+  any non-good alignment: cualquier alineamiento no bueno
+  any non-lawful alignment: cualquier alineamiento no legal
+  neutral good (50%) or neutral evil (50%): neutral bueno (50%) o neutral malvado (50%)
+  natural armor: armadura natural
+  leather armor: armadura de cuero
+  studded leather: cuero tachonado
+  hide armor: armadura de pieles
+  chain shirt: camisa de malla
+  scale mail: cota de escamas
+  breastplate: coraza
+  chain mail: cota de mallas
+  splint: bandas
+  plate: placas
+  natural armor, shield: armadura natural, escudo
+  leather armor, shield: armadura de cuero, escudo
+  studded leather, shield: cuero tachonado, escudo
+  hide armor, shield: armadura de pieles, escudo
+  chain shirt, shield: camisote de mallas, escudo
+  scale mail, shield: cota de escamas, escudo
+  chain mail, shield: cota de mallas, escudo
+  advancement: Avance
+  how your character levels up: cómo sube de nivel tu personaje
+  xp: Puntos de experiencia
+  milestones: Hitos
+  your character levels up with experience points, for the foes overcome and what the story rewards: tu personaje sube de nivel con puntos de experiencia, por los enemigos vencidos y lo que la historia recompensa
+  your character levels up at the big moments of the story: tu personaje sube de nivel en los grandes momentos de la historia
+  the fifth edition from the SRD 5.1, the 2014 rules: la quinta edición del SRD 5.1, las reglas de 2014
+  long rest: descanso largo
+  short rest: descanso corto
+  difficult: difícil
+headline: "{classes} de nivel {level}"
