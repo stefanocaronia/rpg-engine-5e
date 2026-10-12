@@ -442,5 +442,9 @@ words:
   your character levels up at the big moments of the story: il tuo personaggio sale di livello nei grandi momenti della storia
   # The title of system.yaml
   the fifth edition from the SRD 5.1, the 2014 rules: la quinta edizione dalla SRD 5.1, le regole del 2014
+  # The rests that end effects, and the terrain of a region (system.yaml, recipes and travel), as the page writes them
+  long rest: riposo lungo
+  short rest: riposo breve
+  difficult: difficile
 # "un chierico di 3° livello", as the SRD writes it (p. 16); more classes are joined with " / "
 headline: "{classes} di {level}° livello"
