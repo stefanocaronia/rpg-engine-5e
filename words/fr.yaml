@@ -22,7 +22,7 @@ fields:
   level: niveau
   xp: PX
   inspiration: inspiration
-  personality-traits: traits de personnalité
+  personality-traits: traits de caractère
   ideal: idéal
   bond: lien
   flaw: défaut
@@ -32,19 +32,19 @@ fields:
   int: INT
   wis: SAG
   cha: CHA
-  str-mod: Mod. FOR
-  dex-mod: Mod. DEX
-  con-mod: Mod. CON
-  int-mod: Mod. INT
-  wis-mod: Mod. SAG
-  cha-mod: Mod. CHA
+  str-mod: mod. FOR
+  dex-mod: mod. DEX
+  con-mod: mod. CON
+  int-mod: mod. INT
+  wis-mod: mod. SAG
+  cha-mod: mod. CHA
   proficiency: bonus de maîtrise
-  str-save: JS Force
-  dex-save: JS Dextérité
-  con-save: JS Constitution
-  int-save: JS Intelligence
-  wis-save: JS Sagesse
-  cha-save: JS Charisme
+  str-save: JS FOR
+  dex-save: JS DEX
+  con-save: JS CON
+  int-save: JS INT
+  wis-save: JS SAG
+  cha-save: JS CHA
   save-notes: notes de jets de sauvegarde
   acrobatics: acrobaties
   animal-handling: dressage
@@ -52,7 +52,7 @@ fields:
   athletics: athlétisme
   deception: tromperie
   history: histoire
-  insight: intuition
+  insight: perspicacité
   intimidation: intimidation
   investigation: investigation
   medicine: médecine
@@ -76,7 +76,7 @@ fields:
   hit-dice-d10: dés de vie d10
   hit-dice-d12: dés de vie d12
   passive-perception: perception passive
-  passive-insight: intuition passive
+  passive-insight: perspicacité passive
   passive-investigation: investigation passive
   darkvision: vision dans le noir
   blindsight: vision aveugle
@@ -86,10 +86,10 @@ fields:
   damage-resistances: résistances aux dégâts
   damage-immunities: immunités aux dégâts
   condition-immunities: immunités aux états
-  death-successes: réussites contre la mort
-  death-failures: échecs contre la mort
+  death-successes: réussites aux jets de mort
+  death-failures: échecs aux jets de mort
   exhaustion: épuisement
-  save-proficiencies: maîtrises des jets de sauvegarde
+  save-proficiencies: maîtrises de jets de sauvegarde
   skill-proficiencies: maîtrises de compétences
   expertise: expertise
   armor-proficiencies: maîtrises d'armures
@@ -112,7 +112,7 @@ fields:
   slots-7: emplacements de niveau 7
   slots-8: emplacements de niveau 8
   slots-9: emplacements de niveau 9
-  spell-slots: emplacements de sort
+  spell-slots: emplacements de sorts
   slot-level: niveau d'emplacement
   mystic-arcanum-6: arcanum mystique (niveau 6)
   mystic-arcanum-7: arcanum mystique (niveau 7)
@@ -120,7 +120,7 @@ fields:
   mystic-arcanum-9: arcanum mystique (niveau 9)
   signature-spell-1: sort de prédilection 1
   signature-spell-2: sort de prédilection 2
-  max-prepared: sorts préparables max.
+  max-prepared: sorts préparés max.
   spells: sorts
   prepared: préparés
   cantrips-known: sorts mineurs connus
@@ -134,7 +134,7 @@ fields:
   sneak-attack: attaque sournoise
   sorcery-points: points de sorcellerie
   channel-divinity: conduit divin
-  action-surge: sursaut d'action
+  action-surge: action supplémentaire
   second-wind: second souffle
   indomitable: indomptable
   wild-shape: forme sauvage
@@ -145,12 +145,12 @@ fields:
   arcane-recovery: restauration arcanique
   natural-recovery: restauration naturelle
   wholeness-of-body: plénitude physique
-  holy-nimbus: nimbe sacré
+  holy-nimbus: halo sacré
   dark-ones-own-luck: chance du ténébreux
-  hurl-through-hell: projeter en enfer
+  hurl-through-hell: projection infernale
   stroke-of-luck: coup de chance
   eldritch-master: maître occulte
-  breath-weapon: arme de souffle
+  breath-weapon: souffle
   relentless-endurance: endurance implacable
   category: catégorie
   armor: armure
@@ -174,11 +174,11 @@ words:
   Half-Elf: Demi-elfe
   Half-Orc: Demi-orc
   Halfling: Halfelin
-  Lightfoot Halfling: Halfelin pieds-légers
+  Lightfoot Halfling: Halfelin pied-léger
   Human: Humain
   Tiefling: Tieffelin
   Barbarian: Barbare
-  Path of the Berserker: Voie du Berserker
+  Path of the Berserker: Voie du berserker
   Bard: Barde
   College of Lore: Collège du savoir
   Cleric: Clerc
@@ -206,7 +206,7 @@ words:
   Archery: Tir à l'arc
   Defense: Défense
   Dueling: Duel
-  Great Weapon Fighting: Combat avec une arme à deux mains
+  Great Weapon Fighting: Combat avec armes à deux mains
   Protection: Protection
   Two-Weapon Fighting: Combat à deux armes
   Unarmed Strike: Frappe à mains nues
@@ -246,7 +246,7 @@ words:
   Aquan: Aquatique
   Auran: Aérien
   Ignan: Igné
-  Terran: Terreux
+  Terran: Terrestre
   Druidic: Druidique
   Thieves' Cant: Argot des voleurs
   Tiny: Minuscule
@@ -298,7 +298,7 @@ words:
   radiant: radiant
   slashing: tranchant
   thunder: tonnerre
-  bludgeoning, piercing, and slashing from nonmagical attacks: contondant, perforant et tranchant d'attaques non magiques
+  bludgeoning, piercing, and slashing from nonmagical attacks: contondant, perforant et tranchant issus d'attaques non magiques
   light armor: armures légères
   medium armor: armures intermédiaires
   heavy armor: armures lourdes
@@ -310,7 +310,7 @@ words:
   daggers: dagues
   darts: fléchettes
   hand crossbows: arbalètes de poing
-  javelins: javelots
+  javelins: javelines
   light crossbows: arbalètes légères
   longswords: épées longues
   maces: masses d'armes
@@ -318,7 +318,7 @@ words:
   rapiers: rapières
   scimitars: cimeterres
   shortswords: épées courtes
-  sickles: faucilles
+  sickles: serpes
   slings: frondes
   spears: lances
   battleaxe: hache d'armes
@@ -332,8 +332,8 @@ words:
   herbalism kit: matériel d'herboriste
   thieves' tools: outils de voleur
   tinker's tools: outils de bricoleur
-  advantage on saving throws against being charmed: avantage aux jets de sauvegarde contre le charme
-  advantage on saving throws against being frightened: avantage aux jets de sauvegarde contre la peur
+  advantage on saving throws against being charmed: avantage aux jets de sauvegarde pour ne pas être charmé
+  advantage on saving throws against being frightened: avantage aux jets de sauvegarde pour ne pas être effrayé
   advantage on saving throws against poison: avantage aux jets de sauvegarde contre le poison
   advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: avantage à tous les jets de sauvegarde d'Intelligence, de Sagesse et de Charisme contre la magie
   aberration: aberration
@@ -350,7 +350,7 @@ words:
   ooze: vase
   plant: plante
   undead: mort-vivant
-  humanoid (any race): humanoïde (toute race)
+  humanoid (any race): humanoïde (n'importe quelle race)
   humanoid (dwarf): humanoïde (nain)
   humanoid (elf): humanoïde (elfe)
   humanoid (gnoll): humanoïde (gnoll)
@@ -371,7 +371,7 @@ words:
   monstrosity (shapechanger): monstruosité (métamorphe)
   monstrosity (titan): monstruosité (titan)
   undead (shapechanger): mort-vivant (métamorphe)
-  swarm of Tiny beasts: essaim de bêtes de très petite taille
+  swarm of Tiny beasts: nuée de bêtes Minuscules
   lawful good: loyal bon
   neutral good: neutre bon
   chaotic good: chaotique bon
@@ -381,7 +381,7 @@ words:
   lawful evil: loyal mauvais
   neutral evil: neutre mauvais
   chaotic evil: chaotique mauvais
-  unaligned: sans alignement
+  unaligned: non aligné
   any alignment: n'importe quel alignement
   any chaotic alignment: n'importe quel alignement chaotique
   any evil alignment: n'importe quel alignement mauvais
@@ -391,9 +391,9 @@ words:
   natural armor: armure naturelle
   leather armor: armure de cuir
   studded leather: cuir clouté
-  hide armor: armure de peau
+  hide armor: armure de peaux
   chain shirt: chemise de mailles
-  scale mail: cotte d'écailles
+  scale mail: armure d'écailles
   breastplate: cuirasse
   chain mail: cotte de mailles
   splint: clibanion
@@ -401,18 +401,21 @@ words:
   natural armor, shield: armure naturelle, bouclier
   leather armor, shield: armure de cuir, bouclier
   studded leather, shield: cuir clouté, bouclier
-  hide armor, shield: armure de peau, bouclier
+  hide armor, shield: armure de peaux, bouclier
   chain shirt, shield: chemise de mailles, bouclier
-  scale mail, shield: cotte d'écailles, bouclier
+  scale mail, shield: armure d'écailles, bouclier
   chain mail, shield: cotte de mailles, bouclier
   advancement: Progression
   how your character levels up: comment votre personnage gagne des niveaux
   xp: Points d'expérience
-  milestones: Étapes clés
+  milestones: Étapes
   your character levels up with experience points, for the foes overcome and what the story rewards: votre personnage gagne des niveaux grâce aux points d'expérience, pour les ennemis vaincus et ce que l'histoire récompense
   your character levels up at the big moments of the story: votre personnage gagne des niveaux lors des grands moments de l'histoire
-  the fifth edition from the SRD 5.1, the 2014 rules: la cinquième édition du SRD 5.1, les règles de 2014
+  the fifth edition from the SRD 5.1, the 2014 rules: la cinquième édition d'après le SRD 5.1, les règles de 2014
   long rest: repos long
   short rest: repos court
   difficult: difficile
+  until long rest: jusqu'au repos long
+  until short rest: jusqu'au repos court
+  difficult terrain: terrain difficile
 headline: "{classes} niveau {level}"

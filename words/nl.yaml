@@ -8,7 +8,7 @@ groups:
   Skills: Vaardigheden
   Combat: Gevecht
   Proficiencies: Bekwaamheden
-  Features: Eigenschappen en talenten
+  Features: Klassenkenmerken
   Attacks: Aanvallen
   Spells: Spreuken
 fields:
@@ -17,7 +17,7 @@ fields:
   classes: klassen
   subclasses: subklassen
   background: achtergrond
-  feats: gaven
+  feats: talenten
   alignment: gezindheid
   level: niveau
   xp: XP
@@ -32,13 +32,13 @@ fields:
   int: INT
   wis: WIJ
   cha: CHA
-  str-mod: KRA Mod
-  dex-mod: BEH Mod
-  con-mod: CON Mod
-  int-mod: INT Mod
-  wis-mod: WIJ Mod
-  cha-mod: CHA Mod
-  proficiency: bekwaamheidsbonus
+  str-mod: Mod KRA
+  dex-mod: Mod BEH
+  con-mod: Mod CON
+  int-mod: Mod INT
+  wis-mod: Mod WIJ
+  cha-mod: Mod CHA
+  proficiency: vaardigheidsbonus
   str-save: reddingsworp KRA
   dex-save: reddingsworp BEH
   con-save: reddingsworp CON
@@ -47,19 +47,19 @@ fields:
   cha-save: reddingsworp CHA
   save-notes: notities bij reddingsworpen
   acrobatics: acrobatiek
-  animal-handling: dierenbehandeling
+  animal-handling: omgang met dieren
   arcana: arcana
   athletics: atletiek
-  deception: bedrog
+  deception: misleiden
   history: geschiedenis
   insight: inzicht
-  intimidation: intimidatie
-  investigation: onderzoek
+  intimidation: intimideren
+  investigation: onderzoeken
   medicine: geneeskunde
   nature: natuur
   perception: waarneming
   performance: optreden
-  persuasion: overtuigingskracht
+  persuasion: overtuigen
   religion: religie
   sleight-of-hand: vingervlugheid
   stealth: heimelijkheid
@@ -68,26 +68,26 @@ fields:
   initiative: initiatief
   speed: snelheid
   equipped: uitgerust
-  hp-base: LP basis
-  hp: LP
-  temp-hp: tijdelijke LP
+  hp-base: basis-HP
+  hp: HP
+  temp-hp: tijdelijke HP
   hit-dice-d6: levensdobbelstenen d6
   hit-dice-d8: levensdobbelstenen d8
   hit-dice-d10: levensdobbelstenen d10
   hit-dice-d12: levensdobbelstenen d12
   passive-perception: passieve waarneming
   passive-insight: passief inzicht
-  passive-investigation: passief onderzoek
-  darkvision: donkerzicht
+  passive-investigation: passief onderzoeken
+  darkvision: donkervisie
   blindsight: blindzicht
   tremorsense: trillingszin
   truesight: waarachtig zicht
   damage-vulnerabilities: schadekwetsbaarheden
   damage-resistances: schadeweerstanden
   damage-immunities: schadeimmuniteiten
-  condition-immunities: toestandsimmuniteiten
-  death-successes: successen tegen de dood
-  death-failures: mislukkingen tegen de dood
+  condition-immunities: conditie-immuniteiten
+  death-successes: geslaagde doodsreddingsworpen
+  death-failures: mislukte doodsreddingsworpen
   exhaustion: uitputting
   save-proficiencies: reddingsworpen
   skill-proficiencies: vaardigheden
@@ -96,28 +96,28 @@ fields:
   weapon-proficiencies: wapens
   tool-proficiencies: gereedschappen
   languages: talen
-  features: eigenschappen
+  features: klassenkenmerken
   fighting-styles: gevechtsstijlen
   attack: aanval
   damage-roll: schadeworp
   caster-level: spreukniveau
-  spell-save-dc: spreuk-MG
+  spell-save-dc: spreuk-DC
   spell-attack: spreukaanval
-  slots-1: spreukplaatsen niveau 1
-  slots-2: spreukplaatsen niveau 2
-  slots-3: spreukplaatsen niveau 3
-  slots-4: spreukplaatsen niveau 4
-  slots-5: spreukplaatsen niveau 5
-  slots-6: spreukplaatsen niveau 6
-  slots-7: spreukplaatsen niveau 7
-  slots-8: spreukplaatsen niveau 8
-  slots-9: spreukplaatsen niveau 9
-  spell-slots: spreukplaatsen
-  slot-level: plaatsniveau
-  mystic-arcanum-6: mystiek arcanum 6
-  mystic-arcanum-7: mystiek arcanum 7
-  mystic-arcanum-8: mystiek arcanum 8
-  mystic-arcanum-9: mystiek arcanum 9
+  slots-1: spreukslots niveau 1
+  slots-2: spreukslots niveau 2
+  slots-3: spreukslots niveau 3
+  slots-4: spreukslots niveau 4
+  slots-5: spreukslots niveau 5
+  slots-6: spreukslots niveau 6
+  slots-7: spreukslots niveau 7
+  slots-8: spreukslots niveau 8
+  slots-9: spreukslots niveau 9
+  spell-slots: spreukslots
+  slot-level: slotniveau
+  mystic-arcanum-6: mystiek arcanum (niveau 6)
+  mystic-arcanum-7: mystiek arcanum (niveau 7)
+  mystic-arcanum-8: mystiek arcanum (niveau 8)
+  mystic-arcanum-9: mystiek arcanum (niveau 9)
   signature-spell-1: kenmerkende spreuk 1
   signature-spell-2: kenmerkende spreuk 2
   max-prepared: max. voorbereid
@@ -125,21 +125,21 @@ fields:
   prepared: voorbereid
   cantrips-known: bekende cantrips
   spells-known: bekende spreuken
-  invocations-known: bekende aanroepingen
+  invocations-known: bekende invocaties
   rages: woedes
   rage-damage: woedeschade
-  martial-arts: krijgskunsten
+  martial-arts: krijgskunst
   ki-points: ki-punten
   unarmored-movement: beweging zonder pantser
   sneak-attack: sluipaanval
-  sorcery-points: tovenaarspunten
-  channel-divinity: goddelijke kanalisatie
-  action-surge: actiestoot
-  second-wind: second wind
-  indomitable: onbedwingbaar
+  sorcery-points: tovenarijpunten
+  channel-divinity: goddelijkheid kanaliseren
+  action-surge: actiegolf
+  second-wind: tweede adem
+  indomitable: onverzettelijk
   wild-shape: wilde gedaante
   bardic-inspiration: bardische inspiratie
-  divine-sense: goddelijke waarneming
+  divine-sense: goddelijke zin
   lay-on-hands: handoplegging
   cleansing-touch: reinigende aanraking
   arcane-recovery: arcaan herstel
@@ -148,23 +148,23 @@ fields:
   holy-nimbus: heilige nimbus
   dark-ones-own-luck: geluk van de duistere
   hurl-through-hell: door de hel slingeren
-  stroke-of-luck: gelukstreffer
-  eldritch-master: occult meester
+  stroke-of-luck: geluksslag
+  eldritch-master: occulte meester
   breath-weapon: ademwapen
-  relentless-endurance: meedogenloos uithoudingsvermogen
+  relentless-endurance: onverbiddelijk uithoudingsvermogen
   category: categorie
-  armor: harnas
+  armor: pantser
   hp-dice: HP-dobbelstenen
   fly: vliegen
   swim: zwemmen
   climb: klimmen
   burrow: graven
-  saves: redding­worpen
+  saves: reddingsworpen
   skills: vaardigheden
   cr: CR
   xp-value: XP-waarde
 words:
-  Dragonborn: Drakeneed
+  Dragonborn: Drakengeborene
   Dwarf: Dwerg
   Hill Dwarf: Heuveldwerg
   Elf: Elf
@@ -172,9 +172,9 @@ words:
   Gnome: Gnoom
   Rock Gnome: Rotsgnoom
   Half-Elf: Halfelf
-  Half-Orc: Halforc
+  Half-Orc: Halfork
   Halfling: Halfling
-  Lightfoot Halfling: Lichtvoet-halfling
+  Lightfoot Halfling: Lichtvoethalfling
   Human: Mens
   Tiefling: Tiefling
   Barbarian: Barbaar
@@ -182,9 +182,9 @@ words:
   Bard: Bard
   College of Lore: College van Kennis
   Cleric: Cleric
-  Life Domain: Domein van het Leven
+  Life Domain: Levensdomein
   Druid: Druïde
-  Circle of the Land: Cirkel van het Land
+  Circle of the Land: Kring van het Land
   Fighter: Vechter
   Champion: Kampioen
   Monk: Monnik
@@ -198,27 +198,27 @@ words:
   Sorcerer: Tovenaar
   Draconic Bloodline: Drakenbloedlijn
   Warlock: Warlock
-  The Fiend: De Duivel
+  The Fiend: De Fiend
   Wizard: Magiër
   School of Evocation: School van Evocatie
   Acolyte (background): Acoliet
-  Grappler: Worstelaar
+  Grappler: Grijper
   Archery: Boogschieten
   Defense: Verdediging
   Dueling: Duelleren
-  Great Weapon Fighting: Vechten met Grote Wapens
+  Great Weapon Fighting: Vechten met groot wapen
   Protection: Bescherming
-  Two-Weapon Fighting: Vechten met Twee Wapens
-  Unarmed Strike: Ongewapende aanval
+  Two-Weapon Fighting: Vechten met twee wapens
+  Unarmed Strike: Ongewapende slag
   Acrobatics: Acrobatiek
-  Animal Handling: Dierenhouderij
+  Animal Handling: Omgang met dieren
   Arcana: Arcana
   Athletics: Atletiek
-  Deception: Bedrog
+  Deception: Misleiden
   History: Geschiedenis
   Insight: Inzicht
-  Intimidation: Intimidatie
-  Investigation: Onderzoek
+  Intimidation: Intimideren
+  Investigation: Onderzoeken
   Medicine: Geneeskunde
   Nature: Natuur
   Perception: Waarneming
@@ -228,7 +228,7 @@ words:
   Sleight of Hand: Vingervlugheid
   Stealth: Heimelijkheid
   Survival: Overleven
-  Common: Gemeenschappelijk
+  Common: Algemeen
   Dwarvish: Dwergs
   Elvish: Elfs
   Giant: Reuzentaal
@@ -238,18 +238,18 @@ words:
   Abyssal: Abyssaal
   Celestial: Celestiaal
   Draconic: Draconisch
-  Deep Speech: Diepe Spraak
+  Deep Speech: Diepspraak
   Infernal: Infernaal
   Primordial: Oertaal
   Sylvan: Sylvaans
-  Undercommon: Onderrijks
+  Undercommon: Ondergronds
   Aquan: Aquan
   Auran: Auran
   Ignan: Ignan
   Terran: Terran
   Druidic: Druïdisch
   Thieves' Cant: Dieventaal
-  Tiny: Zeer klein
+  Tiny: Minuscuul
   Small: Klein
   Medium: Middelgroot
   Large: Groot
@@ -257,10 +257,10 @@ words:
   Gargantuan: Gigantisch
   Blinded: Verblind
   Charmed: Betoverd
-  Deafened: Verdoofd
+  Deafened: Doof
   Frightened: Bang
   Grappled: Vastgegrepen
-  Incapacitated: Uitgeschakeld
+  Incapacitated: Onbekwaam
   Invisible: Onzichtbaar
   Paralyzed: Verlamd
   Petrified: Versteend
@@ -270,12 +270,12 @@ words:
   Stunned: Verdoofd
   Unconscious: Bewusteloos
   Exhaustion: Uitputting
-  blinded: blind
+  blinded: verblind
   charmed: betoverd
   deafened: doof
   frightened: bang
   grappled: vastgegrepen
-  incapacitated: uitgeschakeld
+  incapacitated: onbekwaam
   invisible: onzichtbaar
   paralyzed: verlamd
   petrified: versteend
@@ -286,19 +286,19 @@ words:
   unconscious: bewusteloos
   exhaustion: uitputting
   acid: zuur
-  bludgeoning: stomp
+  bludgeoning: stompend
   cold: koude
   fire: vuur
   force: kracht
   lightning: bliksem
   necrotic: necrotisch
-  piercing: steek
+  piercing: stekend
   poison: gif
   psychic: psychisch
   radiant: stralend
-  slashing: snij
+  slashing: snijdend
   thunder: donder
-  bludgeoning, piercing, and slashing from nonmagical attacks: stomp, steek en snij van niet-magische aanvallen
+  bludgeoning, piercing, and slashing from nonmagical attacks: stompend, stekend en snijdend van niet-magische aanvallen
   light armor: lichte pantsers
   medium armor: middelzware pantsers
   heavy armor: zware pantsers
@@ -308,16 +308,16 @@ words:
   martial weapons: krijgswapens
   clubs: knuppels
   daggers: dolken
-  darts: werppijlen
-  hand crossbows: handarmborsten
+  darts: werppijltjes
+  hand crossbows: handkruisbogen
   javelins: werpspiesen
-  light crossbows: lichte armborsten
+  light crossbows: lichte kruisbogen
   longswords: langzwaarden
-  maces: strijdknotsen
-  quarterstaffs: kampstokken
+  maces: knotsen
+  quarterstaffs: strijdstaven
   rapiers: rapieren
-  scimitars: sabels
-  shortswords: kortzwaarden
+  scimitars: kromzwaarden
+  shortswords: korte zwaarden
   sickles: sikkels
   slings: slingers
   spears: speren
@@ -326,24 +326,24 @@ words:
   light hammer: lichte hamer
   warhammer: oorlogshamer
   longsword: langzwaard
-  shortsword: kortzwaard
+  shortsword: kort zwaard
   shortbow: korte boog
   longbow: lange boog
-  herbalism kit: kruidkundigenset
+  herbalism kit: kruidkundigeset
   thieves' tools: dievengereedschap
   tinker's tools: knutselgereedschap
-  advantage on saving throws against being charmed: voordeel op redding tegen betoverd worden
-  advantage on saving throws against being frightened: voordeel op redding tegen bang worden
-  advantage on saving throws against poison: voordeel op redding tegen gif
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: voordeel op alle Intelligentie-, Wijsheid- en Charisma-reddingen tegen magie
+  advantage on saving throws against being charmed: voordeel op reddingsworpen tegen betoverd worden
+  advantage on saving throws against being frightened: voordeel op reddingsworpen tegen bang worden
+  advantage on saving throws against poison: voordeel op reddingsworpen tegen gif
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: voordeel op alle reddingsworpen op Intelligentie, Wijsheid en Charisma tegen magie
   aberration: aberratie
   beast: beest
-  celestial: hemelwezen
-  construct: constructie
+  celestial: celestiaal
+  construct: construct
   dragon: draak
   elemental: elementaal
-  fey: feeënwezen
-  fiend: duivelwezen
+  fey: fee
+  fiend: fiend
   giant: reus
   humanoid: humanoïde
   monstrosity: monstruositeit
@@ -360,14 +360,14 @@ words:
   humanoid (human): humanoïde (mens)
   humanoid (human, shapechanger): humanoïde (mens, gedaanteverwisselaar)
   humanoid (kobold): humanoïde (kobold)
-  humanoid (lizardfolk): humanoïde (hagedisvolk)
+  humanoid (lizardfolk): humanoïde (hagedismens)
   humanoid (orc): humanoïde (ork)
   humanoid (sahuagin): humanoïde (sahuagin)
-  fiend (demon): duivelwezen (demon)
-  fiend (demon, shapechanger): duivelwezen (demon, gedaanteverwisselaar)
-  fiend (devil): duivelwezen (duivel)
-  fiend (devil, shapechanger): duivelwezen (duivel, gedaanteverwisselaar)
-  fiend (shapechanger): duivelwezen (gedaanteverwisselaar)
+  fiend (demon): fiend (demon)
+  fiend (demon, shapechanger): fiend (demon, gedaanteverwisselaar)
+  fiend (devil): fiend (duivel)
+  fiend (devil, shapechanger): fiend (duivel, gedaanteverwisselaar)
+  fiend (shapechanger): fiend (gedaanteverwisselaar)
   monstrosity (shapechanger): monstruositeit (gedaanteverwisselaar)
   monstrosity (titan): monstruositeit (titaan)
   undead (shapechanger): ondode (gedaanteverwisselaar)
@@ -378,16 +378,16 @@ words:
   lawful neutral: wettig neutraal
   neutral: neutraal
   chaotic neutral: chaotisch neutraal
-  lawful evil: wettig kwaadaardig
-  neutral evil: neutraal kwaadaardig
-  chaotic evil: chaotisch kwaadaardig
+  lawful evil: wettig slecht
+  neutral evil: neutraal slecht
+  chaotic evil: chaotisch slecht
   unaligned: zonder gezindheid
   any alignment: elke gezindheid
   any chaotic alignment: elke chaotische gezindheid
-  any evil alignment: elke kwaadaardige gezindheid
+  any evil alignment: elke slechte gezindheid
   any non-good alignment: elke niet-goede gezindheid
   any non-lawful alignment: elke niet-wettige gezindheid
-  neutral good (50%) or neutral evil (50%): neutraal goed (50%) of neutraal kwaadaardig (50%)
+  neutral good (50%) or neutral evil (50%): neutraal goed (50%) of neutraal slecht (50%)
   natural armor: natuurlijk pantser
   leather armor: leren pantser
   studded leather: beslagen leer
@@ -397,22 +397,25 @@ words:
   breastplate: borstplaat
   chain mail: maliënkolder
   splint: bandenpantser
-  plate: plaatharnas
+  plate: plaatpantser
   natural armor, shield: natuurlijk pantser, schild
-  leather armor, shield: leren harnas, schild
-  studded leather, shield: beslagen leren harnas, schild
-  hide armor, shield: huidenharnas, schild
+  leather armor, shield: leren pantser, schild
+  studded leather, shield: beslagen leer, schild
+  hide armor, shield: huidenpantser, schild
   chain shirt, shield: maliënhemd, schild
   scale mail, shield: schubbenpantser, schild
   chain mail, shield: maliënkolder, schild
-  advancement: Vooruitgang
+  advancement: Voortgang
   how your character levels up: hoe je personage een niveau stijgt
   xp: Ervaringspunten
   milestones: Mijlpalen
-  your character levels up with experience points, for the foes overcome and what the story rewards: je personage stijgt in niveau met ervaringspunten, voor verslagen vijanden en wat het verhaal beloont
-  your character levels up at the big moments of the story: je personage stijgt in niveau op de grote momenten van het verhaal
+  your character levels up with experience points, for the foes overcome and what the story rewards: je personage stijgt een niveau met ervaringspunten, voor verslagen vijanden en wat het verhaal beloont
+  your character levels up at the big moments of the story: je personage stijgt een niveau op de grote momenten van het verhaal
   the fifth edition from the SRD 5.1, the 2014 rules: de vijfde editie uit de SRD 5.1, de regels van 2014
   long rest: lange rust
   short rest: korte rust
   difficult: moeilijk
+  until long rest: tot de lange rust
+  until short rest: tot de korte rust
+  difficult terrain: moeilijk terrein
 headline: "{classes} niveau {level}"

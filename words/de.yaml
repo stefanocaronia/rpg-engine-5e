@@ -12,7 +12,7 @@ groups:
   Attacks: Angriffe
   Spells: Zauber
 fields:
-  creature: Volk
+  creature: Rasse
   size: Größe
   classes: Klassen
   subclasses: Unterklassen
@@ -26,25 +26,25 @@ fields:
   ideal: Ideal
   bond: Bindung
   flaw: Makel
-  str: STÄ
+  str: STR
   dex: GES
   con: KON
   int: INT
   wis: WEI
   cha: CHA
-  str-mod: Mod. STÄ
-  dex-mod: Mod. GES
-  con-mod: Mod. KON
-  int-mod: Mod. INT
-  wis-mod: Mod. WEI
-  cha-mod: Mod. CHA
+  str-mod: STR-Mod.
+  dex-mod: GES-Mod.
+  con-mod: KON-Mod.
+  int-mod: INT-Mod.
+  wis-mod: WEI-Mod.
+  cha-mod: CHA-Mod.
   proficiency: Übungsbonus
-  str-save: RW Stärke
-  dex-save: RW Geschicklichkeit
-  con-save: RW Konstitution
-  int-save: RW Intelligenz
-  wis-save: RW Weisheit
-  cha-save: RW Charisma
+  str-save: Rettungswurf STR
+  dex-save: Rettungswurf GES
+  con-save: Rettungswurf KON
+  int-save: Rettungswurf INT
+  wis-save: Rettungswurf WEI
+  cha-save: Rettungswurf CHA
   save-notes: Notizen zu Rettungswürfen
   acrobatics: Akrobatik
   animal-handling: Mit Tieren umgehen
@@ -86,8 +86,8 @@ fields:
   damage-resistances: Schadenswiderstände
   damage-immunities: Schadensimmunitäten
   condition-immunities: Zustandsimmunitäten
-  death-successes: Erfolge Todesrettungswürfe
-  death-failures: Fehlschläge Todesrettungswürfe
+  death-successes: Erfolge bei Todesrettungswürfen
+  death-failures: Fehlschläge bei Todesrettungswürfen
   exhaustion: Erschöpfung
   save-proficiencies: Rettungswürfe
   skill-proficiencies: Fertigkeiten
@@ -100,8 +100,8 @@ fields:
   fighting-styles: Kampfstile
   attack: Angriff
   damage-roll: Schadenswurf
-  caster-level: Zauberstufe
-  spell-save-dc: Zauber-SG
+  caster-level: Zaubererstufe
+  spell-save-dc: SG für Zauberrettungswürfe
   spell-attack: Zauberangriff
   slots-1: Zauberplätze Grad 1
   slots-2: Zauberplätze Grad 2
@@ -113,7 +113,7 @@ fields:
   slots-8: Zauberplätze Grad 8
   slots-9: Zauberplätze Grad 9
   spell-slots: Zauberplätze
-  slot-level: Zauberplatzgrad
+  slot-level: Grad des Zauberplatzes
   mystic-arcanum-6: Mystisches Arkanum (Grad 6)
   mystic-arcanum-7: Mystisches Arkanum (Grad 7)
   mystic-arcanum-8: Mystisches Arkanum (Grad 8)
@@ -130,14 +130,14 @@ fields:
   rage-damage: Kampfrauschschaden
   martial-arts: Kampfkunst
   ki-points: Ki-Punkte
-  unarmored-movement: Bewegung ohne Rüstung
+  unarmored-movement: Ungepanzerte Bewegung
   sneak-attack: Hinterhältiger Angriff
   sorcery-points: Zauberpunkte
   channel-divinity: Göttliche Macht kanalisieren
-  action-surge: Tatendrang
+  action-surge: Aktionsschub
   second-wind: Durchatmen
-  indomitable: Unbeugsam
-  wild-shape: Wildgestalt
+  indomitable: Unbezwingbar
+  wild-shape: Tiergestalt
   bardic-inspiration: Bardische Inspiration
   divine-sense: Göttliches Gespür
   lay-on-hands: Handauflegen
@@ -149,7 +149,7 @@ fields:
   dark-ones-own-luck: Glück des Dunklen
   hurl-through-hell: Durch die Hölle schleudern
   stroke-of-luck: Glückstreffer
-  eldritch-master: Unheimlicher Meister
+  eldritch-master: Meister des Unheimlichen
   breath-weapon: Odemwaffe
   relentless-endurance: Unerbittliche Ausdauer
   category: Kategorie
@@ -174,7 +174,7 @@ words:
   Half-Elf: Halbelf
   Half-Orc: Halbork
   Halfling: Halbling
-  Lightfoot Halfling: Leichtfüßiger Halbling
+  Lightfoot Halfling: Leichtfuß-Halbling
   Human: Mensch
   Tiefling: Tiefling
   Barbarian: Barbar
@@ -182,7 +182,7 @@ words:
   Bard: Barde
   College of Lore: Kolleg des Wissens
   Cleric: Kleriker
-  Life Domain: Lebensdomäne
+  Life Domain: Domäne des Lebens
   Druid: Druide
   Circle of the Land: Zirkel des Landes
   Fighter: Kämpfer
@@ -200,18 +200,18 @@ words:
   Warlock: Hexenmeister
   The Fiend: Der Unhold
   Wizard: Magier
-  School of Evocation: Schule der Hervorrufung
+  School of Evocation: Schule der Evokation
   Acolyte (background): Akolyth
   Grappler: Ringer
   Archery: Bogenschießen
   Defense: Verteidigung
   Dueling: Duellieren
-  Great Weapon Fighting: Kampf mit großen Waffen
+  Great Weapon Fighting: Kampf mit Großwaffen
   Protection: Schutz
   Two-Weapon Fighting: Kampf mit zwei Waffen
-  Unarmed Strike: Unbewaffneter Schlag
+  Unarmed Strike: Waffenloser Schlag
   Acrobatics: Akrobatik
-  Animal Handling: Tiere beruhigen
+  Animal Handling: Mit Tieren umgehen
   Arcana: Arkane Kunde
   Athletics: Athletik
   Deception: Täuschen
@@ -219,10 +219,10 @@ words:
   Insight: Motiv erkennen
   Intimidation: Einschüchtern
   Investigation: Nachforschungen
-  Medicine: Heilkunde
+  Medicine: Medizin
   Nature: Naturkunde
   Perception: Wahrnehmung
-  Performance: Auftreten
+  Performance: Darbietung
   Persuasion: Überzeugen
   Religion: Religion
   Sleight of Hand: Fingerfertigkeit
@@ -240,13 +240,13 @@ words:
   Draconic: Drakonisch
   Deep Speech: Tiefensprache
   Infernal: Infernalisch
-  Primordial: Primordial
+  Primordial: Urtümlich
   Sylvan: Sylvanisch
   Undercommon: Unterreichssprache
-  Aquan: Aquan
+  Aquan: Aqual
   Auran: Aural
-  Ignan: Ignan
-  Terran: Terran
+  Ignan: Ignal
+  Terran: Terral
   Druidic: Druidisch
   Thieves' Cant: Diebessprache
   Tiny: Winzig
@@ -266,7 +266,7 @@ words:
   Petrified: Versteinert
   Poisoned: Vergiftet
   Prone: Liegend
-  Restrained: Festgesetzt
+  Restrained: Festgehalten
   Stunned: Betäubt
   Unconscious: Bewusstlos
   Exhaustion: Erschöpfung
@@ -281,7 +281,7 @@ words:
   petrified: versteinert
   poisoned: vergiftet
   prone: liegend
-  restrained: festgesetzt
+  restrained: festgehalten
   stunned: betäubt
   unconscious: bewusstlos
   exhaustion: Erschöpfung
@@ -297,11 +297,11 @@ words:
   psychic: psychisch
   radiant: gleißend
   slashing: Hieb
-  thunder: Schall
-  bludgeoning, piercing, and slashing from nonmagical attacks: Wucht, Stich und Hieb von nichtmagischen Angriffen
-  light armor: leichte Rüstung
-  medium armor: mittelschwere Rüstung
-  heavy armor: schwere Rüstung
+  thunder: Donner
+  bludgeoning, piercing, and slashing from nonmagical attacks: Wucht, Stich und Hieb durch nichtmagische Angriffe
+  light armor: leichte Rüstungen
+  medium armor: mittelschwere Rüstungen
+  heavy armor: schwere Rüstungen
   all armor: alle Rüstungen
   shields: Schilde
   simple weapons: einfache Waffen
@@ -331,7 +331,7 @@ words:
   longbow: Langbogen
   herbalism kit: Kräuterkundeset
   thieves' tools: Diebeswerkzeug
-  tinker's tools: Feinmechanikerwerkzeug
+  tinker's tools: Kesselflickerwerkzeug
   advantage on saving throws against being charmed: Vorteil bei Rettungswürfen, um nicht bezaubert zu werden
   advantage on saving throws against being frightened: Vorteil bei Rettungswürfen, um nicht verängstigt zu werden
   advantage on saving throws against poison: Vorteil bei Rettungswürfen gegen Gift
@@ -350,7 +350,7 @@ words:
   ooze: Schlick
   plant: Pflanze
   undead: Untoter
-  humanoid (any race): Humanoider (beliebiges Volk)
+  humanoid (any race): Humanoider (beliebige Rasse)
   humanoid (dwarf): Humanoider (Zwerg)
   humanoid (elf): Humanoider (Elf)
   humanoid (gnoll): Humanoider (Gnoll)
@@ -395,7 +395,7 @@ words:
   chain shirt: Kettenhemd
   scale mail: Schuppenpanzer
   breastplate: Brustplatte
-  chain mail: Kettenhemd
+  chain mail: Kettenpanzer
   splint: Schienenpanzer
   plate: Plattenpanzer
   natural armor, shield: natürliche Rüstung, Schild
@@ -407,7 +407,7 @@ words:
   chain mail, shield: Kettenpanzer, Schild
   advancement: Aufstieg
   how your character levels up: wie dein Charakter aufsteigt
-  xp: EP
+  xp: Erfahrungspunkte
   milestones: Meilensteine
   your character levels up with experience points, for the foes overcome and what the story rewards: dein Charakter steigt mit Erfahrungspunkten auf, für besiegte Gegner und für das, was die Geschichte belohnt
   your character levels up at the big moments of the story: dein Charakter steigt in den großen Momenten der Geschichte auf
@@ -415,4 +415,7 @@ words:
   long rest: lange Rast
   short rest: kurze Rast
   difficult: schwierig
-headline: "{classes} der Stufe {level}"
+  until long rest: bis zur langen Rast
+  until short rest: bis zur kurzen Rast
+  difficult terrain: schwieriges Gelände
+headline: "{classes}, Stufe {level}"

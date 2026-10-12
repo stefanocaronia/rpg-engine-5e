@@ -17,29 +17,29 @@ fields:
   classes: povolání
   subclasses: podpovolání
   background: zázemí
-  feats: nadání
+  feats: talenty
   alignment: přesvědčení
   level: úroveň
-  xp: ZB
+  xp: XP
   inspiration: inspirace
   personality-traits: povahové rysy
   ideal: ideál
   bond: pouto
-  flaw: vada
-  str: SÍL
+  flaw: slabina
+  str: SIL
   dex: OBR
   con: ODO
   int: INT
   wis: MDR
   cha: CHA
-  str-mod: oprava SÍL
+  str-mod: oprava SIL
   dex-mod: oprava OBR
   con-mod: oprava ODO
   int-mod: oprava INT
   wis-mod: oprava MDR
   cha-mod: oprava CHA
   proficiency: bonus zdatnosti
-  str-save: záchranný hod SÍL
+  str-save: záchranný hod SIL
   dex-save: záchranný hod OBR
   con-save: záchranný hod ODO
   int-save: záchranný hod INT
@@ -54,7 +54,7 @@ fields:
   history: historie
   insight: vhled
   intimidation: zastrašování
-  investigation: pátrání
+  investigation: vyšetřování
   medicine: medicína
   nature: příroda
   perception: vnímání
@@ -68,23 +68,23 @@ fields:
   initiative: iniciativa
   speed: rychlost
   equipped: vybaveno
-  hp-base: základní ŽB
-  hp: ŽB
-  temp-hp: dočasné ŽB
-  hit-dice-d6: kostky životů k6
-  hit-dice-d8: kostky životů k8
-  hit-dice-d10: kostky životů k10
-  hit-dice-d12: kostky životů k12
+  hp-base: základ životů
+  hp: životy
+  temp-hp: dočasné životy
+  hit-dice-d6: kostky životů d6
+  hit-dice-d8: kostky životů d8
+  hit-dice-d10: kostky životů d10
+  hit-dice-d12: kostky životů d12
   passive-perception: pasivní vnímání
   passive-insight: pasivní vhled
-  passive-investigation: pasivní pátrání
+  passive-investigation: pasivní vyšetřování
   darkvision: vidění ve tmě
   blindsight: slepé vidění
   tremorsense: vnímání otřesů
   truesight: pravé vidění
-  damage-vulnerabilities: zranitelnosti vůči poškození
-  damage-resistances: odolnosti vůči poškození
-  damage-immunities: imunity vůči poškození
+  damage-vulnerabilities: zranitelnosti vůči zranění
+  damage-resistances: odolnosti vůči zranění
+  damage-immunities: imunity vůči zranění
   condition-immunities: imunity vůči stavům
   death-successes: úspěchy proti smrti
   death-failures: neúspěchy proti smrti
@@ -92,72 +92,72 @@ fields:
   save-proficiencies: záchranné hody
   skill-proficiencies: dovednosti
   expertise: mistrovství
-  armor-proficiencies: brnění
+  armor-proficiencies: zbroje
   weapon-proficiencies: zbraně
   tool-proficiencies: nástroje
   languages: jazyky
   features: rysy
-  fighting-styles: bojové styly
+  fighting-styles: styly boje
   attack: útok
   damage-roll: hod na zranění
-  caster-level: úroveň sesilatele
-  spell-save-dc: SO záchranného hodu kouzel
+  caster-level: úroveň sesílatele
+  spell-save-dc: SO záchrany kouzel
   spell-attack: útok kouzlem
-  slots-1: sloty 1. úrovně
-  slots-2: sloty 2. úrovně
-  slots-3: sloty 3. úrovně
-  slots-4: sloty 4. úrovně
-  slots-5: sloty 5. úrovně
-  slots-6: sloty 6. úrovně
-  slots-7: sloty 7. úrovně
-  slots-8: sloty 8. úrovně
-  slots-9: sloty 9. úrovně
-  spell-slots: sloty kouzel
-  slot-level: úroveň slotu
+  slots-1: pozice 1. úrovně
+  slots-2: pozice 2. úrovně
+  slots-3: pozice 3. úrovně
+  slots-4: pozice 4. úrovně
+  slots-5: pozice 5. úrovně
+  slots-6: pozice 6. úrovně
+  slots-7: pozice 7. úrovně
+  slots-8: pozice 8. úrovně
+  slots-9: pozice 9. úrovně
+  spell-slots: pozice kouzel
+  slot-level: úroveň pozice
   mystic-arcanum-6: mystické arkánum (6. úroveň)
   mystic-arcanum-7: mystické arkánum (7. úroveň)
   mystic-arcanum-8: mystické arkánum (8. úroveň)
   mystic-arcanum-9: mystické arkánum (9. úroveň)
-  signature-spell-1: typické kouzlo 1
-  signature-spell-2: typické kouzlo 2
-  max-prepared: max. připravených kouzel
+  signature-spell-1: osobité kouzlo 1
+  signature-spell-2: osobité kouzlo 2
+  max-prepared: max. připravených
   spells: kouzla
-  prepared: připraveno
+  prepared: připravená
   cantrips-known: známé triky
   spells-known: známá kouzla
   invocations-known: známé invokace
-  rages: zuřivosti
+  rages: záchvaty zuřivosti
   rage-damage: zranění ze zuřivosti
   martial-arts: bojová umění
   ki-points: body ki
-  unarmored-movement: pohyb bez brnění
+  unarmored-movement: pohyb bez zbroje
   sneak-attack: záludný útok
   sorcery-points: body čarování
   channel-divinity: usměrnění božství
-  action-surge: příval činů
-  second-wind: druhý dech
-  indomitable: nezlomný
-  wild-shape: divoká podoba
+  action-surge: příval akce
+  second-wind: popadnutí dechu
+  indomitable: nezdolnost
+  wild-shape: divoký tvar
   bardic-inspiration: bardská inspirace
-  divine-sense: božský smysl
-  lay-on-hands: vzkládání rukou
+  divine-sense: božské vnímání
+  lay-on-hands: pokládání rukou
   cleansing-touch: očistný dotek
   arcane-recovery: arkánní zotavení
-  natural-recovery: přírodní zotavení
+  natural-recovery: přirozené zotavení
   wholeness-of-body: celistvost těla
-  holy-nimbus: svatá svatozář
+  holy-nimbus: svatá aureola
   dark-ones-own-luck: štěstí temného
-  hurl-through-hell: vrhnout peklem
-  stroke-of-luck: šťastný zásah
+  hurl-through-hell: vrhnutí peklem
+  stroke-of-luck: štěstí v pravý čas
   eldritch-master: mistr tajemna
   breath-weapon: dechová zbraň
   relentless-endurance: neúnavná výdrž
   category: kategorie
   armor: zbroj
   hp-dice: kostky životů
-  fly: let
+  fly: létání
   swim: plavání
-  climb: lezení
+  climb: šplhání
   burrow: hrabání
   saves: záchranné hody
   skills: dovednosti
@@ -168,7 +168,7 @@ words:
   Dwarf: Trpaslík
   Hill Dwarf: Kopcový trpaslík
   Elf: Elf
-  High Elf: Vznešený elf
+  High Elf: Vyšší elf
   Gnome: Gnóm
   Rock Gnome: Skalní gnóm
   Half-Elf: Půlelf
@@ -184,19 +184,19 @@ words:
   Cleric: Klerik
   Life Domain: Doména života
   Druid: Druid
-  Circle of the Land: Okruh země
+  Circle of the Land: Kruh země
   Fighter: Bojovník
   Champion: Šampion
   Monk: Mnich
   Way of the Open Hand: Cesta otevřené dlaně
   Paladin: Paladin
-  Oath of Devotion: Přísaha oddanosti
+  Oath of Devotion: Přísaha zbožnosti
   Ranger: Hraničář
   Hunter: Lovec
   Rogue: Tulák
   Thief: Zloděj
   Sorcerer: Čaroděj
-  Draconic Bloodline: Dračí krevní linie
+  Draconic Bloodline: Dračí původ
   Warlock: Černokněžník
   The Fiend: Běs
   Wizard: Kouzelník
@@ -206,12 +206,12 @@ words:
   Archery: Lukostřelba
   Defense: Obrana
   Dueling: Souboj
-  Great Weapon Fighting: Boj s velkými zbraněmi
+  Great Weapon Fighting: Boj s těžkou zbraní
   Protection: Ochrana
   Two-Weapon Fighting: Boj dvěma zbraněmi
-  Unarmed Strike: Úder beze zbraně
+  Unarmed Strike: Útok beze zbraně
   Acrobatics: Akrobacie
-  Animal Handling: Ovládání zvířat
+  Animal Handling: Zacházení se zvířaty
   Arcana: Arkána
   Athletics: Atletika
   Deception: Klamání
@@ -225,7 +225,7 @@ words:
   Performance: Vystupování
   Persuasion: Přesvědčování
   Religion: Náboženství
-  Sleight of Hand: Zručnost
+  Sleight of Hand: Šikovnost rukou
   Stealth: Nenápadnost
   Survival: Přežití
   Common: Obecná řeč
@@ -234,19 +234,19 @@ words:
   Giant: Obří řeč
   Gnomish: Gnómština
   Goblin: Goblinština
-  Orc: Skřetí řeč
+  Orc: Skřetština
   Abyssal: Propastná řeč
-  Celestial: Nebeština
+  Celestial: Nebeská řeč
   Draconic: Dračí řeč
   Deep Speech: Hlubinná řeč
   Infernal: Pekelná řeč
-  Primordial: Prapůvodní řeč
-  Sylvan: Sylvánština
-  Undercommon: Podzemní obecná řeč
+  Primordial: Prvotní řeč
+  Sylvan: Lesní řeč
+  Undercommon: Podobecná řeč
   Aquan: Akvánština
-  Auran: Aurančina
-  Ignan: Ignánština
-  Terran: Terránština
+  Auran: Aurán
+  Ignan: Ignán
+  Terran: Terán
   Druidic: Druidština
   Thieves' Cant: Zlodějská hantýrka
   Tiny: Drobná
@@ -265,7 +265,7 @@ words:
   Paralyzed: Paralyzovaný
   Petrified: Zkamenělý
   Poisoned: Otrávený
-  Prone: Povalený
+  Prone: Sražený k zemi
   Restrained: Spoutaný
   Stunned: Omráčený
   Unconscious: V bezvědomí
@@ -280,24 +280,24 @@ words:
   paralyzed: paralyzovaný
   petrified: zkamenělý
   poisoned: otrávený
-  prone: povalený
+  prone: sražený k zemi
   restrained: spoutaný
   stunned: omráčený
   unconscious: v bezvědomí
   exhaustion: vyčerpání
-  acid: kyselina
+  acid: kyselinové
   bludgeoning: drtivé
-  cold: chlad
-  fire: oheň
+  cold: studené
+  fire: ohnivé
   force: silové
-  lightning: blesk
+  lightning: bleskové
   necrotic: nekrotické
   piercing: bodné
-  poison: jed
+  poison: jedové
   psychic: psychické
   radiant: zářivé
   slashing: sečné
-  thunder: hrom
+  thunder: hromové
   bludgeoning, piercing, and slashing from nonmagical attacks: drtivé, bodné a sečné z nemagických útoků
   light armor: lehké zbroje
   medium armor: střední zbroje
@@ -321,7 +321,7 @@ words:
   sickles: srpy
   slings: praky
   spears: kopí
-  battleaxe: bojová sekera
+  battleaxe: bitevní sekera
   handaxe: ruční sekera
   light hammer: lehké kladivo
   warhammer: válečné kladivo
@@ -331,7 +331,7 @@ words:
   longbow: dlouhý luk
   herbalism kit: herbářská souprava
   thieves' tools: zlodějské náčiní
-  tinker's tools: kutilské náčiní
+  tinker's tools: kutilské nářadí
   advantage on saving throws against being charmed: výhoda při záchranných hodech proti okouzlení
   advantage on saving throws against being frightened: výhoda při záchranných hodech proti vyděšení
   advantage on saving throws against poison: výhoda při záchranných hodech proti jedu
@@ -350,27 +350,27 @@ words:
   ooze: kal
   plant: rostlina
   undead: nemrtvý
-  humanoid (any race): humanoid (jakákoli rasa)
+  humanoid (any race): humanoid (libovolná rasa)
   humanoid (dwarf): humanoid (trpaslík)
   humanoid (elf): humanoid (elf)
-  humanoid (gnoll): humanoid (gnól)
+  humanoid (gnoll): humanoid (gnol)
   humanoid (gnome): humanoid (gnóm)
   humanoid (goblinoid): humanoid (goblinoid)
   humanoid (grimlock): humanoid (grimlok)
   humanoid (human): humanoid (člověk)
-  humanoid (human, shapechanger): humanoid (člověk, měňavec)
+  humanoid (human, shapechanger): humanoid (člověk, měnitel podoby)
   humanoid (kobold): humanoid (kobold)
   humanoid (lizardfolk): humanoid (ještěrčan)
-  humanoid (orc): humanoid (ork)
+  humanoid (orc): humanoid (skřet)
   humanoid (sahuagin): humanoid (sahuagin)
   fiend (demon): běs (démon)
-  fiend (demon, shapechanger): běs (démon, měňavec)
+  fiend (demon, shapechanger): běs (démon, měnitel podoby)
   fiend (devil): běs (ďábel)
-  fiend (devil, shapechanger): běs (ďábel, měňavec)
-  fiend (shapechanger): běs (měňavec)
-  monstrosity (shapechanger): monstrum (měňavec)
+  fiend (devil, shapechanger): běs (ďábel, měnitel podoby)
+  fiend (shapechanger): běs (měnitel podoby)
+  monstrosity (shapechanger): monstrum (měnitel podoby)
   monstrosity (titan): monstrum (titán)
-  undead (shapechanger): nemrtvý (měňavec)
+  undead (shapechanger): nemrtvý (měnitel podoby)
   swarm of Tiny beasts: roj Drobných zvířat
   lawful good: zákonně dobrý
   neutral good: neutrálně dobrý
@@ -390,29 +390,32 @@ words:
   neutral good (50%) or neutral evil (50%): neutrálně dobrý (50 %) nebo neutrálně zlý (50 %)
   natural armor: přirozená zbroj
   leather armor: kožená zbroj
-  studded leather: kožená zbroj s cvočky
-  hide armor: zbroj z kůží
+  studded leather: pobíjená kožená zbroj
+  hide armor: zbroj z kožešin
   chain shirt: kroužková košile
   scale mail: šupinová zbroj
-  breastplate: plátový krunýř
+  breastplate: kyrys
   chain mail: kroužková zbroj
-  splint: pásová zbroj
+  splint: pásková zbroj
   plate: plátová zbroj
   natural armor, shield: přirozená zbroj, štít
   leather armor, shield: kožená zbroj, štít
   studded leather, shield: pobíjená kožená zbroj, štít
-  hide armor, shield: zbroj z kůží, štít
+  hide armor, shield: zbroj z kožešin, štít
   chain shirt, shield: kroužková košile, štít
   scale mail, shield: šupinová zbroj, štít
   chain mail, shield: kroužková zbroj, štít
   advancement: Postup
-  how your character levels up: jak postava postupuje na vyšší úroveň
+  how your character levels up: jak tvá postava postupuje na vyšší úroveň
   xp: Zkušenostní body
   milestones: Milníky
-  your character levels up with experience points, for the foes overcome and what the story rewards: vaše postava postupuje na vyšší úroveň pomocí zkušenostních bodů za překonané nepřátele a za to, co příběh odměňuje
-  your character levels up at the big moments of the story: vaše postava postupuje na vyšší úroveň ve velkých okamžicích příběhu
+  your character levels up with experience points, for the foes overcome and what the story rewards: tvá postava postupuje na vyšší úroveň za zkušenostní body, získané za přemožené nepřátele a za to, co příběh odmění
+  your character levels up at the big moments of the story: tvá postava postupuje na vyšší úroveň ve velkých okamžicích příběhu
   the fifth edition from the SRD 5.1, the 2014 rules: pátá edice podle SRD 5.1, pravidla z roku 2014
   long rest: dlouhý odpočinek
   short rest: krátký odpočinek
   difficult: obtížný
+  until long rest: do dlouhého odpočinku
+  until short rest: do krátkého odpočinku
+  difficult terrain: obtížný terén
 headline: "{classes}, {level}. úroveň"

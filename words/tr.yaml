@@ -3,11 +3,11 @@
 groups:
   Character: Karakter
   Personality: Kişilik
-  Abilities: Nitelikler
-  Saving Throws: Kurtarma Zarları
+  Abilities: Yetenekler
+  Saving Throws: Kurtarma Atışları
   Skills: Beceriler
   Combat: Çatışma
-  Proficiencies: Ustalıklar
+  Proficiencies: Yeterlilikler
   Features: Özellikler
   Attacks: Saldırılar
   Spells: Büyüler
@@ -18,11 +18,11 @@ fields:
   subclasses: alt sınıflar
   background: geçmiş
   feats: meziyetler
-  alignment: yönelim
+  alignment: hizalanma
   level: seviye
-  xp: DP
+  xp: XP
   inspiration: ilham
-  personality-traits: kişilik özellikleri
+  personality-traits: kişilik hatları
   ideal: ideal
   bond: bağ
   flaw: kusur
@@ -32,27 +32,27 @@ fields:
   int: ZEK
   wis: BİL
   cha: KAR
-  str-mod: GÜÇ değiştirici
-  dex-mod: ÇEV değiştirici
-  con-mod: DAY değiştirici
-  int-mod: ZEK değiştirici
-  wis-mod: BİL değiştirici
-  cha-mod: KAR değiştirici
-  proficiency: ustalık bonusu
-  str-save: GÜÇ kurtarma zarı
-  dex-save: ÇEV kurtarma zarı
-  con-save: DAY kurtarma zarı
-  int-save: ZEK kurtarma zarı
-  wis-save: BİL kurtarma zarı
-  cha-save: KAR kurtarma zarı
-  save-notes: kurtarma zarı notları
+  str-mod: GÜÇ değ.
+  dex-mod: ÇEV değ.
+  con-mod: DAY değ.
+  int-mod: ZEK değ.
+  wis-mod: BİL değ.
+  cha-mod: KAR değ.
+  proficiency: yeterlilik bonusu
+  str-save: GÜÇ kurtarma atışı
+  dex-save: ÇEV kurtarma atışı
+  con-save: DAY kurtarma atışı
+  int-save: ZEK kurtarma atışı
+  wis-save: BİL kurtarma atışı
+  cha-save: KAR kurtarma atışı
+  save-notes: kurtarma atışı notları
   acrobatics: akrobasi
-  animal-handling: hayvan idaresi
-  arcana: büyü bilgisi
+  animal-handling: hayvan terbiyesi
+  arcana: gizem bilgisi
   athletics: atletizm
   deception: aldatma
   history: tarih
-  insight: sezgi
+  insight: iç görü
   intimidation: gözdağı
   investigation: araştırma
   medicine: tıp
@@ -76,7 +76,7 @@ fields:
   hit-dice-d10: can zarı d10
   hit-dice-d12: can zarı d12
   passive-perception: pasif algı
-  passive-insight: pasif sezgi
+  passive-insight: pasif iç görü
   passive-investigation: pasif araştırma
   darkvision: karanlık görüş
   blindsight: kör görüş
@@ -89,7 +89,7 @@ fields:
   death-successes: ölüm başarıları
   death-failures: ölüm başarısızlıkları
   exhaustion: bitkinlik
-  save-proficiencies: kurtarma zarları
+  save-proficiencies: kurtarma atışları
   skill-proficiencies: beceriler
   expertise: uzmanlık
   armor-proficiencies: zırhlar
@@ -97,30 +97,30 @@ fields:
   tool-proficiencies: aletler
   languages: diller
   features: özellikler
-  fighting-styles: çatışma stilleri
+  fighting-styles: dövüş stilleri
   attack: saldırı
   damage-roll: hasar atışı
   caster-level: büyücü seviyesi
-  spell-save-dc: büyü kurtarma ZD
+  spell-save-dc: büyü kurtarma zorluğu
   spell-attack: büyü saldırısı
-  slots-1: 1. seviye yuvaları
-  slots-2: 2. seviye yuvaları
-  slots-3: 3. seviye yuvaları
-  slots-4: 4. seviye yuvaları
-  slots-5: 5. seviye yuvaları
-  slots-6: 6. seviye yuvaları
-  slots-7: 7. seviye yuvaları
-  slots-8: 8. seviye yuvaları
-  slots-9: 9. seviye yuvaları
+  slots-1: 1. seviye büyü yuvaları
+  slots-2: 2. seviye büyü yuvaları
+  slots-3: 3. seviye büyü yuvaları
+  slots-4: 4. seviye büyü yuvaları
+  slots-5: 5. seviye büyü yuvaları
+  slots-6: 6. seviye büyü yuvaları
+  slots-7: 7. seviye büyü yuvaları
+  slots-8: 8. seviye büyü yuvaları
+  slots-9: 9. seviye büyü yuvaları
   spell-slots: büyü yuvaları
   slot-level: yuva seviyesi
-  mystic-arcanum-6: mistik arkanum 6
-  mystic-arcanum-7: mistik arkanum 7
-  mystic-arcanum-8: mistik arkanum 8
-  mystic-arcanum-9: mistik arkanum 9
+  mystic-arcanum-6: mistik arkanum (6. seviye)
+  mystic-arcanum-7: mistik arkanum (7. seviye)
+  mystic-arcanum-8: mistik arkanum (8. seviye)
+  mystic-arcanum-9: mistik arkanum (9. seviye)
   signature-spell-1: imza büyüsü 1
   signature-spell-2: imza büyüsü 2
-  max-prepared: azami hazırlanan
+  max-prepared: azami hazırlanan büyü
   spells: büyüler
   prepared: hazırlanmış
   cantrips-known: bilinen küçük büyüler
@@ -134,37 +134,37 @@ fields:
   sneak-attack: sinsi saldırı
   sorcery-points: büyücülük puanları
   channel-divinity: ilahi güç aktarımı
-  action-surge: eylem dalgası
+  action-surge: eylem atılımı
   second-wind: ikinci nefes
   indomitable: yılmaz
   wild-shape: vahşi biçim
   bardic-inspiration: ozan ilhamı
-  divine-sense: ilahi sezgi
+  divine-sense: ilahi his
   lay-on-hands: şifa eli
-  cleansing-touch: arındırıcı dokunuş
-  arcane-recovery: büyüsel toparlanma
+  cleansing-touch: arındıran dokunuş
+  arcane-recovery: arkan toparlanma
   natural-recovery: doğal toparlanma
   wholeness-of-body: beden bütünlüğü
   holy-nimbus: kutsal hale
   dark-ones-own-luck: karanlık varlığın şansı
   hurl-through-hell: cehenneme fırlatma
   stroke-of-luck: şans darbesi
-  eldritch-master: gizemli usta
+  eldritch-master: tekinsiz usta
   breath-weapon: nefes silahı
   relentless-endurance: amansız dayanıklılık
-  category: kategori
+  category: tür
   armor: zırh
   hp-dice: CP zarları
-  fly: uçma
-  swim: yüzme
-  climb: tırmanma
-  burrow: kazma
-  saves: kurtarma zarları
+  fly: uçmak
+  swim: yüzmek
+  climb: tırmanmak
+  burrow: kazmak
+  saves: kurtarma atışları
   skills: beceriler
-  cr: ZD
-  xp-value: TP değeri
+  cr: TD
+  xp-value: XP değeri
 words:
-  Dragonborn: Ejderha Doğumlu
+  Dragonborn: Ejderdoğan
   Dwarf: Cüce
   Hill Dwarf: Tepe Cücesi
   Elf: Elf
@@ -190,18 +190,18 @@ words:
   Monk: Keşiş
   Way of the Open Hand: Açık El Yolu
   Paladin: Paladin
-  Oath of Devotion: Adanmışlık Yemini
+  Oath of Devotion: Bağlılık Yemini
   Ranger: Korucu
   Hunter: Avcı
-  Rogue: Düzenbaz
+  Rogue: Haydut
   Thief: Hırsız
   Sorcerer: Büyücü
-  Draconic Bloodline: Ejderha Soyu
+  Draconic Bloodline: Ejderha Kan Hattı
   Warlock: Warlock
-  The Fiend: Iblis
+  The Fiend: Cehennem Yaratığı
   Wizard: Sihirbaz
-  School of Evocation: Çağırma Okulu
-  Acolyte (background): Yardımcı Rahip
+  School of Evocation: Evokasyon Okulu
+  Acolyte (background): Çömez
   Grappler: Güreşçi
   Archery: Okçuluk
   Defense: Savunma
@@ -211,12 +211,12 @@ words:
   Two-Weapon Fighting: İki Silahla Dövüş
   Unarmed Strike: Silahsız Vuruş
   Acrobatics: Akrobasi
-  Animal Handling: Hayvan Eğitimi
-  Arcana: Büyü Bilgisi
+  Animal Handling: Hayvan Terbiyesi
+  Arcana: Gizem Bilgisi
   Athletics: Atletizm
   Deception: Aldatma
   History: Tarih
-  Insight: Sezgi
+  Insight: İç Görü
   Intimidation: Gözdağı
   Investigation: Araştırma
   Medicine: Tıp
@@ -228,7 +228,7 @@ words:
   Sleight of Hand: El Çabukluğu
   Stealth: Gizlilik
   Survival: Hayatta Kalma
-  Common: Ortak Dil
+  Common: Ortak
   Dwarvish: Cücece
   Elvish: Elfçe
   Giant: Devce
@@ -237,18 +237,18 @@ words:
   Orc: Orkça
   Abyssal: Abisal
   Celestial: Göksel
-  Draconic: Ejderhaca
+  Draconic: Ejderce
   Deep Speech: Derin Konuşma
   Infernal: Cehennemce
-  Primordial: İlkel Dil
-  Sylvan: Sylvan
-  Undercommon: Alt Ortak Dil
-  Aquan: Aquan
+  Primordial: İlkel
+  Sylvan: Orman Dili
+  Undercommon: Alt Ortak
+  Aquan: Akvan
   Auran: Auran
   Ignan: Ignan
   Terran: Terran
   Druidic: Druidce
-  Thieves' Cant: Hırsız Argosu
+  Thieves' Cant: Hırsız Dili
   Tiny: Minik
   Small: Küçük
   Medium: Orta
@@ -265,10 +265,10 @@ words:
   Paralyzed: Felçli
   Petrified: Taşlaşmış
   Poisoned: Zehirlenmiş
-  Prone: Yere Serilmiş
-  Restrained: Kısıtlanmış
+  Prone: Yüzüstü
+  Restrained: Kısıtlı
   Stunned: Sersemlemiş
-  Unconscious: Baygın
+  Unconscious: Bilinçsiz
   Exhaustion: Bitkinlik
   blinded: kör
   charmed: büyülenmiş
@@ -277,13 +277,13 @@ words:
   grappled: yakalanmış
   incapacitated: etkisiz
   invisible: görünmez
-  paralyzed: felç olmuş
+  paralyzed: felçli
   petrified: taşlaşmış
   poisoned: zehirlenmiş
-  prone: yere serilmiş
-  restrained: kısıtlanmış
+  prone: yüzüstü
+  restrained: kısıtlı
   stunned: sersemlemiş
-  unconscious: baygın
+  unconscious: bilinçsiz
   exhaustion: bitkinlik
   acid: asit
   bludgeoning: ezici
@@ -298,24 +298,24 @@ words:
   radiant: ışıltılı
   slashing: kesici
   thunder: gök gürültüsü
-  bludgeoning, piercing, and slashing from nonmagical attacks: büyülü olmayan saldırılardan gelen ezici, delici ve kesici hasar
-  light armor: hafif zırh
-  medium armor: orta zırh
-  heavy armor: ağır zırh
+  bludgeoning, piercing, and slashing from nonmagical attacks: büyülü olmayan saldırılardan gelen ezici, delici ve kesici
+  light armor: hafif zırhlar
+  medium armor: orta zırhlar
+  heavy armor: ağır zırhlar
   all armor: tüm zırhlar
   shields: kalkanlar
   simple weapons: basit silahlar
   martial weapons: savaş silahları
   clubs: sopalar
   daggers: hançerler
-  darts: oklar
-  hand crossbows: el tatar yayları
-  javelins: cirit mızrakları
-  light crossbows: hafif tatar yayları
+  darts: dartlar
+  hand crossbows: el arbaletleri
+  javelins: ciritler
+  light crossbows: hafif arbaletler
   longswords: uzun kılıçlar
   maces: gürzler
-  quarterstaffs: uzun değnekler
-  rapiers: rapirler
+  quarterstaffs: asalar
+  rapiers: rapierler
   scimitars: palalar
   shortswords: kısa kılıçlar
   sickles: oraklar
@@ -329,25 +329,25 @@ words:
   shortsword: kısa kılıç
   shortbow: kısa yay
   longbow: uzun yay
-  herbalism kit: bitki bilgisi çantası
+  herbalism kit: bitkibilim seti
   thieves' tools: hırsız aletleri
   tinker's tools: tamirci aletleri
-  advantage on saving throws against being charmed: büyülenmeye karşı kurtarma zarlarında avantaj
-  advantage on saving throws against being frightened: korkutulmaya karşı kurtarma zarlarında avantaj
-  advantage on saving throws against poison: zehire karşı kurtarma zarlarında avantaj
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: büyüye karşı tüm Zeka, Bilgelik ve Karizma kurtarma zarlarında avantaj
+  advantage on saving throws against being charmed: büyülenmeye karşı kurtarma atışlarında avantaj
+  advantage on saving throws against being frightened: korkutulmaya karşı kurtarma atışlarında avantaj
+  advantage on saving throws against poison: zehre karşı kurtarma atışlarında avantaj
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: büyüye karşı tüm Zeka, Bilgelik ve Karizma kurtarma atışlarında avantaj
   aberration: sapkınlık
   beast: hayvan
   celestial: göksel
-  construct: yapay yaratık
+  construct: yapay
   dragon: ejderha
   elemental: element
   fey: peri
-  fiend: iblis
+  fiend: cehennem yaratığı
   giant: dev
   humanoid: insansı
   monstrosity: canavar
-  ooze: balçık
+  ooze: çamur
   plant: bitki
   undead: ölümsüz
   humanoid (any race): insansı (herhangi bir ırk)
@@ -363,11 +363,11 @@ words:
   humanoid (lizardfolk): insansı (kertenkele halkı)
   humanoid (orc): insansı (ork)
   humanoid (sahuagin): insansı (sahuagin)
-  fiend (demon): iblis (şeytan)
-  fiend (demon, shapechanger): iblis (şeytan, şekil değiştiren)
-  fiend (devil): iblis (devil)
-  fiend (devil, shapechanger): iblis (devil, şekil değiştiren)
-  fiend (shapechanger): iblis (şekil değiştiren)
+  fiend (demon): cehennem yaratığı (demon)
+  fiend (demon, shapechanger): cehennem yaratığı (demon, şekil değiştiren)
+  fiend (devil): cehennem yaratığı (şeytan)
+  fiend (devil, shapechanger): cehennem yaratığı (şeytan, şekil değiştiren)
+  fiend (shapechanger): cehennem yaratığı (şekil değiştiren)
   monstrosity (shapechanger): canavar (şekil değiştiren)
   monstrosity (titan): canavar (titan)
   undead (shapechanger): ölümsüz (şekil değiştiren)
@@ -381,38 +381,41 @@ words:
   lawful evil: yasal kötü
   neutral evil: tarafsız kötü
   chaotic evil: kaotik kötü
-  unaligned: yönelimsiz
-  any alignment: herhangi bir yönelim
-  any chaotic alignment: herhangi bir kaotik yönelim
-  any evil alignment: herhangi bir kötü yönelim
-  any non-good alignment: iyi olmayan herhangi bir yönelim
-  any non-lawful alignment: yasal olmayan herhangi bir yönelim
+  unaligned: hizalanmamış
+  any alignment: herhangi bir hizalanma
+  any chaotic alignment: herhangi bir kaotik hizalanma
+  any evil alignment: herhangi bir kötü hizalanma
+  any non-good alignment: iyi olmayan herhangi bir hizalanma
+  any non-lawful alignment: yasal olmayan herhangi bir hizalanma
   neutral good (50%) or neutral evil (50%): tarafsız iyi (%50) veya tarafsız kötü (%50)
   natural armor: doğal zırh
   leather armor: deri zırh
-  studded leather: çivili deri zırh
+  studded leather: çivili deri
   hide armor: post zırh
   chain shirt: zincir gömlek
-  scale mail: pul zırh
+  scale mail: pullu zırh
   breastplate: göğüslük
   chain mail: zincir zırh
-  splint: plaka şeritli zırh
+  splint: şeritli zırh
   plate: plaka zırh
   natural armor, shield: doğal zırh, kalkan
   leather armor, shield: deri zırh, kalkan
-  studded leather, shield: çivili deri zırh, kalkan
+  studded leather, shield: çivili deri, kalkan
   hide armor, shield: post zırh, kalkan
   chain shirt, shield: zincir gömlek, kalkan
-  scale mail, shield: pul zırh, kalkan
+  scale mail, shield: pullu zırh, kalkan
   chain mail, shield: zincir zırh, kalkan
-  advancement: Gelişim
-  how your character levels up: karakterinizin seviye atlama şekli
-  xp: Deneyim Puanı
-  milestones: Kilometre Taşları
-  your character levels up with experience points, for the foes overcome and what the story rewards: karakteriniz, yenilen düşmanlar ve hikâyenin ödüllendirdiği şeyler için kazanılan deneyim puanlarıyla seviye atlar
-  your character levels up at the big moments of the story: karakteriniz hikâyenin büyük anlarında seviye atlar
-  the fifth edition from the SRD 5.1, the 2014 rules: SRD 5.1'in beşinci baskısı, 2014 kuralları
+  advancement: İlerleme
+  how your character levels up: karakterin nasıl seviye atlar
+  xp: Deneyim puanı
+  milestones: Kilometre taşları
+  your character levels up with experience points, for the foes overcome and what the story rewards: karakterin, yenilen düşmanlar ve hikâyenin ödüllendirdikleri için deneyim puanlarıyla seviye atlar
+  your character levels up at the big moments of the story: karakterin hikâyenin büyük anlarında seviye atlar
+  the fifth edition from the SRD 5.1, the 2014 rules: SRD 5.1'den beşinci baskı, 2014 kuralları
   long rest: uzun dinlenme
   short rest: kısa dinlenme
   difficult: zor
-headline: "{level}. Seviye {classes}"
+  until long rest: uzun dinlenmeye kadar
+  until short rest: kısa dinlenmeye kadar
+  difficult terrain: zor arazi
+headline: "{level}. seviye {classes}"

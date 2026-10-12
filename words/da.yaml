@@ -4,164 +4,164 @@ groups:
   Character: Karakter
   Personality: Personlighed
   Abilities: Egenskaber
-  Saving Throws: Redningsslag
+  Saving Throws: Redningskast
   Skills: Færdigheder
   Combat: Kamp
-  Proficiencies: Kompetencer
-  Features: Særlige evner
+  Proficiencies: Mestringer
+  Features: Særtræk
   Attacks: Angreb
   Spells: Besværgelser
 fields:
-  creature: race
-  size: størrelse
-  classes: klasser
-  subclasses: underklasser
-  background: baggrund
-  feats: talenter
-  alignment: sindelag
-  level: niveau
+  creature: Race
+  size: Størrelse
+  classes: Klasser
+  subclasses: Underklasser
+  background: Baggrund
+  feats: Talenter
+  alignment: Sindelag
+  level: Niveau
   xp: XP
-  inspiration: inspiration
-  personality-traits: personlighedstræk
-  ideal: ideal
-  bond: bånd
-  flaw: fejl
+  inspiration: Inspiration
+  personality-traits: Personlighedstræk
+  ideal: Ideal
+  bond: Bånd
+  flaw: Fejl
   str: STY
-  dex: SMI
+  dex: BEH
   con: KON
   int: INT
   wis: VIS
   cha: KAR
   str-mod: Mod STY
-  dex-mod: Mod SMI
+  dex-mod: Mod BEH
   con-mod: Mod KON
   int-mod: Mod INT
   wis-mod: Mod VIS
   cha-mod: Mod KAR
-  proficiency: kompetencebonus
-  str-save: redningsslag STY
-  dex-save: redningsslag SMI
-  con-save: redningsslag KON
-  int-save: redningsslag INT
-  wis-save: redningsslag VIS
-  cha-save: redningsslag KAR
-  save-notes: noter til redningsslag
-  acrobatics: akrobatik
-  animal-handling: dyrehåndtering
-  arcana: arkana
-  athletics: atletik
-  deception: bedrag
-  history: historie
-  insight: indsigt
-  intimidation: intimidering
-  investigation: efterforskning
-  medicine: medicin
-  nature: natur
-  perception: opmærksomhed
-  performance: optræden
-  persuasion: overtalelse
-  religion: religion
-  sleight-of-hand: fingerfærdighed
-  stealth: snig
-  survival: overlevelse
+  proficiency: Mestringsbonus
+  str-save: Redningskast Styrke
+  dex-save: Redningskast Behændighed
+  con-save: Redningskast Konstitution
+  int-save: Redningskast Intelligens
+  wis-save: Redningskast Visdom
+  cha-save: Redningskast Karisma
+  save-notes: Noter til redningskast
+  acrobatics: Akrobatik
+  animal-handling: Dyrehåndtering
+  arcana: Arkana
+  athletics: Atletik
+  deception: Bedrag
+  history: Historie
+  insight: Indsigt
+  intimidation: Intimidering
+  investigation: Efterforskning
+  medicine: Medicin
+  nature: Natur
+  perception: Opmærksomhed
+  performance: Optræden
+  persuasion: Overtalelse
+  religion: Religion
+  sleight-of-hand: Fingerfærdighed
+  stealth: Snig
+  survival: Overlevelse
   ac: RK
-  initiative: initiativ
-  speed: hastighed
-  equipped: udstyret
+  initiative: Initiativ
+  speed: Hastighed
+  equipped: Udstyret
   hp-base: LP fra terninger
   hp: LP
-  temp-hp: midlertidige LP
-  hit-dice-d6: livsterninger d6
-  hit-dice-d8: livsterninger d8
-  hit-dice-d10: livsterninger d10
-  hit-dice-d12: livsterninger d12
-  passive-perception: passiv opmærksomhed
-  passive-insight: passiv indsigt
-  passive-investigation: passiv efterforskning
-  darkvision: mørkesyn
-  blindsight: blindsyn
-  tremorsense: rystelsessans
-  truesight: sandt syn
-  damage-vulnerabilities: skadessårbarheder
-  damage-resistances: skadesmodstand
-  damage-immunities: skadesimmuniteter
-  condition-immunities: tilstandsimmuniteter
-  death-successes: dødssucceser
-  death-failures: dødsfejl
-  exhaustion: udmattelse
-  save-proficiencies: redningsslag
-  skill-proficiencies: færdigheder
-  expertise: ekspertise
-  armor-proficiencies: rustninger
-  weapon-proficiencies: våben
-  tool-proficiencies: værktøj
-  languages: sprog
-  features: særlige evner
-  fighting-styles: kampstile
-  attack: angreb
-  damage-roll: skadesslag
-  caster-level: trylleniveau
-  spell-save-dc: besværgelser SV
-  spell-attack: besværgelsesangreb
-  slots-1: pladser niveau 1
-  slots-2: pladser niveau 2
-  slots-3: pladser niveau 3
-  slots-4: pladser niveau 4
-  slots-5: pladser niveau 5
-  slots-6: pladser niveau 6
-  slots-7: pladser niveau 7
-  slots-8: pladser niveau 8
-  slots-9: pladser niveau 9
-  spell-slots: besværgelsespladser
-  slot-level: pladsniveau
-  mystic-arcanum-6: mystisk arkanum (niveau 6)
-  mystic-arcanum-7: mystisk arkanum (niveau 7)
-  mystic-arcanum-8: mystisk arkanum (niveau 8)
-  mystic-arcanum-9: mystisk arkanum (niveau 9)
-  signature-spell-1: signaturbesværgelse 1
-  signature-spell-2: signaturbesværgelse 2
-  max-prepared: maks. forberedte
-  spells: besværgelser
-  prepared: forberedte
-  cantrips-known: kendte cantrips
-  spells-known: kendte besværgelser
-  invocations-known: kendte påkaldelser
-  rages: raserier
-  rage-damage: raseriskade
-  martial-arts: kampsport
-  ki-points: ki-point
-  unarmored-movement: bevægelse uden rustning
-  sneak-attack: snigangreb
-  sorcery-points: trolddomspoint
-  channel-divinity: kanalisér guddommelighed
-  action-surge: handlingsboost
-  second-wind: ny energi
-  indomitable: ubøjelig
-  wild-shape: vild skikkelse
-  bardic-inspiration: bardeinspiration
-  divine-sense: guddommelig sans
-  lay-on-hands: håndspålæggelse
-  cleansing-touch: rensende berøring
-  arcane-recovery: arkan genopretning
-  natural-recovery: naturlig genopretning
-  wholeness-of-body: kroppens helhed
-  holy-nimbus: hellig glorie
-  dark-ones-own-luck: den mørkes eget held
-  hurl-through-hell: slyng gennem helvede
-  stroke-of-luck: heldigt slag
-  eldritch-master: uhyggens mester
-  breath-weapon: åndedrætsvåben
-  relentless-endurance: ubarmhjertigt udholdenhed
-  category: kategori
-  armor: rustning
-  hp-dice: HP-terninger
-  fly: flyve
-  swim: svømme
-  climb: klatre
-  burrow: grave
-  saves: redningskast
-  skills: færdigheder
-  cr: UG
+  temp-hp: Midlertidige LP
+  hit-dice-d6: Livsterninger d6
+  hit-dice-d8: Livsterninger d8
+  hit-dice-d10: Livsterninger d10
+  hit-dice-d12: Livsterninger d12
+  passive-perception: Passiv opmærksomhed
+  passive-insight: Passiv indsigt
+  passive-investigation: Passiv efterforskning
+  darkvision: Mørkesyn
+  blindsight: Blindsyn
+  tremorsense: Rystelsessans
+  truesight: Sandt syn
+  damage-vulnerabilities: Skadessårbarheder
+  damage-resistances: Skadesmodstand
+  damage-immunities: Skadesimmuniteter
+  condition-immunities: Tilstandsimmuniteter
+  death-successes: Dødssucceser
+  death-failures: Dødsfejl
+  exhaustion: Udmattelse
+  save-proficiencies: Redningskast
+  skill-proficiencies: Færdigheder
+  expertise: Ekspertise
+  armor-proficiencies: Rustninger
+  weapon-proficiencies: Våben
+  tool-proficiencies: Værktøj
+  languages: Sprog
+  features: Særtræk
+  fighting-styles: Kampstile
+  attack: Angreb
+  damage-roll: Skadesslag
+  caster-level: Magikerniveau
+  spell-save-dc: Besværgelsesvanskelighed
+  spell-attack: Besværgelsesangreb
+  slots-1: Pladser niveau 1
+  slots-2: Pladser niveau 2
+  slots-3: Pladser niveau 3
+  slots-4: Pladser niveau 4
+  slots-5: Pladser niveau 5
+  slots-6: Pladser niveau 6
+  slots-7: Pladser niveau 7
+  slots-8: Pladser niveau 8
+  slots-9: Pladser niveau 9
+  spell-slots: Besværgelsespladser
+  slot-level: Pladsniveau
+  mystic-arcanum-6: Mystisk Arkanum (niveau 6)
+  mystic-arcanum-7: Mystisk Arkanum (niveau 7)
+  mystic-arcanum-8: Mystisk Arkanum (niveau 8)
+  mystic-arcanum-9: Mystisk Arkanum (niveau 9)
+  signature-spell-1: Signaturbesværgelse 1
+  signature-spell-2: Signaturbesværgelse 2
+  max-prepared: Maks. forberedte
+  spells: Besværgelser
+  prepared: Forberedte
+  cantrips-known: Kendte småbesværgelser
+  spells-known: Kendte besværgelser
+  invocations-known: Kendte påkaldelser
+  rages: Raseri
+  rage-damage: Raseriskade
+  martial-arts: Kampsport
+  ki-points: Ki-point
+  unarmored-movement: Bevægelse uden rustning
+  sneak-attack: Snigangreb
+  sorcery-points: Troldmandspoint
+  channel-divinity: Kanaliser guddommelighed
+  action-surge: Handlingsboost
+  second-wind: Andet pust
+  indomitable: Ubøjelig
+  wild-shape: Vild skikkelse
+  bardic-inspiration: Bardisk inspiration
+  divine-sense: Guddommelig sans
+  lay-on-hands: Håndspålæggelse
+  cleansing-touch: Rensende berøring
+  arcane-recovery: Arkan genopretning
+  natural-recovery: Naturlig genopretning
+  wholeness-of-body: Kroppens helhed
+  holy-nimbus: Hellig nimbus
+  dark-ones-own-luck: Den mørkes held
+  hurl-through-hell: Slyng gennem helvede
+  stroke-of-luck: Heldigt slag
+  eldritch-master: Uhyggelig mester
+  breath-weapon: Åndedrætsvåben
+  relentless-endurance: Ubønhørlig udholdenhed
+  category: Type
+  armor: Rustning
+  hp-dice: LP-terninger
+  fly: Flyve
+  swim: Svømme
+  climb: Klatre
+  burrow: Grave
+  saves: Redningskast
+  skills: Færdigheder
+  cr: Udfordring
   xp-value: XP-værdi
 words:
   Dragonborn: Dragonborn
@@ -173,18 +173,18 @@ words:
   Rock Gnome: Klippegnom
   Half-Elf: Halvalf
   Half-Orc: Halvork
-  Halfling: Halfling
-  Lightfoot Halfling: Lettfodet halfling
+  Halfling: Halvling
+  Lightfoot Halfling: Letfodet Halvling
   Human: Menneske
   Tiefling: Tiefling
   Barbarian: Barbar
   Path of the Berserker: Berserkerens vej
   Bard: Bard
-  College of Lore: Videnskollegiet
+  College of Lore: Vidensskolen
   Cleric: Præst
   Life Domain: Livets domæne
   Druid: Druide
-  Circle of the Land: Jordens cirkel
+  Circle of the Land: Landets cirkel
   Fighter: Kriger
   Champion: Champion
   Monk: Munk
@@ -195,24 +195,24 @@ words:
   Hunter: Jæger
   Rogue: Slyngel
   Thief: Tyv
-  Sorcerer: Troldkarl
-  Draconic Bloodline: Drakeblod
+  Sorcerer: Troldmand
+  Draconic Bloodline: Drakeblodslinje
   Warlock: Warlock
-  The Fiend: Fjenden
-  Wizard: Troldmand
-  School of Evocation: Fremkaldelsesskolen
+  The Fiend: Ondskabsvæsenet
+  Wizard: Magiker
+  School of Evocation: Evokationsskolen
   Acolyte (background): Akolyt
   Grappler: Bryder
   Archery: Bueskydning
   Defense: Forsvar
   Dueling: Duellering
-  Great Weapon Fighting: Kamp med tunge våben
+  Great Weapon Fighting: Kamp med store våben
   Protection: Beskyttelse
   Two-Weapon Fighting: Kamp med to våben
-  Unarmed Strike: Ubevæbnet angreb
+  Unarmed Strike: Ubevæbnet slag
   Acrobatics: Akrobatik
   Animal Handling: Dyrehåndtering
-  Arcana: Magikundskab
+  Arcana: Arkana
   Athletics: Atletik
   Deception: Bedrag
   History: Historie
@@ -228,10 +228,10 @@ words:
   Sleight of Hand: Fingerfærdighed
   Stealth: Snig
   Survival: Overlevelse
-  Common: Almindeligt
+  Common: Fælles
   Dwarvish: Dværgisk
   Elvish: Alfisk
-  Giant: Kæmpesprog
+  Giant: Kæmpisk
   Gnomish: Gnomisk
   Goblin: Goblin
   Orc: Orkisk
@@ -242,20 +242,20 @@ words:
   Infernal: Infernalsk
   Primordial: Urtidssprog
   Sylvan: Sylvansk
-  Undercommon: Underjordisk
+  Undercommon: Underfælles
   Aquan: Aquan
   Auran: Auran
   Ignan: Ignan
   Terran: Terran
   Druidic: Druidisk
   Thieves' Cant: Tyvesprog
-  Tiny: Bittesmå
+  Tiny: Bittelille
   Small: Lille
   Medium: Mellem
   Large: Stor
   Huge: Enorm
   Gargantuan: Kolossal
-  Blinded: Blændet
+  Blinded: Blind
   Charmed: Charmeret
   Deafened: Døv
   Frightened: Skræmt
@@ -270,12 +270,12 @@ words:
   Stunned: Bedøvet
   Unconscious: Bevidstløs
   Exhaustion: Udmattelse
-  blinded: blændet
+  blinded: blind
   charmed: charmeret
   deafened: døv
   frightened: skræmt
   grappled: grebet
-  incapacitated: ukampdygtig
+  incapacitated: uduelig
   invisible: usynlig
   paralyzed: lammet
   petrified: forstenet
@@ -299,10 +299,10 @@ words:
   slashing: huggende
   thunder: torden
   bludgeoning, piercing, and slashing from nonmagical attacks: knusende, stikkende og huggende fra ikke-magiske angreb
-  light armor: let rustning
-  medium armor: mellemtung rustning
-  heavy armor: tung rustning
-  all armor: al rustning
+  light armor: lette rustninger
+  medium armor: mellemtunge rustninger
+  heavy armor: tunge rustninger
+  all armor: alle rustninger
   shields: skjolde
   simple weapons: simple våben
   martial weapons: krigsvåben
@@ -316,7 +316,7 @@ words:
   maces: stridskøller
   quarterstaffs: kampstave
   rapiers: rapirer
-  scimitars: scimitarer
+  scimitars: krumsværd
   shortswords: kortsværd
   sickles: segle
   slings: slynger
@@ -329,30 +329,30 @@ words:
   shortsword: kortsværd
   shortbow: kortbue
   longbow: langbue
-  herbalism kit: urtekyndigsæt
+  herbalism kit: urtekyndigt udstyr
   thieves' tools: tyveværktøj
   tinker's tools: opfinderværktøj
   advantage on saving throws against being charmed: fordel på redningskast mod at blive charmeret
   advantage on saving throws against being frightened: fordel på redningskast mod at blive skræmt
   advantage on saving throws against poison: fordel på redningskast mod gift
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: fordel på alle redningskast med Intelligens, Visdom og Karisma mod magi
-  aberration: aberration
-  beast: bæst
-  celestial: himmelsk væsen
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: fordel på alle redningskast på Intelligens, Visdom og Karisma mod magi
+  aberration: afvigelse
+  beast: dyr
+  celestial: himmelsk
   construct: konstruktion
   dragon: drage
   elemental: elementar
   fey: fe
-  fiend: djævelsk væsen
+  fiend: ondskabsvæsen
   giant: kæmpe
   humanoid: humanoid
-  monstrosity: uhyre
+  monstrosity: monstrøsitet
   ooze: slim
   plant: plante
   undead: udød
   humanoid (any race): humanoid (enhver race)
   humanoid (dwarf): humanoid (dværg)
-  humanoid (elf): humanoid (elf)
+  humanoid (elf): humanoid (alf)
   humanoid (gnoll): humanoid (gnoll)
   humanoid (gnome): humanoid (gnom)
   humanoid (goblinoid): humanoid (goblinoid)
@@ -360,18 +360,18 @@ words:
   humanoid (human): humanoid (menneske)
   humanoid (human, shapechanger): humanoid (menneske, formskifter)
   humanoid (kobold): humanoid (kobold)
-  humanoid (lizardfolk): humanoid (firbenfolk)
+  humanoid (lizardfolk): humanoid (øglefolk)
   humanoid (orc): humanoid (ork)
   humanoid (sahuagin): humanoid (sahuagin)
-  fiend (demon): djævelsk væsen (dæmon)
-  fiend (demon, shapechanger): djævelsk væsen (dæmon, formskifter)
-  fiend (devil): djævelsk væsen (djævel)
-  fiend (devil, shapechanger): djævelsk væsen (djævel, formskifter)
-  fiend (shapechanger): djævelsk væsen (formskifter)
-  monstrosity (shapechanger): uhyre (formskifter)
-  monstrosity (titan): uhyre (titan)
+  fiend (demon): ondskabsvæsen (dæmon)
+  fiend (demon, shapechanger): ondskabsvæsen (dæmon, formskifter)
+  fiend (devil): ondskabsvæsen (djævel)
+  fiend (devil, shapechanger): ondskabsvæsen (djævel, formskifter)
+  fiend (shapechanger): ondskabsvæsen (formskifter)
+  monstrosity (shapechanger): monstrøsitet (formskifter)
+  monstrosity (titan): monstrøsitet (titan)
   undead (shapechanger): udød (formskifter)
-  swarm of Tiny beasts: sværm af Bittesmå bæster
+  swarm of Tiny beasts: sværm af bittelille dyr
   lawful good: lovlydig god
   neutral good: neutral god
   chaotic good: kaotisk god
@@ -390,29 +390,32 @@ words:
   neutral good (50%) or neutral evil (50%): neutral god (50 %) eller neutral ond (50 %)
   natural armor: naturlig rustning
   leather armor: læderrustning
-  studded leather: nittet læder
+  studded leather: nitteret læder
   hide armor: skindrustning
-  chain shirt: brynjeskjorte
-  scale mail: skælpanser
+  chain shirt: kædeskjorte
+  scale mail: skælrustning
   breastplate: brystplade
-  chain mail: ringbrynje
-  splint: skinnepanser
-  plate: pladepanser
+  chain mail: kædebrynje
+  splint: skinnerustning
+  plate: pladerustning
   natural armor, shield: naturlig rustning, skjold
   leather armor, shield: læderrustning, skjold
-  studded leather, shield: nitteklædt læder, skjold
+  studded leather, shield: nitteret læder, skjold
   hide armor, shield: skindrustning, skjold
-  chain shirt, shield: ringbrynjeskjorte, skjold
-  scale mail, shield: skælpanser, skjold
-  chain mail, shield: ringbrynje, skjold
+  chain shirt, shield: kædeskjorte, skjold
+  scale mail, shield: skælrustning, skjold
+  chain mail, shield: kædebrynje, skjold
   advancement: Udvikling
   how your character levels up: hvordan din karakter stiger i niveau
   xp: Erfaringspoint
   milestones: Milepæle
-  your character levels up with experience points, for the foes overcome and what the story rewards: din karakter stiger i niveau med erfaringspoint for besejrede fjender og det, historien belønner
-  your character levels up at the big moments of the story: din karakter stiger i niveau ved historiens store øjeblikke
+  your character levels up with experience points, for the foes overcome and what the story rewards: din karakter stiger i niveau med erfaringspoint, for besejrede fjender og det, historien belønner
+  your character levels up at the big moments of the story: din karakter stiger i niveau i historiens store øjeblikke
   the fifth edition from the SRD 5.1, the 2014 rules: femte udgave fra SRD 5.1, reglerne fra 2014
   long rest: lang hvile
   short rest: kort hvile
   difficult: svær
-headline: "{classes} niveau {level}"
+  until long rest: indtil lang hvile
+  until short rest: indtil kort hvile
+  difficult terrain: svært terræn
+headline: "{classes} på niveau {level}"

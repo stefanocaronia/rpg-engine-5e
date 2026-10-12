@@ -4,7 +4,7 @@ groups:
   Character: 角色
   Personality: 性格
   Abilities: 属性
-  Saving Throws: 豁免检定
+  Saving Throws: 豁免
   Skills: 技能
   Combat: 战斗
   Proficiencies: 熟练项
@@ -21,8 +21,8 @@ fields:
   alignment: 阵营
   level: 等级
   xp: 经验值
-  inspiration: 激励
-  personality-traits: 性格特点
+  inspiration: 灵感
+  personality-traits: 性格特质
   ideal: 理想
   bond: 羁绊
   flaw: 缺点
@@ -59,7 +59,7 @@ fields:
   nature: 自然
   perception: 察觉
   performance: 表演
-  persuasion: 说服
+  persuasion: 游说
   religion: 宗教
   sleight-of-hand: 巧手
   stealth: 隐匿
@@ -80,7 +80,7 @@ fields:
   passive-investigation: 被动调查
   darkvision: 黑暗视觉
   blindsight: 盲视
-  tremorsense: 颤动感知
+  tremorsense: 震颤感知
   truesight: 真实视觉
   damage-vulnerabilities: 伤害易伤
   damage-resistances: 伤害抗性
@@ -114,19 +114,19 @@ fields:
   slots-9: 9环法术位
   spell-slots: 法术位
   slot-level: 法术位环阶
-  mystic-arcanum-6: 神秘奥术（6环）
-  mystic-arcanum-7: 神秘奥术（7环）
-  mystic-arcanum-8: 神秘奥术（8环）
-  mystic-arcanum-9: 神秘奥术（9环）
+  mystic-arcanum-6: 秘法玄奥（6环）
+  mystic-arcanum-7: 秘法玄奥（7环）
+  mystic-arcanum-8: 秘法玄奥（8环）
+  mystic-arcanum-9: 秘法玄奥（9环）
   signature-spell-1: 招牌法术 1
   signature-spell-2: 招牌法术 2
-  max-prepared: 可准备法术上限
+  max-prepared: 可准备法术数
   spells: 法术
   prepared: 已准备
   cantrips-known: 已知戏法
   spells-known: 已知法术
   invocations-known: 已知祈请
-  rages: 狂暴次数
+  rages: 狂暴
   rage-damage: 狂暴伤害
   martial-arts: 武艺
   ki-points: 气点
@@ -134,10 +134,10 @@ fields:
   sneak-attack: 偷袭
   sorcery-points: 术法点
   channel-divinity: 引导神力
-  action-surge: 行动如潮
+  action-surge: 动作如潮
   second-wind: 复苏之风
   indomitable: 不屈
-  wild-shape: 野性变形
+  wild-shape: 野性形态
   bardic-inspiration: 诗人激励
   divine-sense: 神圣感知
   lay-on-hands: 圣疗
@@ -145,20 +145,20 @@ fields:
   arcane-recovery: 奥术回复
   natural-recovery: 自然回复
   wholeness-of-body: 身体完整
-  holy-nimbus: 圣光环
-  dark-ones-own-luck: 黑暗者的幸运
-  hurl-through-hell: 投掷地狱
+  holy-nimbus: 神圣光辉
+  dark-ones-own-luck: 黑暗者的运气
+  hurl-through-hell: 投入地狱
   stroke-of-luck: 幸运一击
-  eldritch-master: 邪术大师
+  eldritch-master: 魔能大师
   breath-weapon: 吐息武器
-  relentless-endurance: 不屈坚韧
+  relentless-endurance: 不屈耐力
   category: 类别
   armor: 护甲
-  hp-dice: 生命骰子
+  hp-dice: 生命骰
   fly: 飞行
   swim: 游泳
   climb: 攀爬
-  burrow: 掘穴
+  burrow: 掘地
   saves: 豁免
   skills: 技能
   cr: 挑战等级
@@ -178,31 +178,31 @@ words:
   Human: 人类
   Tiefling: 提夫林
   Barbarian: 野蛮人
-  Path of the Berserker: 狂战士之路
+  Path of the Berserker: 狂战士之道
   Bard: 吟游诗人
-  College of Lore: 学识学院
+  College of Lore: 知识学院
   Cleric: 牧师
   Life Domain: 生命领域
   Druid: 德鲁伊
   Circle of the Land: 大地结社
   Fighter: 战士
-  Champion: 勇士
+  Champion: 勇者
   Monk: 武僧
-  Way of the Open Hand: 开放之掌武僧道
+  Way of the Open Hand: 空手之道
   Paladin: 圣武士
-  Oath of Devotion: 奉献誓约
+  Oath of Devotion: 奉献誓言
   Ranger: 游侠
   Hunter: 猎人
   Rogue: 游荡者
   Thief: 盗贼
   Sorcerer: 术士
-  Draconic Bloodline: 龙族血统
-  Warlock: 邪术师
+  Draconic Bloodline: 龙族血脉
+  Warlock: 魔契师
   The Fiend: 邪魔
   Wizard: 法师
   School of Evocation: 塑能学派
   Acolyte (background): 侍僧
-  Grappler: 擒抱者
+  Grappler: 擒抱专家
   Archery: 箭术
   Defense: 防御
   Dueling: 决斗
@@ -223,7 +223,7 @@ words:
   Nature: 自然
   Perception: 察觉
   Performance: 表演
-  Persuasion: 说服
+  Persuasion: 游说
   Religion: 宗教
   Sleight of Hand: 巧手
   Stealth: 隐匿
@@ -238,18 +238,18 @@ words:
   Abyssal: 深渊语
   Celestial: 天界语
   Draconic: 龙语
-  Deep Speech: 深渊通用语
-  Infernal: 炼狱语
+  Deep Speech: 深层语
+  Infernal: 地狱语
   Primordial: 原初语
-  Sylvan: 林地语
+  Sylvan: 森林语
   Undercommon: 地底通用语
   Aquan: 水族语
-  Auran: 风族语
+  Auran: 空族语
   Ignan: 火族语
   Terran: 土族语
   Druidic: 德鲁伊语
   Thieves' Cant: 盗贼黑话
-  Tiny: 微型
+  Tiny: 超小型
   Small: 小型
   Medium: 中型
   Large: 大型
@@ -259,14 +259,14 @@ words:
   Charmed: 魅惑
   Deafened: 耳聋
   Frightened: 恐慌
-  Grappled: 被擒抱
+  Grappled: 受擒
   Incapacitated: 失能
   Invisible: 隐形
   Paralyzed: 麻痹
   Petrified: 石化
   Poisoned: 中毒
   Prone: 倒地
-  Restrained: 受缚
+  Restrained: 束缚
   Stunned: 震慑
   Unconscious: 昏迷
   Exhaustion: 力竭
@@ -275,13 +275,13 @@ words:
   deafened: 耳聋
   frightened: 恐慌
   grappled: 受擒
-  incapacitated: 无力行动
+  incapacitated: 失能
   invisible: 隐形
   paralyzed: 麻痹
   petrified: 石化
   poisoned: 中毒
   prone: 倒地
-  restrained: 受缚
+  restrained: 束缚
   stunned: 震慑
   unconscious: 昏迷
   exhaustion: 力竭
@@ -329,19 +329,19 @@ words:
   shortsword: 短剑
   shortbow: 短弓
   longbow: 长弓
-  herbalism kit: 草药工具
+  herbalism kit: 草药工具包
   thieves' tools: 盗贼工具
-  tinker's tools: 工匠工具
-  advantage on saving throws against being charmed: 对抗被魅惑的豁免检定具有优势
-  advantage on saving throws against being frightened: 对抗被恐慌的豁免检定具有优势
-  advantage on saving throws against poison: 对抗毒素的豁免检定具有优势
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: 对抗魔法的智力、感知和魅力豁免检定均具有优势
+  tinker's tools: 修补匠工具
+  advantage on saving throws against being charmed: 对抗魅惑的豁免具有优势
+  advantage on saving throws against being frightened: 对抗恐慌的豁免具有优势
+  advantage on saving throws against poison: 对抗毒素的豁免具有优势
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: 对抗魔法的所有智力、感知和魅力豁免具有优势
   aberration: 异怪
   beast: 野兽
   celestial: 天界生物
   construct: 构装体
   dragon: 龙
-  elemental: 元素
+  elemental: 元素生物
   fey: 精类
   fiend: 邪魔
   giant: 巨人
@@ -350,33 +350,33 @@ words:
   ooze: 泥怪
   plant: 植物
   undead: 不死生物
-  humanoid (any race): 类人生物(任意种族)
-  humanoid (dwarf): 类人生物(矮人)
-  humanoid (elf): 类人生物(精灵)
-  humanoid (gnoll): 类人生物(豺狼人)
-  humanoid (gnome): 类人生物(侏儒)
-  humanoid (goblinoid): 类人生物(类哥布林)
-  humanoid (grimlock): 类人生物(格里姆洛克)
-  humanoid (human): 类人生物(人类)
-  humanoid (human, shapechanger): 类人生物(人类,变形者)
-  humanoid (kobold): 类人生物(狗头人)
-  humanoid (lizardfolk): 类人生物(蜥蜴人)
-  humanoid (orc): 类人生物(兽人)
-  humanoid (sahuagin): 类人生物(沙华人)
-  fiend (demon): 邪魔(恶魔)
-  fiend (demon, shapechanger): 邪魔(恶魔,变形者)
-  fiend (devil): 邪魔(魔鬼)
-  fiend (devil, shapechanger): 邪魔(魔鬼,变形者)
-  fiend (shapechanger): 邪魔(变形者)
-  monstrosity (shapechanger): 怪兽(变形者)
-  monstrosity (titan): 怪兽(泰坦)
-  undead (shapechanger): 不死生物(变形者)
-  swarm of Tiny beasts: 微型野兽群
+  humanoid (any race): 类人生物（任意种族）
+  humanoid (dwarf): 类人生物（矮人）
+  humanoid (elf): 类人生物（精灵）
+  humanoid (gnoll): 类人生物（豺狼人）
+  humanoid (gnome): 类人生物（侏儒）
+  humanoid (goblinoid): 类人生物（类地精）
+  humanoid (grimlock): 类人生物（格里姆洛克）
+  humanoid (human): 类人生物（人类）
+  humanoid (human, shapechanger): 类人生物（人类，变形者）
+  humanoid (kobold): 类人生物（狗头人）
+  humanoid (lizardfolk): 类人生物（蜥蜴人）
+  humanoid (orc): 类人生物（兽人）
+  humanoid (sahuagin): 类人生物（沙鱼人）
+  fiend (demon): 邪魔（恶魔）
+  fiend (demon, shapechanger): 邪魔（恶魔，变形者）
+  fiend (devil): 邪魔（魔鬼）
+  fiend (devil, shapechanger): 邪魔（魔鬼，变形者）
+  fiend (shapechanger): 邪魔（变形者）
+  monstrosity (shapechanger): 怪兽（变形者）
+  monstrosity (titan): 怪兽（泰坦）
+  undead (shapechanger): 不死生物（变形者）
+  swarm of Tiny beasts: 超小型野兽虫群
   lawful good: 守序善良
   neutral good: 中立善良
   chaotic good: 混乱善良
   lawful neutral: 守序中立
-  neutral: 绝对中立
+  neutral: 中立
   chaotic neutral: 混乱中立
   lawful evil: 守序邪恶
   neutral evil: 中立邪恶
@@ -387,7 +387,7 @@ words:
   any evil alignment: 任意邪恶阵营
   any non-good alignment: 任意非善良阵营
   any non-lawful alignment: 任意非守序阵营
-  neutral good (50%) or neutral evil (50%): 中立善良(50%)或中立邪恶(50%)
+  neutral good (50%) or neutral evil (50%): 中立善良（50%）或中立邪恶（50%）
   natural armor: 天生护甲
   leather armor: 皮甲
   studded leather: 镶钉皮甲
@@ -395,24 +395,27 @@ words:
   chain shirt: 链甲衫
   scale mail: 鳞甲
   breastplate: 胸甲
-  chain mail: 锁子甲
+  chain mail: 链甲
   splint: 板条甲
   plate: 板甲
-  natural armor, shield: 自然护甲、盾牌
-  leather armor, shield: 皮甲、盾牌
-  studded leather, shield: 镶钉皮甲、盾牌
-  hide armor, shield: 兽皮甲、盾牌
-  chain shirt, shield: 链甲衫、盾牌
-  scale mail, shield: 鳞甲、盾牌
-  chain mail, shield: 锁子甲、盾牌
-  advancement: 升级
+  natural armor, shield: 天生护甲，盾牌
+  leather armor, shield: 皮甲，盾牌
+  studded leather, shield: 镶钉皮甲，盾牌
+  hide armor, shield: 兽皮甲，盾牌
+  chain shirt, shield: 链甲衫，盾牌
+  scale mail, shield: 鳞甲，盾牌
+  chain mail, shield: 链甲，盾牌
+  advancement: 晋级
   how your character levels up: 你的角色如何升级
   xp: 经验值
   milestones: 里程碑
-  your character levels up with experience points, for the foes overcome and what the story rewards: 你的角色通过经验值升级,经验值来自击败的敌人和故事给予的奖励
+  your character levels up with experience points, for the foes overcome and what the story rewards: 你的角色通过经验值升级，来自击败的敌人和故事给予的奖励
   your character levels up at the big moments of the story: 你的角色在故事的重要时刻升级
-  the fifth edition from the SRD 5.1, the 2014 rules: SRD 5.1 第五版,2014年规则
+  the fifth edition from the SRD 5.1, the 2014 rules: 第五版，出自 SRD 5.1，2014 年规则
   long rest: 长休
   short rest: 短休
   difficult: 困难
+  until long rest: 直到长休
+  until short rest: 直到短休
+  difficult terrain: 困难地形
 headline: "{level}级{classes}"

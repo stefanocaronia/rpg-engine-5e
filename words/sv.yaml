@@ -7,7 +7,7 @@ groups:
   Saving Throws: Räddningsslag
   Skills: Färdigheter
   Combat: Strid
-  Proficiencies: Kompetenser
+  Proficiencies: Kunskaper
   Features: Förmågor
   Attacks: Attacker
   Spells: Besvärjelser
@@ -20,7 +20,7 @@ fields:
   feats: bragder
   alignment: läggning
   level: nivå
-  xp: EP
+  xp: XP
   inspiration: inspiration
   personality-traits: personlighetsdrag
   ideal: ideal
@@ -39,55 +39,55 @@ fields:
   wis-mod: VIS Mod
   cha-mod: KAR Mod
   proficiency: färdighetsbonus
-  str-save: räddningsslag STY
-  dex-save: räddningsslag SMI
-  con-save: räddningsslag KON
-  int-save: räddningsslag INT
-  wis-save: räddningsslag VIS
-  cha-save: räddningsslag KAR
+  str-save: STY-räddning
+  dex-save: SMI-räddning
+  con-save: KON-räddning
+  int-save: INT-räddning
+  wis-save: VIS-räddning
+  cha-save: KAR-räddning
   save-notes: anteckningar om räddningsslag
   acrobatics: akrobatik
   animal-handling: djurhantering
-  arcana: mystik
+  arcana: arkana
   athletics: atletik
   deception: bedrägeri
   history: historia
   insight: insikt
   intimidation: skrämsel
-  investigation: undersökning
+  investigation: utredning
   medicine: medicin
   nature: natur
-  perception: varseblivning
-  performance: uppträdande
+  perception: uppmärksamhet
+  performance: framträdande
   persuasion: övertalning
   religion: religion
   sleight-of-hand: fingerfärdighet
-  stealth: smygande
+  stealth: smyga
   survival: överlevnad
   ac: PK
   initiative: initiativ
-  speed: fart
+  speed: hastighet
   equipped: utrustad
-  hp-base: TP från tärningar
-  hp: TP
-  temp-hp: tillfälliga TP
-  hit-dice-d6: träffpoängstärningar d6
-  hit-dice-d8: träffpoängstärningar d8
-  hit-dice-d10: träffpoängstärningar d10
-  hit-dice-d12: träffpoängstärningar d12
-  passive-perception: passiv varseblivning
+  hp-base: grund-LP
+  hp: LP
+  temp-hp: tillfälliga LP
+  hit-dice-d6: livstärningar d6
+  hit-dice-d8: livstärningar d8
+  hit-dice-d10: livstärningar d10
+  hit-dice-d12: livstärningar d12
+  passive-perception: passiv uppmärksamhet
   passive-insight: passiv insikt
-  passive-investigation: passiv undersökning
+  passive-investigation: passiv utredning
   darkvision: mörkerseende
   blindsight: blindsyn
-  tremorsense: skakningssinne
+  tremorsense: vibrationssinne
   truesight: sann syn
-  damage-vulnerabilities: skadesårbarheter
+  damage-vulnerabilities: skadesvagheter
   damage-resistances: skaderesistenser
   damage-immunities: skadeimmuniteter
   condition-immunities: tillståndsimmuniteter
-  death-successes: lyckade dödsslag
-  death-failures: misslyckade dödsslag
+  death-successes: lyckade mot döden
+  death-failures: misslyckade mot döden
   exhaustion: utmattning
   save-proficiencies: räddningsslag
   skill-proficiencies: färdigheter
@@ -100,45 +100,45 @@ fields:
   fighting-styles: stridsstilar
   attack: attack
   damage-roll: skadeslag
-  caster-level: besvärjarnivå
-  spell-save-dc: SG för besvärjelser
+  caster-level: trollkastarnivå
+  spell-save-dc: svårighet för besvärjelse
   spell-attack: besvärjelseattack
-  slots-1: platser nivå 1
-  slots-2: platser nivå 2
-  slots-3: platser nivå 3
-  slots-4: platser nivå 4
-  slots-5: platser nivå 5
-  slots-6: platser nivå 6
-  slots-7: platser nivå 7
-  slots-8: platser nivå 8
-  slots-9: platser nivå 9
+  slots-1: platser av nivå 1
+  slots-2: platser av nivå 2
+  slots-3: platser av nivå 3
+  slots-4: platser av nivå 4
+  slots-5: platser av nivå 5
+  slots-6: platser av nivå 6
+  slots-7: platser av nivå 7
+  slots-8: platser av nivå 8
+  slots-9: platser av nivå 9
   spell-slots: besvärjelseplatser
   slot-level: platsnivå
-  mystic-arcanum-6: mystiskt arkanum 6
-  mystic-arcanum-7: mystiskt arkanum 7
-  mystic-arcanum-8: mystiskt arkanum 8
-  mystic-arcanum-9: mystiskt arkanum 9
+  mystic-arcanum-6: mystiskt arkanum (nivå 6)
+  mystic-arcanum-7: mystiskt arkanum (nivå 7)
+  mystic-arcanum-8: mystiskt arkanum (nivå 8)
+  mystic-arcanum-9: mystiskt arkanum (nivå 9)
   signature-spell-1: signaturbesvärjelse 1
   signature-spell-2: signaturbesvärjelse 2
   max-prepared: max förberedda
   spells: besvärjelser
   prepared: förberedda
-  cantrips-known: kända småtrick
+  cantrips-known: kända trick
   spells-known: kända besvärjelser
   invocations-known: kända åkallanden
   rages: raserianfall
   rage-damage: raseriskada
   martial-arts: kampsport
   ki-points: kipoäng
-  unarmored-movement: obepansrad rörelse
+  unarmored-movement: rörelse utan rustning
   sneak-attack: lömsk attack
-  sorcery-points: besvärjarpoäng
+  sorcery-points: trolldomspoäng
   channel-divinity: kanalisera gudomlighet
-  action-surge: handlingsfrenesi
-  second-wind: andra andningen
-  indomitable: okuvlig
-  wild-shape: vildform
-  bardic-inspiration: bardinspiration
+  action-surge: handlingsutbrott
+  second-wind: andrum
+  indomitable: oböjlig
+  wild-shape: vild gestalt
+  bardic-inspiration: bardisk inspiration
   divine-sense: gudomlig känsla
   lay-on-hands: handpåläggning
   cleansing-touch: renande beröring
@@ -146,31 +146,31 @@ fields:
   natural-recovery: naturlig återhämtning
   wholeness-of-body: kroppens helhet
   holy-nimbus: helig gloria
-  dark-ones-own-luck: den mörkes tur
-  hurl-through-hell: kasta genom helvetet
-  stroke-of-luck: lyckoslag
+  dark-ones-own-luck: den mörkes egen tur
+  hurl-through-hell: slunga genom helvetet
+  stroke-of-luck: lyckoträff
   eldritch-master: övernaturlig mästare
   breath-weapon: andedräktsvapen
   relentless-endurance: obeveklig uthållighet
   category: kategori
   armor: rustning
-  hp-dice: KP-tärningar
+  hp-dice: LP-tärningar
   fly: flyga
   swim: simma
   climb: klättra
   burrow: gräva
-  saves: räddningskast
+  saves: räddningsslag
   skills: färdigheter
-  cr: Utmaning
+  cr: utmaningsnivå
   xp-value: XP-värde
 words:
   Dragonborn: Drakfödd
   Dwarf: Dvärg
-  Hill Dwarf: Kulledvärg
+  Hill Dwarf: Bergsdvärg
   Elf: Alv
   High Elf: Högalv
   Gnome: Gnom
-  Rock Gnome: Berggnom
+  Rock Gnome: Stengnom
   Half-Elf: Halvalv
   Half-Orc: Halvork
   Halfling: Halvling
@@ -178,13 +178,13 @@ words:
   Human: Människa
   Tiefling: Tiefling
   Barbarian: Barbar
-  Path of the Berserker: Berserkerns väg
+  Path of the Berserker: Bärsärkens stig
   Bard: Bard
-  College of Lore: Kunskapens kollegium
+  College of Lore: Lärdomens kollegium
   Cleric: Kleriker
   Life Domain: Livets domän
   Druid: Druid
-  Circle of the Land: Landets krets
+  Circle of the Land: Landets cirkel
   Fighter: Krigare
   Champion: Champion
   Monk: Munk
@@ -197,17 +197,17 @@ words:
   Thief: Tjuv
   Sorcerer: Besvärjare
   Draconic Bloodline: Drakblodslinje
-  Warlock: Häxmästare
-  The Fiend: Fienden
+  Warlock: Warlock
+  The Fiend: Djävulsväsendet
   Wizard: Magiker
-  School of Evocation: Evokationsskolan
+  School of Evocation: Evokationens skola
   Acolyte (background): Akolyt
   Grappler: Brottare
   Archery: Bågskytte
   Defense: Försvar
   Dueling: Duellering
   Great Weapon Fighting: Strid med stora vapen
-  Protection: Skydd
+  Protection: Beskydd
   Two-Weapon Fighting: Strid med två vapen
   Unarmed Strike: Obeväpnad attack
   Acrobatics: Akrobatik
@@ -221,7 +221,7 @@ words:
   Investigation: Utredning
   Medicine: Medicin
   Nature: Natur
-  Perception: Varseblivning
+  Perception: Uppmärksamhet
   Performance: Framträdande
   Persuasion: Övertalning
   Religion: Religion
@@ -231,19 +231,19 @@ words:
   Common: Allmänspråk
   Dwarvish: Dvärgiska
   Elvish: Alviska
-  Giant: Jättiska
+  Giant: Jättespråk
   Gnomish: Gnomiska
   Goblin: Goblinska
   Orc: Orkiska
-  Abyssal: Abyssal
-  Celestial: Celestiska
+  Abyssal: Avgrundsspråk
+  Celestial: Himmelska
   Draconic: Drakiska
-  Deep Speech: Djuptal
+  Deep Speech: Djupspråk
   Infernal: Infernaliska
   Primordial: Urspråk
-  Sylvan: Sylvanska
-  Undercommon: Underjordiska
-  Aquan: Akvan
+  Sylvan: Silvanska
+  Undercommon: Underallmänspråk
+  Aquan: Aquan
   Auran: Auran
   Ignan: Ignan
   Terran: Terran
@@ -255,10 +255,10 @@ words:
   Large: Stor
   Huge: Enorm
   Gargantuan: Gigantisk
-  Blinded: Blind
+  Blinded: Förblindad
   Charmed: Charmad
   Deafened: Döv
-  Frightened: Rädd
+  Frightened: Skräckslagen
   Grappled: Fasthållen
   Incapacitated: Oförmögen
   Invisible: Osynlig
@@ -266,23 +266,23 @@ words:
   Petrified: Förstenad
   Poisoned: Förgiftad
   Prone: Liggande
-  Restrained: Fasthållen
-  Stunned: Bedövad
+  Restrained: Fjättrad
+  Stunned: Chockad
   Unconscious: Medvetslös
   Exhaustion: Utmattning
   blinded: förblindad
   charmed: charmad
   deafened: döv
-  frightened: rädd
-  grappled: greppad
+  frightened: skräckslagen
+  grappled: fasthållen
   incapacitated: oförmögen
   invisible: osynlig
   paralyzed: förlamad
   petrified: förstenad
   poisoned: förgiftad
   prone: liggande
-  restrained: fasthållen
-  stunned: bedövad
+  restrained: fjättrad
+  stunned: chockad
   unconscious: medvetslös
   exhaustion: utmattning
   acid: syra
@@ -292,21 +292,21 @@ words:
   force: kraft
   lightning: blixt
   necrotic: nekrotisk
-  piercing: stickande
+  piercing: genomborrande
   poison: gift
   psychic: psykisk
   radiant: strålande
   slashing: huggande
   thunder: åska
-  bludgeoning, piercing, and slashing from nonmagical attacks: krossande, stickande och huggande från icke-magiska attacker
-  light armor: lätt rustning
-  medium armor: medeltung rustning
-  heavy armor: tung rustning
-  all armor: all rustning
+  bludgeoning, piercing, and slashing from nonmagical attacks: krossande, genomborrande och huggande från icke-magiska attacker
+  light armor: lätta rustningar
+  medium armor: medelstunga rustningar
+  heavy armor: tunga rustningar
+  all armor: alla rustningar
   shields: sköldar
   simple weapons: enkla vapen
   martial weapons: stridsvapen
-  clubs: klubbor
+  clubs: påkar
   daggers: dolkar
   darts: kastpilar
   hand crossbows: handarmborst
@@ -314,9 +314,9 @@ words:
   light crossbows: lätta armborst
   longswords: långsvärd
   maces: stridsklubbor
-  quarterstaffs: kampstavar
+  quarterstaffs: stavar
   rapiers: rapirer
-  scimitars: krumsablar
+  scimitars: sablar
   shortswords: kortsvärd
   sickles: skäror
   slings: slungor
@@ -329,25 +329,25 @@ words:
   shortsword: kortsvärd
   shortbow: kortbåge
   longbow: långbåge
-  herbalism kit: örtkunnigsväska
+  herbalism kit: örtkunskapsutrustning
   thieves' tools: tjuvverktyg
-  tinker's tools: uppfinnarverktyg
-  advantage on saving throws against being charmed: fördel på räddningskast mot att bli charmad
-  advantage on saving throws against being frightened: fördel på räddningskast mot att bli rädd
-  advantage on saving throws against poison: fördel på räddningskast mot gift
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: fördel på alla räddningskast på Intelligens, Visdom och Karisma mot magi
-  aberration: aberration
+  tinker's tools: plåtslagarverktyg
+  advantage on saving throws against being charmed: fördel på räddningsslag mot att bli charmad
+  advantage on saving throws against being frightened: fördel på räddningsslag mot att bli skräckslagen
+  advantage on saving throws against poison: fördel på räddningsslag mot gift
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: fördel på alla räddningsslag på Intelligens, Visdom och Karisma mot magi
+  aberration: avvikelse
   beast: best
   celestial: himmelsk
-  construct: konstrukt
+  construct: konstruktion
   dragon: drake
   elemental: elementar
-  fey: älvaväsen
+  fey: fe
   fiend: djävulsväsen
   giant: jätte
   humanoid: humanoid
   monstrosity: monstrositet
-  ooze: geléartad
+  ooze: gegga
   plant: växt
   undead: odöd
   humanoid (any race): humanoid (valfri ras)
@@ -358,19 +358,19 @@ words:
   humanoid (goblinoid): humanoid (goblinoid)
   humanoid (grimlock): humanoid (grimlock)
   humanoid (human): humanoid (människa)
-  humanoid (human, shapechanger): humanoid (människa, formskiftare)
+  humanoid (human, shapechanger): humanoid (människa, skepnadsskiftare)
   humanoid (kobold): humanoid (kobold)
   humanoid (lizardfolk): humanoid (ödlefolk)
-  humanoid (orc): humanoid (orch)
+  humanoid (orc): humanoid (ork)
   humanoid (sahuagin): humanoid (sahuagin)
   fiend (demon): djävulsväsen (demon)
-  fiend (demon, shapechanger): djävulsväsen (demon, formskiftare)
+  fiend (demon, shapechanger): djävulsväsen (demon, skepnadsskiftare)
   fiend (devil): djävulsväsen (djävul)
-  fiend (devil, shapechanger): djävulsväsen (djävul, formskiftare)
-  fiend (shapechanger): djävulsväsen (formskiftare)
-  monstrosity (shapechanger): monstrositet (formskiftare)
+  fiend (devil, shapechanger): djävulsväsen (djävul, skepnadsskiftare)
+  fiend (shapechanger): djävulsväsen (skepnadsskiftare)
+  monstrosity (shapechanger): monstrositet (skepnadsskiftare)
   monstrosity (titan): monstrositet (titan)
-  undead (shapechanger): odöd (formskiftare)
+  undead (shapechanger): odöd (skepnadsskiftare)
   swarm of Tiny beasts: svärm av Pyttesmå bestar
   lawful good: laglig god
   neutral good: neutral god
@@ -381,31 +381,31 @@ words:
   lawful evil: laglig ond
   neutral evil: neutral ond
   chaotic evil: kaotisk ond
-  unaligned: utan sinnelag
-  any alignment: valfritt sinnelag
-  any chaotic alignment: valfritt kaotiskt sinnelag
-  any evil alignment: valfritt ont sinnelag
-  any non-good alignment: valfritt icke-gott sinnelag
-  any non-lawful alignment: valfritt icke-lagligt sinnelag
+  unaligned: utan läggning
+  any alignment: valfri läggning
+  any chaotic alignment: valfri kaotisk läggning
+  any evil alignment: valfri ond läggning
+  any non-good alignment: valfri icke-god läggning
+  any non-lawful alignment: valfri icke-laglig läggning
   neutral good (50%) or neutral evil (50%): neutral god (50 %) eller neutral ond (50 %)
   natural armor: naturlig rustning
   leather armor: läderrustning
   studded leather: nitat läder
-  hide armor: hudrustning
-  chain shirt: kedjeskjorta
-  scale mail: fjällpansar
+  hide armor: skinnrustning
+  chain shirt: brynjeskjorta
+  scale mail: fjällbrynja
   breastplate: bröstplåt
   chain mail: ringbrynja
-  splint: skenpansar
+  splint: bandbrynja
   plate: plåtrustning
   natural armor, shield: naturlig rustning, sköld
   leather armor, shield: läderrustning, sköld
   studded leather, shield: nitat läder, sköld
   hide armor, shield: skinnrustning, sköld
-  chain shirt, shield: ringskjorta, sköld
-  scale mail, shield: fjällpansar, sköld
+  chain shirt, shield: brynjeskjorta, sköld
+  scale mail, shield: fjällbrynja, sköld
   chain mail, shield: ringbrynja, sköld
-  advancement: Utveckling
+  advancement: Avancemang
   how your character levels up: hur din rollperson går upp i nivå
   xp: Erfarenhetspoäng
   milestones: Milstolpar
@@ -415,4 +415,7 @@ words:
   long rest: lång vila
   short rest: kort vila
   difficult: svår
-headline: "{classes} på nivå {level}"
+  until long rest: till lång vila
+  until short rest: till kort vila
+  difficult terrain: svårframkomlig terräng
+headline: Nivå {level} {classes}

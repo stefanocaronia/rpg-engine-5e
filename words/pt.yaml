@@ -3,8 +3,8 @@
 groups:
   Character: Personagem
   Personality: Personalidade
-  Abilities: Atributos
-  Saving Throws: Testes de resistência
+  Abilities: Habilidades
+  Saving Throws: Testes de Resistência
   Skills: Perícias
   Combat: Combate
   Proficiencies: Proficiências
@@ -12,126 +12,126 @@ groups:
   Attacks: Ataques
   Spells: Magias
 fields:
-  creature: Raça
-  size: Tamanho
-  classes: Classes
-  subclasses: Subclasses
-  background: Antecedente
-  feats: Talentos
-  alignment: Tendência
-  level: Nível
+  creature: criatura
+  size: tamanho
+  classes: classes
+  subclasses: subclasses
+  background: antecedente
+  feats: talentos
+  alignment: alinhamento
+  level: nível
   xp: XP
-  inspiration: Inspiração
-  personality-traits: Traços de personalidade
-  ideal: Ideal
-  bond: Vínculo
-  flaw: Defeito
+  inspiration: inspiração
+  personality-traits: traços de personalidade
+  ideal: ideal
+  bond: vínculo
+  flaw: defeito
   str: FOR
   dex: DES
   con: CON
   int: INT
   wis: SAB
   cha: CAR
-  str-mod: Mod. FOR
-  dex-mod: Mod. DES
-  con-mod: Mod. CON
-  int-mod: Mod. INT
-  wis-mod: Mod. SAB
-  cha-mod: Mod. CAR
-  proficiency: Bônus de proficiência
-  str-save: Resistência de Força
-  dex-save: Resistência de Destreza
-  con-save: Resistência de Constituição
-  int-save: Resistência de Inteligência
-  wis-save: Resistência de Sabedoria
-  cha-save: Resistência de Carisma
-  save-notes: Notas de resistência
-  acrobatics: Acrobacia
-  animal-handling: Lidar com Animais
-  arcana: Arcanismo
-  athletics: Atletismo
-  deception: Enganação
-  history: História
-  insight: Intuição
-  intimidation: Intimidação
-  investigation: Investigação
-  medicine: Medicina
-  nature: Natureza
-  perception: Percepção
-  performance: Atuação
-  persuasion: Persuasão
-  religion: Religião
-  sleight-of-hand: Prestidigitação
-  stealth: Furtividade
-  survival: Sobrevivência
+  str-mod: mod. FOR
+  dex-mod: mod. DES
+  con-mod: mod. CON
+  int-mod: mod. INT
+  wis-mod: mod. SAB
+  cha-mod: mod. CAR
+  proficiency: bônus de proficiência
+  str-save: resistência de FOR
+  dex-save: resistência de DES
+  con-save: resistência de CON
+  int-save: resistência de INT
+  wis-save: resistência de SAB
+  cha-save: resistência de CAR
+  save-notes: notas de resistência
+  acrobatics: acrobacia
+  animal-handling: lidar com animais
+  arcana: arcanismo
+  athletics: atletismo
+  deception: enganação
+  history: história
+  insight: intuição
+  intimidation: intimidação
+  investigation: investigação
+  medicine: medicina
+  nature: natureza
+  perception: percepção
+  performance: atuação
+  persuasion: persuasão
+  religion: religião
+  sleight-of-hand: prestidigitação
+  stealth: furtividade
+  survival: sobrevivência
   ac: CA
-  initiative: Iniciativa
-  speed: Deslocamento
-  equipped: Equipado
-  hp-base: PV dos dados
+  initiative: iniciativa
+  speed: deslocamento
+  equipped: equipado
+  hp-base: PV base
   hp: PV
   temp-hp: PV temporários
-  hit-dice-d6: Dados de vida d6
-  hit-dice-d8: Dados de vida d8
-  hit-dice-d10: Dados de vida d10
-  hit-dice-d12: Dados de vida d12
-  passive-perception: Percepção passiva
-  passive-insight: Intuição passiva
-  passive-investigation: Investigação passiva
-  darkvision: Visão no escuro
-  blindsight: Visão às cegas
-  tremorsense: Sentido sísmico
-  truesight: Visão verdadeira
-  damage-vulnerabilities: Vulnerabilidades a dano
-  damage-resistances: Resistências a dano
-  damage-immunities: Imunidades a dano
-  condition-immunities: Imunidades a condições
-  death-successes: Sucessos contra a morte
-  death-failures: Falhas contra a morte
-  exhaustion: Exaustão
-  save-proficiencies: Testes de resistência
-  skill-proficiencies: Perícias
-  expertise: Especialização
-  armor-proficiencies: Armaduras
-  weapon-proficiencies: Armas
-  tool-proficiencies: Ferramentas
-  languages: Idiomas
-  features: Características
-  fighting-styles: Estilos de luta
-  attack: Ataque
-  damage-roll: Rolagem de dano
-  caster-level: Nível de conjurador
-  spell-save-dc: CD das magias
-  spell-attack: Ataque de magia
-  slots-1: Espaços de 1º nível
-  slots-2: Espaços de 2º nível
-  slots-3: Espaços de 3º nível
-  slots-4: Espaços de 4º nível
-  slots-5: Espaços de 5º nível
-  slots-6: Espaços de 6º nível
-  slots-7: Espaços de 7º nível
-  slots-8: Espaços de 8º nível
-  slots-9: Espaços de 9º nível
-  spell-slots: Espaços de magia
-  slot-level: Nível do espaço
-  mystic-arcanum-6: Arcana Mística (6º nível)
-  mystic-arcanum-7: Arcana Mística (7º nível)
-  mystic-arcanum-8: Arcana Mística (8º nível)
-  mystic-arcanum-9: Arcana Mística (9º nível)
-  signature-spell-1: Magia de assinatura 1
-  signature-spell-2: Magia de assinatura 2
-  max-prepared: Máx. de magias preparadas
-  spells: Magias
-  prepared: Preparadas
-  cantrips-known: Truques conhecidos
-  spells-known: Magias conhecidas
-  invocations-known: Invocações conhecidas
-  rages: Fúrias
-  rage-damage: Dano da fúria
-  martial-arts: Artes marciais
-  ki-points: Pontos de ki
-  unarmored-movement: Movimento sem armadura
-  sneak-attack: Ataque furtivo
+  hit-dice-d6: dados de vida d6
+  hit-dice-d8: dados de vida d8
+  hit-dice-d10: dados de vida d10
+  hit-dice-d12: dados de vida d12
+  passive-perception: percepção passiva
+  passive-insight: intuição passiva
+  passive-investigation: investigação passiva
+  darkvision: visão no escuro
+  blindsight: visão às cegas
+  tremorsense: sentido sísmico
+  truesight: visão verdadeira
+  damage-vulnerabilities: vulnerabilidades a dano
+  damage-resistances: resistências a dano
+  damage-immunities: imunidades a dano
+  condition-immunities: imunidades a condições
+  death-successes: sucessos contra a morte
+  death-failures: falhas contra a morte
+  exhaustion: exaustão
+  save-proficiencies: resistências
+  skill-proficiencies: perícias
+  expertise: especialização
+  armor-proficiencies: armaduras
+  weapon-proficiencies: armas
+  tool-proficiencies: ferramentas
+  languages: idiomas
+  features: características
+  fighting-styles: estilos de luta
+  attack: ataque
+  damage-roll: rolagem de dano
+  caster-level: nível de conjurador
+  spell-save-dc: CD de resistência da magia
+  spell-attack: ataque de magia
+  slots-1: espaços de 1º nível
+  slots-2: espaços de 2º nível
+  slots-3: espaços de 3º nível
+  slots-4: espaços de 4º nível
+  slots-5: espaços de 5º nível
+  slots-6: espaços de 6º nível
+  slots-7: espaços de 7º nível
+  slots-8: espaços de 8º nível
+  slots-9: espaços de 9º nível
+  spell-slots: espaços de magia
+  slot-level: nível do espaço
+  mystic-arcanum-6: arcana mística (6º nível)
+  mystic-arcanum-7: arcana mística (7º nível)
+  mystic-arcanum-8: arcana mística (8º nível)
+  mystic-arcanum-9: arcana mística (9º nível)
+  signature-spell-1: magia de assinatura 1
+  signature-spell-2: magia de assinatura 2
+  max-prepared: máx. de magias preparadas
+  spells: magias
+  prepared: preparadas
+  cantrips-known: truques conhecidos
+  spells-known: magias conhecidas
+  invocations-known: invocações conhecidas
+  rages: fúrias
+  rage-damage: dano da fúria
+  martial-arts: artes marciais
+  ki-points: pontos de ki
+  unarmored-movement: movimento sem armadura
+  sneak-attack: ataque furtivo
   sorcery-points: pontos de feitiçaria
   channel-divinity: canalizar divindade
   action-surge: surto de ação
@@ -146,12 +146,12 @@ fields:
   natural-recovery: recuperação natural
   wholeness-of-body: integridade corporal
   holy-nimbus: nimbo sagrado
-  dark-ones-own-luck: sorte do sombrio
-  hurl-through-hell: arremessar pelo inferno
+  dark-ones-own-luck: sorte do próprio Sombrio
+  hurl-through-hell: lançar através do inferno
   stroke-of-luck: golpe de sorte
   eldritch-master: mestre sobrenatural
-  breath-weapon: sopro
-  relentless-endurance: resistência implacável
+  breath-weapon: arma de sopro
+  relentless-endurance: resistência incansável
   category: categoria
   armor: armadura
   hp-dice: dados de PV
@@ -159,7 +159,7 @@ fields:
   swim: natação
   climb: escalada
   burrow: escavação
-  saves: testes de resistência
+  saves: resistências
   skills: perícias
   cr: ND
   xp-value: valor de XP
@@ -171,8 +171,8 @@ words:
   High Elf: Alto Elfo
   Gnome: Gnomo
   Rock Gnome: Gnomo das Rochas
-  Half-Elf: Meio-Elfo
-  Half-Orc: Meio-Orc
+  Half-Elf: Meio-elfo
+  Half-Orc: Meio-orc
   Halfling: Halfling
   Lightfoot Halfling: Halfling Pés-Leves
   Human: Humano
@@ -190,7 +190,7 @@ words:
   Monk: Monge
   Way of the Open Hand: Caminho da Mão Aberta
   Paladin: Paladino
-  Oath of Devotion: Juramento da Devoção
+  Oath of Devotion: Juramento de Devoção
   Ranger: Patrulheiro
   Hunter: Caçador
   Rogue: Ladino
@@ -211,7 +211,7 @@ words:
   Two-Weapon Fighting: Combate com Duas Armas
   Unarmed Strike: Ataque Desarmado
   Acrobatics: Acrobacia
-  Animal Handling: Adestrar Animais
+  Animal Handling: Lidar com Animais
   Arcana: Arcanismo
   Athletics: Atletismo
   Deception: Enganação
@@ -238,7 +238,7 @@ words:
   Abyssal: Abissal
   Celestial: Celestial
   Draconic: Dracônico
-  Deep Speech: Língua Profunda
+  Deep Speech: Língua das Profundezas
   Infernal: Infernal
   Primordial: Primordial
   Sylvan: Silvestre
@@ -248,7 +248,7 @@ words:
   Ignan: Ignan
   Terran: Terran
   Druidic: Druídico
-  Thieves' Cant: Gíria dos Ladrões
+  Thieves' Cant: Língua dos Ladrões
   Tiny: Miúdo
   Small: Pequeno
   Medium: Médio
@@ -289,7 +289,7 @@ words:
   bludgeoning: contundente
   cold: frio
   fire: fogo
-  force: energia
+  force: energético
   lightning: elétrico
   necrotic: necrótico
   piercing: perfurante
@@ -299,9 +299,9 @@ words:
   slashing: cortante
   thunder: trovejante
   bludgeoning, piercing, and slashing from nonmagical attacks: contundente, perfurante e cortante de ataques não mágicos
-  light armor: armaduras leves
-  medium armor: armaduras médias
-  heavy armor: armaduras pesadas
+  light armor: armadura leve
+  medium armor: armadura média
+  heavy armor: armadura pesada
   all armor: todas as armaduras
   shields: escudos
   simple weapons: armas simples
@@ -347,7 +347,7 @@ words:
   giant: gigante
   humanoid: humanoide
   monstrosity: monstruosidade
-  ooze: gosma
+  ooze: limo
   plant: planta
   undead: morto-vivo
   humanoid (any race): humanoide (qualquer raça)
@@ -381,18 +381,18 @@ words:
   lawful evil: leal e mau
   neutral evil: neutro e mau
   chaotic evil: caótico e mau
-  unaligned: sem tendência
-  any alignment: qualquer tendência
-  any chaotic alignment: qualquer tendência caótica
-  any evil alignment: qualquer tendência má
-  any non-good alignment: qualquer tendência não boa
-  any non-lawful alignment: qualquer tendência não leal
+  unaligned: sem alinhamento
+  any alignment: qualquer alinhamento
+  any chaotic alignment: qualquer alinhamento caótico
+  any evil alignment: qualquer alinhamento mau
+  any non-good alignment: qualquer alinhamento não bom
+  any non-lawful alignment: qualquer alinhamento não leal
   neutral good (50%) or neutral evil (50%): neutro e bom (50%) ou neutro e mau (50%)
   natural armor: armadura natural
   leather armor: armadura de couro
   studded leather: couro batido
   hide armor: armadura de peles
-  chain shirt: camisão de malha
+  chain shirt: camisão de cota de malha
   scale mail: brunea
   breastplate: peitoral
   chain mail: cota de malha
@@ -402,17 +402,20 @@ words:
   leather armor, shield: armadura de couro, escudo
   studded leather, shield: couro batido, escudo
   hide armor, shield: armadura de peles, escudo
-  chain shirt, shield: camisa de malha, escudo
+  chain shirt, shield: camisão de cota de malha, escudo
   scale mail, shield: brunea, escudo
   chain mail, shield: cota de malha, escudo
-  advancement: Avanço
+  advancement: progressão
   how your character levels up: como o seu personagem sobe de nível
-  xp: Pontos de experiência
-  milestones: Marcos
+  xp: xp
+  milestones: marcos
   your character levels up with experience points, for the foes overcome and what the story rewards: o seu personagem sobe de nível com pontos de experiência, pelos inimigos derrotados e pelo que a história recompensa
   your character levels up at the big moments of the story: o seu personagem sobe de nível nos grandes momentos da história
   the fifth edition from the SRD 5.1, the 2014 rules: a quinta edição do SRD 5.1, as regras de 2014
   long rest: descanso longo
   short rest: descanso curto
   difficult: difícil
+  until long rest: até o descanso longo
+  until short rest: até o descanso curto
+  difficult terrain: terreno difícil
 headline: "{classes} de nível {level}"

@@ -10,149 +10,149 @@ groups:
   Proficiencies: Biegłości
   Features: Zdolności
   Attacks: Ataki
-  Spells: Zaklęcia
+  Spells: Czary
 fields:
-  creature: Rasa
-  size: Rozmiar
-  classes: Klasy
-  subclasses: Podklasy
-  background: Tło
-  feats: Atuty
-  alignment: Światopogląd
-  level: Poziom
+  creature: rasa
+  size: rozmiar
+  classes: klasy
+  subclasses: podklasy
+  background: pochodzenie
+  feats: atuty
+  alignment: charakter
+  level: poziom
   xp: PD
-  inspiration: Inspiracja
-  personality-traits: Cechy osobowości
-  ideal: Ideał
-  bond: Więź
-  flaw: Wada
+  inspiration: inspiracja
+  personality-traits: cechy osobowości
+  ideal: ideał
+  bond: więź
+  flaw: słabość
   str: SIŁ
-  dex: ZRĘ
+  dex: ZRE
   con: KON
   int: INT
   wis: MĄD
   cha: CHA
   str-mod: Mod. SIŁ
-  dex-mod: Mod. ZRĘ
+  dex-mod: Mod. ZRE
   con-mod: Mod. KON
   int-mod: Mod. INT
   wis-mod: Mod. MĄD
   cha-mod: Mod. CHA
-  proficiency: Premia z biegłości
-  str-save: Rzut obronny SIŁ
-  dex-save: Rzut obronny ZRĘ
-  con-save: Rzut obronny KON
-  int-save: Rzut obronny INT
-  wis-save: Rzut obronny MĄD
-  cha-save: Rzut obronny CHA
-  save-notes: Notatki do rzutów obronnych
-  acrobatics: Akrobatyka
-  animal-handling: Opieka nad zwierzętami
-  arcana: Wiedza tajemna
-  athletics: Atletyka
-  deception: Oszustwo
-  history: Historia
-  insight: Przenikliwość
-  intimidation: Zastraszanie
-  investigation: Śledztwo
-  medicine: Medycyna
-  nature: Przyroda
-  perception: Percepcja
-  performance: Występy
-  persuasion: Perswazja
-  religion: Religia
-  sleight-of-hand: Zwinne palce
-  stealth: Skradanie się
-  survival: Przetrwanie
+  proficiency: bonus biegłości
+  str-save: rzut obronny Siły
+  dex-save: rzut obronny Zręczności
+  con-save: rzut obronny Kondycji
+  int-save: rzut obronny Inteligencji
+  wis-save: rzut obronny Mądrości
+  cha-save: rzut obronny Charyzmy
+  save-notes: notatki do rzutów obronnych
+  acrobatics: akrobatyka
+  animal-handling: opieka nad zwierzętami
+  arcana: arkana
+  athletics: atletyka
+  deception: oszustwo
+  history: historia
+  insight: wnikliwość
+  intimidation: zastraszanie
+  investigation: śledztwo
+  medicine: medycyna
+  nature: przyroda
+  perception: percepcja
+  performance: występy
+  persuasion: perswazja
+  religion: religia
+  sleight-of-hand: zwinne palce
+  stealth: skradanie się
+  survival: przetrwanie
   ac: KP
-  initiative: Inicjatywa
-  speed: Szybkość
-  equipped: Wyposażone
+  initiative: inicjatywa
+  speed: szybkość
+  equipped: założone
   hp-base: PW bazowe
   hp: PW
-  temp-hp: Tymczasowe PW
-  hit-dice-d6: Kości wytrzymałości k6
-  hit-dice-d8: Kości wytrzymałości k8
-  hit-dice-d10: Kości wytrzymałości k10
-  hit-dice-d12: Kości wytrzymałości k12
-  passive-perception: Bierna percepcja
-  passive-insight: Bierna przenikliwość
-  passive-investigation: Bierne śledztwo
-  darkvision: Widzenie w ciemności
-  blindsight: Ślepowidzenie
-  tremorsense: Wyczuwanie drgań
-  truesight: Prawdziwe widzenie
-  damage-vulnerabilities: Podatność na obrażenia
-  damage-resistances: Odporność na obrażenia
-  damage-immunities: Nietykalność na obrażenia
-  condition-immunities: Nietykalność na stany
-  death-successes: Sukcesy (śmierć)
-  death-failures: Porażki (śmierć)
-  exhaustion: Wyczerpanie
-  save-proficiencies: Rzuty obronne
-  skill-proficiencies: Umiejętności
-  expertise: Ekspertyza
-  armor-proficiencies: Zbroje
-  weapon-proficiencies: Bronie
-  tool-proficiencies: Narzędzia
-  languages: Języki
-  features: Zdolności
-  fighting-styles: Style walki
-  attack: Atak
-  damage-roll: Rzut na obrażenia
-  caster-level: Poziom czarodzieja
-  spell-save-dc: ST zaklęć
-  spell-attack: Atak zaklęciem
-  slots-1: Komórki 1. poziomu
-  slots-2: Komórki 2. poziomu
-  slots-3: Komórki 3. poziomu
-  slots-4: Komórki 4. poziomu
-  slots-5: Komórki 5. poziomu
-  slots-6: Komórki 6. poziomu
-  slots-7: Komórki 7. poziomu
-  slots-8: Komórki 8. poziomu
-  slots-9: Komórki 9. poziomu
-  spell-slots: Komórki zaklęć
-  slot-level: Poziom komórki
-  mystic-arcanum-6: Mistyczne arkanum (6. poziom)
-  mystic-arcanum-7: Mistyczne arkanum (7. poziom)
-  mystic-arcanum-8: Mistyczne arkanum (8. poziom)
-  mystic-arcanum-9: Mistyczne arkanum (9. poziom)
-  signature-spell-1: Zaklęcie sygnaturowe 1
-  signature-spell-2: Zaklęcie sygnaturowe 2
-  max-prepared: Maks. przygotowanych
-  spells: Zaklęcia
-  prepared: Przygotowane
-  cantrips-known: Znane sztuczki
-  spells-known: Znane zaklęcia
-  invocations-known: Znane inwokacje
-  rages: Szały
-  rage-damage: Obrażenia od szału
-  martial-arts: Sztuki walki
-  ki-points: Punkty ki
-  unarmored-movement: Ruch bez zbroi
-  sneak-attack: Podstępny atak
-  sorcery-points: punkty czarostwa
-  channel-divinity: kanał boskości
+  temp-hp: tymczasowe PW
+  hit-dice-d6: kości wytrzymałości d6
+  hit-dice-d8: kości wytrzymałości d8
+  hit-dice-d10: kości wytrzymałości d10
+  hit-dice-d12: kości wytrzymałości d12
+  passive-perception: pasywna percepcja
+  passive-insight: pasywna wnikliwość
+  passive-investigation: pasywne śledztwo
+  darkvision: widzenie w ciemności
+  blindsight: ślepowidzenie
+  tremorsense: wyczuwanie drgań
+  truesight: prawdziwe widzenie
+  damage-vulnerabilities: podatności na obrażenia
+  damage-resistances: odporności na obrażenia
+  damage-immunities: niewrażliwości na obrażenia
+  condition-immunities: niewrażliwości na stany
+  death-successes: sukcesy rzutów przeciw śmierci
+  death-failures: porażki rzutów przeciw śmierci
+  exhaustion: wyczerpanie
+  save-proficiencies: biegłości w rzutach obronnych
+  skill-proficiencies: biegłości w umiejętnościach
+  expertise: mistrzostwo
+  armor-proficiencies: biegłości w pancerzach
+  weapon-proficiencies: biegłości w broniach
+  tool-proficiencies: biegłości w narzędziach
+  languages: języki
+  features: zdolności
+  fighting-styles: style walki
+  attack: atak
+  damage-roll: rzut na obrażenia
+  caster-level: poziom czarującego
+  spell-save-dc: ST rzutu obronnego czaru
+  spell-attack: atak czarem
+  slots-1: komórki czarów 1. poziomu
+  slots-2: komórki czarów 2. poziomu
+  slots-3: komórki czarów 3. poziomu
+  slots-4: komórki czarów 4. poziomu
+  slots-5: komórki czarów 5. poziomu
+  slots-6: komórki czarów 6. poziomu
+  slots-7: komórki czarów 7. poziomu
+  slots-8: komórki czarów 8. poziomu
+  slots-9: komórki czarów 9. poziomu
+  spell-slots: komórki czarów
+  slot-level: poziom komórki
+  mystic-arcanum-6: tajemne arkana (6. poziom)
+  mystic-arcanum-7: tajemne arkana (7. poziom)
+  mystic-arcanum-8: tajemne arkana (8. poziom)
+  mystic-arcanum-9: tajemne arkana (9. poziom)
+  signature-spell-1: czar znamienny 1
+  signature-spell-2: czar znamienny 2
+  max-prepared: maks. przygotowanych
+  spells: czary
+  prepared: przygotowane
+  cantrips-known: znane zaklęcia podstawowe
+  spells-known: znane czary
+  invocations-known: znane inwokacje
+  rages: szały
+  rage-damage: obrażenia szału
+  martial-arts: sztuki walki
+  ki-points: punkty ki
+  unarmored-movement: ruch bez pancerza
+  sneak-attack: atak z zaskoczenia
+  sorcery-points: punkty czarodziejstwa
+  channel-divinity: kanalizowanie boskości
   action-surge: zryw akcji
   second-wind: drugi oddech
-  indomitable: niezłomny
+  indomitable: niezłomność
   wild-shape: dzika postać
   bardic-inspiration: inspiracja bardów
   divine-sense: boski zmysł
   lay-on-hands: uzdrawiający dotyk
   cleansing-touch: oczyszczający dotyk
-  arcane-recovery: odzyskiwanie magii
-  natural-recovery: naturalne odnowienie
-  wholeness-of-body: całość ciała
+  arcane-recovery: odzyskiwanie mocy tajemnej
+  natural-recovery: naturalna regeneracja
+  wholeness-of-body: integralność ciała
   holy-nimbus: święta aureola
   dark-ones-own-luck: szczęście Mrocznego
-  hurl-through-hell: cisnąć przez piekło
+  hurl-through-hell: rzut przez piekło
   stroke-of-luck: łut szczęścia
-  eldritch-master: mistrz mroków
+  eldritch-master: mistrz tajemnych mocy
   breath-weapon: zionięcie
   relentless-endurance: niezłomna wytrzymałość
-  category: kategoria
+  category: rodzaj
   armor: pancerz
   hp-dice: kości PW
   fly: latanie
@@ -164,17 +164,17 @@ fields:
   cr: PT
   xp-value: wartość PD
 words:
-  Dragonborn: Smoczy
+  Dragonborn: Drakon
   Dwarf: Krasnolud
-  Hill Dwarf: Górski Krasnolud
+  Hill Dwarf: Krasnolud wzgórzowy
   Elf: Elf
-  High Elf: Wysoki Elf
+  High Elf: Wysoki elf
   Gnome: Gnom
-  Rock Gnome: Skalny Gnom
+  Rock Gnome: Gnom skalny
   Half-Elf: Półelf
   Half-Orc: Półork
   Halfling: Niziołek
-  Lightfoot Halfling: Lekkostopy Niziołek
+  Lightfoot Halfling: Niziołek leśny
   Human: Człowiek
   Tiefling: Tiefling
   Barbarian: Barbarzyńca
@@ -191,28 +191,28 @@ words:
   Way of the Open Hand: Droga Otwartej Dłoni
   Paladin: Paladyn
   Oath of Devotion: Przysięga Oddania
-  Ranger: Łowca
-  Hunter: Myśliwy
+  Ranger: Zwiadowca
+  Hunter: Łowca
   Rogue: Łotrzyk
   Thief: Złodziej
   Sorcerer: Czarownik
   Draconic Bloodline: Smocza Krew
   Warlock: Czarnoksiężnik
-  The Fiend: Szatan
+  The Fiend: Pomiot
   Wizard: Czarodziej
-  School of Evocation: Szkoła Inwokacji
+  School of Evocation: Szkoła Ewokacji
   Acolyte (background): Akolita
   Grappler: Zapaśnik
   Archery: Łucznictwo
   Defense: Obrona
   Dueling: Pojedynkowanie
-  Great Weapon Fighting: Walka bronią dwuręczną
+  Great Weapon Fighting: Walka Bronią Dwuręczną
   Protection: Ochrona
-  Two-Weapon Fighting: Walka dwiema brońmi
+  Two-Weapon Fighting: Walka Dwiema Brońmi
   Unarmed Strike: Cios bez broni
   Acrobatics: Akrobatyka
-  Animal Handling: Obchodzenie się ze zwierzętami
-  Arcana: Wiedza tajemna
+  Animal Handling: Opieka nad zwierzętami
+  Arcana: Arkana
   Athletics: Atletyka
   Deception: Oszustwo
   History: Historia
@@ -225,20 +225,20 @@ words:
   Performance: Występy
   Persuasion: Perswazja
   Religion: Religia
-  Sleight of Hand: Zręczne palce
+  Sleight of Hand: Zwinne palce
   Stealth: Skradanie się
   Survival: Przetrwanie
   Common: Wspólny
   Dwarvish: Krasnoludzki
   Elvish: Elfi
-  Giant: Olbrzymi
+  Giant: Gigantów
   Gnomish: Gnomi
   Goblin: Gobliński
-  Orc: Orkowy
-  Abyssal: Otchłanny
+  Orc: Orczy
+  Abyssal: Otchłani
   Celestial: Niebiański
   Draconic: Smoczy
-  Deep Speech: Mowa Głębin
+  Deep Speech: Mowa głębin
   Infernal: Piekielny
   Primordial: Pierwotny
   Sylvan: Leśny
@@ -248,7 +248,7 @@ words:
   Ignan: Ignan
   Terran: Terran
   Druidic: Druidzki
-  Thieves' Cant: Złodziejska gwara
+  Thieves' Cant: Złodziejski żargon
   Tiny: Malutki
   Small: Mały
   Medium: Średni
@@ -256,14 +256,14 @@ words:
   Huge: Ogromny
   Gargantuan: Gigantyczny
   Blinded: Oślepiony
-  Charmed: Zauroczony
+  Charmed: Urzeczony
   Deafened: Ogłuszony
   Frightened: Przestraszony
   Grappled: Schwytany
   Incapacitated: Niezdolny do działania
   Invisible: Niewidzialny
   Paralyzed: Sparaliżowany
-  Petrified: Spetryfikowany
+  Petrified: Skamieniały
   Poisoned: Zatruty
   Prone: Powalony
   Restrained: Unieruchomiony
@@ -275,10 +275,10 @@ words:
   deafened: ogłuszony
   frightened: przestraszony
   grappled: schwytany
-  incapacitated: obezwładniony
+  incapacitated: niezdolny do działania
   invisible: niewidzialny
   paralyzed: sparaliżowany
-  petrified: spetryfikowany
+  petrified: skamieniały
   poisoned: zatruty
   prone: powalony
   restrained: unieruchomiony
@@ -289,8 +289,8 @@ words:
   bludgeoning: obuchowe
   cold: zimno
   fire: ogień
-  force: energia magiczna
-  lightning: błyskawica
+  force: energia
+  lightning: błyskawice
   necrotic: nekrotyczne
   piercing: kłute
   poison: trucizna
@@ -298,15 +298,15 @@ words:
   radiant: promieniste
   slashing: cięte
   thunder: grzmot
-  bludgeoning, piercing, and slashing from nonmagical attacks: obuchowe, kłute i cięte od niemagicznych ataków
-  light armor: lekkie zbroje
-  medium armor: średnie zbroje
-  heavy armor: ciężkie zbroje
-  all armor: wszystkie zbroje
+  bludgeoning, piercing, and slashing from nonmagical attacks: obuchowe, kłute i cięte z ataków niemagicznych
+  light armor: pancerze lekkie
+  medium armor: pancerze średnie
+  heavy armor: pancerze ciężkie
+  all armor: wszystkie pancerze
   shields: tarcze
-  simple weapons: broń prosta
-  martial weapons: broń wojskowa
-  clubs: maczugi
+  simple weapons: bronie proste
+  martial weapons: bronie wojskowe
+  clubs: pałki
   daggers: sztylety
   darts: strzałki
   hand crossbows: kusze ręczne
@@ -334,15 +334,15 @@ words:
   tinker's tools: narzędzia druciarza
   advantage on saving throws against being charmed: przewaga w rzutach obronnych przed urzeczeniem
   advantage on saving throws against being frightened: przewaga w rzutach obronnych przed przestraszeniem
-  advantage on saving throws against poison: przewaga w rzutach obronnych przeciwko truciznom
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: przewaga we wszystkich rzutach obronnych na Inteligencję, Mądrość i Charyzmę przeciwko magii
+  advantage on saving throws against poison: przewaga w rzutach obronnych przeciw truciźnie
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: przewaga w rzutach obronnych Inteligencji, Mądrości i Charyzmy przeciw magii
   aberration: aberracja
   beast: bestia
   celestial: niebianin
   construct: konstrukt
   dragon: smok
   elemental: żywiołak
-  fey: istota leśna
+  fey: istota baśniowa
   fiend: pomiot
   giant: olbrzym
   humanoid: humanoid
@@ -381,38 +381,41 @@ words:
   lawful evil: praworządny zły
   neutral evil: neutralny zły
   chaotic evil: chaotyczny zły
-  unaligned: bez przekonań
-  any alignment: dowolne przekonania
-  any chaotic alignment: dowolne przekonania chaotyczne
-  any evil alignment: dowolne przekonania złe
-  any non-good alignment: dowolne przekonania niedobre
-  any non-lawful alignment: dowolne przekonania niepraworządne
+  unaligned: bez charakteru
+  any alignment: dowolny charakter
+  any chaotic alignment: dowolny charakter chaotyczny
+  any evil alignment: dowolny charakter zły
+  any non-good alignment: dowolny charakter niedobry
+  any non-lawful alignment: dowolny charakter nieprzyworządny
   neutral good (50%) or neutral evil (50%): neutralny dobry (50%) lub neutralny zły (50%)
   natural armor: pancerz naturalny
-  leather armor: zbroja skórzana
-  studded leather: skórzana zbroja ćwiekowana
-  hide armor: zbroja z wyprawionych skór
+  leather armor: pancerz skórzany
+  studded leather: skóra nabijana ćwiekami
+  hide armor: pancerz z grubej skóry
   chain shirt: kolczuga lekka
-  scale mail: napierśnik łuskowy
+  scale mail: pancerz łuskowy
   breastplate: napierśnik
   chain mail: kolczuga
-  splint: zbroja płytowa pasowa
-  plate: zbroja płytowa
-  natural armor, shield: zbroja naturalna, tarcza
-  leather armor, shield: zbroja skórzana, tarcza
-  studded leather, shield: zbroja ćwiekowana, tarcza
-  hide armor, shield: zbroja z skór, tarcza
-  chain shirt, shield: koszulka kolcza, tarcza
-  scale mail, shield: napierśnik łuskowy, tarcza
+  splint: pancerz listwowy
+  plate: pancerz płytowy
+  natural armor, shield: pancerz naturalny, tarcza
+  leather armor, shield: pancerz skórzany, tarcza
+  studded leather, shield: skóra nabijana ćwiekami, tarcza
+  hide armor, shield: pancerz z grubej skóry, tarcza
+  chain shirt, shield: kolczuga lekka, tarcza
+  scale mail, shield: pancerz łuskowy, tarcza
   chain mail, shield: kolczuga, tarcza
   advancement: Rozwój
-  how your character levels up: jak twoja postać awansuje na kolejne poziomy
+  how your character levels up: jak twoja postać zdobywa poziomy
   xp: Punkty doświadczenia
   milestones: Kamienie milowe
-  your character levels up with experience points, for the foes overcome and what the story rewards: twoja postać awansuje na kolejne poziomy dzięki punktom doświadczenia, za pokonanych wrogów i to, co nagradza fabuła
-  your character levels up at the big moments of the story: twoja postać awansuje na kolejne poziomy w kluczowych momentach fabuły
+  your character levels up with experience points, for the foes overcome and what the story rewards: twoja postać zdobywa poziomy dzięki punktom doświadczenia, za pokonanych wrogów i to, co nagradza fabuła
+  your character levels up at the big moments of the story: twoja postać zdobywa poziomy w wielkich momentach fabuły
   the fifth edition from the SRD 5.1, the 2014 rules: piąta edycja z SRD 5.1, zasady z 2014 roku
   long rest: długi odpoczynek
   short rest: krótki odpoczynek
   difficult: trudny
-headline: "{classes}, poziom {level}"
+  until long rest: do długiego odpoczynku
+  until short rest: do krótkiego odpoczynku
+  difficult terrain: trudny teren
+headline: "{classes}, {level}. poziom"

@@ -4,7 +4,7 @@ groups:
   Character: キャラクター
   Personality: 人格
   Abilities: 能力値
-  Saving Throws: セーヴィング・スロー
+  Saving Throws: セーヴィングスロー
   Skills: 技能
   Combat: 戦闘
   Proficiencies: 習熟
@@ -13,7 +13,7 @@ groups:
   Spells: 呪文
 fields:
   creature: 種族
-  size: 大きさ
+  size: サイズ
   classes: クラス
   subclasses: サブクラス
   background: 背景
@@ -21,7 +21,7 @@ fields:
   alignment: 属性
   level: レベル
   xp: 経験点
-  inspiration: インスピレーション
+  inspiration: ひらめき
   personality-traits: 人格的特徴
   ideal: 理想
   bond: 絆
@@ -45,12 +45,12 @@ fields:
   int-save: 知力セーヴ
   wis-save: 判断力セーヴ
   cha-save: 魅力セーヴ
-  save-notes: セーヴのメモ
+  save-notes: セーヴィングスローのメモ
   acrobatics: 軽業
   animal-handling: 動物使い
   arcana: 魔法学
   athletics: 運動
-  deception: ペテン
+  deception: 欺瞞
   history: 歴史
   insight: 看破
   intimidation: 威圧
@@ -68,18 +68,18 @@ fields:
   initiative: イニシアチブ
   speed: 移動速度
   equipped: 装備中
-  hp-base: ダイスによるHP
+  hp-base: 基本HP
   hp: HP
-  temp-hp: 一時的HP
-  hit-dice-d6: ヒットダイス d6
-  hit-dice-d8: ヒットダイス d8
-  hit-dice-d10: ヒットダイス d10
-  hit-dice-d12: ヒットダイス d12
+  temp-hp: 一時HP
+  hit-dice-d6: ヒット・ダイス d6
+  hit-dice-d8: ヒット・ダイス d8
+  hit-dice-d10: ヒット・ダイス d10
+  hit-dice-d12: ヒット・ダイス d12
   passive-perception: 受動知覚
   passive-insight: 受動看破
   passive-investigation: 受動捜査
   darkvision: 暗視
-  blindsight: 盲目視
+  blindsight: 盲視
   tremorsense: 振動感知
   truesight: 真実の視覚
   damage-vulnerabilities: ダメージ脆弱性
@@ -89,67 +89,67 @@ fields:
   death-successes: 死亡セーヴ成功
   death-failures: 死亡セーヴ失敗
   exhaustion: 疲労
-  save-proficiencies: セーヴ習熟
-  skill-proficiencies: 技能習熟
+  save-proficiencies: セーヴィングスロー
+  skill-proficiencies: 技能
   expertise: 達人
-  armor-proficiencies: 防具
+  armor-proficiencies: 鎧
   weapon-proficiencies: 武器
   tool-proficiencies: 道具
   languages: 言語
   features: 特徴
   fighting-styles: 戦闘スタイル
   attack: 攻撃
-  damage-roll: ダメージロール
-  caster-level: 呪文発動者レベル
+  damage-roll: ダメージ・ロール
+  caster-level: 術者レベル
   spell-save-dc: 呪文セーヴ難易度
   spell-attack: 呪文攻撃
-  slots-1: 1レベル呪文スロット
-  slots-2: 2レベル呪文スロット
-  slots-3: 3レベル呪文スロット
-  slots-4: 4レベル呪文スロット
-  slots-5: 5レベル呪文スロット
-  slots-6: 6レベル呪文スロット
-  slots-7: 7レベル呪文スロット
-  slots-8: 8レベル呪文スロット
-  slots-9: 9レベル呪文スロット
+  slots-1: 1レベル・スロット
+  slots-2: 2レベル・スロット
+  slots-3: 3レベル・スロット
+  slots-4: 4レベル・スロット
+  slots-5: 5レベル・スロット
+  slots-6: 6レベル・スロット
+  slots-7: 7レベル・スロット
+  slots-8: 8レベル・スロット
+  slots-9: 9レベル・スロット
   spell-slots: 呪文スロット
-  slot-level: スロットレベル
-  mystic-arcanum-6: ミスティック・アルカナム(6レベル)
-  mystic-arcanum-7: ミスティック・アルカナム(7レベル)
-  mystic-arcanum-8: ミスティック・アルカナム(8レベル)
-  mystic-arcanum-9: ミスティック・アルカナム(9レベル)
+  slot-level: スロット・レベル
+  mystic-arcanum-6: 神秘の秘術(6レベル)
+  mystic-arcanum-7: 神秘の秘術(7レベル)
+  mystic-arcanum-8: 神秘の秘術(8レベル)
+  mystic-arcanum-9: 神秘の秘術(9レベル)
   signature-spell-1: 得意呪文 1
   signature-spell-2: 得意呪文 2
-  max-prepared: 準備可能な呪文数
+  max-prepared: 準備可能呪文数
   spells: 呪文
   prepared: 準備済み
-  cantrips-known: 習得済みの初級呪文
-  spells-known: 習得済みの呪文
-  invocations-known: 習得済みの魔霊秘咒
+  cantrips-known: 習得済みキャントリップ
+  spells-known: 習得済み呪文
+  invocations-known: 習得済み魔術の秘儀
   rages: 激怒
-  rage-damage: 激怒ダメージ
+  rage-damage: 激怒のダメージ
   martial-arts: マーシャルアーツ
   ki-points: 気ポイント
-  unarmored-movement: 無鎧移動
+  unarmored-movement: 鎧なしの移動速度
   sneak-attack: 急所攻撃
-  sorcery-points: ソーサリーポイント
-  channel-divinity: 神性発現
+  sorcery-points: ソーサリー・ポイント
+  channel-divinity: 神性の発動
   action-surge: アクション・サージ
-  second-wind: セカンド・ウィンド
+  second-wind: 呼吸の整え
   indomitable: 不屈
-  wild-shape: ワイルドシェイプ
+  wild-shape: 野生変身
   bardic-inspiration: バードのインスピレーション
-  divine-sense: 神聖なる感知
-  lay-on-hands: レイ・オン・ハンズ
-  cleansing-touch: 清めの接触
+  divine-sense: 神聖な感知
+  lay-on-hands: 癒しの手
+  cleansing-touch: 浄化の接触
   arcane-recovery: 秘術回復
   natural-recovery: 自然回復
   wholeness-of-body: 肉体の完全性
   holy-nimbus: 聖なる光輪
   dark-ones-own-luck: 闇の者の幸運
-  hurl-through-hell: 地獄投げ
+  hurl-through-hell: 地獄への投擲
   stroke-of-luck: 幸運の一撃
-  eldritch-master: エルドリッチ・マスター
+  eldritch-master: 魔術の達人
   breath-weapon: ブレス攻撃
   relentless-endurance: 不屈の耐久力
   category: 種別
@@ -159,10 +159,10 @@ fields:
   swim: 水泳
   climb: 登攀
   burrow: 穴掘り
-  saves: セーヴ
+  saves: セーヴィングスロー
   skills: 技能
   cr: 脅威度
-  xp-value: XP値
+  xp-value: 経験点
 words:
   Dragonborn: ドラゴンボーン
   Dwarf: ドワーフ
@@ -180,7 +180,7 @@ words:
   Barbarian: バーバリアン
   Path of the Berserker: 狂戦士の道
   Bard: バード
-  College of Lore: 知識の college
+  College of Lore: 知識の学院
   Cleric: クレリック
   Life Domain: 生命領域
   Druid: ドルイド
@@ -188,7 +188,7 @@ words:
   Fighter: ファイター
   Champion: チャンピオン
   Monk: モンク
-  Way of the Open Hand: 開かれた手の流派
+  Way of the Open Hand: 開かれた手の道
   Paladin: パラディン
   Oath of Devotion: 献身の誓い
   Ranger: レンジャー
@@ -196,23 +196,23 @@ words:
   Rogue: ローグ
   Thief: 盗賊
   Sorcerer: ソーサラー
-  Draconic Bloodline: ドラゴンの血統
+  Draconic Bloodline: ドラゴンの血脈
   Warlock: ウォーロック
   The Fiend: 邪悪なる者
   Wizard: ウィザード
-  School of Evocation: 力術の学派
-  Acolyte (background): アコライト
-  Grappler: グラップラー
+  School of Evocation: 力術学派
+  Acolyte (background): 侍者
+  Grappler: 組みつき魔
   Archery: 弓術
   Defense: 防御
   Dueling: 決闘術
   Great Weapon Fighting: 大型武器戦闘
-  Protection: 防護
+  Protection: 守り
   Two-Weapon Fighting: 二刀流戦闘
   Unarmed Strike: 素手打撃
   Acrobatics: 軽業
   Animal Handling: 動物使い
-  Arcana: 秘術
+  Arcana: 魔法学
   Athletics: 運動
   Deception: 欺瞞
   History: 歴史
@@ -238,13 +238,13 @@ words:
   Abyssal: 深淵語
   Celestial: 天上語
   Draconic: 竜語
-  Deep Speech: 地底語
+  Deep Speech: 深層語
   Infernal: 地獄語
   Primordial: 原始語
   Sylvan: 森語
   Undercommon: 地下共通語
   Aquan: 水界語
-  Auran: 風界語
+  Auran: 空界語
   Ignan: 火界語
   Terran: 地界語
   Druidic: ドルイド語
@@ -260,7 +260,7 @@ words:
   Deafened: 聴覚喪失
   Frightened: 恐怖
   Grappled: 組みつかれ
-  Incapacitated: 行動不能
+  Incapacitated: 無力状態
   Invisible: 不可視
   Paralyzed: 麻痺
   Petrified: 石化
@@ -274,8 +274,8 @@ words:
   charmed: 魅了
   deafened: 聴覚喪失
   frightened: 恐怖
-  grappled: 組みつかれた
-  incapacitated: 行動不能
+  grappled: 組みつかれ
+  incapacitated: 無力状態
   invisible: 不可視
   paralyzed: 麻痺
   petrified: 石化
@@ -298,20 +298,20 @@ words:
   radiant: 光輝
   slashing: 斬撃
   thunder: 雷鳴
-  bludgeoning, piercing, and slashing from nonmagical attacks: 非魔法の攻撃による殴打、刺突、斬撃
-  light armor: 軽装鎧
+  bludgeoning, piercing, and slashing from nonmagical attacks: 非魔法的な攻撃による殴打、刺突、斬撃
+  light armor: 軽鎧
   medium armor: 中装鎧
-  heavy armor: 重装鎧
+  heavy armor: 重鎧
   all armor: すべての鎧
   shields: 盾
   simple weapons: 単純武器
   martial weapons: 軍用武器
-  clubs: クラブ
+  clubs: 棍棒
   daggers: ダガー
   darts: ダート
   hand crossbows: ハンドクロスボウ
   javelins: ジャベリン
-  light crossbows: ライトクロスボウ
+  light crossbows: ライト・クロスボウ
   longswords: ロングソード
   maces: メイス
   quarterstaffs: クォータースタッフ
@@ -323,31 +323,31 @@ words:
   spears: スピア
   battleaxe: バトルアックス
   handaxe: ハンドアックス
-  light hammer: ライトハンマー
+  light hammer: ライト・ハンマー
   warhammer: ウォーハンマー
   longsword: ロングソード
   shortsword: ショートソード
   shortbow: ショートボウ
   longbow: ロングボウ
-  herbalism kit: 薬草学キット
+  herbalism kit: 薬草学用具
   thieves' tools: 盗賊道具
-  tinker's tools: 鋳掛け道具
-  advantage on saving throws against being charmed: 魅了に対するセーヴィング・スローに有利
-  advantage on saving throws against being frightened: 恐怖に対するセーヴィング・スローに有利
-  advantage on saving throws against poison: 毒に対するセーヴィング・スローに有利
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: 魔法に対する【知力】【判断力】【魅力】のセーヴィング・スローすべてに有利
+  tinker's tools: 修理道具
+  advantage on saving throws against being charmed: 魅了されないためのセーヴィングスローに有利
+  advantage on saving throws against being frightened: 恐怖状態にならないためのセーヴィングスローに有利
+  advantage on saving throws against poison: 毒に対するセーヴィングスローに有利
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: 魔法に対する知力、判断力、魅力のセーヴィングスローすべてに有利
   aberration: 異形
-  beast: 獣
-  celestial: 天使
+  beast: 野獣
+  celestial: 天界の者
   construct: 人造
   dragon: ドラゴン
   elemental: エレメンタル
-  fey: フェイ
-  fiend: 邪悪な来訪者
+  fey: 妖精
+  fiend: 邪悪な外界の者
   giant: 巨人
   humanoid: 人型生物
   monstrosity: 怪物
-  ooze: 粘体
+  ooze: ウーズ
   plant: 植物
   undead: アンデッド
   humanoid (any race): 人型生物(任意の種族)
@@ -355,23 +355,23 @@ words:
   humanoid (elf): 人型生物(エルフ)
   humanoid (gnoll): 人型生物(ノール)
   humanoid (gnome): 人型生物(ノーム)
-  humanoid (goblinoid): 人型生物(ゴブリノイド)
+  humanoid (goblinoid): 人型生物(ゴブリン類)
   humanoid (grimlock): 人型生物(グリムロック)
-  humanoid (human): 人型生物(人間)
-  humanoid (human, shapechanger): 人型生物(人間、変身生物)
+  humanoid (human): 人型生物(ヒューマン)
+  humanoid (human, shapechanger): 人型生物(ヒューマン、変身能力者)
   humanoid (kobold): 人型生物(コボルド)
   humanoid (lizardfolk): 人型生物(リザードフォーク)
   humanoid (orc): 人型生物(オーク)
   humanoid (sahuagin): 人型生物(サハギン)
-  fiend (demon): 邪悪な来訪者(デーモン)
-  fiend (demon, shapechanger): 邪悪な来訪者(デーモン、変身生物)
-  fiend (devil): 邪悪な来訪者(デビル)
-  fiend (devil, shapechanger): 邪悪な来訪者(デビル、変身生物)
-  fiend (shapechanger): 邪悪な来訪者(変身生物)
-  monstrosity (shapechanger): 怪物(変身生物)
+  fiend (demon): 邪悪な外界の者(デーモン)
+  fiend (demon, shapechanger): 邪悪な外界の者(デーモン、変身能力者)
+  fiend (devil): 邪悪な外界の者(デヴィル)
+  fiend (devil, shapechanger): 邪悪な外界の者(デヴィル、変身能力者)
+  fiend (shapechanger): 邪悪な外界の者(変身能力者)
+  monstrosity (shapechanger): 怪物(変身能力者)
   monstrosity (titan): 怪物(タイタン)
-  undead (shapechanger): アンデッド(変身生物)
-  swarm of Tiny beasts: 超小型の獣の群れ
+  undead (shapechanger): アンデッド(変身能力者)
+  swarm of Tiny beasts: 超小型の野獣の群れ
   lawful good: 秩序にして善
   neutral good: 中立にして善
   chaotic good: 混沌にして善
@@ -381,38 +381,41 @@ words:
   lawful evil: 秩序にして悪
   neutral evil: 中立にして悪
   chaotic evil: 混沌にして悪
-  unaligned: 無属性
+  unaligned: 属性なし
   any alignment: 任意の属性
   any chaotic alignment: 任意の混沌属性
   any evil alignment: 任意の悪属性
-  any non-good alignment: 任意の非善属性
-  any non-lawful alignment: 任意の非秩序属性
+  any non-good alignment: 善でない任意の属性
+  any non-lawful alignment: 秩序でない任意の属性
   neutral good (50%) or neutral evil (50%): 中立にして善(50%)または中立にして悪(50%)
   natural armor: 外皮
   leather armor: レザーアーマー
-  studded leather: スタデッドレザー
-  hide armor: ハイドアーマー
-  chain shirt: チェインシャツ
-  scale mail: スケイルメイル
+  studded leather: スタデッド・レザー
+  hide armor: ハイド・アーマー
+  chain shirt: チェイン・シャツ
+  scale mail: スケイル・メイル
   breastplate: ブレストプレート
-  chain mail: チェインメイル
-  splint: スプリント
-  plate: プレート
-  natural armor, shield: 自然鎧、盾
+  chain mail: チェイン・メイル
+  splint: スプリント・アーマー
+  plate: プレート・アーマー
+  natural armor, shield: 外皮、盾
   leather armor, shield: レザーアーマー、盾
-  studded leather, shield: スタデッドレザー、盾
-  hide armor, shield: ハイドアーマー、盾
-  chain shirt, shield: チェインシャツ、盾
-  scale mail, shield: スケイルメイル、盾
-  chain mail, shield: チェインメイル、盾
+  studded leather, shield: スタデッド・レザー、盾
+  hide armor, shield: ハイド・アーマー、盾
+  chain shirt, shield: チェイン・シャツ、盾
+  scale mail, shield: スケイル・メイル、盾
+  chain mail, shield: チェイン・メイル、盾
   advancement: 成長
   how your character levels up: キャラクターのレベルアップの方法
   xp: 経験点
   milestones: マイルストーン
-  your character levels up with experience points, for the foes overcome and what the story rewards: キャラクターは、倒した敵や物語での報酬に応じて得られる経験点でレベルアップします
+  your character levels up with experience points, for the foes overcome and what the story rewards: キャラクターは、倒した敵や物語の報酬として得る経験点でレベルアップします
   your character levels up at the big moments of the story: キャラクターは、物語の大きな節目でレベルアップします
-  the fifth edition from the SRD 5.1, the 2014 rules: SRD 5.1の第5版、2014年のルール
+  the fifth edition from the SRD 5.1, the 2014 rules: SRD 5.1の第5版(2014年版ルール)
   long rest: ロングレスト
   short rest: ショートレスト
-  difficult: 困難
-headline: レベル{level}の{classes}
+  difficult: 困難な
+  until long rest: ロングレストまで
+  until short rest: ショートレストまで
+  difficult terrain: 移動困難な地形
+headline: "{classes} {level}レベル"

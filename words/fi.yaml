@@ -3,21 +3,21 @@
 groups:
   Character: Hahmo
   Personality: Persoonallisuus
-  Abilities: Attribuutit
+  Abilities: Ominaisuudet
   Saving Throws: Pelastusheitot
   Skills: Taidot
   Combat: Taistelu
-  Proficiencies: Pätevyydet
-  Features: Erikoiskyvyt
+  Proficiencies: Taitavuudet
+  Features: Piirteet
   Attacks: Hyökkäykset
   Spells: Loitsut
 fields:
-  creature: rotu
+  creature: olento
   size: koko
   classes: luokat
   subclasses: alaluokat
   background: tausta
-  feats: etuudet
+  feats: talentit
   alignment: vakaumus
   level: taso
   xp: XP
@@ -30,64 +30,64 @@ fields:
   dex: KET
   con: KES
   int: ÄLY
-  wis: VII
+  wis: VIS
   cha: KAR
   str-mod: VOI-muunnin
   dex-mod: KET-muunnin
   con-mod: KES-muunnin
   int-mod: ÄLY-muunnin
-  wis-mod: VII-muunnin
+  wis-mod: VIS-muunnin
   cha-mod: KAR-muunnin
-  proficiency: taitobonus
+  proficiency: taitavuusbonus
   str-save: VOI-pelastusheitto
   dex-save: KET-pelastusheitto
   con-save: KES-pelastusheitto
   int-save: ÄLY-pelastusheitto
-  wis-save: VII-pelastusheitto
+  wis-save: VIS-pelastusheitto
   cha-save: KAR-pelastusheitto
   save-notes: pelastusheittojen muistiinpanot
   acrobatics: akrobatia
   animal-handling: eläintenkäsittely
-  arcana: taikatieto
-  athletics: atletiikka
-  deception: huijaus
+  arcana: arkaanitieto
+  athletics: urheilu
+  deception: valehtelu
   history: historia
   insight: vaisto
   intimidation: pelottelu
   investigation: tutkiminen
   medicine: lääketiede
   nature: luonto
-  perception: havaitseminen
+  perception: havainnointi
   performance: esiintyminen
   persuasion: suostuttelu
   religion: uskonto
   sleight-of-hand: näppäryys
-  stealth: hiippailu
+  stealth: hiiviskely
   survival: selviytyminen
   ac: PL
   initiative: aloite
   speed: nopeus
   equipped: varustettu
-  hp-base: OP nopista
-  hp: OP
-  temp-hp: tilapäiset OP
+  hp-base: perus-HP
+  hp: HP
+  temp-hp: tilapäiset HP
   hit-dice-d6: osumanopat d6
   hit-dice-d8: osumanopat d8
   hit-dice-d10: osumanopat d10
   hit-dice-d12: osumanopat d12
-  passive-perception: passiivinen havaitseminen
+  passive-perception: passiivinen havainnointi
   passive-insight: passiivinen vaisto
   passive-investigation: passiivinen tutkiminen
   darkvision: pimeänäkö
   blindsight: sokeanäkö
-  tremorsense: tärinäaisti
+  tremorsense: tärinätaju
   truesight: tosinäkö
   damage-vulnerabilities: vahinkoheikkoudet
   damage-resistances: vahinkovastustukset
   damage-immunities: vahinkoimmuniteetit
   condition-immunities: tilaimmuniteetit
-  death-successes: kuolemanheittojen onnistumiset
-  death-failures: kuolemanheittojen epäonnistumiset
+  death-successes: kuolemanpelastusten onnistumiset
+  death-failures: kuolemanpelastusten epäonnistumiset
   exhaustion: uupumus
   save-proficiencies: pelastusheitot
   skill-proficiencies: taidot
@@ -96,65 +96,65 @@ fields:
   weapon-proficiencies: aseet
   tool-proficiencies: työkalut
   languages: kielet
-  features: erikoiskyvyt
+  features: piirteet
   fighting-styles: taistelutyylit
   attack: hyökkäys
   damage-roll: vahinkoheitto
   caster-level: loitsijataso
-  spell-save-dc: loitsujen VL
+  spell-save-dc: loitsujen pelastusheiton VT
   spell-attack: loitsuhyökkäys
-  slots-1: 1. tason loitsupaikat
-  slots-2: 2. tason loitsupaikat
-  slots-3: 3. tason loitsupaikat
-  slots-4: 4. tason loitsupaikat
-  slots-5: 5. tason loitsupaikat
-  slots-6: 6. tason loitsupaikat
-  slots-7: 7. tason loitsupaikat
-  slots-8: 8. tason loitsupaikat
-  slots-9: 9. tason loitsupaikat
+  slots-1: 1. tason paikat
+  slots-2: 2. tason paikat
+  slots-3: 3. tason paikat
+  slots-4: 4. tason paikat
+  slots-5: 5. tason paikat
+  slots-6: 6. tason paikat
+  slots-7: 7. tason paikat
+  slots-8: 8. tason paikat
+  slots-9: 9. tason paikat
   spell-slots: loitsupaikat
   slot-level: paikan taso
-  mystic-arcanum-6: mystinen arkaani (6. taso)
-  mystic-arcanum-7: mystinen arkaani (7. taso)
-  mystic-arcanum-8: mystinen arkaani (8. taso)
-  mystic-arcanum-9: mystinen arkaani (9. taso)
+  mystic-arcanum-6: mystinen arkanum (6. taso)
+  mystic-arcanum-7: mystinen arkanum (7. taso)
+  mystic-arcanum-8: mystinen arkanum (8. taso)
+  mystic-arcanum-9: mystinen arkanum (9. taso)
   signature-spell-1: tunnusloitsu 1
   signature-spell-2: tunnusloitsu 2
-  max-prepared: valmisteltavat enintään
+  max-prepared: valmisteltavia enintään
   spells: loitsut
   prepared: valmisteltu
-  cantrips-known: tunnetut taikatempit
+  cantrips-known: tunnetut taikatemput
   spells-known: tunnetut loitsut
   invocations-known: tunnetut manaukset
   rages: raivot
   rage-damage: raivon vahinko
-  martial-arts: kamppailutaidot
+  martial-arts: kamppailulajit
   ki-points: ki-pisteet
   unarmored-movement: panssaroimaton liike
-  sneak-attack: väijytyshyökkäys
-  sorcery-points: velhopisteet
-  channel-divinity: jumaluuden kanavointi
-  action-surge: toimintapurkaus
-  second-wind: toinen tuuli
+  sneak-attack: salahyökkäys
+  sorcery-points: sorcery-pisteet
+  channel-divinity: jumalallisen voiman kanavointi
+  action-surge: toimintapuuska
+  second-wind: toinen tuulahdus
   indomitable: lannistumaton
   wild-shape: villi muoto
   bardic-inspiration: bardin inspiraatio
   divine-sense: jumalallinen aisti
-  lay-on-hands: käsien päällepano
+  lay-on-hands: käsien päällepanu
   cleansing-touch: puhdistava kosketus
   arcane-recovery: arkaaninen palautuminen
   natural-recovery: luonnollinen palautuminen
-  wholeness-of-body: kehon eheys
+  wholeness-of-body: ruumiin eheys
   holy-nimbus: pyhä sädekehä
-  dark-ones-own-luck: pimeän oma onni
-  hurl-through-hell: heitto helvetin läpi
+  dark-ones-own-luck: Pimeän oma onni
+  hurl-through-hell: syöksy helvetin läpi
   stroke-of-luck: onnenkantamoinen
-  eldritch-master: taikamestari
+  eldritch-master: yliluonnollinen mestari
   breath-weapon: henkäysase
-  relentless-endurance: säälimätön kestävyys
+  relentless-endurance: väsymätön sitkeys
   category: tyyppi
   armor: panssari
-  hp-dice: OP-nopat
+  hp-dice: HP-nopat
   fly: lentäminen
   swim: uiminen
   climb: kiipeäminen
@@ -172,34 +172,34 @@ words:
   Gnome: Gnomi
   Rock Gnome: Kivignomi
   Half-Elf: Puolihaltia
-  Half-Orc: Puoliörkki
+  Half-Orc: Puoliorkki
   Halfling: Halfling
-  Lightfoot Halfling: Kevytjalkahalfling
+  Lightfoot Halfling: Kevytjalkainen halfling
   Human: Ihminen
   Tiefling: Tiefling
   Barbarian: Barbaari
   Path of the Berserker: Berserkerin polku
   Bard: Bardi
   College of Lore: Tiedon kollegio
-  Cleric: Kleeri
-  Life Domain: Elämän alue
+  Cleric: Pappi
+  Life Domain: Elämän domeeni
   Druid: Druidi
-  Circle of the Land: Maan piiri
-  Fighter: Taistelija
+  Circle of the Land: Maan kehä
+  Fighter: Soturi
   Champion: Mestari
   Monk: Munkki
   Way of the Open Hand: Avoimen käden tie
   Paladin: Paladiini
   Oath of Devotion: Omistautumisen vala
-  Ranger: Samooja
+  Ranger: Ranger
   Hunter: Metsästäjä
-  Rogue: Rosvo
+  Rogue: Veijari
   Thief: Varas
-  Sorcerer: Velho
+  Sorcerer: Sorcerer
   Draconic Bloodline: Lohikäärmeverilinja
   Warlock: Warlock
   The Fiend: Paholainen
-  Wizard: Taikuri
+  Wizard: Velho
   School of Evocation: Evokaation koulukunta
   Acolyte (background): Akolyytti
   Grappler: Painija
@@ -212,34 +212,34 @@ words:
   Unarmed Strike: Aseeton isku
   Acrobatics: Akrobatia
   Animal Handling: Eläintenkäsittely
-  Arcana: Arkaaninen tieto
-  Athletics: Atletiikka
-  Deception: Huijaus
+  Arcana: Arkaanitieto
+  Athletics: Urheilu
+  Deception: Valehtelu
   History: Historia
-  Insight: Vaistonvaraisuus
+  Insight: Vaisto
   Intimidation: Pelottelu
   Investigation: Tutkiminen
   Medicine: Lääketiede
   Nature: Luonto
-  Perception: Havaitseminen
+  Perception: Havainnointi
   Performance: Esiintyminen
   Persuasion: Suostuttelu
   Religion: Uskonto
   Sleight of Hand: Näppäryys
-  Stealth: Hiipiminen
+  Stealth: Hiiviskely
   Survival: Selviytyminen
   Common: Yleiskieli
   Dwarvish: Kääpiökieli
   Elvish: Haltiakieli
   Giant: Jättiläiskieli
   Gnomish: Gnomikieli
-  Goblin: Goblinikieli
-  Orc: Örkkikieli
-  Abyssal: Abyssaali
-  Celestial: Celestiaali
-  Draconic: Lohikäärmeiden kieli
-  Deep Speech: Syväpuhe
-  Infernal: Infernaali
+  Goblin: Goblinkieli
+  Orc: Orkkikieli
+  Abyssal: Syvyyskieli
+  Celestial: Taivaallinen
+  Draconic: Lohikäärmekieli
+  Deep Speech: Syvä puhe
+  Infernal: Helvetinkieli
   Primordial: Alkukieli
   Sylvan: Metsänkieli
   Undercommon: Alayleiskieli
@@ -247,8 +247,8 @@ words:
   Auran: Auraani
   Ignan: Ignaani
   Terran: Terraani
-  Druidic: Druidien kieli
-  Thieves' Cant: Varkaiden kieli
+  Druidic: Druidikieli
+  Thieves' Cant: Varkaiden salakieli
   Tiny: Pikkiriikkinen
   Small: Pieni
   Medium: Keskikokoinen
@@ -265,14 +265,14 @@ words:
   Paralyzed: Halvaantunut
   Petrified: Kivettynyt
   Poisoned: Myrkytetty
-  Prone: Maassa
-  Restrained: Kahlittu
-  Stunned: Lamaantunut
+  Prone: Selällään
+  Restrained: Sidottu
+  Stunned: Tyrmistynyt
   Unconscious: Tajuton
   Exhaustion: Uupumus
   blinded: sokaistunut
   charmed: lumottu
-  deafened: kuuroutunut
+  deafened: kuurottunut
   frightened: peloissaan
   grappled: otteessa
   incapacitated: toimintakyvytön
@@ -280,13 +280,13 @@ words:
   paralyzed: halvaantunut
   petrified: kivettynyt
   poisoned: myrkytetty
-  prone: maassa
-  restrained: kahlittu
-  stunned: lamaantunut
+  prone: selällään
+  restrained: sidottu
+  stunned: tyrmistynyt
   unconscious: tajuton
   exhaustion: uupumus
   acid: happo
-  bludgeoning: iskevä
+  bludgeoning: murskaava
   cold: kylmä
   fire: tuli
   force: voima
@@ -298,20 +298,20 @@ words:
   radiant: säteilevä
   slashing: viiltävä
   thunder: ukkonen
-  bludgeoning, piercing, and slashing from nonmagical attacks: iskevä, lävistävä ja viiltävä vahinko ei-maagisista hyökkäyksistä
-  light armor: kevyt haarniska
-  medium armor: keskiraskas haarniska
-  heavy armor: raskas haarniska
-  all armor: kaikki haarniskat
+  bludgeoning, piercing, and slashing from nonmagical attacks: murskaava, lävistävä ja viiltävä vahinko ei-maagisista hyökkäyksistä
+  light armor: kevyet panssarit
+  medium armor: keskiraskaat panssarit
+  heavy armor: raskaat panssarit
+  all armor: kaikki panssarit
   shields: kilvet
   simple weapons: yksinkertaiset aseet
   martial weapons: sotilasaseet
   clubs: nuijat
   daggers: tikarit
   darts: heittonuolet
-  hand crossbows: käsijouset
+  hand crossbows: käsivarsijouset
   javelins: heittokeihäät
-  light crossbows: kevyet jousipyssyt
+  light crossbows: kevyet varsijouset
   longswords: pitkämiekat
   maces: mailat
   quarterstaffs: sauvat
@@ -320,7 +320,7 @@ words:
   shortswords: lyhytmiekat
   sickles: sirpit
   slings: linkoset
-  spears: keihäät
+  spears: peitset
   battleaxe: taistelukirves
   handaxe: käsikirves
   light hammer: kevyt vasara
@@ -329,24 +329,24 @@ words:
   shortsword: lyhytmiekka
   shortbow: lyhytjousi
   longbow: pitkäjousi
-  herbalism kit: yrttivarusteet
+  herbalism kit: yrttitarvikkeet
   thieves' tools: varkaantyökalut
   tinker's tools: nikkarin työkalut
-  advantage on saving throws against being charmed: etu pelastusheitoissa lumoamista vastaan
-  advantage on saving throws against being frightened: etu pelastusheitoissa pelottelua vastaan
+  advantage on saving throws against being charmed: etu pelastusheitoissa lumoutumista vastaan
+  advantage on saving throws against being frightened: etu pelastusheitoissa pelästymistä vastaan
   advantage on saving throws against poison: etu pelastusheitoissa myrkkyä vastaan
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: etu kaikissa Älykkyyden, Viisauden ja Karismän pelastusheitoissa magiaa vastaan
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: etu kaikissa Älykkyys-, Viisaus- ja Karisma-pelastusheitoissa magiaa vastaan
   aberration: aberraatio
   beast: peto
-  celestial: celestiaali
-  construct: kehote
+  celestial: taivaallinen
+  construct: rakennelma
   dragon: lohikäärme
   elemental: elementaali
   fey: keijuolento
-  fiend: piru
+  fiend: paholainen
   giant: jättiläinen
   humanoid: humanoidi
-  monstrosity: hirviö
+  monstrosity: hirvitys
   ooze: lima
   plant: kasvi
   undead: epäkuollut
@@ -361,15 +361,15 @@ words:
   humanoid (human, shapechanger): humanoidi (ihminen, muodonmuuttaja)
   humanoid (kobold): humanoidi (kobolti)
   humanoid (lizardfolk): humanoidi (lisko-ihminen)
-  humanoid (orc): humanoidi (örkki)
+  humanoid (orc): humanoidi (orkki)
   humanoid (sahuagin): humanoidi (sahuagin)
-  fiend (demon): piru (demoni)
-  fiend (demon, shapechanger): piru (demoni, muodonmuuttaja)
-  fiend (devil): piru (paholainen)
-  fiend (devil, shapechanger): piru (paholainen, muodonmuuttaja)
-  fiend (shapechanger): piru (muodonmuuttaja)
-  monstrosity (shapechanger): hirviö (muodonmuuttaja)
-  monstrosity (titan): hirviö (titaani)
+  fiend (demon): paholainen (demoni)
+  fiend (demon, shapechanger): paholainen (demoni, muodonmuuttaja)
+  fiend (devil): paholainen (piru)
+  fiend (devil, shapechanger): paholainen (piru, muodonmuuttaja)
+  fiend (shapechanger): paholainen (muodonmuuttaja)
+  monstrosity (shapechanger): hirvitys (muodonmuuttaja)
+  monstrosity (titan): hirvitys (titaani)
   undead (shapechanger): epäkuollut (muodonmuuttaja)
   swarm of Tiny beasts: parvi pikkiriikkisiä petoja
   lawful good: lainkuuliainen hyvä
@@ -381,7 +381,7 @@ words:
   lawful evil: lainkuuliainen paha
   neutral evil: neutraali paha
   chaotic evil: kaoottinen paha
-  unaligned: vailla vakaumusta
+  unaligned: vakaumukseton
   any alignment: mikä tahansa vakaumus
   any chaotic alignment: mikä tahansa kaoottinen vakaumus
   any evil alignment: mikä tahansa paha vakaumus
@@ -389,30 +389,33 @@ words:
   any non-lawful alignment: mikä tahansa ei-lainkuuliainen vakaumus
   neutral good (50%) or neutral evil (50%): neutraali hyvä (50 %) tai neutraali paha (50 %)
   natural armor: luonnollinen panssari
-  leather armor: nahkahaarniska
-  studded leather: niittinahkahaarniska
-  hide armor: taljahaarniska
+  leather armor: nahkapanssari
+  studded leather: nastoitettu nahka
+  hide armor: turkispanssari
   chain shirt: rengaspaita
-  scale mail: suomupanssari
+  scale mail: suomuspanssari
   breastplate: rintapanssari
-  chain mail: rengaspanssari
-  splint: levypanssari
-  plate: täysi levyhaarniska
+  chain mail: rengashaarniska
+  splint: liuskahaarniska
+  plate: levyhaarniska
   natural armor, shield: luonnollinen panssari, kilpi
   leather armor, shield: nahkapanssari, kilpi
-  studded leather, shield: niitattu nahkapanssari, kilpi
-  hide armor, shield: taljapanssari, kilpi
+  studded leather, shield: nastoitettu nahka, kilpi
+  hide armor, shield: turkispanssari, kilpi
   chain shirt, shield: rengaspaita, kilpi
-  scale mail, shield: suomupanssari, kilpi
-  chain mail, shield: rengaspanssari, kilpi
-  advancement: Kehitys
-  how your character levels up: miten hahmosi nousee tasoa
+  scale mail, shield: suomuspanssari, kilpi
+  chain mail, shield: rengashaarniska, kilpi
+  advancement: Eteneminen
+  how your character levels up: miten hahmosi nousee tasoja
   xp: Kokemuspisteet
-  milestones: Virstanpylväät
-  your character levels up with experience points, for the foes overcome and what the story rewards: hahmosi nousee tasoa kokemuspisteillä, jotka saa voitetuista vastustajista ja tarinan palkitsemista asioista
-  your character levels up at the big moments of the story: hahmosi nousee tasoa tarinan suurissa hetkissä
+  milestones: Merkkipaalut
+  your character levels up with experience points, for the foes overcome and what the story rewards: hahmosi nousee tasoja kokemuspisteillä, joita saa voitetuista vihollisista ja tarinan palkitsemista teoista
+  your character levels up at the big moments of the story: hahmosi nousee tasoja tarinan suurissa hetkissä
   the fifth edition from the SRD 5.1, the 2014 rules: viides painos SRD 5.1:stä, vuoden 2014 säännöt
   long rest: pitkä lepo
   short rest: lyhyt lepo
   difficult: vaikea
+  until long rest: pitkään lepoon asti
+  until short rest: lyhyeen lepoon asti
+  difficult terrain: vaikeakulkuinen maasto
 headline: "{classes}, taso {level}"

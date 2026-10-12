@@ -7,7 +7,7 @@ groups:
   Saving Throws: सेविंग थ्रो
   Skills: कौशल
   Combat: लड़ाई
-  Proficiencies: निपुणताएँ
+  Proficiencies: दक्षताएँ
   Features: विशेषताएँ
   Attacks: हमले
   Spells: मंत्र
@@ -18,7 +18,7 @@ fields:
   subclasses: सबक्लास
   background: पृष्ठभूमि
   feats: फ़ीट
-  alignment: नैतिक झुकाव
+  alignment: संरेखण
   level: लेवल
   xp: XP
   inspiration: प्रेरणा
@@ -27,28 +27,28 @@ fields:
   bond: बंधन
   flaw: कमज़ोरी
   str: शक्ति
-  dex: फुर्ती
+  dex: चपलता
   con: सहनशक्ति
   int: बुद्धि
   wis: विवेक
   cha: करिश्मा
   str-mod: शक्ति मॉडिफ़ायर
-  dex-mod: फुर्ती मॉडिफ़ायर
+  dex-mod: चपलता मॉडिफ़ायर
   con-mod: सहनशक्ति मॉडिफ़ायर
   int-mod: बुद्धि मॉडिफ़ायर
   wis-mod: विवेक मॉडिफ़ायर
   cha-mod: करिश्मा मॉडिफ़ायर
-  proficiency: निपुणता बोनस
+  proficiency: दक्षता बोनस
   str-save: शक्ति सेविंग थ्रो
-  dex-save: फुर्ती सेविंग थ्रो
+  dex-save: चपलता सेविंग थ्रो
   con-save: सहनशक्ति सेविंग थ्रो
   int-save: बुद्धि सेविंग थ्रो
   wis-save: विवेक सेविंग थ्रो
   cha-save: करिश्मा सेविंग थ्रो
-  save-notes: सेविंग थ्रो के नोट
+  save-notes: सेविंग थ्रो नोट
   acrobatics: कलाबाज़ी
   animal-handling: पशु संभालना
-  arcana: तंत्र-मंत्र ज्ञान
+  arcana: तंत्रविद्या
   athletics: एथलेटिक्स
   deception: छल
   history: इतिहास
@@ -57,51 +57,51 @@ fields:
   investigation: जाँच-पड़ताल
   medicine: चिकित्सा
   nature: प्रकृति
-  perception: बोध
+  perception: अवलोकन
   performance: प्रदर्शन
   persuasion: मनाना
   religion: धर्म
   sleight-of-hand: हाथ की सफ़ाई
   stealth: छिपना
-  survival: उत्तरजीविता
-  ac: कवच वर्ग
-  initiative: पहल
+  survival: जीवित रहना
+  ac: AC
+  initiative: इनिशिएटिव
   speed: गति
-  equipped: धारण किया हुआ
-  hp-base: पासों से HP
+  equipped: धारण किया
+  hp-base: बेस HP
   hp: HP
   temp-hp: अस्थायी HP
   hit-dice-d6: हिट पासे d6
   hit-dice-d8: हिट पासे d8
   hit-dice-d10: हिट पासे d10
   hit-dice-d12: हिट पासे d12
-  passive-perception: निष्क्रिय बोध
+  passive-perception: निष्क्रिय अवलोकन
   passive-insight: निष्क्रिय अंतर्दृष्टि
   passive-investigation: निष्क्रिय जाँच-पड़ताल
-  darkvision: अंधकार दृष्टि
-  blindsight: अंध दृष्टि
-  tremorsense: कंपन बोध
-  truesight: सत्य दृष्टि
-  damage-vulnerabilities: नुकसान के प्रति संवेदनशीलता
-  damage-resistances: नुकसान प्रतिरोध
-  damage-immunities: नुकसान से रोग-प्रतिरक्षा
-  condition-immunities: अवस्थाओं से रोग-प्रतिरक्षा
+  darkvision: अंधेरे में देखना
+  blindsight: अंध-दृष्टि
+  tremorsense: कंपन-बोध
+  truesight: सत्य-दृष्टि
+  damage-vulnerabilities: डैमेज कमज़ोरियाँ
+  damage-resistances: डैमेज प्रतिरोध
+  damage-immunities: डैमेज से प्रतिरक्षा
+  condition-immunities: स्थिति प्रतिरक्षा
   death-successes: मृत्यु सफलताएँ
   death-failures: मृत्यु विफलताएँ
   exhaustion: थकावट
-  save-proficiencies: सेविंग थ्रो
-  skill-proficiencies: कौशल
+  save-proficiencies: सेविंग थ्रो दक्षताएँ
+  skill-proficiencies: कौशल दक्षताएँ
   expertise: विशेषज्ञता
-  armor-proficiencies: कवच
-  weapon-proficiencies: हथियार
-  tool-proficiencies: औज़ार
+  armor-proficiencies: कवच दक्षताएँ
+  weapon-proficiencies: हथियार दक्षताएँ
+  tool-proficiencies: औज़ार दक्षताएँ
   languages: भाषाएँ
   features: विशेषताएँ
   fighting-styles: लड़ाई की शैलियाँ
   attack: हमला
-  damage-roll: नुकसान रोल
-  caster-level: मंत्रधारी लेवल
-  spell-save-dc: मंत्र सेव DC
+  damage-roll: डैमेज रोल
+  caster-level: मंत्रवाहक लेवल
+  spell-save-dc: मंत्र सेविंग थ्रो DC
   spell-attack: मंत्र हमला
   slots-1: लेवल 1 स्लॉट
   slots-2: लेवल 2 स्लॉट
@@ -114,10 +114,10 @@ fields:
   slots-9: लेवल 9 स्लॉट
   spell-slots: मंत्र स्लॉट
   slot-level: स्लॉट लेवल
-  mystic-arcanum-6: रहस्यमय आर्केनम (लेवल 6)
-  mystic-arcanum-7: रहस्यमय आर्केनम (लेवल 7)
-  mystic-arcanum-8: रहस्यमय आर्केनम (लेवल 8)
-  mystic-arcanum-9: रहस्यमय आर्केनम (लेवल 9)
+  mystic-arcanum-6: रहस्यमय आर्कनम (लेवल 6)
+  mystic-arcanum-7: रहस्यमय आर्कनम (लेवल 7)
+  mystic-arcanum-8: रहस्यमय आर्कनम (लेवल 8)
+  mystic-arcanum-9: रहस्यमय आर्कनम (लेवल 9)
   signature-spell-1: विशिष्ट मंत्र 1
   signature-spell-2: विशिष्ट मंत्र 2
   max-prepared: अधिकतम तैयार मंत्र
@@ -125,32 +125,32 @@ fields:
   prepared: तैयार
   cantrips-known: ज्ञात कैंट्रिप
   spells-known: ज्ञात मंत्र
-  invocations-known: ज्ञात इन्वोकेशन
+  invocations-known: ज्ञात आह्वान
   rages: क्रोध
-  rage-damage: क्रोध का नुकसान
+  rage-damage: क्रोध डैमेज
   martial-arts: मार्शल आर्ट्स
   ki-points: की पॉइंट
-  unarmored-movement: बिना कवच गति
-  sneak-attack: चुपके से हमला
-  sorcery-points: जादूगरी अंक
-  channel-divinity: दिव्य शक्ति संचार
+  unarmored-movement: कवच-रहित गति
+  sneak-attack: छिपकर हमला
+  sorcery-points: जादू पॉइंट
+  channel-divinity: दिव्यता का आह्वान
   action-surge: एक्शन सर्ज
   second-wind: सेकंड विंड
   indomitable: अदम्य
   wild-shape: वन्य रूप
-  bardic-inspiration: बार्डिक प्रेरणा
+  bardic-inspiration: बार्ड प्रेरणा
   divine-sense: दिव्य बोध
   lay-on-hands: हाथों से उपचार
-  cleansing-touch: शुद्धिकरण स्पर्श
-  arcane-recovery: आर्केन रिकवरी
-  natural-recovery: प्राकृतिक रिकवरी
+  cleansing-touch: शुद्धिकारी स्पर्श
+  arcane-recovery: तांत्रिक पुनर्प्राप्ति
+  natural-recovery: प्राकृतिक पुनर्प्राप्ति
   wholeness-of-body: शरीर की संपूर्णता
-  holy-nimbus: पवित्र प्रभामंडल
-  dark-ones-own-luck: अंधकार स्वामी का सौभाग्य
+  holy-nimbus: पवित्र आभामंडल
+  dark-ones-own-luck: अंधेरे वाले की अपनी किस्मत
   hurl-through-hell: नरक में फेंकना
-  stroke-of-luck: किस्मत का दांव
-  eldritch-master: एल्ड्रिच मास्टर
-  breath-weapon: श्वास अस्त्र
+  stroke-of-luck: किस्मत का दाँव
+  eldritch-master: रहस्यमय महारथी
+  breath-weapon: श्वास-अस्त्र
   relentless-endurance: अथक सहनशक्ति
   category: श्रेणी
   armor: कवच
@@ -162,98 +162,98 @@ fields:
   saves: सेविंग थ्रो
   skills: कौशल
   cr: चुनौती
-  xp-value: XP मूल्य
+  xp-value: XP मान
 words:
   Dragonborn: ड्रैगनबॉर्न
-  Dwarf: बौना
-  Hill Dwarf: पहाड़ी बौना
-  Elf: एल्फ
-  High Elf: उच्च एल्फ
+  Dwarf: ड्वार्फ़
+  Hill Dwarf: हिल ड्वार्फ़
+  Elf: एल्फ़
+  High Elf: हाई एल्फ़
   Gnome: नोम
-  Rock Gnome: चट्टानी नोम
-  Half-Elf: हाफ-एल्फ
-  Half-Orc: हाफ-ऑर्क
-  Halfling: हाफलिंग
-  Lightfoot Halfling: लाइटफुट हाफलिंग
-  Human: मानव
+  Rock Gnome: रॉक नोम
+  Half-Elf: हाफ़-एल्फ़
+  Half-Orc: हाफ़-ऑर्क
+  Halfling: हाफ़लिंग
+  Lightfoot Halfling: लाइटफ़ुट हाफ़लिंग
+  Human: मनुष्य
   Tiefling: टीफ़लिंग
-  Barbarian: बर्बरीय
+  Barbarian: बारबेरियन
   Path of the Berserker: बर्सर्कर का मार्ग
   Bard: बार्ड
-  College of Lore: विद्या महाविद्यालय
+  College of Lore: ज्ञान का कॉलेज
   Cleric: क्लेरिक
-  Life Domain: जीवन क्षेत्र
-  Druid: ड्रूइड
+  Life Domain: जीवन डोमेन
+  Druid: ड्रुइड
   Circle of the Land: भूमि का मंडल
-  Fighter: योद्धा
+  Fighter: फ़ाइटर
   Champion: चैंपियन
-  Monk: भिक्षु
+  Monk: मोंक
   Way of the Open Hand: खुले हाथ का मार्ग
   Paladin: पलाडिन
-  Oath of Devotion: भक्ति की शपथ
+  Oath of Devotion: समर्पण की शपथ
   Ranger: रेंजर
   Hunter: शिकारी
-  Rogue: रॉग
+  Rogue: रोग
   Thief: चोर
   Sorcerer: सॉर्सरर
-  Draconic Bloodline: ड्रैकोनिक वंश
+  Draconic Bloodline: ड्रैगन वंश
   Warlock: वॉरलॉक
   The Fiend: दानव
   Wizard: विज़ार्ड
-  School of Evocation: आह्वान विद्यालय
-  Acolyte (background): सेवक
-  Grappler: पकड़ने वाला
+  School of Evocation: आह्वान की शाखा
+  Acolyte (background): अकोलाइट
+  Grappler: ग्रैपलर
   Archery: तीरंदाज़ी
   Defense: रक्षा
-  Dueling: द्वंद्वयुद्ध
-  Great Weapon Fighting: भारी हथियार युद्ध
+  Dueling: द्वंद्व
+  Great Weapon Fighting: भारी हथियार से लड़ाई
   Protection: सुरक्षा
-  Two-Weapon Fighting: दो हथियार युद्ध
-  Unarmed Strike: निहत्था प्रहार
+  Two-Weapon Fighting: दो हथियारों से लड़ाई
+  Unarmed Strike: निहत्था वार
   Acrobatics: कलाबाज़ी
-  Animal Handling: पशु संचालन
-  Arcana: आर्केना
+  Animal Handling: पशु संभालना
+  Arcana: तंत्रविद्या
   Athletics: एथलेटिक्स
   Deception: छल
   History: इतिहास
   Insight: अंतर्दृष्टि
   Intimidation: धमकाना
-  Investigation: जांच-पड़ताल
+  Investigation: जाँच-पड़ताल
   Medicine: चिकित्सा
   Nature: प्रकृति
-  Perception: बोध
+  Perception: अवलोकन
   Performance: प्रदर्शन
   Persuasion: मनाना
   Religion: धर्म
   Sleight of Hand: हाथ की सफ़ाई
-  Stealth: छुपना
-  Survival: उत्तरजीविता
-  Common: सामान्य
-  Dwarvish: बौनी भाषा
+  Stealth: छिपना
+  Survival: जीवित रहना
+  Common: कॉमन
+  Dwarvish: ड्वार्विश
   Elvish: एल्विश
-  Giant: दैत्य भाषा
+  Giant: जायंट
   Gnomish: नोमिश
-  Goblin: गॉब्लिन
-  Orc: ऑर्क भाषा
+  Goblin: गोब्लिन
+  Orc: ऑर्क
   Abyssal: एबिसल
-  Celestial: दिव्य
+  Celestial: सेलेस्टियल
   Draconic: ड्रैकोनिक
-  Deep Speech: गहन वाणी
-  Infernal: इन्फर्नल
-  Primordial: आदिम
+  Deep Speech: डीप स्पीच
+  Infernal: इन्फ़र्नल
+  Primordial: प्राइमोर्डियल
   Sylvan: सिल्वन
   Undercommon: अंडरकॉमन
   Aquan: एक्वान
   Auran: ऑरान
   Ignan: इग्नान
   Terran: टेरान
-  Druidic: ड्रूइडिक
+  Druidic: ड्रुइडिक
   Thieves' Cant: चोरों की बोली
   Tiny: अति सूक्ष्म
   Small: छोटा
   Medium: मध्यम
-  Large: विशाल
-  Huge: अति विशाल
+  Large: बड़ा
+  Huge: विशाल
   Gargantuan: महाकाय
   Blinded: अंधा
   Charmed: मोहित
@@ -264,9 +264,9 @@ words:
   Invisible: अदृश्य
   Paralyzed: लकवाग्रस्त
   Petrified: पथराया हुआ
-  Poisoned: विषग्रस्त
-  Prone: लेटा हुआ
-  Restrained: जकड़ा हुआ
+  Poisoned: ज़हरीला
+  Prone: चित
+  Restrained: बंधा हुआ
   Stunned: स्तब्ध
   Unconscious: बेहोश
   Exhaustion: थकावट
@@ -274,57 +274,57 @@ words:
   charmed: मोहित
   deafened: बहरा
   frightened: भयभीत
-  grappled: पकड़ा हुआ
+  grappled: जकड़ा हुआ
   incapacitated: अक्षम
   invisible: अदृश्य
   paralyzed: लकवाग्रस्त
   petrified: पथराया हुआ
-  poisoned: विषग्रस्त
-  prone: लेटा हुआ
-  restrained: जकड़ा हुआ
+  poisoned: ज़हरीला
+  prone: चित
+  restrained: बंधा हुआ
   stunned: स्तब्ध
   unconscious: बेहोश
   exhaustion: थकावट
-  acid: अम्ल
+  acid: एसिड
   bludgeoning: कुचलने वाला
-  cold: शीत
-  fire: अग्नि
-  force: बल
+  cold: ठंड
+  fire: आग
+  force: फ़ोर्स
   lightning: बिजली
   necrotic: नेक्रोटिक
   piercing: भेदने वाला
-  poison: विष
+  poison: ज़हर
   psychic: मानसिक
-  radiant: दीप्तिमान
+  radiant: रेडिएंट
   slashing: काटने वाला
   thunder: गर्जन
   bludgeoning, piercing, and slashing from nonmagical attacks: गैर-जादुई हमलों से कुचलने वाला, भेदने वाला और काटने वाला
-  light armor: हल्का कवच
+  light armor: हल्के कवच
   medium armor: मध्यम कवच
   heavy armor: भारी कवच
   all armor: सभी कवच
   shields: ढालें
   simple weapons: साधारण हथियार
-  martial weapons: युद्ध हथियार
-  clubs: गदगे
+  martial weapons: युद्ध के हथियार
+  clubs: गदाएँ
   daggers: खंजर
   darts: डार्ट
-  hand crossbows: हाथ क्रॉसबो
-  javelins: भाले (जेवलिन)
+  hand crossbows: हाथ के क्रॉसबो
+  javelins: बरछे
   light crossbows: हल्के क्रॉसबो
   longswords: लंबी तलवारें
-  maces: गदाएँ
-  quarterstaffs: क्वार्टरस्टाफ
+  maces: गदा-मुग्दर
+  quarterstaffs: लाठियाँ
   rapiers: रेपियर
   scimitars: टेढ़ी तलवारें
   shortswords: छोटी तलवारें
-  sickles: हँसिए
+  sickles: दरांतियाँ
   slings: गुलेलें
-  spears: बरछे
-  battleaxe: युद्ध कुल्हाड़ी
-  handaxe: हाथ कुल्हाड़ी
+  spears: भाले
+  battleaxe: युद्ध-कुल्हाड़ी
+  handaxe: हाथ की कुल्हाड़ी
   light hammer: हल्का हथौड़ा
-  warhammer: युद्ध हथौड़ा
+  warhammer: युद्ध-हथौड़ा
   longsword: लंबी तलवार
   shortsword: छोटी तलवार
   shortbow: छोटा धनुष
@@ -332,87 +332,90 @@ words:
   herbalism kit: जड़ी-बूटी किट
   thieves' tools: चोरी के औज़ार
   tinker's tools: मिस्त्री के औज़ार
-  advantage on saving throws against being charmed: मोहित होने से बचाव के सेविंग थ्रो पर एडवांटेज
-  advantage on saving throws against being frightened: भयभीत होने से बचाव के सेविंग थ्रो पर एडवांटेज
-  advantage on saving throws against poison: विष के विरुद्ध सेविंग थ्रो पर एडवांटेज
+  advantage on saving throws against being charmed: मोहित होने से बचने के सेविंग थ्रो पर एडवांटेज
+  advantage on saving throws against being frightened: भयभीत होने से बचने के सेविंग थ्रो पर एडवांटेज
+  advantage on saving throws against poison: ज़हर के विरुद्ध सेविंग थ्रो पर एडवांटेज
   advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: जादू के विरुद्ध बुद्धि, विवेक और करिश्मा के सभी सेविंग थ्रो पर एडवांटेज
   aberration: विकृत प्राणी
   beast: पशु
   celestial: दिव्य प्राणी
   construct: निर्मित प्राणी
   dragon: ड्रैगन
-  elemental: तत्त्व प्राणी
+  elemental: तत्व प्राणी
   fey: परी प्राणी
-  fiend: असुर
-  giant: दानव
+  fiend: दानव
+  giant: दैत्य
   humanoid: मानवाकार
-  monstrosity: राक्षसी जीव
+  monstrosity: दैत्याकार जीव
   ooze: लिजलिजा जीव
   plant: वनस्पति
   undead: अनडेड
   humanoid (any race): मानवाकार (कोई भी प्रजाति)
-  humanoid (dwarf): मानवाकार (बौना)
-  humanoid (elf): मानवाकार (एल्फ)
-  humanoid (gnoll): मानवाकार (ग्नोल)
-  humanoid (gnome): मानवाकार (ग्नोम)
+  humanoid (dwarf): मानवाकार (ड्वार्फ़)
+  humanoid (elf): मानवाकार (एल्फ़)
+  humanoid (gnoll): मानवाकार (नॉल)
+  humanoid (gnome): मानवाकार (नोम)
   humanoid (goblinoid): मानवाकार (गोब्लिनॉइड)
   humanoid (grimlock): मानवाकार (ग्रिमलॉक)
   humanoid (human): मानवाकार (मनुष्य)
-  humanoid (human, shapechanger): मानवाकार (मनुष्य, रूपपरिवर्तक)
+  humanoid (human, shapechanger): मानवाकार (मनुष्य, रूप बदलने वाला)
   humanoid (kobold): मानवाकार (कोबोल्ड)
-  humanoid (lizardfolk): मानवाकार (लिज़र्डफ़ोक)
+  humanoid (lizardfolk): मानवाकार (छिपकली-मानव)
   humanoid (orc): मानवाकार (ऑर्क)
   humanoid (sahuagin): मानवाकार (साहुआगिन)
-  fiend (demon): असुर (दानवात्मा)
-  fiend (demon, shapechanger): असुर (दानवात्मा, रूपपरिवर्तक)
-  fiend (devil): असुर (डेविल)
-  fiend (devil, shapechanger): असुर (डेविल, रूपपरिवर्तक)
-  fiend (shapechanger): असुर (रूपपरिवर्तक)
-  monstrosity (shapechanger): राक्षसी जीव (रूपपरिवर्तक)
-  monstrosity (titan): राक्षसी जीव (टाइटन)
-  undead (shapechanger): अनडेड (रूपपरिवर्तक)
-  swarm of Tiny beasts: सूक्ष्म पशुओं का झुंड
-  lawful good: विधिपरायण शुभ
-  neutral good: तटस्थ शुभ
-  chaotic good: अराजक शुभ
-  lawful neutral: विधिपरायण तटस्थ
+  fiend (demon): दानव (राक्षस)
+  fiend (demon, shapechanger): दानव (राक्षस, रूप बदलने वाला)
+  fiend (devil): दानव (शैतान)
+  fiend (devil, shapechanger): दानव (शैतान, रूप बदलने वाला)
+  fiend (shapechanger): दानव (रूप बदलने वाला)
+  monstrosity (shapechanger): दैत्याकार जीव (रूप बदलने वाला)
+  monstrosity (titan): दैत्याकार जीव (टाइटन)
+  undead (shapechanger): अनडेड (रूप बदलने वाला)
+  swarm of Tiny beasts: अति सूक्ष्म पशुओं का झुंड
+  lawful good: नियमबद्ध अच्छा
+  neutral good: तटस्थ अच्छा
+  chaotic good: अराजक अच्छा
+  lawful neutral: नियमबद्ध तटस्थ
   neutral: तटस्थ
   chaotic neutral: अराजक तटस्थ
-  lawful evil: विधिपरायण अशुभ
-  neutral evil: तटस्थ अशुभ
-  chaotic evil: अराजक अशुभ
-  unaligned: अनाबद्ध
+  lawful evil: नियमबद्ध बुरा
+  neutral evil: तटस्थ बुरा
+  chaotic evil: अराजक बुरा
+  unaligned: संरेखण-रहित
   any alignment: कोई भी संरेखण
   any chaotic alignment: कोई भी अराजक संरेखण
-  any evil alignment: कोई भी अशुभ संरेखण
-  any non-good alignment: कोई भी अशुभ-भिन्न संरेखण से इतर, शुभ नहीं ऐसा संरेखण
-  any non-lawful alignment: कोई भी गैर-विधिपरायण संरेखण
-  neutral good (50%) or neutral evil (50%): तटस्थ शुभ (50%) या तटस्थ अशुभ (50%)
+  any evil alignment: कोई भी बुरा संरेखण
+  any non-good alignment: कोई भी गैर-अच्छा संरेखण
+  any non-lawful alignment: कोई भी गैर-नियमबद्ध संरेखण
+  neutral good (50%) or neutral evil (50%): तटस्थ अच्छा (50%) या तटस्थ बुरा (50%)
   natural armor: प्राकृतिक कवच
   leather armor: चमड़े का कवच
   studded leather: कीलदार चमड़ा
   hide armor: खाल का कवच
-  chain shirt: कड़ियों की कमीज़
+  chain shirt: जंजीर की कमीज़
   scale mail: शल्क कवच
-  breastplate: वक्षकवच
-  chain mail: जंजीरी कवच
+  breastplate: वक्ष-कवच
+  chain mail: जंजीर कवच
   splint: पट्टीदार कवच
   plate: पटल कवच
   natural armor, shield: प्राकृतिक कवच, ढाल
   leather armor, shield: चमड़े का कवच, ढाल
   studded leather, shield: कीलदार चमड़ा, ढाल
   hide armor, shield: खाल का कवच, ढाल
-  chain shirt, shield: जंजीरी कुर्ता, ढाल
+  chain shirt, shield: जंजीर की कमीज़, ढाल
   scale mail, shield: शल्क कवच, ढाल
-  chain mail, shield: जंजीरी कवच, ढाल
-  advancement: उन्नति
-  how your character levels up: आपका किरदार कैसे लेवल अप करता है
+  chain mail, shield: जंजीर कवच, ढाल
+  advancement: प्रगति
+  how your character levels up: आपका किरदार लेवल कैसे बढ़ाता है
   xp: अनुभव अंक
-  milestones: मील के पत्थर
-  your character levels up with experience points, for the foes overcome and what the story rewards: आपका किरदार अनुभव अंकों से लेवल अप करता है, हराए गए शत्रुओं और कहानी के इनाम के लिए
-  your character levels up at the big moments of the story: आपका किरदार कहानी के बड़े पलों पर लेवल अप करता है
+  milestones: पड़ाव
+  your character levels up with experience points, for the foes overcome and what the story rewards: आपका किरदार अनुभव अंकों से लेवल बढ़ाता है, हराए गए शत्रुओं और कहानी के पुरस्कारों के लिए
+  your character levels up at the big moments of the story: आपका किरदार कहानी के बड़े पलों पर लेवल बढ़ाता है
   the fifth edition from the SRD 5.1, the 2014 rules: SRD 5.1 का पाँचवाँ संस्करण, 2014 के नियम
-  long rest: लंबा विश्राम
-  short rest: छोटा विश्राम
+  long rest: लंबा आराम
+  short rest: छोटा आराम
   difficult: कठिन
+  until long rest: लंबे आराम तक
+  until short rest: छोटे आराम तक
+  difficult terrain: कठिन भूमि
 headline: लेवल {level} {classes}

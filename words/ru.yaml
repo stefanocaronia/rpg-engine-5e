@@ -8,7 +8,7 @@ groups:
   Skills: Навыки
   Combat: Бой
   Proficiencies: Владения
-  Features: Умения
+  Features: Особенности
   Attacks: Атаки
   Spells: Заклинания
 fields:
@@ -30,13 +30,13 @@ fields:
   dex: ЛОВ
   con: ТЕЛ
   int: ИНТ
-  wis: МУД
+  wis: МДР
   cha: ХАР
   str-mod: Мод. СИЛ
   dex-mod: Мод. ЛОВ
   con-mod: Мод. ТЕЛ
   int-mod: Мод. ИНТ
-  wis-mod: Мод. МУД
+  wis-mod: Мод. МДР
   cha-mod: Мод. ХАР
   proficiency: Бонус мастерства
   str-save: Спасбросок Силы
@@ -45,7 +45,7 @@ fields:
   int-save: Спасбросок Интеллекта
   wis-save: Спасбросок Мудрости
   cha-save: Спасбросок Харизмы
-  save-notes: Заметки к спасброскам
+  save-notes: Заметки о спасбросках
   acrobatics: Акробатика
   animal-handling: Уход за животными
   arcana: Магия
@@ -68,7 +68,7 @@ fields:
   initiative: Инициатива
   speed: Скорость
   equipped: Экипировано
-  hp-base: Базовые хиты
+  hp-base: Хиты от кубиков
   hp: Хиты
   temp-hp: Временные хиты
   hit-dice-d6: Кубики хитов d6
@@ -80,12 +80,12 @@ fields:
   passive-investigation: Пассивный анализ
   darkvision: Тёмное зрение
   blindsight: Слепое зрение
-  tremorsense: Чувство вибраций
+  tremorsense: Чувство вибрации
   truesight: Истинное зрение
-  damage-vulnerabilities: Уязвимость к урону
-  damage-resistances: Сопротивление урону
-  damage-immunities: Иммунитет к урону
-  condition-immunities: Иммунитет к состояниям
+  damage-vulnerabilities: Уязвимости к урону
+  damage-resistances: Сопротивления урону
+  damage-immunities: Иммунитеты к урону
+  condition-immunities: Иммунитеты к состояниям
   death-successes: Успехи против смерти
   death-failures: Провалы против смерти
   exhaustion: Истощение
@@ -96,28 +96,28 @@ fields:
   weapon-proficiencies: Оружие
   tool-proficiencies: Инструменты
   languages: Языки
-  features: Умения
+  features: Особенности
   fighting-styles: Боевые стили
   attack: Атака
   damage-roll: Бросок урона
   caster-level: Уровень заклинателя
   spell-save-dc: СЛ заклинаний
   spell-attack: Атака заклинанием
-  slots-1: Ячейки 1 уровня
-  slots-2: Ячейки 2 уровня
-  slots-3: Ячейки 3 уровня
-  slots-4: Ячейки 4 уровня
-  slots-5: Ячейки 5 уровня
-  slots-6: Ячейки 6 уровня
-  slots-7: Ячейки 7 уровня
-  slots-8: Ячейки 8 уровня
-  slots-9: Ячейки 9 уровня
+  slots-1: Ячейки 1-го уровня
+  slots-2: Ячейки 2-го уровня
+  slots-3: Ячейки 3-го уровня
+  slots-4: Ячейки 4-го уровня
+  slots-5: Ячейки 5-го уровня
+  slots-6: Ячейки 6-го уровня
+  slots-7: Ячейки 7-го уровня
+  slots-8: Ячейки 8-го уровня
+  slots-9: Ячейки 9-го уровня
   spell-slots: Ячейки заклинаний
   slot-level: Уровень ячейки
-  mystic-arcanum-6: Мистический арканум (6 уровень)
-  mystic-arcanum-7: Мистический арканум (7 уровень)
-  mystic-arcanum-8: Мистический арканум (8 уровень)
-  mystic-arcanum-9: Мистический арканум (9 уровень)
+  mystic-arcanum-6: Таинственный арканум (6-й уровень)
+  mystic-arcanum-7: Таинственный арканум (7-й уровень)
+  mystic-arcanum-8: Таинственный арканум (8-й уровень)
+  mystic-arcanum-9: Таинственный арканум (9-й уровень)
   signature-spell-1: Коронное заклинание 1
   signature-spell-2: Коронное заклинание 2
   max-prepared: Макс. подготовленных заклинаний
@@ -126,43 +126,43 @@ fields:
   cantrips-known: Известные заговоры
   spells-known: Известные заклинания
   invocations-known: Известные воззвания
-  rages: Ярости
-  rage-damage: Урон ярости
+  rages: Ярость
+  rage-damage: Урон от ярости
   martial-arts: Боевые искусства
-  ki-points: Очки ци
+  ki-points: Очки ки
   unarmored-movement: Движение без доспехов
   sneak-attack: Скрытая атака
-  sorcery-points: очки чародейства
-  channel-divinity: божественный канал
-  action-surge: всплеск действий
-  second-wind: второе дыхание
-  indomitable: упорство
-  wild-shape: дикий облик
-  bardic-inspiration: бардовское вдохновение
-  divine-sense: божественное чувство
-  lay-on-hands: возложение рук
-  cleansing-touch: очищающее касание
-  arcane-recovery: магическое восстановление
-  natural-recovery: природное восстановление
-  wholeness-of-body: целостность тела
-  holy-nimbus: священный нимб
-  dark-ones-own-luck: удача Тёмного
-  hurl-through-hell: низвержение в преисподнюю
-  stroke-of-luck: удачный миг
-  eldritch-master: мастер мистики
-  breath-weapon: оружие дыхания
-  relentless-endurance: неумолимая стойкость
-  category: категория
-  armor: доспех
-  hp-dice: кубики хитов
-  fly: полёт
-  swim: плавание
-  climb: лазание
-  burrow: копание
-  saves: спасброски
-  skills: навыки
-  cr: ОП
-  xp-value: значение опыта
+  sorcery-points: Очки чародейства
+  channel-divinity: Божественный канал
+  action-surge: Всплеск действий
+  second-wind: Второе дыхание
+  indomitable: Неукротимость
+  wild-shape: Дикий облик
+  bardic-inspiration: Вдохновение барда
+  divine-sense: Божественное чувство
+  lay-on-hands: Наложение рук
+  cleansing-touch: Очищающее касание
+  arcane-recovery: Магическое восстановление
+  natural-recovery: Природное восстановление
+  wholeness-of-body: Целостность тела
+  holy-nimbus: Священный нимб
+  dark-ones-own-luck: Удача тёмного
+  hurl-through-hell: Низвержение в ад
+  stroke-of-luck: Удачный миг
+  eldritch-master: Мастер мистики
+  breath-weapon: Оружие дыхания
+  relentless-endurance: Неослабевающая стойкость
+  category: Тип
+  armor: Доспех
+  hp-dice: Кубики хитов
+  fly: Полёт
+  swim: Плавание
+  climb: Лазание
+  burrow: Копание
+  saves: Спасброски
+  skills: Навыки
+  cr: Опасность
+  xp-value: Опыт за победу
 words:
   Dragonborn: Драконорождённый
   Dwarf: Дварф
@@ -196,19 +196,19 @@ words:
   Rogue: Плут
   Thief: Вор
   Sorcerer: Чародей
-  Draconic Bloodline: Драконья кровь
+  Draconic Bloodline: Драконья родословная
   Warlock: Колдун
   The Fiend: Исчадие
   Wizard: Волшебник
   School of Evocation: Школа воплощения
-  Acolyte (background): Служитель
+  Acolyte (background): Прислужник
   Grappler: Борец
-  Archery: Стрельба из лука
+  Archery: Стрельба
   Defense: Оборона
   Dueling: Дуэлянт
-  Great Weapon Fighting: Сражение большим оружием
+  Great Weapon Fighting: Бой большим оружием
   Protection: Защита
-  Two-Weapon Fighting: Сражение двумя оружиями
+  Two-Weapon Fighting: Бой двумя оружиями
   Unarmed Strike: Безоружный удар
   Acrobatics: Акробатика
   Animal Handling: Уход за животными
@@ -241,7 +241,7 @@ words:
   Deep Speech: Глубинная речь
   Infernal: Инфернальный
   Primordial: Первичный
-  Sylvan: Сильван
+  Sylvan: Лесной
   Undercommon: Подземный
   Aquan: Акван
   Auran: Ауран
@@ -260,12 +260,12 @@ words:
   Deafened: Оглохший
   Frightened: Испуганный
   Grappled: Схваченный
-  Incapacitated: Выведенный из строя
+  Incapacitated: Недееспособный
   Invisible: Невидимый
   Paralyzed: Парализованный
   Petrified: Окаменевший
   Poisoned: Отравленный
-  Prone: Сбитый с ног
+  Prone: Лежащий ничком
   Restrained: Опутанный
   Stunned: Ошеломлённый
   Unconscious: Без сознания
@@ -275,12 +275,12 @@ words:
   deafened: оглохший
   frightened: испуганный
   grappled: схваченный
-  incapacitated: выведенный из строя
+  incapacitated: недееспособный
   invisible: невидимый
   paralyzed: парализованный
   petrified: окаменевший
   poisoned: отравленный
-  prone: сбитый с ног
+  prone: лежащий ничком
   restrained: опутанный
   stunned: ошеломлённый
   unconscious: без сознания
@@ -289,12 +289,12 @@ words:
   bludgeoning: дробящий
   cold: холод
   fire: огонь
-  force: силовое поле
+  force: силовой
   lightning: электричество
-  necrotic: некротическая энергия
+  necrotic: некротический
   piercing: колющий
   poison: яд
-  psychic: психическая энергия
+  psychic: психический
   radiant: излучение
   slashing: рубящий
   thunder: звук
@@ -332,9 +332,9 @@ words:
   herbalism kit: набор травника
   thieves' tools: воровские инструменты
   tinker's tools: инструменты жестянщика
-  advantage on saving throws against being charmed: преимущество на спасброски от очарования
-  advantage on saving throws against being frightened: преимущество на спасброски от испуга
-  advantage on saving throws against poison: преимущество на спасброски от яда
+  advantage on saving throws against being charmed: преимущество на спасброски, чтобы не быть очарованным
+  advantage on saving throws against being frightened: преимущество на спасброски, чтобы не быть испуганным
+  advantage on saving throws against poison: преимущество на спасброски против яда
   advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: преимущество на все спасброски Интеллекта, Мудрости и Харизмы против магии
   aberration: аберрация
   beast: зверь
@@ -371,7 +371,7 @@ words:
   monstrosity (shapechanger): чудовище (оборотень)
   monstrosity (titan): чудовище (титан)
   undead (shapechanger): нежить (оборотень)
-  swarm of Tiny beasts: стая крошечных зверей
+  swarm of Tiny beasts: рой Крошечных зверей
   lawful good: законно-добрый
   neutral good: нейтрально-добрый
   chaotic good: хаотично-добрый
@@ -385,23 +385,23 @@ words:
   any alignment: любое мировоззрение
   any chaotic alignment: любое хаотичное мировоззрение
   any evil alignment: любое злое мировоззрение
-  any non-good alignment: любое не доброе мировоззрение
-  any non-lawful alignment: любое не законное мировоззрение
+  any non-good alignment: любое недоброе мировоззрение
+  any non-lawful alignment: любое незаконопослушное мировоззрение
   neutral good (50%) or neutral evil (50%): нейтрально-добрый (50%) или нейтрально-злой (50%)
   natural armor: природный доспех
   leather armor: кожаный доспех
   studded leather: проклёпанная кожа
-  hide armor: доспех из шкур
+  hide armor: шкурный доспех
   chain shirt: кольчужная рубаха
   scale mail: чешуйчатый доспех
   breastplate: кираса
   chain mail: кольчуга
-  splint: шинный доспех
+  splint: наборный доспех
   plate: латы
-  natural armor, shield: природная броня, щит
+  natural armor, shield: природный доспех, щит
   leather armor, shield: кожаный доспех, щит
-  studded leather, shield: проклёпанный кожаный доспех, щит
-  hide armor, shield: доспех из шкур, щит
+  studded leather, shield: проклёпанная кожа, щит
+  hide armor, shield: шкурный доспех, щит
   chain shirt, shield: кольчужная рубаха, щит
   scale mail, shield: чешуйчатый доспех, щит
   chain mail, shield: кольчуга, щит
@@ -409,10 +409,13 @@ words:
   how your character levels up: как ваш персонаж повышает уровень
   xp: Очки опыта
   milestones: Вехи
-  your character levels up with experience points, for the foes overcome and what the story rewards: ваш персонаж повышает уровень за очки опыта, получаемые за побеждённых врагов и за то, что поощряет история
-  your character levels up at the big moments of the story: ваш персонаж повышает уровень в важные моменты истории
+  your character levels up with experience points, for the foes overcome and what the story rewards: "ваш персонаж повышает уровень за очки опыта: за побеждённых врагов и за то, что поощряет история"
+  your character levels up at the big moments of the story: ваш персонаж повышает уровень в главные моменты истории
   the fifth edition from the SRD 5.1, the 2014 rules: пятая редакция по SRD 5.1, правила 2014 года
   long rest: продолжительный отдых
   short rest: короткий отдых
-  difficult: сложный
-headline: "{classes} {level} уровня"
+  difficult: труднопроходимый
+  until long rest: до продолжительного отдыха
+  until short rest: до короткого отдыха
+  difficult terrain: труднопроходимая местность
+headline: "{classes}, {level}-й уровень"

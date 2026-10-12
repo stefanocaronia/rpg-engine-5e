@@ -12,7 +12,7 @@ groups:
   Attacks: Ataques
   Spells: Conjuros
 fields:
-  creature: raza
+  creature: criatura
   size: tamaño
   classes: clases
   subclasses: subclases
@@ -39,13 +39,13 @@ fields:
   wis-mod: Mod. SAB
   cha-mod: Mod. CAR
   proficiency: bonificador de competencia
-  str-save: salvación FUE
-  dex-save: salvación DES
-  con-save: salvación CON
-  int-save: salvación INT
-  wis-save: salvación SAB
-  cha-save: salvación CAR
-  save-notes: notas de salvación
+  str-save: salvación de Fuerza
+  dex-save: salvación de Destreza
+  con-save: salvación de Constitución
+  int-save: salvación de Inteligencia
+  wis-save: salvación de Sabiduría
+  cha-save: salvación de Carisma
+  save-notes: notas de las tiradas de salvación
   acrobatics: acrobacias
   animal-handling: trato con animales
   arcana: arcanos
@@ -80,12 +80,12 @@ fields:
   passive-investigation: investigación pasiva
   darkvision: visión en la oscuridad
   blindsight: vista ciega
-  tremorsense: sentido de la vibración
+  tremorsense: sentido sísmico
   truesight: visión verdadera
   damage-vulnerabilities: vulnerabilidades al daño
   damage-resistances: resistencias al daño
   damage-immunities: inmunidades al daño
-  condition-immunities: inmunidades a estados
+  condition-immunities: inmunidades a condiciones
   death-successes: éxitos contra la muerte
   death-failures: fallos contra la muerte
   exhaustion: agotamiento
@@ -113,14 +113,14 @@ fields:
   slots-8: espacios de nivel 8
   slots-9: espacios de nivel 9
   spell-slots: espacios de conjuro
-  slot-level: nivel de espacio
+  slot-level: nivel del espacio
   mystic-arcanum-6: arcanum místico (nivel 6)
   mystic-arcanum-7: arcanum místico (nivel 7)
   mystic-arcanum-8: arcanum místico (nivel 8)
   mystic-arcanum-9: arcanum místico (nivel 9)
-  signature-spell-1: conjuro de señal 1
-  signature-spell-2: conjuro de señal 2
-  max-prepared: máx. preparados
+  signature-spell-1: conjuro insignia 1
+  signature-spell-2: conjuro insignia 2
+  max-prepared: conjuros preparables
   spells: conjuros
   prepared: preparados
   cantrips-known: trucos conocidos
@@ -138,7 +138,7 @@ fields:
   second-wind: tomar aliento
   indomitable: indomable
   wild-shape: forma salvaje
-  bardic-inspiration: inspiración de bardo
+  bardic-inspiration: inspiración bárdica
   divine-sense: sentido divino
   lay-on-hands: imposición de manos
   cleansing-touch: toque purificador
@@ -151,7 +151,7 @@ fields:
   stroke-of-luck: golpe de suerte
   eldritch-master: maestro sobrenatural
   breath-weapon: arma de aliento
-  relentless-endurance: resistencia incansable
+  relentless-endurance: aguante incansable
   category: categoría
   armor: armadura
   hp-dice: dados de PG
@@ -162,7 +162,7 @@ fields:
   saves: tiradas de salvación
   skills: habilidades
   cr: VD
-  xp-value: valor de PX
+  xp-value: valor en PX
 words:
   Dragonborn: Dracónido
   Dwarf: Enano
@@ -178,7 +178,7 @@ words:
   Human: Humano
   Tiefling: Tiefling
   Barbarian: Bárbaro
-  Path of the Berserker: Senda del Berserker
+  Path of the Berserker: Camino del Berserker
   Bard: Bardo
   College of Lore: Colegio del Conocimiento
   Cleric: Clérigo
@@ -196,7 +196,7 @@ words:
   Rogue: Pícaro
   Thief: Ladrón
   Sorcerer: Hechicero
-  Draconic Bloodline: Linaje Dracónico
+  Draconic Bloodline: Linaje dracónico
   Warlock: Brujo
   The Fiend: El Infernal
   Wizard: Mago
@@ -206,10 +206,10 @@ words:
   Archery: Tiro con arco
   Defense: Defensa
   Dueling: Duelo
-  Great Weapon Fighting: Combate con armas grandes
+  Great Weapon Fighting: Combate con armas a dos manos
   Protection: Protección
   Two-Weapon Fighting: Combate con dos armas
-  Unarmed Strike: Ataque sin armas
+  Unarmed Strike: Golpe sin armas
   Acrobatics: Acrobacias
   Animal Handling: Trato con animales
   Arcana: Arcanos
@@ -238,15 +238,15 @@ words:
   Abyssal: Abisal
   Celestial: Celestial
   Draconic: Dracónico
-  Deep Speech: Habla profunda
+  Deep Speech: Habla de las profundidades
   Infernal: Infernal
   Primordial: Primordial
   Sylvan: Silvano
   Undercommon: Infracomún
-  Aquan: Aquan
-  Auran: Auran
-  Ignan: Ignan
-  Terran: Terran
+  Aquan: Acuano
+  Auran: Aurano
+  Ignan: Ígneo
+  Terran: Terrano
   Druidic: Druídico
   Thieves' Cant: Jerga de ladrones
   Tiny: Diminuto
@@ -254,7 +254,7 @@ words:
   Medium: Mediano
   Large: Grande
   Huge: Enorme
-  Gargantuan: Gigantesco
+  Gargantuan: Gargantuesco
   Blinded: Cegado
   Charmed: Hechizado
   Deafened: Ensordecido
@@ -299,9 +299,9 @@ words:
   slashing: cortante
   thunder: trueno
   bludgeoning, piercing, and slashing from nonmagical attacks: contundente, perforante y cortante de ataques no mágicos
-  light armor: armadura ligera
-  medium armor: armadura media
-  heavy armor: armadura pesada
+  light armor: armaduras ligeras
+  medium armor: armaduras medias
+  heavy armor: armaduras pesadas
   all armor: todas las armaduras
   shields: escudos
   simple weapons: armas simples
@@ -392,12 +392,12 @@ words:
   leather armor: armadura de cuero
   studded leather: cuero tachonado
   hide armor: armadura de pieles
-  chain shirt: camisa de malla
+  chain shirt: camisote de mallas
   scale mail: cota de escamas
   breastplate: coraza
   chain mail: cota de mallas
-  splint: bandas
-  plate: placas
+  splint: armadura de bandas
+  plate: armadura de placas
   natural armor, shield: armadura natural, escudo
   leather armor, shield: armadura de cuero, escudo
   studded leather, shield: cuero tachonado, escudo
@@ -415,4 +415,7 @@ words:
   long rest: descanso largo
   short rest: descanso corto
   difficult: difícil
+  until long rest: hasta el descanso largo
+  until short rest: hasta el descanso corto
+  difficult terrain: terreno difícil
 headline: "{classes} de nivel {level}"

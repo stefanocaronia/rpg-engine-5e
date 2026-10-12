@@ -2,29 +2,29 @@
 # words of words/it.yaml, which come from the system's official Italian translation; with the terms of the official translation in this language, where one is.
 groups:
   Character: الشخصية
-  Personality: السمات الشخصية
+  Personality: الطباع
   Abilities: القدرات
-  Saving Throws: رميات الحماية
+  Saving Throws: رميات الإنقاذ
   Skills: المهارات
   Combat: القتال
   Proficiencies: الإتقانات
-  Features: الميزات
+  Features: السمات
   Attacks: الهجمات
-  Spells: التعاويذ
+  Spells: التعويذات
 fields:
   creature: العرق
   size: الحجم
-  classes: الفئات
-  subclasses: الفئات الفرعية
+  classes: الأصناف
+  subclasses: الأصناف الفرعية
   background: الخلفية
-  feats: البراعات
+  feats: المواهب
   alignment: الميول
   level: المستوى
   xp: نقاط الخبرة
   inspiration: الإلهام
-  personality-traits: سمات الشخصية
+  personality-traits: سمات الطباع
   ideal: المثل الأعلى
-  bond: الرابطة
+  bond: الرابط
   flaw: العيب
   str: قوة
   dex: رشاقة
@@ -39,20 +39,20 @@ fields:
   wis-mod: مُعدِّل الحكمة
   cha-mod: مُعدِّل الكاريزما
   proficiency: مكافأة الإتقان
-  str-save: حماية القوة
-  dex-save: حماية الرشاقة
-  con-save: حماية البنية
-  int-save: حماية الذكاء
-  wis-save: حماية الحكمة
-  cha-save: حماية الكاريزما
-  save-notes: ملاحظات رميات الحماية
+  str-save: إنقاذ القوة
+  dex-save: إنقاذ الرشاقة
+  con-save: إنقاذ البنية
+  int-save: إنقاذ الذكاء
+  wis-save: إنقاذ الحكمة
+  cha-save: إنقاذ الكاريزما
+  save-notes: ملاحظات رميات الإنقاذ
   acrobatics: الأكروبات
   animal-handling: ترويض الحيوانات
-  arcana: السحر
+  arcana: الأسرار السحرية
   athletics: الرياضة البدنية
   deception: الخداع
   history: التاريخ
-  insight: الفطنة
+  insight: الحدس
   intimidation: الترهيب
   investigation: التحقيق
   medicine: الطب
@@ -62,47 +62,47 @@ fields:
   persuasion: الإقناع
   religion: الدين
   sleight-of-hand: خفة اليد
-  stealth: التخفي
+  stealth: التسلل
   survival: البقاء
-  ac: فئة الدرع
+  ac: الدرع
   initiative: المبادرة
   speed: السرعة
-  equipped: مجهز
-  hp-base: نقاط الحياة الأساسية
+  equipped: مجهَّز
+  hp-base: نقاط الحياة من النرد
   hp: نقاط الحياة
-  temp-hp: نقاط الحياة المؤقتة
+  temp-hp: نقاط حياة مؤقتة
   hit-dice-d6: نرد الحياة d6
   hit-dice-d8: نرد الحياة d8
   hit-dice-d10: نرد الحياة d10
   hit-dice-d12: نرد الحياة d12
   passive-perception: الإدراك السلبي
-  passive-insight: الفطنة السلبية
+  passive-insight: الحدس السلبي
   passive-investigation: التحقيق السلبي
   darkvision: الرؤية في الظلام
   blindsight: الرؤية العمياء
   tremorsense: استشعار الاهتزاز
   truesight: الرؤية الحقيقية
-  damage-vulnerabilities: نقاط الضعف تجاه الضرر
+  damage-vulnerabilities: نقاط ضعف الضرر
   damage-resistances: مقاومات الضرر
   damage-immunities: مناعات الضرر
   condition-immunities: مناعات الحالات
   death-successes: نجاحات الموت
   death-failures: إخفاقات الموت
   exhaustion: الإنهاك
-  save-proficiencies: إتقان رميات الحماية
-  skill-proficiencies: إتقان المهارات
+  save-proficiencies: رميات الإنقاذ
+  skill-proficiencies: المهارات
   expertise: الخبرة المتقنة
-  armor-proficiencies: إتقان الدروع
-  weapon-proficiencies: إتقان الأسلحة
-  tool-proficiencies: إتقان الأدوات
+  armor-proficiencies: الدروع
+  weapon-proficiencies: الأسلحة
+  tool-proficiencies: الأدوات
   languages: اللغات
-  features: الميزات
+  features: السمات
   fighting-styles: أساليب القتال
   attack: الهجوم
   damage-roll: رمية الضرر
   caster-level: مستوى الساحر
-  spell-save-dc: صعوبة حفظ التعويذة
-  spell-attack: هجوم التعويذة
+  spell-save-dc: صعوبة إنقاذ التعويذات
+  spell-attack: هجوم التعويذات
   slots-1: خانات المستوى 1
   slots-2: خانات المستوى 2
   slots-3: خانات المستوى 3
@@ -112,7 +112,7 @@ fields:
   slots-7: خانات المستوى 7
   slots-8: خانات المستوى 8
   slots-9: خانات المستوى 9
-  spell-slots: خانات التعاويذ
+  spell-slots: خانات التعويذات
   slot-level: مستوى الخانة
   mystic-arcanum-6: السر الغامض (المستوى 6)
   mystic-arcanum-7: السر الغامض (المستوى 7)
@@ -120,65 +120,65 @@ fields:
   mystic-arcanum-9: السر الغامض (المستوى 9)
   signature-spell-1: التعويذة المميزة 1
   signature-spell-2: التعويذة المميزة 2
-  max-prepared: الحد الأقصى للتعاويذ المحضّرة
-  spells: التعاويذ
-  prepared: محضّرة
+  max-prepared: التعويذات القابلة للتحضير
+  spells: التعويذات
+  prepared: محضَّرة
   cantrips-known: التعاويذ الصغرى المعروفة
-  spells-known: التعاويذ المعروفة
+  spells-known: التعويذات المعروفة
   invocations-known: الاستدعاءات المعروفة
-  rages: نوبات الغضب
+  rages: الغضب
   rage-damage: ضرر الغضب
   martial-arts: الفنون القتالية
-  ki-points: نقاط الكي
-  unarmored-movement: الحركة بدون درع
-  sneak-attack: الهجوم الخفي
+  ki-points: نقاط كي
+  unarmored-movement: الحركة بلا درع
+  sneak-attack: الهجمة الخفية
   sorcery-points: نقاط السحر
-  channel-divinity: توجيه الإلهي
+  channel-divinity: توجيه الألوهية
   action-surge: اندفاع الفعل
-  second-wind: النفس الثاني
-  indomitable: لا يُقهر
+  second-wind: النفَس الثاني
+  indomitable: الصمود
   wild-shape: الهيئة البرية
   bardic-inspiration: إلهام الشاعر
   divine-sense: الحس الإلهي
-  lay-on-hands: الشفاء باللمس
-  cleansing-touch: اللمسة المطهّرة
+  lay-on-hands: وضع اليدين
+  cleansing-touch: اللمسة المطهِّرة
   arcane-recovery: الاستعادة السحرية
   natural-recovery: الاستعادة الطبيعية
   wholeness-of-body: سلامة الجسد
   holy-nimbus: الهالة المقدسة
-  dark-ones-own-luck: حظ الظلام الخاص
+  dark-ones-own-luck: حظ الظلام
   hurl-through-hell: الرمي عبر الجحيم
-  stroke-of-luck: ضربة حظ
+  stroke-of-luck: ضربة الحظ
   eldritch-master: سيد الغموض
   breath-weapon: سلاح النفَس
   relentless-endurance: التحمل الدؤوب
-  category: الفئة
+  category: النوع
   armor: الدرع
   hp-dice: نرد نقاط الحياة
   fly: الطيران
   swim: السباحة
   climb: التسلق
   burrow: الحفر
-  saves: رميات الحفظ
+  saves: رميات الإنقاذ
   skills: المهارات
   cr: مستوى التحدي
-  xp-value: قيمة الخبرة
+  xp-value: قيمة نقاط الخبرة
 words:
   Dragonborn: مولود التنين
   Dwarf: قزم
   Hill Dwarf: قزم التلال
   Elf: جني
   High Elf: الجني الرفيع
-  Gnome: غنوم
-  Rock Gnome: غنوم الصخور
+  Gnome: جنوم
+  Rock Gnome: جنوم الصخور
   Half-Elf: نصف جني
-  Half-Orc: نصف أورك
-  Halfling: هالفلينغ
-  Lightfoot Halfling: هالفلينغ خفيف القدم
-  Human: إنسان
+  Half-Orc: نصف وحش
+  Halfling: هافلينغ
+  Lightfoot Halfling: هافلينغ خفيف القدم
+  Human: بشري
   Tiefling: تيفلينغ
-  Barbarian: بربري
-  Path of the Berserker: درب الهائج
+  Barbarian: همجي
+  Path of the Berserker: طريق المحارب الهائج
   Bard: شاعر
   College of Lore: كلية المعرفة
   Cleric: كاهن
@@ -191,32 +191,32 @@ words:
   Way of the Open Hand: طريق اليد المفتوحة
   Paladin: بالادين
   Oath of Devotion: قسم التفاني
-  Ranger: رينجر
+  Ranger: حارس
   Hunter: صياد
-  Rogue: محتال
-  Thief: لص
+  Rogue: لص
+  Thief: سارق
   Sorcerer: ساحر فطري
-  Draconic Bloodline: سلالة التنين
-  Warlock: ووركلوك
+  Draconic Bloodline: سلالة التنانين
+  Warlock: وارلوك
   The Fiend: الشيطان
   Wizard: ساحر
   School of Evocation: مدرسة الاستحضار
-  Acolyte (background): مساعد كاهن
-  Grappler: مصارع
+  Acolyte (background): خادم المعبد
+  Grappler: المصارع
   Archery: الرماية
   Defense: الدفاع
   Dueling: المبارزة
-  Great Weapon Fighting: القتال بالأسلحة الثقيلة
+  Great Weapon Fighting: القتال بالأسلحة الكبيرة
   Protection: الحماية
   Two-Weapon Fighting: القتال بسلاحين
   Unarmed Strike: ضربة بلا سلاح
-  Acrobatics: البهلوانية
+  Acrobatics: الأكروبات
   Animal Handling: ترويض الحيوانات
-  Arcana: السحريات
+  Arcana: الأسرار السحرية
   Athletics: الرياضة البدنية
   Deception: الخداع
   History: التاريخ
-  Insight: الفراسة
+  Insight: الحدس
   Intimidation: الترهيب
   Investigation: التحقيق
   Medicine: الطب
@@ -226,15 +226,15 @@ words:
   Persuasion: الإقناع
   Religion: الدين
   Sleight of Hand: خفة اليد
-  Stealth: التخفي
+  Stealth: التسلل
   Survival: البقاء
-  Common: اللغة المشتركة
+  Common: المشتركة
   Dwarvish: القزمية
   Elvish: الجنية
   Giant: العملاقية
-  Gnomish: الغنومية
+  Gnomish: الجنومية
   Goblin: الغوبلينية
-  Orc: الأوركية
+  Orc: الأورك
   Abyssal: الهاوية
   Celestial: السماوية
   Draconic: التنينية
@@ -246,7 +246,7 @@ words:
   Aquan: المائية
   Auran: الهوائية
   Ignan: النارية
-  Terran: الأرضية
+  Terran: الترابية
   Druidic: الدرويدية
   Thieves' Cant: لغة اللصوص
   Tiny: صغير جدًا
@@ -254,7 +254,7 @@ words:
   Medium: متوسط
   Large: كبير
   Huge: ضخم
-  Gargantuan: عملاق
+  Gargantuan: هائل
   Blinded: أعمى
   Charmed: مسحور
   Deafened: أصم
@@ -266,13 +266,13 @@ words:
   Petrified: متحجر
   Poisoned: مسموم
   Prone: منبطح
-  Restrained: مقيّد
+  Restrained: مقيَّد
   Stunned: مذهول
   Unconscious: فاقد الوعي
-  Exhaustion: إنهاك
+  Exhaustion: الإنهاك
   blinded: أعمى
   charmed: مسحور
-  deafened: أصمّ
+  deafened: أصم
   frightened: مذعور
   grappled: ممسوك
   incapacitated: عاجز
@@ -281,47 +281,47 @@ words:
   petrified: متحجر
   poisoned: مسموم
   prone: منبطح
-  restrained: مقيّد
+  restrained: مقيَّد
   stunned: مذهول
   unconscious: فاقد الوعي
-  exhaustion: إنهاك
+  exhaustion: الإنهاك
   acid: حمضي
-  bludgeoning: سحق
-  cold: برد
-  fire: نار
+  bludgeoning: ساحق
+  cold: بردي
+  fire: ناري
   force: قوة
-  lightning: برق
+  lightning: صاعقة
   necrotic: نخري
-  piercing: ثقب
+  piercing: ثاقب
   poison: سم
   psychic: نفسي
-  radiant: إشعاعي
-  slashing: قطع
-  thunder: رعد
-  bludgeoning, piercing, and slashing from nonmagical attacks: السحق والثقب والقطع من الهجمات غير السحرية
-  light armor: دروع خفيفة
-  medium armor: دروع متوسطة
-  heavy armor: دروع ثقيلة
+  radiant: مشع
+  slashing: قاطع
+  thunder: رعدي
+  bludgeoning, piercing, and slashing from nonmagical attacks: ساحق وثاقب وقاطع من هجمات غير سحرية
+  light armor: الدروع الخفيفة
+  medium armor: الدروع المتوسطة
+  heavy armor: الدروع الثقيلة
   all armor: جميع الدروع
-  shields: دروع يدوية
-  simple weapons: أسلحة بسيطة
-  martial weapons: أسلحة حربية
-  clubs: هراوات
-  daggers: خناجر
-  darts: سهام قصيرة
-  hand crossbows: أقواس يدوية
-  javelins: رماح قصيرة
-  light crossbows: أقواس خفيفة
-  longswords: سيوف طويلة
-  maces: صولجانات
-  quarterstaffs: عصي طويلة
-  rapiers: سيوف رفيعة
-  scimitars: سيوف مقوسة
-  shortswords: سيوف قصيرة
-  sickles: مناجل
-  slings: مقاليع
-  spears: رماح
-  battleaxe: فأس حرب
+  shields: التروس
+  simple weapons: الأسلحة البسيطة
+  martial weapons: الأسلحة الحربية
+  clubs: الهراوات
+  daggers: الخناجر
+  darts: السهام الصغيرة
+  hand crossbows: الأقواس المستعرضة اليدوية
+  javelins: الرماح القصيرة
+  light crossbows: الأقواس المستعرضة الخفيفة
+  longswords: السيوف الطويلة
+  maces: الصولجانات
+  quarterstaffs: العصي
+  rapiers: السيوف الرفيعة
+  scimitars: السيوف المعقوفة
+  shortswords: السيوف القصيرة
+  sickles: المناجل
+  slings: المقاليع
+  spears: الرماح
+  battleaxe: فأس المعركة
   handaxe: فأس يدوي
   light hammer: مطرقة خفيفة
   warhammer: مطرقة حرب
@@ -331,88 +331,91 @@ words:
   longbow: قوس طويل
   herbalism kit: عدة الأعشاب
   thieves' tools: أدوات اللصوص
-  tinker's tools: أدوات السبّاك
+  tinker's tools: أدوات الصانع
   advantage on saving throws against being charmed: أفضلية في رميات الإنقاذ ضد السحر
   advantage on saving throws against being frightened: أفضلية في رميات الإنقاذ ضد الذعر
   advantage on saving throws against poison: أفضلية في رميات الإنقاذ ضد السم
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: أفضلية في جميع رميات الإنقاذ للذكاء والحكمة والكاريزما ضد السحر
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: أفضلية في جميع رميات إنقاذ الذكاء والحكمة والكاريزما ضد السحر
   aberration: مسخ
   beast: وحش
   celestial: سماوي
-  construct: مصنوع
+  construct: مصنَّع
   dragon: تنين
   elemental: عنصري
   fey: جنية
   fiend: شيطان
   giant: عملاق
-  humanoid: شبيه بالبشر
-  monstrosity: مخلوق غريب
+  humanoid: شبيه بشري
+  monstrosity: كائن مسخ
   ooze: هلام
   plant: نبات
   undead: ميت حي
-  humanoid (any race): شبيه بالبشر (أي عرق)
-  humanoid (dwarf): شبيه بالبشر (قزم)
-  humanoid (elf): شبيه بالبشر (جني)
-  humanoid (gnoll): شبيه بالبشر (نول)
-  humanoid (gnome): شبيه بالبشر (جنوم)
-  humanoid (goblinoid): شبيه بالبشر (شبيه بالعفاريت)
-  humanoid (grimlock): شبيه بالبشر (غريملوك)
-  humanoid (human): شبيه بالبشر (إنسان)
-  humanoid (human, shapechanger): شبيه بالبشر (إنسان، متحول)
-  humanoid (kobold): شبيه بالبشر (كوبولد)
-  humanoid (lizardfolk): شبيه بالبشر (بشر السحالي)
-  humanoid (orc): شبيه بالبشر (أورك)
-  humanoid (sahuagin): شبيه بالبشر (ساهوجين)
+  humanoid (any race): شبيه بشري (أي عرق)
+  humanoid (dwarf): شبيه بشري (قزم)
+  humanoid (elf): شبيه بشري (جني)
+  humanoid (gnoll): شبيه بشري (غنول)
+  humanoid (gnome): شبيه بشري (جنوم)
+  humanoid (goblinoid): شبيه بشري (شبيه غوبلين)
+  humanoid (grimlock): شبيه بشري (غريملوك)
+  humanoid (human): شبيه بشري (بشري)
+  humanoid (human, shapechanger): شبيه بشري (بشري، متحول)
+  humanoid (kobold): شبيه بشري (كوبولد)
+  humanoid (lizardfolk): شبيه بشري (بشر السحالي)
+  humanoid (orc): شبيه بشري (أورك)
+  humanoid (sahuagin): شبيه بشري (ساهواجين)
   fiend (demon): شيطان (عفريت)
   fiend (demon, shapechanger): شيطان (عفريت، متحول)
   fiend (devil): شيطان (إبليس)
   fiend (devil, shapechanger): شيطان (إبليس، متحول)
   fiend (shapechanger): شيطان (متحول)
-  monstrosity (shapechanger): مخلوق غريب (متحول)
-  monstrosity (titan): مخلوق غريب (تيتان)
+  monstrosity (shapechanger): كائن مسخ (متحول)
+  monstrosity (titan): كائن مسخ (جبار)
   undead (shapechanger): ميت حي (متحول)
-  swarm of Tiny beasts: سرب من الوحوش الضئيلة
-  lawful good: نظامي خيّر
-  neutral good: محايد خيّر
-  chaotic good: فوضوي خيّر
-  lawful neutral: نظامي محايد
+  swarm of Tiny beasts: سرب من الوحوش الصغيرة جدًا
+  lawful good: خيّر نظامي
+  neutral good: خيّر محايد
+  chaotic good: خيّر فوضوي
+  lawful neutral: محايد نظامي
   neutral: محايد
-  chaotic neutral: فوضوي محايد
-  lawful evil: نظامي شرير
-  neutral evil: محايد شرير
-  chaotic evil: فوضوي شرير
+  chaotic neutral: محايد فوضوي
+  lawful evil: شرير نظامي
+  neutral evil: شرير محايد
+  chaotic evil: شرير فوضوي
   unaligned: بلا ميول
   any alignment: أي ميول
   any chaotic alignment: أي ميول فوضوية
   any evil alignment: أي ميول شريرة
   any non-good alignment: أي ميول غير خيّرة
   any non-lawful alignment: أي ميول غير نظامية
-  neutral good (50%) or neutral evil (50%): محايد خيّر (50%) أو محايد شرير (50%)
+  neutral good (50%) or neutral evil (50%): خيّر محايد (50%) أو شرير محايد (50%)
   natural armor: درع طبيعي
   leather armor: درع جلدي
-  studded leather: جلد مرصّع
+  studded leather: جلد مرصَّع
   hide armor: درع من الجلود
-  chain shirt: قميص من السلاسل
+  chain shirt: قميص حلقات
   scale mail: درع حراشف
   breastplate: درع صدري
-  chain mail: درع سلسلي
+  chain mail: درع حلقات
   splint: درع شرائح
-  plate: درع صفائحي
-  natural armor, shield: درع طبيعي، درع يدوي
-  leather armor, shield: درع جلدي، درع يدوي
-  studded leather, shield: جلد مرصع، درع يدوي
-  hide armor, shield: درع من الجلود، درع يدوي
-  chain shirt, shield: قميص سلسلي، درع يدوي
-  scale mail, shield: درع حراشف، درع يدوي
-  chain mail, shield: درع سلسلي، درع يدوي
+  plate: درع صفائح
+  natural armor, shield: درع طبيعي، ترس
+  leather armor, shield: درع جلدي، ترس
+  studded leather, shield: جلد مرصَّع، ترس
+  hide armor, shield: درع من الجلود، ترس
+  chain shirt, shield: قميص حلقات، ترس
+  scale mail, shield: درع حراشف، ترس
+  chain mail, shield: درع حلقات، ترس
   advancement: التقدم
   how your character levels up: كيف ترتقي شخصيتك في المستوى
   xp: نقاط الخبرة
-  milestones: المحطات الرئيسية
-  your character levels up with experience points, for the foes overcome and what the story rewards: ترتقي شخصيتك في المستوى بنقاط الخبرة، مقابل الأعداء الذين تهزمهم وما تكافئ عليه القصة
+  milestones: المعالم
+  your character levels up with experience points, for the foes overcome and what the story rewards: ترتقي شخصيتك في المستوى بنقاط الخبرة، مقابل الأعداء المهزومين وما تكافئ عليه القصة
   your character levels up at the big moments of the story: ترتقي شخصيتك في المستوى في اللحظات الكبرى من القصة
-  the fifth edition from the SRD 5.1, the 2014 rules: الطبعة الخامسة من وثيقة SRD 5.1، قواعد عام 2014
+  the fifth edition from the SRD 5.1, the 2014 rules: الإصدار الخامس من SRD 5.1، قواعد 2014
   long rest: راحة طويلة
   short rest: راحة قصيرة
   difficult: صعب
+  until long rest: حتى الراحة الطويلة
+  until short rest: حتى الراحة القصيرة
+  difficult terrain: أرض وعرة
 headline: "{classes} من المستوى {level}"

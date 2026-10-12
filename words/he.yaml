@@ -3,14 +3,14 @@
 groups:
   Character: דמות
   Personality: אישיות
-  Abilities: יכולות
+  Abilities: תכונות
   Saving Throws: הטלות הצלה
   Skills: מיומנויות
   Combat: קרב
   Proficiencies: הכשרות
-  Features: תכונות
+  Features: יכולות
   Attacks: התקפות
-  Spells: לחשים
+  Spells: כישופים
 fields:
   creature: גזע
   size: גודל
@@ -18,37 +18,37 @@ fields:
   subclasses: תתי-מקצועות
   background: רקע
   feats: כשרונות
-  alignment: הטיה מוסרית
+  alignment: יישור
   level: רמה
-  xp: נקודות ניסיון
+  xp: נק״נ
   inspiration: השראה
   personality-traits: תכונות אופי
-  ideal: אידאל
+  ideal: אידיאל
   bond: קשר
   flaw: פגם
   str: כוח
   dex: זריזות
   con: חוסן
-  int: אינטליגנציה
+  int: תבונה
   wis: חוכמה
   cha: כריזמה
   str-mod: מתאם כוח
   dex-mod: מתאם זריזות
   con-mod: מתאם חוסן
-  int-mod: מתאם אינטליגנציה
+  int-mod: מתאם תבונה
   wis-mod: מתאם חוכמה
   cha-mod: מתאם כריזמה
   proficiency: בונוס הכשרה
   str-save: הצלת כוח
   dex-save: הצלת זריזות
   con-save: הצלת חוסן
-  int-save: הצלת אינטליגנציה
+  int-save: הצלת תבונה
   wis-save: הצלת חוכמה
   cha-save: הצלת כריזמה
-  save-notes: פתקים להטלות הצלה
+  save-notes: הערות להטלות הצלה
   acrobatics: אקרובטיקה
-  animal-handling: טיפול בחיות
-  arcana: ארקנה
+  animal-handling: אילוף חיות
+  arcana: ידע מיסטי
   athletics: אתלטיקה
   deception: הונאה
   history: היסטוריה
@@ -61,16 +61,16 @@ fields:
   performance: הופעה
   persuasion: שכנוע
   religion: דת
-  sleight-of-hand: מהירות ידיים
+  sleight-of-hand: קלות ידיים
   stealth: התגנבות
   survival: הישרדות
-  ac: דרגת שריון
+  ac: דרג״ש
   initiative: יוזמה
   speed: מהירות
   equipped: מצויד
-  hp-base: נק״פ בסיס
-  hp: נק״פ
-  temp-hp: נק״פ זמניים
+  hp-base: נק״ח מקוביות
+  hp: נק״ח
+  temp-hp: נק״ח זמניות
   hit-dice-d6: קוביות חיים d6
   hit-dice-d8: קוביות חיים d8
   hit-dice-d10: קוביות חיים d10
@@ -82,89 +82,89 @@ fields:
   blindsight: חוש עיוור
   tremorsense: חוש רעידות
   truesight: ראיית אמת
-  damage-vulnerabilities: פגיעויות לנזק
-  damage-resistances: עמידויות לנזק
-  damage-immunities: חסינויות לנזק
-  condition-immunities: חסינויות למצבים
+  damage-vulnerabilities: פגיעות לנזק
+  damage-resistances: עמידות לנזק
+  damage-immunities: חסינות לנזק
+  condition-immunities: חסינות למצבים
   death-successes: הצלחות מוות
-  death-failures: כשלונות מוות
+  death-failures: כישלונות מוות
   exhaustion: תשישות
-  save-proficiencies: הצלות
-  skill-proficiencies: מיומנויות
+  save-proficiencies: הכשרות בהטלות הצלה
+  skill-proficiencies: הכשרות במיומנויות
   expertise: מומחיות
-  armor-proficiencies: שריונות
-  weapon-proficiencies: כלי נשק
-  tool-proficiencies: כלי עבודה
+  armor-proficiencies: הכשרות בשריון
+  weapon-proficiencies: הכשרות בנשק
+  tool-proficiencies: הכשרות בכלים
   languages: שפות
-  features: תכונות
-  fighting-styles: סגנונות קרב
+  features: יכולות
+  fighting-styles: סגנונות לחימה
   attack: התקפה
   damage-roll: הטלת נזק
   caster-level: רמת לוחש
-  spell-save-dc: דרגת קושי ללחשים
-  spell-attack: התקפת לחש
-  slots-1: תאי לחש רמה 1
-  slots-2: תאי לחש רמה 2
-  slots-3: תאי לחש רמה 3
-  slots-4: תאי לחש רמה 4
-  slots-5: תאי לחש רמה 5
-  slots-6: תאי לחש רמה 6
-  slots-7: תאי לחש רמה 7
-  slots-8: תאי לחש רמה 8
-  slots-9: תאי לחש רמה 9
-  spell-slots: תאי לחש
+  spell-save-dc: דרגת קושי לכישופים
+  spell-attack: התקפת כישוף
+  slots-1: תאי כישוף רמה 1
+  slots-2: תאי כישוף רמה 2
+  slots-3: תאי כישוף רמה 3
+  slots-4: תאי כישוף רמה 4
+  slots-5: תאי כישוף רמה 5
+  slots-6: תאי כישוף רמה 6
+  slots-7: תאי כישוף רמה 7
+  slots-8: תאי כישוף רמה 8
+  slots-9: תאי כישוף רמה 9
+  spell-slots: תאי כישוף
   slot-level: רמת תא
   mystic-arcanum-6: ארקנום מיסטי (רמה 6)
   mystic-arcanum-7: ארקנום מיסטי (רמה 7)
   mystic-arcanum-8: ארקנום מיסטי (רמה 8)
   mystic-arcanum-9: ארקנום מיסטי (רמה 9)
-  signature-spell-1: לחש חתימה 1
-  signature-spell-2: לחש חתימה 2
-  max-prepared: מקסימום לחשים מוכנים
-  spells: לחשים
+  signature-spell-1: כישוף מזוהה 1
+  signature-spell-2: כישוף מזוהה 2
+  max-prepared: מקסימום כישופים מוכנים
+  spells: כישופים
   prepared: מוכנים
-  cantrips-known: לחשי קסם קטן ידועים
-  spells-known: לחשים ידועים
-  invocations-known: הפצרות ידועות
+  cantrips-known: קסמונים ידועים
+  spells-known: כישופים ידועים
+  invocations-known: הזעקות ידועות
   rages: זעמים
   rage-damage: נזק זעם
-  martial-arts: אומנויות לחימה
+  martial-arts: אמנויות לחימה
   ki-points: נקודות קי
   unarmored-movement: תנועה ללא שריון
-  sneak-attack: התקפת התגנבות
+  sneak-attack: התקפה ערמומית
   sorcery-points: נקודות כישוף
-  channel-divinity: תעלול אלוהי
+  channel-divinity: תעלת אלוהות
   action-surge: פרץ פעולה
-  second-wind: נשימה שנייה
-  indomitable: בלתי מנוצח
-  wild-shape: צורת חיה
-  bardic-inspiration: השראה בארדית
+  second-wind: רוח שנייה
+  indomitable: בלתי נכנע
+  wild-shape: צורת פרא
+  bardic-inspiration: השראת בארד
   divine-sense: חוש אלוהי
   lay-on-hands: הנחת ידיים
   cleansing-touch: מגע מטהר
-  arcane-recovery: התאוששות ארקנית
+  arcane-recovery: התאוששות מיסטית
   natural-recovery: התאוששות טבעית
   wholeness-of-body: שלמות הגוף
   holy-nimbus: הילה קדושה
   dark-ones-own-luck: מזלו של האפל
-  hurl-through-hell: השלכה דרך הגיהינום
+  hurl-through-hell: השלכה דרך הגיהנום
   stroke-of-luck: מכת מזל
   eldritch-master: אדון הכישוף האפל
-  breath-weapon: נשק נשימה
-  relentless-endurance: סיבולת בלתי נלאית
-  category: קטגוריה
+  breath-weapon: נשימת נשק
+  relentless-endurance: סיבולת בלתי פוסקת
+  category: סוג
   armor: שריון
-  hp-dice: קוביות נק״פ
-  fly: טיסה
+  hp-dice: קוביות נק״ח
+  fly: תעופה
   swim: שחייה
   climb: טיפוס
   burrow: חפירה
-  saves: הצלות
+  saves: הטלות הצלה
   skills: מיומנויות
-  cr: דרגת קושי
-  xp-value: ערך ניסיון
+  cr: דרג״א
+  xp-value: ערך נק״נ
 words:
-  Dragonborn: דרקונבורן
+  Dragonborn: יליד דרקון
   Dwarf: גמד
   Hill Dwarf: גמד גבעות
   Elf: אלף
@@ -173,15 +173,15 @@ words:
   Rock Gnome: גנום סלעים
   Half-Elf: חצי-אלף
   Half-Orc: חצי-אורק
-  Halfling: חצאי
-  Lightfoot Halfling: חצאי קל-רגל
-  Human: אנושי
+  Halfling: נמוך-קומה
+  Lightfoot Halfling: נמוך-קומה קל-רגל
+  Human: אדם
   Tiefling: טיפלינג
-  Barbarian: ברבר
-  Path of the Berserker: נתיב הברסרקר
+  Barbarian: ברברי
+  Path of the Berserker: דרך הברסרקר
   Bard: בארד
   College of Lore: קולג׳ הידע
-  Cleric: כומר
+  Cleric: כהן
   Life Domain: תחום החיים
   Druid: דרואיד
   Circle of the Land: מעגל האדמה
@@ -190,29 +190,29 @@ words:
   Monk: נזיר
   Way of the Open Hand: דרך כף היד הפתוחה
   Paladin: פלדין
-  Oath of Devotion: שבועת המסירות
+  Oath of Devotion: שבועת מסירות
   Ranger: ריינג׳ר
   Hunter: צייד
   Rogue: נוכל
   Thief: גנב
-  Sorcerer: קוסם מולד
+  Sorcerer: מכשף
   Draconic Bloodline: שושלת דרקונית
-  Warlock: וורלוק
-  The Fiend: השד
+  Warlock: ווֹרלוק
+  The Fiend: השטן
   Wizard: קוסם
-  School of Evocation: אסכולת ההעלאה
-  Acolyte (background): אקוליט
+  School of Evocation: אסכולת ההזעקה
+  Acolyte (background): עוזר כהן
   Grappler: מתאבק
   Archery: קשתות
   Defense: הגנה
   Dueling: דו-קרב
   Great Weapon Fighting: לחימה בנשק כבד
   Protection: חסות
-  Two-Weapon Fighting: לחימה בשני נשקים
-  Unarmed Strike: מכה לא חמושה
+  Two-Weapon Fighting: לחימה בשני כלי נשק
+  Unarmed Strike: מכה בלי נשק
   Acrobatics: אקרובטיקה
-  Animal Handling: טיפול בחיות
-  Arcana: ארקנה
+  Animal Handling: אילוף חיות
+  Arcana: ידע מיסטי
   Athletics: אתלטיקה
   Deception: הונאה
   History: היסטוריה
@@ -221,11 +221,11 @@ words:
   Investigation: חקירה
   Medicine: רפואה
   Nature: טבע
-  Perception: קשב
+  Perception: תפיסה
   Performance: הופעה
   Persuasion: שכנוע
   Religion: דת
-  Sleight of Hand: פשפוש ידיים
+  Sleight of Hand: קלות ידיים
   Stealth: התגנבות
   Survival: הישרדות
   Common: שפה משותפת
@@ -239,28 +239,28 @@ words:
   Celestial: שמימית
   Draconic: דרקונית
   Deep Speech: שפת המעמקים
-  Infernal: גיהינומית
+  Infernal: גיהנומית
   Primordial: קדמונית
   Sylvan: סילבנית
   Undercommon: שפת התת-קרקע
-  Aquan: אקוואנית
-  Auran: אוראנית
-  Ignan: איגנאנית
-  Terran: טראנית
+  Aquan: אקוואן
+  Auran: אורן
+  Ignan: איגנן
+  Terran: טרן
   Druidic: דרואידית
-  Thieves' Cant: ז׳רגון הגנבים
+  Thieves' Cant: שפת הגנבים
   Tiny: זעיר
   Small: קטן
   Medium: בינוני
   Large: גדול
-  Huge: ענק
-  Gargantuan: עצום
+  Huge: עצום
+  Gargantuan: ענקי
   Blinded: מסונוור
-  Charmed: מוקסם
-  Deafened: מוחרש
+  Charmed: מכושף
+  Deafened: חירש
   Frightened: מפוחד
-  Grappled: נאחז
-  Incapacitated: חסר יכולת פעולה
+  Grappled: תפוס
+  Incapacitated: משותק פעולה
   Invisible: בלתי נראה
   Paralyzed: משותק
   Petrified: מאובן
@@ -270,12 +270,12 @@ words:
   Stunned: המום
   Unconscious: מחוסר הכרה
   Exhaustion: תשישות
-  blinded: עיוור
-  charmed: מוקסם
-  deafened: חרש
+  blinded: מסונוור
+  charmed: מכושף
+  deafened: חירש
   frightened: מפוחד
-  grappled: נתפס
-  incapacitated: חסר יכולת פעולה
+  grappled: תפוס
+  incapacitated: משותק פעולה
   invisible: בלתי נראה
   paralyzed: משותק
   petrified: מאובן
@@ -286,37 +286,37 @@ words:
   unconscious: מחוסר הכרה
   exhaustion: תשישות
   acid: חומצה
-  bludgeoning: מוחץ
+  bludgeoning: מחץ
   cold: קור
   fire: אש
   force: כוח
   lightning: ברק
-  necrotic: נקרוטי
-  piercing: דוקר
+  necrotic: נמק
+  piercing: דקירה
   poison: רעל
-  psychic: נפשי
-  radiant: קורן
-  slashing: חותך
+  psychic: נפש
+  radiant: קרינה
+  slashing: חיתוך
   thunder: רעם
-  bludgeoning, piercing, and slashing from nonmagical attacks: מוחץ, דוקר וחותך מהתקפות לא קסומות
+  bludgeoning, piercing, and slashing from nonmagical attacks: מחץ, דקירה וחיתוך מהתקפות לא קסומות
   light armor: שריון קל
   medium armor: שריון בינוני
   heavy armor: שריון כבד
-  all armor: כל סוגי השריון
+  all armor: כל השריונות
   shields: מגנים
-  simple weapons: כלי נשק פשוטים
-  martial weapons: כלי נשק צבאיים
+  simple weapons: נשק פשוט
+  martial weapons: נשק צבאי
   clubs: אלות
   daggers: פגיונות
-  darts: חיצי יד
+  darts: חיצים קצרים
   hand crossbows: קשתות יד
-  javelins: כידונים
-  light crossbows: קשתות מוט קלות
+  javelins: רומחים
+  light crossbows: קשתות קלות
   longswords: חרבות ארוכות
-  maces: אלות ברזל
-  quarterstaffs: מקלות
-  rapiers: רפירות
-  scimitars: חרבות עקומות
+  maces: פטישי קרב
+  quarterstaffs: מטות
+  rapiers: רפיירים
+  scimitars: סייפים עקומים
   shortswords: חרבות קצרות
   sickles: מגלים
   slings: קלעים
@@ -332,46 +332,46 @@ words:
   herbalism kit: ערכת צמחי מרפא
   thieves' tools: כלי גנבים
   tinker's tools: כלי מתקן
-  advantage on saving throws against being charmed: יתרון בהטלות הצלה מפני היותו מוקסם
-  advantage on saving throws against being frightened: יתרון בהטלות הצלה מפני היותו מפוחד
-  advantage on saving throws against poison: יתרון בהטלות הצלה מפני רעל
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: יתרון בכל הטלות ההצלה של תבונה, חוכמה וכריזמה מפני קסם
-  aberration: סטייה
+  advantage on saving throws against being charmed: יתרון בהטלות הצלה נגד כישוף קסם
+  advantage on saving throws against being frightened: יתרון בהטלות הצלה נגד פחד
+  advantage on saving throws against poison: יתרון בהטלות הצלה נגד רעל
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: יתרון בכל הטלות ההצלה של תבונה, חוכמה וכריזמה נגד קסם
+  aberration: מפלצת תועבה
   beast: חיה
   celestial: שמימי
   construct: יציר
   dragon: דרקון
   elemental: יסוד
   fey: פיה
-  fiend: יצור גיהנומי
+  fiend: שטן
   giant: ענק
-  humanoid: דמוי אדם
-  monstrosity: מפלצת
+  humanoid: הומנואיד
+  monstrosity: מפלצתי
   ooze: רפש
   plant: צמח
-  undead: בלתי מת
-  humanoid (any race): דמוי אדם (כל גזע)
-  humanoid (dwarf): דמוי אדם (גמד)
-  humanoid (elf): דמוי אדם (אלף)
-  humanoid (gnoll): דמוי אדם (גנול)
-  humanoid (gnome): דמוי אדם (גנום)
-  humanoid (goblinoid): דמוי אדם (גובלינואיד)
-  humanoid (grimlock): דמוי אדם (גרימלוק)
-  humanoid (human): דמוי אדם (אדם)
-  humanoid (human, shapechanger): דמוי אדם (אדם, משנה צורה)
-  humanoid (kobold): דמוי אדם (קובולד)
-  humanoid (lizardfolk): דמוי אדם (אנשי לטאה)
-  humanoid (orc): דמוי אדם (אורק)
-  humanoid (sahuagin): דמוי אדם (סהואגין)
-  fiend (demon): יצור גיהנומי (שד)
-  fiend (demon, shapechanger): יצור גיהנומי (שד, משנה צורה)
-  fiend (devil): יצור גיהנומי (שטן)
-  fiend (devil, shapechanger): יצור גיהנומי (שטן, משנה צורה)
-  fiend (shapechanger): יצור גיהנומי (משנה צורה)
-  monstrosity (shapechanger): מפלצת (משנה צורה)
-  monstrosity (titan): מפלצת (טיטאן)
-  undead (shapechanger): בלתי מת (משנה צורה)
-  swarm of Tiny beasts: נחיל חיות זעירות
+  undead: מת-חי
+  humanoid (any race): הומנואיד (כל גזע)
+  humanoid (dwarf): הומנואיד (גמד)
+  humanoid (elf): הומנואיד (אלף)
+  humanoid (gnoll): הומנואיד (גנול)
+  humanoid (gnome): הומנואיד (גנום)
+  humanoid (goblinoid): הומנואיד (גובלינואיד)
+  humanoid (grimlock): הומנואיד (גרימלוק)
+  humanoid (human): הומנואיד (אדם)
+  humanoid (human, shapechanger): הומנואיד (אדם, משנה צורה)
+  humanoid (kobold): הומנואיד (קובולד)
+  humanoid (lizardfolk): הומנואיד (בני לטאה)
+  humanoid (orc): הומנואיד (אורק)
+  humanoid (sahuagin): הומנואיד (סהואגין)
+  fiend (demon): שטן (שד)
+  fiend (demon, shapechanger): שטן (שד, משנה צורה)
+  fiend (devil): שטן (אביר גיהנום)
+  fiend (devil, shapechanger): שטן (אביר גיהנום, משנה צורה)
+  fiend (shapechanger): שטן (משנה צורה)
+  monstrosity (shapechanger): מפלצתי (משנה צורה)
+  monstrosity (titan): מפלצתי (טיטאן)
+  undead (shapechanger): מת-חי (משנה צורה)
+  swarm of Tiny beasts: figure נחיל חיות זעירות
   lawful good: חוקי טוב
   neutral good: ניטרלי טוב
   chaotic good: כאוטי טוב
@@ -381,21 +381,21 @@ words:
   lawful evil: חוקי רע
   neutral evil: ניטרלי רע
   chaotic evil: כאוטי רע
-  unaligned: ללא נטייה
-  any alignment: כל נטייה
-  any chaotic alignment: כל נטייה כאוטית
-  any evil alignment: כל נטייה רעה
-  any non-good alignment: כל נטייה שאינה טובה
-  any non-lawful alignment: כל נטייה שאינה חוקית
+  unaligned: ללא יישור
+  any alignment: כל יישור
+  any chaotic alignment: כל יישור כאוטי
+  any evil alignment: כל יישור רע
+  any non-good alignment: כל יישור שאינו טוב
+  any non-lawful alignment: כל יישור שאינו חוקי
   neutral good (50%) or neutral evil (50%): ניטרלי טוב (50%) או ניטרלי רע (50%)
   natural armor: שריון טבעי
   leather armor: שריון עור
   studded leather: עור מסומר
-  hide armor: שריון עור גולמי
+  hide armor: שריון עורות
   chain shirt: חולצת שרשראות
   scale mail: שריון קשקשים
   breastplate: שריון חזה
-  chain mail: שריון טבעות
+  chain mail: שריון שרשראות
   splint: שריון פסים
   plate: שריון לוחות
   natural armor, shield: שריון טבעי, מגן
@@ -404,15 +404,18 @@ words:
   hide armor, shield: שריון עורות, מגן
   chain shirt, shield: חולצת שרשראות, מגן
   scale mail, shield: שריון קשקשים, מגן
-  chain mail, shield: שריון טבעות, מגן
+  chain mail, shield: שריון שרשראות, מגן
   advancement: התקדמות
   how your character levels up: איך הדמות שלך עולה ברמה
   xp: נקודות ניסיון
   milestones: אבני דרך
-  your character levels up with experience points, for the foes overcome and what the story rewards: הדמות שלך עולה ברמה באמצעות נקודות ניסיון, על אויבים שהובסו ועל מה שהעלילה מתגמלת
+  your character levels up with experience points, for the foes overcome and what the story rewards: הדמות שלך עולה ברמה בעזרת נקודות ניסיון, על אויבים שהובסו ועל מה שהעלילה מתגמלת
   your character levels up at the big moments of the story: הדמות שלך עולה ברמה ברגעים הגדולים של העלילה
-  the fifth edition from the SRD 5.1, the 2014 rules: המהדורה החמישית מתוך ה-SRD 5.1, חוקי 2014
+  the fifth edition from the SRD 5.1, the 2014 rules: המהדורה החמישית מ-SRD 5.1, חוקי 2014
   long rest: מנוחה ארוכה
   short rest: מנוחה קצרה
   difficult: קשה
+  until long rest: עד מנוחה ארוכה
+  until short rest: עד מנוחה קצרה
+  difficult terrain: שטח קשה
 headline: "{classes} ברמה {level}"

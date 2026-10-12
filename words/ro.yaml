@@ -3,9 +3,9 @@
 groups:
   Character: Personaj
   Personality: Personalitate
-  Abilities: Abilități
+  Abilities: Caracteristici
   Saving Throws: Aruncări de salvare
-  Skills: Aptitudini
+  Skills: Abilități
   Combat: Luptă
   Proficiencies: Competențe
   Features: Trăsături
@@ -13,11 +13,11 @@ groups:
   Spells: Vrăji
 fields:
   creature: rasă
-  size: mărime
+  size: dimensiune
   classes: clase
   subclasses: subclase
   background: origine
-  feats: calități
+  feats: atuuri
   alignment: aliniere
   level: nivel
   xp: PX
@@ -32,12 +32,12 @@ fields:
   int: INT
   wis: ÎNȚ
   cha: CAR
-  str-mod: Mod. FOR
-  dex-mod: Mod. DEX
-  con-mod: Mod. CON
-  int-mod: Mod. INT
-  wis-mod: Mod. ÎNȚ
-  cha-mod: Mod. CAR
+  str-mod: mod FOR
+  dex-mod: mod DEX
+  con-mod: mod CON
+  int-mod: mod INT
+  wis-mod: mod ÎNȚ
+  cha-mod: mod CAR
   proficiency: bonus de competență
   str-save: aruncare de salvare FOR
   dex-save: aruncare de salvare DEX
@@ -45,23 +45,23 @@ fields:
   int-save: aruncare de salvare INT
   wis-save: aruncare de salvare ÎNȚ
   cha-save: aruncare de salvare CAR
-  save-notes: notițe despre aruncările de salvare
+  save-notes: notițe la aruncările de salvare
   acrobatics: acrobații
-  animal-handling: îmblânzirea animalelor
+  animal-handling: dresarea animalelor
   arcana: arcane
   athletics: atletism
   deception: înșelăciune
   history: istorie
   insight: intuiție
   intimidation: intimidare
-  investigation: investigare
+  investigation: investigație
   medicine: medicină
   nature: natură
   perception: percepție
-  performance: reprezentație
+  performance: interpretare
   persuasion: persuasiune
   religion: religie
-  sleight-of-hand: dexteritate manuală
+  sleight-of-hand: prestidigitație
   stealth: furtivitate
   survival: supraviețuire
   ac: CA
@@ -77,7 +77,7 @@ fields:
   hit-dice-d12: zaruri de viață d12
   passive-perception: percepție pasivă
   passive-insight: intuiție pasivă
-  passive-investigation: investigare pasivă
+  passive-investigation: investigație pasivă
   darkvision: vedere în întuneric
   blindsight: simț orb
   tremorsense: simț seismic
@@ -85,12 +85,12 @@ fields:
   damage-vulnerabilities: vulnerabilități la daune
   damage-resistances: rezistențe la daune
   damage-immunities: imunități la daune
-  condition-immunities: imunități la condiții
-  death-successes: reușite la moarte
-  death-failures: eșecuri la moarte
+  condition-immunities: imunități la stări
+  death-successes: succese contra morții
+  death-failures: eșecuri contra morții
   exhaustion: epuizare
   save-proficiencies: aruncări de salvare
-  skill-proficiencies: aptitudini
+  skill-proficiencies: abilități
   expertise: măiestrie
   armor-proficiencies: armuri
   weapon-proficiencies: arme
@@ -101,7 +101,7 @@ fields:
   attack: atac
   damage-roll: aruncare de daune
   caster-level: nivel de lansator
-  spell-save-dc: CD pentru vrăji
+  spell-save-dc: CD vrăji
   spell-attack: atac cu vrăji
   slots-1: locașuri de nivel 1
   slots-2: locașuri de nivel 2
@@ -113,7 +113,7 @@ fields:
   slots-8: locașuri de nivel 8
   slots-9: locașuri de nivel 9
   spell-slots: locașuri de vrăji
-  slot-level: nivelul locașului
+  slot-level: nivel de locaș
   mystic-arcanum-6: arcanum mistic (nivel 6)
   mystic-arcanum-7: arcanum mistic (nivel 7)
   mystic-arcanum-8: arcanum mistic (nivel 8)
@@ -125,7 +125,7 @@ fields:
   prepared: pregătite
   cantrips-known: trucuri cunoscute
   spells-known: vrăji cunoscute
-  invocations-known: invocări cunoscute
+  invocations-known: invocații cunoscute
   rages: furii
   rage-damage: daune de furie
   martial-arts: arte marțiale
@@ -134,13 +134,13 @@ fields:
   sneak-attack: atac pe la spate
   sorcery-points: puncte de vrăjitorie
   channel-divinity: canalizarea divinității
-  action-surge: asalt de acțiune
+  action-surge: val de acțiune
   second-wind: al doilea suflu
-  indomitable: nestăvilit
-  wild-shape: forma sălbatică
+  indomitable: indomabil
+  wild-shape: formă sălbatică
   bardic-inspiration: inspirație bardică
   divine-sense: simț divin
-  lay-on-hands: atingere vindecătoare
+  lay-on-hands: punerea mâinilor
   cleansing-touch: atingere purificatoare
   arcane-recovery: recuperare arcană
   natural-recovery: recuperare naturală
@@ -149,26 +149,26 @@ fields:
   dark-ones-own-luck: norocul celui întunecat
   hurl-through-hell: aruncare prin iad
   stroke-of-luck: lovitură de noroc
-  eldritch-master: maestru ocult
+  eldritch-master: maestrul misticului
   breath-weapon: suflu
-  relentless-endurance: rezistență neobosită
-  category: categorie
+  relentless-endurance: reziliență neîncetată
+  category: tip
   armor: armură
-  hp-dice: zaruri de PV
+  hp-dice: zaruri PV
   fly: zbor
   swim: înot
   climb: cățărare
   burrow: săpare
-  saves: salvări
+  saves: aruncări de salvare
   skills: abilități
-  cr: GP
+  cr: NP
   xp-value: valoare PX
 words:
   Dragonborn: Dragonborn
   Dwarf: Pitic
   Hill Dwarf: Pitic de deal
   Elf: Elf
-  High Elf: Elf înalt
+  High Elf: Elf superior
   Gnome: Gnom
   Rock Gnome: Gnom de stâncă
   Half-Elf: Semielf
@@ -198,9 +198,9 @@ words:
   Sorcerer: Vrăjitor
   Draconic Bloodline: Linie de sânge draconică
   Warlock: Warlock
-  The Fiend: Demonul
-  Wizard: Magician
-  School of Evocation: Școala Evocării
+  The Fiend: Necuratul
+  Wizard: Mag
+  School of Evocation: Școala de evocare
   Acolyte (background): Acolit
   Grappler: Luptător corp la corp
   Archery: Tir cu arcul
@@ -210,8 +210,8 @@ words:
   Protection: Protecție
   Two-Weapon Fighting: Luptă cu două arme
   Unarmed Strike: Lovitură fără arme
-  Acrobatics: Acrobație
-  Animal Handling: Îmblânzirea animalelor
+  Acrobatics: Acrobații
+  Animal Handling: Dresarea animalelor
   Arcana: Arcane
   Athletics: Atletism
   Deception: Înșelăciune
@@ -222,23 +222,23 @@ words:
   Medicine: Medicină
   Nature: Natură
   Perception: Percepție
-  Performance: Reprezentație
+  Performance: Interpretare
   Persuasion: Persuasiune
   Religion: Religie
-  Sleight of Hand: Îndemânare
+  Sleight of Hand: Prestidigitație
   Stealth: Furtivitate
   Survival: Supraviețuire
   Common: Comună
-  Dwarvish: Piticească
-  Elvish: Elfică
-  Giant: Giganților
-  Gnomish: Gnomică
+  Dwarvish: Pitică
+  Elvish: Elfă
+  Giant: Gigantă
+  Gnomish: Gnomă
   Goblin: Goblină
   Orc: Orcă
   Abyssal: Abisală
-  Celestial: Celestă
+  Celestial: Cerească
   Draconic: Draconică
-  Deep Speech: Limbajul Adâncurilor
+  Deep Speech: Vorbirea adâncurilor
   Infernal: Infernală
   Primordial: Primordială
   Sylvan: Silvană
@@ -256,11 +256,11 @@ words:
   Huge: Uriașă
   Gargantuan: Gigantică
   Blinded: Orbit
-  Charmed: Fermecat
+  Charmed: Vrăjit
   Deafened: Asurzit
   Frightened: Speriat
-  Grappled: Imobilizat
-  Incapacitated: Incapacitat
+  Grappled: Apucat
+  Incapacitated: Incapabil
   Invisible: Invizibil
   Paralyzed: Paralizat
   Petrified: Pietrificat
@@ -271,11 +271,11 @@ words:
   Unconscious: Inconștient
   Exhaustion: Epuizare
   blinded: orbit
-  charmed: fermecat
+  charmed: vrăjit
   deafened: asurzit
   frightened: speriat
   grappled: apucat
-  incapacitated: incapacitat
+  incapacitated: incapabil
   invisible: invizibil
   paralyzed: paralizat
   petrified: pietrificat
@@ -286,31 +286,31 @@ words:
   unconscious: inconștient
   exhaustion: epuizare
   acid: acid
-  bludgeoning: contondent
+  bludgeoning: contondente
   cold: frig
   fire: foc
   force: forță
   lightning: fulger
-  necrotic: necrotic
-  piercing: perforant
+  necrotic: necrotice
+  piercing: perforante
   poison: otravă
-  psychic: psihic
-  radiant: radiant
-  slashing: tăietor
+  psychic: psihice
+  radiant: radiante
+  slashing: tăietoare
   thunder: tunet
-  bludgeoning, piercing, and slashing from nonmagical attacks: contondent, perforant și tăietor din atacuri nemagice
+  bludgeoning, piercing, and slashing from nonmagical attacks: contondente, perforante și tăietoare din atacuri nemagice
   light armor: armuri ușoare
   medium armor: armuri medii
   heavy armor: armuri grele
   all armor: toate armurile
   shields: scuturi
   simple weapons: arme simple
-  martial weapons: arme de luptă
+  martial weapons: arme marțiale
   clubs: ciomege
   daggers: pumnale
-  darts: săgeți de aruncat
+  darts: darde
   hand crossbows: arbalete de mână
-  javelins: javeline
+  javelins: sulițe de aruncat
   light crossbows: arbalete ușoare
   longswords: săbii lungi
   maces: buzdugane
@@ -321,7 +321,7 @@ words:
   sickles: seceri
   slings: praștii
   spears: sulițe
-  battleaxe: secure de luptă
+  battleaxe: topor de luptă
   handaxe: topor de mână
   light hammer: ciocan ușor
   warhammer: ciocan de război
@@ -331,11 +331,11 @@ words:
   longbow: arc lung
   herbalism kit: trusă de ierbar
   thieves' tools: unelte de hoț
-  tinker's tools: unelte de meșteșugar
-  advantage on saving throws against being charmed: avantaj la salvări contra stării de fermecat
-  advantage on saving throws against being frightened: avantaj la salvări contra stării de speriat
-  advantage on saving throws against poison: avantaj la salvări contra otrăvii
-  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: avantaj la toate salvările de Inteligență, Înțelepciune și Carismă contra magiei
+  tinker's tools: unelte de mecanic
+  advantage on saving throws against being charmed: avantaj la aruncările de salvare pentru a nu fi vrăjit
+  advantage on saving throws against being frightened: avantaj la aruncările de salvare pentru a nu fi speriat
+  advantage on saving throws against poison: avantaj la aruncările de salvare împotriva otrăvii
+  advantage on all Intelligence, Wisdom, and Charisma saving throws against magic: avantaj la toate aruncările de salvare de Inteligență, Înțelepciune și Carismă împotriva magiei
   aberration: aberație
   beast: fiară
   celestial: celest
@@ -343,13 +343,13 @@ words:
   dragon: dragon
   elemental: elementar
   fey: făptură feerică
-  fiend: demon
+  fiend: necurat
   giant: uriaș
   humanoid: umanoid
   monstrosity: monstruozitate
   ooze: mâzgă
   plant: plantă
-  undead: nemort
+  undead: mort-viu
   humanoid (any race): umanoid (orice rasă)
   humanoid (dwarf): umanoid (pitic)
   humanoid (elf): umanoid (elf)
@@ -363,15 +363,15 @@ words:
   humanoid (lizardfolk): umanoid (om-șopârlă)
   humanoid (orc): umanoid (orc)
   humanoid (sahuagin): umanoid (sahuagin)
-  fiend (demon): demon (demon)
-  fiend (demon, shapechanger): demon (demon, schimbător de formă)
-  fiend (devil): demon (diavol)
-  fiend (devil, shapechanger): demon (diavol, schimbător de formă)
-  fiend (shapechanger): demon (schimbător de formă)
+  fiend (demon): necurat (demon)
+  fiend (demon, shapechanger): necurat (demon, schimbător de formă)
+  fiend (devil): necurat (diavol)
+  fiend (devil, shapechanger): necurat (diavol, schimbător de formă)
+  fiend (shapechanger): necurat (schimbător de formă)
   monstrosity (shapechanger): monstruozitate (schimbător de formă)
   monstrosity (titan): monstruozitate (titan)
-  undead (shapechanger): nemort (schimbător de formă)
-  swarm of Tiny beasts: roi de fiare Mărunte
+  undead (shapechanger): mort-viu (schimbător de formă)
+  swarm of Tiny beasts: roi de fiare Minuscule
   lawful good: loial bun
   neutral good: neutru bun
   chaotic good: haotic bun
@@ -391,28 +391,31 @@ words:
   natural armor: armură naturală
   leather armor: armură de piele
   studded leather: piele cu ținte
-  hide armor: armură din blană
+  hide armor: armură de blană
   chain shirt: cămașă de zale
-  scale mail: zale solzi
+  scale mail: armură de solzi
   breastplate: platoșă
   chain mail: zale
-  splint: armură din lamele
+  splint: armură cu benzi
   plate: armură de plăci
   natural armor, shield: armură naturală, scut
   leather armor, shield: armură de piele, scut
   studded leather, shield: piele cu ținte, scut
-  hide armor, shield: armură din piele groasă, scut
+  hide armor, shield: armură de blană, scut
   chain shirt, shield: cămașă de zale, scut
-  scale mail, shield: zale solzi, scut
+  scale mail, shield: armură de solzi, scut
   chain mail, shield: zale, scut
-  advancement: Avansare
-  how your character levels up: cum avansează personajul tău în nivel
+  advancement: Progres
+  how your character levels up: cum crește nivelul personajului tău
   xp: Puncte de experiență
   milestones: Borne
-  your character levels up with experience points, for the foes overcome and what the story rewards: personajul tău avansează în nivel cu puncte de experiență, pentru dușmanii învinși și pentru ceea ce recompensează povestea
-  your character levels up at the big moments of the story: personajul tău avansează în nivel în marile momente ale poveștii
+  your character levels up with experience points, for the foes overcome and what the story rewards: personajul tău crește în nivel cu puncte de experiență, pentru dușmanii învinși și pentru ce recompensează povestea
+  your character levels up at the big moments of the story: personajul tău crește în nivel în marile momente ale poveștii
   the fifth edition from the SRD 5.1, the 2014 rules: a cincea ediție din SRD 5.1, regulile din 2014
   long rest: odihnă lungă
   short rest: odihnă scurtă
   difficult: dificil
-headline: "{classes} nivel {level}"
+  until long rest: până la odihna lungă
+  until short rest: până la odihna scurtă
+  difficult terrain: teren dificil
+headline: "{classes} de nivel {level}"
