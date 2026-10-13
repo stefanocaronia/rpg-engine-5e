@@ -166,6 +166,22 @@ rewards:
   xp: {from: xp-value, overcome: hp 0}
 # The conditions (Appendix PH-A, pp. 358–359): an effect with one of these names shows its rule.
 conditions: [Blinded, Charmed, Deafened, Frightened, Grappled, Incapacitated, Invisible, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned, Unconscious]
+# The drawing of each condition on the dashboard's tokens and in Combat (D-419): the d of an SVG path on a grid of 24, drawn as a line; drawn for rpg-engine.
+condition-icons:
+  Blinded: "M3 12c2.5-4 5.5-6 9-6s6.5 2 9 6c-2.5 4-5.5 6-9 6s-6.5-2-9-6Z M4.5 19.5l15-15"
+  Charmed: "M12 19.5s-7.5-4.6-7.5-9.6a4 4 0 0 1 7.5-2a4 4 0 0 1 7.5 2c0 5-7.5 9.6-7.5 9.6Z"
+  Deafened: "M4 9.5h3l4.5-4v13l-4.5-4H4Z M15 9.5l5 5 M20 9.5l-5 5"
+  Frightened: "M6 19.75V10.25a6 6 0 0 1 12 0v9.5l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5Z M10 9.75v1 M14 9.75v1"
+  Grappled: "M3 12h6 M6.5 9l2.5 3-2.5 3 M21 12h-6 M17.5 9 15 12l2.5 3"
+  Incapacitated: "M4.5 12a7.5 7.5 0 1 0 15 0a7.5 7.5 0 1 0-15 0Z M6.7 6.7l10.6 10.6"
+  Invisible: "M8.71 6.8A3.5 3.5 0 0 1 10.8 4.71 M13.2 4.71A3.5 3.5 0 0 1 15.29 6.8 M15.29 9.2A3.5 3.5 0 0 1 13.2 11.29 M10.8 11.29A3.5 3.5 0 0 1 8.71 9.2 M5 20.5c.3-2 1.2-3.5 2.6-4.5 M10 14.9c1.3-.4 2.7-.4 4 0 M16.4 16c1.4 1 2.3 2.5 2.6 4.5"
+  Paralyzed: "M13.5 3 6 13.5h5.5L10.5 21 18 10.5h-5.5Z"
+  Petrified: "M5 19.5 3.5 13 7 6.5 13 4.5 19 7.5 20.5 14 17 19.5Z M11.5 4.8 13 9.5 10.5 12.5 12.5 16.5"
+  Poisoned: "M12 3.5c3.2 4.6 5.5 7.6 5.5 10.8a5.5 5.5 0 0 1-11 0c0-3.2 2.3-6.2 5.5-10.8Z M10 15.5a2 2 0 0 0 2 2"
+  Prone: "M12 4v10.5 M8 10.5l4 4 4-4 M4 20h16"
+  Restrained: "M10 14l4-4 M8.5 11.5l-2 2a3 3 0 0 0 4.2 4.2l2-2 M15.5 12.5l2-2a3 3 0 0 0-4.2-4.2l-2 2"
+  Stunned: "M12 12.75a1.5 1.5 0 0 1 3 0a3 3 0 0 1-6 0a4.5 4.5 0 0 1 9 0a6 6 0 0 1-12 0a7.5 7.5 0 0 1 7.5-7.5"
+  Unconscious: "M4.5 7.5h5l-5 6h5 M13 12h6.5l-6.5 8h6.5"
 # What breaks a spell someone concentrates on (p. 102, D-266, EFF-14): damage, being incapacitated (the last four incapacitate, pp. 358–359), dying.
 keeping: {counter: hp, conditions: [Incapacitated, Paralyzed, Petrified, Stunned, Unconscious], rules: Concentration}
 # What a fight follows on the dashboard's Combat (D-314): hit points, a foe's told in words; who cannot act (p. 358), never a turn skipped.
