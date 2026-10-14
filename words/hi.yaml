@@ -3,6 +3,7 @@
 groups:
   Character: किरदार
   Personality: व्यक्तित्व
+  Appearance: रूप-रंग
   Abilities: क्षमताएँ
   Saving Throws: सेविंग थ्रो
   Skills: कौशल
@@ -26,6 +27,13 @@ fields:
   ideal: आदर्श
   bond: बंधन
   flaw: कमज़ोरी
+  age: आयु
+  height: कद
+  weight: वज़न
+  eyes: आँखें
+  skin: त्वचा
+  hair: बाल
+  factions: सहयोगी और संगठन
   str: शक्ति
   dex: चपलता
   con: सहनशक्ति

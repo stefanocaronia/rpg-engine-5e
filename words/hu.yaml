@@ -3,6 +3,7 @@
 groups:
   Character: Karakter
   Personality: Személyiség
+  Appearance: Külső
   Abilities: Tulajdonságok
   Saving Throws: Mentődobások
   Skills: Képzettségek
@@ -26,6 +27,13 @@ fields:
   ideal: eszmény
   bond: kötelék
   flaw: gyengeség
+  age: Kor
+  height: Magasság
+  weight: Súly
+  eyes: Szem
+  skin: Bőr
+  hair: Haj
+  factions: Szövetségesek és szervezetek
   str: ERŐ
   dex: ÜGY
   con: ALK

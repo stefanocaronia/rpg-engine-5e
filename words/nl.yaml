@@ -3,6 +3,7 @@
 groups:
   Character: Personage
   Personality: Persoonlijkheid
+  Appearance: Uiterlijk
   Abilities: Eigenschappen
   Saving Throws: Reddingsworpen
   Skills: Vaardigheden
@@ -26,6 +27,13 @@ fields:
   ideal: ideaal
   bond: band
   flaw: gebrek
+  age: Leeftijd
+  height: Lengte
+  weight: Gewicht
+  eyes: Ogen
+  skin: Huid
+  hair: Haar
+  factions: Facties
   str: KRA
   dex: BEH
   con: CON

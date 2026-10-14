@@ -3,6 +3,7 @@
 groups:
   Character: Personaje
   Personality: Personalidad
+  Appearance: Apariencia
   Abilities: Características
   Saving Throws: Tiradas de salvación
   Skills: Habilidades
@@ -26,6 +27,13 @@ fields:
   ideal: ideal
   bond: vínculo
   flaw: defecto
+  age: Edad
+  height: Altura
+  weight: Peso
+  eyes: Ojos
+  skin: Piel
+  hair: Cabello
+  factions: Aliados y organizaciones
   str: FUE
   dex: DES
   con: CON

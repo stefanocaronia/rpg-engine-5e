@@ -3,6 +3,7 @@
 groups:
   Character: الشخصية
   Personality: الطباع
+  Appearance: المظهر
   Abilities: القدرات
   Saving Throws: رميات الإنقاذ
   Skills: المهارات
@@ -26,6 +27,13 @@ fields:
   ideal: المثل الأعلى
   bond: الرابط
   flaw: العيب
+  age: العمر
+  height: الطول
+  weight: الوزن
+  eyes: العيون
+  skin: البشرة
+  hair: الشعر
+  factions: الفصائل
   str: قوة
   dex: رشاقة
   con: بنية

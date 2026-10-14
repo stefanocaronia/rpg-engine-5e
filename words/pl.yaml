@@ -3,6 +3,7 @@
 groups:
   Character: Postać
   Personality: Osobowość
+  Appearance: Wygląd
   Abilities: Cechy
   Saving Throws: Rzuty obronne
   Skills: Umiejętności
@@ -26,6 +27,13 @@ fields:
   ideal: ideał
   bond: więź
   flaw: słabość
+  age: wiek
+  height: wzrost
+  weight: waga
+  eyes: oczy
+  skin: skóra
+  hair: włosy
+  factions: frakcje i organizacje
   str: SIŁ
   dex: ZRE
   con: KON

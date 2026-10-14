@@ -3,6 +3,7 @@
 groups:
   Character: Personaggio
   Personality: Personalità
+  Appearance: Aspetto
   Abilities: Caratteristiche
   Saving Throws: Tiri salvezza
   Skills: Abilità
@@ -28,6 +29,14 @@ fields:
   ideal: Ideale
   bond: Legame
   flaw: Difetto
+  # Appearance (the second page of the character sheet)
+  age: Età
+  height: Altezza
+  weight: Peso
+  eyes: Occhi
+  skin: Carnagione
+  hair: Capelli
+  factions: Alleati e organizzazioni
   # Abilities, as the stat blocks abbreviate them (p. 380)
   str: FOR
   dex: DES

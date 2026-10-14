@@ -3,6 +3,7 @@
 groups:
   Character: Rollperson
   Personality: Personlighet
+  Appearance: Utseende
   Abilities: Egenskaper
   Saving Throws: Räddningsslag
   Skills: Färdigheter
@@ -26,6 +27,13 @@ fields:
   ideal: ideal
   bond: band
   flaw: brist
+  age: Ålder
+  height: Längd
+  weight: Vikt
+  eyes: Ögon
+  skin: Hud
+  hair: Hår
+  factions: Fraktioner
   str: STY
   dex: SMI
   con: KON

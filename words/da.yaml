@@ -3,6 +3,7 @@
 groups:
   Character: Karakter
   Personality: Personlighed
+  Appearance: Udseende
   Abilities: Egenskaber
   Saving Throws: Redningskast
   Skills: Færdigheder
@@ -26,6 +27,13 @@ fields:
   ideal: Ideal
   bond: Bånd
   flaw: Fejl
+  age: alder
+  height: højde
+  weight: vægt
+  eyes: øjne
+  skin: hud
+  hair: hår
+  factions: fraktioner
   str: STY
   dex: BEH
   con: KON

@@ -3,6 +3,7 @@
 groups:
   Character: Postava
   Personality: Osobnost
+  Appearance: Vzhled
   Abilities: Vlastnosti
   Saving Throws: Záchranné hody
   Skills: Dovednosti
@@ -26,6 +27,13 @@ fields:
   ideal: ideál
   bond: pouto
   flaw: slabina
+  age: věk
+  height: výška
+  weight: váha
+  eyes: oči
+  skin: pleť
+  hair: vlasy
+  factions: frakce a organizace
   str: SIL
   dex: OBR
   con: ODO

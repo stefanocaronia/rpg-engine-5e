@@ -3,6 +3,7 @@
 groups:
   Character: キャラクター
   Personality: 人格
+  Appearance: 外見
   Abilities: 能力値
   Saving Throws: セーヴィングスロー
   Skills: 技能
@@ -26,6 +27,13 @@ fields:
   ideal: 理想
   bond: 絆
   flaw: 欠点
+  age: 年齢
+  height: 身長
+  weight: 体重
+  eyes: 瞳
+  skin: 肌
+  hair: 髪
+  factions: 所属勢力
   str: 筋力
   dex: 敏捷力
   con: 耐久力

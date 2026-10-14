@@ -3,6 +3,7 @@
 groups:
   Character: 캐릭터
   Personality: 성격
+  Appearance: 외모
   Abilities: 능력치
   Saving Throws: 내성 굴림
   Skills: 기술
@@ -26,6 +27,13 @@ fields:
   ideal: 이상
   bond: 유대
   flaw: 결점
+  age: 나이
+  height: 키
+  weight: 몸무게
+  eyes: 눈
+  skin: 피부
+  hair: 머리카락
+  factions: 동맹 및 단체
   str: 근력
   dex: 민첩
   con: 건강

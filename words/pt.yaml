@@ -3,6 +3,7 @@
 groups:
   Character: Personagem
   Personality: Personalidade
+  Appearance: Aparência
   Abilities: Habilidades
   Saving Throws: Testes de Resistência
   Skills: Perícias
@@ -26,6 +27,13 @@ fields:
   ideal: ideal
   bond: vínculo
   flaw: defeito
+  age: idade
+  height: altura
+  weight: peso
+  eyes: olhos
+  skin: pele
+  hair: cabelo
+  factions: facções
   str: FOR
   dex: DES
   con: CON

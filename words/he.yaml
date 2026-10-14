@@ -3,6 +3,7 @@
 groups:
   Character: דמות
   Personality: אישיות
+  Appearance: מראה
   Abilities: תכונות
   Saving Throws: הטלות הצלה
   Skills: מיומנויות
@@ -26,6 +27,13 @@ fields:
   ideal: אידיאל
   bond: קשר
   flaw: פגם
+  age: גיל
+  height: גובה
+  weight: משקל
+  eyes: עיניים
+  skin: עור
+  hair: שיער
+  factions: בעלי ברית וארגונים
   str: כוח
   dex: זריזות
   con: חוסן

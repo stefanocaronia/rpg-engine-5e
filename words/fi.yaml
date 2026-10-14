@@ -3,6 +3,7 @@
 groups:
   Character: Hahmo
   Personality: Persoonallisuus
+  Appearance: Ulkonäkö
   Abilities: Ominaisuudet
   Saving Throws: Pelastusheitot
   Skills: Taidot
@@ -26,6 +27,13 @@ fields:
   ideal: ihanne
   bond: side
   flaw: heikkous
+  age: Ikä
+  height: Pituus
+  weight: Paino
+  eyes: Silmät
+  skin: Iho
+  hair: Hiukset
+  factions: Ryhmittymät
   str: VOI
   dex: KET
   con: KES

@@ -3,6 +3,7 @@
 groups:
   Character: Персонаж
   Personality: Особистість
+  Appearance: Зовнішність
   Abilities: Характеристики
   Saving Throws: Рятівні кидки
   Skills: Навички
@@ -26,6 +27,13 @@ fields:
   ideal: ідеал
   bond: прив'язаність
   flaw: вада
+  age: вік
+  height: зріст
+  weight: вага
+  eyes: очі
+  skin: шкіра
+  hair: волосся
+  factions: союзники та організації
   str: СИЛ
   dex: СПР
   con: ТІЛ

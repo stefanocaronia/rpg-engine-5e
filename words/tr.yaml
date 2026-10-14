@@ -3,6 +3,7 @@
 groups:
   Character: Karakter
   Personality: Kişilik
+  Appearance: Görünüm
   Abilities: Yetenekler
   Saving Throws: Kurtarma Atışları
   Skills: Beceriler
@@ -26,6 +27,13 @@ fields:
   ideal: ideal
   bond: bağ
   flaw: kusur
+  age: Yaş
+  height: Boy
+  weight: Kilo
+  eyes: Gözler
+  skin: Ten
+  hair: Saç
+  factions: Gruplar ve Örgütler
   str: GÜÇ
   dex: ÇEV
   con: DAY

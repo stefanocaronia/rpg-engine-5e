@@ -3,6 +3,7 @@
 groups:
   Character: Χαρακτήρας
   Personality: Προσωπικότητα
+  Appearance: Εμφάνιση
   Abilities: Ικανότητες
   Saving Throws: Σωτήριες ρίψεις
   Skills: Δεξιότητες
@@ -26,6 +27,13 @@ fields:
   ideal: ιδανικό
   bond: δεσμός
   flaw: ελάττωμα
+  age: Ηλικία
+  height: Ύψος
+  weight: Βάρος
+  eyes: Μάτια
+  skin: Δέρμα
+  hair: Μαλλιά
+  factions: Σύμμαχοι και οργανώσεις
   str: ΔΥΝ
   dex: ΕΥΚ
   con: ΑΝΤ

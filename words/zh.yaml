@@ -3,6 +3,7 @@
 groups:
   Character: 角色
   Personality: 性格
+  Appearance: 外貌
   Abilities: 属性
   Saving Throws: 豁免
   Skills: 技能
@@ -26,6 +27,13 @@ fields:
   ideal: 理想
   bond: 羁绊
   flaw: 缺点
+  age: 年龄
+  height: 身高
+  weight: 体重
+  eyes: 眼睛
+  skin: 肤色
+  hair: 头发
+  factions: 盟友与组织
   str: 力量
   dex: 敏捷
   con: 体质

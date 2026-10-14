@@ -3,6 +3,7 @@
 groups:
   Character: Charakter
   Personality: Persönlichkeit
+  Appearance: Aussehen
   Abilities: Attribute
   Saving Throws: Rettungswürfe
   Skills: Fertigkeiten
@@ -26,6 +27,13 @@ fields:
   ideal: Ideal
   bond: Bindung
   flaw: Makel
+  age: Alter
+  height: Größe
+  weight: Gewicht
+  eyes: Augen
+  skin: Haut
+  hair: Haare
+  factions: Verbündete & Organisationen
   str: STR
   dex: GES
   con: KON

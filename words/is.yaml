@@ -3,6 +3,7 @@
 groups:
   Character: Persóna
   Personality: Persónuleiki
+  Appearance: Útlit
   Abilities: Hæfileikar
   Saving Throws: Björgunarköst
   Skills: Færni
@@ -26,6 +27,13 @@ fields:
   ideal: Hugsjón
   bond: Tengsl
   flaw: Galli
+  age: aldur
+  height: hæð
+  weight: þyngd
+  eyes: augu
+  skin: húð
+  hair: hár
+  factions: fylkingar
   str: STY
   dex: FIM
   con: ÞOL

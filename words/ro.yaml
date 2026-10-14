@@ -3,6 +3,7 @@
 groups:
   Character: Personaj
   Personality: Personalitate
+  Appearance: Aspect
   Abilities: Caracteristici
   Saving Throws: Aruncări de salvare
   Skills: Abilități
@@ -26,6 +27,13 @@ fields:
   ideal: ideal
   bond: legătură
   flaw: defect
+  age: vârstă
+  height: înălțime
+  weight: greutate
+  eyes: ochi
+  skin: piele
+  hair: păr
+  factions: aliați și organizații
   str: FOR
   dex: DEX
   con: CON

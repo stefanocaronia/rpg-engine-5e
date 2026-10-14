@@ -49,8 +49,9 @@ settings:
 # is shown beside the one before it. Only what the system does not work out (computed, below) is written: status lists it until there is a player character,
 # and reminds what a character still lacks; with ? a field written only when it applies, never reminded.
 sheet:
-  Character: [creature?, size?, classes, subclasses?, background?, feats?, alignment?, level, xp, inspiration?]
+  Character: [creature?, size?, classes, subclasses?, background?, feats?, alignment?, factions?, level, xp, inspiration?]
   Personality: [personality-traits?, ideal?, bond?, flaw?]
+  Appearance: [age?, height?, weight?, eyes?, skin?, hair?]
   Abilities: [str (str-mod), dex (dex-mod), con (con-mod), int (int-mod), wis (wis-mod), cha (cha-mod), proficiency]
   Saving Throws: [str-save, dex-save, con-save, int-save, wis-save, cha-save, save-notes?]
   Skills: [acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival]
@@ -70,6 +71,7 @@ roll-names:
   2d20kl1: {en: with disadvantage, it: con svantaggio}
 # What write says of a group once, when a character joins the party (D-206).
 sheet-notes:
+  Appearance: "a player character's age, height, weight, eyes, skin and hair are the player's, in their words, the age in years: propose them from the race's Age and Size traits when they leave it to you, and keep the look they describe in the page's text too."
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: offer their background's tables, rolled or chosen, or propose some; never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
   Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it. Armor and weapons by the names the class page uses, in English, such as weapon-proficiencies: [simple weapons, martial weapons]: the attacks read them."
   Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. Slots, save DC and attack are worked out: never write them."
@@ -80,7 +82,7 @@ sheet-notes:
 # often play needs them; in a fight, at hand, the armor class, initiative, speed and hit points, the attacks and the spells (D-315).
 sheet-cards:
   rail: [Abilities, Saving Throws]
-  order: [Skills, Combat, Attacks, Spells, Features, Proficiencies, Character, Personality]
+  order: [Skills, Combat, Attacks, Spells, Features, Proficiencies, Character, Personality, Appearance]
   at-hand: [ac, initiative, speed, hp, temp-hp, Attacks, Spells]
 # The line under a character's name on the dashboard (D-288).
 sheet-headline: "Level {level} {classes}"
@@ -88,6 +90,7 @@ sheet-headline: "Level {level} {classes}"
 sheet-icons:
   Character: "M12 3.5a4 4 0 1 1 0 8a4 4 0 1 1 0-8Z M4.5 20.5c.6-3.9 3.7-6.5 7.5-6.5s6.9 2.6 7.5 6.5Z"
   Personality: "M4.5 4.5c5 1.3 10 1.3 15 0V11a7.5 7.5 0 0 1-15 0Z M8 9.6c.7-.6 1.8-.6 2.5 0 M13.5 9.6c.7-.6 1.8-.6 2.5 0 M8.8 13.8a4 4 0 0 0 6.4 0"
+  Appearance: "M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z M12 9.5a2.5 2.5 0 1 1 0 5a2.5 2.5 0 1 1 0-5Z"
   Abilities: "M4.5 13.5h3v6h-3Z M10.5 5.5h3v14h-3Z M16.5 9.5h3v10h-3Z"
   Saving Throws: "M12 3 19 5.5V11c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V5.5Z M9 12l2.2 2.2 4-4.2"
   Skills: "M11 5a8 8 0 1 0 8 8 M11 9a4 4 0 1 0 4 4 M11 13l8-8 M15.5 4.5v4h4"
@@ -193,6 +196,12 @@ fields:
   size: text
   category: text
   alignment: text
+  # The look of a character, as the second page of the character sheet has it: the age in years, the rest in the player's words.
+  age: number
+  height: text
+  eyes: text
+  skin: text
+  hair: text
   ac: number
   # The Armor Class of an armor and a shield as formulas on who wears them (p. 63): "11 + dex-mod + bonus", the bonus a magic one adds; what the Armor table
   # says of Strength and Stealth (p. 63). A weapon's attack and damage, with its ability, its proficiency and its bonus (pp. 65, 146).

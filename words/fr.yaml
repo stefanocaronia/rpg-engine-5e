@@ -3,6 +3,7 @@
 groups:
   Character: Personnage
   Personality: Personnalité
+  Appearance: Apparence
   Abilities: Caractéristiques
   Saving Throws: Jets de sauvegarde
   Skills: Compétences
@@ -26,6 +27,13 @@ fields:
   ideal: idéal
   bond: lien
   flaw: défaut
+  age: Âge
+  height: Taille
+  weight: Poids
+  eyes: Yeux
+  skin: Peau
+  hair: Cheveux
+  factions: Alliés et organisations
   str: FOR
   dex: DEX
   con: CON
