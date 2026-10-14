@@ -118,6 +118,8 @@ token-icons:
 # The names a list takes (pp. 77, 83): write refuses others, giving these, and validate reports those written by hand. Only lists the game closes:
 # expertise is open, since a feature may give it in any tool (D-216).
 values:
+  # The alignments (pp. 58–59): the nine of a character, and those the SRD's creatures have.
+  alignment: [lawful good, neutral good, chaotic good, lawful neutral, neutral, chaotic neutral, lawful evil, neutral evil, chaotic evil, unaligned, any alignment, any chaotic alignment, any evil alignment, any non-good alignment, any non-lawful alignment, "neutral good (50%) or neutral evil (50%)"]
   save-proficiencies: [str, dex, con, int, wis, cha]
   skill-proficiencies: [Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, Survival]
 # The classes give the row of their table at the character's level in each (pp. 8–55, D-201, D-219): its columns as values of the sheet, such as Rage Damage,
