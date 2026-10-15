@@ -76,6 +76,11 @@ fields:
   ac: RK
   initiative: initiativ
   speed: fart
+  walking: gange
+  flying: flyging
+  swimming: svømming
+  climbing: klatring
+  burrowing: graving
   equipped: utstyrt
   hp-base: LP grunnverdi
   hp: LP
@@ -176,6 +181,7 @@ fields:
   quantity: antall
   load: Last
   attuned: innstilt
+  days-without-food: dager uten mat
 words:
   Dragonborn: Dragefødt
   Dwarf: Dverg

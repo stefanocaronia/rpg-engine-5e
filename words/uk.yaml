@@ -176,6 +176,7 @@ fields:
   quantity: Кількість
   load: Навантаження
   attuned: налаштовано
+  days-without-food: днів без їжі
 words:
   Dragonborn: Драконороджений
   Dwarf: Дварф

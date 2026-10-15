@@ -2,6 +2,7 @@
 size: Medium
 category: race
 speed: 25 ft
+armor-unhindered: 1
 damage-resistances: [poison]
 darkvision: 60 ft
 languages: [Common, Dwarvish]

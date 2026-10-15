@@ -5,6 +5,7 @@ bonus: 0
 armor-class: 16 + bonus
 strength-required: 13
 stealth-disadvantage: true
+speed-slowed: "10 * max(0, min(1, strength-required - str)) * (1 - armor-unhindered) * (1 - has(rigor, simulation))"
 weight: 55 lb
 image: "[[chain-mail.svg]]"
 ---

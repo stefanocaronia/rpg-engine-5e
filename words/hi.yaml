@@ -76,6 +76,11 @@ fields:
   ac: AC
   initiative: इनिशिएटिव
   speed: गति
+  walking: चलना
+  flying: उड़ना
+  swimming: तैरना
+  climbing: चढ़ना
+  burrowing: बिल खोदना
   equipped: धारण किया
   hp-base: बेस HP
   hp: HP
@@ -176,6 +181,7 @@ fields:
   quantity: मात्रा
   load: भार
   attuned: अभिमंत्रित
+  days-without-food: भोजन के बिना दिन
 words:
   Dragonborn: ड्रैगनबॉर्न
   Dwarf: ड्वार्फ़

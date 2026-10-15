@@ -82,7 +82,12 @@ fields:
   # Combat (pp. 8, 107, 110–112, 294–295, 406)
   ac: CA
   initiative: Iniziativa
-  speed: Velocità
+  speed: Velocità base
+  walking: Velocità
+  flying: Volo
+  swimming: Nuoto
+  climbing: Scalata
+  burrowing: Scavo
   equipped: Equipaggiato  # ours
   hp-base: PF dai dadi  # ours: the hit points the hit dice gave, without Constitution
   hp: PF
@@ -190,6 +195,7 @@ fields:
   quantity: Quantità
   load: Carico
   attuned: Sintonia
+  days-without-food: Giorni senza cibo
 # The whole name of a field whose label is short, as a roll tells it (D-431)
 names:
   str: Forza

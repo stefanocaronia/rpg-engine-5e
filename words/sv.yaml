@@ -76,6 +76,11 @@ fields:
   ac: PK
   initiative: initiativ
   speed: hastighet
+  walking: Gång
+  flying: Flygning
+  swimming: Simning
+  climbing: Klättring
+  burrowing: Grävning
   equipped: utrustad
   hp-base: grund-LP
   hp: LP
@@ -176,6 +181,7 @@ fields:
   quantity: antal
   load: Last
   attuned: inställd
+  days-without-food: dagar utan mat
 words:
   Dragonborn: Drakfödd
   Dwarf: Dvärg

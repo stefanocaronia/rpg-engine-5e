@@ -76,6 +76,11 @@ fields:
   ac: AC
   initiative: 이니셔티브
   speed: 속도
+  walking: 도보
+  flying: 비행
+  swimming: 수영
+  climbing: 등반
+  burrowing: 굴착
   equipped: 장착
   hp-base: 주사위 HP
   hp: HP
@@ -176,6 +181,7 @@ fields:
   quantity: 수량
   load: 적재량
   attuned: 조율
+  days-without-food: 식량 없이 보낸 일수
 words:
   Dragonborn: 드래곤본
   Dwarf: 드워프

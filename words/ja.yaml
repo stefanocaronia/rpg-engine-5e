@@ -76,6 +76,11 @@ fields:
   ac: AC
   initiative: イニシアチブ
   speed: 移動速度
+  walking: 徒歩
+  flying: 飛行
+  swimming: 水泳
+  climbing: 登攀
+  burrowing: 穴掘り
   equipped: 装備中
   hp-base: 基本HP
   hp: HP
@@ -176,6 +181,7 @@ fields:
   quantity: 個数
   load: 積載量
   attuned: 同調
+  days-without-food: 食料なしの日数
 words:
   Dragonborn: ドラゴンボーン
   Dwarf: ドワーフ

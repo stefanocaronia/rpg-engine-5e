@@ -76,6 +76,11 @@ fields:
   ac: PL
   initiative: aloite
   speed: nopeus
+  walking: Kävely
+  flying: Lento
+  swimming: Uinti
+  climbing: Kiipeäminen
+  burrowing: Kaivautuminen
   equipped: varustettu
   hp-base: perus-HP
   hp: HP
@@ -176,6 +181,7 @@ fields:
   quantity: Määrä
   load: Kuorma
   attuned: viritetty
+  days-without-food: päivää ilman ruokaa
 words:
   Dragonborn: Lohikäärmesyntyinen
   Dwarf: Kääpiö

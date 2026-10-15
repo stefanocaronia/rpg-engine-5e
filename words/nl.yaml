@@ -76,6 +76,11 @@ fields:
   ac: PK
   initiative: initiatief
   speed: snelheid
+  walking: lopen
+  flying: vliegen
+  swimming: zwemmen
+  climbing: klimmen
+  burrowing: graven
   equipped: uitgerust
   hp-base: basis-HP
   hp: HP
@@ -176,6 +181,7 @@ fields:
   quantity: aantal
   load: Last
   attuned: afgestemd
+  days-without-food: dagen zonder voedsel
 words:
   Dragonborn: Drakengeborene
   Dwarf: Dwerg

@@ -76,6 +76,11 @@ fields:
   ac: דרג״ש
   initiative: יוזמה
   speed: מהירות
+  walking: הליכה
+  flying: עוף
+  swimming: שחייה
+  climbing: טיפוס
+  burrowing: חפירה
   equipped: מצויד
   hp-base: נק״ח מקוביות
   hp: נק״ח
@@ -176,6 +181,7 @@ fields:
   quantity: כמות
   load: משא
   attuned: מכוון
+  days-without-food: ימים ללא אוכל
 words:
   Dragonborn: יליד דרקון
   Dwarf: גמד

@@ -76,6 +76,11 @@ fields:
   ac: ΚΠ
   initiative: πρωτοβουλία
   speed: ταχύτητα
+  walking: Ταχύτητα
+  flying: Πτήση
+  swimming: Κολύμπι
+  climbing: Αναρρίχηση
+  burrowing: Σκάψιμο
   equipped: εξοπλισμένο
   hp-base: ΠΖ από ζάρια
   hp: ΠΖ
@@ -176,6 +181,7 @@ fields:
   quantity: Ποσότητα
   load: Φορτίο
   attuned: Εναρμονισμένο
+  days-without-food: Ημέρες χωρίς τροφή
 words:
   Dragonborn: Δρακογέννητος
   Dwarf: Νάνος

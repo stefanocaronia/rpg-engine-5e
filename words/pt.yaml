@@ -76,6 +76,11 @@ fields:
   ac: CA
   initiative: iniciativa
   speed: deslocamento
+  walking: caminhada
+  flying: voo
+  swimming: natação
+  climbing: escalada
+  burrowing: escavação
   equipped: equipado
   hp-base: PV base
   hp: PV
@@ -176,6 +181,7 @@ fields:
   quantity: quantidade
   load: Carga
   attuned: sintonizado
+  days-without-food: dias sem comida
 words:
   Dragonborn: Draconato
   Dwarf: Anão

@@ -76,6 +76,11 @@ fields:
   ac: OČ
   initiative: iniciativa
   speed: rychlost
+  walking: chůze
+  flying: let
+  swimming: plavání
+  climbing: šplhání
+  burrowing: hrabání
   equipped: vybaveno
   hp-base: základ životů
   hp: životy
@@ -176,6 +181,7 @@ fields:
   quantity: Množství
   load: Náklad
   attuned: naladěno
+  days-without-food: dny bez jídla
 words:
   Dragonborn: Drakorozený
   Dwarf: Trpaslík

@@ -76,6 +76,11 @@ fields:
   ac: RK
   initiative: Initiative
   speed: Bewegungsrate
+  walking: Gehen
+  flying: Fliegen
+  swimming: Schwimmen
+  climbing: Klettern
+  burrowing: Graben
   equipped: Ausgerüstet
   hp-base: TP aus Würfeln
   hp: TP
@@ -176,6 +181,7 @@ fields:
   quantity: Menge
   load: Traglast
   attuned: Eingestimmt
+  days-without-food: Tage ohne Nahrung
 words:
   Dragonborn: Drachenblütiger
   Dwarf: Zwerg

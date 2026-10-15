@@ -76,6 +76,11 @@ fields:
   ac: CA
   initiative: inițiativă
   speed: viteză
+  walking: Viteză
+  flying: Zbor
+  swimming: Înot
+  climbing: Cățărare
+  burrowing: Săpare
   equipped: echipat
   hp-base: PV de bază
   hp: PV
@@ -176,6 +181,7 @@ fields:
   quantity: Cantitate
   load: Încărcătură
   attuned: sincronizat
+  days-without-food: zile fără hrană
 words:
   Dragonborn: Dragonborn
   Dwarf: Pitic

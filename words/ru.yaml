@@ -76,6 +76,11 @@ fields:
   ac: КД
   initiative: Инициатива
   speed: Скорость
+  walking: Ходьба
+  flying: Полёт
+  swimming: Плавание
+  climbing: Лазание
+  burrowing: Копание
   equipped: Экипировано
   hp-base: Хиты от кубиков
   hp: Хиты
@@ -176,6 +181,7 @@ fields:
   quantity: количество
   load: Нагрузка
   attuned: настроено
+  days-without-food: дни без еды
 words:
   Dragonborn: Драконорождённый
   Dwarf: Дварф

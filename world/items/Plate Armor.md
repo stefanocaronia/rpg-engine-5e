@@ -6,6 +6,7 @@ bonus: 0
 armor-class: 18 + bonus
 strength-required: 15
 stealth-disadvantage: true
+speed-slowed: "10 * max(0, min(1, strength-required - str)) * (1 - armor-unhindered) * (1 - has(rigor, simulation))"
 weight: 65 lb
 image: "[[breastplate.svg]]"
 ---

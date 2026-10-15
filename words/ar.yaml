@@ -76,6 +76,11 @@ fields:
   ac: الدرع
   initiative: المبادرة
   speed: السرعة
+  walking: المشي
+  flying: الطيران
+  swimming: السباحة
+  climbing: التسلق
+  burrowing: الحفر
   equipped: مجهَّز
   hp-base: نقاط الحياة من النرد
   hp: نقاط الحياة
@@ -176,6 +181,7 @@ fields:
   quantity: الكمية
   load: الحمولة
   attuned: متناغم
+  days-without-food: أيام بلا طعام
 words:
   Dragonborn: مولود التنين
   Dwarf: قزم

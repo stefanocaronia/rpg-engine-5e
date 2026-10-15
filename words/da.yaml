@@ -76,6 +76,11 @@ fields:
   ac: RK
   initiative: Initiativ
   speed: Hastighed
+  walking: Gang
+  flying: Flyvning
+  swimming: Svømning
+  climbing: Klatring
+  burrowing: Gravning
   equipped: Udstyret
   hp-base: LP fra terninger
   hp: LP
@@ -176,6 +181,7 @@ fields:
   quantity: antal
   load: Last
   attuned: tunet
+  days-without-food: dage uden mad
 words:
   Dragonborn: Dragonborn
   Dwarf: Dværg

@@ -76,6 +76,11 @@ fields:
   ac: ZS
   initiative: inisiyatif
   speed: hız
+  walking: Yürüme
+  flying: Uçuş
+  swimming: Yüzme
+  climbing: Tırmanma
+  burrowing: Kazma
   equipped: kuşanılmış
   hp-base: zarlardan CP
   hp: CP
@@ -176,6 +181,7 @@ fields:
   quantity: miktar
   load: Yük
   attuned: uyumlanmış
+  days-without-food: Yemeksiz geçen gün
 words:
   Dragonborn: Ejderdoğan
   Dwarf: Cüce

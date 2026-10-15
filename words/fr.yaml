@@ -76,6 +76,11 @@ fields:
   ac: CA
   initiative: initiative
   speed: vitesse
+  walking: marche
+  flying: vol
+  swimming: nage
+  climbing: escalade
+  burrowing: creusement
   equipped: équipé
   hp-base: PV de base
   hp: PV
@@ -176,6 +181,7 @@ fields:
   quantity: quantité
   load: Charge
   attuned: harmonisé
+  days-without-food: jours sans nourriture
 words:
   Dragonborn: Drakéide
   Dwarf: Nain

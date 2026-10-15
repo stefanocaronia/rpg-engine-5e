@@ -14,9 +14,11 @@ round: 6 seconds
 # What the game's mile and foot are worth in metric (D-262), as the Italian books count them: the engine keeps every measure in metric, and its outputs in
 # imperial give back the SRD's numbers, such as 3 miles an hour for the normal pace.
 imperial: {mile: 1.5 km, foot: 0.3 m, pound: 0.5 kg}
-# What a character carries (p. 176, Carrying Capacity and Size and Strength; p. 143, coins): the weight of each item, a limit of Strength times 15 pounds,
-# halved for Tiny, doubled for each size above Medium, fifty coins to a pound (D-432, D-435).
-load: {field: weight, limit: str * 15, coins: 50, size: size, sizes: {Tiny: 0.5, Large: 2, Huge: 4, Gargantuan: 8}}
+# What a character carries (p. 176, Carrying Capacity and Size and Strength; p. 143, coins): the weight of each item, a limit of Strength times 15 by
+# size, fifty coins to a pound (D-432, D-435); formulas read them as load and load-limit.
+load: {field: weight, limit: ["str * 15 * table(carry-by-size, size)", str * 15], coins: 50}
+# The computed lengths, as the speeds, are in feet (SPD-1).
+length-unit: ft
 # How one travels (TRV-1–TRV-3, TRV-8; Adventuring › Travel Pace and Difficult Terrain): the paces of an hour (4, 3 and 2 miles), 8 hours of travel a day,
 # beyond them a forced march; difficult terrain halves a pace. A river or the sea is travelled only in a waterborne vehicle, at its speed, up to 24 hours a
 # day; going downstream adds the current, typically 3 miles an hour (Keelboat, Rowboat).
@@ -43,6 +45,7 @@ grid:
   size: size
   footprints: {Large: 2, Huge: 3, Gargantuan: 4}
   leaving: Opportunity Attacks
+  walking: walking
 # What the setup asks for this system, with the campaign's settings (DAT-10, D-212): how the characters gain levels, with the experience points of the SRD
 # (p. 56), or at the milestones the story reaches, where xp is neither asked nor shown.
 settings:
@@ -60,7 +63,7 @@ sheet:
   Abilities: [str (str-mod), dex (dex-mod), con (con-mod), int (int-mod), wis (wis-mod), cha (cha-mod), proficiency]
   Saving Throws: [str-save, dex-save, con-save, int-save, wis-save, cha-save, save-notes?]
   Skills: [acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival]
-  Combat: [ac, initiative, speed, equipped?, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?]
+  Combat: [ac, initiative, walking (speed), flying?, swimming?, climbing?, burrowing?, equipped?, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?, days-without-food?]
   Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies, tool-proficiencies?, languages]
   Features: [features, fighting-styles?]
   Attacks: [attack, damage-roll]
@@ -70,6 +73,9 @@ sheet:
 # and add the number (pp. 77, 83, 94).
 sheet-dice:
   1d20: [str-mod, dex-mod, con-mod, int-mod, wis-mod, cha-mod, str-save, dex-save, con-save, int-save, wis-save, cha-save, acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival, initiative, attack, spell-attack]
+# Stealth with disadvantage in an armor whose Stealth column says so (p. 63, D-445): the free roll takes two d20 and keeps the lower.
+sheet-dice-when:
+  stealth: {when: "count(equipped, stealth-disadvantage = true)", dice: 2d20kl1}
 # The names the game gives a roll, by language, which the dashboard writes on a check's button (D-399): a d20 rolled twice, the higher or the lower kept
 # (Advantage and Disadvantage, pp. 76–77).
 roll-names:
@@ -84,12 +90,12 @@ sheet-notes:
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries: the system's kind, such as [[Chain Mail]], or an item of the campaign derived from it, as a magic one: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex."
   Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's copies the kind's damage-roll with its own dice in place, such as 1d10 + str-mod + bonus + 2 * has(fighting-styles, Dueling) slashing. A companion's natural attacks, such as a wolf's bite, are in its stat block, beside the unarmed strike every sheet shows. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
   Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
-# Where the dashboard puts the groups (D-295): in the rail, as on a paper sheet, the abilities and the saving throws; then the skills first, and the rest by how
-# often play needs them; in a fight, at hand, the armor class, initiative, speed and hit points, the attacks and the spells (D-315).
+# Where the dashboard puts the groups (D-295): in the rail, as on a paper sheet, the abilities, the saving throws and the skills; then the rest by how often
+# play needs them; in a fight, at hand, the armor class, initiative, speed and hit points, the attacks and the spells (D-315).
 sheet-cards:
-  rail: [Abilities, Saving Throws]
-  order: [Skills, Combat, Attacks, Spells, Features, Proficiencies, Character, Personality, Appearance]
-  at-hand: [ac, initiative, speed, hp, temp-hp, Attacks, Spells]
+  rail: [Abilities, Saving Throws, Skills]
+  order: [Combat, Attacks, Spells, Features, Equipment, Proficiencies, Character, Personality, Appearance]
+  at-hand: [ac, initiative, walking, hp, temp-hp, Attacks, Spells]
 # The line under a character's name on the dashboard (D-288).
 sheet-headline: "Level {level} {classes}"
 # The icon of each group on the dashboard (D-284): the d of an SVG path on a grid of 24, drawn as a line; drawn for rpg-engine.
@@ -155,7 +161,7 @@ progression:
 item-formulas:
   classes: [spell-save-dc, spell-attack, max-prepared, unarmored-ac]
   # What an armor, a shield and a weapon give who has it equipped (pp. 63, 65, D-231): the armor class and its bonus, the attack and the damage.
-  equipped: [armor-class, armor-class-bonus, attack, damage-roll]
+  equipped: [armor-class, armor-class-bonus, attack, damage-roll, speed-slowed]
 # What every character with a sheet has in a list without writing it there (DAT-13, D-235): the unarmed strike, always ready, among the attacks as on a sheet (p. 92).
 always-in:
   equipped: [Unarmed Strike]
@@ -205,6 +211,16 @@ condition-icons:
   Stunned: "M12 12.75a1.5 1.5 0 0 1 3 0a3 3 0 0 1-6 0a4.5 4.5 0 0 1 9 0a6 6 0 0 1-12 0a7.5 7.5 0 0 1 7.5-7.5"
   Unconscious: "M4.5 7.5h5l-5 6h5 M13 12h6.5l-6.5 8h6.5"
 # What breaks a spell someone concentrates on (p. 102, D-266, EFF-14): damage, being incapacitated (the last four incapacitate, pp. 358–359), dying.
+# What a character uses up each day (Adventuring, Food and Water; D-435): under the rigor rules, a ration a day outside a settlement, the days without food it can go,
+# 3 + Constitution modifier (at least 1), and then a level of exhaustion each day; water as a word, for the story keeps where to drink.
+upkeep: {daily: Rations, short: days-without-food, grace: 3 + con-mod, worsens: exhaustion, water: "a gallon each, two if the weather is hot", rules: Food and Water}
+# What burns (Adventuring Gear): an effect named after it spends one, or a flask of oil for a lamp or a lantern, and lasts as long as it burns.
+burning:
+  Torch: {lasts: 1h}
+  Candle: {lasts: 1h}
+  Lamp: {lasts: 6h, spends: Oil}
+  Hooded Lantern: {lasts: 6h, spends: Oil}
+  Bullseye Lantern: {lasts: 6h, spends: Oil}
 # Attunement (p. 206): at most three magic items at once, each one whose attunement asks for it; who may attune, as by a paladin, the master checks (D-435).
 bonds:
   attuned: {most: 3, needs: attunement, rules: Attunement}
@@ -288,6 +304,8 @@ fields:
   # A character's background and feats (pp. 60, 75), as links to their pages, of the system or the campaign's.
   background: text
   feats: list
+  # The days a character has gone without food (Food and Water, UPK-2).
+  days-without-food: number
   # The magic items a character is attuned to (p. 206, BND-1).
   attuned: list
   hit-die: text
@@ -300,6 +318,17 @@ fields:
   martial-arts: text
   ki-points: counter
   unarmored-movement: text
+  # The speeds now in each mode, worked out from the written ones (D-445, SPD-1), and what changes them: effects add to bonus-speed and multiply
+  # speed-factor; a heavy armor's page gives speed-slowed; a race that heavy armor does not slow gives armor-unhindered.
+  walking: length
+  flying: length
+  swimming: length
+  climbing: length
+  burrowing: length
+  bonus-speed: bonus
+  speed-factor: factor
+  speed-slowed: bonus
+  armor-unhindered: bonus
   sneak-attack: text
   sorcery-points: counter
   cantrips-known: number
@@ -434,6 +463,8 @@ fields:
   bonus-initiative: bonus
 # The proficiency bonus by level (p. 56).
 tables:
+  # What a size does to how much one carries (p. 176, Size and Strength).
+  carry-by-size: {Tiny: 0.5, Small: 1, Medium: 1, Large: 2, Huge: 4, Gargantuan: 8}
   proficiency-by-level: {1: 2, 5: 3, 9: 4, 13: 5, 17: 6}
   # The experience points each level needs (Character Advancement, p. 56).
   xp-by-level: {1: 0, 2: 300, 3: 900, 4: 2700, 5: 6500, 6: 14000, 7: 23000, 8: 34000, 9: 48000, 10: 64000, 11: 85000, 12: 100000, 13: 120000, 14: 140000, 15: 165000, 16: 195000, 17: 225000, 18: 265000, 19: 305000, 20: 355000}
@@ -569,6 +600,15 @@ computed:
   passive-perception: 10 + perception
   passive-insight: 10 + insight
   passive-investigation: 10 + investigation
+  # The speeds (D-445, SPD-2, SPD-3): the written one, plus what adds (effects on bonus-speed, Fast Movement without heavy armor, Unarmored Movement
+  # without armor or shield, minus a heavy armor without its Strength and the load under the rigor simulation: past Str×5 10 ft, past Str×10 20 more), times
+  # the factors (effects on speed-factor, exhaustion 2 halves), under the cap of a load past its limit under the rigor rules (5 ft), and nothing at
+  # exhaustion 5 or under a condition that stops one. A rogue with Second-Story Work climbs at walking speed.
+  walking: "min(5 + 10000 * (1 - has(rigor, rules) * min(1, max(0, ceil(best(load, 0) - best(load-limit, 0)))) * min(1, best(load-limit, 0))), max(0, (speed + bonus-speed - speed-slowed - has(rigor, simulation) * (10 * min(1, max(0, ceil(best(load, 0) - 5 * best(str, 0)))) + 10 * min(1, max(0, ceil(best(load, 0) - 10 * best(str, 0))))) + 10 * has(features, Fast Movement) * (1 - min(1, count(equipped, category = heavy armor))) + best(unarmored-movement, 0) * (1 - min(1, count(equipped, category = light armor) + count(equipped, category = medium armor) + count(equipped, category = heavy armor) + count(equipped, category = shield)))) * speed-factor / (1 + min(1, max(0, best(exhaustion, 0) - 1))) * (1 - min(1, max(0, best(exhaustion, 0) - 4) + has(effects, Grappled) + has(effects, Restrained) + has(effects, Paralyzed) + has(effects, Petrified) + has(effects, Stunned) + has(effects, Unconscious)))))"
+  flying: "min(5 + 10000 * (1 - has(rigor, rules) * min(1, max(0, ceil(best(load, 0) - best(load-limit, 0)))) * min(1, best(load-limit, 0))), max(0, (fly + bonus-speed - speed-slowed - has(rigor, simulation) * (10 * min(1, max(0, ceil(best(load, 0) - 5 * best(str, 0)))) + 10 * min(1, max(0, ceil(best(load, 0) - 10 * best(str, 0))))) + 10 * has(features, Fast Movement) * (1 - min(1, count(equipped, category = heavy armor))) + best(unarmored-movement, 0) * (1 - min(1, count(equipped, category = light armor) + count(equipped, category = medium armor) + count(equipped, category = heavy armor) + count(equipped, category = shield)))) * speed-factor / (1 + min(1, max(0, best(exhaustion, 0) - 1))) * (1 - min(1, max(0, best(exhaustion, 0) - 4) + has(effects, Grappled) + has(effects, Restrained) + has(effects, Paralyzed) + has(effects, Petrified) + has(effects, Stunned) + has(effects, Unconscious)))))"
+  swimming: "min(5 + 10000 * (1 - has(rigor, rules) * min(1, max(0, ceil(best(load, 0) - best(load-limit, 0)))) * min(1, best(load-limit, 0))), max(0, (swim + bonus-speed - speed-slowed - has(rigor, simulation) * (10 * min(1, max(0, ceil(best(load, 0) - 5 * best(str, 0)))) + 10 * min(1, max(0, ceil(best(load, 0) - 10 * best(str, 0))))) + 10 * has(features, Fast Movement) * (1 - min(1, count(equipped, category = heavy armor))) + best(unarmored-movement, 0) * (1 - min(1, count(equipped, category = light armor) + count(equipped, category = medium armor) + count(equipped, category = heavy armor) + count(equipped, category = shield)))) * speed-factor / (1 + min(1, max(0, best(exhaustion, 0) - 1))) * (1 - min(1, max(0, best(exhaustion, 0) - 4) + has(effects, Grappled) + has(effects, Restrained) + has(effects, Paralyzed) + has(effects, Petrified) + has(effects, Stunned) + has(effects, Unconscious)))))"
+  climbing: ["min(5 + 10000 * (1 - has(rigor, rules) * min(1, max(0, ceil(best(load, 0) - best(load-limit, 0)))) * min(1, best(load-limit, 0))), max(0, (climb + bonus-speed - speed-slowed - has(rigor, simulation) * (10 * min(1, max(0, ceil(best(load, 0) - 5 * best(str, 0)))) + 10 * min(1, max(0, ceil(best(load, 0) - 10 * best(str, 0))))) + 10 * has(features, Fast Movement) * (1 - min(1, count(equipped, category = heavy armor))) + best(unarmored-movement, 0) * (1 - min(1, count(equipped, category = light armor) + count(equipped, category = medium armor) + count(equipped, category = heavy armor) + count(equipped, category = shield)))) * speed-factor / (1 + min(1, max(0, best(exhaustion, 0) - 1))) * (1 - min(1, max(0, best(exhaustion, 0) - 4) + has(effects, Grappled) + has(effects, Restrained) + has(effects, Paralyzed) + has(effects, Petrified) + has(effects, Stunned) + has(effects, Unconscious)))))", "walking * has(features, Second-Story Work) / has(features, Second-Story Work)"]
+  burrowing: "min(5 + 10000 * (1 - has(rigor, rules) * min(1, max(0, ceil(best(load, 0) - best(load-limit, 0)))) * min(1, best(load-limit, 0))), max(0, (burrow + bonus-speed - speed-slowed - has(rigor, simulation) * (10 * min(1, max(0, ceil(best(load, 0) - 5 * best(str, 0)))) + 10 * min(1, max(0, ceil(best(load, 0) - 10 * best(str, 0))))) + 10 * has(features, Fast Movement) * (1 - min(1, count(equipped, category = heavy armor))) + best(unarmored-movement, 0) * (1 - min(1, count(equipped, category = light armor) + count(equipped, category = medium armor) + count(equipped, category = heavy armor) + count(equipped, category = shield)))) * speed-factor / (1 + min(1, max(0, best(exhaustion, 0) - 1))) * (1 - min(1, max(0, best(exhaustion, 0) - 4) + has(effects, Grappled) + has(effects, Restrained) + has(effects, Paralyzed) + has(effects, Petrified) + has(effects, Stunned) + has(effects, Unconscious)))))"
   # The armor class (p. 63, D-231): with armor, the armor's and the shield's, with Defense (p. 24); without, the best of 10 + Dex, as the game is played
   # (the SRD 5.1 does not write it), what a class gives, as Unarmored Defense (pp. 8, 26), the first class's (p. 57), or Draconic Resilience (p. 45), and
   # Mage Armor (p. 160), with the shield; and what effects add. Only a character with classes: a creature, or a companion with a level and no classes,

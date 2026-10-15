@@ -76,6 +76,11 @@ fields:
   ac: 护甲等级
   initiative: 先攻
   speed: 速度
+  walking: 步行
+  flying: 飞行
+  swimming: 游泳
+  climbing: 攀爬
+  burrowing: 掘穴
   equipped: 已装备
   hp-base: 基础生命值
   hp: 生命值
@@ -176,6 +181,7 @@ fields:
   quantity: 数量
   load: 负重
   attuned: 已调谐
+  days-without-food: 无食天数
 words:
   Dragonborn: 龙裔
   Dwarf: 矮人

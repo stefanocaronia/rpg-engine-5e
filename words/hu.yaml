@@ -76,6 +76,11 @@ fields:
   ac: VÉ
   initiative: kezdeményezés
   speed: sebesség
+  walking: Sebesség
+  flying: Repülés
+  swimming: Úszás
+  climbing: Mászás
+  burrowing: Ásás
   equipped: felszerelve
   hp-base: alap ÉP
   hp: ÉP
@@ -176,6 +181,7 @@ fields:
   quantity: mennyiség
   load: Teher
   attuned: Rákötve
+  days-without-food: étel nélküli napok
 words:
   Dragonborn: Sárkányszületett
   Dwarf: Törp

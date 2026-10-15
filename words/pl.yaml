@@ -76,6 +76,11 @@ fields:
   ac: KP
   initiative: inicjatywa
   speed: szybkość
+  walking: chód
+  flying: lot
+  swimming: pływanie
+  climbing: wspinaczka
+  burrowing: kopanie
   equipped: założone
   hp-base: PW bazowe
   hp: PW
@@ -176,6 +181,7 @@ fields:
   quantity: Ilość
   load: Obciążenie
   attuned: dostrojony
+  days-without-food: dni bez jedzenia
 words:
   Dragonborn: Drakon
   Dwarf: Krasnolud
