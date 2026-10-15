@@ -81,6 +81,10 @@ fields:
   swimming: तैरना
   climbing: चढ़ना
   burrowing: बिल खोदना
+  long-jump: लंबी कूद
+  high-jump: ऊँची कूद
+  push-drag: धक्का और खींचना (पाउंड)
+  hold-breath: साँस रोकना (मिनट)
   equipped: धारण किया
   hp-base: बेस HP
   hp: HP

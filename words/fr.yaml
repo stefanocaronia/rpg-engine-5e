@@ -81,6 +81,10 @@ fields:
   swimming: nage
   climbing: escalade
   burrowing: creusement
+  long-jump: saut en longueur
+  high-jump: saut en hauteur
+  push-drag: pousser et traîner
+  hold-breath: retenir son souffle
   equipped: équipé
   hp-base: PV de base
   hp: PV

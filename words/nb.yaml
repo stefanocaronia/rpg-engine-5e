@@ -81,6 +81,10 @@ fields:
   swimming: svømming
   climbing: klatring
   burrowing: graving
+  long-jump: lengdehopp
+  high-jump: høydehopp
+  push-drag: skyve og dra (lb)
+  hold-breath: holde pusten (minutter)
   equipped: utstyrt
   hp-base: LP grunnverdi
   hp: LP

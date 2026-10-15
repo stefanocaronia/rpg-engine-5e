@@ -81,6 +81,10 @@ fields:
   swimming: שחייה
   climbing: טיפוס
   burrowing: חפירה
+  long-jump: קפיצה לרוחק
+  high-jump: קפיצה לגובה
+  push-drag: דחיפה וגרירה (ליברות)
+  hold-breath: עצירת נשימה (דקות)
   equipped: מצויד
   hp-base: נק״ח מקוביות
   hp: נק״ח

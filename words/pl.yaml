@@ -81,6 +81,10 @@ fields:
   swimming: pływanie
   climbing: wspinaczka
   burrowing: kopanie
+  long-jump: Skok w dal
+  high-jump: Skok wzwyż
+  push-drag: Pchanie i ciągnięcie (funty)
+  hold-breath: Wstrzymywanie oddechu (minuty)
   equipped: założone
   hp-base: PW bazowe
   hp: PW

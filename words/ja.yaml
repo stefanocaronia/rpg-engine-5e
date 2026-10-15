@@ -81,6 +81,10 @@ fields:
   swimming: 水泳
   climbing: 登攀
   burrowing: 穴掘り
+  long-jump: 幅跳び
+  high-jump: 高跳び
+  push-drag: 押す・引く(ポンド)
+  hold-breath: 息止め(分)
   equipped: 装備中
   hp-base: 基本HP
   hp: HP

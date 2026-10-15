@@ -63,7 +63,7 @@ sheet:
   Abilities: [str (str-mod), dex (dex-mod), con (con-mod), int (int-mod), wis (wis-mod), cha (cha-mod), proficiency]
   Saving Throws: [str-save, dex-save, con-save, int-save, wis-save, cha-save, save-notes?]
   Skills: [acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival]
-  Combat: [ac, initiative, walking (speed), flying?, swimming?, climbing?, burrowing?, equipped?, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?, days-without-food?]
+  Combat: [ac, initiative, walking (speed), flying?, swimming?, climbing?, burrowing?, equipped?, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?, days-without-food?, long-jump?, high-jump?, push-drag?, hold-breath?]
   Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies, tool-proficiencies?, languages]
   Features: [features, fighting-styles?]
   Attacks: [attack, damage-roll]
@@ -194,6 +194,8 @@ recipes:
   long rest:
     set: { hp: max, temp-hp: 0, slots-*: max }
     regain: { hit-dice-*: "max(1, floor(level / 2))" }
+    # And a level of exhaustion less, with food and drink (p. 358).
+    lower: { exhaustion: 1 }
     ends: [long rest, short rest]
     rules: [Long Rest]
   short rest:
@@ -232,6 +234,9 @@ burning:
   Lamp: {lasts: 6h, spends: Oil}
   Hooded Lantern: {lasts: 6h, spends: Oil}
   Bullseye Lantern: {lasts: 6h, spends: Oil}
+# What the pages one is attuned to and one's feats give, added up as effects are (D-449): a page, of the system or the campaign, writes its bonus fields
+# as numbers, such as bonus-ac: 1 on a Ring of Protection, or bonus-speed: 10 on a feat.
+bonus-lists: [attuned, feats]
 # Attunement (p. 206): at most three magic items at once, each one whose attunement asks for it; who may attune, as by a paladin, the master checks (D-435).
 bonds:
   attuned: {most: 3, needs: attunement, rules: Attunement}
@@ -332,6 +337,10 @@ fields:
   # The speeds now in each mode, worked out from the written ones (D-445, SPD-1), and what changes them: effects add to bonus-speed and multiply
   # speed-factor; a heavy armor's page gives speed-slowed; a race that heavy armor does not slow gives armor-unhindered.
   walking: length
+  long-jump: length
+  high-jump: length
+  push-drag: number
+  hold-breath: number
   flying: length
   swimming: length
   climbing: length
@@ -611,6 +620,13 @@ computed:
   passive-perception: 10 + perception
   passive-insight: 10 + insight
   passive-investigation: 10 + investigation
+  # Jumping, pushing and holding one's breath (pp. 75, 80, 183; D-449), for a character with classes: a running long jump of Strength feet, a running high
+  # jump of 3 + its modifier, standing half of each; pushing, dragging or lifting 30 times Strength, by size; holding one's breath 1 + Constitution modifier
+  # minutes, at least 30 seconds.
+  long-jump: str / min(1, count(classes))
+  high-jump: max(0, 3 + str-mod) / min(1, count(classes))
+  push-drag: ["str * 30 * table(carry-by-size, size) / min(1, count(classes))", "str * 30 / min(1, count(classes))"]
+  hold-breath: max(0.5, 1 + con-mod) / min(1, count(classes))
   # The speeds (D-445, SPD-2, SPD-3): the written one, plus what adds (effects on bonus-speed, Fast Movement without heavy armor, Unarmored Movement
   # without armor or shield, minus a heavy armor without its Strength and the load under the rigor simulation: past Str×5 10 ft, past Str×10 20 more), times
   # the factors (effects on speed-factor, exhaustion 2 halves), under the cap of a load past its limit under the rigor rules (5 ft), and nothing at

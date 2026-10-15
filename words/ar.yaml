@@ -81,6 +81,10 @@ fields:
   swimming: السباحة
   climbing: التسلق
   burrowing: الحفر
+  long-jump: القفز الطويل
+  high-jump: القفز العالي
+  push-drag: الدفع والسحب (رطل)
+  hold-breath: حبس النفس (دقائق)
   equipped: مجهَّز
   hp-base: نقاط الحياة من النرد
   hp: نقاط الحياة

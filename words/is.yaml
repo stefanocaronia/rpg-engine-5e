@@ -81,6 +81,10 @@ fields:
   swimming: Sund
   climbing: Klifur
   burrowing: Grafa
+  long-jump: Langstökk
+  high-jump: Hástökk
+  push-drag: Ýta og draga (pund)
+  hold-breath: Halda niðri í sér andanum (mínútur)
   equipped: Búinn
   hp-base: LP af teningum
   hp: LP

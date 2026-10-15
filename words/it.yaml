@@ -88,6 +88,10 @@ fields:
   swimming: Nuoto
   climbing: Scalata
   burrowing: Scavo
+  long-jump: Salto in lungo
+  high-jump: Salto in alto
+  push-drag: Spingere e trascinare (lb)
+  hold-breath: Trattenere il fiato (minuti)
   equipped: Equipaggiato  # ours
   hp-base: PF dai dadi  # ours: the hit points the hit dice gave, without Constitution
   hp: PF

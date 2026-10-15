@@ -81,6 +81,10 @@ fields:
   swimming: Úszás
   climbing: Mászás
   burrowing: Ásás
+  long-jump: Távolugrás
+  high-jump: Magasugrás
+  push-drag: Tolás és húzás (font)
+  hold-breath: Lélegzet visszatartása (perc)
   equipped: felszerelve
   hp-base: alap ÉP
   hp: ÉP

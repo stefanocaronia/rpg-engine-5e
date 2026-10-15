@@ -81,6 +81,10 @@ fields:
   swimming: Κολύμπι
   climbing: Αναρρίχηση
   burrowing: Σκάψιμο
+  long-jump: Άλμα εις μήκος
+  high-jump: Άλμα εις ύψος
+  push-drag: Ώθηση και έλξη (λίβρες)
+  hold-breath: Κράτημα αναπνοής (λεπτά)
   equipped: εξοπλισμένο
   hp-base: ΠΖ από ζάρια
   hp: ΠΖ

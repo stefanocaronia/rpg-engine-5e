@@ -81,6 +81,10 @@ fields:
   swimming: Плавание
   climbing: Лазание
   burrowing: Копание
+  long-jump: Прыжок в длину
+  high-jump: Прыжок в высоту
+  push-drag: Толкание и перетаскивание (фунты)
+  hold-breath: Задержка дыхания (минуты)
   equipped: Экипировано
   hp-base: Хиты от кубиков
   hp: Хиты

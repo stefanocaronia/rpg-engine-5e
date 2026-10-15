@@ -81,6 +81,10 @@ fields:
   swimming: plavání
   climbing: šplhání
   burrowing: hrabání
+  long-jump: Skok do dálky
+  high-jump: Skok do výšky
+  push-drag: Tlačení a tažení (lb)
+  hold-breath: Zadržení dechu (minuty)
   equipped: vybaveno
   hp-base: základ životů
   hp: životy

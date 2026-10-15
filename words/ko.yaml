@@ -81,6 +81,10 @@ fields:
   swimming: 수영
   climbing: 등반
   burrowing: 굴착
+  long-jump: 멀리뛰기
+  high-jump: 높이뛰기
+  push-drag: 밀기·끌기 (lb)
+  hold-breath: 숨 참기 (분)
   equipped: 장착
   hp-base: 주사위 HP
   hp: HP

@@ -81,6 +81,10 @@ fields:
   swimming: Svømning
   climbing: Klatring
   burrowing: Gravning
+  long-jump: Længdespring
+  high-jump: Højdespring
+  push-drag: Skubbe og trække (lb)
+  hold-breath: Holde vejret (minutter)
   equipped: Udstyret
   hp-base: LP fra terninger
   hp: LP

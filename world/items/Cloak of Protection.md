@@ -2,6 +2,8 @@
 category: wondrous item
 rarity: uncommon
 attunement: true
+bonus-ac: 1
+bonus-saves: 1
 image: "[[cape.svg]]"
 ---
 

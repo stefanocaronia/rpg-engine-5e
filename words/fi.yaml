@@ -81,6 +81,10 @@ fields:
   swimming: Uinti
   climbing: Kiipeäminen
   burrowing: Kaivautuminen
+  long-jump: Pituushyppy
+  high-jump: Korkeushyppy
+  push-drag: Työntö ja veto (lb)
+  hold-breath: Henkenpidätys (min)
   equipped: varustettu
   hp-base: perus-HP
   hp: HP

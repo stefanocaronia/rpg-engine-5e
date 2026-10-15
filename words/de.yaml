@@ -81,6 +81,10 @@ fields:
   swimming: Schwimmen
   climbing: Klettern
   burrowing: Graben
+  long-jump: Weitsprung
+  high-jump: Hochsprung
+  push-drag: Schieben und Ziehen (Pfund)
+  hold-breath: Luft anhalten (Minuten)
   equipped: Ausgerüstet
   hp-base: TP aus Würfeln
   hp: TP

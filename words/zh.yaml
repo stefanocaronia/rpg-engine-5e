@@ -81,6 +81,10 @@ fields:
   swimming: 游泳
   climbing: 攀爬
   burrowing: 掘穴
+  long-jump: 跳远
+  high-jump: 跳高
+  push-drag: 推拉(磅)
+  hold-breath: 屏息(分钟)
   equipped: 已装备
   hp-base: 基础生命值
   hp: 生命值

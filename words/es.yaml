@@ -81,6 +81,10 @@ fields:
   swimming: Nadar
   climbing: Trepar
   burrowing: Excavar
+  long-jump: Salto de longitud
+  high-jump: Salto de altura
+  push-drag: Empujar y arrastrar (lb)
+  hold-breath: Contener la respiración (minutos)
   equipped: equipado
   hp-base: PG base
   hp: PG

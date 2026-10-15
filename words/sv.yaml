@@ -81,6 +81,10 @@ fields:
   swimming: Simning
   climbing: Klättring
   burrowing: Grävning
+  long-jump: Längdhopp
+  high-jump: Höjdhopp
+  push-drag: Skjuta och dra (lb)
+  hold-breath: Hålla andan (minuter)
   equipped: utrustad
   hp-base: grund-LP
   hp: LP
