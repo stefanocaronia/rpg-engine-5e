@@ -73,9 +73,20 @@ sheet:
 # and add the number (pp. 77, 83, 94).
 sheet-dice:
   1d20: [str-mod, dex-mod, con-mod, int-mod, wis-mod, cha-mod, str-save, dex-save, con-save, int-save, wis-save, cha-save, acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival, initiative, attack, spell-attack]
-# Stealth with disadvantage in an armor whose Stealth column says so (p. 63, D-445): the free roll takes two d20 and keeps the lower.
-sheet-dice-when:
-  stealth: {when: "count(equipped, stealth-disadvantage = true)", dice: 2d20kl1}
+# The free roll of a number with advantage or disadvantage, which cancel out (pp. 77, 358–359, D-445): what the sheet and the effects know for sure;
+# what depends on the moment, as Frightened in sight of its source or an attack on someone prone, the master says. Exhaustion 1 worsens ability checks, 3
+# attacks and saving throws; Poisoned attacks and checks; Blinded, Prone and Restrained attacks, and Restrained Dexterity saves; Invisible betters attacks;
+# an armor whose Stealth column says so worsens Stealth (p. 63); heavily encumbered under the rigor simulation worsens what Str, Dex and Con roll (p. 80).
+sheet-odds:
+  better: 2d20kh1
+  worse: 2d20kl1
+  when:
+    - {fields: [str-mod, dex-mod, con-mod, int-mod, wis-mod, cha-mod, acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival, initiative], worse: "min(1, best(exhaustion, 0)) + has(effects, Poisoned)"}
+    - {fields: [str-save, dex-save, con-save, int-save, wis-save, cha-save], worse: "min(1, max(0, best(exhaustion, 0) - 2))"}
+    - {fields: [attack, spell-attack], worse: "min(1, max(0, best(exhaustion, 0) - 2)) + has(effects, Poisoned) + has(effects, Blinded) + has(effects, Prone) + has(effects, Restrained)", better: "has(effects, Invisible)"}
+    - {fields: [dex-save], worse: "has(effects, Restrained)"}
+    - {fields: [stealth], worse: "count(equipped, stealth-disadvantage = true)"}
+    - {fields: [str-mod, dex-mod, con-mod, athletics, acrobatics, sleight-of-hand, stealth, initiative, str-save, dex-save, con-save, attack], worse: "has(rigor, simulation) * min(1, max(0, ceil(best(load, 0) - 10 * best(str, 0))))"}
 # The names the game gives a roll, by language, which the dashboard writes on a check's button (D-399): a d20 rolled twice, the higher or the lower kept
 # (Advantage and Disadvantage, pp. 76–77).
 roll-names:
