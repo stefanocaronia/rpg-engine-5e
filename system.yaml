@@ -623,8 +623,9 @@ computed:
 # The hit point maximum (each class's Hit Points, pp. 8–55; p. 56): what the dice gave, and at every level the Constitution modifier, which follows it when it changes, and the hit
 # points a race adds; at every sorcerer level the Draconic Bloodline's hit point (p. 45). A hit die for each level in a class, of that class's die, counted
 # only for a character with classes, from the die its page writes, of the system or the campaign (p. 56, D-215); inspiration, which a character has or has not (p. 60).
+# Exhaustion 4 halves the hit point maximum (p. 358).
 counters:
-  hp: {max: "hp-base + level * (con-mod + hp-per-level) + has(subclasses, Draconic Bloodline) * item(classes, Sorcerer)"}
+  hp: {max: "floor((hp-base + level * (con-mod + hp-per-level) + has(subclasses, Draconic Bloodline) * item(classes, Sorcerer)) / (1 + min(1, max(0, best(exhaustion, 0) - 3))))"}
   # Damage takes temporary hit points first (p. 98, D-266, DAT-14).
   temp-hp: {shields: hp}
   hit-dice-d6: {max: "sum(classes, hit-die = d6)"}
