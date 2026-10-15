@@ -199,6 +199,8 @@ recipes:
     ends: [long rest, short rest]
     rules: [Long Rest]
   short rest:
+    # Hit dice spent to heal (p. 87, D-449): each rolled with the Constitution modifier, the total back to hit points.
+    spend: { hit-dice-*: {gives: hp, adds: con-mod} }
     ends: [short rest]
     rules: [Short Rest]
 # What the creatures overcome in a scene give the party (D-205, DAT-11): scene close says the xp of those at 0 hit points (p. 258), shared among the party there,
