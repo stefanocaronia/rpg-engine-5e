@@ -1,6 +1,8 @@
 ---
 category: weapon (maul)
 rarity: legendary
+charges: 5/5
+image: "[[thor-hammer.svg]]"
 ---
 
 You gain a +1 bonus to attack and damage rolls made with this magic weapon.

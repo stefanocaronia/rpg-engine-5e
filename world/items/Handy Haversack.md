@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: rare
+image: "[[light-backpack.svg]]"
 ---
 
 This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 20 pounds of material, not exceeding a volume of 2 cubic feet. The large central pouch can hold up to 8 cubic feet or 80 pounds of material. The backpack always weighs 5 pounds, regardless of its contents.

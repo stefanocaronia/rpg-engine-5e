@@ -2,6 +2,7 @@
 category: weapon (any sword)
 rarity: rare
 attunement: true
+image: "[[broadsword.svg]]"
 ---
 
 Hit points lost to this weapon’s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.

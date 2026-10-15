@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: legendary
+image: "[[stone-sphere.svg]]"
 ---
 
 This 2-foot-diameter black sphere is a hole in the multiverse, hovering in space and stabilized by a magical field surrounding it.

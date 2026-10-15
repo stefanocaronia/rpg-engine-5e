@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: very rare
+image: "[[swap-bag.svg]]"
 ---
 
 This bag superficially resembles a *bag of holding* but is a feeding orifice for a gigantic extradimensional creature. Turning the bag inside out closes the orifice.

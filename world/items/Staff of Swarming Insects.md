@@ -2,6 +2,8 @@
 category: staff
 rarity: rare
 attunement: "by a bard, cleric, druid, sorcerer, warlock, or wizard"
+charges: 10/10
+image: "[[wizard-staff.svg]]"
 ---
 
 This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, a swarm of insects consumes and destroys the staff, then disperses.

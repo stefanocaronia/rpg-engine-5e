@@ -9,6 +9,8 @@ import { markdown, plainText, readBlocks, readLines } from "./srd-markdown.mjs";
 const names = { "Stone of Good Luck (Luckstone)": "Stone of Good Luck" };
 // Potion of Healing joins the adventuring gear entry (pp. 68–69): the price and weight of the common potion, and its sentence on drinking it, a paragraph after
 // the magic item's text.
+// Items whose charges the text gives each figurine of its own, not the item.
+const withoutCharges = ["Figurine of Wondrous Power"];
 const joined = { "Potion of Healing": { fields: { cost: "50 gp (common)", weight: "1/2 lb" }, text: "Drinking or administering a potion takes an action." } };
 
 const [linesPath] = process.argv.slice(2);
@@ -65,7 +67,10 @@ function itemPage(item)
     const gear = joined[name];
     const body = [...item.blocks.slice(2), ...(gear === undefined ? [] : [{ kind: "paragraph", runs: [{ style: "", text: gear.text, space: false }] }])];
     const fields = { ...(name === pageName(item.heading) ? {} : { aliases: [pageName(item.heading)] }), ...typeFields(name, item.type), ...gear?.fields };
-    return { name, fields, body: markdown(body) };
+    const text = markdown(body);
+    // A fixed number of charges is a counter of one thing (STK-1); charges by dice, or a figurine's of its own, stay text.
+    const charges = withoutCharges.includes(name) ? undefined : /\b(?:has|with) (\d+) charges\b/.exec(text)?.[1];
+    return { name, fields: { ...fields, ...(charges === undefined ? {} : { charges: `${charges}/${charges}` }) }, body: text };
 }
 
 /**

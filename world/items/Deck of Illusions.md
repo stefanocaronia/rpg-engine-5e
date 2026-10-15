@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: uncommon
+image: "[[card-pick.svg]]"
 ---
 
 This box contains a set of parchment cards. A full deck has 34 cards. A deck found as treasure is usually missing 1d20 − 1 cards.

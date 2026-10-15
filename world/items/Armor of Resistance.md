@@ -2,6 +2,7 @@
 category: "armor (light, medium, or heavy)"
 rarity: rare
 attunement: true
+image: "[[breastplate.svg]]"
 ---
 
 You have resistance to one type of damage while you wear this armor. The GM chooses the type or determines it randomly from the options below.

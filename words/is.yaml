@@ -11,6 +11,7 @@ groups:
   Proficiencies: Leikni
   Features: Eiginleikar
   Attacks: Árásir
+  Equipment: Búnaður
   Spells: Galdrar
 fields:
   creature: Kyn
@@ -171,6 +172,8 @@ fields:
   skills: Færni
   cr: Áskorun
   xp-value: Gildi í RP
+  money: Peningar
+  quantity: Magn
 words:
   Dragonborn: Drekaborinn
   Dwarf: Dvergur
@@ -426,4 +429,23 @@ words:
   until long rest: fram að langri hvíld
   until short rest: fram að stuttri hvíld
   difficult terrain: erfitt landslag
+names:
+  str: Styrkur
+  str-mod: Styrkur
+  str-save: "Björgunarkast: Styrkur"
+  dex: Fimi
+  dex-mod: Fimi
+  dex-save: "Björgunarkast: Fimi"
+  con: Þol
+  con-mod: Þol
+  con-save: "Björgunarkast: Þol"
+  int: Greind
+  int-mod: Greind
+  int-save: "Björgunarkast: Greind"
+  wis: Viska
+  wis-mod: Viska
+  wis-save: "Björgunarkast: Viska"
+  cha: Persónutöfrar
+  cha-mod: Persónutöfrar
+  cha-save: "Björgunarkast: Persónutöfrar"
 headline: "{classes} á {level}. stigi"

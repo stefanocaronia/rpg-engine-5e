@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: rare
+image: "[[feather.svg]]"
 ---
 
 This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The GM chooses the kind of token or determines it randomly.

@@ -11,6 +11,7 @@ groups:
   Proficiencies: הכשרות
   Features: יכולות
   Attacks: התקפות
+  Equipment: ציוד
   Spells: כישופים
 fields:
   creature: גזע
@@ -171,6 +172,8 @@ fields:
   skills: מיומנויות
   cr: דרג״א
   xp-value: ערך נק״נ
+  money: כסף
+  quantity: כמות
 words:
   Dragonborn: יליד דרקון
   Dwarf: גמד
@@ -426,4 +429,23 @@ words:
   until long rest: עד מנוחה ארוכה
   until short rest: עד מנוחה קצרה
   difficult terrain: שטח קשה
+names:
+  str: כוח
+  str-mod: כוח
+  str-save: הטלת הצלה על כוח
+  dex: זריזות
+  dex-mod: זריזות
+  dex-save: הטלת הצלה על זריזות
+  con: חוסן
+  con-mod: חוסן
+  con-save: הטלת הצלה על חוסן
+  int: תבונה
+  int-mod: תבונה
+  int-save: הטלת הצלה על תבונה
+  wis: חוכמה
+  wis-mod: חוכמה
+  wis-save: הטלת הצלה על חוכמה
+  cha: כריזמה
+  cha-mod: כריזמה
+  cha-save: הטלת הצלה על כריזמה
 headline: "{classes} ברמה {level}"

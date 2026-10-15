@@ -11,6 +11,7 @@ groups:
   Proficiencies: Майстерність
   Features: Особливості
   Attacks: Атаки
+  Equipment: Спорядження
   Spells: Закляття
 fields:
   creature: раса
@@ -171,6 +172,8 @@ fields:
   skills: навички
   cr: небезпека
   xp-value: значення ОД
+  money: Гроші
+  quantity: Кількість
 words:
   Dragonborn: Драконороджений
   Dwarf: Дварф
@@ -426,4 +429,23 @@ words:
   until long rest: до тривалого відпочинку
   until short rest: до короткого відпочинку
   difficult terrain: складна місцевість
+names:
+  str: Сила
+  str-mod: Сила
+  str-save: Рятівний кидок Сили
+  dex: Спритність
+  dex-mod: Спритність
+  dex-save: Рятівний кидок Спритності
+  con: Статура
+  con-mod: Статура
+  con-save: Рятівний кидок Статури
+  int: Інтелект
+  int-mod: Інтелект
+  int-save: Рятівний кидок Інтелекту
+  wis: Мудрість
+  wis-mod: Мудрість
+  wis-save: Рятівний кидок Мудрості
+  cha: Харизма
+  cha-mod: Харизма
+  cha-save: Рятівний кидок Харизми
 headline: "{classes} {level} рівня"

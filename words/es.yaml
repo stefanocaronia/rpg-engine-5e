@@ -11,6 +11,7 @@ groups:
   Proficiencies: Competencias
   Features: Rasgos
   Attacks: Ataques
+  Equipment: Equipo
   Spells: Conjuros
 fields:
   creature: criatura
@@ -171,6 +172,8 @@ fields:
   skills: habilidades
   cr: VD
   xp-value: valor en PX
+  money: dinero
+  quantity: cantidad
 words:
   Dragonborn: Dracónido
   Dwarf: Enano
@@ -426,4 +429,23 @@ words:
   until long rest: hasta el descanso largo
   until short rest: hasta el descanso corto
   difficult terrain: terreno difícil
+names:
+  str: Fuerza
+  str-mod: Fuerza
+  str-save: Tirada de salvación de Fuerza
+  dex: Destreza
+  dex-mod: Destreza
+  dex-save: Tirada de salvación de Destreza
+  con: Constitución
+  con-mod: Constitución
+  con-save: Tirada de salvación de Constitución
+  int: Inteligencia
+  int-mod: Inteligencia
+  int-save: Tirada de salvación de Inteligencia
+  wis: Sabiduría
+  wis-mod: Sabiduría
+  wis-save: Tirada de salvación de Sabiduría
+  cha: Carisma
+  cha-mod: Carisma
+  cha-save: Tirada de salvación de Carisma
 headline: "{classes} de nivel {level}"

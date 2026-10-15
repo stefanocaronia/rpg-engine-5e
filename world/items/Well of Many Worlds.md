@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: legendary
+image: "[[hole-ladder.svg]]"
 ---
 
 This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.

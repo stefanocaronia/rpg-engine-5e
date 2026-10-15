@@ -7,4 +7,5 @@ properties: [ammunition (range 80/320), two-handed]
 bonus: 0
 attack: "dex-mod + proficiency * max(has(weapon-proficiencies, simple weapons), has(weapon-proficiencies, Shortbow), has(weapon-proficiencies, shortbows)) + bonus + 2 * has(fighting-styles, Archery)"
 damage-roll: 1d6 + dex-mod + bonus piercing
+image: "[[bow-arrow.svg]]"
 ---

@@ -2,6 +2,8 @@
 category: ring
 rarity: very rare
 attunement: outdoors at night
+charges: 6/6
+image: "[[ring.svg]]"
 ---
 
 While wearing this ring in dim light or darkness, you can cast *dancing lights* and *light* from the ring at will. Casting either spell from the ring requires an action.

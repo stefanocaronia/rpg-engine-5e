@@ -2,6 +2,8 @@
 category: ring
 rarity: legendary
 attunement: true
+charges: 5/5
+image: "[[ring.svg]]"
 ---
 
 This ring is linked to one of the four Elemental Planes. The GM chooses or randomly determines the linked plane.

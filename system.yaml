@@ -7,6 +7,8 @@ attribution: >-
   available at https://creativecommons.org/licenses/by/4.0/legalcode.
 # The coins, as config takes them (Standard Exchange Rates, p. 62): the first counts the totals, a rare one is never given as change.
 coins: gp 100, pp 1000 rare, ep 50 rare, sp 10, cp 1
+# What each coin is made of (p. 62), as the dashboard draws it.
+coin-metals: {pp: platinum, gp: gold, ep: electrum, sp: silver, cp: copper}
 # How long a round lasts (p. 84): in a scene with turns, a duration of up to a minute becomes rounds.
 round: 6 seconds
 # What the game's mile and foot are worth in metric (D-262), as the Italian books count them: the engine keeps every measure in metric, and its outputs in
@@ -59,6 +61,7 @@ sheet:
   Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies, tool-proficiencies?, languages]
   Features: [features, fighting-styles?]
   Attacks: [attack, damage-roll]
+  Equipment: [money?, inventory?]
   Spells: [caster-level?, spell-save-dc?, spell-attack?, slots-1?, slots-2?, slots-3?, slots-4?, slots-5?, slots-6?, slots-7?, slots-8?, slots-9?, spell-slots?, mystic-arcanum-6?, mystic-arcanum-7?, mystic-arcanum-8?, mystic-arcanum-9?, signature-spell-1?, signature-spell-2?, max-prepared?, spells?, prepared?]
 # The dice each number of the sheet is rolled with, for the dashboard's free roll (D-280): an ability check, a saving throw and an attack roll each roll a d20
 # and add the number (pp. 77, 83, 94).
@@ -75,7 +78,7 @@ sheet-notes:
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: offer their background's tables, rolled or chosen, or propose some; never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
   Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it. Armor and weapons by the names the class page uses, in English, such as weapon-proficiencies: [simple weapons, martial weapons]: the attacks read them."
   Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. Slots, save DC and attack are worked out: never write them."
-  Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries, each an item of the campaign derived from the system's, such as item=[[Chain Mail]]: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex."
+  Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries: the system's kind, such as [[Chain Mail]], or an item of the campaign derived from it, as a magic one: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex."
   Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's copies the kind's damage-roll with its own dice in place, such as 1d10 + str-mod + bonus + 2 * has(fighting-styles, Dueling) slashing. A companion's natural attacks, such as a wolf's bite, are in its stat block, beside the unarmed strike every sheet shows. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
   Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
 # Where the dashboard puts the groups (D-295): in the rail, as on a paper sheet, the abilities and the saving throws; then the skills first, and the rest by how
@@ -331,7 +334,11 @@ fields:
   weight: text
   properties: list
   length: text
+  # What is sold by the bundle and counted in pieces, as Arrows (20) (p. 69, STK-2): cost and weight are the bundle's.
+  bundle: number
   uses: counter
+  # A magic item's charges, as a wand's 7 (p. 140): a counter of one thing, which no stack keeps (STK-1).
+  charges: counter
   # A magic item's rarity, and the attunement it requires: true, or what it asks, as the SRD writes it, such as by a paladin (p. 206).
   rarity: text
   attunement: text

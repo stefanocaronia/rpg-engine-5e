@@ -11,6 +11,7 @@ groups:
   Proficiencies: Jártasságok
   Features: Jellemzők
   Attacks: Támadások
+  Equipment: Felszerelés
   Spells: Varázslatok
 fields:
   creature: faj
@@ -171,6 +172,8 @@ fields:
   skills: képzettségek
   cr: KL
   xp-value: TP-érték
+  money: pénz
+  quantity: mennyiség
 words:
   Dragonborn: Sárkányszületett
   Dwarf: Törp
@@ -426,4 +429,23 @@ words:
   until long rest: a hosszú pihenésig
   until short rest: a rövid pihenésig
   difficult terrain: nehéz terep
+names:
+  str: Erő
+  str-mod: Erő
+  str-save: Erő mentődobás
+  dex: Ügyesség
+  dex-mod: Ügyesség
+  dex-save: Ügyesség mentődobás
+  con: Állóképesség
+  con-mod: Állóképesség
+  con-save: Állóképesség mentődobás
+  int: Intelligencia
+  int-mod: Intelligencia
+  int-save: Intelligencia mentődobás
+  wis: Bölcsesség
+  wis-mod: Bölcsesség
+  wis-save: Bölcsesség mentődobás
+  cha: Karizma
+  cha-mod: Karizma
+  cha-save: Karizma mentődobás
 headline: "{level}. szintű {classes}"

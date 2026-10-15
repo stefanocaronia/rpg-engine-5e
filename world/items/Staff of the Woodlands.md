@@ -2,6 +2,8 @@
 category: staff
 rarity: rare
 attunement: by a druid
+charges: 10/10
+image: "[[crescent-staff.svg]]"
 ---
 
 This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.

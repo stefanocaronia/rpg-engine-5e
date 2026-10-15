@@ -11,6 +11,7 @@ groups:
   Proficiencies: दक्षताएँ
   Features: विशेषताएँ
   Attacks: हमले
+  Equipment: उपकरण
   Spells: मंत्र
 fields:
   creature: प्रजाति
@@ -171,6 +172,8 @@ fields:
   skills: कौशल
   cr: चुनौती
   xp-value: XP मान
+  money: धन
+  quantity: मात्रा
 words:
   Dragonborn: ड्रैगनबॉर्न
   Dwarf: ड्वार्फ़
@@ -426,4 +429,23 @@ words:
   until long rest: लंबे आराम तक
   until short rest: छोटे आराम तक
   difficult terrain: कठिन भूमि
+names:
+  str: शक्ति
+  str-mod: शक्ति
+  str-save: शक्ति बचाव रोल
+  dex: चपलता
+  dex-mod: चपलता
+  dex-save: चपलता बचाव रोल
+  con: सहनशक्ति
+  con-mod: सहनशक्ति
+  con-save: सहनशक्ति बचाव रोल
+  int: बुद्धि
+  int-mod: बुद्धि
+  int-save: बुद्धि बचाव रोल
+  wis: विवेक
+  wis-mod: विवेक
+  wis-save: विवेक बचाव रोल
+  cha: करिश्मा
+  cha-mod: करिश्मा
+  cha-save: करिश्मा बचाव रोल
 headline: लेवल {level} {classes}

@@ -11,6 +11,7 @@ groups:
   Proficiencies: 숙련
   Features: 특성
   Attacks: 공격
+  Equipment: 장비
   Spells: 주문
 fields:
   creature: 종족
@@ -171,6 +172,8 @@ fields:
   skills: 기술
   cr: 도전 지수
   xp-value: 경험치 값
+  money: 금전
+  quantity: 수량
 words:
   Dragonborn: 드래곤본
   Dwarf: 드워프
@@ -426,4 +429,23 @@ words:
   until long rest: 장기 휴식 때까지
   until short rest: 단기 휴식 때까지
   difficult terrain: 험난한 지형
+names:
+  str: 근력
+  str-mod: 근력
+  str-save: 근력 내성 굴림
+  dex: 민첩
+  dex-mod: 민첩
+  dex-save: 민첩 내성 굴림
+  con: 건강
+  con-mod: 건강
+  con-save: 건강 내성 굴림
+  int: 지능
+  int-mod: 지능
+  int-save: 지능 내성 굴림
+  wis: 지혜
+  wis-mod: 지혜
+  wis-save: 지혜 내성 굴림
+  cha: 매력
+  cha-mod: 매력
+  cha-save: 매력 내성 굴림
 headline: "{classes} {level}레벨"

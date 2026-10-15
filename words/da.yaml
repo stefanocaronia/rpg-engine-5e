@@ -11,6 +11,7 @@ groups:
   Proficiencies: Mestringer
   Features: Særtræk
   Attacks: Angreb
+  Equipment: Udstyr
   Spells: Besværgelser
 fields:
   creature: Race
@@ -171,6 +172,8 @@ fields:
   skills: Færdigheder
   cr: Udfordring
   xp-value: XP-værdi
+  money: penge
+  quantity: antal
 words:
   Dragonborn: Dragonborn
   Dwarf: Dværg
@@ -426,4 +429,23 @@ words:
   until long rest: indtil lang hvile
   until short rest: indtil kort hvile
   difficult terrain: svært terræn
+names:
+  str: Styrke
+  str-mod: Styrke
+  str-save: Redningskast mod Styrke
+  dex: Fingerfærdighed
+  dex-mod: Fingerfærdighed
+  dex-save: Redningskast mod Fingerfærdighed
+  con: Konstitution
+  con-mod: Konstitution
+  con-save: Redningskast mod Konstitution
+  int: Intelligens
+  int-mod: Intelligens
+  int-save: Redningskast mod Intelligens
+  wis: Visdom
+  wis-mod: Visdom
+  wis-save: Redningskast mod Visdom
+  cha: Karisma
+  cha-mod: Karisma
+  cha-save: Redningskast mod Karisma
 headline: "{classes} på niveau {level}"

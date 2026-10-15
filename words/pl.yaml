@@ -11,6 +11,7 @@ groups:
   Proficiencies: Biegłości
   Features: Zdolności
   Attacks: Ataki
+  Equipment: Ekwipunek
   Spells: Czary
 fields:
   creature: rasa
@@ -171,6 +172,8 @@ fields:
   skills: umiejętności
   cr: PT
   xp-value: wartość PD
+  money: Pieniądze
+  quantity: Ilość
 words:
   Dragonborn: Drakon
   Dwarf: Krasnolud
@@ -426,4 +429,23 @@ words:
   until long rest: do długiego odpoczynku
   until short rest: do krótkiego odpoczynku
   difficult terrain: trudny teren
+names:
+  str: Siła
+  str-mod: Siła
+  str-save: Rzut obronny Siły
+  dex: Zręczność
+  dex-mod: Zręczność
+  dex-save: Rzut obronny Zręczności
+  con: Kondycja
+  con-mod: Kondycja
+  con-save: Rzut obronny Kondycji
+  int: Inteligencja
+  int-mod: Inteligencja
+  int-save: Rzut obronny Inteligencji
+  wis: Mądrość
+  wis-mod: Mądrość
+  wis-save: Rzut obronny Mądrości
+  cha: Charyzma
+  cha-mod: Charyzma
+  cha-save: Rzut obronny Charyzmy
 headline: "{classes}, {level}. poziom"

@@ -2,6 +2,8 @@
 category: wand
 rarity: very rare
 attunement: by a spellcaster
+charges: 7/7
+image: "[[lunar-wand.svg]]"
 ---
 
 This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the *polymorph* spell (save DC 15) from it.

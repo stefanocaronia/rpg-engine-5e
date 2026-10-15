@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: very rare
 attunement: true
+image: "[[candle-light.svg]]"
 ---
 
 This slender taper is dedicated to a deity and shares that deity’s alignment. The candle’s alignment can be detected with the *detect evil and good* spell. The GM chooses the god and associated alignment or determines the alignment randomly.

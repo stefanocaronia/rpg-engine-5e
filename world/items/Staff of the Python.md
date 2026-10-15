@@ -2,6 +2,7 @@
 category: staff
 rarity: uncommon
 attunement: "by a cleric, druid, or warlock"
+image: "[[crescent-staff.svg]]"
 ---
 
 You can use an action to speak this staff’s command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.

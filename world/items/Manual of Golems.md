@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: very rare
+image: "[[secret-book.svg]]"
 ---
 
 This tome contains information and incantations necessary to make a particular type of golem. The GM chooses the type or determines it randomly. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can’t use a *manual of golems* and attempts to read it takes 6d6 psychic damage.

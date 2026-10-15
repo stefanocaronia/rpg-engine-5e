@@ -7,4 +7,5 @@ properties: [heavy, reach, two-handed]
 bonus: 0
 attack: "str-mod + proficiency * max(has(weapon-proficiencies, martial weapons), has(weapon-proficiencies, Glaive), has(weapon-proficiencies, glaives)) + bonus"
 damage-roll: 1d10 + str-mod + bonus slashing
+image: "[[glaive.svg]]"
 ---

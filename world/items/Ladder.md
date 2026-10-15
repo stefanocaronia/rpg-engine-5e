@@ -4,4 +4,5 @@ category: adventuring gear
 cost: 1 sp
 weight: 25 lb
 length: 10 feet
+image: "[[ladder.svg]]"
 ---

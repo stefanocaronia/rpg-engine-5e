@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: varies
 attunement: true
+image: "[[floating-crystal.svg]]"
 ---
 
 An *Ioun stone* is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of *Ioun stone* exist, each type a distinct combination of shape and color.

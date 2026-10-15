@@ -2,6 +2,8 @@
 category: staff
 rarity: very rare
 attunement: true
+charges: 10/10
+image: "[[wizard-staff.svg]]"
 ---
 
 This staff can be wielded as a magic quarterstaff that grants a +3 bonus to attack and damage rolls made with it.

@@ -7,4 +7,5 @@ properties: [light]
 bonus: 0
 attack: "best(str-mod, dex-mod / has(features, Martial Arts)) + proficiency * max(has(weapon-proficiencies, simple weapons), has(weapon-proficiencies, Sickle), has(weapon-proficiencies, sickles)) + bonus"
 damage-roll: "dice(1d4, martial-arts) + best(str-mod, dex-mod / has(features, Martial Arts)) + bonus + 2 * has(fighting-styles, Dueling) slashing"
+image: "[[sickle.svg]]"
 ---

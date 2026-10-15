@@ -2,6 +2,7 @@
 category: armor (shield)
 rarity: rare
 attunement: true
+image: "[[shield.svg]]"
 ---
 
 While holding this shield, you have resistance to damage from ranged weapon attacks.

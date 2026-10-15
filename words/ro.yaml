@@ -11,6 +11,7 @@ groups:
   Proficiencies: Competențe
   Features: Trăsături
   Attacks: Atacuri
+  Equipment: Echipament
   Spells: Vrăji
 fields:
   creature: rasă
@@ -171,6 +172,8 @@ fields:
   skills: abilități
   cr: NP
   xp-value: valoare PX
+  money: Bani
+  quantity: Cantitate
 words:
   Dragonborn: Dragonborn
   Dwarf: Pitic
@@ -426,4 +429,23 @@ words:
   until long rest: până la odihna lungă
   until short rest: până la odihna scurtă
   difficult terrain: teren dificil
+names:
+  str: Forță
+  str-mod: Forță
+  str-save: Salvare pe Forță
+  dex: Dexteritate
+  dex-mod: Dexteritate
+  dex-save: Salvare pe Dexteritate
+  con: Constituție
+  con-mod: Constituție
+  con-save: Salvare pe Constituție
+  int: Inteligență
+  int-mod: Inteligență
+  int-save: Salvare pe Inteligență
+  wis: Înțelepciune
+  wis-mod: Înțelepciune
+  wis-save: Salvare pe Înțelepciune
+  cha: Carismă
+  cha-mod: Carismă
+  cha-save: Salvare pe Carismă
 headline: "{classes} de nivel {level}"

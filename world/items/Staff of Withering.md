@@ -2,6 +2,8 @@
 category: staff
 rarity: rare
 attunement: "by a cleric, druid, or warlock"
+charges: 3/3
+image: "[[skull-staff.svg]]"
 ---
 
 This staff has 3 charges and regains 1d3 expended charges daily at dawn.

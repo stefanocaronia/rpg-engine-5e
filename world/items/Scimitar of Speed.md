@@ -2,6 +2,7 @@
 category: weapon (scimitar)
 rarity: very rare
 attunement: true
+image: "[[sparkling-sabre.svg]]"
 ---
 
 You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns.

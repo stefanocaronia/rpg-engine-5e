@@ -11,6 +11,7 @@ groups:
   Proficiencies: 習熟
   Features: 特徴
   Attacks: 攻撃
+  Equipment: 装備
   Spells: 呪文
 fields:
   creature: 種族
@@ -171,6 +172,8 @@ fields:
   skills: 技能
   cr: 脅威度
   xp-value: 経験点
+  money: 所持金
+  quantity: 個数
 words:
   Dragonborn: ドラゴンボーン
   Dwarf: ドワーフ
@@ -426,4 +429,23 @@ words:
   until long rest: ロングレストまで
   until short rest: ショートレストまで
   difficult terrain: 移動困難な地形
+names:
+  str: 筋力
+  str-mod: 筋力
+  str-save: 筋力セーヴ
+  dex: 敏捷力
+  dex-mod: 敏捷力
+  dex-save: 敏捷力セーヴ
+  con: 耐久力
+  con-mod: 耐久力
+  con-save: 耐久力セーヴ
+  int: 知力
+  int-mod: 知力
+  int-save: 知力セーヴ
+  wis: 判断力
+  wis-mod: 判断力
+  wis-save: 判断力セーヴ
+  cha: 魅力
+  cha-mod: 魅力
+  cha-save: 魅力セーヴ
 headline: "{classes} {level}レベル"

@@ -11,6 +11,7 @@ groups:
   Proficiencies: Competenze
   Features: Privilegi
   Attacks: Attacchi
+  Equipment: Equipaggiamento
   Spells: Incantesimi
 fields:
   # Character (pp. 2, 60, 63, 64)
@@ -184,6 +185,29 @@ fields:
   skills: Abilità
   cr: Sfida
   xp-value: Valore in PE  # ours: "PE" alone is xp's
+  # Equipment (D-431)
+  money: Denaro
+  quantity: Quantità
+# The whole name of a field whose label is short, as a roll tells it (D-431)
+names:
+  str: Forza
+  str-mod: Forza
+  str-save: Tiro salvezza su Forza
+  dex: Destrezza
+  dex-mod: Destrezza
+  dex-save: Tiro salvezza su Destrezza
+  con: Costituzione
+  con-mod: Costituzione
+  con-save: Tiro salvezza su Costituzione
+  int: Intelligenza
+  int-mod: Intelligenza
+  int-save: Tiro salvezza su Intelligenza
+  wis: Saggezza
+  wis-mod: Saggezza
+  wis-save: Tiro salvezza su Saggezza
+  cha: Carisma
+  cha-mod: Carisma
+  cha-save: Tiro salvezza su Carisma
 words:
   # Races (pp. 2–7)
   Dragonborn: Dragonide

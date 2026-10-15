@@ -2,6 +2,7 @@
 category: ring
 rarity: rare
 attunement: true
+image: "[[ring.svg]]"
 ---
 
 You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type, which the GM chooses or determines randomly.

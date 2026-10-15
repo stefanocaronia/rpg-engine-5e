@@ -7,4 +7,5 @@ properties: [two-handed]
 bonus: 0
 attack: "str-mod + proficiency * max(has(weapon-proficiencies, simple weapons), has(weapon-proficiencies, Greatclub), has(weapon-proficiencies, greatclubs)) + bonus"
 damage-roll: 1d8 + str-mod + bonus bludgeoning
+image: "[[wood-club.svg]]"
 ---

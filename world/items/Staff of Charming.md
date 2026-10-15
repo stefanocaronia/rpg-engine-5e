@@ -2,6 +2,7 @@
 category: staff
 rarity: rare
 attunement: "by a bard, cleric, druid, sorcerer, warlock, or wizard"
+image: "[[wizard-staff.svg]]"
 ---
 
 While holding this staff, you can use an action to expend 1 of its 10 charges to cast *charm person*, *command*, *or comprehend languages* from it using your spell save DC. The staff can also be used as a magic quarterstaff.

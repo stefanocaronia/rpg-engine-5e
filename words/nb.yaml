@@ -11,6 +11,7 @@ groups:
   Proficiencies: Mestringer
   Features: Evner
   Attacks: Angrep
+  Equipment: Utstyr
   Spells: Trollformler
 fields:
   creature: rase
@@ -171,6 +172,8 @@ fields:
   skills: ferdigheter
   cr: UF
   xp-value: EP-verdi
+  money: penger
+  quantity: antall
 words:
   Dragonborn: Dragefødt
   Dwarf: Dverg
@@ -426,4 +429,23 @@ words:
   until long rest: til lang hvile
   until short rest: til kort hvile
   difficult terrain: vanskelig terreng
+names:
+  str: Styrke
+  str-mod: Styrke
+  str-save: Redningskast for Styrke
+  dex: Fingerferdighet
+  dex-mod: Fingerferdighet
+  dex-save: Redningskast for Fingerferdighet
+  con: Konstitusjon
+  con-mod: Konstitusjon
+  con-save: Redningskast for Konstitusjon
+  int: Intelligens
+  int-mod: Intelligens
+  int-save: Redningskast for Intelligens
+  wis: Visdom
+  wis-mod: Visdom
+  wis-save: Redningskast for Visdom
+  cha: Karisma
+  cha-mod: Karisma
+  cha-save: Redningskast for Karisma
 headline: "{classes}, nivå {level}"

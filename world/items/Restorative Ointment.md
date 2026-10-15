@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: uncommon
+image: "[[honey-jar.svg]]"
 ---
 
 This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound.

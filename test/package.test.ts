@@ -54,41 +54,50 @@ describe("the 5e system", () => {
     it("keeps the SRD 5.1's gear, packs, tools, tack and vehicles, with the columns of their table as fields and their description as text (pp. 66–74)", () => {
         const pages = loadWorld(folder).pages;
         const page = (name: string) => pages.find((other) => other.name === name);
+        // An item's icon is the icons script's (D-431), checked apart: the other fields are those of its table.
+        const fields = (name: string) => Object.fromEntries(Object.entries(page(name)?.fields ?? {}).filter(([field]) => field !== "image"));
         const items = pages.filter((other) => other.type === "item");
         // Beside the 50 arms and armor, the unarmed strike (D-235) and the 240 magic items, 159 pages of gear: the rest of the Equipment chapter but its mounts,
         // which are creatures at the table, its trade goods, expenses and stabling.
         expect([items.length, items.filter((item) => item.fields.rarity !== undefined).length]).toEqual([450, 240]);
         expect(items.find((item) => item.name === "Riding Horse")).toBeUndefined();
         // SRD 5.1, pp. 68–69 (the Adventuring Gear table and descriptions), p. 70 (packs and tools), p. 71 (tool descriptions), pp. 71–72 (mounts and vehicles).
-        expect(page("Bullseye Lantern")?.fields).toEqual({ aliases: ["Lantern, bullseye"], category: "adventuring gear", cost: "10 gp", weight: "2 lb" });
+        // Every item has its icon (D-431), as every creature.
+        expect(pages.filter((other) => other.path.includes("/items/") && other.fields.image === undefined).map((other) => other.name)).toEqual([]);
+        expect(fields("Bullseye Lantern")).toEqual({ aliases: ["Lantern, bullseye"], category: "adventuring gear", cost: "10 gp", weight: "2 lb" });
         expect(page("Bullseye Lantern")?.body).toContain("A bullseye lantern casts bright light in a 60-foot cone");
         expect(page("Silk Rope")?.fields).toMatchObject({ aliases: ["Rope, silk (50 feet)"], cost: "10 gp", weight: "5 lb", length: "50 feet" });
-        expect(page("Crystal")?.fields).toEqual({ category: "arcane focus", cost: "10 gp", weight: "1 lb" });
+        expect(fields("Crystal")).toEqual({ category: "arcane focus", cost: "10 gp", weight: "1 lb" });
         expect(page("Crystal")?.body).toContain("An arcane focus is a special item");
-        expect(page("Burglar's Pack")?.fields).toEqual({ category: "equipment pack", cost: "16 gp" });
+        expect(fields("Burglar's Pack")).toEqual({ category: "equipment pack", cost: "16 gp" });
         expect(page("Burglar's Pack")?.body).toContain("a bag of 1,000 ball bearings");
-        expect(page("Alchemist's Supplies")?.fields).toEqual({ category: "artisan's tools", cost: "50 gp", weight: "8 lb" });
+        expect(fields("Alchemist's Supplies")).toEqual({ category: "artisan's tools", cost: "50 gp", weight: "8 lb" });
         // The PDF indents the disguise kit under Artisan's tools, but its description is its own (p. 71).
-        expect(page("Disguise Kit")?.fields).toEqual({ category: "tool", cost: "25 gp", weight: "3 lb" });
+        expect(fields("Disguise Kit")).toEqual({ category: "tool", cost: "25 gp", weight: "3 lb" });
         expect(page("Thieves' Tools")?.body).toContain("a set of lock picks");
-        expect(page("Exotic Saddle")?.fields).toEqual({ category: "saddle", cost: "60 gp", weight: "40 lb" });
-        expect(page("Galley")?.fields).toEqual({ category: "waterborne vehicle", cost: "30,000 gp", speed: "6 km/h" });
+        expect(fields("Exotic Saddle")).toEqual({ category: "saddle", cost: "60 gp", weight: "40 lb" });
+        expect(fields("Galley")).toEqual({ category: "waterborne vehicle", cost: "30,000 gp", speed: "6 km/h" });
     });
 
     it("keeps the 240 magic items of the SRD 5.1, with their type line as fields and the SRD's text alone, without ours (pp. 206–253, D-170)", () => {
         const pages = loadWorld(folder).pages;
         const page = (name: string) => pages.find((other) => other.name === name);
+        // An item's icon is the icons script's (D-431), checked apart: the other fields are those of its table.
+        const fields = (name: string) => Object.fromEntries(Object.entries(page(name)?.fields ?? {}).filter(([field]) => field !== "image"));
         // SRD 5.1, p. 225 (Holy Avenger), p. 237 (Ring of Shooting Stars), p. 220 (Dwarven Plate), p. 207 (Ammunition), p. 246 (Stone of Good Luck), p. 252 (the Orb).
-        expect(page("Holy Avenger")?.fields).toEqual({ category: "weapon (any sword)", rarity: "legendary", attunement: "by a paladin" });
-        expect(page("Ring of Shooting Stars")?.fields).toEqual({ category: "ring", rarity: "very rare", attunement: "outdoors at night" });
-        expect(page("Dwarven Plate")?.fields).toEqual({ category: "armor (plate)", rarity: "very rare" });
+        expect(fields("Holy Avenger")).toEqual({ category: "weapon (any sword)", rarity: "legendary", attunement: "by a paladin" });
+        // Its fixed charges are a counter, so that the ring is one thing and never a kind counted in stacks (STK-1).
+        expect(fields("Ring of Shooting Stars")).toEqual({ category: "ring", rarity: "very rare", attunement: "outdoors at night", charges: "6/6" });
+        expect(page("Wand of Magic Missiles")?.fields.charges).toBe("7/7");
+        expect(page("Figurine of Wondrous Power")?.fields.charges).toBeUndefined();
+        expect(fields("Dwarven Plate")).toEqual({ category: "armor (plate)", rarity: "very rare" });
         expect(page("Dwarven Plate")?.body).toContain("While wearing this armor, you gain a +2 bonus to AC.");
         expect(page("Ammunition, +1, +2, or +3")?.fields.rarity).toBe("uncommon (+1), rare (+2), or very rare (+3)");
-        expect(page("Stone of Good Luck")?.fields).toEqual({ aliases: ["Stone of Good Luck (Luckstone)"], category: "wondrous item", rarity: "uncommon", attunement: true });
+        expect(fields("Stone of Good Luck")).toEqual({ aliases: ["Stone of Good Luck (Luckstone)"], category: "wondrous item", rarity: "uncommon", attunement: true });
         expect(page("Orb of Dragonkind")?.fields).toMatchObject({ rarity: "artifact", attunement: true });
         // p. 234, with the price, the weight and the sentence on drinking it of the adventuring gear entry (pp. 68–69), after the magic item's text; the table of
         // p. 208, which runs on in the next column; the stat block of p. 218, a quotation that ends before the next card.
-        expect(page("Potion of Healing")?.fields).toEqual({ category: "potion", rarity: "varies", cost: "50 gp (common)", weight: "1/2 lb" });
+        expect(fields("Potion of Healing")).toEqual({ category: "potion", rarity: "varies", cost: "50 gp (common)", weight: "1/2 lb" });
         expect(page("Potion of Healing")?.body).toContain("glimmers when agitated.\n\n**Potions of Healing**");
         expect(page("Potion of Healing")?.body).toContain("| Supreme healing | Very rare | 10d4 + 20 |\n\nDrinking or administering a potion takes an action.");
         expect(page("Apparatus of the Crab")?.body).toContain("| 10 | The rear hatch unseals and opens. | The rear hatch closes and seals. |");

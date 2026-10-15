@@ -1,6 +1,7 @@
 ---
 category: weapon (any sword)
 rarity: rare
+image: "[[broadsword.svg]]"
 ---
 
 You gain a +1 bonus to attack and damage rolls made with this magic weapon.

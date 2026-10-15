@@ -11,6 +11,7 @@ groups:
   Proficiencies: Владения
   Features: Особенности
   Attacks: Атаки
+  Equipment: Снаряжение
   Spells: Заклинания
 fields:
   creature: Раса
@@ -171,6 +172,8 @@ fields:
   skills: Навыки
   cr: Опасность
   xp-value: Опыт за победу
+  money: деньги
+  quantity: количество
 words:
   Dragonborn: Драконорождённый
   Dwarf: Дварф
@@ -426,4 +429,23 @@ words:
   until long rest: до продолжительного отдыха
   until short rest: до короткого отдыха
   difficult terrain: труднопроходимая местность
+names:
+  str: Сила
+  str-mod: Сила
+  str-save: Спасбросок Силы
+  dex: Ловкость
+  dex-mod: Ловкость
+  dex-save: Спасбросок Ловкости
+  con: Телосложение
+  con-mod: Телосложение
+  con-save: Спасбросок Телосложения
+  int: Интеллект
+  int-mod: Интеллект
+  int-save: Спасбросок Интеллекта
+  wis: Мудрость
+  wis-mod: Мудрость
+  wis-save: Спасбросок Мудрости
+  cha: Харизма
+  cha-mod: Харизма
+  cha-save: Спасбросок Харизмы
 headline: "{classes}, {level}-й уровень"

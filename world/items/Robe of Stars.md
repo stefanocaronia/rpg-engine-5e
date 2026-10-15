@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: very rare
 attunement: true
+image: "[[robe.svg]]"
 ---
 
 This black or dark blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it.

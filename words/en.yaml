@@ -1,0 +1,20 @@
+# The words of the 5e system in English: only the whole names of the fields whose labels are short, as a roll tells them (D-431); the rest is the system's own.
+names:
+  str: Strength
+  str-mod: Strength
+  str-save: Strength saving throw
+  dex: Dexterity
+  dex-mod: Dexterity
+  dex-save: Dexterity saving throw
+  con: Constitution
+  con-mod: Constitution
+  con-save: Constitution saving throw
+  int: Intelligence
+  int-mod: Intelligence
+  int-save: Intelligence saving throw
+  wis: Wisdom
+  wis-mod: Wisdom
+  wis-save: Wisdom saving throw
+  cha: Charisma
+  cha-mod: Charisma
+  cha-save: Charisma saving throw

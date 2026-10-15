@@ -1,6 +1,7 @@
 ---
 category: potion
 rarity: uncommon
+image: "[[poison-bottle.svg]]"
 ---
 
 This concoction looks, smells, and tastes like a *potion of healing* or other beneficial potion. However, it is actually poison masked by illusion magic. An *identify* spell reveals its true nature.

@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: rare
+image: "[[crossed-chains.svg]]"
 ---
 
 This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. As the sphere moves through the air, it opens into a tangle of metal bands.

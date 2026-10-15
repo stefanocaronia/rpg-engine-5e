@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: rare
 attunement: true
+image: "[[robe.svg]]"
 ---
 
 This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits:

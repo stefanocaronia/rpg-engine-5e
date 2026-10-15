@@ -11,6 +11,7 @@ groups:
   Proficiencies: Taitavuudet
   Features: Piirteet
   Attacks: Hyökkäykset
+  Equipment: Varusteet
   Spells: Loitsut
 fields:
   creature: olento
@@ -171,6 +172,8 @@ fields:
   skills: taidot
   cr: HT
   xp-value: XP-arvo
+  money: Raha
+  quantity: Määrä
 words:
   Dragonborn: Lohikäärmesyntyinen
   Dwarf: Kääpiö
@@ -426,4 +429,23 @@ words:
   until long rest: pitkään lepoon asti
   until short rest: lyhyeen lepoon asti
   difficult terrain: vaikeakulkuinen maasto
+names:
+  str: Voima
+  str-mod: Voima
+  str-save: Voiman pelastusheitto
+  dex: Ketteryys
+  dex-mod: Ketteryys
+  dex-save: Ketteryyden pelastusheitto
+  con: Kestävyys
+  con-mod: Kestävyys
+  con-save: Kestävyyden pelastusheitto
+  int: Älykkyys
+  int-mod: Älykkyys
+  int-save: Älykkyyden pelastusheitto
+  wis: Viisaus
+  wis-mod: Viisaus
+  wis-save: Viisauden pelastusheitto
+  cha: Karisma
+  cha-mod: Karisma
+  cha-save: Karisman pelastusheitto
 headline: "{classes}, taso {level}"

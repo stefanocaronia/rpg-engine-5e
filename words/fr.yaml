@@ -11,6 +11,7 @@ groups:
   Proficiencies: Maîtrises
   Features: Capacités
   Attacks: Attaques
+  Equipment: Équipement
   Spells: Sorts
 fields:
   creature: race
@@ -171,6 +172,8 @@ fields:
   skills: compétences
   cr: FP
   xp-value: valeur en PX
+  money: argent
+  quantity: quantité
 words:
   Dragonborn: Drakéide
   Dwarf: Nain
@@ -426,4 +429,23 @@ words:
   until long rest: jusqu'au repos long
   until short rest: jusqu'au repos court
   difficult terrain: terrain difficile
+names:
+  str: Force
+  str-mod: Force
+  str-save: Jet de sauvegarde de Force
+  dex: Dextérité
+  dex-mod: Dextérité
+  dex-save: Jet de sauvegarde de Dextérité
+  con: Constitution
+  con-mod: Constitution
+  con-save: Jet de sauvegarde de Constitution
+  int: Intelligence
+  int-mod: Intelligence
+  int-save: Jet de sauvegarde d'Intelligence
+  wis: Sagesse
+  wis-mod: Sagesse
+  wis-save: Jet de sauvegarde de Sagesse
+  cha: Charisme
+  cha-mod: Charisme
+  cha-save: Jet de sauvegarde de Charisme
 headline: "{classes} niveau {level}"

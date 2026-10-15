@@ -11,6 +11,7 @@ groups:
   Proficiencies: Yeterlilikler
   Features: Özellikler
   Attacks: Saldırılar
+  Equipment: Ekipman
   Spells: Büyüler
 fields:
   creature: ırk
@@ -171,6 +172,8 @@ fields:
   skills: beceriler
   cr: TD
   xp-value: XP değeri
+  money: para
+  quantity: miktar
 words:
   Dragonborn: Ejderdoğan
   Dwarf: Cüce
@@ -426,4 +429,23 @@ words:
   until long rest: uzun dinlenmeye kadar
   until short rest: kısa dinlenmeye kadar
   difficult terrain: zor arazi
+names:
+  str: Güç
+  str-mod: Güç
+  str-save: Güç kurtarma zarı
+  dex: Çeviklik
+  dex-mod: Çeviklik
+  dex-save: Çeviklik kurtarma zarı
+  con: Dayanıklılık
+  con-mod: Dayanıklılık
+  con-save: Dayanıklılık kurtarma zarı
+  int: Zekâ
+  int-mod: Zekâ
+  int-save: Zekâ kurtarma zarı
+  wis: Bilgelik
+  wis-mod: Bilgelik
+  wis-save: Bilgelik kurtarma zarı
+  cha: Karizma
+  cha-mod: Karizma
+  cha-save: Karizma kurtarma zarı
 headline: "{level}. seviye {classes}"

@@ -6,4 +6,5 @@ weight: 2 lb
 bonus: 0
 attack: "str-mod + proficiency * max(has(weapon-proficiencies, martial weapons), has(weapon-proficiencies, War Pick), has(weapon-proficiencies, war picks)) + bonus"
 damage-roll: "1d8 + str-mod + bonus + 2 * has(fighting-styles, Dueling) piercing"
+image: "[[war-pick.svg]]"
 ---

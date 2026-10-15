@@ -2,6 +2,8 @@
 category: staff
 rarity: rare
 attunement: "by a bard, cleric, or druid"
+charges: 10/10
+image: "[[wizard-staff.svg]]"
 ---
 
 This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: *cure wounds* (1 charge per spell level, up to 4th), *lesser restoration* (2 charges), or *mass cure wounds* (5 charges).

@@ -2,6 +2,7 @@
 category: weapon (any sword that deals slashing damage)
 rarity: very rare
 attunement: true
+image: "[[broadsword.svg]]"
 ---
 
 When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target.

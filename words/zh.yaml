@@ -11,6 +11,7 @@ groups:
   Proficiencies: 熟练项
   Features: 特性
   Attacks: 攻击
+  Equipment: 装备
   Spells: 法术
 fields:
   creature: 种族
@@ -171,6 +172,8 @@ fields:
   skills: 技能
   cr: 挑战等级
   xp-value: 经验值
+  money: 金钱
+  quantity: 数量
 words:
   Dragonborn: 龙裔
   Dwarf: 矮人
@@ -426,4 +429,23 @@ words:
   until long rest: 直到长休
   until short rest: 直到短休
   difficult terrain: 困难地形
+names:
+  str: 力量
+  str-mod: 力量
+  str-save: 力量豁免
+  dex: 敏捷
+  dex-mod: 敏捷
+  dex-save: 敏捷豁免
+  con: 体质
+  con-mod: 体质
+  con-save: 体质豁免
+  int: 智力
+  int-mod: 智力
+  int-save: 智力豁免
+  wis: 感知
+  wis-mod: 感知
+  wis-save: 感知豁免
+  cha: 魅力
+  cha-mod: 魅力
+  cha-save: 魅力豁免
 headline: "{level}级{classes}"

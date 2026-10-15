@@ -11,6 +11,7 @@ groups:
   Proficiencies: Kunskaper
   Features: Förmågor
   Attacks: Attacker
+  Equipment: Utrustning
   Spells: Besvärjelser
 fields:
   creature: ras
@@ -171,6 +172,8 @@ fields:
   skills: färdigheter
   cr: utmaningsnivå
   xp-value: XP-värde
+  money: pengar
+  quantity: antal
 words:
   Dragonborn: Drakfödd
   Dwarf: Dvärg
@@ -426,4 +429,23 @@ words:
   until long rest: till lång vila
   until short rest: till kort vila
   difficult terrain: svårframkomlig terräng
+names:
+  str: Styrka
+  str-mod: Styrka
+  str-save: Räddningskast för Styrka
+  dex: Smidighet
+  dex-mod: Smidighet
+  dex-save: Räddningskast för Smidighet
+  con: Fysik
+  con-mod: Fysik
+  con-save: Räddningskast för Fysik
+  int: Intelligens
+  int-mod: Intelligens
+  int-save: Räddningskast för Intelligens
+  wis: Visdom
+  wis-mod: Visdom
+  wis-save: Räddningskast för Visdom
+  cha: Karisma
+  cha-mod: Karisma
+  cha-save: Räddningskast för Karisma
 headline: Nivå {level} {classes}

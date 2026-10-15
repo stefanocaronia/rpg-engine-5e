@@ -2,6 +2,8 @@
 category: wondrous item
 rarity: legendary
 attunement: true
+charges: 12/12
+image: "[[gold-scarab.svg]]"
 ---
 
 If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person:

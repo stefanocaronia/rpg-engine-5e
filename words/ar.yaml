@@ -11,6 +11,7 @@ groups:
   Proficiencies: الإتقانات
   Features: السمات
   Attacks: الهجمات
+  Equipment: المعدات
   Spells: التعويذات
 fields:
   creature: العرق
@@ -171,6 +172,8 @@ fields:
   skills: المهارات
   cr: مستوى التحدي
   xp-value: قيمة نقاط الخبرة
+  money: المال
+  quantity: الكمية
 words:
   Dragonborn: مولود التنين
   Dwarf: قزم
@@ -426,4 +429,23 @@ words:
   until long rest: حتى الراحة الطويلة
   until short rest: حتى الراحة القصيرة
   difficult terrain: أرض وعرة
+names:
+  str: القوة
+  str-mod: القوة
+  str-save: رمية إنقاذ القوة
+  dex: البراعة
+  dex-mod: البراعة
+  dex-save: رمية إنقاذ البراعة
+  con: البنية
+  con-mod: البنية
+  con-save: رمية إنقاذ البنية
+  int: الذكاء
+  int-mod: الذكاء
+  int-save: رمية إنقاذ الذكاء
+  wis: الحكمة
+  wis-mod: الحكمة
+  wis-save: رمية إنقاذ الحكمة
+  cha: الحضور
+  cha-mod: الحضور
+  cha-save: رمية إنقاذ الحضور
 headline: "{classes} من المستوى {level}"

@@ -11,6 +11,7 @@ groups:
   Proficiencies: Bekwaamheden
   Features: Klassenkenmerken
   Attacks: Aanvallen
+  Equipment: Uitrusting
   Spells: Spreuken
 fields:
   creature: ras
@@ -171,6 +172,8 @@ fields:
   skills: vaardigheden
   cr: CR
   xp-value: XP-waarde
+  money: geld
+  quantity: aantal
 words:
   Dragonborn: Drakengeborene
   Dwarf: Dwerg
@@ -426,4 +429,23 @@ words:
   until long rest: tot de lange rust
   until short rest: tot de korte rust
   difficult terrain: moeilijk terrein
+names:
+  str: Kracht
+  str-mod: Kracht
+  str-save: Redding op Kracht
+  dex: Behendigheid
+  dex-mod: Behendigheid
+  dex-save: Redding op Behendigheid
+  con: Constitutie
+  con-mod: Constitutie
+  con-save: Redding op Constitutie
+  int: Intelligentie
+  int-mod: Intelligentie
+  int-save: Redding op Intelligentie
+  wis: Wijsheid
+  wis-mod: Wijsheid
+  wis-save: Redding op Wijsheid
+  cha: Charisma
+  cha-mod: Charisma
+  cha-save: Redding op Charisma
 headline: "{classes} niveau {level}"

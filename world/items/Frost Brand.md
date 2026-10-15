@@ -2,6 +2,7 @@
 category: weapon (any sword)
 rarity: very rare
 attunement: true
+image: "[[broadsword.svg]]"
 ---
 
 When you hit with an attack using this magic sword, the target takes an extra 1d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.

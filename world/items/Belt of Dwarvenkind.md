@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: rare
 attunement: true
+image: "[[belt-buckles.svg]]"
 ---
 
 While wearing this belt, you gain the following benefits:

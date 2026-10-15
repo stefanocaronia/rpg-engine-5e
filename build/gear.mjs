@@ -24,6 +24,8 @@ const names = { "Hammer, sledge": "Sledgehammer", Exotic: "Exotic Saddle", Milit
 const describedBy = { Saddle: "Saddles", Keelboat: "Rowed Vessels", Rowboat: "Rowed Vessels" };
 // What a page counts: the uses of a healer's kit (p. 67).
 const counters = { "Healer's Kit": { uses: "10/10" } };
+// What a pack's page tells the master, after the SRD's text: write what it holds.
+const packLine = "On a sheet, a pack is what it holds: write each kind with how many, never the pack itself.";
 // The words a name keeps in lower case, but at its start.
 const smallWords = new Set(["a", "an", "and", "in", "of", "or", "the", "to"]);
 
@@ -82,7 +84,7 @@ function descriptionsOf(blocks)
 
 /**
  * The pages of a table's items: the name, the SRD's as an alias when it differs, the category, the fields of the columns, a length the name gives, what
- * the item counts, and its description: the one another title gives it, else its own, the one of the first part of its name (Rope for both ropes), or its group's.
+ * the item counts, the bundle it is sold by, and its description: the one another title gives it, else its own, the one of the first part of its name (Rope for both ropes), or its group's.
  */
 function tablePages(table, spec, descriptions)
 {
@@ -91,11 +93,14 @@ function tablePages(table, spec, descriptions)
         const group = ownTools.includes(srdName) ? undefined : row.group;
         const name = names[srdName] ?? naturalName(srdName);
         const length = /\((\d+)(?: feet|-foot)\)/.exec(srdName)?.[1];
+        // What is sold by the bundle but counted in pieces, as Arrows (20) (STK-2): cost and weight are the bundle's.
+        const bundle = /\((\d+)\)$/.exec(srdName)?.[1];
         const fields = {
             ...(pageName(srdName).toLowerCase() === name.toLowerCase() || group === "Saddle" ? {} : { aliases: [pageName(srdName)] }),
             category: group === undefined ? (drawnVehicles.includes(name) ? "drawn vehicle" : spec.category) : pageName(group).toLowerCase(),
             ...Object.fromEntries(spec.fields.map((field, index) => [field, valueOf(field, values[index].replace(/\.(?= |$)/g, ""))]).filter(([, value]) => value !== "—")),
             ...(length === undefined ? {} : { length: `${length} feet` }),
+            ...(bundle === undefined ? {} : { bundle: Number(bundle) }),
             ...counters[name],
         };
         const titles = [describedBy[name], describedBy[group], srdName, srdName.split(",")[0], group].filter((title) => title !== undefined).map(titleKey);
@@ -126,7 +131,8 @@ function packPages(blocks)
 {
     return blocks.filter((block) => block.kind === "paragraph" && /^.+ Pack \([\d,]+ gp\)\.$/.test(block.runs[0].text) && block.runs[0].style === "***").map((block) => {
         const [, name, cost] = /^(.+) \(([\d,]+ gp)\)\.$/.exec(block.runs[0].text);
-        return { name: pageName(name), fields: { category: "equipment pack", cost }, body: runsText(block.runs.slice(1)).trimStart() };
+        // On a sheet a pack is what it holds, never a stack of its own (STK-2).
+        return { name: pageName(name), fields: { category: "equipment pack", cost }, body: `${runsText(block.runs.slice(1)).trimStart()}\n\n${packLine}` };
     });
 }
 

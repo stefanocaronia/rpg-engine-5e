@@ -2,6 +2,8 @@
 category: wand
 rarity: rare
 attunement: by a spellcaster
+charges: 7/7
+image: "[[lunar-wand.svg]]"
 ---
 
 This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and choose a target within 120 feet of you. The target can be a creature, an object, or a point in space. Roll d100 and consult the following table to discover what happens.

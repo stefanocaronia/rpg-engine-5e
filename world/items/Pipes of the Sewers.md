@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: uncommon
 attunement: true
+image: "[[pipes.svg]]"
 ---
 
 You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them.

@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: very rare
+image: "[[red-carpet.svg]]"
 ---
 
 You can speak the carpet’s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.

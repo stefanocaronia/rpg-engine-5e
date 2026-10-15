@@ -11,6 +11,7 @@ groups:
   Proficiencies: Zdatnosti
   Features: Rysy
   Attacks: Útoky
+  Equipment: Vybavení
   Spells: Kouzla
 fields:
   creature: rasa
@@ -171,6 +172,8 @@ fields:
   skills: dovednosti
   cr: výzva
   xp-value: hodnota XP
+  money: Peníze
+  quantity: Množství
 words:
   Dragonborn: Drakorozený
   Dwarf: Trpaslík
@@ -426,4 +429,23 @@ words:
   until long rest: do dlouhého odpočinku
   until short rest: do krátkého odpočinku
   difficult terrain: obtížný terén
+names:
+  str: Síla
+  str-mod: Síla
+  str-save: Záchranný hod na Sílu
+  dex: Obratnost
+  dex-mod: Obratnost
+  dex-save: Záchranný hod na Obratnost
+  con: Odolnost
+  con-mod: Odolnost
+  con-save: Záchranný hod na Odolnost
+  int: Inteligence
+  int-mod: Inteligence
+  int-save: Záchranný hod na Inteligenci
+  wis: Moudrost
+  wis-mod: Moudrost
+  wis-save: Záchranný hod na Moudrost
+  cha: Charisma
+  cha-mod: Charisma
+  cha-save: Záchranný hod na Charisma
 headline: "{classes}, {level}. úroveň"

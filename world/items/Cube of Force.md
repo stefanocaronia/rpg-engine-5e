@@ -2,6 +2,8 @@
 category: wondrous item
 rarity: rare
 attunement: true
+charges: 36/36
+image: "[[cube.svg]]"
 ---
 
 This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn.

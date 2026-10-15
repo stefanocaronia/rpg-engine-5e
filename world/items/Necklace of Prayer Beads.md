@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: rare
 attunement: "by a cleric, druid, or paladin"
+image: "[[prayer-beads.svg]]"
 ---
 
 This necklace has 1d4 + 2 magic beads made from aquamarine, black pearl, or topaz. It also has many nonmagical beads made from stones such as amber, bloodstone, citrine, coral, jade, pearl, or quartz. If a magic bead is removed from the necklace, that bead loses its magic.

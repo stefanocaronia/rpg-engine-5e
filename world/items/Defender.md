@@ -2,6 +2,7 @@
 category: weapon (any sword)
 rarity: legendary
 attunement: true
+image: "[[broadsword.svg]]"
 ---
 
 You gain a +3 bonus to attack and damage rolls made with this magic weapon.

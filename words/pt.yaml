@@ -11,6 +11,7 @@ groups:
   Proficiencies: Proficiências
   Features: Características
   Attacks: Ataques
+  Equipment: Equipamento
   Spells: Magias
 fields:
   creature: criatura
@@ -171,6 +172,8 @@ fields:
   skills: perícias
   cr: ND
   xp-value: valor de XP
+  money: dinheiro
+  quantity: quantidade
 words:
   Dragonborn: Draconato
   Dwarf: Anão
@@ -426,4 +429,23 @@ words:
   until long rest: até o descanso longo
   until short rest: até o descanso curto
   difficult terrain: terreno difícil
+names:
+  str: Força
+  str-mod: Força
+  str-save: Teste de resistência de Força
+  dex: Destreza
+  dex-mod: Destreza
+  dex-save: Teste de resistência de Destreza
+  con: Constituição
+  con-mod: Constituição
+  con-save: Teste de resistência de Constituição
+  int: Inteligência
+  int-mod: Inteligência
+  int-save: Teste de resistência de Inteligência
+  wis: Sabedoria
+  wis-mod: Sabedoria
+  wis-save: Teste de resistência de Sabedoria
+  cha: Carisma
+  cha-mod: Carisma
+  cha-save: Teste de resistência de Carisma
 headline: "{classes} de nível {level}"

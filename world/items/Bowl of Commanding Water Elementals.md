@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: rare
+image: "[[bowl-spiral.svg]]"
 ---
 
 While this bowl is filled with water, you can use an action to speak the bowl’s command word and summon a water elemental, as if you had cast the *conjure elemental* spell. The bowl can’t be used this way again until the next dawn.

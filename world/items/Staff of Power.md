@@ -2,6 +2,8 @@
 category: staff
 rarity: very rare
 attunement: "by a sorcerer, warlock, or wizard"
+charges: 20/20
+image: "[[wizard-staff.svg]]"
 ---
 
 This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.

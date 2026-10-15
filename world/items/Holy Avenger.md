@@ -2,6 +2,7 @@
 category: weapon (any sword)
 rarity: legendary
 attunement: by a paladin
+image: "[[broadsword.svg]]"
 ---
 
 You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.

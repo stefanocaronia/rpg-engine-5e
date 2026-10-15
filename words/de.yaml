@@ -11,6 +11,7 @@ groups:
   Proficiencies: Übungen
   Features: Merkmale
   Attacks: Angriffe
+  Equipment: Ausrüstung
   Spells: Zauber
 fields:
   creature: Rasse
@@ -171,6 +172,8 @@ fields:
   skills: Fertigkeiten
   cr: HG
   xp-value: EP-Wert
+  money: Geld
+  quantity: Menge
 words:
   Dragonborn: Drachenblütiger
   Dwarf: Zwerg
@@ -426,4 +429,23 @@ words:
   until long rest: bis zur langen Rast
   until short rest: bis zur kurzen Rast
   difficult terrain: schwieriges Gelände
+names:
+  str: Stärke
+  str-mod: Stärke
+  str-save: Stärkerettungswurf
+  dex: Geschicklichkeit
+  dex-mod: Geschicklichkeit
+  dex-save: Geschicklichkeitsrettungswurf
+  con: Konstitution
+  con-mod: Konstitution
+  con-save: Konstitutionsrettungswurf
+  int: Intelligenz
+  int-mod: Intelligenz
+  int-save: Intelligenzrettungswurf
+  wis: Weisheit
+  wis-mod: Weisheit
+  wis-save: Weisheitsrettungswurf
+  cha: Charisma
+  cha-mod: Charisma
+  cha-save: Charismarettungswurf
 headline: "{classes}, Stufe {level}"

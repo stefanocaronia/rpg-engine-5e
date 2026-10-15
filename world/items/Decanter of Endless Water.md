@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: uncommon
+image: "[[jug.svg]]"
 ---
 
 This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds.

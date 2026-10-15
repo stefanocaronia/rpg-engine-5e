@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: legendary
+image: "[[card-pick.svg]]"
 ---
 
 Usually found in a box or pouch, this deck contains a number of cards made of ivory or vellum. Most (75 percent) of these decks have only thirteen cards, but the rest have twenty-two.

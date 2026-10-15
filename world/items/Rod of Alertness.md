@@ -2,6 +2,7 @@
 category: rod
 rarity: very rare
 attunement: true
+image: "[[orb-wand.svg]]"
 ---
 
 This rod has a flanged head and the following properties.

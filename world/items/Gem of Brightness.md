@@ -1,6 +1,8 @@
 ---
 category: wondrous item
 rarity: uncommon
+charges: 50/50
+image: "[[fire-gem.svg]]"
 ---
 
 This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:

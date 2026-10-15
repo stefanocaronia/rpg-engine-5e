@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: legendary
+image: "[[honey-jar.svg]]"
 ---
 
 This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with *oil of slipperiness.* When found, a container contains 1d6 + 1 ounces.

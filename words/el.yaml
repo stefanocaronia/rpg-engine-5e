@@ -11,6 +11,7 @@ groups:
   Proficiencies: Επάρκειες
   Features: Χαρακτηριστικά
   Attacks: Επιθέσεις
+  Equipment: Εξοπλισμός
   Spells: Ξόρκια
 fields:
   creature: φυλή
@@ -171,6 +172,8 @@ fields:
   skills: δεξιότητες
   cr: πρόκληση
   xp-value: αξία σε ΠΕ
+  money: Χρήματα
+  quantity: Ποσότητα
 words:
   Dragonborn: Δρακογέννητος
   Dwarf: Νάνος
@@ -426,4 +429,23 @@ words:
   until long rest: έως τη μακρά ανάπαυση
   until short rest: έως τη σύντομη ανάπαυση
   difficult terrain: δύσβατο έδαφος
+names:
+  str: Δύναμη
+  str-mod: Δύναμη
+  str-save: Αντίσταση στη Δύναμη
+  dex: Επιδεξιότητα
+  dex-mod: Επιδεξιότητα
+  dex-save: Αντίσταση στην Επιδεξιότητα
+  con: Σωματική Διάπλαση
+  con-mod: Σωματική Διάπλαση
+  con-save: Αντίσταση στη Σωματική Διάπλαση
+  int: Ευφυΐα
+  int-mod: Ευφυΐα
+  int-save: Αντίσταση στην Ευφυΐα
+  wis: Σοφία
+  wis-mod: Σοφία
+  wis-save: Αντίσταση στη Σοφία
+  cha: Χάρισμα
+  cha-mod: Χάρισμα
+  cha-save: Αντίσταση στο Χάρισμα
 headline: "{classes} επιπέδου {level}"

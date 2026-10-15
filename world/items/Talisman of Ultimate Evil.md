@@ -2,6 +2,8 @@
 category: wondrous item
 rarity: legendary
 attunement: by a creature of evil alignment
+charges: 6/6
+image: "[[tribal-pendant.svg]]"
 ---
 
 This item symbolizes unrepentant evil. A creature that is neither good nor evil in alignment takes 6d6 necrotic damage upon touching the talisman. A good creature takes 8d6 necrotic damage upon touching the talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman.
