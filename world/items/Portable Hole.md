@@ -1,6 +1,7 @@
 ---
 category: wondrous item
 rarity: rare
+extradimensional: true
 image: "[[hole-ladder.svg]]"
 ---
 

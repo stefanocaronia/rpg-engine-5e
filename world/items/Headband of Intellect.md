@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: uncommon
 attunement: true
+int: 19
 image: "[[headband-knot.svg]]"
 ---
 

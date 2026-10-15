@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: uncommon
 attunement: true
+str: 19
 image: "[[gauntlet.svg]]"
 ---
 

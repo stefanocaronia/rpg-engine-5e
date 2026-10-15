@@ -1,6 +1,8 @@
 ---
 category: wondrous item
 rarity: rare
+weight: 5 lb
+extradimensional: true
 image: "[[light-backpack.svg]]"
 ---
 

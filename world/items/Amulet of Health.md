@@ -2,6 +2,7 @@
 category: wondrous item
 rarity: rare
 attunement: true
+con: 19
 image: "[[gem-pendant.svg]]"
 ---
 

@@ -15,8 +15,9 @@ round: 6 seconds
 # imperial give back the SRD's numbers, such as 3 miles an hour for the normal pace.
 imperial: {mile: 1.5 km, foot: 0.3 m, pound: 0.5 kg}
 # What a character carries (p. 176, Carrying Capacity and Size and Strength; p. 143, coins): the weight of each item, a limit of Strength times 15 by
-# size, fifty coins to a pound (D-432, D-435); formulas read them as load and load-limit.
-load: {field: weight, limit: ["str * 15 * table(carry-by-size, size)", str * 15], coins: 50}
+# size, fifty coins to a pound (D-432, D-435); formulas read them as load and load-limit. What an extradimensional item holds weighs nothing, as in a Bag
+# of Holding (p. 210).
+load: {field: weight, limit: ["str * 15 * table(carry-by-size, size)", str * 15], coins: 50, weightless: extradimensional}
 # The computed lengths, as the speeds, are in feet (SPD-1).
 length-unit: ft
 # How one travels (TRV-1–TRV-3, TRV-8; Adventuring › Travel Pace and Difficult Terrain): the paces of an hour (4, 3 and 2 miles), 8 hours of travel a day,
@@ -237,7 +238,8 @@ burning:
   Hooded Lantern: {lasts: 6h, spends: Oil}
   Bullseye Lantern: {lasts: 6h, spends: Oil}
 # What the pages one is attuned to and one's feats give, added up as effects are (D-449): a page, of the system or the campaign, writes its bonus fields
-# as numbers, such as bonus-ac: 1 on a Ring of Protection, or bonus-speed: 10 on a feat.
+# as numbers, such as bonus-ac: 1 on a Ring of Protection, or bonus-speed: 10 on a feat; an ability score it sets rises to it, as str: 19 on Gauntlets of
+# Ogre Power (p. 223), and stays when higher.
 bonus-lists: [attuned, feats]
 # Attunement (p. 206): at most three magic items at once, each one whose attunement asks for it; who may attune, as by a paladin, the master checks (D-435).
 bonds:
@@ -281,12 +283,12 @@ fields:
   swim: text
   climb: text
   burrow: text
-  str: number
-  dex: number
-  con: number
-  int: number
-  wis: number
-  cha: number
+  str: at-least
+  dex: at-least
+  con: at-least
+  int: at-least
+  wis: at-least
+  cha: at-least
   saves: list
   skills: list
   damage-vulnerabilities: list
@@ -406,6 +408,8 @@ fields:
   length: text
   # What is sold by the bundle and counted in pieces, as Arrows (20) (p. 69, STK-2): cost and weight are the bundle's.
   bundle: number
+  # An item whose contents weigh nothing, as a Bag of Holding, a Handy Haversack or a Portable Hole (pp. 210, 224, 233): true.
+  extradimensional: text
   uses: counter
   # A magic item's charges, as a wand's 7 (p. 140): a counter of one thing, which no stack keeps (STK-1).
   charges: counter
@@ -483,6 +487,8 @@ fields:
   bonus-spell-dc: bonus
   bonus-spell-attack: bonus
   bonus-initiative: bonus
+  # What an Ioun Stone of Mastery adds to the proficiency bonus (p. 228).
+  bonus-proficiency: bonus
 # The proficiency bonus by level (p. 56).
 tables:
   # What a size does to how much one carries (p. 176, Size and Strength).
@@ -519,7 +525,7 @@ computed:
   wis-mod: floor((wis - 10) / 2)
   cha-mod: floor((cha - 10) / 2)
   level: sum(classes)
-  proficiency: table(proficiency-by-level, level)
+  proficiency: table(proficiency-by-level, level) + bonus-proficiency
   str-save:
     - item(saves, Str) / has(saves, Str) + bonus-saves
     - str-mod + proficiency * has(save-proficiencies, str) + has(features, Aura of Protection) * max(1, cha-mod) + bonus-saves

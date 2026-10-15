@@ -1,6 +1,8 @@
 ---
 category: wondrous item
 rarity: uncommon
+weight: 15 lb
+extradimensional: true
 image: "[[swap-bag.svg]]"
 ---
 
