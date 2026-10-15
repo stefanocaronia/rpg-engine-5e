@@ -174,6 +174,8 @@ fields:
   xp-value: 经验值
   money: 金钱
   quantity: 数量
+  load: 负重
+  attuned: 已调谐
 words:
   Dragonborn: 龙裔
   Dwarf: 矮人

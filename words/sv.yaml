@@ -174,6 +174,8 @@ fields:
   xp-value: XP-värde
   money: pengar
   quantity: antal
+  load: Last
+  attuned: inställd
 words:
   Dragonborn: Drakfödd
   Dwarf: Dvärg

@@ -188,6 +188,8 @@ fields:
   # Equipment (D-431)
   money: Denaro
   quantity: Quantità
+  load: Carico
+  attuned: Sintonia
 # The whole name of a field whose label is short, as a roll tells it (D-431)
 names:
   str: Forza

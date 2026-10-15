@@ -174,6 +174,8 @@ fields:
   xp-value: valeur en PX
   money: argent
   quantity: quantité
+  load: Charge
+  attuned: harmonisé
 words:
   Dragonborn: Drakéide
   Dwarf: Nain
