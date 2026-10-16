@@ -102,7 +102,7 @@ sheet-notes:
   Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it. Armor and weapons by the names the class page uses, in English, such as weapon-proficiencies: [simple weapons, martial weapons]: the attacks read them."
   Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. A domain's or an oath's spells are always prepared and never written in prepared, which counts only those chosen. Slots, save DC and attack are worked out: never write them."
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries: the system's kind, such as [[Chain Mail]], or an item of the campaign derived from it, as a magic one: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex. A mithral armor writes what it lacks over its kind: item=[[Plate Armor]], magic=[[Mithral Armor]], strength-required=0, stealth-disadvantage=false."
-  Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's copies the kind's damage-roll with its own dice in place, such as 1d10 + str-mod + bonus + 2 * has(fighting-styles, Dueling) slashing. A companion's natural attacks, such as a wolf's bite, are in its stat block, beside the unarmed strike every sheet shows. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
+  Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. Two-Weapon Fighting's attack with the other hand adds no ability modifier to its damage unless the style gives it (p. 95). A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's copies the kind's damage-roll with its own dice in place, such as 1d10 + str-mod + bonus + 2 * has(fighting-styles, Dueling) slashing. A companion's natural attacks, such as a wolf's bite, are in its stat block, beside the unarmed strike every sheet shows. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
   Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery] or invocations: [Thirsting Blade]; its bonuses follow. Thirsting Blade's second attack is only with the pact weapon."
 # Where the dashboard puts the groups (D-295): in the rail, as on a paper sheet, the abilities, the saving throws and the skills; then the rest by how often
 # play needs them; in a fight, at hand, the armor class, initiative, speed and hit points, the attacks and the spells (D-315).
@@ -261,13 +261,15 @@ bonus-lists: [attuned, feats]
 bonds:
   attuned: {most: 3, needs: attunement, rules: Attunement}
 # What one does in a turn (Combat, pp. 90–91, 93; D-453): an action, a bonus action and a reaction, back at the start of one's own turn, the reaction usable in
-# any turn; the attacks of the Attack action within it; Sneak Attack once a turn, in any (p. 39).
+# any turn; the attacks of the Attack action within it; Sneak Attack once a turn, in any (p. 39); a legendary creature's actions.
 turn-uses:
   action: {}
-  bonus action: {}
+  bonus action: {note: "A spell cast with it leaves only a cantrip of one action for this turn (p. 101)."}
   reaction: {any-turn: true}
   attack: {within: action, most: "(1 + best(extra-attacks, 0)) / min(1, count(classes))"}
   sneak attack: {needs: "has(features, Sneak Attack)", any-turn: true, resets: each turn}
+  # A legendary creature's actions, at the end of another's turn, back at the start of its own (p. 260).
+  legendary action: {needs: legendary-actions, most: legendary-actions, any-turn: true}
 # The most a sheet holds (D-449): an ability score 20 (p. 76), Primal Champion's Strength and Constitution 24 (p. 9), more by what raises the most, as
 # a manual or a tome, given with an effect without end; no more spells prepared than the class allows.
 at-most:
@@ -278,6 +280,8 @@ at-most:
   wis: 20 + bonus-wis-max
   cha: 20 + bonus-cha-max
   prepared: max-prepared
+# The conditions a creature does not take, as a zombie poisoned (its stat block, D-454).
+immune: condition-immunities
 # Damage of a type (p. 97, D-449): immunity takes none, resistance halves it, rounded down as the game is played (the SRD 5.1 does not
 # write it), then vulnerability doubles it; one instance of each counts.
 damage: {counter: hp, halves: damage-resistances, ignores: damage-immunities, doubles: damage-vulnerabilities, rules: Damage Resistance and Vulnerability}
@@ -286,7 +290,7 @@ keeping: {counter: hp, conditions: [Incapacitated, Paralyzed, Petrified, Stunned
 # What a fight follows on the dashboard's Combat (D-314): hit points, a foe's told in words; who cannot act (p. 358), never a turn skipped.
 combat: {track: hp, in-words: true, inactive: [Incapacitated, Paralyzed, Petrified, Stunned, Unconscious]}
 # At 0 hit points the death saves, big on the dashboard (p. 98, D-310, D-314).
-dying: {at: hp 0, show: [death-successes, death-failures]}
+dying: {at: hp 0, show: [death-successes, death-failures], condition: Unconscious, fails: death-failures 3, rules: Instant Death}
 # How the engine reads each field: only counters are counted; numbers, text and lists never are, nor are they money.
 fields:
   size: text
@@ -337,6 +341,9 @@ fields:
   damage-resistances: list
   damage-immunities: list
   condition-immunities: list
+  # A legendary creature's actions a round and its Legendary Resistance a day (pp. 259–260, D-454).
+  legendary-actions: number
+  legendary-resistance: counter
   darkvision: text
   blindsight: text
   tremorsense: text

@@ -30,6 +30,8 @@ slots-6: 1/1
 slots-7: 1/1
 slots-8: 1/1
 slots-9: 1/1
+legendary-actions: 3
+legendary-resistance: 3/3
 cr: "21"
 xp-value: 33000
 image: "[[crowned-skull.svg]]"

@@ -222,6 +222,7 @@ describe("the 5e system", () => {
             darkvision: "120 ft",
             "passive-perception": 20,
             languages: ["Deep Speech", "telepathy 120 ft"],
+            "legendary-actions": 3,
             cr: "10",
             "xp-value": 5900,
             image: "[[fish-monster.svg]]",

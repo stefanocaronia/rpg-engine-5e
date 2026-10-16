@@ -3,6 +3,7 @@ category: armor (shield)
 rarity: rare
 attunement: true
 image: "[[shield.svg]]"
+damage-resistances: ["damage from ranged weapon attacks"]
 ---
 
 While holding this shield, you have resistance to damage from ranged weapon attacks.

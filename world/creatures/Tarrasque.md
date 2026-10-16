@@ -18,6 +18,8 @@ damage-immunities: [fire, poison, "bludgeoning, piercing, and slashing from nonm
 condition-immunities: [charmed, frightened, paralyzed, poisoned]
 blindsight: 120 ft
 passive-perception: 10
+legendary-actions: 3
+legendary-resistance: 3/3
 cr: "30"
 xp-value: 155000
 image: "[[bestial-fangs.svg]]"

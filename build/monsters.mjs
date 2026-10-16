@@ -382,6 +382,7 @@ function fieldsOf(name, type, entries, sections)
         ...senses(name, entries.get("Senses")),
         ...listField("languages", entries.get("Languages"), languageList),
         ...slots(sections),
+        ...legendary(sections),
         cr,
         "xp-value": Number(xp.replaceAll(",", "")),
     };
@@ -477,6 +478,15 @@ function slots(sections)
     }
 
     return result;
+}
+
+/** What a creature has of the legendary (D-454): the actions it takes a round, from the opening of its Legendary Actions, and its Legendary Resistance a day. */
+function legendary(sections)
+{
+    const opening = sections.find((section) => section.title === "Legendary Actions")?.intro.map((block) => block.text).join(" ") ?? "";
+    const actions = /can take (\d+) legendary actions/.exec(opening)?.[1];
+    const resistance = sections.flatMap((section) => section.items).map((item) => /^Legendary Resistance \((\d+)\/Day\)/.exec(item.name)?.[1]).find((count) => count !== undefined);
+    return { ...(actions === undefined ? {} : { "legendary-actions": Number(actions) }), ...(resistance === undefined ? {} : { "legendary-resistance": `${resistance}/${resistance}` }) };
 }
 
 function listField(field, text, read)

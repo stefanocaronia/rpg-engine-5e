@@ -22,6 +22,8 @@ blindsight: 60 ft
 darkvision: 120 ft
 passive-perception: 27
 languages: [Common, Draconic]
+legendary-actions: 3
+legendary-resistance: 3/3
 cr: "21"
 xp-value: 33000
 image: "[[spiked-dragon-head.svg]]"

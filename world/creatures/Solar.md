@@ -22,6 +22,7 @@ condition-immunities: [charmed, exhaustion, frightened, poisoned]
 truesight: 120 ft
 passive-perception: 24
 languages: [all, telepathy 120 ft]
+legendary-actions: 3
 cr: "21"
 xp-value: 33000
 image: "[[angel-outfit.svg]]"

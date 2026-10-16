@@ -4,6 +4,7 @@ rarity: very rare
 attunement: "by a druid, sorcerer, warlock, or wizard"
 charges: 10/10
 image: "[[wizard-staff.svg]]"
+damage-resistances: [cold]
 ---
 
 You have resistance to cold damage while you hold this staff.

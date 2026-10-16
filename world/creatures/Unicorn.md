@@ -17,6 +17,7 @@ condition-immunities: [charmed, paralyzed, poisoned]
 darkvision: 60 ft
 passive-perception: 13
 languages: [Celestial, Elvish, Sylvan, telepathy 60 ft]
+legendary-actions: 3
 cr: "5"
 xp-value: 1800
 image: "[[unicorn.svg]]"

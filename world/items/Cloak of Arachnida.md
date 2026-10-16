@@ -3,6 +3,7 @@ category: wondrous item
 rarity: very rare
 attunement: true
 image: "[[cape.svg]]"
+damage-resistances: [poison]
 ---
 
 This fine garment is made of black silk interwoven with faint silvery threads. While wearing it, you gain the following benefits:

@@ -19,6 +19,8 @@ damage-resistances: [necrotic, "bludgeoning, piercing, and slashing from nonmagi
 darkvision: 120 ft
 passive-perception: 17
 languages: [the languages it knew in life]
+legendary-actions: 3
+legendary-resistance: 3/3
 cr: "13"
 xp-value: 10000
 image: "[[vampire-dracula.svg]]"

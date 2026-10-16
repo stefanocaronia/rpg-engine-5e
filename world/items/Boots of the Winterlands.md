@@ -3,6 +3,7 @@ category: wondrous item
 rarity: uncommon
 attunement: true
 image: "[[boots.svg]]"
+damage-resistances: [cold]
 ---
 
 These furred boots are snug and feel quite warm. While you wear them, you gain the following benefits:

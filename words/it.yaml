@@ -93,6 +93,8 @@ fields:
   push-drag: Spingere, trascinare o sollevare
   hold-breath: Trattenere il fiato
   lifestyle: Stile di vita
+  legendary-actions: Azioni leggendarie
+  legendary-resistance: Resistenza leggendaria
   invocations: Suppliche occulte # ours
   equipped: Equipaggiato  # ours
   hp-base: PF dai dadi  # ours: the hit points the hit dice gave, without Constitution
@@ -237,6 +239,7 @@ words:
   bonus action: Azione bonus
   reaction: Reazione
   sneak attack: Attacco furtivo
+  legendary action: Azione leggendaria
   # Races (pp. 2–7)
   Dragonborn: Dragonide
   Dwarf: Nano
