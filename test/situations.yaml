@@ -1,0 +1,1061 @@
+# Situations of the 5e (D-449): each a character as the master writes it, and what its sheet must show, with where the rule is.
+- id: fighter-1-chain-shield
+  title: A level 1 fighter in chain mail with a shield, Defense
+  source: "SRD 5.1 pp. 24, 63–64 (Fighting Style, Armor)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 16
+    dex: 12
+    con: 14
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+    fighting-styles: "[Defense]"
+    save-proficiencies: "[str, con]"
+  add:
+    inventory: ["[[Chain Mail]]", "[[Shield]]"]
+    equipped: ["[[Chain Mail]]", "[[Shield]]"]
+  expect:
+    ac: "19"
+    proficiency: "+2"
+    str-save: "+5"
+    walking: "30 ft"
+- id: dwarf-wizard-chain
+  title: A hill dwarf wizard in chain mail without its Strength is not slowed
+  source: "SRD 5.1 pp. 3, 63 (Dwarven speed, Armor)"
+  write:
+    creature: "[[Hill Dwarf]]"
+    classes: "[[Wizard]] 1"
+    str: 10
+    dex: 10
+    con: 14
+    int: 16
+    wis: 10
+    cha: 10
+    hp-base: 6
+  add:
+    inventory: ["[[Chain Mail]]"]
+    equipped: ["[[Chain Mail]]"]
+  expect:
+    walking: "25 ft"
+    ac: "16"
+- id: barbarian-5-unarmored
+  title: A level 5 human barbarian without armor, with Fast Movement
+  source: "SRD 5.1 pp. 8-9 (Barbarian table, Unarmored Defense, Fast Movement); p. 56 (Proficiency Bonus); p. 85 (Jumping, Suffocating); p. 80 (Push, Drag, or Lift)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Barbarian]] 5"
+    str: 16
+    dex: 14
+    con: 16
+    int: 8
+    wis: 12
+    cha: 10
+    hp-base: 40
+  add:
+    save-proficiencies: [str, con]
+  expect:
+    level: "5"
+    proficiency: "+3"
+    ac: "15"
+    walking: "40 ft"
+    rages: "3/3"
+    rage-damage: "+2"
+    str-save: "+6"
+    con-save: "+6"
+    dex-save: "+2"
+    hit-dice-d12: "5/5"
+    hp: "55/55"
+    long-jump: "16 ft"
+    high-jump: "6 ft"
+    push-drag: "480"
+    hold-breath: "4"
+
+- id: barbarian-5-half-plate
+  title: The same barbarian in half plate keeps Fast Movement, which only heavy armor stops
+  source: "SRD 5.1 p. 9 (Fast Movement: while you aren't wearing heavy armor); p. 63 (Armor table, Half Plate 15 + Dex max 2)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Barbarian]] 5"
+    str: 16
+    dex: 14
+    con: 16
+    int: 8
+    wis: 12
+    cha: 10
+    hp-base: 40
+  add:
+    save-proficiencies: [str, con]
+    inventory: ["[[Half Plate Armor]]"]
+    equipped: ["[[Half Plate Armor]]"]
+  expect:
+    ac: "17"
+    walking: "40 ft"
+
+- id: half-orc-barbarian-1-shield
+  title: A level 1 half-orc barbarian with a shield and no armor, Intimidation from the race
+  source: "SRD 5.1 p. 8 (Unarmored Defense: you can use a shield); pp. 6-7 (Half-Orc: Menacing, Relentless Endurance)"
+  write:
+    creature: "[[Half-Orc]]"
+    classes: "[[Barbarian]] 1"
+    str: 16
+    dex: 14
+    con: 16
+    int: 8
+    wis: 10
+    cha: 10
+    hp-base: 12
+  add:
+    save-proficiencies: [str, con]
+    inventory: ["[[Shield]]"]
+    equipped: ["[[Shield]]"]
+  expect:
+    proficiency: "+2"
+    ac: "17"
+    walking: "30 ft"
+    rages: "2/2"
+    rage-damage: "+2"
+    relentless-endurance: "1/1"
+    intimidation: "+2"
+    hp: "15/15"
+
+# --- Bard ----------------------------------------------------------------------------------------------------------------------------------------------
+
+- id: bard-5-lore-jack-of-all-trades
+  title: A level 5 bard with expertise, and Jack of All Trades on checks without proficiency, initiative and passives included
+  source: "SRD 5.1 pp. 11-13 (Bard table, Bardic Inspiration, Jack of All Trades p. 12, Expertise p. 13); p. 78 (Passive Checks); p. 63 (Leather)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Bard]] 5"
+    str: 10
+    dex: 14
+    con: 12
+    int: 10
+    wis: 12
+    cha: 16
+    hp-base: 28
+  add:
+    subclasses: ["[[College of Lore]]"]
+    save-proficiencies: [dex, cha]
+    skill-proficiencies: [Performance, Persuasion, Deception]
+    expertise: [Performance, Persuasion]
+    inventory: ["[[Leather Armor]]"]
+    equipped: ["[[Leather Armor]]"]
+  expect:
+    proficiency: "+3"
+    performance: "+9"
+    persuasion: "+9"
+    deception: "+6"
+    athletics: "+1"
+    acrobatics: "+3"
+    initiative: "+3"
+    passive-perception: "12"
+    passive-investigation: "11"
+    # Jack of All Trades is for ability checks only, never saving throws.
+    wis-save: "+1"
+    dex-save: "+5"
+    cha-save: "+6"
+    ac: "13"
+    bardic-inspiration: "3/3"
+    caster-level: "5"
+    spell-save-dc: "14"
+    spell-attack: "+6"
+    slots-1: "4/4"
+    slots-2: "3/3"
+    slots-3: "2/2"
+    cantrips-known: "3"
+    spells-known: "8"
+
+# --- Cleric --------------------------------------------------------------------------------------------------------------------------------------------
+
+- id: cleric-5-life-heavy-armor-weak
+  title: A level 5 life cleric in chain mail and shield without the Strength for it
+  source: "SRD 5.1 pp. 15-16 (Cleric table, Spellcasting, Channel Divinity); p. 63 (Heavy Armor: Str 13 or speed -10 ft; Shield +2)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Cleric]] 5"
+    str: 12
+    dex: 10
+    con: 14
+    int: 10
+    wis: 16
+    cha: 10
+    hp-base: 28
+  add:
+    subclasses: ["[[Life Domain]]"]
+    save-proficiencies: [wis, cha]
+    inventory: ["[[Chain Mail]]", "[[Shield]]"]
+    equipped: ["[[Chain Mail]]", "[[Shield]]"]
+  expect:
+    proficiency: "+3"
+    ac: "18"
+    walking: "20 ft"
+    wis-save: "+6"
+    cha-save: "+3"
+    str-save: "+1"
+    caster-level: "5"
+    spell-save-dc: "14"
+    spell-attack: "+6"
+    max-prepared: "8"
+    slots-1: "4/4"
+    slots-2: "3/3"
+    slots-3: "2/2"
+    channel-divinity: "1/1"
+    hit-dice-d8: "5/5"
+    hp: "38/38"
+
+- id: cleric-6-paladin-4
+  title: The SRD's own example, cleric 6 and paladin 4, Channel Divinity twice and not three times, slots combined
+  source: "SRD 5.1 p. 57 (Multiclassing, Channel Divinity: a cleric 6/paladin 4 uses it twice); p. 58 (Spell Slots, Multiclass Spellcaster table); p. 30 (Divine Sense, Lay on Hands); p. 31 (paladin's prepared spells)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Cleric]] 6, [[Paladin]] 4"
+    str: 14
+    dex: 10
+    con: 12
+    int: 10
+    wis: 16
+    cha: 12
+    hp-base: 57
+  add:
+    save-proficiencies: [wis, cha]
+  expect:
+    level: "10"
+    proficiency: "+4"
+    channel-divinity: "2/2"
+    caster-level: "8"
+    slots-1: "4/4"
+    slots-2: "3/3"
+    slots-3: "3/3"
+    slots-4: "2/2"
+    spell-save-dc: "Cleric 15, Paladin 13"
+    spell-attack: "Cleric +7, Paladin +5"
+    max-prepared: "Cleric 9, Paladin 3"
+    lay-on-hands: "20/20"
+    divine-sense: "2/2"
+    hit-dice-d8: "6/6"
+    hit-dice-d10: "4/4"
+
+# --- Druid ---------------------------------------------------------------------------------------------------------------------------------------------
+
+- id: druid-2-land
+  title: A level 2 druid of the land in leather and a shield
+  source: "SRD 5.1 p. 19 (Druid table, Spellcasting); p. 20 (Wild Shape: twice, back with a short or long rest); p. 21 (Natural Recovery)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Druid]] 2"
+    str: 10
+    dex: 14
+    con: 14
+    int: 12
+    wis: 16
+    cha: 8
+    hp-base: 13
+  add:
+    subclasses: ["[[Circle of the Land]]"]
+    save-proficiencies: [int, wis]
+    inventory: ["[[Leather Armor]]", "[[Shield]]"]
+    equipped: ["[[Leather Armor]]", "[[Shield]]"]
+  expect:
+    proficiency: "+2"
+    ac: "15"
+    wild-shape: "2/2"
+    natural-recovery: "1/1"
+    caster-level: "2"
+    slots-1: "3/3"
+    max-prepared: "5"
+    spell-save-dc: "13"
+    spell-attack: "+5"
+    int-save: "+3"
+    wis-save: "+5"
+    hit-dice-d8: "2/2"
+    hp: "17/17"
+
+# --- Fighter -------------------------------------------------------------------------------------------------------------------------------------------
+
+- id: hill-dwarf-fighter-1-plate
+  title: A hill dwarf fighter in plate and shield with Defense, slowed neither by the armor nor short of Strength for it
+  source: "SRD 5.1 p. 3 (Dwarf: speed 25, not reduced by heavy armor); p. 4 (Dwarven Toughness); p. 24 (Defense, Second Wind); p. 63 (Plate Str 15)"
+  write:
+    creature: "[[Hill Dwarf]]"
+    classes: "[[Fighter]] 1"
+    str: 13
+    dex: 10
+    con: 16
+    int: 10
+    wis: 12
+    cha: 8
+    hp-base: 10
+  add:
+    save-proficiencies: [str, con]
+    fighting-styles: [Defense]
+    inventory: ["[[Plate Armor]]", "[[Shield]]"]
+    equipped: ["[[Plate Armor]]", "[[Shield]]"]
+  expect:
+    ac: "21"
+    walking: "25 ft"
+    hp: "14/14"
+    second-wind: "1/1"
+    str-save: "+3"
+    con-save: "+5"
+    hit-dice-d10: "1/1"
+
+- id: human-fighter-1-plate-weak
+  title: A human fighter in plate with Strength 13, slowed by 10 feet
+  source: "SRD 5.1 p. 63 (Heavy Armor; Armor table, Plate Str 15)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 13
+    dex: 10
+    con: 14
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  add:
+    inventory: ["[[Plate Armor]]"]
+    equipped: ["[[Plate Armor]]"]
+  expect:
+    ac: "18"
+    walking: "20 ft"
+
+- id: fighter-7-champion
+  title: A level 7 champion, Remarkable Athlete rounded up on Str, Dex and Con checks without proficiency
+  source: "SRD 5.1 p. 25 (Remarkable Athlete: half the proficiency bonus, round up); pp. 24-25 (Second Wind, Action Surge)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 7"
+    str: 16
+    dex: 14
+    con: 14
+    int: 10
+    wis: 12
+    cha: 10
+    hp-base: 46
+  add:
+    subclasses: ["[[Champion]]"]
+    save-proficiencies: [str, con]
+    skill-proficiencies: [Athletics, Perception]
+  expect:
+    proficiency: "+3"
+    athletics: "+6"
+    acrobatics: "+4"
+    sleight-of-hand: "+4"
+    stealth: "+4"
+    initiative: "+4"
+    perception: "+4"
+    # Insight is a Wisdom check: no Remarkable Athlete.
+    insight: "+1"
+    passive-perception: "14"
+    # Saving throws are not checks.
+    str-save: "+6"
+    dex-save: "+2"
+    action-surge: "1/1"
+    second-wind: "1/1"
+    hp: "60/60"
+
+- id: fighter-17
+  title: A level 17 fighter, Action Surge twice and Indomitable three times
+  source: "SRD 5.1 pp. 24-25 (Fighter table, Action Surge, Indomitable); p. 56 (Proficiency Bonus +6 at 17)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 17"
+    str: 18
+    dex: 12
+    con: 14
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 106
+  add:
+    save-proficiencies: [str, con]
+  expect:
+    proficiency: "+6"
+    action-surge: "2/2"
+    indomitable: "3/3"
+    second-wind: "1/1"
+    str-save: "+10"
+    con-save: "+8"
+    hit-dice-d10: "17/17"
+    hp: "140/140"
+
+# --- Monk ----------------------------------------------------------------------------------------------------------------------------------------------
+
+- id: monk-6-open-hand
+  title: A level 6 monk without armor or shield, Unarmored Movement +15 and the Martial Arts die on the unarmed strike
+  source: "SRD 5.1 p. 26 (Monk table, Unarmored Defense, Martial Arts); p. 27 (Ki, Unarmored Movement); p. 28 (Wholeness of Body)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Monk]] 6"
+    str: 10
+    dex: 16
+    con: 14
+    int: 10
+    wis: 16
+    cha: 8
+    hp-base: 33
+  add:
+    subclasses: ["[[Way of the Open Hand]]"]
+    save-proficiencies: [str, dex]
+  expect:
+    proficiency: "+3"
+    ac: "16"
+    walking: "45 ft"
+    ki-points: "6/6"
+    martial-arts: "1d6"
+    wholeness-of-body: "1/1"
+    attack: "+6"
+    damage-roll: "1d6+3 bludgeoning"
+    dex-save: "+6"
+    str-save: "+3"
+    hp: "45/45"
+
+- id: monk-6-shield
+  title: The same monk with a shield loses both Unarmored Defense and Unarmored Movement
+  source: "SRD 5.1 p. 26 (Unarmored Defense: wearing no armor and not wielding a shield); p. 27 (Unarmored Movement: not wearing armor or wielding a shield)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Monk]] 6"
+    str: 10
+    dex: 16
+    con: 14
+    int: 10
+    wis: 16
+    cha: 8
+    hp-base: 33
+  add:
+    subclasses: ["[[Way of the Open Hand]]"]
+    save-proficiencies: [str, dex]
+    inventory: ["[[Shield]]"]
+    equipped: ["[[Shield]]"]
+  expect:
+    ac: "15"
+    walking: "30 ft"
+
+- id: monk-1-barbarian-1
+  title: Unarmored Defense from the first class only, a monk who then took a barbarian level (the barbarian's would be higher)
+  source: "SRD 5.1 p. 57 (Unarmored Defense: if you already have it, you can't gain it again from another class; Proficiency Bonus by total level; Hit Points and Hit Dice)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Monk]] 1, [[Barbarian]] 1"
+    str: 10
+    dex: 16
+    con: 16
+    int: 10
+    wis: 12
+    cha: 8
+    hp-base: 15
+  add:
+    save-proficiencies: [str, dex]
+  expect:
+    level: "2"
+    proficiency: "+2"
+    ac: "14"
+    walking: "30 ft"
+    rages: "2/2"
+    martial-arts: "1d4"
+    attack: "+5"
+    hit-dice-d8: "1/1"
+    hit-dice-d12: "1/1"
+    hp: "21/21"
+
+# --- Paladin and ranger --------------------------------------------------------------------------------------------------------------------------------
+
+- id: paladin-6-ranger-2
+  title: A paladin 6 and ranger 2 in chain mail with Defense, Aura of Protection on every save, half levels of both for the slots
+  source: "SRD 5.1 p. 58 (Spell Slots: half your levels, rounded down, in the paladin and ranger classes); p. 32 (Aura of Protection, Sacred Oath); p. 30 (Divine Sense, Lay on Hands); p. 31 (prepared spells); p. 24 (Defense)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Paladin]] 6, [[Ranger]] 2"
+    str: 16
+    dex: 10
+    con: 14
+    int: 8
+    wis: 14
+    cha: 16
+    hp-base: 52
+  add:
+    subclasses: ["[[Oath of Devotion]]"]
+    save-proficiencies: [wis, cha]
+    fighting-styles: [Defense]
+    inventory: ["[[Chain Mail]]"]
+    equipped: ["[[Chain Mail]]"]
+  expect:
+    level: "8"
+    proficiency: "+3"
+    ac: "17"
+    walking: "30 ft"
+    str-save: "+6"
+    dex-save: "+3"
+    con-save: "+5"
+    int-save: "+2"
+    wis-save: "+8"
+    cha-save: "+9"
+    lay-on-hands: "30/30"
+    divine-sense: "4/4"
+    # The oath's own Channel Divinity and the class's Sacred Oath are one feature with one use (p. 32).
+    channel-divinity: "1/1"
+    caster-level: "4"
+    slots-1: "4/4"
+    slots-2: "3/3"
+    spell-save-dc: "Paladin 14, Ranger 13"
+    spell-attack: "Paladin +6, Ranger +5"
+    max-prepared: "6"
+    hit-dice-d10: "8/8"
+    hp: "68/68"
+
+- id: ranger-4-wizard-3
+  title: The SRD's own example, ranger 4 and wizard 3, slots of a 5th-level caster and six wizard spells prepared with Intelligence 16
+  source: "SRD 5.1 p. 58 (Spells Known and Prepared; Spell Slots: the ranger 4/wizard 3 counts as 5th level, four 1st, three 2nd, two 3rd); p. 53 (Arcane Recovery)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Ranger]] 4, [[Wizard]] 3"
+    str: 10
+    dex: 14
+    con: 12
+    int: 16
+    wis: 14
+    cha: 10
+    hp-base: 40
+  add:
+    save-proficiencies: [str, dex]
+  expect:
+    level: "7"
+    proficiency: "+3"
+    caster-level: "5"
+    slots-1: "4/4"
+    slots-2: "3/3"
+    slots-3: "2/2"
+    spell-save-dc: "Ranger 13, Wizard 14"
+    spell-attack: "Ranger +5, Wizard +6"
+    max-prepared: "6"
+    arcane-recovery: "1/1"
+    hit-dice-d10: "4/4"
+    hit-dice-d6: "3/3"
+
+# --- Rogue ---------------------------------------------------------------------------------------------------------------------------------------------
+
+- id: rogue-3-thief
+  title: A level 3 thief with expertise in Stealth and Perception, the passives, and climbing at walking speed
+  source: "SRD 5.1 p. 39 (Rogue table, Expertise, Sneak Attack); p. 41 (Second-Story Work: climbing no longer costs extra movement); p. 78 (Passive Checks)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Rogue]] 3"
+    str: 10
+    dex: 16
+    con: 12
+    int: 12
+    wis: 12
+    cha: 10
+    hp-base: 18
+  add:
+    subclasses: ["[[Thief]]"]
+    save-proficiencies: [dex, int]
+    skill-proficiencies: [Stealth, Perception, Acrobatics, Sleight of Hand]
+    expertise: [Stealth, Perception]
+    inventory: ["[[Leather Armor]]"]
+    equipped: ["[[Leather Armor]]"]
+  expect:
+    proficiency: "+2"
+    stealth: "+7"
+    perception: "+5"
+    acrobatics: "+5"
+    sleight-of-hand: "+5"
+    investigation: "+1"
+    passive-perception: "15"
+    passive-investigation: "11"
+    passive-insight: "11"
+    dex-save: "+5"
+    int-save: "+3"
+    ac: "14"
+    walking: "30 ft"
+    climbing: "30 ft"
+    sneak-attack: "2d6"
+
+# --- Sorcerer and warlock ------------------------------------------------------------------------------------------------------------------------------
+
+- id: dragonborn-sorcerer-3-draconic
+  title: A dragonborn draconic sorcerer, 13 + Dex without armor and a hit point more each sorcerer level
+  source: "SRD 5.1 p. 45 (Draconic Resilience); p. 43 (Font of Magic, Sorcery Points); p. 42 (Sorcerer table); p. 5 (Dragonborn, Breath Weapon)"
+  write:
+    creature: "[[Dragonborn]]"
+    classes: "[[Sorcerer]] 3"
+    str: 10
+    dex: 14
+    con: 12
+    int: 10
+    wis: 10
+    cha: 16
+    hp-base: 14
+  add:
+    subclasses: ["[[Draconic Bloodline]]"]
+    save-proficiencies: [con, cha]
+  expect:
+    ac: "15"
+    hp: "20/20"
+    sorcery-points: "3/3"
+    caster-level: "3"
+    slots-1: "4/4"
+    slots-2: "2/2"
+    spell-save-dc: "13"
+    spell-attack: "+5"
+    con-save: "+3"
+    cha-save: "+5"
+    breath-weapon: "1/1"
+    cantrips-known: "4"
+    spells-known: "4"
+
+- id: sorcerer-3-warlock-2
+  title: Pact Magic slots kept apart from the Spellcasting slots, which count only the sorcerer's levels
+  source: "SRD 5.1 p. 58 (Pact Magic in multiclassing; Spell Slots: bard, cleric, druid, sorcerer, wizard, and half paladin and ranger); p. 47 (Pact Magic)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Sorcerer]] 3, [[Warlock]] 2"
+    str: 8
+    dex: 14
+    con: 12
+    int: 10
+    wis: 10
+    cha: 16
+    hp-base: 24
+  add:
+    save-proficiencies: [con, cha]
+  expect:
+    proficiency: "+3"
+    caster-level: "3"
+    slots-1: "4/4"
+    slots-2: "2/2"
+    spell-slots: "2/2"
+    slot-level: "1st"
+    sorcery-points: "3/3"
+    spell-save-dc: "Sorcerer 14, Warlock 14"
+    spell-attack: "Sorcerer +6, Warlock +6"
+    hit-dice-d6: "3/3"
+    hit-dice-d8: "2/2"
+
+- id: warlock-11-fiend
+  title: A level 11 fiend warlock, three 5th-level pact slots, the first Mystic Arcanum and Dark One's Own Luck
+  source: "SRD 5.1 p. 46 (Warlock table); p. 47 (Pact Magic); p. 48 (Mystic Arcanum); p. 50 (Dark One's Own Luck)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Warlock]] 11"
+    str: 8
+    dex: 14
+    con: 14
+    int: 10
+    wis: 12
+    cha: 18
+    hp-base: 58
+  add:
+    subclasses: ["[[The Fiend]]"]
+    save-proficiencies: [wis, cha]
+    inventory: ["[[Leather Armor]]"]
+    equipped: ["[[Leather Armor]]"]
+  expect:
+    proficiency: "+4"
+    spell-slots: "3/3"
+    slot-level: "5th"
+    mystic-arcanum-6: "1/1"
+    dark-ones-own-luck: "1/1"
+    spell-save-dc: "16"
+    spell-attack: "+8"
+    cantrips-known: "4"
+    spells-known: "11"
+    invocations-known: "5"
+    ac: "13"
+    wis-save: "+5"
+    cha-save: "+8"
+    hit-dice-d8: "11/11"
+
+# --- Wizard --------------------------------------------------------------------------------------------------------------------------------------------
+
+- id: high-elf-wizard-1
+  title: A level 1 high elf wizard, Perception from the race beside the skills the class gives
+  source: "SRD 5.1 pp. 3-4 (Elf: Keen Senses); pp. 52-53 (Wizard table, Spellcasting, Arcane Recovery); p. 78 (Passive Checks)"
+  write:
+    creature: "[[High Elf]]"
+    classes: "[[Wizard]] 1"
+    str: 8
+    dex: 16
+    con: 14
+    int: 16
+    wis: 14
+    cha: 10
+    hp-base: 6
+  add:
+    save-proficiencies: [int, wis]
+    skill-proficiencies: [Arcana, History]
+  expect:
+    proficiency: "+2"
+    perception: "+4"
+    passive-perception: "14"
+    arcana: "+5"
+    history: "+5"
+    passive-investigation: "13"
+    ac: "13"
+    walking: "30 ft"
+    hp: "8/8"
+    hit-dice-d6: "1/1"
+    arcane-recovery: "1/1"
+    slots-1: "2/2"
+    max-prepared: "4"
+    spell-save-dc: "13"
+    spell-attack: "+5"
+    cantrips-known: "3"
+    int-save: "+5"
+    wis-save: "+4"
+
+- id: wizard-20-evocation
+  title: A level 20 wizard, all nine slot levels and the two Signature Spells
+  source: "SRD 5.1 p. 52 (Wizard table, whose 20th row says Signature Spell); p. 54 (Signature Spells: two, each once at 3rd level, back with a short or long rest)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Wizard]] 20"
+    str: 8
+    dex: 14
+    con: 14
+    int: 20
+    wis: 12
+    cha: 10
+    hp-base: 82
+  add:
+    subclasses: ["[[School of Evocation]]"]
+    save-proficiencies: [int, wis]
+  expect:
+    proficiency: "+6"
+    caster-level: "20"
+    slots-1: "4/4"
+    slots-2: "3/3"
+    slots-3: "3/3"
+    slots-4: "3/3"
+    slots-5: "3/3"
+    slots-6: "2/2"
+    slots-7: "2/2"
+    slots-8: "1/1"
+    slots-9: "1/1"
+    max-prepared: "25"
+    spell-save-dc: "19"
+    spell-attack: "+11"
+    signature-spell-1: "1/1"
+    signature-spell-2: "1/1"
+    arcane-recovery: "1/1"
+    cantrips-known: "5"
+    int-save: "+11"
+
+- id: wizard-5-protection
+  title: A level 5 wizard with Mage Armor, attuned to a ring and a cloak of protection, which add up on AC and every save but not on the save DC
+  source: "SRD 5.1 p. 160 (Mage Armor: base AC 13 + Dex); p. 237 (Ring of Protection); p. 214 (Cloak of Protection); p. 206 (Attunement)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Wizard]] 5"
+    str: 10
+    dex: 14
+    con: 14
+    int: 16
+    wis: 12
+    cha: 10
+    hp-base: 22
+  add:
+    save-proficiencies: [int, wis]
+    inventory: ["[[Ring of Protection]]", "[[Cloak of Protection]]"]
+    attuned: ["[[Ring of Protection]]", "[[Cloak of Protection]]"]
+  effects:
+    - name: Mage Armor
+      set: {unarmored-base: 13}
+  expect:
+    ac: "17"
+    int-save: "+8"
+    wis-save: "+6"
+    dex-save: "+4"
+    str-save: "+2"
+    spell-save-dc: "14"
+    spell-attack: "+6"
+    max-prepared: "8"
+    slots-1: "4/4"
+    slots-2: "3/3"
+    slots-3: "2/2"
+
+# --- Attunement that sets a score ----------------------------------------------------------------------------------------------------------------------
+
+- id: gauntlets-weak-fighter-in-plate
+  title: Gauntlets of Ogre Power on a fighter with Strength 8 in plate, which then no longer slows him
+  source: "SRD 5.1 p. 223 (Gauntlets of Ogre Power: Strength 19); p. 63 (Plate Str 15); p. 85 (Jumping); p. 80 (Push, Drag, or Lift); p. 92 (Unarmed strike: 1 + Str)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 8
+    dex: 10
+    con: 14
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  add:
+    save-proficiencies: [str, con]
+    inventory: ["[[Plate Armor]]", "[[Gauntlets of Ogre Power]]"]
+    equipped: ["[[Plate Armor]]"]
+    attuned: ["[[Gauntlets of Ogre Power]]"]
+  expect:
+    str-mod: "+4"
+    str-save: "+6"
+    athletics: "+4"
+    long-jump: "19 ft"
+    high-jump: "7 ft"
+    push-drag: "570"
+    walking: "30 ft"
+    ac: "18"
+    attack: "+6"
+    damage-roll: "5 bludgeoning"
+
+- id: gauntlets-already-strong
+  title: Gauntlets of Ogre Power do nothing for Strength 20
+  source: "SRD 5.1 p. 223 (no effect if your Strength is already 19 or higher)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 20
+    dex: 10
+    con: 14
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  add:
+    inventory: ["[[Gauntlets of Ogre Power]]"]
+    attuned: ["[[Gauntlets of Ogre Power]]"]
+  expect:
+    str-mod: "+5"
+    long-jump: "20 ft"
+    push-drag: "600"
+
+- id: amulet-of-health
+  title: An Amulet of Health raises Constitution 8 to 19, saves and breath with it
+  source: "SRD 5.1 p. 207 (Amulet of Health: Constitution 19); p. 85 (Suffocating: 1 + Con modifier minutes)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 14
+    dex: 10
+    con: 8
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  add:
+    save-proficiencies: [str, con]
+    inventory: ["[[Amulet of Health]]"]
+    attuned: ["[[Amulet of Health]]"]
+  expect:
+    con-mod: "+4"
+    con-save: "+6"
+    hold-breath: "5"
+
+# --- Load ----------------------------------------------------------------------------------------------------------------------------------------------
+
+- id: load-rules-over-capacity
+  title: Under the rigor rules, 190 lb on Strength 12 (capacity 180) drop the speed to 5 feet
+  source: "SRD 5.1 pp. 79-80 (Carrying Capacity: Str x 15; Push, Drag, or Lift: up to Str x 30, speed drops to 5 feet past the capacity)"
+  rigor: rules
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 12
+    dex: 10
+    con: 12
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  add:
+    inventory: ["[[Iron Pot]] 19"]
+  expect:
+    walking: "5 ft"
+    push-drag: "360"
+
+- id: load-simulation-encumbered
+  title: Under the rigor simulation, 70 lb on Strength 12 (past Str x 5) take 10 feet
+  source: "SRD 5.1 p. 80 (Variant: Encumbrance, encumbered past 5 x Str)"
+  rigor: simulation
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 12
+    dex: 10
+    con: 12
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  add:
+    inventory: ["[[Iron Pot]] 7"]
+  expect:
+    walking: "20 ft"
+
+- id: load-simulation-heavily-encumbered
+  title: Under the rigor simulation, 130 lb on Strength 12 (past Str x 10) take 20 feet
+  source: "SRD 5.1 p. 80 (Variant: Encumbrance, heavily encumbered past 10 x Str)"
+  rigor: simulation
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 12
+    dex: 10
+    con: 12
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  add:
+    inventory: ["[[Iron Pot]] 13"]
+  expect:
+    walking: "10 ft"
+
+- id: load-simulation-plate-ignores-strength
+  title: Under the rigor simulation the Strength column of the armor table is ignored, so plate on Strength 14 does not slow (65 lb under Str x 5)
+  source: "SRD 5.1 p. 80 (Variant: Encumbrance: ignore the Strength column of the Armor table); p. 63 (Plate 65 lb, Str 15)"
+  rigor: simulation
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 14
+    dex: 10
+    con: 12
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  add:
+    inventory: ["[[Plate Armor]]"]
+    equipped: ["[[Plate Armor]]"]
+  expect:
+    ac: "18"
+    walking: "30 ft"
+
+# --- Exhaustion, conditions and speed effects ----------------------------------------------------------------------------------------------------------
+
+- id: exhaustion-2-small-halfling
+  title: A lightfoot halfling rogue at exhaustion 2, half of 25 feet kept exact; a Small creature carries and pushes as a Medium one
+  source: "SRD 5.1 p. 358 (Exhaustion 2: speed halved); pp. 4-5 (Halfling: Small, speed 25); p. 80 (Size and Strength); p. 85 (Jumping; Suffocating, minimum 30 seconds)"
+  write:
+    creature: "[[Lightfoot Halfling]]"
+    classes: "[[Rogue]] 1"
+    str: 8
+    dex: 16
+    con: 8
+    int: 10
+    wis: 12
+    cha: 12
+    hp-base: 8
+  change:
+    exhaustion: 2
+  expect:
+    walking: "12.5 ft"
+    push-drag: "240"
+    long-jump: "8 ft"
+    high-jump: "2 ft"
+    # Minutes: 1 + Con modifier is 0, so the minimum of 30 seconds.
+    hold-breath: "0.5"
+    hp: "7/7"
+    sneak-attack: "1d6"
+
+- id: exhaustion-4-hit-points
+  title: Exhaustion 4 halves the hit point maximum, and the current hit points cannot stay above it
+  source: "SRD 5.1 p. 358 (Exhaustion 4: hit point maximum halved; levels are cumulative, so speed halved too); p. 96 (current hit points from the maximum down to 0)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 14
+    dex: 12
+    con: 14
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  change:
+    exhaustion: 4
+  expect:
+    hp: "6/6"
+    walking: "15 ft"
+
+- id: exhaustion-5-haste
+  title: Exhaustion 5 stops a hasted character
+  source: "SRD 5.1 p. 358 (Exhaustion 5: speed reduced to 0); p. 153 (Haste)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 14
+    dex: 12
+    con: 14
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  effects:
+    - name: Haste
+      set: {speed-factor: 2}
+  change:
+    exhaustion: 5
+  expect:
+    walking: "0 ft"
+
+- id: grappled-longstrider
+  title: Grappled stops a character, and no bonus to the speed counts
+  source: "SRD 5.1 p. 358 (Grappled: speed becomes 0, can't benefit from any bonus to its speed); p. 160 (Longstrider)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Fighter]] 1"
+    str: 14
+    dex: 12
+    con: 14
+    int: 10
+    wis: 10
+    cha: 10
+    hp-base: 10
+  effects:
+    - name: Longstrider
+      set: {bonus-speed: 10}
+    - name: Grappled
+  expect:
+    walking: "0 ft"
+
+- id: haste-slow-barbarian
+  title: Haste and Slow together on a barbarian with Fast Movement, doubled and halved, +2 and -2 AC
+  source: "SRD 5.1 p. 153 (Haste: speed doubled, +2 AC); pp. 180-181 (Slow: speed halved, -2 AC); p. 104 (Combining Magical Effects: different spells add together); p. 9 (Fast Movement)"
+  write:
+    creature: "[[Human]]"
+    classes: "[[Barbarian]] 5"
+    str: 16
+    dex: 14
+    con: 16
+    int: 8
+    wis: 12
+    cha: 10
+    hp-base: 40
+  effects:
+    - name: Haste
+      set: {speed-factor: 2, bonus-ac: 2}
+    - name: Slow
+      set: {speed-factor: 0.5, bonus-ac: -2}
+  expect:
+    walking: "40 ft"
+    ac: "15"
+
+# out: What the suite leaves out, and why.
+# out: Barbarian 20, Rages "Unlimited" (p. 9): the column is a word, not a maximum; and Primal Champion's +4 Str and Con, up to 24, is in the scores the master writes.
+# out: Druid 20, Archdruid (p. 21): unlimited Wild Shape; the counter's formula gives 0, and "unlimited" is no number a counter holds. Text for the AI.
+# out: Remarkable Athlete adds the Strength modifier to a running long jump (p. 25), Second-Story Work the Dexterity modifier to a running jump (p. 41): long-jump reads only Str, so the champion and the thief would fail; per D-230 this is a line of text, not a formula, until a playtest asks.
+# out: A monk with a shield or armor keeps the Dex and the Martial Arts die on the unarmed strike on the sheet, though Martial Arts needs neither (p. 26): the system leaves it to the AI (sheet-notes, Attacks), so no attack is checked in monk-6-shield.
+# out: The order of sums and factors (Haste with Longstrider or Fast Movement): the SRD 5.1 gives none (p. 153 doubles "your speed", p. 160 adds 10), so only factors that make x1, or factors on a speed without bonuses, are checked.
+# out: A paladin and a ranger both at odd levels (3/3): "half your levels (rounded down) in the paladin and ranger classes" (p. 58) reads per class (1 + 1) or on the sum (3); the system takes the sum. paladin-6-ranger-2 is a case where both readings give 4.
+# out: Exhaustion 4 on an odd maximum: the SRD 5.1 has no general rule to round down (it is in the Player's Handbook introduction, not in the SRD), so exhaustion-4 uses an even maximum.
+# out: The current hit points when an Amulet of Health raises the maximum: the SRD says nothing (Aid says it for itself, p. 114); amulet-of-health checks no hp.
+# out: The sheet's rolls with advantage or disadvantage (sheet-odds): Stealth in chain mail (p. 63), heavily encumbered (p. 80), exhaustion 1 and 3, Poisoned, Restrained (p. 358). The format has no place for a roll's notation; with a key such as rolls: {stealth: "2d20kl1+0"} they would come in, read from view --json.
+# out: Slow's -2 to Dexterity saving throws (p. 181) and Haste's advantage on them: no field adds to one save alone; text for the AI.
+# out: Bracers of Defense (+2 AC with no armor and no shield, p. 212): the page has no bonus, and a fixed bonus-ac would be wrong with a shield; text for the AI.
+# out: Under the rigor simulation, whether the thresholds Str x 5 and Str x 10 double with size (p. 80 names only capacity and push): no Small or Large case under simulation.
+# out: Under the rigor rules, past Str x 30 a character cannot move the weight at all (p. 80); the system caps at 5 feet. No case past twice the capacity.
+# out: Columns of a class table in a multiclass, as cantrips-known for a ranger 4/wizard 3: how two classes' columns show together is not one the rules decide; checked only on single classes.
+# out: Rage itself changes no number on the sheet beyond rage-damage (resistances and advantage on Str checks are text, p. 8).

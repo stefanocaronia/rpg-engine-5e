@@ -14,7 +14,7 @@ round: 6 seconds
 # What the game's mile and foot are worth in metric (D-262), as the Italian books count them: the engine keeps every measure in metric, and its outputs in
 # imperial give back the SRD's numbers, such as 3 miles an hour for the normal pace.
 imperial: {mile: 1.5 km, foot: 0.3 m, pound: 0.5 kg}
-# What a character carries (p. 176, Carrying Capacity and Size and Strength; p. 143, coins): the weight of each item, a limit of Strength times 15 by
+# What a character carries (p. 80, Carrying Capacity and Size and Strength; Equipment, Coinage): the weight of each item, a limit of Strength times 15 by
 # size, fifty coins to a pound (D-432, D-435); formulas read them as load and load-limit. What an extradimensional item holds weighs nothing, as in a Bag
 # of Holding (p. 210).
 load: {field: weight, limit: ["str * 15 * table(carry-by-size, size)", str * 15], coins: 50, weightless: extradimensional}
@@ -491,7 +491,7 @@ fields:
   bonus-proficiency: bonus
 # The proficiency bonus by level (p. 56).
 tables:
-  # What a size does to how much one carries (p. 176, Size and Strength).
+  # What a size does to how much one carries (p. 80, Size and Strength).
   carry-by-size: {Tiny: 0.5, Small: 1, Medium: 1, Large: 2, Huge: 4, Gargantuan: 8}
   proficiency-by-level: {1: 2, 5: 3, 9: 4, 13: 5, 17: 6}
   # The experience points each level needs (Character Advancement, p. 56).
@@ -628,7 +628,7 @@ computed:
   passive-perception: 10 + perception
   passive-insight: 10 + insight
   passive-investigation: 10 + investigation
-  # Jumping, pushing and holding one's breath (pp. 75, 80, 183; D-449), for a character with classes: a running long jump of Strength feet, a running high
+  # Jumping, pushing and holding one's breath (pp. 80, 85; D-449), for a character with classes: a running long jump of Strength feet, a running high
   # jump of 3 + its modifier, standing half of each; pushing, dragging or lifting 30 times Strength, by size; holding one's breath 1 + Constitution modifier
   # minutes, at least 30 seconds.
   long-jump: str / min(1, count(classes))
