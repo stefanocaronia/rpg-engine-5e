@@ -93,7 +93,7 @@ describe("the 5e system", () => {
         expect(fields("Dwarven Plate")).toEqual({ category: "armor (plate)", rarity: "very rare" });
         expect(page("Dwarven Plate")?.body).toContain("While wearing this armor, you gain a +2 bonus to AC.");
         expect(page("Ammunition, +1, +2, or +3")?.fields.rarity).toBe("uncommon (+1), rare (+2), or very rare (+3)");
-        expect(fields("Stone of Good Luck")).toEqual({ aliases: ["Stone of Good Luck (Luckstone)"], category: "wondrous item", rarity: "uncommon", attunement: true });
+        expect(fields("Stone of Good Luck")).toEqual({ aliases: ["Stone of Good Luck (Luckstone)"], category: "wondrous item", rarity: "uncommon", attunement: true, "bonus-saves": 1, "bonus-skills": 1, "bonus-initiative": 1 });
         expect(page("Orb of Dragonkind")?.fields).toMatchObject({ rarity: "artifact", attunement: true });
         // p. 234, with the price, the weight and the sentence on drinking it of the adventuring gear entry (pp. 68–69), after the magic item's text; the table of
         // p. 208, which runs on in the next column; the stat block of p. 218, a quotation that ends before the next card.

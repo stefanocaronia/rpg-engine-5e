@@ -4,6 +4,7 @@ rarity: legendary
 attunement: "by a sorcerer, warlock, or wizard"
 charges: 50/50
 image: "[[wizard-staff.svg]]"
+bonus-spell-attack: 2
 ---
 
 This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls.
