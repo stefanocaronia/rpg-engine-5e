@@ -70,8 +70,8 @@
     hp: "55/55"
     long-jump: "16 ft"
     high-jump: "6 ft"
-    push-drag: "480"
-    hold-breath: "4"
+    push-drag: "480 lb"
+    hold-breath: "4m"
 
 - id: barbarian-5-half-plate
   title: The same barbarian in half plate keeps Fast Movement, which only heavy armor stops
@@ -804,7 +804,7 @@
     athletics: "+4"
     long-jump: "19 ft"
     high-jump: "7 ft"
-    push-drag: "570"
+    push-drag: "570 lb"
     walking: "30 ft"
     ac: "18"
     attack: "+6"
@@ -829,7 +829,7 @@
   expect:
     str-mod: "+5"
     long-jump: "20 ft"
-    push-drag: "600"
+    push-drag: "600 lb"
 
 - id: amulet-of-health
   title: An Amulet of Health raises Constitution 8 to 19, saves and breath with it
@@ -851,7 +851,7 @@
   expect:
     con-mod: "+4"
     con-save: "+6"
-    hold-breath: "5"
+    hold-breath: "5m"
 
 # --- Load ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -873,7 +873,7 @@
     inventory: ["[[Iron Pot]] 19"]
   expect:
     walking: "5 ft"
-    push-drag: "360"
+    push-drag: "360 lb"
 
 - id: load-simulation-encumbered
   title: Under the rigor simulation, 70 lb on Strength 12 (past Str x 5) take 10 feet
@@ -953,11 +953,11 @@
     exhaustion: 2
   expect:
     walking: "12.5 ft"
-    push-drag: "240"
+    push-drag: "240 lb"
     long-jump: "8 ft"
     high-jump: "2 ft"
     # Minutes: 1 + Con modifier is 0, so the minimum of 30 seconds.
-    hold-breath: "0.5"
+    hold-breath: "30s"
     hp: "7/7"
     sneak-attack: "1d6"
 

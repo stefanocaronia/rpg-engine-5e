@@ -90,8 +90,10 @@ fields:
   burrowing: Scavo
   long-jump: Salto in lungo
   high-jump: Salto in alto
-  push-drag: Spingere e trascinare (lb)
-  hold-breath: Trattenere il fiato (minuti)
+  push-drag: Spingere, trascinare o sollevare
+  hold-breath: Trattenere il fiato
+  lifestyle: Stile di vita
+  invocations: Suppliche occulte # ours
   equipped: Equipaggiato  # ours
   hp-base: PF dai dadi  # ours: the hit points the hit dice gave, without Constitution
   hp: PF
@@ -125,6 +127,7 @@ fields:
   # Features and attacks
   features: Privilegi
   fighting-styles: Stili di combattimento
+  extra-attacks: Attacchi extra # ours
   attack: Attacco
   damage-roll: Danni
   # Spells (pp. 12, 63, 382)
@@ -221,6 +224,19 @@ names:
   cha-mod: Carisma
   cha-save: Tiro salvezza su Carisma
 words:
+  # Lifestyles (Lifestyle Expenses)
+  Wretched: Miserabile
+  Squalid: Squallido
+  Poor: Povero
+  Modest: Modesto
+  Comfortable: Agiato
+  Wealthy: Ricco
+  Aristocratic: Aristocratico
+  # The uses of a turn (D-453)
+  action: Azione
+  bonus action: Azione bonus
+  reaction: Reazione
+  sneak attack: Attacco furtivo
   # Races (pp. 2–7)
   Dragonborn: Dragonide
   Dwarf: Nano

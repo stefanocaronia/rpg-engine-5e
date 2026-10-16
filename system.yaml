@@ -64,11 +64,11 @@ sheet:
   Abilities: [str (str-mod), dex (dex-mod), con (con-mod), int (int-mod), wis (wis-mod), cha (cha-mod), proficiency]
   Saving Throws: [str-save, dex-save, con-save, int-save, wis-save, cha-save, save-notes?]
   Skills: [acrobatics, animal-handling, arcana, athletics, deception, history, insight, intimidation, investigation, medicine, nature, perception, performance, persuasion, religion, sleight-of-hand, stealth, survival]
-  Combat: [ac, initiative, walking (speed), flying?, swimming?, climbing?, burrowing?, equipped?, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, death-successes?, death-failures?, exhaustion?, days-without-food?, long-jump?, high-jump?, push-drag?, hold-breath?]
+  Combat: [ac, initiative, walking (speed), flying?, swimming?, climbing?, burrowing?, equipped?, extra-attacks?, hp-base, hp, temp-hp?, hit-dice-d6?, hit-dice-d8?, hit-dice-d10?, hit-dice-d12?, passive-perception, passive-insight, passive-investigation, darkvision?, damage-resistances?, damage-immunities?, death-successes?, death-failures?, exhaustion?, days-without-food?, long-jump?, high-jump?, push-drag?, hold-breath?]
   Proficiencies: [save-proficiencies, skill-proficiencies, expertise?, armor-proficiencies?, weapon-proficiencies, tool-proficiencies?, languages]
-  Features: [features, fighting-styles?]
+  Features: [features, fighting-styles?, invocations?]
   Attacks: [attack, damage-roll]
-  Equipment: [money?, attuned?, inventory?]
+  Equipment: [money?, lifestyle?, attuned?, inventory?]
   Spells: [caster-level?, spell-save-dc?, spell-attack?, slots-1?, slots-2?, slots-3?, slots-4?, slots-5?, slots-6?, slots-7?, slots-8?, slots-9?, spell-slots?, mystic-arcanum-6?, mystic-arcanum-7?, mystic-arcanum-8?, mystic-arcanum-9?, signature-spell-1?, signature-spell-2?, max-prepared?, spells?, prepared?]
 # The dice each number of the sheet is rolled with, for the dashboard's free roll (D-280): an ability check, a saving throw and an attack roll each roll a d20
 # and add the number (pp. 77, 83, 94).
@@ -100,10 +100,10 @@ sheet-notes:
   Appearance: "a player character's age, height, weight, eyes, skin and hair are the player's, in their words, the age in years: propose them from the race's Age and Size traits when they leave it to you, and keep the look they describe in the page's text too."
   Personality: "a player character's personality traits, ideal, bond and flaw are the player's, in their words, with links to what they name: offer their background's tables, rolled or chosen, or propose some; never write one they did not choose. A companion's are yours to write in the companion's voice, from what the story has shown; ask the player only for a companion they made."
   Proficiencies: "what the race gives (languages, skills, weapons, tools) comes with it: add what the class and background give with add, and never write a whole list over it. Armor and weapons by the names the class page uses, in English, such as weapon-proficiencies: [simple weapons, martial weapons]: the attacks read them."
-  Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. Slots, save DC and attack are worked out: never write them."
+  Spells: "spells lists the spells the character knows, cantrips included, or keeps in a spellbook; prepared, those prepared today, for a cleric, druid, paladin or wizard: both as links, by the system's names, such as [[Cure Wounds]], [[Shield (spell)]]; a spell the system lacks gets its page first. A domain's or an oath's spells are always prepared and never written in prepared, which counts only those chosen. Slots, save DC and attack are worked out: never write them."
   Combat: "hp-base is the hit points the class's hit dice gave at each level, without Constitution: the system adds con-mod, and hp-per-level when the race or class gives it, for every level. equipped lists the armor and shield worn and the weapons ready, among what the character carries: the system's kind, such as [[Chain Mail]], or an item of the campaign derived from it, as a magic one: the armor class and the attacks follow it. An effect on the armor class gives what it adds, bonus-ac, as Shield of Faith's 2, or the base without armor, unarmored-base, as Mage Armor's 13, to which the system adds Dex. A mithral armor writes what it lacks over its kind: item=[[Plate Armor]], magic=[[Mithral Armor]], strength-required=0, stealth-disadvantage=false."
   Attacks: "Dueling's +2 is on every one-handed melee weapon, as on a sheet: leave it out of a roll with another weapon in hand, or with both hands on a versatile weapon, which rolls its larger die. A monk weapon uses Dex, and rolls the Martial Arts die instead of its own when that is higher, only while the monk wears no armor and holds no shield. A campaign weapon whose dice differ from its kind's copies the kind's damage-roll with its own dice in place, such as 1d10 + str-mod + bonus + 2 * has(fighting-styles, Dueling) slashing. A companion's natural attacks, such as a wolf's bite, are in its stat block, beside the unarmed strike every sheet shows. A magic weapon or armor of the campaign derives from the system's kind and names its magic item: item=[[Longsword]], magic=[[Weapon, +1, +2, or +3]], bonus=1; ammunition's bonus is added to the roll by hand."
-  Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery]; its bonuses follow."
+  Features: "a choice a feature asks for goes in the list of its kind, by the name the class page gives it, in English, such as fighting-styles: [Archery] or invocations: [Thirsting Blade]; its bonuses follow. Thirsting Blade's second attack is only with the pact weapon."
 # Where the dashboard puts the groups (D-295): in the rail, as on a paper sheet, the abilities, the saving throws and the skills; then the rest by how often
 # play needs them; in a fight, at hand, the armor class, initiative, speed and hit points, the attacks and the spells (D-315).
 sheet-cards:
@@ -154,6 +154,7 @@ values:
 # Primordial's dialects the creatures speak), the tools (pp. 70–71; vehicles, land or water in parentheses) and the damage types (p. 97). A campaign adds
 # its own with config values; a creature's stat block keeps the SRD's words, as "slashing from nonmagical attacks".
 sheet-values:
+  lifestyle: [Wretched, Squalid, Poor, Modest, Comfortable, Wealthy, Aristocratic]
   languages: [Common, Dwarvish, Elvish, Giant, Gnomish, Goblin, Halfling, Orc, Abyssal, Celestial, Draconic, Deep Speech, Infernal, Primordial, Aquan, Auran, Ignan, Terran, Sylvan, Undercommon, Druidic, Thieves' Cant]
   tool-proficiencies: [alchemist's supplies, brewer's supplies, calligrapher's supplies, carpenter's tools, cartographer's tools, cobbler's tools, cook's utensils, glassblower's tools, jeweler's tools, leatherworker's tools, mason's tools, painter's supplies, potter's tools, smith's tools, tinker's tools, weaver's tools, woodcarver's tools, disguise kit, forgery kit, dice set, playing card set, herbalism kit, bagpipes, drum, dulcimer, flute, lute, lyre, horn, pan flute, shawm, viol, navigator's tools, poisoner's kit, thieves' tools, vehicles]
   damage-resistances: [acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder]
@@ -201,6 +202,10 @@ recipes:
     # points (p. 87).
     lower: { exhaustion: "1 - min(1, best(days-without-food, 0))" }
     needs: hp
+    # At most one long rest in 24 hours (p. 87), from the last one, of 8 hours, taken with hit points; the engine does not know whether the master advanced
+    # its hours before or after, so two may be 16 hours apart between the calls.
+    once-per: 24h
+    lasts: 8h
     ends: [long rest, short rest]
     rules: [Long Rest]
   short rest:
@@ -231,8 +236,16 @@ condition-icons:
   Stunned: "M12 12.75a1.5 1.5 0 0 1 3 0a3 3 0 0 1-6 0a4.5 4.5 0 0 1 9 0a6 6 0 0 1-12 0a7.5 7.5 0 0 1 7.5-7.5"
   Unconscious: "M4.5 7.5h5l-5 6h5 M13 12h6.5l-6.5 8h6.5"
 # What a character uses up each day (Food and Water, pp. 86–87; D-435): under the rigor rules, a ration a day outside a settlement, the days without food it can go,
-# 3 + Constitution modifier (at least 1), and then a level of exhaustion each day; water as a word, for the story keeps where to drink.
-upkeep: {daily: Rations, short: days-without-food, grace: 3 + con-mod, worsens: exhaustion, water: "a gallon each, two if the weather is hot", rules: Food and Water}
+# 3 + Constitution modifier (at least 1), and then a level of exhaustion each day; water as a word, for the story keeps where to drink. In a settlement,
+# a day of the lifestyle chosen, paid from money (Lifestyle Expenses, pp. 72–73; D-449): an aristocratic one costs at least 10 gp, a wretched one nothing.
+upkeep:
+  daily: Rations
+  short: days-without-food
+  grace: 3 + con-mod
+  worsens: exhaustion
+  water: "a gallon each, two if the weather is hot"
+  lifestyle: {field: lifestyle, costs: {Wretched: "—", Squalid: 1 sp, Poor: 2 sp, Modest: 1 gp, Comfortable: 2 gp, Wealthy: 4 gp, Aristocratic: 10 gp}, rules: Lifestyle Expenses}
+  rules: Food and Water
 # What burns (Adventuring Gear, pp. 67–68): an effect named after it spends one, or a flask of oil for a lamp or a lantern, and lasts as long as it burns.
 burning:
   Torch: {lasts: 1h}
@@ -247,6 +260,27 @@ bonus-lists: [attuned, feats]
 # Attunement (p. 206): at most three magic items at once, each one whose attunement asks for it; who may attune, as by a paladin, the master checks (D-435).
 bonds:
   attuned: {most: 3, needs: attunement, rules: Attunement}
+# What one does in a turn (Combat, pp. 90–91, 93; D-453): an action, a bonus action and a reaction, back at the start of one's own turn, the reaction usable in
+# any turn; the attacks of the Attack action within it; Sneak Attack once a turn, in any (p. 39).
+turn-uses:
+  action: {}
+  bonus action: {}
+  reaction: {any-turn: true}
+  attack: {within: action, most: "(1 + best(extra-attacks, 0)) / min(1, count(classes))"}
+  sneak attack: {needs: "has(features, Sneak Attack)", any-turn: true, resets: each turn}
+# The most a sheet holds (D-449): an ability score 20 (p. 76), Primal Champion's Strength and Constitution 24 (p. 9), more by what raises the most, as
+# a manual or a tome, given with an effect without end; no more spells prepared than the class allows.
+at-most:
+  str: 20 + 4 * has(features, Primal Champion) + bonus-str-max
+  dex: 20 + bonus-dex-max
+  con: 20 + 4 * has(features, Primal Champion) + bonus-con-max
+  int: 20 + bonus-int-max
+  wis: 20 + bonus-wis-max
+  cha: 20 + bonus-cha-max
+  prepared: max-prepared
+# Damage of a type (p. 97, D-449): immunity takes none, resistance halves it, rounded down as the game is played (the SRD 5.1 does not
+# write it), then vulnerability doubles it; one instance of each counts.
+damage: {counter: hp, halves: damage-resistances, ignores: damage-immunities, doubles: damage-vulnerabilities, rules: Damage Resistance and Vulnerability}
 # What breaks a spell someone concentrates on (p. 102, D-266, EFF-14): damage, being incapacitated (the last four incapacitate, pp. 358–359), dying.
 keeping: {counter: hp, conditions: [Incapacitated, Paralyzed, Petrified, Stunned, Unconscious], rules: Concentration}
 # What a fight follows on the dashboard's Combat (D-314): hit points, a foe's told in words; who cannot act (p. 358), never a turn skipped.
@@ -261,6 +295,8 @@ fields:
   # The look of a character, as the second page of the character sheet has it: the age in years, the rest in the player's words.
   age: number
   height: text
+  # The lifestyle a character keeps in a settlement (p. 72).
+  lifestyle: text
   eyes: text
   skin: text
   hair: text
@@ -279,6 +315,8 @@ fields:
   unarmored-base: number
   bonus-ac: bonus
   fighting-styles: list
+  # A warlock's Eldritch Invocations, by their names (p. 48).
+  invocations: list
   armor: text
   hp: counter
   hp-dice: text
@@ -345,10 +383,11 @@ fields:
   # The speeds now in each mode, worked out from the written ones (D-445, SPD-1), and what changes them: effects add to bonus-speed and multiply
   # speed-factor; a heavy armor's page gives speed-slowed; a race that heavy armor does not slow gives armor-unhindered.
   walking: length
+  extra-attacks: number
   long-jump: length
   high-jump: length
-  push-drag: number
-  hold-breath: number
+  push-drag: weight
+  hold-breath: duration
   flying: length
   swimming: length
   climbing: length
@@ -493,6 +532,13 @@ fields:
   bonus-initiative: bonus
   # What an Ioun Stone of Mastery adds to the proficiency bonus (p. 227).
   bonus-proficiency: bonus
+  # What raises an ability score's most, as a Manual of Bodily Health's 2 to Constitution (pp. 229–230; tomes pp. 247–248; D-449).
+  bonus-str-max: bonus
+  bonus-dex-max: bonus
+  bonus-con-max: bonus
+  bonus-int-max: bonus
+  bonus-wis-max: bonus
+  bonus-cha-max: bonus
 # The proficiency bonus by level (p. 56).
 tables:
   # What a size does to how much one carries (p. 80, Size and Strength).
@@ -636,6 +682,10 @@ computed:
   # Jumping, pushing and holding one's breath (pp. 80, 85, 86; D-449), for a character with classes: a running long jump of Strength feet, a running high
   # jump of 3 + its modifier, standing half of each; pushing, dragging or lifting 30 times Strength, by size; holding one's breath 1 + Constitution modifier
   # minutes, at least 30 seconds.
+  # The attacks the Attack action gives past the first (D-453): one with Extra Attack (p. 25 and the other classes at 5th) or Thirsting Blade (p. 50),
+  # not added across classes (p. 57); two for a fighter of the 11th, three of the 20th; for a character with classes, as a creature's Multiattack is its
+  # action. None at 0, so that the sheet shows it only when there are some.
+  extra-attacks: (min(1, has(features, Extra Attack) + has(invocations, Thirsting Blade)) + min(1, floor(item(classes, Fighter) / 11)) + min(1, floor(item(classes, Fighter) / 20))) / min(1, min(1, has(features, Extra Attack) + has(invocations, Thirsting Blade)) + min(1, floor(item(classes, Fighter) / 11)) + min(1, floor(item(classes, Fighter) / 20))) / min(1, count(classes))
   # Remarkable Athlete adds the Strength modifier to a running long jump (p. 25).
   long-jump: (str + str-mod * has(features, Remarkable Athlete)) / min(1, count(classes))
   high-jump: max(0, 3 + str-mod) / min(1, count(classes))
