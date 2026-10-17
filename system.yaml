@@ -297,7 +297,7 @@ dying:
   condition: Unconscious
   fails: death-failures 3
   rules: Instant Death
-  save: {dice: 1d20, at-least: 10, succeeds: death-successes 3, highest: hp 1, lowest: 2, rules: Death Saving Throws}
+  save: {dice: 1d20, at-least: 10, succeeds: death-successes 3, highest: hp 1, lowest: 2, stable: Stable, rules: Death Saving Throws}
 # How the engine reads each field: only counters are counted; numbers, text and lists never are, nor are they money.
 fields:
   size: text
