@@ -192,6 +192,15 @@ fields:
   attuned: Stillt
   days-without-food: Dagar án matar
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: ósærður
+  hurt: særður
+  bloodied: blóðugur
+  down: fallinn
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: Stöðugt ástand
+  Successes: Árangur
+  Failures: Mistök
   Wretched: Aumur
   Squalid: Sóðalegur
   Poor: Fátækur

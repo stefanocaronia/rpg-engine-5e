@@ -192,6 +192,15 @@ fields:
   attuned: innstilt
   days-without-food: dager uten mat
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: uskadd
+  hurt: skadd
+  bloodied: blødende
+  down: nede
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: Stabil
+  Successes: Suksesser
+  Failures: Fiaskoer
   Wretched: Elendig
   Squalid: Smussig
   Poor: Fattig

@@ -192,6 +192,15 @@ fields:
   attuned: afgestemd
   days-without-food: dagen zonder voedsel
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: ongedeerd
+  hurt: gewond
+  bloodied: bloedend
+  down: neergegaan
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: Stabiel
+  Successes: Successen
+  Failures: Mislukkingen
   Wretched: Ellendig
   Squalid: Haveloos
   Poor: Arm

@@ -192,6 +192,15 @@ fields:
   attuned: Eingestimmt
   days-without-food: Tage ohne Nahrung
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: unverletzt
+  hurt: verletzt
+  bloodied: blutend
+  down: am Boden
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: Stabil
+  Successes: Erfolge
+  Failures: Fehlschläge
   Wretched: Elend
   Squalid: Ärmlich
   Poor: Arm

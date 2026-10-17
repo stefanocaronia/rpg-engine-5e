@@ -192,6 +192,15 @@ fields:
   attuned: 조율
   days-without-food: 식량 없이 보낸 일수
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: 멀쩡함
+  hurt: 부상
+  bloodied: 중상
+  down: 쓰러짐
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: 안정
+  Successes: 성공
+  Failures: 실패
   Wretched: 비참
   Squalid: 불결
   Poor: 빈곤

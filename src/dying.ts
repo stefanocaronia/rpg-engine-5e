@@ -58,7 +58,8 @@ function afterHitPoints(change: CounterChange, game: SystemGame): string[]
         return back(page, game);
     }
 
-    if (change.after > 0) {
+    // Nor do the dead take more failures, or die again (review of 17 October).
+    if (change.after > 0 || failed >= failures.most) {
         return [];
     }
 

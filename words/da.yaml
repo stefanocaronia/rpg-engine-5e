@@ -192,6 +192,15 @@ fields:
   attuned: tunet
   days-without-food: dage uden mad
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: uskadt
+  hurt: såret
+  bloodied: blødende
+  down: slået ud
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: Stabil
+  Successes: Succeser
+  Failures: Fejl
   Wretched: Elendig
   Squalid: Usel
   Poor: Fattig

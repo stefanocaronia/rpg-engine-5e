@@ -192,6 +192,15 @@ fields:
   attuned: 同調
   days-without-food: 食料なしの日数
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: 無傷
+  hurt: 負傷
+  bloodied: 重傷
+  down: 戦闘不能
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: 安定
+  Successes: 成功
+  Failures: 失敗
   Wretched: 悲惨
   Squalid: 不潔
   Poor: 貧乏

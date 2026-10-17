@@ -178,6 +178,15 @@ fields:
   attuned: налаштовано
   days-without-food: днів без їжі
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: неушкоджений
+  hurt: поранений
+  bloodied: закривавлений
+  down: повалений
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: Стабільно
+  Successes: Успіхи
+  Failures: Невдачі
   Dragonborn: Драконороджений
   Dwarf: Дварф
   Hill Dwarf: Пагорбовий дварф

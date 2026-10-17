@@ -192,6 +192,15 @@ fields:
   attuned: अभिमंत्रित
   days-without-food: भोजन के बिना दिन
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: सही-सलामत
+  hurt: घायल
+  bloodied: लहूलुहान
+  down: गिरा हुआ
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: स्थिर
+  Successes: सफलताएँ
+  Failures: विफलताएँ
   Wretched: अभागा
   Squalid: दीन-हीन
   Poor: गरीब

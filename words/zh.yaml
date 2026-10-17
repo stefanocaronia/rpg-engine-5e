@@ -192,6 +192,15 @@ fields:
   attuned: 已调谐
   days-without-food: 无食天数
 words:
+  # A foe's hit points as the player hears them (D-238), ours
+  unhurt: 未受伤
+  hurt: 受伤
+  bloodied: 重伤流血
+  down: 倒下
+  # The dying point (p. 98), as the dashboard says it (D-461)
+  Stable: 稳定
+  Successes: 成功
+  Failures: 失败
   Wretched: 赤贫
   Squalid: 肮脏
   Poor: 贫穷

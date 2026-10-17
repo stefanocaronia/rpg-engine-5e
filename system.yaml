@@ -289,12 +289,15 @@ immune: condition-immunities
 damage: {counter: hp, halves: damage-resistances, ignores: damage-immunities, doubles: damage-vulnerabilities, rules: Damage Resistance and Vulnerability}
 # What breaks a spell someone concentrates on (p. 102, D-266, EFF-14): damage, being incapacitated (the last four incapacitate, pp. 358–359), dying.
 keeping: {counter: hp, conditions: [Incapacitated, Paralyzed, Petrified, Stunned, Unconscious], rules: Concentration}
-# What a fight follows on the dashboard's Combat (D-314): hit points, a foe's told in words; who cannot act (p. 358), never a turn skipped.
-combat: {track: hp, in-words: true, inactive: [Incapacitated, Paralyzed, Petrified, Stunned, Unconscious]}
+# What a fight follows on the dashboard's Combat (D-314): hit points, a foe's told in words, full, more than half, half or less, 0 (D-238); who cannot act
+# (p. 358), never a turn skipped.
+combat: {track: hp, in-words: [unhurt, hurt, bloodied, down], inactive: [Incapacitated, Paralyzed, Petrified, Stunned, Unconscious]}
 # At 0 hit points the death saves, big on the dashboard by their sides (p. 98, D-310, D-314, D-461); what the dying point does is the 5e's code (src/dying.ts, D-448).
 dying:
   at: hp 0
   show: {successes: death-successes, failures: death-failures}
+  stable: Stable
+  marks: {successes: Successes, failures: Failures}
 # How the engine reads each field: only counters are counted; numbers, text and lists never are, nor are they money.
 fields:
   size: text
