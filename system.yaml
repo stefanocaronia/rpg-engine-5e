@@ -264,7 +264,7 @@ bonds:
 # any turn; the attacks of the Attack action within it; Sneak Attack once a turn, in any (p. 39); a legendary creature's actions.
 turn-uses:
   action: {}
-  bonus action: {note: "A spell cast with it leaves only a cantrip of one action for this turn (p. 101)."}
+  bonus action: {note: "If it cast a spell, only a cantrip of one action follows this turn (p. 101).", note-when: "count(spells) + count(prepared)"}
   reaction: {any-turn: true}
   attack: {within: action, most: "(1 + best(extra-attacks, 0)) / min(1, count(classes))"}
   sneak attack: {needs: "has(features, Sneak Attack)", any-turn: true, resets: each turn}
