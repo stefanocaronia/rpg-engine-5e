@@ -197,6 +197,7 @@ describe("a party of four, from the first level to the fifth", () => {
 
     it("binds three items at most, which give their bonuses and resistances (pp. 97, 206, 212, 214, 237; BND, DMG-4)", async () => {
         await ok("write", "Bruna", "--add", "inventory=[[Ring of Protection]]", "--add", "inventory=[[Cloak of Protection]]", "--add", "inventory=[[Boots of the Winterlands]]");
+        await ok("write", "Bruna", "--add", "equipped=[[Ring of Protection]]", "--add", "equipped=[[Cloak of Protection]]", "--add", "equipped=[[Boots of the Winterlands]]");
         await ok("write", "Bruna", "--add", "attuned=[[Ring of Protection]]", "--add", "attuned=[[Cloak of Protection]]", "--add", "attuned=[[Boots of the Winterlands]]");
         expect(await ok("show", "Bruna")).toContain("ac 21");
         expect(await ok("change", "Bruna", "hp", "--by=-10", "--damage", "cold")).toContain("cold 10 halved, in damage-resistances: 5");
