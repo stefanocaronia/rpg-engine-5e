@@ -165,6 +165,7 @@ sheet-values:
 # character's level (p. 56), and the spell slots come with the spells.
 progression:
   list: classes
+  level: level
   features: Features
   skip: [Proficiency Bonus, 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th]
   # A subclass adds to prepared the spells it lists by its class's level, always prepared and not counted: a domain's or an oath's (pp. 16, 32; PRO-7).
