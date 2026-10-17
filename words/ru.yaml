@@ -85,6 +85,10 @@ fields:
   high-jump: Прыжок в высоту
   push-drag: Толкание и перетаскивание (фунты)
   hold-breath: Задержка дыхания (минуты)
+  lifestyle: образ жизни
+  legendary-actions: легендарные действия
+  legendary-resistance: легендарное сопротивление
+  invocations: воззвания
   equipped: Экипировано
   hp-base: Хиты от кубиков
   hp: Хиты
@@ -116,6 +120,7 @@ fields:
   languages: Языки
   features: Особенности
   fighting-styles: Боевые стили
+  extra-attacks: дополнительные атаки
   attack: Атака
   damage-roll: Бросок урона
   caster-level: Уровень заклинателя
@@ -187,6 +192,18 @@ fields:
   attuned: настроено
   days-without-food: дни без еды
 words:
+  Wretched: Нищенский
+  Squalid: Убогий
+  Poor: Бедный
+  Modest: Скромный
+  Comfortable: Комфортный
+  Wealthy: Зажиточный
+  Aristocratic: Аристократический
+  action: действие
+  bonus action: бонусное действие
+  reaction: реакция
+  sneak attack: скрытая атака
+  legendary action: легендарное действие
   Dragonborn: Драконорождённый
   Dwarf: Дварф
   Hill Dwarf: Холмовой дварф

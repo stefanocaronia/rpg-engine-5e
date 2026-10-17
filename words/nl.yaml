@@ -85,6 +85,10 @@ fields:
   high-jump: hoogspringen
   push-drag: duwen en slepen (lb)
   hold-breath: adem inhouden (minuten)
+  lifestyle: levensstijl
+  legendary-actions: legendarische acties
+  legendary-resistance: legendarische weerstand
+  invocations: invocaties
   equipped: uitgerust
   hp-base: basis-HP
   hp: HP
@@ -116,6 +120,7 @@ fields:
   languages: talen
   features: klassenkenmerken
   fighting-styles: gevechtsstijlen
+  extra-attacks: extra aanvallen
   attack: aanval
   damage-roll: schadeworp
   caster-level: spreukniveau
@@ -187,6 +192,18 @@ fields:
   attuned: afgestemd
   days-without-food: dagen zonder voedsel
 words:
+  Wretched: Ellendig
+  Squalid: Haveloos
+  Poor: Arm
+  Modest: Bescheiden
+  Comfortable: Comfortabel
+  Wealthy: Rijk
+  Aristocratic: Aristocratisch
+  action: actie
+  bonus action: bonusactie
+  reaction: reactie
+  sneak attack: sluipaanval
+  legendary action: legendarische actie
   Dragonborn: Drakengeborene
   Dwarf: Dwerg
   Hill Dwarf: Heuveldwerg

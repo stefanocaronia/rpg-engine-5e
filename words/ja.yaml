@@ -85,6 +85,10 @@ fields:
   high-jump: 高跳び
   push-drag: 押す・引く(ポンド)
   hold-breath: 息止め(分)
+  lifestyle: 生活水準
+  legendary-actions: 伝説的アクション
+  legendary-resistance: 伝説的抵抗
+  invocations: 祈願
   equipped: 装備中
   hp-base: 基本HP
   hp: HP
@@ -116,6 +120,7 @@ fields:
   languages: 言語
   features: 特徴
   fighting-styles: 戦闘スタイル
+  extra-attacks: 追加攻撃
   attack: 攻撃
   damage-roll: ダメージ・ロール
   caster-level: 術者レベル
@@ -187,6 +192,18 @@ fields:
   attuned: 同調
   days-without-food: 食料なしの日数
 words:
+  Wretched: 悲惨
+  Squalid: 不潔
+  Poor: 貧乏
+  Modest: 質素
+  Comfortable: 快適
+  Wealthy: 裕福
+  Aristocratic: 貴族的
+  action: アクション
+  bonus action: ボーナス・アクション
+  reaction: リアクション
+  sneak attack: スニーク・アタック
+  legendary action: 伝説的アクション
   Dragonborn: ドラゴンボーン
   Dwarf: ドワーフ
   Hill Dwarf: ヒル・ドワーフ

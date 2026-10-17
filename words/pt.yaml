@@ -85,6 +85,10 @@ fields:
   high-jump: Salto em altura
   push-drag: Empurrar e arrastar (lb)
   hold-breath: Prender a respiração (minutos)
+  lifestyle: estilo de vida
+  legendary-actions: ações lendárias
+  legendary-resistance: resistência lendária
+  invocations: invocações
   equipped: equipado
   hp-base: PV base
   hp: PV
@@ -116,6 +120,7 @@ fields:
   languages: idiomas
   features: características
   fighting-styles: estilos de luta
+  extra-attacks: ataques extras
   attack: ataque
   damage-roll: rolagem de dano
   caster-level: nível de conjurador
@@ -187,6 +192,18 @@ fields:
   attuned: sintonizado
   days-without-food: dias sem comida
 words:
+  Wretched: Miserável
+  Squalid: Esquálido
+  Poor: Pobre
+  Modest: Modesto
+  Comfortable: Confortável
+  Wealthy: Rico
+  Aristocratic: Aristocrático
+  action: ação
+  bonus action: ação bônus
+  reaction: reação
+  sneak attack: ataque furtivo
+  legendary action: ação lendária
   Dragonborn: Draconato
   Dwarf: Anão
   Hill Dwarf: Anão da Colina

@@ -85,6 +85,10 @@ fields:
   high-jump: Højdespring
   push-drag: Skubbe og trække (lb)
   hold-breath: Holde vejret (minutter)
+  lifestyle: livsstil
+  legendary-actions: legendariske handlinger
+  legendary-resistance: legendarisk modstand
+  invocations: invokationer
   equipped: Udstyret
   hp-base: LP fra terninger
   hp: LP
@@ -116,6 +120,7 @@ fields:
   languages: Sprog
   features: Særtræk
   fighting-styles: Kampstile
+  extra-attacks: ekstra angreb
   attack: Angreb
   damage-roll: Skadesslag
   caster-level: Magikerniveau
@@ -187,6 +192,18 @@ fields:
   attuned: tunet
   days-without-food: dage uden mad
 words:
+  Wretched: Elendig
+  Squalid: Usel
+  Poor: Fattig
+  Modest: Beskeden
+  Comfortable: Komfortabel
+  Wealthy: Velhavende
+  Aristocratic: Aristokratisk
+  action: handling
+  bonus action: bonushandling
+  reaction: reaktion
+  sneak attack: snigangreb
+  legendary action: legendarisk handling
   Dragonborn: Dragonborn
   Dwarf: Dværg
   Hill Dwarf: Bakkedværg

@@ -85,6 +85,10 @@ fields:
   high-jump: høydehopp
   push-drag: skyve og dra (lb)
   hold-breath: holde pusten (minutter)
+  lifestyle: livsstil
+  legendary-actions: legendariske handlinger
+  legendary-resistance: legendarisk motstand
+  invocations: invokasjoner
   equipped: utstyrt
   hp-base: LP grunnverdi
   hp: LP
@@ -116,6 +120,7 @@ fields:
   languages: språk
   features: evner
   fighting-styles: kampstiler
+  extra-attacks: ekstra angrep
   attack: angrep
   damage-roll: skadekast
   caster-level: magikernivå
@@ -187,6 +192,18 @@ fields:
   attuned: innstilt
   days-without-food: dager uten mat
 words:
+  Wretched: Elendig
+  Squalid: Smussig
+  Poor: Fattig
+  Modest: Beskjeden
+  Comfortable: Komfortabel
+  Wealthy: Velstående
+  Aristocratic: Aristokratisk
+  action: handling
+  bonus action: bonushandling
+  reaction: reaksjon
+  sneak attack: snikangrep
+  legendary action: legendarisk handling
   Dragonborn: Dragefødt
   Dwarf: Dverg
   Hill Dwarf: Høydverg

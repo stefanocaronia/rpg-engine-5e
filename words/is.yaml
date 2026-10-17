@@ -85,6 +85,10 @@ fields:
   high-jump: Hástökk
   push-drag: Ýta og draga (pund)
   hold-breath: Halda niðri í sér andanum (mínútur)
+  lifestyle: lífsstíll
+  legendary-actions: goðsagnakenndar aðgerðir
+  legendary-resistance: goðsagnakennt viðnám
+  invocations: særingar
   equipped: Búinn
   hp-base: LP af teningum
   hp: LP
@@ -116,6 +120,7 @@ fields:
   languages: Tungumál
   features: Eiginleikar
   fighting-styles: Bardagastílar
+  extra-attacks: aukaárásir
   attack: Árás
   damage-roll: Skaðakast
   caster-level: Galdrastig
@@ -187,6 +192,18 @@ fields:
   attuned: Stillt
   days-without-food: Dagar án matar
 words:
+  Wretched: Aumur
+  Squalid: Sóðalegur
+  Poor: Fátækur
+  Modest: Hóflegur
+  Comfortable: Þægilegur
+  Wealthy: Auðugur
+  Aristocratic: Aðalsmannlegur
+  action: aðgerð
+  bonus action: bónusaðgerð
+  reaction: viðbragð
+  sneak attack: launárás
+  legendary action: goðsagnakennd aðgerð
   Dragonborn: Drekaborinn
   Dwarf: Dvergur
   Hill Dwarf: Hæðadvergur

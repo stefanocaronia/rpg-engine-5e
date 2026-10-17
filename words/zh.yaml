@@ -85,6 +85,10 @@ fields:
   high-jump: 跳高
   push-drag: 推拉(磅)
   hold-breath: 屏息(分钟)
+  lifestyle: 生活方式
+  legendary-actions: 传奇动作
+  legendary-resistance: 传奇抗性
+  invocations: 祈请
   equipped: 已装备
   hp-base: 基础生命值
   hp: 生命值
@@ -116,6 +120,7 @@ fields:
   languages: 语言
   features: 特性
   fighting-styles: 战斗风格
+  extra-attacks: 额外攻击
   attack: 攻击
   damage-roll: 伤害掷骰
   caster-level: 施法者等级
@@ -187,6 +192,18 @@ fields:
   attuned: 已调谐
   days-without-food: 无食天数
 words:
+  Wretched: 赤贫
+  Squalid: 肮脏
+  Poor: 贫穷
+  Modest: 朴素
+  Comfortable: 舒适
+  Wealthy: 富裕
+  Aristocratic: 贵族
+  action: 动作
+  bonus action: 附赠动作
+  reaction: 反应
+  sneak attack: 偷袭
+  legendary action: 传奇动作
   Dragonborn: 龙裔
   Dwarf: 矮人
   Hill Dwarf: 丘陵矮人

@@ -85,6 +85,10 @@ fields:
   high-jump: Skok do výšky
   push-drag: Tlačení a tažení (lb)
   hold-breath: Zadržení dechu (minuty)
+  lifestyle: životní úroveň
+  legendary-actions: legendární akce
+  legendary-resistance: legendární odolnost
+  invocations: vzývání
   equipped: vybaveno
   hp-base: základ životů
   hp: životy
@@ -116,6 +120,7 @@ fields:
   languages: jazyky
   features: rysy
   fighting-styles: styly boje
+  extra-attacks: extra útoky
   attack: útok
   damage-roll: hod na zranění
   caster-level: úroveň sesílatele
@@ -187,6 +192,18 @@ fields:
   attuned: naladěno
   days-without-food: dny bez jídla
 words:
+  Wretched: Ubohý
+  Squalid: Žebrácký
+  Poor: Chudý
+  Modest: Skromný
+  Comfortable: Pohodlný
+  Wealthy: Bohatý
+  Aristocratic: Aristokratický
+  action: akce
+  bonus action: bonusová akce
+  reaction: reakce
+  sneak attack: záludný útok
+  legendary action: legendární akce
   Dragonborn: Drakorozený
   Dwarf: Trpaslík
   Hill Dwarf: Kopcový trpaslík

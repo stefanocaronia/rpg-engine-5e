@@ -85,6 +85,10 @@ fields:
   high-jump: Hochsprung
   push-drag: Schieben und Ziehen (Pfund)
   hold-breath: Luft anhalten (Minuten)
+  lifestyle: Lebensstil
+  legendary-actions: Legendäre Aktionen
+  legendary-resistance: Legendäre Resistenz
+  invocations: Anrufungen
   equipped: Ausgerüstet
   hp-base: TP aus Würfeln
   hp: TP
@@ -116,6 +120,7 @@ fields:
   languages: Sprachen
   features: Merkmale
   fighting-styles: Kampfstile
+  extra-attacks: Zusätzliche Angriffe
   attack: Angriff
   damage-roll: Schadenswurf
   caster-level: Zaubererstufe
@@ -187,6 +192,18 @@ fields:
   attuned: Eingestimmt
   days-without-food: Tage ohne Nahrung
 words:
+  Wretched: Elend
+  Squalid: Ärmlich
+  Poor: Arm
+  Modest: Bescheiden
+  Comfortable: Komfortabel
+  Wealthy: Wohlhabend
+  Aristocratic: Aristokratisch
+  action: Aktion
+  bonus action: Bonusaktion
+  reaction: Reaktion
+  sneak attack: Hinterhältiger Angriff
+  legendary action: Legendäre Aktion
   Dragonborn: Drachenblütiger
   Dwarf: Zwerg
   Hill Dwarf: Hügelzwerg

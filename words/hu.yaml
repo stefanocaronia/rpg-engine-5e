@@ -85,6 +85,10 @@ fields:
   high-jump: Magasugrás
   push-drag: Tolás és húzás (font)
   hold-breath: Lélegzet visszatartása (perc)
+  lifestyle: életmód
+  legendary-actions: legendás akciók
+  legendary-resistance: legendás ellenállás
+  invocations: idézések
   equipped: felszerelve
   hp-base: alap ÉP
   hp: ÉP
@@ -116,6 +120,7 @@ fields:
   languages: nyelvek
   features: jellemzők
   fighting-styles: harcstílusok
+  extra-attacks: extra támadások
   attack: támadás
   damage-roll: sebzésdobás
   caster-level: varázslói szint
@@ -187,6 +192,18 @@ fields:
   attuned: Rákötve
   days-without-food: étel nélküli napok
 words:
+  Wretched: Nyomorult
+  Squalid: Lerobbant
+  Poor: Szegényes
+  Modest: Szerény
+  Comfortable: Kényelmes
+  Wealthy: Gazdag
+  Aristocratic: Arisztokratikus
+  action: akció
+  bonus action: bónusz akció
+  reaction: reakció
+  sneak attack: settenkedő támadás
+  legendary action: legendás akció
   Dragonborn: Sárkányszületett
   Dwarf: Törp
   Hill Dwarf: Dombi törp

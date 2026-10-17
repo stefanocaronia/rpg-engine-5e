@@ -85,6 +85,10 @@ fields:
   high-jump: القفز العالي
   push-drag: الدفع والسحب (رطل)
   hold-breath: حبس النفس (دقائق)
+  lifestyle: نمط المعيشة
+  legendary-actions: إجراءات أسطورية
+  legendary-resistance: مقاومة أسطورية
+  invocations: استحضارات
   equipped: مجهَّز
   hp-base: نقاط الحياة من النرد
   hp: نقاط الحياة
@@ -116,6 +120,7 @@ fields:
   languages: اللغات
   features: السمات
   fighting-styles: أساليب القتال
+  extra-attacks: هجمات إضافية
   attack: الهجوم
   damage-roll: رمية الضرر
   caster-level: مستوى الساحر
@@ -187,6 +192,18 @@ fields:
   attuned: متناغم
   days-without-food: أيام بلا طعام
 words:
+  Wretched: بائس
+  Squalid: متهالك
+  Poor: فقير
+  Modest: متواضع
+  Comfortable: مريح
+  Wealthy: ثري
+  Aristocratic: أرستقراطي
+  action: إجراء
+  bonus action: إجراء إضافي
+  reaction: رد فعل
+  sneak attack: هجوم خفي
+  legendary action: إجراء أسطوري
   Dragonborn: مولود التنين
   Dwarf: قزم
   Hill Dwarf: قزم التلال

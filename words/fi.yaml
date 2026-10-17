@@ -85,6 +85,10 @@ fields:
   high-jump: Korkeushyppy
   push-drag: Työntö ja veto (lb)
   hold-breath: Henkenpidätys (min)
+  lifestyle: elämäntyyli
+  legendary-actions: legendaariset toiminnot
+  legendary-resistance: legendaarinen vastustus
+  invocations: invokaatiot
   equipped: varustettu
   hp-base: perus-HP
   hp: HP
@@ -116,6 +120,7 @@ fields:
   languages: kielet
   features: piirteet
   fighting-styles: taistelutyylit
+  extra-attacks: lisähyökkäykset
   attack: hyökkäys
   damage-roll: vahinkoheitto
   caster-level: loitsijataso
@@ -187,6 +192,18 @@ fields:
   attuned: viritetty
   days-without-food: päivää ilman ruokaa
 words:
+  Wretched: Viheliäinen
+  Squalid: Surkea
+  Poor: Köyhä
+  Modest: Vaatimaton
+  Comfortable: Mukava
+  Wealthy: Varakas
+  Aristocratic: Aristokraattinen
+  action: toiminto
+  bonus action: bonustoiminto
+  reaction: reaktio
+  sneak attack: hiipimishyökkäys
+  legendary action: legendaarinen toiminto
   Dragonborn: Lohikäärmesyntyinen
   Dwarf: Kääpiö
   Hill Dwarf: Kukkulakääpiö

@@ -85,6 +85,10 @@ fields:
   high-jump: saut en hauteur
   push-drag: pousser et traîner
   hold-breath: retenir son souffle
+  lifestyle: Train de vie
+  legendary-actions: Actions légendaires
+  legendary-resistance: Résistance légendaire
+  invocations: Manifestations occultes
   equipped: équipé
   hp-base: PV de base
   hp: PV
@@ -116,6 +120,7 @@ fields:
   languages: langues
   features: capacités
   fighting-styles: styles de combat
+  extra-attacks: Attaques supplémentaires
   attack: attaque
   damage-roll: jet de dégâts
   caster-level: niveau de lanceur de sorts
@@ -187,6 +192,18 @@ fields:
   attuned: harmonisé
   days-without-food: jours sans nourriture
 words:
+  Wretched: Misérable
+  Squalid: Sordide
+  Poor: Pauvre
+  Modest: Modeste
+  Comfortable: Confortable
+  Wealthy: Aisé
+  Aristocratic: Aristocratique
+  action: Action
+  bonus action: Action bonus
+  reaction: Réaction
+  sneak attack: Attaque sournoise
+  legendary action: Action légendaire
   Dragonborn: Drakéide
   Dwarf: Nain
   Hill Dwarf: Nain des collines

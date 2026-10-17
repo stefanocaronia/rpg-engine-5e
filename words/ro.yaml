@@ -85,6 +85,10 @@ fields:
   high-jump: Săritură în înălțime
   push-drag: Împingere și târâre (lb)
   hold-breath: Ținerea respirației (minute)
+  lifestyle: Stil de viață
+  legendary-actions: Acțiuni legendare
+  legendary-resistance: Rezistență legendară
+  invocations: Invocații
   equipped: echipat
   hp-base: PV de bază
   hp: PV
@@ -116,6 +120,7 @@ fields:
   languages: limbi
   features: trăsături
   fighting-styles: stiluri de luptă
+  extra-attacks: Atacuri suplimentare
   attack: atac
   damage-roll: aruncare de daune
   caster-level: nivel de lansator
@@ -187,6 +192,18 @@ fields:
   attuned: sincronizat
   days-without-food: zile fără hrană
 words:
+  Wretched: Mizerabil
+  Squalid: Sordid
+  Poor: Sărac
+  Modest: Modest
+  Comfortable: Confortabil
+  Wealthy: Bogat
+  Aristocratic: Aristocratic
+  action: acțiune
+  bonus action: acțiune bonus
+  reaction: reacție
+  sneak attack: atac pe la spate
+  legendary action: acțiune legendară
   Dragonborn: Dragonborn
   Dwarf: Pitic
   Hill Dwarf: Pitic de deal

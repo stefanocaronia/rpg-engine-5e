@@ -85,6 +85,10 @@ fields:
   high-jump: Skok wzwyż
   push-drag: Pchanie i ciągnięcie (funty)
   hold-breath: Wstrzymywanie oddechu (minuty)
+  lifestyle: styl życia
+  legendary-actions: akcje legendarne
+  legendary-resistance: legendarna odporność
+  invocations: inwokacje
   equipped: założone
   hp-base: PW bazowe
   hp: PW
@@ -116,6 +120,7 @@ fields:
   languages: języki
   features: zdolności
   fighting-styles: style walki
+  extra-attacks: dodatkowe ataki
   attack: atak
   damage-roll: rzut na obrażenia
   caster-level: poziom czarującego
@@ -187,6 +192,18 @@ fields:
   attuned: dostrojony
   days-without-food: dni bez jedzenia
 words:
+  Wretched: Nędzny
+  Squalid: Mizerny
+  Poor: Ubogi
+  Modest: Skromny
+  Comfortable: Wygodny
+  Wealthy: Zamożny
+  Aristocratic: Arystokratyczny
+  action: akcja
+  bonus action: akcja dodatkowa
+  reaction: reakcja
+  sneak attack: atak z zaskoczenia
+  legendary action: akcja legendarna
   Dragonborn: Drakon
   Dwarf: Krasnolud
   Hill Dwarf: Krasnolud wzgórzowy

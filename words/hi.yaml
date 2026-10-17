@@ -85,6 +85,10 @@ fields:
   high-jump: ऊँची कूद
   push-drag: धक्का और खींचना (पाउंड)
   hold-breath: साँस रोकना (मिनट)
+  lifestyle: जीवनशैली
+  legendary-actions: महान क्रियाएँ
+  legendary-resistance: महान प्रतिरोध
+  invocations: आह्वान
   equipped: धारण किया
   hp-base: बेस HP
   hp: HP
@@ -116,6 +120,7 @@ fields:
   languages: भाषाएँ
   features: विशेषताएँ
   fighting-styles: लड़ाई की शैलियाँ
+  extra-attacks: अतिरिक्त हमले
   attack: हमला
   damage-roll: डैमेज रोल
   caster-level: मंत्रवाहक लेवल
@@ -187,6 +192,18 @@ fields:
   attuned: अभिमंत्रित
   days-without-food: भोजन के बिना दिन
 words:
+  Wretched: अभागा
+  Squalid: दीन-हीन
+  Poor: गरीब
+  Modest: साधारण
+  Comfortable: सुखी-संपन्न
+  Wealthy: धनी
+  Aristocratic: कुलीन
+  action: क्रिया
+  bonus action: बोनस क्रिया
+  reaction: प्रतिक्रिया
+  sneak attack: छिपकर हमला
+  legendary action: महान क्रिया
   Dragonborn: ड्रैगनबॉर्न
   Dwarf: ड्वार्फ़
   Hill Dwarf: हिल ड्वार्फ़

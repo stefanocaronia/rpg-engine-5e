@@ -85,6 +85,10 @@ fields:
   high-jump: Άλμα εις ύψος
   push-drag: Ώθηση και έλξη (λίβρες)
   hold-breath: Κράτημα αναπνοής (λεπτά)
+  lifestyle: Τρόπος ζωής
+  legendary-actions: Θρυλικές ενέργειες
+  legendary-resistance: Θρυλική αντίσταση
+  invocations: Επικλήσεις
   equipped: εξοπλισμένο
   hp-base: ΠΖ από ζάρια
   hp: ΠΖ
@@ -116,6 +120,7 @@ fields:
   languages: γλώσσες
   features: χαρακτηριστικά
   fighting-styles: στυλ μάχης
+  extra-attacks: Επιπλέον επιθέσεις
   attack: επίθεση
   damage-roll: ρίψη ζημιάς
   caster-level: επίπεδο ξορκιστή
@@ -187,6 +192,18 @@ fields:
   attuned: Εναρμονισμένο
   days-without-food: Ημέρες χωρίς τροφή
 words:
+  Wretched: Άθλιος
+  Squalid: Άθλιος
+  Poor: Φτωχός
+  Modest: Μέτριος
+  Comfortable: Άνετος
+  Wealthy: Πλούσιος
+  Aristocratic: Αριστοκρατικός
+  action: Ενέργεια
+  bonus action: Επιπλέον ενέργεια
+  reaction: Αντίδραση
+  sneak attack: Ύπουλη επίθεση
+  legendary action: Θρυλική ενέργεια
   Dragonborn: Δρακογέννητος
   Dwarf: Νάνος
   Hill Dwarf: Νάνος των λόφων

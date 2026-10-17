@@ -85,6 +85,10 @@ fields:
   high-jump: Salto de altura
   push-drag: Empujar y arrastrar (lb)
   hold-breath: Contener la respiración (minutos)
+  lifestyle: estilo de vida
+  legendary-actions: acciones legendarias
+  legendary-resistance: resistencia legendaria
+  invocations: invocaciones sobrenaturales
   equipped: equipado
   hp-base: PG base
   hp: PG
@@ -116,6 +120,7 @@ fields:
   languages: idiomas
   features: rasgos
   fighting-styles: estilos de combate
+  extra-attacks: ataques adicionales
   attack: ataque
   damage-roll: tirada de daño
   caster-level: nivel de lanzador
@@ -187,6 +192,18 @@ fields:
   attuned: sintonizado
   days-without-food: días sin comida
 words:
+  Wretched: Miserable
+  Squalid: Mísero
+  Poor: Pobre
+  Modest: Modesto
+  Comfortable: Cómodo
+  Wealthy: Próspero
+  Aristocratic: Aristocrático
+  action: acción
+  bonus action: acción adicional
+  reaction: reacción
+  sneak attack: ataque furtivo
+  legendary action: acción legendaria
   Dragonborn: Dracónido
   Dwarf: Enano
   Hill Dwarf: Enano de las colinas

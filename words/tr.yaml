@@ -85,6 +85,10 @@ fields:
   high-jump: Yüksek atlama
   push-drag: İtme ve sürükleme (lb)
   hold-breath: Nefesi tutma (dakika)
+  lifestyle: yaşam tarzı
+  legendary-actions: efsanevi eylemler
+  legendary-resistance: efsanevi direnç
+  invocations: çağrılar
   equipped: kuşanılmış
   hp-base: zarlardan CP
   hp: CP
@@ -116,6 +120,7 @@ fields:
   languages: diller
   features: özellikler
   fighting-styles: dövüş stilleri
+  extra-attacks: ek saldırılar
   attack: saldırı
   damage-roll: hasar atışı
   caster-level: büyücü seviyesi
@@ -187,6 +192,18 @@ fields:
   attuned: uyumlanmış
   days-without-food: Yemeksiz geçen gün
 words:
+  Wretched: Sefil
+  Squalid: Pejmürde
+  Poor: Yoksul
+  Modest: Mütevazı
+  Comfortable: Rahat
+  Wealthy: Zengin
+  Aristocratic: Aristokratik
+  action: eylem
+  bonus action: bonus eylem
+  reaction: tepki
+  sneak attack: sinsi saldırı
+  legendary action: efsanevi eylem
   Dragonborn: Ejderdoğan
   Dwarf: Cüce
   Hill Dwarf: Tepe Cücesi

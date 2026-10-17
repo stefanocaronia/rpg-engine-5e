@@ -85,6 +85,10 @@ fields:
   high-jump: קפיצה לגובה
   push-drag: דחיפה וגרירה (ליברות)
   hold-breath: עצירת נשימה (דקות)
+  lifestyle: רמת חיים
+  legendary-actions: פעולות אגדיות
+  legendary-resistance: עמידות אגדית
+  invocations: הפצרות
   equipped: מצויד
   hp-base: נק״ח מקוביות
   hp: נק״ח
@@ -116,6 +120,7 @@ fields:
   languages: שפות
   features: יכולות
   fighting-styles: סגנונות לחימה
+  extra-attacks: התקפות נוספות
   attack: התקפה
   damage-roll: הטלת נזק
   caster-level: רמת לוחש
@@ -187,6 +192,18 @@ fields:
   attuned: מכוון
   days-without-food: ימים ללא אוכל
 words:
+  Wretched: אומלל
+  Squalid: מוזנח
+  Poor: עני
+  Modest: צנוע
+  Comfortable: נוח
+  Wealthy: עשיר
+  Aristocratic: אריסטוקרטי
+  action: פעולה
+  bonus action: פעולת בונוס
+  reaction: תגובה
+  sneak attack: התקפת חמקנות
+  legendary action: פעולה אגדית
   Dragonborn: יליד דרקון
   Dwarf: גמד
   Hill Dwarf: גמד גבעות

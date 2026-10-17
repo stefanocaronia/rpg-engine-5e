@@ -85,6 +85,10 @@ fields:
   high-jump: 높이뛰기
   push-drag: 밀기·끌기 (lb)
   hold-breath: 숨 참기 (분)
+  lifestyle: 생활 수준
+  legendary-actions: 전설 행동
+  legendary-resistance: 전설 저항
+  invocations: 비전 간청
   equipped: 장착
   hp-base: 주사위 HP
   hp: HP
@@ -116,6 +120,7 @@ fields:
   languages: 언어
   features: 특성
   fighting-styles: 전투 방식
+  extra-attacks: 추가 공격
   attack: 공격
   damage-roll: 피해 굴림
   caster-level: 시전자 레벨
@@ -187,6 +192,18 @@ fields:
   attuned: 조율
   days-without-food: 식량 없이 보낸 일수
 words:
+  Wretched: 비참
+  Squalid: 불결
+  Poor: 빈곤
+  Modest: 검소
+  Comfortable: 안락
+  Wealthy: 부유
+  Aristocratic: 귀족
+  action: 행동
+  bonus action: 보너스 행동
+  reaction: 반응 행동
+  sneak attack: 암습
+  legendary action: 전설 행동
   Dragonborn: 드래곤본
   Dwarf: 드워프
   Hill Dwarf: 언덕 드워프

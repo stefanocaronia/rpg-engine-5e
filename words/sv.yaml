@@ -85,6 +85,10 @@ fields:
   high-jump: Höjdhopp
   push-drag: Skjuta och dra (lb)
   hold-breath: Hålla andan (minuter)
+  lifestyle: livsstil
+  legendary-actions: legendariska handlingar
+  legendary-resistance: legendariskt motstånd
+  invocations: åkallanden
   equipped: utrustad
   hp-base: grund-LP
   hp: LP
@@ -116,6 +120,7 @@ fields:
   languages: språk
   features: förmågor
   fighting-styles: stridsstilar
+  extra-attacks: extra attacker
   attack: attack
   damage-roll: skadeslag
   caster-level: trollkastarnivå
@@ -187,6 +192,18 @@ fields:
   attuned: inställd
   days-without-food: dagar utan mat
 words:
+  Wretched: Eländig
+  Squalid: Smutsig
+  Poor: Fattig
+  Modest: Blygsam
+  Comfortable: Bekväm
+  Wealthy: Rik
+  Aristocratic: Aristokratisk
+  action: handling
+  bonus action: bonushandling
+  reaction: reaktion
+  sneak attack: hinderlös attack
+  legendary action: legendarisk handling
   Dragonborn: Drakfödd
   Dwarf: Dvärg
   Hill Dwarf: Bergsdvärg
