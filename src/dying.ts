@@ -125,14 +125,17 @@ function turnOf(who: string, game: SystemGame): string[]
     }
 
     const read = ` Read rules ${rules.saves}.`;
+    // The master set the counters by hand before Stable, which sets them itself (playtest 11).
+    const stabilize = ` To stabilize ${page.name}, as Medicine or a spell does: effect add ${stableEffect}, which sets the death saves itself.`;
 
     if (page.pc) {
-        return [`${page.name} is dying: the turn starts with their death save, the player's to roll: ask them, with ask, a check of ${save.dice}; the engine writes its outcome.${read}`];
+        return [`${page.name} is dying: the turn starts with their death save, the player's to roll: ask them, with ask, a check of ${save.dice}; the engine writes its outcome.${stabilize}${read}`];
     }
 
     const rolled = game.roll(save.dice, { who: page.name, why: "death save" });
     const lines = saved(page, { who: page.name, notation: save.dice, total: rolled.total, dice: rolled.dice }, game);
-    return [`${page.name} is dying: the engine rolled its death save, ${rolled.text}. ${lines.join(" ")} ${tellingOf(game.setting("mentor"))}${read}`];
+    const still = isDying(game.page(page.name)) ? stabilize : "";
+    return [`${page.name} is dying: the engine rolled its death save, ${rolled.text}. ${lines.join(" ")} ${tellingOf(game.setting("mentor"))}${still}${read}`];
 }
 
 /** The death save the player rolled for their character, with ask or roll (DIE-4); anyone else's is rolled as its turn starts (DIE-5). */
