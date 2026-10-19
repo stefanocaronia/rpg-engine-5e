@@ -48,9 +48,13 @@ function afterHitPoints(change: CounterChange, game: SystemGame): string[]
     const name = page.name;
     const failed = counted(page, failures.field);
 
-    // The dead, at their most failures, are not brought back by hit points: only what the rules say does, as the master tells it.
+    // The dead, at their most failures, are not brought back by hit points: they go back to 0, and only what the rules say brings them back (DIE-7).
     if (change.after > 0 && change.before <= 0 && failed >= failures.most) {
-        return [`${name} is dead, with ${failures.field} ${failed}: ${hp} regained brings no one back; only what the rules say does, as you tell it.`];
+        game.set(name, { [hp]: 0 }, "the dead regain nothing");
+        return [
+            `${name} is dead, with ${failures.field} ${failed}: what this change gave is undone, ${hp} back to 0, as ${hp} regained brings no one back. To bring ${name} back as the rules say, as a spell does: `
+            + `first change ${failures.field} to 0, then give the ${hp}.`,
+        ];
     }
 
     // Above 0 again: the counters back to 0, the conditions ended (DIE-3).

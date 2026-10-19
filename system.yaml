@@ -298,6 +298,11 @@ dying:
   show: {successes: death-successes, failures: death-failures}
   stable: Stable
   marks: {successes: Successes, failures: Failures}
+# What cannot be true together, which the engine says to the master (CHK-2, D-473): the death saves and Stable hold only at 0 hit points (p. 98).
+checks:
+  - {when: Stable, needs: hp <= 0, say: "{page} is Stable with {hp}: Stable holds only at 0 hit points; effect end {page} Stable."}
+  - {when: death-failures > 0, needs: hp <= 0, say: "{page} has {death-failures} with {hp}: the death saves count only at 0 hit points; change {page} death-failures to 0."}
+  - {when: death-successes > 0, needs: hp <= 0, say: "{page} has {death-successes} with {hp}: the death saves count only at 0 hit points; change {page} death-successes to 0."}
 # How the engine reads each field: only counters are counted; numbers, text and lists never are, nor are they money.
 fields:
   size: text
