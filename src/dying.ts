@@ -135,7 +135,7 @@ function turnOf(who: string, game: SystemGame): string[]
     const rolled = game.roll(save.dice, { who: page.name, why: "death save" });
     const lines = saved(page, { who: page.name, notation: save.dice, total: rolled.total, dice: rolled.dice }, game);
     const still = isDying(game.page(page.name)) ? stabilize : "";
-    return [`${page.name} is dying: the engine rolled its death save, ${rolled.text}. ${lines.join(" ")} ${tellingOf(game.setting("mentor"))}${still}${read}`];
+    return [`${page.name} is dying: the engine rolled its death save, ${rolled.text}, so never roll it again. ${lines.join(" ")} ${tellingOf(game.setting("mentor"))}${still}${read}`];
 }
 
 /** The death save the player rolled for their character, with ask or roll (DIE-4); anyone else's is rolled as its turn starts (DIE-5). */

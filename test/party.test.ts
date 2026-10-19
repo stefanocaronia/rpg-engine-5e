@@ -123,7 +123,7 @@ describe("a party of four, from the first level to the fifth", () => {
         expect(await use("Vespa", "sneak attack")).toBe("Vespa: sneak attack used.");
         expect(await ok("change", "Skeleton 1", "hp", "--by=-9", "--damage", "piercing")).toContain("Skeleton 1: hp 6/13 → 0/13");
         // On her turn the dying Ilaria makes a death save (p. 98), which the engine rolls for a companion: 4, a failure (DIE-5).
-        expect(await ok("scene", "next")).toContain("Ilaria is dying: the engine rolled its death save, 1d20 = 4 [4]. Ilaria's death save: 4, a failure; death-failures 0 → 1.");
+        expect(await ok("scene", "next")).toContain("Ilaria is dying: the engine rolled its death save, 1d20 = 4 [4], so never roll it again. Ilaria's death save: 4, a failure; death-failures 0 → 1.");
         await ok("scene", "next");
         // Cure Wounds from a first-level slot, 1d8 + Wis 3 + Disciple of Life's 2 + 1, at least 7 (pp. 17, 133): the saves are reset, and she wakes (p. 98).
         await ok("change", "Ugo", "slots-1", "--by=-1");
