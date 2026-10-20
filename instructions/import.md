@@ -1,0 +1,1 @@
+A person of the story who may fight is a character with creature, the nearest of the system's people, such as [[Commoner]], [[Guard]], [[Scout]], [[Spy]], [[Thug]], [[Priest]], [[Noble]], [[Knight]], [[Veteran]] or [[Bandit Captain]], and only what differs from it.
