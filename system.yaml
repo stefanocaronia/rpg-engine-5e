@@ -110,6 +110,15 @@ sheet-cards:
   rail: [Abilities, Saving Throws, Skills]
   order: [Combat, Attacks, Spells, Features, Equipment, Proficiencies, Character, Personality, Appearance]
   at-hand: [ac, initiative, walking, hp, temp-hp, Attacks, Spells]
+# What the player does with the items of these fields on the dashboard, said as their own sentence to the master, who rules it (D-495): the first verb is
+# a click's, the others a choice; preparing is from the spells a wizard keeps in a spellbook.
+sheet-actions:
+  attack: [attack]
+  spells: [cast, prepare]
+  prepared: [cast]
+  features: [use]
+  inventory: [use, equip]
+  equipped: [use, unequip]
 # The line under a character's name on the dashboard (D-288).
 sheet-headline: "Level {level} {classes}"
 # The icon of each group on the dashboard (D-284): the d of an SVG path on a grid of 24, drawn as a line; drawn for rpg-engine.
