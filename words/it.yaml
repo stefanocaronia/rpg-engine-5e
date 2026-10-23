@@ -534,5 +534,12 @@ words:
   Encumbered: Ingombrato
   Heavily encumbered: Pesantemente ingombrato
   Over the limit: Oltre la capacità di trasporto  # ours
+  # What burns, lit as an effect, and what a lamp spends (burning)
+  Torch: Torcia
+  Candle: Candela
+  Lamp: Lampada
+  Hooded Lantern: Lanterna schermabile
+  Bullseye Lantern: Lanterna a lente sporgente
+  Oil: Olio
 # "un chierico di 3° livello", as the SRD writes it (p. 16); more classes are joined with " / "
 headline: "{classes} di {level}° livello"
