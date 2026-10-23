@@ -470,6 +470,17 @@ words:
   until long rest: do długiego odpoczynku
   until short rest: do krótkiego odpoczynku
   difficult terrain: trudny teren
+  Armor: Pancerz
+  Armor without proficiency: Pancerz bez biegłości
+  Encumbered: Obciążony
+  Heavily encumbered: Mocno obciążony
+  Over the limit: Ponad limit udźwigu
+  Torch: Pochodnia
+  Candle: Świeca
+  Lamp: Lampa
+  Hooded Lantern: Latarnia zasłaniana
+  Bullseye Lantern: Latarnia soczewkowa
+  Oil: Olej
 names:
   str: Siła
   str-mod: Siła

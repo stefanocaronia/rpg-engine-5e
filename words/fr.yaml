@@ -470,6 +470,17 @@ words:
   until long rest: jusqu'au repos long
   until short rest: jusqu'au repos court
   difficult terrain: terrain difficile
+  Armor: Armure
+  Armor without proficiency: Armure sans maîtrise
+  Encumbered: Encombré
+  Heavily encumbered: Lourdement encombré
+  Over the limit: Au-delà de la limite
+  Torch: Torche
+  Candle: Bougie
+  Lamp: Lampe
+  Hooded Lantern: Lanterne sourde
+  Bullseye Lantern: Lanterne à capuchon
+  Oil: Huile
 names:
   str: Force
   str-mod: Force

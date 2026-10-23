@@ -470,6 +470,17 @@ words:
   until long rest: indtil lang hvile
   until short rest: indtil kort hvile
   difficult terrain: svært terræn
+  Armor: Rustning
+  Armor without proficiency: Rustning uden færdighed
+  Encumbered: Tynget
+  Heavily encumbered: Voldsomt tynget
+  Over the limit: Over grænsen
+  Torch: Fakkel
+  Candle: Lys
+  Lamp: Lampe
+  Hooded Lantern: Blændlanterne
+  Bullseye Lantern: Linselanterne
+  Oil: Olie
 names:
   str: Styrke
   str-mod: Styrke

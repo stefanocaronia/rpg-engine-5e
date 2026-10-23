@@ -470,6 +470,17 @@ words:
   until long rest: till lång vila
   until short rest: till kort vila
   difficult terrain: svårframkomlig terräng
+  Armor: Rustning
+  Armor without proficiency: Rustning utan färdighet
+  Encumbered: Tyngd av last
+  Heavily encumbered: Kraftigt tyngd av last
+  Over the limit: Över gränsen
+  Torch: Fackla
+  Candle: Ljus
+  Lamp: Lampa
+  Hooded Lantern: Skärmad lykta
+  Bullseye Lantern: Fokuslykta
+  Oil: Olja
 names:
   str: Styrka
   str-mod: Styrka

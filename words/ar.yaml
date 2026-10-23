@@ -470,6 +470,17 @@ words:
   until long rest: حتى الراحة الطويلة
   until short rest: حتى الراحة القصيرة
   difficult terrain: أرض وعرة
+  Armor: درع
+  Armor without proficiency: درع دون إتقان
+  Encumbered: مثقل بالحمل
+  Heavily encumbered: مثقل بالحمل بشدة
+  Over the limit: فوق الحد المسموح
+  Torch: شعلة
+  Candle: شمعة
+  Lamp: مصباح
+  Hooded Lantern: فانوس مغطى
+  Bullseye Lantern: فانوس مركّز الشعاع
+  Oil: زيت
 names:
   str: القوة
   str-mod: القوة

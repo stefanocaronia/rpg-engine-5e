@@ -470,6 +470,17 @@ words:
   until long rest: έως τη μακρά ανάπαυση
   until short rest: έως τη σύντομη ανάπαυση
   difficult terrain: δύσβατο έδαφος
+  Armor: Πανοπλία
+  Armor without proficiency: Πανοπλία χωρίς επάρκεια
+  Encumbered: Επιβαρυμένος
+  Heavily encumbered: Πολύ επιβαρυμένος
+  Over the limit: Πάνω από το όριο
+  Torch: Δαδί
+  Candle: Κερί
+  Lamp: Λυχνάρι
+  Hooded Lantern: Φανάρι με κάλυμμα
+  Bullseye Lantern: Φανάρι με εστιασμένη δέσμη
+  Oil: Λάδι
 names:
   str: Δύναμη
   str-mod: Δύναμη
