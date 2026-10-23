@@ -17,16 +17,16 @@ imperial: {mile: 1.5 km, foot: 0.3 m, pound: 0.5 kg}
 # What a character carries (p. 80, Carrying Capacity and Size and Strength; Equipment, Coinage): the weight of each item, a limit of Strength times 15 by
 # size, fifty coins to a pound (D-432, D-435); formulas read them as load and load-limit. What an extradimensional item holds weighs nothing, as in a Bag
 # of Holding (p. 210). Its stages, as the speeds and rolls count them: past Str×5 and Str×10 under the rigor simulation (Variant: Encumbrance, p. 80),
-# past the limit under the rigor rules or simulation.
+# past the limit under the rigor rules.
 load:
   field: weight
   limit: ["str * 15 * table(carry-by-size, size)", str * 15]
   coins: 50
   weightless: extradimensional
   stages:
-    Encumbered: "has(rigor, simulation) * ceil(best(load, 0) - 5 * best(str, 0))"
-    Heavily encumbered: "has(rigor, simulation) * ceil(best(load, 0) - 10 * best(str, 0))"
-    Over the limit: "min(1, has(rigor, rules) + has(rigor, simulation)) * ceil(best(load, 0) - best(load-limit, 0)) * min(1, best(load-limit, 0))"
+    - {name: Encumbered, when: "has(rigor, simulation) * ceil(best(load, 0) - 5 * best(str, 0))"}
+    - {name: Heavily encumbered, when: "has(rigor, simulation) * ceil(best(load, 0) - 10 * best(str, 0))"}
+    - {name: Over the limit, when: "has(rigor, rules) * ceil(best(load, 0) - best(load-limit, 0)) * min(1, best(load-limit, 0))"}
 # The computed lengths, as the speeds, are in feet (SPD-1).
 length-unit: ft
 # How one travels (TRV-1–TRV-3, TRV-8; Adventuring › Travel Pace and Difficult Terrain): the paces of an hour (4, 3 and 2 miles), 8 hours of travel a day,
