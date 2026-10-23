@@ -147,7 +147,7 @@ describe("a party of four, from the first level to the fifth", () => {
 
     it("spends a hit die in a short rest, with the Constitution modifier (p. 87)", async () => {
         await ok("advance", "--by", "1h");
-        expect(await ok("change", "Bruna", "hit-dice-d10", "--spend", "1", "--recipe", "short rest")).toMatch(/^Bruna spends 1 hit-dice-d10: 1d10 = \[\d+\] \+ 2 each, \d+; hp 7\/12 → \d+\/12; hit-dice-d10 1\/1 → 0\/1\.$/);
+        expect(await ok("change", "Bruna", "hit-dice-d10", "--spend", "1", "--recipe", "short rest")).toMatch(/^Bruna spends 1 hit-dice-d10: 1d10\+2 = \[\d+\] \+ 2, \d+; hp 7\/12 → \d+\/12; hit-dice-d10 1\/1 → 0\/1\.$/);
     });
 
     it("rises to the fifth level with what each class gives there (pp. 15, 24, 39, 52, 56)", async () => {
