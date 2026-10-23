@@ -192,12 +192,10 @@ fields:
   attuned: viritetty
   days-without-food: päivää ilman ruokaa
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: vahingoittumaton
   hurt: haavoittunut
   bloodied: veressä
   down: kaatunut
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Vakaa
   Successes: Onnistumiset
   Failures: Epäonnistumiset
@@ -208,6 +206,11 @@ words:
   Comfortable: Mukava
   Wealthy: Varakas
   Aristocratic: Aristokraattinen
+  cp: kk
+  sp: hk
+  ep: ek
+  gp: ku
+  pp: pk
   action: toiminto
   bonus action: bonustoiminto
   reaction: reaktio

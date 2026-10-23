@@ -192,12 +192,10 @@ fields:
   attuned: متناغم
   days-without-food: أيام بلا طعام
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: سليم
   hurt: مصاب
   bloodied: ينزف
   down: ساقط
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: مستقر
   Successes: النجاحات
   Failures: الإخفاقات
@@ -208,6 +206,11 @@ words:
   Comfortable: مريح
   Wealthy: ثري
   Aristocratic: أرستقراطي
+  cp: نح
+  sp: فض
+  ep: إل
+  gp: ذه
+  pp: بل
   action: إجراء
   bonus action: إجراء إضافي
   reaction: رد فعل

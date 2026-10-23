@@ -192,12 +192,10 @@ fields:
   attuned: настроено
   days-without-food: дни без еды
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: невредим
   hurt: ранен
   bloodied: истекает кровью
   down: повален
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Стабильно
   Successes: Успехи
   Failures: Провалы
@@ -208,6 +206,11 @@ words:
   Comfortable: Комфортный
   Wealthy: Зажиточный
   Aristocratic: Аристократический
+  cp: мм
+  sp: см
+  ep: эм
+  gp: зм
+  pp: пм
   action: действие
   bonus action: бонусное действие
   reaction: реакция

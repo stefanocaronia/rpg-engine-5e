@@ -192,12 +192,10 @@ fields:
   attuned: sintonizado
   days-without-food: dias sem comida
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: ileso
   hurt: ferido
   bloodied: sangrando
   down: caído
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Estável
   Successes: Sucessos
   Failures: Falhas
@@ -208,6 +206,11 @@ words:
   Comfortable: Confortável
   Wealthy: Rico
   Aristocratic: Aristocrático
+  cp: pc
+  sp: pp
+  ep: pe
+  gp: po
+  pp: pl
   action: ação
   bonus action: ação bônus
   reaction: reação

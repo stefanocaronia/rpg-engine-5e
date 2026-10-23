@@ -192,12 +192,10 @@ fields:
   attuned: dostrojony
   days-without-food: dni bez jedzenia
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: bez ran
   hurt: ranny
   bloodied: mocno ranny
   down: powalony
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Stan stabilny
   Successes: Sukcesy
   Failures: Porażki
@@ -208,6 +206,11 @@ words:
   Comfortable: Wygodny
   Wealthy: Zamożny
   Aristocratic: Arystokratyczny
+  cp: mm
+  sp: sm
+  ep: em
+  gp: zm
+  pp: pm
   action: akcja
   bonus action: akcja dodatkowa
   reaction: reakcja

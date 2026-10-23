@@ -192,12 +192,10 @@ fields:
   attuned: tunet
   days-without-food: dage uden mad
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: uskadt
   hurt: såret
   bloodied: blødende
   down: slået ud
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Stabil
   Successes: Succeser
   Failures: Fejl
@@ -208,6 +206,11 @@ words:
   Comfortable: Komfortabel
   Wealthy: Velhavende
   Aristocratic: Aristokratisk
+  cp: km
+  sp: sm
+  ep: em
+  gp: gm
+  pp: pm
   action: handling
   bonus action: bonushandling
   reaction: reaktion

@@ -192,12 +192,10 @@ fields:
   attuned: Rákötve
   days-without-food: étel nélküli napok
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: sértetlen
   hurt: sebesült
   bloodied: vérző
   down: földön
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Stabil
   Successes: Sikerek
   Failures: Kudarcok
@@ -208,6 +206,11 @@ words:
   Comfortable: Kényelmes
   Wealthy: Gazdag
   Aristocratic: Arisztokratikus
+  cp: rp
+  sp: ep
+  ep: elp
+  gp: ap
+  pp: pp
   action: akció
   bonus action: bónusz akció
   reaction: reakció

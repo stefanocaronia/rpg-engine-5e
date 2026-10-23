@@ -192,12 +192,10 @@ fields:
   attuned: अभिमंत्रित
   days-without-food: भोजन के बिना दिन
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: सही-सलामत
   hurt: घायल
   bloodied: लहूलुहान
   down: गिरा हुआ
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: स्थिर
   Successes: सफलताएँ
   Failures: विफलताएँ
@@ -208,6 +206,11 @@ words:
   Comfortable: सुखी-संपन्न
   Wealthy: धनी
   Aristocratic: कुलीन
+  cp: ताम्र
+  sp: रजत
+  ep: इले
+  gp: स्वर्ण
+  pp: प्लै
   action: क्रिया
   bonus action: बोनस क्रिया
   reaction: प्रतिक्रिया

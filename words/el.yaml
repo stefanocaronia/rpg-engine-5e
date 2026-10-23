@@ -192,12 +192,10 @@ fields:
   attuned: Εναρμονισμένο
   days-without-food: Ημέρες χωρίς τροφή
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: χωρίς τραύματα
   hurt: τραυματίστηκε
   bloodied: αιμορραγεί
   down: έπεσε
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Σταθεροποιημένη κατάσταση
   Successes: Επιτυχίες
   Failures: Αποτυχίες
@@ -208,6 +206,11 @@ words:
   Comfortable: Άνετος
   Wealthy: Πλούσιος
   Aristocratic: Αριστοκρατικός
+  cp: χαλ
+  sp: αρ
+  ep: ηλ
+  gp: χρ
+  pp: πλ
   action: Ενέργεια
   bonus action: Επιπλέον ενέργεια
   reaction: Αντίδραση

@@ -243,6 +243,12 @@ words:
   Comfortable: Agiato
   Wealthy: Ricco
   Aristocratic: Aristocratico
+  # The coins, as the Italian SRD abbreviates them (playtest 19)
+  cp: mr
+  sp: ma
+  ep: me
+  gp: mo
+  pp: mp
   # The uses of a turn (D-453)
   action: Azione
   bonus action: Azione bonus

@@ -192,12 +192,10 @@ fields:
   attuned: afgestemd
   days-without-food: dagen zonder voedsel
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: ongedeerd
   hurt: gewond
   bloodied: bloedend
   down: neergegaan
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Stabiel
   Successes: Successen
   Failures: Mislukkingen
@@ -208,6 +206,11 @@ words:
   Comfortable: Comfortabel
   Wealthy: Rijk
   Aristocratic: Aristocratisch
+  cp: ks
+  sp: zs
+  ep: es
+  gp: gs
+  pp: ps
   action: actie
   bonus action: bonusactie
   reaction: reactie

@@ -192,12 +192,10 @@ fields:
   attuned: naladěno
   days-without-food: dny bez jídla
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: beze zranění
   hurt: zraněný
   bloodied: krvácející
   down: na zemi
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Stabilní
   Successes: Úspěchy
   Failures: Neúspěchy
@@ -208,6 +206,11 @@ words:
   Comfortable: Pohodlný
   Wealthy: Bohatý
   Aristocratic: Aristokratický
+  cp: md
+  sp: st
+  ep: el
+  gp: zl
+  pp: pl
   action: akce
   bonus action: bonusová akce
   reaction: reakce

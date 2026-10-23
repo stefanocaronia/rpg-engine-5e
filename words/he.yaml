@@ -192,12 +192,10 @@ fields:
   attuned: מכוון
   days-without-food: ימים ללא אוכל
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: בלי פגע
   hurt: פצוע
   bloodied: מדמם
   down: מוטל
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: יציב
   Successes: הצלחות
   Failures: כישלונות
@@ -208,6 +206,11 @@ words:
   Comfortable: נוח
   Wealthy: עשיר
   Aristocratic: אריסטוקרטי
+  cp: נח׳
+  sp: כס׳
+  ep: אל׳
+  gp: זה׳
+  pp: פל׳
   action: פעולה
   bonus action: פעולת בונוס
   reaction: תגובה

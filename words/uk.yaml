@@ -76,6 +76,19 @@ fields:
   ac: КБ
   initiative: ініціатива
   speed: швидкість
+  walking: ходьба
+  flying: політ
+  swimming: плавання
+  climbing: лазіння
+  burrowing: риття
+  long-jump: стрибок у довжину
+  high-jump: стрибок у висоту
+  push-drag: штовхання та перетягування
+  hold-breath: затримка дихання
+  lifestyle: спосіб життя
+  legendary-actions: легендарні дії
+  legendary-resistance: легендарна стійкість
+  invocations: закликання
   equipped: екіпіровано
   hp-base: ПЗ з кубиків
   hp: ПЗ
@@ -107,6 +120,7 @@ fields:
   languages: мови
   features: особливості
   fighting-styles: стилі бою
+  extra-attacks: додаткові атаки
   attack: атака
   damage-roll: кидок шкоди
   caster-level: рівень заклинача
@@ -178,15 +192,30 @@ fields:
   attuned: налаштовано
   days-without-food: днів без їжі
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: неушкоджений
   hurt: поранений
   bloodied: закривавлений
   down: повалений
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: Стабільно
   Successes: Успіхи
   Failures: Невдачі
+  Wretched: Жалюгідний
+  Squalid: Убогий
+  Poor: Бідний
+  Modest: Скромний
+  Comfortable: Комфортний
+  Wealthy: Заможний
+  Aristocratic: Аристократичний
+  cp: мм
+  sp: см
+  ep: ем
+  gp: зм
+  pp: пм
+  action: дія
+  bonus action: бонусна дія
+  reaction: реакція
+  sneak attack: підступна атака
+  legendary action: легендарна дія
   Dragonborn: Драконороджений
   Dwarf: Дварф
   Hill Dwarf: Пагорбовий дварф

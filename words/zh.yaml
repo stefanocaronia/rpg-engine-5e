@@ -192,12 +192,10 @@ fields:
   attuned: 已调谐
   days-without-food: 无食天数
 words:
-  # A foe's hit points as the player hears them (D-238), ours
   unhurt: 未受伤
   hurt: 受伤
   bloodied: 重伤流血
   down: 倒下
-  # The dying point (p. 98), as the dashboard says it (D-461)
   Stable: 稳定
   Successes: 成功
   Failures: 失败
@@ -208,6 +206,11 @@ words:
   Comfortable: 舒适
   Wealthy: 富裕
   Aristocratic: 贵族
+  cp: 铜币
+  sp: 银币
+  ep: 银金币
+  gp: 金币
+  pp: 铂金币
   action: 动作
   bonus action: 附赠动作
   reaction: 反应
