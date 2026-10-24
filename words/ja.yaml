@@ -470,6 +470,17 @@ words:
   until long rest: ロングレストまで
   until short rest: ショートレストまで
   difficult terrain: 移動困難な地形
+  Armor: 鎧
+  Armor without proficiency: 習熟のない鎧
+  Encumbered: 荷重
+  Heavily encumbered: 重荷重
+  Over the limit: 限界超過
+  Torch: 松明
+  Candle: ロウソク
+  Lamp: ランプ
+  Hooded Lantern: シャッター付きランタン
+  Bullseye Lantern: ブルズアイ・ランタン
+  Oil: 油
 names:
   str: 筋力
   str-mod: 筋力

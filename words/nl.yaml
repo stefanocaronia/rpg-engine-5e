@@ -470,6 +470,17 @@ words:
   until long rest: tot de lange rust
   until short rest: tot de korte rust
   difficult terrain: moeilijk terrein
+  Armor: Pantser
+  Armor without proficiency: Pantser zonder vaardigheid
+  Encumbered: Belast
+  Heavily encumbered: Zwaar belast
+  Over the limit: Over de limiet
+  Torch: Fakkel
+  Candle: Kaars
+  Lamp: Lamp
+  Hooded Lantern: Blindlantaarn
+  Bullseye Lantern: Bullseye-lantaarn
+  Oil: Olie
 names:
   str: Kracht
   str-mod: Kracht

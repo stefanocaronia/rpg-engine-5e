@@ -470,6 +470,17 @@ words:
   until long rest: עד מנוחה ארוכה
   until short rest: עד מנוחה קצרה
   difficult terrain: שטח קשה
+  Armor: שריון
+  Armor without proficiency: שריון ללא מיומנות
+  Encumbered: מועמס
+  Heavily encumbered: מועמס מאוד
+  Over the limit: מעבר לגבול הנשיאה
+  Torch: לפיד
+  Candle: נר
+  Lamp: מנורה
+  Hooded Lantern: פנס עם כיסוי
+  Bullseye Lantern: פנס ממוקד
+  Oil: שמן
 names:
   str: כוח
   str-mod: כוח

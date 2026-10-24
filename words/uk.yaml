@@ -470,6 +470,17 @@ words:
   until long rest: до тривалого відпочинку
   until short rest: до короткого відпочинку
   difficult terrain: складна місцевість
+  Armor: Обладунки
+  Armor without proficiency: Обладунки без володіння
+  Encumbered: Обтяжений
+  Heavily encumbered: Сильно обтяжений
+  Over the limit: Понад ліміт навантаження
+  Torch: Смолоскип
+  Candle: Свічка
+  Lamp: Лампа
+  Hooded Lantern: Ліхтар із заслінкою
+  Bullseye Lantern: Направлений ліхтар
+  Oil: Олива
 names:
   str: Сила
   str-mod: Сила

@@ -470,6 +470,17 @@ words:
   until long rest: 直到长休
   until short rest: 直到短休
   difficult terrain: 困难地形
+  Armor: 护甲
+  Armor without proficiency: 未熟练护甲
+  Encumbered: 负重
+  Heavily encumbered: 重度负重
+  Over the limit: 超出负重上限
+  Torch: 火把
+  Candle: 蜡烛
+  Lamp: 油灯
+  Hooded Lantern: 遮光提灯
+  Bullseye Lantern: 牛眼提灯
+  Oil: 油
 names:
   str: 力量
   str-mod: 力量

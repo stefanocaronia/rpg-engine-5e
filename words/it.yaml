@@ -528,5 +528,18 @@ words:
   until long rest: fino al riposo lungo  # ours
   until short rest: fino al riposo breve  # ours
   difficult terrain: terreno difficile
+  # Why a roll of the sheet is better or worse, beside it on the dashboard (sheet-odds), and the stages of a load (Variant: Encumbrance, p. 80)
+  Armor: Armatura
+  Armor without proficiency: Armatura senza competenza  # ours
+  Encumbered: Ingombrato
+  Heavily encumbered: Pesantemente ingombrato
+  Over the limit: Oltre la capacità di trasporto  # ours
+  # What burns, lit as an effect, and what a lamp spends (burning)
+  Torch: Torcia
+  Candle: Candela
+  Lamp: Lampada
+  Hooded Lantern: Lanterna schermabile
+  Bullseye Lantern: Lanterna a lente sporgente
+  Oil: Olio
 # "un chierico di 3° livello", as the SRD writes it (p. 16); more classes are joined with " / "
 headline: "{classes} di {level}° livello"

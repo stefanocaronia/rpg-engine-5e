@@ -470,6 +470,17 @@ words:
   until long rest: fram að langri hvíld
   until short rest: fram að stuttri hvíld
   difficult terrain: erfitt landslag
+  Armor: Brynja
+  Armor without proficiency: Brynja án færni
+  Encumbered: Þyngdarhindraður
+  Heavily encumbered: Mjög þyngdarhindraður
+  Over the limit: Yfir burðarmörkum
+  Torch: Kyndill
+  Candle: Kerti
+  Lamp: Lampi
+  Hooded Lantern: Hlífðarlukt
+  Bullseye Lantern: Geislalukt
+  Oil: Olía
 names:
   str: Styrkur
   str-mod: Styrkur

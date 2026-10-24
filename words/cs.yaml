@@ -470,6 +470,17 @@ words:
   until long rest: do dlouhého odpočinku
   until short rest: do krátkého odpočinku
   difficult terrain: obtížný terén
+  Armor: Zbroj
+  Armor without proficiency: Zbroj bez zdatnosti
+  Encumbered: Zatížený
+  Heavily encumbered: Silně zatížený
+  Over the limit: Nad limitem
+  Torch: Pochodeň
+  Candle: Svíčka
+  Lamp: Lampa
+  Hooded Lantern: Zakrytá lucerna
+  Bullseye Lantern: Hledací lucerna
+  Oil: Olej
 names:
   str: Síla
   str-mod: Síla

@@ -470,6 +470,17 @@ words:
   until long rest: uzun dinlenmeye kadar
   until short rest: kısa dinlenmeye kadar
   difficult terrain: zor arazi
+  Armor: Zırh
+  Armor without proficiency: Ustalıksız zırh
+  Encumbered: Yüklü
+  Heavily encumbered: Aşırı yüklü
+  Over the limit: Sınırın üzerinde
+  Torch: Meşale
+  Candle: Mum
+  Lamp: Lamba
+  Hooded Lantern: Kapaklı Fener
+  Bullseye Lantern: Mercekli Fener
+  Oil: Yağ
 names:
   str: Güç
   str-mod: Güç

@@ -470,6 +470,17 @@ words:
   until long rest: 장기 휴식 때까지
   until short rest: 단기 휴식 때까지
   difficult terrain: 험난한 지형
+  Armor: 방어구
+  Armor without proficiency: 숙련 없는 방어구
+  Encumbered: 짐 과중
+  Heavily encumbered: 짐 매우 과중
+  Over the limit: 운반 한도 초과
+  Torch: 횃불
+  Candle: 양초
+  Lamp: 램프
+  Hooded Lantern: 덮개 랜턴
+  Bullseye Lantern: 집광 랜턴
+  Oil: 기름
 names:
   str: 근력
   str-mod: 근력

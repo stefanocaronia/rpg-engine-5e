@@ -470,6 +470,17 @@ words:
   until long rest: pitkään lepoon asti
   until short rest: lyhyeen lepoon asti
   difficult terrain: vaikeakulkuinen maasto
+  Armor: Panssari
+  Armor without proficiency: Panssari ilman taitoa
+  Encumbered: Kuormitettu
+  Heavily encumbered: Raskaasti kuormitettu
+  Over the limit: Kantokyvyn ylittävä
+  Torch: Soihtu
+  Candle: Kynttilä
+  Lamp: Lamppu
+  Hooded Lantern: Peitelyhty
+  Bullseye Lantern: Linssilyhty
+  Oil: Öljy
 names:
   str: Voima
   str-mod: Voima

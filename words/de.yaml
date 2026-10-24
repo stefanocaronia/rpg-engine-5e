@@ -470,6 +470,17 @@ words:
   until long rest: bis zur langen Rast
   until short rest: bis zur kurzen Rast
   difficult terrain: schwieriges Gelände
+  Armor: Rüstung
+  Armor without proficiency: Rüstung ohne Übung
+  Encumbered: Belastet
+  Heavily encumbered: Schwer belastet
+  Over the limit: Über der Traglast
+  Torch: Fackel
+  Candle: Kerze
+  Lamp: Lampe
+  Hooded Lantern: Blendlaterne
+  Bullseye Lantern: Bullaugenlaterne
+  Oil: Öl
 names:
   str: Stärke
   str-mod: Stärke

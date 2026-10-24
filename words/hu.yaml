@@ -470,6 +470,17 @@ words:
   until long rest: a hosszú pihenésig
   until short rest: a rövid pihenésig
   difficult terrain: nehéz terep
+  Armor: Páncél
+  Armor without proficiency: Páncél jártasság nélkül
+  Encumbered: Megterhelt
+  Heavily encumbered: Erősen megterhelt
+  Over the limit: A hordképesség felett
+  Torch: Fáklya
+  Candle: Gyertya
+  Lamp: Lámpa
+  Hooded Lantern: Zárható lámpás
+  Bullseye Lantern: Fénykévés lámpás
+  Oil: Olaj
 names:
   str: Erő
   str-mod: Erő

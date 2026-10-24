@@ -470,6 +470,17 @@ words:
   until long rest: लंबे आराम तक
   until short rest: छोटे आराम तक
   difficult terrain: कठिन भूमि
+  Armor: कवच
+  Armor without proficiency: निपुणता के बिना कवच
+  Encumbered: बोझिल
+  Heavily encumbered: अत्यधिक बोझिल
+  Over the limit: सीमा से अधिक
+  Torch: मशाल
+  Candle: मोमबत्ती
+  Lamp: दीपक
+  Hooded Lantern: ढकी हुई लालटेन
+  Bullseye Lantern: बुल्सआई लालटेन
+  Oil: तेल
 names:
   str: शक्ति
   str-mod: शक्ति
