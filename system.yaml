@@ -39,6 +39,7 @@ travel:
   rule: Travel Pace
   beyond: Forced March
   terrain: {difficult: 1/2}
+  vehicles: {category: drawn vehicle}
   kinds:
     road: {}
     path: {}
