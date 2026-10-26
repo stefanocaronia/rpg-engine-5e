@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Blendlaterne
   Bullseye Lantern: Bullaugenlaterne
   Oil: Öl
+  "Cast": "Zaubern"
+  "Cast {item}": "{item} zaubern"
+  "I cast {item}.": "Ich zaubere {item}."
+  "I cast {item} on {target}.": "Ich zaubere {item} auf {target}."
+  "I cast {item} at {square}.": "Ich zaubere {item} auf Feld {square}."
+  "I cast {item} on myself.": "Ich zaubere {item} auf mich selbst."
+  "Prepare": "Vorbereiten"
+  "Prepare {item}": "{item} vorbereiten"
+  "I prepare {item}.": "Ich bereite {item} vor."
 names:
   str: Stärke
   str-mod: Stärke

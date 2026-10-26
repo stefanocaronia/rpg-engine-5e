@@ -502,6 +502,15 @@ words:
   Hooded Lantern: فانوس مغطى
   Bullseye Lantern: فانوس مركّز الشعاع
   Oil: زيت
+  "Cast": "إلقاء"
+  "Cast {item}": "إلقاء {item}"
+  "I cast {item}.": "ألقي {item}."
+  "I cast {item} on {target}.": "ألقي {item} على {target}."
+  "I cast {item} at {square}.": "ألقي {item} على المربع {square}."
+  "I cast {item} on myself.": "ألقي {item} على نفسي."
+  "Prepare": "تحضير"
+  "Prepare {item}": "تحضير {item}"
+  "I prepare {item}.": "أحضّر {item}."
 names:
   str: القوة
   str-mod: القوة

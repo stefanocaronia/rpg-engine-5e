@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Kapaklı Fener
   Bullseye Lantern: Mercekli Fener
   Oil: Yağ
+  "Cast": "Büyü yap"
+  "Cast {item}": "{item} büyüsünü yap"
+  "I cast {item}.": "{item} büyüsünü yapıyorum."
+  "I cast {item} on {target}.": "{item} büyüsünü {target} hedefine yapıyorum."
+  "I cast {item} at {square}.": "{item} büyüsünü {square} karesine yapıyorum."
+  "I cast {item} on myself.": "{item} büyüsünü kendime yapıyorum."
+  "Prepare": "Hazırla"
+  "Prepare {item}": "{item} hazırla"
+  "I prepare {item}.": "{item} hazırlıyorum."
 names:
   str: Güç
   str-mod: Güç

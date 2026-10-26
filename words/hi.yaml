@@ -502,6 +502,15 @@ words:
   Hooded Lantern: ढकी हुई लालटेन
   Bullseye Lantern: बुल्सआई लालटेन
   Oil: तेल
+  "Cast": "चलाएँ"
+  "Cast {item}": "{item} चलाएँ"
+  "I cast {item}.": "मैं {item} चलाता हूँ।"
+  "I cast {item} on {target}.": "मैं {target} पर {item} चलाता हूँ।"
+  "I cast {item} at {square}.": "मैं {square} पर {item} चलाता हूँ।"
+  "I cast {item} on myself.": "मैं खुद पर {item} चलाता हूँ।"
+  "Prepare": "तैयार करें"
+  "Prepare {item}": "{item} तैयार करें"
+  "I prepare {item}.": "मैं {item} तैयार करता हूँ।"
 names:
   str: शक्ति
   str-mod: शक्ति

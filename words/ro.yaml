@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Felinar cu capac
   Bullseye Lantern: Felinar cu fascicul
   Oil: Ulei
+  "Cast": "Lansează"
+  "Cast {item}": "Lansează {item}"
+  "I cast {item}.": "Lansez {item}."
+  "I cast {item} on {target}.": "Lansez {item} asupra lui {target}."
+  "I cast {item} at {square}.": "Lansez {item} în căsuța {square}."
+  "I cast {item} on myself.": "Lansez {item} asupra mea."
+  "Prepare": "Pregătește"
+  "Prepare {item}": "Pregătește {item}"
+  "I prepare {item}.": "Pregătesc {item}."
 names:
   str: Forță
   str-mod: Forță

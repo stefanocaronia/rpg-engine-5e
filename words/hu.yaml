@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Zárható lámpás
   Bullseye Lantern: Fénykévés lámpás
   Oil: Olaj
+  "Cast": "Elsütés"
+  "Cast {item}": "Elsütés: {item}"
+  "I cast {item}.": "Elsütöm: {item}."
+  "I cast {item} on {target}.": "Elsütöm: {item}, cél: {target}."
+  "I cast {item} at {square}.": "Elsütöm: {item}, cél: {square} mező."
+  "I cast {item} on myself.": "Elsütöm: {item}, cél: én magam."
+  "Prepare": "Előkészítés"
+  "Prepare {item}": "Előkészítés: {item}"
+  "I prepare {item}.": "Előkészítem: {item}."
 names:
   str: Erő
   str-mod: Erő

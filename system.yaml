@@ -23,6 +23,8 @@ load:
   limit: ["str * 15 * table(carry-by-size, size)", str * 15]
   coins: 50
   weightless: extradimensional
+  # Arrows (20) and the like: cost and weight are the bundle's, a count is in pieces (p. 69, STK-2).
+  bundle: bundle
   stages:
     - {name: Encumbered, when: "has(rigor, simulation) * ceil(best(load, 0) - 5 * best(str, 0))"}
     - {name: Heavily encumbered, when: "has(rigor, simulation) * ceil(best(load, 0) - 10 * best(str, 0))"}
@@ -133,6 +135,16 @@ sheet-actions:
   features: [use]
   inventory: [use, equip]
   equipped: [use, unequip]
+# Its own verbs beside the engine's (D-514), in English: its words translate them.
+sheet-verbs:
+  cast:
+    label: Cast
+    title: "Cast {item}"
+    says: "I cast {item}."
+    says-on: "I cast {item} on {target}."
+    says-at: "I cast {item} at {square}."
+    says-self: "I cast {item} on myself."
+  prepare: {label: Prepare, title: "Prepare {item}", says: "I prepare {item}."}
 # The line under a character's name on the dashboard (D-288).
 sheet-headline: "Level {level} {classes}"
 # The icon of each group on the dashboard (D-284): the d of an SVG path on a grid of 24, drawn as a line; drawn for rpg-engine.

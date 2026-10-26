@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Lanterne sourde
   Bullseye Lantern: Lanterne à capuchon
   Oil: Huile
+  "Cast": "Lancer"
+  "Cast {item}": "Lancer {item}"
+  "I cast {item}.": "Je lance {item}."
+  "I cast {item} on {target}.": "Je lance {item} sur {target}."
+  "I cast {item} at {square}.": "Je lance {item} sur la case {square}."
+  "I cast {item} on myself.": "Je lance {item} sur moi-même."
+  "Prepare": "Préparer"
+  "Prepare {item}": "Préparer {item}"
+  "I prepare {item}.": "Je prépare {item}."
 names:
   str: Force
   str-mod: Force

@@ -502,6 +502,15 @@ words:
   Hooded Lantern: 덮개 랜턴
   Bullseye Lantern: 집광 랜턴
   Oil: 기름
+  "Cast": "시전"
+  "Cast {item}": "{item} 시전"
+  "I cast {item}.": "{item}을(를) 시전한다."
+  "I cast {item} on {target}.": "{target}에게 {item}을(를) 시전한다."
+  "I cast {item} at {square}.": "{square} 칸에 {item}을(를) 시전한다."
+  "I cast {item} on myself.": "나 자신에게 {item}을(를) 시전한다."
+  "Prepare": "준비"
+  "Prepare {item}": "{item} 준비"
+  "I prepare {item}.": "{item}을(를) 준비한다."
 names:
   str: 근력
   str-mod: 근력

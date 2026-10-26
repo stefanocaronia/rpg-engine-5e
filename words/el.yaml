@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Φανάρι με κάλυμμα
   Bullseye Lantern: Φανάρι με εστιασμένη δέσμη
   Oil: Λάδι
+  "Cast": "Ρίξε"
+  "Cast {item}": "Ρίξε {item}"
+  "I cast {item}.": "Ρίχνω {item}."
+  "I cast {item} on {target}.": "Ρίχνω {item} σε {target}."
+  "I cast {item} at {square}.": "Ρίχνω {item} στο {square}."
+  "I cast {item} on myself.": "Ρίχνω {item} στον εαυτό μου."
+  "Prepare": "Ετοίμασε"
+  "Prepare {item}": "Ετοίμασε {item}"
+  "I prepare {item}.": "Ετοιμάζω {item}."
 names:
   str: Δύναμη
   str-mod: Δύναμη

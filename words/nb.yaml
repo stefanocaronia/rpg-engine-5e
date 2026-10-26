@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Blendlykt
   Bullseye Lantern: Fokuslykt
   Oil: Olje
+  "Cast": "Kast"
+  "Cast {item}": "Kast {item}"
+  "I cast {item}.": "Jeg kaster {item}."
+  "I cast {item} on {target}.": "Jeg kaster {item} på {target}."
+  "I cast {item} at {square}.": "Jeg kaster {item} mot rute {square}."
+  "I cast {item} on myself.": "Jeg kaster {item} på meg selv."
+  "Prepare": "Forbered"
+  "Prepare {item}": "Forbered {item}"
+  "I prepare {item}.": "Jeg forbereder {item}."
 names:
   str: Styrke
   str-mod: Styrke

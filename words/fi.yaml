@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Peitelyhty
   Bullseye Lantern: Linssilyhty
   Oil: Öljy
+  "Cast": "Loitsi"
+  "Cast {item}": "Lausu loitsu: {item}"
+  "I cast {item}.": "Lausun loitsun {item}."
+  "I cast {item} on {target}.": "Lausun loitsun {item} kohteelle {target}."
+  "I cast {item} at {square}.": "Lausun loitsun {item} ruutuun {square}."
+  "I cast {item} on myself.": "Lausun loitsun {item} itselleni."
+  "Prepare": "Valmistele"
+  "Prepare {item}": "Valmistele: {item}"
+  "I prepare {item}.": "Valmistelen: {item}."
 names:
   str: Voima
   str-mod: Voima

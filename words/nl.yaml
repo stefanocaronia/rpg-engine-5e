@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Blindlantaarn
   Bullseye Lantern: Bullseye-lantaarn
   Oil: Olie
+  "Cast": "Werpen"
+  "Cast {item}": "{item} werpen"
+  "I cast {item}.": "Ik werp {item}."
+  "I cast {item} on {target}.": "Ik werp {item} op {target}."
+  "I cast {item} at {square}.": "Ik werp {item} op vakje {square}."
+  "I cast {item} on myself.": "Ik werp {item} op mezelf."
+  "Prepare": "Voorbereiden"
+  "Prepare {item}": "{item} voorbereiden"
+  "I prepare {item}.": "Ik bereid {item} voor."
 names:
   str: Kracht
   str-mod: Kracht

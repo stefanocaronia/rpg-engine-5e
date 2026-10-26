@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Hlífðarlukt
   Bullseye Lantern: Geislalukt
   Oil: Olía
+  "Cast": "Kasta"
+  "Cast {item}": "Kasta {item}"
+  "I cast {item}.": "Ég kasta {item}."
+  "I cast {item} on {target}.": "Ég kasta {item} á {target}."
+  "I cast {item} at {square}.": "Ég kasta {item} á reit {square}."
+  "I cast {item} on myself.": "Ég kasta {item} á mig sjálft."
+  "Prepare": "Undirbúðu"
+  "Prepare {item}": "Undirbúðu {item}"
+  "I prepare {item}.": "Ég undirbý {item}."
 names:
   str: Styrkur
   str-mod: Styrkur

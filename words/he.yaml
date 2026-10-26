@@ -502,6 +502,15 @@ words:
   Hooded Lantern: פנס עם כיסוי
   Bullseye Lantern: פנס ממוקד
   Oil: שמן
+  "Cast": "להטיל"
+  "Cast {item}": "להטיל {item}"
+  "I cast {item}.": "אטיל {item}."
+  "I cast {item} on {target}.": "אטיל {item} על {target}."
+  "I cast {item} at {square}.": "אטיל {item} על משבצת {square}."
+  "I cast {item} on myself.": "אטיל {item} על עצמי."
+  "Prepare": "להכין"
+  "Prepare {item}": "להכין {item}"
+  "I prepare {item}.": "אכין את {item}."
 names:
   str: כוח
   str-mod: כוח

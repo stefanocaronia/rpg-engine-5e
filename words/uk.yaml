@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Ліхтар із заслінкою
   Bullseye Lantern: Направлений ліхтар
   Oil: Олива
+  "Cast": "Накласти"
+  "Cast {item}": "Накласти {item}"
+  "I cast {item}.": "Накладаю {item}."
+  "I cast {item} on {target}.": "Накладаю {item} на {target}."
+  "I cast {item} at {square}.": "Накладаю {item} на клітинку {square}."
+  "I cast {item} on myself.": "Накладаю {item} на себе."
+  "Prepare": "Підготувати"
+  "Prepare {item}": "Підготувати {item}"
+  "I prepare {item}.": "Готую {item}."
 names:
   str: Сила
   str-mod: Сила

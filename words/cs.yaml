@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Zakrytá lucerna
   Bullseye Lantern: Hledací lucerna
   Oil: Olej
+  "Cast": "Seslat"
+  "Cast {item}": "Seslat {item}"
+  "I cast {item}.": "Sesílám {item}."
+  "I cast {item} on {target}.": "Sesílám {item} na {target}."
+  "I cast {item} at {square}.": "Sesílám {item} na políčko {square}."
+  "I cast {item} on myself.": "Sesílám {item} na sebe."
+  "Prepare": "Připravit"
+  "Prepare {item}": "Připravit {item}"
+  "I prepare {item}.": "Připravuji {item}."
 names:
   str: Síla
   str-mod: Síla

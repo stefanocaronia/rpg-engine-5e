@@ -502,6 +502,15 @@ words:
   Hooded Lantern: 遮光提灯
   Bullseye Lantern: 牛眼提灯
   Oil: 油
+  "Cast": "施放"
+  "Cast {item}": "施放{item}"
+  "I cast {item}.": "我施放{item}。"
+  "I cast {item} on {target}.": "我对{target}施放{item}。"
+  "I cast {item} at {square}.": "我向{square}格子施放{item}。"
+  "I cast {item} on myself.": "我对自己施放{item}。"
+  "Prepare": "准备"
+  "Prepare {item}": "准备{item}"
+  "I prepare {item}.": "我准备{item}。"
 names:
   str: 力量
   str-mod: 力量

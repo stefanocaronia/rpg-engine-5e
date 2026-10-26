@@ -562,5 +562,14 @@ words:
   Hooded Lantern: Lanterna schermabile
   Bullseye Lantern: Lanterna a lente sporgente
   Oil: Olio
+  "Cast": "Lancia"
+  "Cast {item}": "Lancia {item}"
+  "I cast {item}.": "Lancio {item}."
+  "I cast {item} on {target}.": "Lancio {item} su {target}."
+  "I cast {item} at {square}.": "Lancio {item} verso {square}."
+  "I cast {item} on myself.": "Lancio {item} su di me."
+  "Prepare": "Prepara"
+  "Prepare {item}": "Prepara {item}"
+  "I prepare {item}.": "Preparo {item}."
 # "un chierico di 3° livello", as the SRD writes it (p. 16); more classes are joined with " / "
 headline: "{classes} di {level}° livello"

@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Linterna sorda
   Bullseye Lantern: Linterna de ojo de buey
   Oil: Aceite
+  "Cast": "Lanzar"
+  "Cast {item}": "Lanzar {item}"
+  "I cast {item}.": "Lanzo {item}."
+  "I cast {item} on {target}.": "Lanzo {item} sobre {target}."
+  "I cast {item} at {square}.": "Lanzo {item} a la casilla {square}."
+  "I cast {item} on myself.": "Lanzo {item} sobre mí."
+  "Prepare": "Preparar"
+  "Prepare {item}": "Preparar {item}"
+  "I prepare {item}.": "Preparo {item}."
 names:
   str: Fuerza
   str-mod: Fuerza

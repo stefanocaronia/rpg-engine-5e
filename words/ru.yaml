@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Закрытый фонарь
   Bullseye Lantern: Направленный фонарь
   Oil: Масло
+  "Cast": "Колдовать"
+  "Cast {item}": "Колдовать: {item}"
+  "I cast {item}.": "Колдую {item}."
+  "I cast {item} on {target}.": "Колдую {item} на {target}."
+  "I cast {item} at {square}.": "Колдую {item} на клетку {square}."
+  "I cast {item} on myself.": "Колдую {item} на себя."
+  "Prepare": "Подготовить"
+  "Prepare {item}": "Подготовить: {item}"
+  "I prepare {item}.": "Готовлю {item}."
 names:
   str: Сила
   str-mod: Сила

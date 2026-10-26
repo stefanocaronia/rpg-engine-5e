@@ -502,6 +502,15 @@ words:
   Hooded Lantern: Latarnia zasłaniana
   Bullseye Lantern: Latarnia soczewkowa
   Oil: Olej
+  "Cast": "Rzuć"
+  "Cast {item}": "Rzuć: {item}"
+  "I cast {item}.": "Rzucam: {item}."
+  "I cast {item} on {target}.": "Rzucam: {item}, cel: {target}."
+  "I cast {item} at {square}.": "Rzucam: {item} na pole {square}."
+  "I cast {item} on myself.": "Rzucam: {item} na siebie."
+  "Prepare": "Przygotuj"
+  "Prepare {item}": "Przygotuj: {item}"
+  "I prepare {item}.": "Przygotowuję: {item}."
 names:
   str: Siła
   str-mod: Siła

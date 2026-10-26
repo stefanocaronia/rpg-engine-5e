@@ -502,6 +502,15 @@ words:
   Hooded Lantern: シャッター付きランタン
   Bullseye Lantern: ブルズアイ・ランタン
   Oil: 油
+  "Cast": "唱える"
+  "Cast {item}": "{item}を唱える"
+  "I cast {item}.": "{item}を唱えます。"
+  "I cast {item} on {target}.": "{target}に{item}を唱えます。"
+  "I cast {item} at {square}.": "{square}のマスに{item}を唱えます。"
+  "I cast {item} on myself.": "自分自身に{item}を唱えます。"
+  "Prepare": "準備"
+  "Prepare {item}": "{item}を準備"
+  "I prepare {item}.": "{item}を準備します。"
 names:
   str: 筋力
   str-mod: 筋力
