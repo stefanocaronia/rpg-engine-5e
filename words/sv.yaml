@@ -199,6 +199,27 @@ words:
   Stable: Stabil
   Successes: Lyckade
   Failures: Misslyckade
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Döende"
+  "Dead": "Död"
+  "Success": "Lyckat"
+  "Failure": "Misslyckande"
+  "Two failures": "Två misslyckanden"
+  "{count} failures": "{count} misslyckanden"
+  "Back up with {value}": "På benen med {value}"
+  "{value} or more: a success": "{value} eller mer: lyckat"
+  "{face}: two failures": "{face}: två misslyckanden"
+  "{face}: {count} failures": "{face}: {count} misslyckanden"
+  "{face}: back up with {value}": "{face}: på benen med {value}"
+  "at the maximum": "på max"
+  "None left": "Inga kvar"
+  "One die at a time: stop when you like.": "En tärning i taget: sluta när du vill."
+  "Dice rolled": "Tärningar slagna"
+  "I spend none": "Jag använder inga"
+  "Done": "Klar"
+  "Left: {count}": "Kvar: {count}"
+  "{value} of {max}": "{value} av {max}"
+  "Roll": "Slå"
   Wretched: Eländig
   Squalid: Smutsig
   Poor: Fattig

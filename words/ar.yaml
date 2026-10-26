@@ -199,6 +199,27 @@ words:
   Stable: مستقر
   Successes: النجاحات
   Failures: الإخفاقات
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "يحتضر"
+  "Dead": "ميت"
+  "Success": "نجاح"
+  "Failure": "إخفاق"
+  "Two failures": "إخفاقان"
+  "{count} failures": "{count} إخفاقات"
+  "Back up with {value}": "عودة إلى الوقوف بـ {value}"
+  "{value} or more: a success": "{value} أو أكثر: نجاح"
+  "{face}: two failures": "{face}: إخفاقان"
+  "{face}: {count} failures": "{face}: {count} إخفاقات"
+  "{face}: back up with {value}": "{face}: العودة إلى الوقوف بـ {value}"
+  "at the maximum": "عند الحد الأقصى"
+  "None left": "نفدت"
+  "One die at a time: stop when you like.": "حجر نرد واحد في كل مرة: توقف متى شئت."
+  "Dice rolled": "النرد المرميّ"
+  "I spend none": "لن أنفق أيًا منها"
+  "Done": "تم"
+  "Left: {count}": "المتبقي: {count}"
+  "{value} of {max}": "{value} من {max}"
+  "Roll": "رمي"
   Wretched: بائس
   Squalid: متهالك
   Poor: فقير

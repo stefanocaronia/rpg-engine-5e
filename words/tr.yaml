@@ -199,6 +199,27 @@ words:
   Stable: Stabil
   Successes: Başarılar
   Failures: Başarısızlıklar
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Can çekişiyor"
+  "Dead": "Ölü"
+  "Success": "Başarı"
+  "Failure": "Başarısızlık"
+  "Two failures": "İki başarısızlık"
+  "{count} failures": "{count} başarısızlık"
+  "Back up with {value}": "{value} ile ayakta"
+  "{value} or more: a success": "{value} veya üstü: başarı"
+  "{face}: two failures": "{face}: iki başarısızlık"
+  "{face}: {count} failures": "{face}: {count} başarısızlık"
+  "{face}: back up with {value}": "{face}: {value} ile ayağa kalkış"
+  "at the maximum": "maksimumda"
+  "None left": "Kalmadı"
+  "One die at a time: stop when you like.": "Her seferinde tek zar: istediğin zaman dur."
+  "Dice rolled": "Atılan zarlar"
+  "I spend none": "Hiç harcamıyorum"
+  "Done": "Bitti"
+  "Left: {count}": "Kalan: {count}"
+  "{value} of {max}": "{value} / {max}"
+  "Roll": "At"
   Wretched: Sefil
   Squalid: Pejmürde
   Poor: Yoksul

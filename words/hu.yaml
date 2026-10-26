@@ -199,6 +199,27 @@ words:
   Stable: Stabil
   Successes: Sikerek
   Failures: Kudarcok
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Haldokló"
+  "Dead": "Halott"
+  "Success": "Siker"
+  "Failure": "Kudarc"
+  "Two failures": "Két kudarc"
+  "{count} failures": "{count} kudarc"
+  "Back up with {value}": "Talpon ({value})"
+  "{value} or more: a success": "{value} vagy több: siker"
+  "{face}: two failures": "{face}: két kudarc"
+  "{face}: {count} failures": "{face}: {count} kudarc"
+  "{face}: back up with {value}": "{face}: talpon ({value})"
+  "at the maximum": "a maximumon"
+  "None left": "Elfogyott"
+  "One die at a time: stop when you like.": "Egyszerre egy kocka: akkor hagyd abba, amikor akarod."
+  "Dice rolled": "Elvégzett dobások"
+  "I spend none": "Nem költök el egyet sem"
+  "Done": "Kész"
+  "Left: {count}": "Maradt: {count}"
+  "{value} of {max}": "{value}/{max}"
+  "Roll": "Dobás"
   Wretched: Nyomorult
   Squalid: Lerobbant
   Poor: Szegényes

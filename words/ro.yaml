@@ -199,6 +199,27 @@ words:
   Stable: Stabil
   Successes: Reușite
   Failures: Eșecuri
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Pe moarte"
+  "Dead": "Mort"
+  "Success": "Reușită"
+  "Failure": "Eșec"
+  "Two failures": "Două eșecuri"
+  "{count} failures": "{count} eșecuri"
+  "Back up with {value}": "Ridicat cu {value}"
+  "{value} or more: a success": "{value} sau mai mult: reușită"
+  "{face}: two failures": "{face}: două eșecuri"
+  "{face}: {count} failures": "{face}: {count} eșecuri"
+  "{face}: back up with {value}": "{face}: te ridici cu {value}"
+  "at the maximum": "la maximum"
+  "None left": "Epuizate"
+  "One die at a time: stop when you like.": "Un zar pe rând: oprește-te când vrei."
+  "Dice rolled": "Zaruri aruncate"
+  "I spend none": "Nu consum niciunul"
+  "Done": "Gata"
+  "Left: {count}": "Rămase: {count}"
+  "{value} of {max}": "{value} din {max}"
+  "Roll": "Aruncă"
   Wretched: Mizerabil
   Squalid: Sordid
   Poor: Sărac

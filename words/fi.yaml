@@ -199,6 +199,27 @@ words:
   Stable: Vakaa
   Successes: Onnistumiset
   Failures: Epäonnistumiset
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Kuolemassa"
+  "Dead": "Kuollut"
+  "Success": "Onnistuminen"
+  "Failure": "Epäonnistuminen"
+  "Two failures": "Kaksi epäonnistumista"
+  "{count} failures": "{count} epäonnistumista"
+  "Back up with {value}": "Pystyssä arvolla {value}"
+  "{value} or more: a success": "{value} tai enemmän: onnistuminen"
+  "{face}: two failures": "{face}: kaksi epäonnistumista"
+  "{face}: {count} failures": "{face}: {count} epäonnistumista"
+  "{face}: back up with {value}": "{face}: pystyyn arvolla {value}"
+  "at the maximum": "enimmäismäärässä"
+  "None left": "Ei yhtään jäljellä"
+  "One die at a time: stop when you like.": "Yksi noppa kerrallaan: lopeta, kun haluat."
+  "Dice rolled": "Heitetyt nopat"
+  "I spend none": "En käytä yhtään"
+  "Done": "Valmis"
+  "Left: {count}": "Jäljellä: {count}"
+  "{value} of {max}": "{value}/{max}"
+  "Roll": "Heitä"
   Wretched: Viheliäinen
   Squalid: Surkea
   Poor: Köyhä

@@ -199,6 +199,27 @@ words:
   Stable: Stabiel
   Successes: Successen
   Failures: Mislukkingen
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Stervend"
+  "Dead": "Dood"
+  "Success": "Succes"
+  "Failure": "Mislukking"
+  "Two failures": "Twee mislukkingen"
+  "{count} failures": "{count} mislukkingen"
+  "Back up with {value}": "Weer op de been met {value}"
+  "{value} or more: a success": "{value} of meer: een succes"
+  "{face}: two failures": "{face}: twee mislukkingen"
+  "{face}: {count} failures": "{face}: {count} mislukkingen"
+  "{face}: back up with {value}": "{face}: weer op de been met {value}"
+  "at the maximum": "op het maximum"
+  "None left": "Geen meer over"
+  "One die at a time: stop when you like.": "Eén dobbelsteen tegelijk: stop wanneer je wilt."
+  "Dice rolled": "Gegooide dobbelstenen"
+  "I spend none": "Ik besteed er geen"
+  "Done": "Klaar"
+  "Left: {count}": "Over: {count}"
+  "{value} of {max}": "{value} van {max}"
+  "Roll": "Gooien"
   Wretched: Ellendig
   Squalid: Haveloos
   Poor: Arm

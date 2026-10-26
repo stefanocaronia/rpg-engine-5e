@@ -199,6 +199,27 @@ words:
   Stable: יציב
   Successes: הצלחות
   Failures: כישלונות
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "גוסס"
+  "Dead": "מת"
+  "Success": "הצלחה"
+  "Failure": "כישלון"
+  "Two failures": "שני כישלונות"
+  "{count} failures": "{count} כישלונות"
+  "Back up with {value}": "חזרה לעמידה עם {value}"
+  "{value} or more: a success": "{value} ומעלה: הצלחה"
+  "{face}: two failures": "{face}: שני כישלונות"
+  "{face}: {count} failures": "{face}: {count} כישלונות"
+  "{face}: back up with {value}": "{face}: חוזרים לעמידה עם {value}"
+  "at the maximum": "במקסימום"
+  "None left": "לא נותרו"
+  "One die at a time: stop when you like.": "קובייה אחת בכל פעם: אפשר לעצור מתי שרוצים."
+  "Dice rolled": "קוביות שהוטלו"
+  "I spend none": "בלי להשתמש באף אחת"
+  "Done": "סיום"
+  "Left: {count}": "נותרו: {count}"
+  "{value} of {max}": "{value} מתוך {max}"
+  "Roll": "הטלה"
   Wretched: אומלל
   Squalid: מוזנח
   Poor: עני

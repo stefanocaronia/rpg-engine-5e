@@ -199,6 +199,27 @@ words:
   Stable: Stabil
   Successes: Erfolge
   Failures: Fehlschläge
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Im Sterben"
+  "Dead": "Tot"
+  "Success": "Erfolg"
+  "Failure": "Fehlschlag"
+  "Two failures": "Zwei Fehlschläge"
+  "{count} failures": "{count} Fehlschläge"
+  "Back up with {value}": "Wieder auf den Beinen mit {value}"
+  "{value} or more: a success": "{value} oder mehr: ein Erfolg"
+  "{face}: two failures": "{face}: zwei Fehlschläge"
+  "{face}: {count} failures": "{face}: {count} Fehlschläge"
+  "{face}: back up with {value}": "{face}: wieder auf den Beinen mit {value}"
+  "at the maximum": "am Maximum"
+  "None left": "Keine mehr übrig"
+  "One die at a time: stop when you like.": "Ein Würfel nach dem anderen: Hör auf, wann du willst."
+  "Dice rolled": "Gewürfelte Würfel"
+  "I spend none": "Ich gebe keine aus"
+  "Done": "Fertig"
+  "Left: {count}": "Übrig: {count}"
+  "{value} of {max}": "{value} von {max}"
+  "Roll": "Würfeln"
   Wretched: Elend
   Squalid: Ärmlich
   Poor: Arm

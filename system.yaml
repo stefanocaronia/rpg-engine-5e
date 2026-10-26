@@ -243,8 +243,11 @@ rewards:
   xp: {from: xp-value, overcome: hp 0}
 # The conditions (Appendix PH-A, pp. 358–359): an effect with one of these names shows its rule.
 conditions: [Blinded, Charmed, Deafened, Frightened, Grappled, Incapacitated, Invisible, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned, Unconscious]
-# The drawing of each condition on the dashboard's tokens and in Combat (D-419): the d of an SVG path on a grid of 24, drawn as a line; drawn for rpg-engine.
+# The drawing of each condition on the dashboard's tokens and in Combat (D-419), and of a few frequent effects in their chips (D-516): the d of an SVG path on
+# a grid of 24, drawn as a line; drawn for rpg-engine.
 condition-icons:
+  Bless: "M6.5 4.5a5.5 2 0 1 0 11 0a5.5 2 0 1 0-11 0Z M12 9a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 1 0 0-6.5Z M5.5 21c.7-3 3.3-4.75 6.5-4.75s5.8 1.75 6.5 4.75"
+  Shield of Faith: "M12 3.25 19 5.75V11.25c0 4.6-3 8.1-7 9.5-4-1.4-7-4.9-7-9.5V5.75Z M12 8.5v7 M9 11h6"
   Blinded: "M3 12c2.5-4 5.5-6 9-6s6.5 2 9 6c-2.5 4-5.5 6-9 6s-6.5-2-9-6Z M4.5 19.5l15-15"
   Charmed: "M12 19.5s-7.5-4.6-7.5-9.6a4 4 0 0 1 7.5-2a4 4 0 0 1 7.5 2c0 5-7.5 9.6-7.5 9.6Z"
   Deafened: "M4 9.5h3l4.5-4v13l-4.5-4H4Z M15 9.5l5 5 M20 9.5l-5 5"
@@ -315,12 +318,20 @@ keeping: {counter: hp, conditions: [Incapacitated, Paralyzed, Petrified, Stunned
 # What a fight follows on the dashboard's Combat (D-314): hit points, a foe's told in words, full, more than half, half or less, 0 (D-238); who cannot act
 # (p. 358), never a turn skipped.
 combat: {track: hp, in-words: [unhurt, hurt, bloodied, down], inactive: [Incapacitated, Paralyzed, Petrified, Stunned, Unconscious]}
-# At 0 hit points the death saves, big on the dashboard by their sides (p. 98, D-310, D-314, D-461); what the dying point does is the 5e's code (src/dying.ts, D-448).
-dying:
-  at: hp 0
-  show: {successes: death-successes, failures: death-failures}
-  stable: Stable
-  marks: {successes: Successes, failures: Failures}
+# Down at 0 hit points (p. 98); the death saves, what they do and how the dashboard draws them, are the 5e's code (src/dying.ts, src/page.tsx, D-448, D-516).
+down: {at: hp 0}
+# Its widgets, as an extension's (D-511, D-514), drawn by its page module (src/page.tsx): on each of the party at 0 hit points the word of their state and
+# their death saves, with the line of the heart; the card a death save is asked in, and the card the hit dice of a rest are spent in.
+icons:
+  heartbeat: "M3 12.5h4.5l2-5 3 10 2.5-5H21"
+widgets:
+  dying: {title: Death Saves, icon: heartbeat, place: person}
+  death-save: {title: Death Saving Throw, icon: heartbeat, place: card}
+  hit-dice: {title: Hit Dice, place: card}
+figures:
+  heartbeat: {width: 420, height: 60}
+  death-save: {width: 760, height: 220}
+  hit-dice: {width: 760, height: 220}
 # What cannot be true together, which the engine says to the master (CHK-2, D-473): the death saves and Stable hold only at 0 hit points (p. 98).
 checks:
   - {when: Stable, needs: hp <= 0, say: "{page} is Stable with {hp}: Stable holds only at 0 hit points; effect end {page} Stable."}

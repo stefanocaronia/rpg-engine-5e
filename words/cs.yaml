@@ -199,6 +199,27 @@ words:
   Stable: Stabilní
   Successes: Úspěchy
   Failures: Neúspěchy
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Umírání"
+  "Dead": "Smrt"
+  "Success": "Úspěch"
+  "Failure": "Neúspěch"
+  "Two failures": "Dva neúspěchy"
+  "{count} failures": "Neúspěchy: {count}"
+  "Back up with {value}": "Na nohou s {value}"
+  "{value} or more: a success": "{value} a více: úspěch"
+  "{face}: two failures": "{face}: dva neúspěchy"
+  "{face}: {count} failures": "{face}: neúspěchy: {count}"
+  "{face}: back up with {value}": "{face}: zpět na nohou s {value}"
+  "at the maximum": "na maximu"
+  "None left": "Žádné nezbyly"
+  "One die at a time: stop when you like.": "Jedna kostka po druhé: skonči, kdy chceš."
+  "Dice rolled": "Hozené kostky"
+  "I spend none": "Žádné nevyužiju"
+  "Done": "Hotovo"
+  "Left: {count}": "Zbývá: {count}"
+  "{value} of {max}": "{value} z {max}"
+  "Roll": "Hodit"
   Wretched: Ubohý
   Squalid: Žebrácký
   Poor: Chudý

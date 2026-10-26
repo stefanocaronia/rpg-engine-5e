@@ -199,6 +199,27 @@ words:
   Stable: Σταθεροποιημένη κατάσταση
   Successes: Επιτυχίες
   Failures: Αποτυχίες
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Ετοιμοθάνατο"
+  "Dead": "Νεκρό"
+  "Success": "Επιτυχία"
+  "Failure": "Αποτυχία"
+  "Two failures": "Δύο αποτυχίες"
+  "{count} failures": "{count} αποτυχίες"
+  "Back up with {value}": "Ανάκτηση με {value}"
+  "{value} or more: a success": "{value} ή περισσότερο: επιτυχία"
+  "{face}: two failures": "{face}: δύο αποτυχίες"
+  "{face}: {count} failures": "{face}: {count} αποτυχίες"
+  "{face}: back up with {value}": "{face}: ανάκτηση με {value}"
+  "at the maximum": "στο μέγιστο"
+  "None left": "Δεν έμεινε κανένα"
+  "One die at a time: stop when you like.": "Ένα ζάρι τη φορά: σταμάτα όποτε θέλεις."
+  "Dice rolled": "Ζάρια που ρίχτηκαν"
+  "I spend none": "Δεν ξοδεύω κανένα"
+  "Done": "Τέλος"
+  "Left: {count}": "Απομένουν: {count}"
+  "{value} of {max}": "{value} από {max}"
+  "Roll": "Ρίψη"
   Wretched: Άθλιος
   Squalid: Άθλιος
   Poor: Φτωχός

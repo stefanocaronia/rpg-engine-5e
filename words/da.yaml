@@ -199,6 +199,27 @@ words:
   Stable: Stabil
   Successes: Succeser
   Failures: Fejl
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Døende"
+  "Dead": "Død"
+  "Success": "Succes"
+  "Failure": "Fejl"
+  "Two failures": "To fejl"
+  "{count} failures": "{count} fejl"
+  "Back up with {value}": "Tilbage på benene med {value}"
+  "{value} or more: a success": "{value} eller mere: en succes"
+  "{face}: two failures": "{face}: to fejl"
+  "{face}: {count} failures": "{face}: {count} fejl"
+  "{face}: back up with {value}": "{face}: tilbage på benene med {value}"
+  "at the maximum": "på maksimum"
+  "None left": "Ingen tilbage"
+  "One die at a time: stop when you like.": "Én terning ad gangen: stop, når du vil."
+  "Dice rolled": "Terninger slået"
+  "I spend none": "Jeg bruger ingen"
+  "Done": "Færdig"
+  "Left: {count}": "Tilbage: {count}"
+  "{value} of {max}": "{value} af {max}"
+  "Roll": "Slå"
   Wretched: Elendig
   Squalid: Usel
   Poor: Fattig

@@ -199,6 +199,27 @@ words:
   Stable: 安定
   Successes: 成功
   Failures: 失敗
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "瀕死"
+  "Dead": "死亡"
+  "Success": "成功"
+  "Failure": "失敗"
+  "Two failures": "失敗2回"
+  "{count} failures": "失敗{count}回"
+  "Back up with {value}": "{value}で復帰"
+  "{value} or more: a success": "{value}以上：成功"
+  "{face}: two failures": "{face}：失敗2回分"
+  "{face}: {count} failures": "{face}：失敗{count}回分"
+  "{face}: back up with {value}": "{face}：{value}で復帰"
+  "at the maximum": "最大値"
+  "None left": "残りなし"
+  "One die at a time: stop when you like.": "ダイスは1つずつ振ります。好きなところで止められます。"
+  "Dice rolled": "振ったダイス"
+  "I spend none": "使わない"
+  "Done": "完了"
+  "Left: {count}": "残り：{count}"
+  "{value} of {max}": "{value}／{max}"
+  "Roll": "振る"
   Wretched: 悲惨
   Squalid: 不潔
   Poor: 貧乏

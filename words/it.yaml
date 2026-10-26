@@ -235,6 +235,27 @@ words:
   Stable: Stabile
   Successes: Successi
   Failures: Fallimenti
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Morente"
+  "Dead": "Morte"
+  "Success": "Successo"
+  "Failure": "Fallimento"
+  "Two failures": "Due fallimenti"
+  "{count} failures": "{count} fallimenti"
+  "Back up with {value}": "In piedi con {value}"
+  "{value} or more: a success": "{value} o più: un successo"
+  "{face}: two failures": "{face}: due fallimenti"
+  "{face}: {count} failures": "{face}: {count} fallimenti"
+  "{face}: back up with {value}": "{face}: in piedi con {value}"
+  "at the maximum": "al massimo"
+  "None left": "Finiti"
+  "One die at a time: stop when you like.": "Un dado alla volta: smetti quando vuoi."
+  "Dice rolled": "Dadi tirati"
+  "I spend none": "Non ne spendo"
+  "Done": "Ho finito"
+  "Left: {count}": "Rimasti: {count}"
+  "{value} of {max}": "{value} su {max}"
+  "Roll": "Tira"
   # Lifestyles (Lifestyle Expenses)
   Wretched: Miserabile
   Squalid: Squallido

@@ -199,6 +199,27 @@ words:
   Stable: Stöðugt ástand
   Successes: Árangur
   Failures: Mistök
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Að deyja"
+  "Dead": "Dauði"
+  "Success": "Árangur"
+  "Failure": "Mistök"
+  "Two failures": "Tvö mistök"
+  "{count} failures": "{count} mistök"
+  "Back up with {value}": "Aftur á fætur með {value}"
+  "{value} or more: a success": "{value} eða meira: árangur"
+  "{face}: two failures": "{face}: tvö mistök"
+  "{face}: {count} failures": "{face}: {count} mistök"
+  "{face}: back up with {value}": "{face}: aftur á fætur með {value}"
+  "at the maximum": "í hámarki"
+  "None left": "Ekkert eftir"
+  "One die at a time: stop when you like.": "Einn teningur í einu: hættu þegar þú vilt."
+  "Dice rolled": "Teningum kastað"
+  "I spend none": "Ég eyði engu"
+  "Done": "Búið"
+  "Left: {count}": "Eftir: {count}"
+  "{value} of {max}": "{value} af {max}"
+  "Roll": "Kasta"
   Wretched: Aumur
   Squalid: Sóðalegur
   Poor: Fátækur

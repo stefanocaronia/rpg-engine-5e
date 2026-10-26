@@ -199,6 +199,27 @@ words:
   Stable: Стабільно
   Successes: Успіхи
   Failures: Невдачі
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Конає"
+  "Dead": "Смерть"
+  "Success": "Успіх"
+  "Failure": "Невдача"
+  "Two failures": "Дві невдачі"
+  "{count} failures": "Невдач: {count}"
+  "Back up with {value}": "На ногах з {value}"
+  "{value} or more: a success": "{value} або більше: успіх"
+  "{face}: two failures": "{face}: дві невдачі"
+  "{face}: {count} failures": "{face}: невдач — {count}"
+  "{face}: back up with {value}": "{face}: на ногах з {value}"
+  "at the maximum": "на максимумі"
+  "None left": "Не лишилось"
+  "One die at a time: stop when you like.": "По одному кубику: зупиняйся, коли захочеш."
+  "Dice rolled": "Кубики кинуто"
+  "I spend none": "Не витрачати"
+  "Done": "Готово"
+  "Left: {count}": "Лишилось: {count}"
+  "{value} of {max}": "{value} з {max}"
+  "Roll": "Кинути"
   Wretched: Жалюгідний
   Squalid: Убогий
   Poor: Бідний

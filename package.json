@@ -1,11 +1,13 @@
 {
   "name": "@rpgengine/system-5e",
+  "version": "0.1.0",
   "private": true,
   "description": "The game system compatible with fifth edition, from the SRD 5.1 and 5.2: its code, where its data is not enough.",
   "type": "module",
   "main": "dist/index.js",
   "rpg-engine": {
     "kind": "system",
-    "api": 1
+    "api": 5,
+    "page": "dist/page.js"
   }
 }

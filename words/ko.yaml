@@ -199,6 +199,27 @@ words:
   Stable: 안정
   Successes: 성공
   Failures: 실패
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "빈사"
+  "Dead": "사망"
+  "Success": "성공"
+  "Failure": "실패"
+  "Two failures": "실패 2회"
+  "{count} failures": "실패 {count}회"
+  "Back up with {value}": "일어남 {value}"
+  "{value} or more: a success": "{value} 이상: 성공"
+  "{face}: two failures": "{face}: 실패 2회"
+  "{face}: {count} failures": "{face}: 실패 {count}회"
+  "{face}: back up with {value}": "{face}: 일어남 {value}"
+  "at the maximum": "최대치"
+  "None left": "남지 않음"
+  "One die at a time: stop when you like.": "주사위를 하나씩 굴려요. 원하는 때에 멈추세요."
+  "Dice rolled": "굴린 주사위"
+  "I spend none": "사용하지 않음"
+  "Done": "완료"
+  "Left: {count}": "남음: {count}"
+  "{value} of {max}": "{value}/{max}"
+  "Roll": "굴리기"
   Wretched: 비참
   Squalid: 불결
   Poor: 빈곤

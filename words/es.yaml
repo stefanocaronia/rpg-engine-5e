@@ -199,6 +199,27 @@ words:
   Stable: Estable
   Successes: Éxitos
   Failures: Fallos
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "Agonizando"
+  "Dead": "Muerte"
+  "Success": "Éxito"
+  "Failure": "Fallo"
+  "Two failures": "Dos fallos"
+  "{count} failures": "{count} fallos"
+  "Back up with {value}": "De pie con {value}"
+  "{value} or more: a success": "{value} o más: un éxito"
+  "{face}: two failures": "{face}: dos fallos"
+  "{face}: {count} failures": "{face}: {count} fallos"
+  "{face}: back up with {value}": "{face}: se levanta con {value}"
+  "at the maximum": "en el máximo"
+  "None left": "Sin usos"
+  "One die at a time: stop when you like.": "Un dado cada vez: para cuando quieras."
+  "Dice rolled": "Dados tirados"
+  "I spend none": "No gasto ninguno"
+  "Done": "Listo"
+  "Left: {count}": "Quedan: {count}"
+  "{value} of {max}": "{value} de {max}"
+  "Roll": "Tirar"
   Wretched: Miserable
   Squalid: Mísero
   Poor: Pobre

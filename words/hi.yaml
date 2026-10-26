@@ -199,6 +199,27 @@ words:
   Stable: स्थिर
   Successes: सफलताएँ
   Failures: विफलताएँ
+  # The death save's card and the hit dice of a rest on the dashboard (D-461, D-492): drawn by the 5e's page module
+  "Dying": "मरणासन्न"
+  "Dead": "मृत"
+  "Success": "सफलता"
+  "Failure": "विफलता"
+  "Two failures": "दो विफलताएँ"
+  "{count} failures": "{count} विफलताएँ"
+  "Back up with {value}": "{value} के साथ वापस खड़े"
+  "{value} or more: a success": "{value} या अधिक: एक सफलता"
+  "{face}: two failures": "{face}: दो विफलताएँ"
+  "{face}: {count} failures": "{face}: {count} विफलताएँ"
+  "{face}: back up with {value}": "{face}: {value} के साथ वापस खड़े"
+  "at the maximum": "अधिकतम पर"
+  "None left": "कुछ नहीं बचा"
+  "One die at a time: stop when you like.": "एक बार में एक पासा: जब मन हो, रुक जाएँ।"
+  "Dice rolled": "रोल किए गए पासे"
+  "I spend none": "मैं कोई खर्च नहीं करूँगा"
+  "Done": "हो गया"
+  "Left: {count}": "बचे हुए: {count}"
+  "{value} of {max}": "{max} में से {value}"
+  "Roll": "रोल करें"
   Wretched: अभागा
   Squalid: दीन-हीन
   Poor: गरीब
