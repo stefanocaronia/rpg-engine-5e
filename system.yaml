@@ -61,6 +61,11 @@ grid:
   walking: walking
 # What the setup asks for this system, with the campaign's settings (DAT-10, D-212): how the characters gain levels, with the experience points of the SRD
 # (p. 56), or at the milestones the story reaches, where xp is neither asked nor shown.
+# The versions of its rules (D-513 (5), VER-1): the SRD 5.1 alone for now, which every campaign plays. When the 5.2.1 comes, what differs between them moves
+# from here to versions/srd-5.1/, so that a campaign of today reads the same then.
+versions:
+  about: which rules of the fifth edition you play
+  srd-5.1: {means: "the SRD 5.1, the 2014 rules", player: "the 2014 rules"}
 settings:
   advancement:
     about: how your character levels up
