@@ -1,5 +1,5 @@
 # Extracts the SRD 5.1 PDF as lines of words with their position and font, for the converters that keep its italics, indents and table columns:
-# python systems/5e/build/lines.py <SRD_CC_v5.1.pdf> <srd51-lines.jsonl>. A JSON line for each line of text, in reading order: for each page the left
+# python build/lines.py <SRD_CC_v5.1.pdf> <srd51-lines.jsonl>. A JSON line for each line of text, in reading order: for each page the left
 # column, then the right one; a line holds the words whose tops are within 3 pt of its first, as a bullet the PDF sets a little lower than its text.
 import json, sys, pathlib, pdfplumber
 source, target = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])

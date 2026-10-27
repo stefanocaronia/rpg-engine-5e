@@ -1,4 +1,4 @@
-// The dying point of the fifth edition (SRD 5.2.1 p. 98; DIE-1–DIE-6, D-454, D-460, D-463): at 0 hit points a party member falls Unconscious; damage there is
+// The dying point of the fifth edition (SRD 5.1, Combat, Dropping to 0 Hit Points; DIE-1–DIE-6, D-454, D-460, D-463): at 0 hit points a party member falls Unconscious; damage there is
 // a failure, two on a critical hit, and damage past 0 as large as the maximum kills at once; the death save at the start of each of its turns, the player's
 // for their character, the engine's for the others; three successes, or Stable given, make it stable; hit points regained end it all, never for the dead.
 // On the dashboard (D-511, D-516) its widgets: on each of the party at 0, their state and death saves; the cards a death save is asked in and the hit dice

@@ -1,13 +1,57 @@
 {
   "name": "@rpgengine/system-5e",
-  "version": "0.1.0",
-  "private": true,
-  "description": "The game system compatible with fifth edition, from the SRD 5.1 and 5.2: its code, where its data is not enough.",
+  "version": "1.0.0",
+  "description": "A game system for RPG Engine compatible with fifth edition, from the SRD 5.1: its rules, creatures, items, spells, classes and races as pages, and the character's sheet worked out.",
   "type": "module",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "system.yaml",
+    "world",
+    "rules",
+    "words",
+    "images",
+    "instructions",
+    "versions",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "keywords": [
+    "rpg-engine-package",
+    "rpg-engine",
+    "srd",
+    "ttrpg"
+  ],
+  "author": "Stefano Caronia",
+  "license": "(MIT AND CC-BY-4.0 AND CC-BY-3.0)",
+  "homepage": "https://github.com/stefanocaronia/rpg-engine-5e#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanocaronia/rpg-engine-5e.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stefanocaronia/rpg-engine-5e/issues"
+  },
   "rpg-engine": {
     "kind": "system",
     "api": 5,
     "page": "dist/page.js"
+  },
+  "engines": {
+    "node": ">=22.4"
+  },
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\" && tsc",
+    "lint": "tsc --noEmit -p tsconfig.test.json",
+    "test": "npm run build && vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "fast-check": "^4.10.2",
+    "preact": "^10.29.8",
+    "rpg-engine": "^0.6.0",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.3",
+    "yaml": "^2.9.1"
   }
 }

@@ -2,11 +2,10 @@
 // situations.yaml names its source; a case that fails is a gap of the engine or of the system's data.
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import type { TestCampaign } from "rpg-engine/testing";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { parse } from "yaml";
-import { runCommandLine } from "../../../src/command-line.ts";
-import type { Context } from "../../../src/core/context.ts";
-import { inPlay, makeTempFolder, removeFolder, testContext } from "../../../test/support.ts";
+import { fifthEdition } from "./support.ts";
 
 interface Situation
 {
@@ -22,18 +21,14 @@ interface Situation
 }
 
 const situations = parse(readFileSync(join(import.meta.dirname, "situations.yaml"), "utf8")) as Situation[];
-let folder: string;
-let context: Context;
+let campaign: TestCampaign;
 
 beforeEach(async () => {
-    folder = makeTempFolder();
-    context = testContext(folder);
-    await ok("init", "--name", "Prova", "--language", "en", "--system", "5e", "--difficulty", "normal", "--lethality", "dice");
-    inPlay(folder);
+    campaign = await fifthEdition();
     await ok("config", "units", "imperial");
 });
 
-afterEach(() => removeFolder(folder));
+afterEach(() => campaign.close());
 
 describe("situations of the 5e, against the rules", () => {
     it.each(situations.map((situation) => [`${situation.id}: ${situation.title} (${situation.source})`, situation] as const))("%s", async (_name, situation) => {
@@ -104,7 +99,7 @@ async function sheetValues(): Promise<Map<string, string>>
 
 async function ok(...args: string[]): Promise<string>
 {
-    const result = await runCommandLine(args, context);
+    const result = await campaign.run(...args);
     expect(result.exitCode, result.output).toBe(0);
     return result.output;
 }

@@ -1,4 +1,4 @@
-// Writes the armor, shield and weapons of the SRD 5.1 as pages in world/items, from the tables of rules/Equipment.md (pp. 62–66): node systems/5e/build/equipment.mjs
+// Writes the armor, shield and weapons of the SRD 5.1 as pages in world/items, from the tables of rules/Equipment.md (pp. 62–66): node build/equipment.mjs
 // Each armor gives its Armor Class and each weapon its attack and damage as formulas worked out on who has it equipped (PRO-5, D-231).
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";

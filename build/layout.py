@@ -1,5 +1,5 @@
 # Writes the SRD 5.1 PDF's text as extract.py does, a line a row, with what the page shows of each: page, column, left edge, font size, font, text, and the
-# style of each character of the text (r regular, i italic, b bold, x bold italic): python systems/5e/build/layout.py <SRD_CC_v5.1.pdf> <srd51-layout.tsv>
+# style of each character of the text (r regular, i italic, b bold, x bold italic): python build/layout.py <SRD_CC_v5.1.pdf> <srd51-layout.tsv>
 import sys, pathlib, pdfplumber
 from pdfplumber.utils.text import LIGATURES
 

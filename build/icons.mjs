@@ -1,4 +1,4 @@
-// Gives each creature and each item its icon (D-267, D-431): node systems/5e/build/icons.mjs <game-icons.net's svg folder, ffffff/transparent/1x1>
+// Gives each creature and each item its icon (D-267, D-431): node build/icons.mjs <game-icons.net's svg folder, ffffff/transparent/1x1>
 // creature-icons.json and item-icons.json name an icon, author/slug, for every page in world/creatures and world/items; the icons used are copied to images/<slug>.svg (<slug>-<author>.svg when two
 // share a name), each page links its own in image, and LICENSE.md credits their authors. Run it again after monsters.mjs, gear.mjs, equipment.mjs or magic-items.mjs, which write the pages anew.
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
@@ -12,7 +12,7 @@ const creditStart = "The icons in `images/` are from game-icons.net";
 const [source] = process.argv.slice(2);
 
 if (source === undefined || !existsSync(source)) {
-    console.error("Usage: node systems/5e/build/icons.mjs <the folder of game-icons.net's svg icons, ffffff/transparent/1x1, with a folder for each author>");
+    console.error("Usage: node build/icons.mjs <the folder of game-icons.net's svg icons, ffffff/transparent/1x1, with a folder for each author>");
     process.exit(1);
 }
 

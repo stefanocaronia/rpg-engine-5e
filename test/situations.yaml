@@ -1053,7 +1053,7 @@
 # out: A monk with a shield or armor keeps the Dex and the Martial Arts die on the unarmed strike on the sheet, though Martial Arts needs neither (p. 26): the system leaves it to the AI (sheet-notes, Attacks), so no attack is checked in monk-6-shield.
 # out: The order of sums and factors (Haste with Longstrider or Fast Movement): the SRD 5.1 gives none (p. 153 doubles "your speed", p. 160 adds 10), so only factors that make x1, or factors on a speed without bonuses, are checked.
 # out: A paladin and a ranger both at odd levels (3/3): "half your levels (rounded down) in the paladin and ranger classes" (p. 58) reads per class (1 + 1) or on the sum (3); the system takes the sum. paladin-6-ranger-2 is a case where both readings give 4.
-# out: Exhaustion 4 on an odd maximum: the SRD 5.1 has no general rule to round down (it is in the Player's Handbook introduction, not in the SRD), so exhaustion-4 uses an even maximum.
+# out: Exhaustion 4 on an odd maximum: the SRD 5.1 has no general rule to round down, so exhaustion-4 uses an even maximum.
 # out: The current hit points when an Amulet of Health raises the maximum: the SRD says nothing (Aid says it for itself, p. 114); amulet-of-health checks no hp.
 # out: The sheet's rolls with advantage or disadvantage (sheet-odds): Stealth in chain mail (p. 63), heavily encumbered (p. 80), exhaustion 1 and 3, Poisoned, Restrained (p. 358). The format has no place for a roll's notation; with a key such as rolls: {stealth: "2d20kl1+0"} they would come in, read from view --json.
 # out: Slow's -2 to Dexterity saving throws (p. 181) and Haste's advantage on them: no field adds to one save alone; text for the AI.

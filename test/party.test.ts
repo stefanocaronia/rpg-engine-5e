@@ -1,19 +1,14 @@
 // The written test of a party (D-454, PLAN): four characters of different classes through a whole stretch of play, with no AI, under the rigor rules: made at
 // the first level, on the road and at the inn, in a fight to the dying point, resting, rising to the fifth level, binding items and carrying too much.
 // Each number is the one the SRD 5.1 gives, with its page; the steps run in order on the same campaign.
+import type { TestCampaign } from "rpg-engine/testing";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { runCommandLine } from "../../../src/command-line.ts";
-import type { Context } from "../../../src/core/context.ts";
-import { inPlay, makeTempFolder, removeFolder, testContext } from "../../../test/support.ts";
+import { fifthEdition } from "./support.ts";
 
-let folder: string;
-let context: Context;
+let campaign: TestCampaign;
 
 beforeAll(async () => {
-    folder = makeTempFolder();
-    context = testContext(folder);
-    await ok("init", "--name", "Guadoscuro", "--language", "it", "--system", "5e", "--difficulty", "normal", "--lethality", "dice");
-    inPlay(folder);
+    campaign = await fifthEdition({ language: "it" });
     await ok("config", "rigor", "rules");
     await ok("config", "units", "imperial");
     await ok("advance", "--to", "day 1, 08:00");
@@ -51,7 +46,7 @@ beforeAll(async () => {
     await ok("write", "Strada", "--add", "contains=[[Bruna]]", "--add", "contains=[[Ilaria]]", "--add", "contains=[[Ugo]]", "--add", "contains=[[Vespa]]");
 });
 
-afterAll(() => removeFolder(folder));
+afterAll(() => campaign.close());
 
 describe("a party of four, from the first level to the fifth", () => {
     it("makes each sheet at the first level as the SRD gives it", async () => {
@@ -139,7 +134,7 @@ describe("a party of four, from the first level to the fifth", () => {
         // A mace's bludgeoning is doubled on a skeleton (p. 346); it takes no poison, nor the poisoned condition.
         expect(await ok("change", "Skeleton 2", "hp", "--by=-5", "--damage", "bludgeoning")).toBe("Skeleton 2: hp 13/13 → 3/13: bludgeoning 5 doubled, in damage-vulnerabilities: 10.");
         expect(await ok("change", "Skeleton 2", "hp", "--by=-5", "--damage", "poison")).toBe("Nothing changed: hp on Skeleton 2 is 3/13: poison ignored, in damage-immunities.");
-        expect((await runCommandLine(["effect", "add", "Skeleton 2", "Poisoned"], context)).output).toContain("Skeleton 2 is immune to Poisoned");
+        expect((await campaign.run("effect", "add", "Skeleton 2", "Poisoned")).output).toContain("Skeleton 2 is immune to Poisoned");
         await ok("change", "Skeleton 2", "hp", "--by=-3", "--damage", "bludgeoning");
         // Two skeletons of 50 xp each, shared by the four (p. 258).
         expect(await ok("scene", "close", "--summary", "Gli scheletri della cantina cadono.")).toContain("100 in all; 25 each");
@@ -200,7 +195,7 @@ describe("a party of four, from the first level to the fifth", () => {
         await ok("write", "Bruna", "--add", "attuned=[[Ring of Protection]]", "--add", "attuned=[[Cloak of Protection]]", "--add", "attuned=[[Boots of the Winterlands]]");
         expect(await ok("show", "Bruna")).toContain("ac 21");
         expect(await ok("change", "Bruna", "hp", "--by=-10", "--damage", "cold")).toContain("cold 10 halved, in damage-resistances: 5");
-        expect((await runCommandLine(["write", "Bruna", "--add", "attuned=[[Amulet of Health]]"], context)).output).toContain("more than 3, the most");
+        expect((await campaign.run("write", "Bruna", "--add", "attuned=[[Amulet of Health]]")).output).toContain("more than 3, the most");
     });
 
     it("slows who carries past the limit under the rigor rules (p. 80; D-445, LOAD-3, SPD)", async () => {
@@ -222,9 +217,9 @@ describe("a party of four, from the first level to the fifth", () => {
     });
 
     it("keeps the sheet within its most: a score of 20, the spells prepared (pp. 53, 76; LIM-1)", async () => {
-        expect((await runCommandLine(["write", "Ilaria", "--set", "int=21"], context)).output).toContain("Ilaria would have int 21, more than 20");
+        expect((await campaign.run("write", "Ilaria", "--set", "int=21")).output).toContain("Ilaria would have int 21, more than 20");
         const spells = ["Magic Missile", "Shield (spell)", "Sleep", "Mage Armor", "Burning Hands", "Detect Magic", "Misty Step", "Fireball", "Fly"];
-        expect((await runCommandLine(["write", "Ilaria", "--set", `prepared=${spells.map((spell) => `[[${spell}]]`).join(", ")}`], context)).output).toContain(
+        expect((await campaign.run("write", "Ilaria", "--set", `prepared=${spells.map((spell) => `[[${spell}]]`).join(", ")}`)).output).toContain(
             "Ilaria would have 9 in prepared, more than 8",
         );
     });
@@ -252,14 +247,14 @@ async function use(who: string, uses: string): Promise<string>
 
 async function refused(who: string, uses: string): Promise<string>
 {
-    const result = await runCommandLine(["scene", "use", "--who", who, "--uses", uses], context);
+    const result = await campaign.run("scene", "use", "--who", who, "--uses", uses);
     expect(result.exitCode).toBe(1);
     return result.output;
 }
 
 async function ok(...args: string[]): Promise<string>
 {
-    const result = await runCommandLine(args, context);
+    const result = await campaign.run(...args);
     expect(result.exitCode, `${args.join(" ")}: ${result.output}`).toBe(0);
     return result.output;
 }

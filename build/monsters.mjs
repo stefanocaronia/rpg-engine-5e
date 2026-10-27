@@ -1,5 +1,5 @@
 // Writes the creatures of the SRD 5.1 as pages in world/creatures, from the stat blocks of its Monsters chapter (pp. 261–357) and of its appendices MM-A,
-// Miscellaneous Creatures (pp. 366–394), and MM-B, Nonplayer Characters (pp. 395–403): node systems/5e/build/monsters.mjs <srd51-layout.tsv>
+// Miscellaneous Creatures (pp. 366–394), and MM-B, Nonplayer Characters (pp. 395–403): node build/monsters.mjs <srd51-layout.tsv>
 // Its input comes from the SRD's PDF with pdfplumber: layout.py writes each line of its text with its place, size and font, and the style of each
 // character, which keeps the SRD's italics.
 import { readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
@@ -43,7 +43,7 @@ const slotsLine = /^(\d)(?:st|nd|rd|th) level \((\d+) slots?\):/;
 const [layoutPath] = process.argv.slice(2);
 
 if (layoutPath === undefined) {
-    console.error("Usage: node systems/5e/build/monsters.mjs <srd51-layout.tsv>");
+    console.error("Usage: node build/monsters.mjs <srd51-layout.tsv>");
     process.exit(1);
 }
 

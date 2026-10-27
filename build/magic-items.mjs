@@ -1,5 +1,5 @@
 // Writes the SRD 5.1's Magic Items chapter (pp. 206–253) from the lines of its PDF: its rules into rules/Magic Items.md, and each magic item as a page in
-// world/items, with the category, rarity and attunement of its type line. node systems/5e/build/magic-items.mjs <srd51-lines.jsonl>, from lines.py.
+// world/items, with the category, rarity and attunement of its type line. node build/magic-items.mjs <srd51-lines.jsonl>, from lines.py.
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { pageName, writePages } from "./pages.mjs";
@@ -16,7 +16,7 @@ const joined = { "Potion of Healing": { fields: { cost: "50 gp (common)", weight
 const [linesPath] = process.argv.slice(2);
 
 if (linesPath === undefined) {
-    console.error("Usage: node systems/5e/build/magic-items.mjs <srd51-lines.jsonl>");
+    console.error("Usage: node build/magic-items.mjs <srd51-lines.jsonl>");
     process.exit(1);
 }
 
