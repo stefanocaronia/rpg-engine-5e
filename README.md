@@ -29,4 +29,4 @@ Raise `version` in `package.json`, commit, and push a tag `v<version>`: the work
 
 ## Licence
 
-The material from the SRD 5.1 and our changes to it, the words in every language included, are under CC BY 4.0; the icons from game-icons.net under CC BY 3.0; the code and the instructions under MIT. See [LICENSE.md](LICENSE.md) for the attribution, what was changed, and the MIT license's text. This package is compatible with fifth edition.
+The material from the SRD 5.1 and the chapter Combat Encounters from the SRD 5.2.1, and our changes to them, the words in every language included, are under CC BY 4.0; the icons from game-icons.net under CC BY 3.0; the code and the instructions under MIT. See [LICENSE.md](LICENSE.md) for the attribution, what was changed, and the MIT license's text. This package is compatible with fifth edition.

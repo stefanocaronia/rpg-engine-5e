@@ -96,7 +96,7 @@ describe("the rules command (RUL-2, RUL-6, RUL-7)", () => {
         const output = await ok("rules", "flanking");
         expect(output).toContain('No rule matches "flanking". The system 5e writes its rules in English');
         expect(output).toContain(
-            "The chapters of 5e: Adventuring, Beyond 1st Level, Combat, Conditions, Diseases, Equipment, Fantasy-Historical Pantheons, Madness, Magic Items, Monsters, "
+            "The chapters of 5e: Adventuring, Beyond 1st Level, Combat Encounters, Combat, Conditions, Diseases, Equipment, Fantasy-Historical Pantheons, Madness, Magic Items, Monsters, "
                 + "Nonplayer Characters, Objects, Poisons, Races, Spellcasting, The Planes of Existence, Traps, Using Ability Scores.",
         );
         expect(output).toContain('config, setting precedents, add "<the rule\'s name in English>: what you said"');

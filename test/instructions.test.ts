@@ -1,9 +1,9 @@
-// The 5e's instructions for the master (D-514): what it adds to the core's words for a fight, which hold for any game.
+// The 5e's instructions for the master (D-514, D-531): what it adds to the core's words for any game, in play, in a fight and when an adventure is built.
 import { describe, expect, it } from "vitest";
 import { fifthEdition } from "./support.ts";
 
 describe("the 5e's instructions", () => {
-    it("give a fight its own words after the core's: armor class, attacks and damage", async () => {
+    it("give a fight its own words after the core's: armor class, attacks and damage, the stat block's hit points, the place in the rules' words", async () => {
         const campaign = await fifthEdition();
 
         try {
@@ -11,6 +11,39 @@ describe("the 5e's instructions", () => {
             const core = opened.indexOf("Tell the turns in order, as story");
             expect(core).toBeGreaterThan(-1);
             expect(opened.indexOf("\n\nArmor class too is said in words")).toBeGreaterThan(core);
+            expect(opened).toContain("- A foe has the hit points of its stat block at every difficulty: the difficulty changes which foes come and how they fight, never their hit points.");
+            expect(opened).toContain("half or three-quarters cover, difficult terrain, dim light or darkness, water (rules Underwater Combat)");
+        } finally {
+            await campaign.close();
+        }
+    });
+
+    it("size a fight in play with the SRD 5.2.1's budget, each creature counted once, with no multiplier (D-531 (7))", async () => {
+        const campaign = await fifthEdition();
+
+        try {
+            const given = await campaign.ok("instructions");
+            expect(given).toContain(
+                "- Size a fight with the XP budget per character of rules Combat Encounters, at the party's level and as the difficulty says, times the characters: each creature's XP counts once, with no multiplier for their number.",
+            );
+            expect(given).not.toContain("In the fifth edition:\n");
+            // The chapter it names is there, read by its title.
+            expect(await campaign.ok("rules", "XP Budget per Character")).toContain("| 8 | 1,000 | 1,700 | 2,100 |");
+        } finally {
+            await campaign.close();
+        }
+    });
+
+    it("add to the core's part adventure the long rests and the party counted a level higher as a rule of this table, when the last quest ends (D-531 (7))", async () => {
+        const campaign = await fifthEdition();
+
+        try {
+            await campaign.ok("write", "Il guado", "--type", "quest", "--set", "status=open");
+            const ended = await campaign.ok("write", "Il guado", "--set", "status=done");
+            const core = ended.indexOf("An adventure is a quest with its secrets and events");
+            expect(core).toBeGreaterThan(-1);
+            expect(ended.indexOf("In the fifth edition:\n\n- A full rest is a long rest: at difficulty normal, two to four fights between two long rests.")).toBeGreaterThan(core);
+            expect(ended).toContain("count the party a level higher: a rule of this table, not of the SRD, said as ours if the player asks.");
         } finally {
             await campaign.close();
         }

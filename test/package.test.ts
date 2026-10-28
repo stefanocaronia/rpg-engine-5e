@@ -18,14 +18,19 @@ afterAll(() => campaign.close());
 const srdAttribution = 'This work includes material taken from the System Reference Document 5.1 ("SRD 5.1") by Wizards of the Coast LLC and available at '
     + "https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License "
     + "available at https://creativecommons.org/licenses/by/4.0/legalcode.";
+// As page 1 of the SRD 5.2.1's PDF writes it, its curly quotes too (D-531 (7)).
+const newerAttribution = "This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. "
+    + "The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.";
 
 describe("the 5e system", () => {
-    it("gives the attribution of the SRD 5.1, in system.yaml and in its license, with no other mark of its publisher", async () => {
+    it("gives the attribution of the SRD 5.1, then of the SRD 5.2.1, in system.yaml and in its license, with no other mark of its publisher", async () => {
         // The dashboard's view gives it, once there is a player character.
         await campaign.ok("write", "Hero", "--type", "character", "--set", "role=pc");
-        expect(JSON.parse(await campaign.ok("view", "--json")).system.attribution).toBe(srdAttribution);
+        expect(JSON.parse(await campaign.ok("view", "--json")).system.attribution).toBe(`${srdAttribution}\n${newerAttribution}`);
         const license = readFileSync(join(folder, "LICENSE.md"), "utf8");
         expect(license).toContain(srdAttribution);
+        expect(license).toContain(newerAttribution);
+        expect(license).toContain("The chapter Combat Encounters in `rules/` is material from the System Reference Document 5.2.1, changed as said below");
         expect(license).toContain("compatible with fifth edition");
         expect(license).not.toMatch(/D&D|Dungeons & Dragons/);
     });
@@ -141,12 +146,13 @@ describe("the 5e system", () => {
         expect(sectioned.flat()).toEqual([]);
     });
 
-    it("keeps the text of the SRD 5.1 in eighteen chapters of rules, as these parts of it show (D-177)", async () => {
+    it("keeps the text of the SRD 5.1 in eighteen chapters of rules, and the SRD 5.2.1's Combat Encounters beside them, as these parts of them show (D-177, D-531)", async () => {
         // The chapters as rules lists them, each with its parts: "Conditions: Blinded, Charmed, …".
         const chapters = new Map((await campaign.ok("rules")).split("\n").slice(1).map((line) => [line.split(": ")[0], line.slice(line.indexOf(": ") + 2).split(", ")]));
         expect([...chapters.keys()]).toEqual([
             "Adventuring",
             "Beyond 1st Level",
+            "Combat Encounters",
             "Combat",
             "Conditions",
             "Diseases",
@@ -179,6 +185,12 @@ describe("the 5e system", () => {
         expect(await text("Beyond 1st Level › Character Advancement")).toContain("| 355,000 | 20 | +6 |");
         expect(await text("Beyond 1st Level › Multiclassing › Class Features › Unarmored Defense")).toContain("If you already have the Unarmored Defense feature, you can’t gain it again from another class.");
         expect(chapters.get("Conditions")).toHaveLength(15);
+        // SRD 5.2.1, pp. 202–203: its chapter says where it comes from, then the PDF's words and table.
+        expect(chapters.get("Combat Encounters")).toEqual(["Changes in Elevation", "Defensive Positions", "Mixed Monster Groups", "Reasons to Move", "Combat Encounter Difficulty", "Troubleshooting"]);
+        expect(await text("Combat Encounters")).toContain("*This chapter is from the System Reference Document 5.2.1, the 2024 rules (pages 202–203)");
+        expect(await text("Combat Encounters › Combat Encounter Difficulty › Step 2: Determine Your XP Budget")).toContain("| 1 | 50 | 75 | 100 |\n| 2 | 100 | 150 | 200 |\n| 3 | 150 | 225 | 400 |");
+        expect(await text("Combat Encounters › Combat Encounter Difficulty › Step 2: Determine Your XP Budget")).toContain("| 20 | 6,400 | 13,200 | 22,000 |");
+        expect(await text("Combat Encounters › Troubleshooting › Many Creatures")).toContain("If your encounter includes more than two creatures per character, include fragile creatures that can be defeated quickly.");
         // SRD 5.1, p. 3 (Subraces), p. 59 (Exotic Languages), p. 60 (Using Inspiration), pp. 199–200 (Sight Rot), p. 201 (Short-Term Madness), p. 203 (Object
         // Armor Class), p. 205 (Serpent Venom), p. 256 and p. 258 (the tables by challenge rating, printed in two halves), p. 260 (Lair Actions), p. 321 (the
         // Half-Dragon Template), p. 362 (Norse Deities).
