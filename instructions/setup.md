@@ -1,0 +1,1 @@
+The rules work in any world, not only the SRD's: in another one, the sheets of its people and creatures are yours to make from these rules, from the nearest of the system's or as stat blocks of their own, and what the world has, firearms or no magic, stays.

@@ -1,6 +1,8 @@
 // The 5e's instructions for the master (D-514, D-531): what it adds to the core's words for any game, in play, in a fight and when an adventure is built.
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { fifthEdition } from "./support.ts";
+import { fifthEdition, repository } from "./support.ts";
 
 describe("the 5e's instructions", () => {
     it("give a fight its own words after the core's: armor class, attacks and damage, the stat block's hit points, the place in the rules' words", async () => {
@@ -30,6 +32,37 @@ describe("the 5e's instructions", () => {
             }
 
             expect(await campaign.ok("roll", "1d20+athletics", "--who", "Corrado", "--why", "il muro")).not.toContain(note);
+        } finally {
+            await campaign.close();
+        }
+    });
+
+    it("keep in play only what every message needs, and give the rest with its situation: a fight, a rest, the setup and session zero (D-532)", async () => {
+        const campaign = await fifthEdition();
+
+        try {
+            const given = await campaign.ok("instructions");
+            expect(given).toContain("- Alignment describes a character, it never limits what the player does.\n");
+
+            for (const gone of ["must recharge", "ammunition", "Lifestyle is", "A long rest is each one's", "work in any world", "A critical hit doubles", "offer a new alignment"]) {
+                expect(given).not.toContain(gone);
+            }
+
+            const fight = await campaign.ok("scene", "open", "--title", "Agguato", "--type", "combat");
+            expect(fight).toContain("For the player's character, the attack first, then the damage only if it hits, each its own ask; saving throws too. A critical hit doubles the damage's dice");
+            expect(fight).toContain("- A foe's power that must recharge, once spent, is an effect on its copy without end");
+            expect(fight).toContain("- Under the rigor rules or simulation, each attack with ammunition spends a piece with change");
+            await campaign.ok("scene", "close", "--summary", "Respinti.");
+            expect(await campaign.ok("scene", "open", "--title", "Il bivacco", "--type", "rest")).toContain(
+                "A long rest is each one's: six hours of sleep and at most two of light activity, as a watch: whoever keeps a longer watch gains no long rest.",
+            );
+            await campaign.ok("scene", "close", "--summary", "Riposano.");
+            // Session zero's part, which a campaign in play reaches only after its setup's checklist, is read as the engine reads it.
+            const zero = readFileSync(join(repository, "instructions", "session-zero.md"), "utf8");
+            expect(zero).toContain("When their choices keep going another way, you may say so once in brackets and offer a new alignment");
+            expect(zero).toContain("The rules work in any world, not only the SRD's");
+            await campaign.ok("mode", "setup");
+            expect(await campaign.ok("instructions")).toContain("The rules work in any world, not only the SRD's");
         } finally {
             await campaign.close();
         }
