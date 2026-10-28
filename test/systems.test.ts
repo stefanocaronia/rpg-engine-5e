@@ -313,7 +313,7 @@ describe("after the round on the code: the system missing, and the remedies (SYS
         await ok("write", "Lupo capobranco", "--type", "creature", "--set", "creature=[[Lupo]]");
         expect(await refused("change", "Lupo capobranco", "mana", "--by=-1")).toContain("Lupo capobranco reads what it does not hold from Lupo: write the counter there");
         await ok("scene", "open", "--title", "Bosco", "--type", "combat", "--creatures", "Wolf");
-        expect(await refused("change", "Wolf 1", "mana", "--by=-1")).toContain("To add one, use write, such as set mana=");
+        expect(await refused("change", "Wolf 1", "mana", "--by=-1")).toContain("If you meant a counter of the system 5e, give its name, such as hp; only one it lacks is added, with write, such as set mana=");
         expect(await refused("change", "Ennio", "str", "--by=1")).toBe(
             'str is a number in the system 5e, never counted: for a while, such as a spell, effect, action add, page "Ennio", set str=<value>; for good, write "Ennio", set str=<value>. Nothing changed.',
         );
