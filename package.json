@@ -18,6 +18,7 @@
   ],
   "keywords": [
     "rpg-engine-package",
+    "5e",
     "rpg-engine",
     "srd",
     "ttrpg"
@@ -34,7 +35,7 @@
   },
   "rpg-engine": {
     "kind": "system",
-    "api": 5,
+    "api": 6,
     "page": "dist/page.js"
   },
   "engines": {

@@ -18,6 +18,23 @@ describe("the 5e's instructions", () => {
         }
     });
 
+    it("tell a check of Arcana, History, Medicine, Nature or Religion as knowledge, never as an episode of the character's past; Athletics as itself", async () => {
+        const campaign = await fifthEdition();
+        const note = "What it reveals is what the world shows or their trade knows, said as knowledge: an episode of their past the player has not told is a question to them.";
+
+        try {
+            await campaign.ok("write", "Corrado", "--type", "character", "--set", "role=pc", "--set", "wis=14", "--set", "int=12", "--set", "str=10");
+
+            for (const skill of ["arcana", "history", "medicine", "nature", "religion"]) {
+                expect(await campaign.ok("roll", `1d20+${skill}`, "--who", "Corrado", "--why", "la ferita")).toContain(`\n${note}`);
+            }
+
+            expect(await campaign.ok("roll", "1d20+athletics", "--who", "Corrado", "--why", "il muro")).not.toContain(note);
+        } finally {
+            await campaign.close();
+        }
+    });
+
     it("size a fight in play with the SRD 5.2.1's budget, each creature counted once, with no multiplier (D-531 (7))", async () => {
         const campaign = await fifthEdition();
 

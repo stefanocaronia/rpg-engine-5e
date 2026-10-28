@@ -90,6 +90,9 @@ sheet:
   Attacks: [attack, damage-roll]
   Equipment: [money?, lifestyle?, attuned?, inventory?]
   Spells: [caster-level?, spell-save-dc?, spell-attack?, slots-1?, slots-2?, slots-3?, slots-4?, slots-5?, slots-6?, slots-7?, slots-8?, slots-9?, spell-slots?, mystic-arcanum-6?, mystic-arcanum-7?, mystic-arcanum-8?, mystic-arcanum-9?, signature-spell-1?, signature-spell-2?, max-prepared?, spells?, prepared?]
+# The skills whose checks recall what a character knows, of lore, history, the body, nature and the gods (pp. 81–82): what a check reveals is told as
+# knowledge.
+sheet-knowledge: [arcana, history, medicine, nature, religion]
 # The dice each number of the sheet is rolled with, for the dashboard's free roll (D-280): an ability check, a saving throw and an attack roll each roll a d20
 # and add the number (pp. 77, 83, 94).
 sheet-dice:
