@@ -37,4 +37,4 @@ jobs:
       - run: npm test
 
       # npm's Trusted Publisher for this workflow and its release environment: no token, the job's OIDC identity publishes, with provenance.
-      - run: npm publish --provenance --access public
+      - run: npm publish --provenance --access public --tag latest
