@@ -1,0 +1,5 @@
+---
+name: Corazza a scaglie
+---
+
+Quest'armatura è composta da un corpetto e da gambali (e talvolta da una gonna separata) di cuoio ed è ricoperta di pezzi di metallo leggermente sovrapposti, come le squame di un pesce. Include anche due guanti d'arme.

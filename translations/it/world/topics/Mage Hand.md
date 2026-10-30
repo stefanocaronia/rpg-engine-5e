@@ -1,0 +1,9 @@
+---
+name: Mano magica
+---
+
+Una mano spettrale fluttuante compare in un punto a scelta dell'incantatore situato entro gittata. La mano permane per la durata dell'incantesimo o finché non la congedi con un'azione. La mano svanisce se si trova a più di 9 metri dall'incantatore o se quest'ultimo lancia nuovamente l'incantesimo.
+
+L'incantatore può utilizzare la sua azione per controllare la mano e usarla per maneggiare un oggetto, aprire una porta o un contenitore che non sia chiuso a chiave, estrarre o riporre un oggetto da un contenitore aperto o versare il contenuto di una fiala. Ogni volta che la usa, può muovere la mano per un massimo di 9 metri.
+
+La mano non può attaccare, attivare oggetti magici o trasportare più di 5 kg.

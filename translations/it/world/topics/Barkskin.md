@@ -1,0 +1,5 @@
+---
+name: Pelle coriacea
+---
+
+L'incantatore tocca una creatura consenziente. Finché l'incantesimo non termina, la pelle del bersaglio assume un aspetto ruvido simile alla corteccia e la sua CA non può essere inferiore a 16, a prescindere dal tipo di armatura indossata.

@@ -1,0 +1,5 @@
+---
+name: Linguaggi
+---
+
+Questo incantesimo concede alla creatura toccata dall'incantatore l'abilità di comprendere qualsiasi linguaggio che sente parlare. Inoltre, quando il bersaglio parla, qualsiasi creatura che conosca almeno un linguaggio e sia in grado di udirlo capisce ciò che esso sta dicendo.

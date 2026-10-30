@@ -1,0 +1,5 @@
+---
+name: Bacchetta
+---
+
+Un focus arcano è un oggetto speciale (una bacchetta in legno, un bastone di fattura speciale, un cristallo, un globo, una verga), creato per incanalare il potere degli incantesimi arcani. Un mago, uno stregone o un warlock può usare questo oggetto come focus da incantatore.

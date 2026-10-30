@@ -1,0 +1,5 @@
+---
+name: Sostanze da avvelenatore
+---
+
+Le sostanze da avvelenatore includono le fiale, le sostanze chimiche e le altre attrezzature necessarie per fabbricare veleni. La competenza in questo strumento consente a un personaggio di aggiungere il proprio bonus di competenza a ogni prova di caratteristica effettuata per fabbricare o utilizzare veleni.

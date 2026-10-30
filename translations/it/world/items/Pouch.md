@@ -1,0 +1,5 @@
+---
+name: Borsa
+---
+
+Una borsa di stoffa o di cuoio può contenere fino a 20 proiettili da fionda o 50 aghi da cerbottana, tra le altre cose. Una borsa suddivisa in scomparti per contenere le componenti per incantesimi è chiamata "borsa per componenti" (descritta altrove in questa sezione).

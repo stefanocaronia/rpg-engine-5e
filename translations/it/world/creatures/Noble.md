@@ -1,0 +1,17 @@
+---
+name: Nobile
+---
+
+I **nobili** esercitano grande autorità e influenza come membri della classe agiata, dal momento che possiedono ricchezza e contatti che possono renderli potenti quanto monarchi e generali. Un nobile viaggia spesso in compagnia di guardie, oltre che di servitori popolani.
+
+Le statistiche del nobile possono anche essere usate per rappresentare **cortigiani** con origini non nobili.
+
+## Azioni
+
+### Stocco
+*Attacco con arma da mischia:* +3 al tiro per colpire, portata 1,5 m, un bersaglio. *Colpito:* 5 (1d8 + 1) danni perforanti.
+
+## Reazioni
+
+### Parata
+Il nobile aggiunge 2 alla sua CA contro un attacco in mischia che lo colpirebbe. Per farlo, deve vedere l'attaccante e deve impugnare un'arma da mischia.

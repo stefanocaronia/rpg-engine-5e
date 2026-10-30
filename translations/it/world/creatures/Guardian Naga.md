@@ -1,0 +1,27 @@
+---
+name: Naga guardiana
+---
+
+## Tratti
+
+### Incantesimi
+La naga è un incantatore di 11° livello: la sua caratteristica da incantatore è Saggezza (CD del tiro salvezza sull'incantesimo 16, +8 al tiro per colpire con attacco con incantesimo) e necessita solo di componenti verbali per lanciare i suoi incantesimi. Ha a disposizione i seguenti incantesimi da chierico:
+
+- Trucchetti (a volontà): *fiamma sacra, riparare, taumaturgia*
+- 1° livello (4 slot): *comando, cura ferite, scudo della fede*
+- 2° livello (3 slot): *blocca persone, calmare emozioni*
+- 3° livello (3 slot): *chiaroveggenza, scagliare maledizione*
+- 4° livello (3 slot): *esilio, libertà di movimento*
+- 5° livello (2 slot): *colpo infuocato, costrizione*
+- 6° livello (1 slot): *visione del vero*
+
+### Rigenerazione
+Se la naga muore, torna in vita 1d6 giorni dopo e recupera tutti i suoi punti ferita. Solo un incantesimo *desiderio* può impedire a questo tratto di funzionare.
+
+## Azioni
+
+### Morso
+*Attacco con arma da mischia:* +8 al tiro per colpire, portata 3 m, una creatura. *Colpito:* 8 (1d8 + 4) danni perforanti e il bersaglio deve effettuare un tiro salvezza su Costituzione con CD 15, subendo 45 (10d8) danni da veleno in caso di fallimento, o la metà in caso di successo.
+
+### Sputo velenoso
+*Attacco con arma a distanza*: +8 al tiro per colpire, gittata 4,5/9 m, una creatura. *Colpito:* il bersaglio deve effettuare un tiro salvezza su Costituzione con CD 15, subendo 45 (10d8) danni da veleno in caso di fallimento, o la metà in caso di successo.

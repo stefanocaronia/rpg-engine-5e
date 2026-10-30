@@ -1,0 +1,3 @@
+---
+name: Cera per sigillo
+---

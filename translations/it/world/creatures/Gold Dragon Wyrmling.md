@@ -1,0 +1,20 @@
+---
+name: Drago d'oro cucciolo
+---
+
+## Tratti
+
+### Anfibio
+Il drago può respirare in aria e in acqua.
+
+## Azioni
+
+### Morso
+*Attacco con arma da mischia:* +6 al tiro per colpire, portata 1,5 m, un bersaglio. *Colpito:* 9 (1d10 + 4) danni perforanti.
+
+### Soffi (ricarica 5–6)
+Il drago usa uno dei seguenti soffi.
+
+**Soffio di fuoco.** Il drago esala fuoco in un cono di 4,5 metri. Ogni creatura in quell'area deve effettuare un tiro salvezza su Destrezza con CD 13, subendo 22 (4d10) danni da fuoco in caso di fallimento, o la metà dei danni in caso di successo.
+
+**Soffio indebolente.** Il drago esala gas in un cono di 4,5 metri. Ogni creatura in quell'area deve superare un tiro salvezza su Forza con CD 13, altrimenti subisce svantaggio ai tiri per colpire basati sulla Forza, alle prove di Forza e ai tiri salvezza su Forza per 1 minuto. La creatura può ripetere il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce.

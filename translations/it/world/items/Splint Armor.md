@@ -1,0 +1,5 @@
+---
+name: Corazza a strisce
+---
+
+Quest'armatura è fatta di strette strisce verticali di metallo agganciate a uno strato di cuoio da indossare su un'imbottitura di stoffa. Le giunture sono protette da cotta di maglia flessibile.

@@ -1,0 +1,5 @@
+---
+name: Cuoio
+---
+
+Il pettorale e le spalline che compongono quest'armatura sono fatti di cuoio indurito e bollito nell'olio. Il resto dell'armatura è fatto di materiali più morbidi e flessibili.

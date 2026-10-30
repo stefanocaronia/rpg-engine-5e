@@ -1,0 +1,15 @@
+---
+name: Telecinesi
+---
+
+L'incantatore ottiene la capacità di spostare o manipolare creature e oggetti con la forza del pensiero. Al lancio e come sua azione ogni round per la durata dell'incantesimo, l'incantatore può esercitare la propria volontà su una creatura o un oggetto che è in grado di vedere entro gittata, provocando l'effetto appropriato di seguito. L'incantatore può influenzare lo stesso bersaglio in ogni round o sceglierne uno nuovo in ogni momento. Se cambia bersaglio, quello precedente non risentirà più degli effetti dell'incantesimo.
+
+***Creatura.*** L'incantatore può provare a spostare una creatura di taglia Enorme o inferiore, effettuando una prova di caratteristica con la propria caratteristica da incantatore contrapposta alla prova di Forza della creatura. Se vince la prova, l'incantatore sposta la creatura fino a 9 metri in ogni direzione, anche verticalmente, ma non oltre la gittata dell'incantesimo. Fino al termine del suo turno successivo, la creatura è trattenuta dalla morsa telecinetica e una creatura sollevata verticalmente rimane sospesa a mezz'aria.
+
+Nei round successivi, l'incantatore può usare la sua azione per provare a mantenere la sua morsa telecinetica sulla creatura ripetendo la contesa.
+
+***Oggetto.*** L'incantatore può provare a muovere un oggetto che pesa al massimo 500 kg. Se esso non è indossato o trasportato, lo sposta automaticamente fino a 9 metri in qualsiasi direzione, ma non oltre la gittata dell'incantesimo.
+
+Se l'oggetto è indossato o trasportato da una creatura, l'incantatore deve effettuare una prova di caratteristica con la propria caratteristica da incantatore contrapposta alla prova di Forza della creatura. In caso di successo, l'incantatore allontana l'oggetto dalla creatura e può spostarlo fino a 9 metri in qualsiasi direzione, ma non oltre la gittata dell'incantesimo.
+
+Con la sua presa telecinetica, l'incantatore può esercitare un controllo più preciso sugli oggetti, come manipolare uno strumento semplice, aprire una porta o un contenitore, riporre o prelevare un oggetto da un contenitore aperto, oppure versare il contenuto di una fiala.

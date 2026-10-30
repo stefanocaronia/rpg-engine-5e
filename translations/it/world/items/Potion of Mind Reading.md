@@ -1,0 +1,5 @@
+---
+name: Pozione di lettura della mente
+---
+
+Quando il personaggio beve questa pozione, ottiene l'effetto dell'incantesimo *individuazione dei pensieri* (CD del tiro salvezza 13). Nel denso liquido violaceo della pozione fluttua una nuvola ovoidale di colore rosa.

@@ -94,15 +94,19 @@ describe("SYS-1: the campaign's system is one of those installed", () => {
 
 describe("SYS-2, SYS-3: the system's pages, found after the campaign's", () => {
     it("names the pages that share a name with a note in parentheses, as the background beside the creature Acolyte", async () => {
-        expect(await ok("show", "Acolyte")).toContain("Acolyte (creature of the system 5e, read-only)\nThere is also Acolyte (background), a topic of the system 5e: show it by that name.\n");
+        expect(await ok("show", "Acolyte")).toContain(
+            "Acolyte (creature of the system 5e, read-only)\nNamed in the campaign's language: Accolito.\nThere is also Acolyte (background), a topic of the system 5e: show it by that name.\n",
+        );
         expect(await ok("show", "Acolyte (background)")).not.toContain("There is also");
         expect(await ok("show", "Wolf")).not.toContain("There is also");
     });
 
     it("shows a page of the system as read-only, and finds it by name, after the campaign's pages", async () => {
         const wolf = await ok("show", "Wolf");
-        expect(wolf).toContain("Wolf (creature of the system 5e, read-only)\n\n---\nsize: Medium\ncategory: beast");
-        expect(wolf).toContain("### Bite\n*Melee Weapon Attack:* +4 to hit");
+        // Its fields as the English page has them, its name and its text in the campaign's language (D-542).
+        expect(wolf).toContain("Wolf (creature of the system 5e, read-only)\nNamed in the campaign's language: Lupo.\n\n---\nsize: Medium\ncategory: beast");
+        expect(wolf).toContain("### Morso\n*Attacco con arma da mischia:* +4 al tiro per colpire");
+        expect(wolf).not.toContain("Melee Weapon Attack");
         expect(wolf).not.toContain("world/creatures/Wolf.md");
         const wolves = "Wolf (creature, system 5e)\nDire Wolf (creature, system 5e)\nGiant Wolf Spider (creature, system 5e)\nWerewolf (creature, system 5e)\nWinter Wolf (creature, system 5e)";
         expect(await ok("find", "wolf")).toBe(wolves);

@@ -1,0 +1,5 @@
+---
+name: Purificare cibo e bevande
+---
+
+Tutti i cibi e le bevande non magiche all'interno di una sfera del raggio di 1,5 metri, centrata su un punto a scelta dell'incantatore ed entro gittata, vengono purificati e liberati dai veleni e dalle malattie.

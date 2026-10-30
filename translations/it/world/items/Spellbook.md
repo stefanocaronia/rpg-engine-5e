@@ -1,0 +1,5 @@
+---
+name: Libro degli incantesimi
+---
+
+Un libro degli incantesimi, essenziale per i maghi, è un tomo rilegato in cuoio e composto da 100 pagine pergamenate vuote su cui annotare gli incantesimi.

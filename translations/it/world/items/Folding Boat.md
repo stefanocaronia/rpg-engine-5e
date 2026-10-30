@@ -1,0 +1,13 @@
+---
+name: Barca pieghevole
+---
+
+Quest'oggetto si presenta come una scatola di legno lunga 30 cm, larga e profonda 15 cm. Pesa 2 kg e galleggia. Può essere aperta per custodire degli oggetti all'interno. Possiede tre parole d'ordine, per pronunciare ognuna delle quali è richiesta un'azione.
+
+Una delle parole d'ordine fa sì che la scatola si apra e si trasformi in una barca di 3 metri di lunghezza per 1,2 metri di larghezza e 60 cm di profondità, provvista di un paio di remi, un'ancora, un albero e una vela. La barca può trasportare comodamente fino a quattro creature di taglia Media.
+
+La seconda parola d'ordine fa trasformare la scatola in una nave lunga 7,2 metri, larga 2,4 metri e profonda 1,8 metri, con un ponte, postazioni per i rematori, cinque paia di remi, un timone, un'ancora, una cabina sul ponte e un albero con una vela quadrata. La nave può trasportare comodamente quindici creature di taglia Media.
+
+Quando la scatola si trasforma in vascello, il suo peso diventa quello di un normale vascello di quella taglia; tutto ciò che era custodito all'interno della scatola rimane a bordo.
+
+La terza parola d'ordine fa tornare la barca pieghevole alla forma di scatola, purché non vi siano creature a bordo. Gli oggetti a bordo del vascello troppo grandi per essere contenuti nella scatola restano all'esterno. Gli oggetti che possono entrare nella scatola rimangono al suo interno.

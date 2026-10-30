@@ -1,0 +1,5 @@
+---
+name: Bacchetta in legno di tasso
+---
+
+Un focus druidico potrebbe essere un rametto di vischio o di agrifoglio, una bacchetta o uno scettro di tasso o di qualche altro legno speciale, un bastone preso per intero da un albero vivo, oppure un totem che incorpora piume, pelliccia, ossa e denti di animali sacri. Un druido può usare un oggetto del genere come focus da incantatore.

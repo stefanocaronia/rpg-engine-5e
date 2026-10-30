@@ -1,0 +1,5763 @@
+{
+  "rules/Adventuring.md": {
+    "it": "Avventura",
+    "page": 95,
+    "by": "place",
+    "title": "ours: the Italian SRD has no title for this chapter"
+  },
+  "rules/Beyond 1st Level.md": {
+    "it": "Oltre il 1° livello",
+    "page": 60,
+    "by": "place"
+  },
+  "rules/Combat Encounters.md": {
+    "none": "from the SRD 5.2.1, which has no official Italian translation",
+    "by": "place"
+  },
+  "rules/Combat.md": {
+    "it": "Combattimento",
+    "page": 102,
+    "by": "place",
+    "title": "ours: the Italian SRD has no title for this chapter"
+  },
+  "rules/Conditions.md": {
+    "it": "Appendice A del Manuale del Giocatore: Condizioni",
+    "page": 406,
+    "by": "place"
+  },
+  "rules/Diseases.md": {
+    "it": "Malattie",
+    "page": 228,
+    "by": "place"
+  },
+  "rules/Equipment.md": {
+    "it": "Equipaggiamento",
+    "page": 68,
+    "by": "place"
+  },
+  "rules/Fantasy-Historical Pantheons.md": {
+    "it": "Appendice B del Manuale del Giocatore: Pantheon fantasy-storici",
+    "page": 408,
+    "by": "place"
+  },
+  "rules/Madness.md": {
+    "it": "Follia",
+    "page": 230,
+    "by": "place"
+  },
+  "rules/Magic Items.md": {
+    "it": "Oggetti magici",
+    "page": 235,
+    "by": "place"
+  },
+  "rules/Monsters.md": {
+    "it": "Mostri",
+    "page": 292,
+    "by": "place"
+  },
+  "rules/Nonplayer Characters.md": {
+    "it": "Appendice MM-B: Personaggi non giocanti",
+    "page": 444,
+    "by": "place"
+  },
+  "rules/Objects.md": {
+    "it": "Oggetti",
+    "page": 232,
+    "by": "place"
+  },
+  "rules/Poisons.md": {
+    "it": "Veleni",
+    "page": 233,
+    "by": "place"
+  },
+  "rules/Races.md": {
+    "it": "Razze",
+    "page": 2,
+    "by": "place"
+  },
+  "rules/Spellcasting.md": {
+    "it": "Incantesimi",
+    "page": 114,
+    "by": "place"
+  },
+  "rules/The Planes of Existence.md": {
+    "it": "Appendice C del Manuale del Giocatore: I piani di esistenza",
+    "page": 411,
+    "by": "place"
+  },
+  "rules/Traps.md": {
+    "it": "Trappole",
+    "page": 223,
+    "by": "place"
+  },
+  "rules/Using Ability Scores.md": {
+    "it": "Usare i punteggi di caratteristica",
+    "page": 85,
+    "by": "place"
+  },
+  "world/creatures/Aboleth.md": {
+    "it": "Aboleth",
+    "page": 300,
+    "by": "fingerprint"
+  },
+  "world/creatures/Acolyte.md": {
+    "it": "Accolito",
+    "page": 444,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult Black Dragon.md": {
+    "it": "Drago nero adulto",
+    "page": 340,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult Blue Dragon.md": {
+    "it": "Drago blu adulto",
+    "page": 338,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult Brass Dragon.md": {
+    "it": "Drago d'ottone adulto",
+    "page": 333,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult Bronze Dragon.md": {
+    "it": "Drago di bronzo adulto",
+    "page": 325,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult Copper Dragon.md": {
+    "it": "Drago di rame adulto",
+    "page": 328,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult Gold Dragon.md": {
+    "it": "Drago d'oro adulto",
+    "page": 330,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult Green Dragon.md": {
+    "it": "Drago verde adulto",
+    "page": 344,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult Red Dragon.md": {
+    "it": "Drago rosso adulto",
+    "page": 342,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult Silver Dragon.md": {
+    "it": "Drago d'argento adulto",
+    "page": 322,
+    "by": "fingerprint"
+  },
+  "world/creatures/Adult White Dragon.md": {
+    "it": "Drago bianco adulto",
+    "page": 336,
+    "by": "fingerprint"
+  },
+  "world/creatures/Air Elemental.md": {
+    "it": "Elementale dell'aria",
+    "page": 349,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient Black Dragon.md": {
+    "it": "Drago nero antico",
+    "page": 339,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient Blue Dragon.md": {
+    "it": "Drago blu antico",
+    "page": 337,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient Brass Dragon.md": {
+    "it": "Drago d'ottone antico",
+    "page": 332,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient Bronze Dragon.md": {
+    "it": "Drago di bronzo antico",
+    "page": 324,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient Copper Dragon.md": {
+    "it": "Drago di rame antico",
+    "page": 327,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient Gold Dragon.md": {
+    "it": "Drago d'oro antico",
+    "page": 329,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient Green Dragon.md": {
+    "it": "Drago verde antico",
+    "page": 344,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient Red Dragon.md": {
+    "it": "Drago rosso antico",
+    "page": 341,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient Silver Dragon.md": {
+    "it": "Drago d'argento antico",
+    "page": 321,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ancient White Dragon.md": {
+    "it": "Drago bianco antico",
+    "page": 335,
+    "by": "fingerprint"
+  },
+  "world/creatures/Androsphinx.md": {
+    "it": "Androsfinge",
+    "page": 393,
+    "by": "fingerprint"
+  },
+  "world/creatures/Animated Armor.md": {
+    "it": "Armatura animata",
+    "page": 384,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ankheg.md": {
+    "it": "Ankheg",
+    "page": 303,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ape.md": {
+    "it": "Gorilla",
+    "page": 423,
+    "by": "fingerprint"
+  },
+  "world/creatures/Archmage.md": {
+    "it": "Arcimago",
+    "page": 444,
+    "by": "fingerprint"
+  },
+  "world/creatures/Assassin.md": {
+    "it": "Assassino",
+    "page": 445,
+    "by": "fingerprint"
+  },
+  "world/creatures/Awakened Shrub.md": {
+    "it": "Cespuglio risvegliato",
+    "page": 419,
+    "by": "fingerprint"
+  },
+  "world/creatures/Awakened Tree.md": {
+    "it": "Albero risvegliato",
+    "page": 414,
+    "by": "fingerprint"
+  },
+  "world/creatures/Axe Beak.md": {
+    "it": "Beccoaguzzo",
+    "page": 416,
+    "by": "fingerprint"
+  },
+  "world/creatures/Azer.md": {
+    "it": "Azer",
+    "page": 304,
+    "by": "fingerprint"
+  },
+  "world/creatures/Baboon.md": {
+    "it": "Babbuino",
+    "page": 416,
+    "by": "fingerprint"
+  },
+  "world/creatures/Badger.md": {
+    "it": "Tasso",
+    "page": 441,
+    "by": "fingerprint"
+  },
+  "world/creatures/Balor.md": {
+    "it": "Balor",
+    "page": 310,
+    "by": "fingerprint"
+  },
+  "world/creatures/Bandit Captain.md": {
+    "it": "Capo dei banditi",
+    "page": 446,
+    "by": "fingerprint"
+  },
+  "world/creatures/Bandit.md": {
+    "it": "Bandito",
+    "page": 446,
+    "by": "fingerprint"
+  },
+  "world/creatures/Barbed Devil.md": {
+    "it": "Diavolo uncinato",
+    "page": 318,
+    "by": "fingerprint"
+  },
+  "world/creatures/Basilisk.md": {
+    "it": "Basilisco",
+    "page": 305,
+    "by": "fingerprint"
+  },
+  "world/creatures/Bat.md": {
+    "it": "Pipistrello",
+    "page": 431,
+    "by": "fingerprint"
+  },
+  "world/creatures/Bearded Devil.md": {
+    "it": "Diavolo barbuto",
+    "page": 314,
+    "by": "fingerprint"
+  },
+  "world/creatures/Behir.md": {
+    "it": "Behir",
+    "page": 305,
+    "by": "fingerprint"
+  },
+  "world/creatures/Berserker.md": {
+    "it": "Berserker",
+    "page": 446,
+    "by": "fingerprint"
+  },
+  "world/creatures/Black Bear.md": {
+    "it": "Orso nero",
+    "page": 429,
+    "by": "fingerprint"
+  },
+  "world/creatures/Black Dragon Wyrmling.md": {
+    "it": "Drago nero cucciolo",
+    "page": 341,
+    "by": "fingerprint"
+  },
+  "world/creatures/Black Pudding.md": {
+    "it": "Protoplasma nero",
+    "page": 377,
+    "by": "fingerprint"
+  },
+  "world/creatures/Blink Dog.md": {
+    "it": "Cane intermittente",
+    "page": 417,
+    "by": "fingerprint"
+  },
+  "world/creatures/Blood Hawk.md": {
+    "it": "Falco di sangue",
+    "page": 422,
+    "by": "fingerprint"
+  },
+  "world/creatures/Blue Dragon Wyrmling.md": {
+    "it": "Drago blu cucciolo",
+    "page": 339,
+    "by": "fingerprint"
+  },
+  "world/creatures/Boar.md": {
+    "it": "Cinghiale",
+    "page": 420,
+    "by": "fingerprint"
+  },
+  "world/creatures/Bone Devil.md": {
+    "it": "Diavolo d'ossa",
+    "page": 317,
+    "by": "fingerprint"
+  },
+  "world/creatures/Brass Dragon Wyrmling.md": {
+    "it": "Drago d'ottone cucciolo",
+    "page": 334,
+    "by": "fingerprint"
+  },
+  "world/creatures/Bronze Dragon Wyrmling.md": {
+    "it": "Drago di bronzo cucciolo",
+    "page": 326,
+    "by": "fingerprint"
+  },
+  "world/creatures/Brown Bear.md": {
+    "it": "Orso bruno",
+    "page": 429,
+    "by": "fingerprint"
+  },
+  "world/creatures/Bugbear.md": {
+    "it": "Bugbear",
+    "page": 306,
+    "by": "fingerprint"
+  },
+  "world/creatures/Bulette.md": {
+    "it": "Bulette",
+    "page": 306,
+    "by": "fingerprint"
+  },
+  "world/creatures/Camel.md": {
+    "it": "Cammello",
+    "page": 417,
+    "by": "fingerprint"
+  },
+  "world/creatures/Cat.md": {
+    "it": "Gatto",
+    "page": 423,
+    "by": "fingerprint"
+  },
+  "world/creatures/Centaur.md": {
+    "it": "Centauro",
+    "page": 307,
+    "by": "fingerprint"
+  },
+  "world/creatures/Chain Devil.md": {
+    "it": "Diavolo delle catene",
+    "page": 317,
+    "by": "fingerprint"
+  },
+  "world/creatures/Chimera.md": {
+    "it": "Chimera",
+    "page": 308,
+    "by": "fingerprint"
+  },
+  "world/creatures/Chuul.md": {
+    "it": "Chuul",
+    "page": 308,
+    "by": "fingerprint"
+  },
+  "world/creatures/Clay Golem.md": {
+    "it": "Golem di argilla",
+    "page": 360,
+    "by": "fingerprint"
+  },
+  "world/creatures/Cloaker.md": {
+    "it": "Manto assassino",
+    "page": 372,
+    "by": "fingerprint"
+  },
+  "world/creatures/Cloud Giant.md": {
+    "it": "Gigante delle nuvole",
+    "page": 357,
+    "by": "fingerprint"
+  },
+  "world/creatures/Cockatrice.md": {
+    "it": "Cockatrice",
+    "page": 309,
+    "by": "fingerprint"
+  },
+  "world/creatures/Commoner.md": {
+    "it": "Popolano",
+    "page": 451,
+    "by": "fingerprint"
+  },
+  "world/creatures/Constrictor Snake.md": {
+    "it": "Serpente stritolatore",
+    "page": 438,
+    "by": "fingerprint"
+  },
+  "world/creatures/Copper Dragon Wyrmling.md": {
+    "it": "Drago di rame cucciolo",
+    "page": 329,
+    "by": "fingerprint"
+  },
+  "world/creatures/Couatl.md": {
+    "it": "Couatl",
+    "page": 309,
+    "by": "fingerprint"
+  },
+  "world/creatures/Crab.md": {
+    "it": "Granchio",
+    "page": 424,
+    "by": "fingerprint"
+  },
+  "world/creatures/Crocodile.md": {
+    "it": "Coccodrillo",
+    "page": 420,
+    "by": "fingerprint"
+  },
+  "world/creatures/Cult Fanatic.md": {
+    "it": "Cultista fanatico",
+    "page": 448,
+    "by": "fingerprint"
+  },
+  "world/creatures/Cultist.md": {
+    "it": "Cultista",
+    "page": 448,
+    "by": "fingerprint"
+  },
+  "world/creatures/Darkmantle.md": {
+    "it": "Mantoscuro",
+    "page": 372,
+    "by": "fingerprint"
+  },
+  "world/creatures/Death Dog.md": {
+    "it": "Cane della morte",
+    "page": 417,
+    "by": "fingerprint"
+  },
+  "world/creatures/Deep Gnome (Svirfneblin).md": {
+    "it": "Gnomo delle profondità (svirfneblin)",
+    "page": 359,
+    "by": "fingerprint"
+  },
+  "world/creatures/Deer.md": {
+    "it": "Daino",
+    "page": 421,
+    "by": "fingerprint"
+  },
+  "world/creatures/Deva.md": {
+    "it": "Deva",
+    "page": 300,
+    "by": "fingerprint"
+  },
+  "world/creatures/Dire Wolf.md": {
+    "it": "Lupo feroce",
+    "page": 426,
+    "by": "fingerprint"
+  },
+  "world/creatures/Djinni.md": {
+    "it": "Djinni",
+    "page": 355,
+    "by": "fingerprint"
+  },
+  "world/creatures/Doppelganger.md": {
+    "it": "Doppelganger",
+    "page": 321,
+    "by": "fingerprint"
+  },
+  "world/creatures/Draft Horse.md": {
+    "it": "Cavallo da tiro",
+    "page": 419,
+    "by": "fingerprint"
+  },
+  "world/creatures/Dragon Turtle.md": {
+    "it": "Testuggine dragona",
+    "page": 397,
+    "by": "fingerprint"
+  },
+  "world/creatures/Dragonborn.md": {
+    "it": "Dragonide",
+    "page": 5,
+    "by": "place"
+  },
+  "world/creatures/Dretch.md": {
+    "it": "Dretch",
+    "page": 311,
+    "by": "fingerprint"
+  },
+  "world/creatures/Drider.md": {
+    "it": "Drider",
+    "page": 347,
+    "by": "fingerprint"
+  },
+  "world/creatures/Drow Elf.md": {
+    "it": "Elfo drow",
+    "page": 350,
+    "by": "fingerprint"
+  },
+  "world/creatures/Druid (creature).md": {
+    "it": "Druido",
+    "page": 449,
+    "by": "fingerprint"
+  },
+  "world/creatures/Dryad.md": {
+    "it": "Driade",
+    "page": 346,
+    "by": "fingerprint"
+  },
+  "world/creatures/Duergar.md": {
+    "it": "Duergar",
+    "page": 347,
+    "by": "fingerprint"
+  },
+  "world/creatures/Dust Mephit.md": {
+    "it": "Mephit della polvere",
+    "page": 379,
+    "by": "fingerprint"
+  },
+  "world/creatures/Dwarf.md": {
+    "it": "Nano",
+    "page": 4,
+    "by": "place"
+  },
+  "world/creatures/Eagle.md": {
+    "it": "Aquila",
+    "page": 415,
+    "by": "fingerprint"
+  },
+  "world/creatures/Earth Elemental.md": {
+    "it": "Elementale della terra",
+    "page": 348,
+    "by": "fingerprint"
+  },
+  "world/creatures/Efreeti.md": {
+    "it": "Efreeti",
+    "page": 355,
+    "by": "fingerprint"
+  },
+  "world/creatures/Elephant.md": {
+    "it": "Elefante",
+    "page": 421,
+    "by": "fingerprint"
+  },
+  "world/creatures/Elf.md": {
+    "it": "Elfo",
+    "page": 2,
+    "by": "place"
+  },
+  "world/creatures/Elk.md": {
+    "it": "Alce",
+    "page": 414,
+    "by": "fingerprint"
+  },
+  "world/creatures/Erinyes.md": {
+    "it": "Erinni",
+    "page": 318,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ettercap.md": {
+    "it": "Ettercap",
+    "page": 350,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ettin.md": {
+    "it": "Ettin",
+    "page": 351,
+    "by": "fingerprint"
+  },
+  "world/creatures/Fire Elemental.md": {
+    "it": "Elementale del fuoco",
+    "page": 348,
+    "by": "fingerprint"
+  },
+  "world/creatures/Fire Giant.md": {
+    "it": "Gigante del fuoco",
+    "page": 357,
+    "by": "fingerprint"
+  },
+  "world/creatures/Flesh Golem.md": {
+    "it": "Golem di carne",
+    "page": 360,
+    "by": "fingerprint"
+  },
+  "world/creatures/Flying Snake.md": {
+    "it": "Serpente volante",
+    "page": 439,
+    "by": "fingerprint"
+  },
+  "world/creatures/Flying Sword.md": {
+    "it": "Spada volante",
+    "page": 384,
+    "by": "fingerprint"
+  },
+  "world/creatures/Frog.md": {
+    "it": "Rana",
+    "page": 434,
+    "by": "fingerprint"
+  },
+  "world/creatures/Frost Giant.md": {
+    "it": "Gigante del gelo",
+    "page": 357,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gargoyle.md": {
+    "it": "Gargoyle",
+    "page": 354,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gelatinous Cube.md": {
+    "it": "Cubo gelatinoso",
+    "page": 376,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ghast.md": {
+    "it": "Ghast",
+    "page": 356,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ghost.md": {
+    "it": "Fantasma",
+    "page": 351,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ghoul.md": {
+    "it": "Ghoul",
+    "page": 356,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Ape.md": {
+    "it": "Gorilla gigante",
+    "page": 423,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Badger.md": {
+    "it": "Tasso gigante",
+    "page": 441,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Bat.md": {
+    "it": "Pipistrello gigante",
+    "page": 431,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Boar.md": {
+    "it": "Cinghiale gigante",
+    "page": 420,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Centipede.md": {
+    "it": "Millepiedi gigante",
+    "page": 428,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Constrictor Snake.md": {
+    "it": "Serpente stritolatore gigante",
+    "page": 439,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Crab.md": {
+    "it": "Granchio gigante",
+    "page": 424,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Crocodile.md": {
+    "it": "Coccodrillo gigante",
+    "page": 421,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Eagle.md": {
+    "it": "Aquila gigante",
+    "page": 415,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Elk.md": {
+    "it": "Alce gigante",
+    "page": 414,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Fire Beetle.md": {
+    "it": "Scarabeo di fuoco gigante",
+    "page": 435,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Frog.md": {
+    "it": "Rana gigante",
+    "page": 434,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Goat.md": {
+    "it": "Capra gigante",
+    "page": 418,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Hyena.md": {
+    "it": "Iena gigante",
+    "page": 425,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Lizard.md": {
+    "it": "Lucertola gigante",
+    "page": 426,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Octopus.md": {
+    "it": "Piovra gigante",
+    "page": 430,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Owl.md": {
+    "it": "Gufo gigante",
+    "page": 424,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Poisonous Snake.md": {
+    "it": "Serpente velenoso gigante",
+    "page": 439,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Rat.md": {
+    "it": "Topo gigante",
+    "page": 442,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Scorpion.md": {
+    "it": "Scorpione gigante",
+    "page": 438,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Sea Horse.md": {
+    "it": "Cavalluccio marino gigante",
+    "page": 419,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Shark.md": {
+    "it": "Squalo gigante",
+    "page": 440,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Spider.md": {
+    "it": "Ragno gigante",
+    "page": 432,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Toad.md": {
+    "it": "Rospo gigante",
+    "page": 435,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Vulture.md": {
+    "it": "Avvoltoio gigante",
+    "page": 416,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Wasp.md": {
+    "it": "Vespa gigante",
+    "page": 443,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Weasel.md": {
+    "it": "Faina gigante",
+    "page": 422,
+    "by": "fingerprint"
+  },
+  "world/creatures/Giant Wolf Spider.md": {
+    "it": "Ragno lupo gigante",
+    "page": 433,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gibbering Mouther.md": {
+    "it": "Fauce gorgogliante",
+    "page": 352,
+    "by": "fingerprint"
+  },
+  "world/creatures/Glabrezu.md": {
+    "it": "Glabrezu",
+    "page": 311,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gladiator.md": {
+    "it": "Gladiatore",
+    "page": 449,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gnoll.md": {
+    "it": "Gnoll",
+    "page": 359,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gnome.md": {
+    "it": "Gnomo",
+    "page": 5,
+    "by": "place"
+  },
+  "world/creatures/Goat.md": {
+    "it": "Capra",
+    "page": 418,
+    "by": "fingerprint"
+  },
+  "world/creatures/Goblin.md": {
+    "it": "Goblin",
+    "page": 360,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gold Dragon Wyrmling.md": {
+    "it": "Drago d'oro cucciolo",
+    "page": 332,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gorgon.md": {
+    "it": "Gorgone",
+    "page": 362,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gray Ooze.md": {
+    "it": "Melma grigia",
+    "page": 377,
+    "by": "fingerprint"
+  },
+  "world/creatures/Green Dragon Wyrmling.md": {
+    "it": "Drago verde cucciolo",
+    "page": 346,
+    "by": "fingerprint"
+  },
+  "world/creatures/Green Hag.md": {
+    "it": "Megera verde",
+    "page": 375,
+    "by": "fingerprint"
+  },
+  "world/creatures/Grick.md": {
+    "it": "Grick",
+    "page": 363,
+    "by": "fingerprint"
+  },
+  "world/creatures/Griffon.md": {
+    "it": "Grifone",
+    "page": 363,
+    "by": "fingerprint"
+  },
+  "world/creatures/Grimlock.md": {
+    "it": "Grimlock",
+    "page": 363,
+    "by": "fingerprint"
+  },
+  "world/creatures/Guard.md": {
+    "it": "Guardia",
+    "page": 450,
+    "by": "fingerprint"
+  },
+  "world/creatures/Guardian Naga.md": {
+    "it": "Naga guardiana",
+    "page": 383,
+    "by": "fingerprint"
+  },
+  "world/creatures/Gynosphinx.md": {
+    "it": "Ginosfinge",
+    "page": 394,
+    "by": "fingerprint"
+  },
+  "world/creatures/Half-Elf.md": {
+    "it": "Mezzelfo",
+    "page": 6,
+    "by": "place"
+  },
+  "world/creatures/Half-Orc.md": {
+    "it": "Mezzorco",
+    "page": 7,
+    "by": "place"
+  },
+  "world/creatures/Half-Red Dragon Veteran.md": {
+    "it": "Mezzodrago rosso veterano",
+    "page": 303,
+    "by": "fingerprint"
+  },
+  "world/creatures/Halfling.md": {
+    "it": "Halfling",
+    "page": 3,
+    "by": "place"
+  },
+  "world/creatures/Harpy.md": {
+    "it": "Arpia",
+    "page": 304,
+    "by": "fingerprint"
+  },
+  "world/creatures/Hawk.md": {
+    "it": "Falco",
+    "page": 422,
+    "by": "fingerprint"
+  },
+  "world/creatures/Hell Hound.md": {
+    "it": "Segugio infernale",
+    "page": 392,
+    "by": "fingerprint"
+  },
+  "world/creatures/Hezrou.md": {
+    "it": "Hezrou",
+    "page": 312,
+    "by": "fingerprint"
+  },
+  "world/creatures/High Elf.md": {
+    "it": "Elfo alto",
+    "page": 3,
+    "by": "place"
+  },
+  "world/creatures/Hill Dwarf.md": {
+    "it": "Nano delle colline",
+    "page": 4,
+    "by": "place"
+  },
+  "world/creatures/Hill Giant.md": {
+    "it": "Gigante delle colline",
+    "page": 357,
+    "by": "fingerprint"
+  },
+  "world/creatures/Hippogriff.md": {
+    "it": "Ippogrifo",
+    "page": 365,
+    "by": "fingerprint"
+  },
+  "world/creatures/Hobgoblin.md": {
+    "it": "Hobgoblin",
+    "page": 364,
+    "by": "fingerprint"
+  },
+  "world/creatures/Homunculus.md": {
+    "it": "Omuncolo",
+    "page": 386,
+    "by": "fingerprint"
+  },
+  "world/creatures/Horned Devil.md": {
+    "it": "Diavolo cornuto",
+    "page": 315,
+    "by": "fingerprint"
+  },
+  "world/creatures/Human.md": {
+    "it": "Umano",
+    "page": 4,
+    "by": "place"
+  },
+  "world/creatures/Hunter Shark.md": {
+    "it": "Squalo cacciatore",
+    "page": 440,
+    "by": "fingerprint"
+  },
+  "world/creatures/Hydra.md": {
+    "it": "Idra",
+    "page": 365,
+    "by": "fingerprint"
+  },
+  "world/creatures/Hyena.md": {
+    "it": "Iena",
+    "page": 425,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ice Devil.md": {
+    "it": "Diavolo del ghiaccio",
+    "page": 315,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ice Mephit.md": {
+    "it": "Mephit del ghiaccio",
+    "page": 378,
+    "by": "fingerprint"
+  },
+  "world/creatures/Imp.md": {
+    "it": "Imp",
+    "page": 319,
+    "by": "fingerprint"
+  },
+  "world/creatures/Invisible Stalker.md": {
+    "it": "Cacciatore invisibile",
+    "page": 307,
+    "by": "fingerprint"
+  },
+  "world/creatures/Iron Golem.md": {
+    "it": "Golem di ferro",
+    "page": 361,
+    "by": "fingerprint"
+  },
+  "world/creatures/Jackal.md": {
+    "it": "Sciacallo",
+    "page": 435,
+    "by": "fingerprint"
+  },
+  "world/creatures/Killer Whale.md": {
+    "it": "Orca assassina",
+    "page": 428,
+    "by": "fingerprint"
+  },
+  "world/creatures/Knight.md": {
+    "it": "Cavaliere",
+    "page": 447,
+    "by": "fingerprint"
+  },
+  "world/creatures/Kobold.md": {
+    "it": "Coboldo",
+    "page": 308,
+    "by": "fingerprint"
+  },
+  "world/creatures/Kraken.md": {
+    "it": "Kraken",
+    "page": 365,
+    "by": "fingerprint"
+  },
+  "world/creatures/Lamia.md": {
+    "it": "Lamia",
+    "page": 366,
+    "by": "fingerprint"
+  },
+  "world/creatures/Lemure.md": {
+    "it": "Lemure",
+    "page": 319,
+    "by": "fingerprint"
+  },
+  "world/creatures/Lich.md": {
+    "it": "Lich",
+    "page": 370,
+    "by": "fingerprint"
+  },
+  "world/creatures/Lightfoot Halfling.md": {
+    "it": "Halfling piedelesto",
+    "page": 3,
+    "by": "place"
+  },
+  "world/creatures/Lion.md": {
+    "it": "Leone",
+    "page": 425,
+    "by": "fingerprint"
+  },
+  "world/creatures/Lizard.md": {
+    "it": "Lucertola",
+    "page": 426,
+    "by": "fingerprint"
+  },
+  "world/creatures/Lizardfolk.md": {
+    "it": "Lucertoloide",
+    "page": 371,
+    "by": "fingerprint"
+  },
+  "world/creatures/Mage.md": {
+    "it": "Mago",
+    "page": 450,
+    "by": "fingerprint"
+  },
+  "world/creatures/Magma Mephit.md": {
+    "it": "Mephit del magma",
+    "page": 378,
+    "by": "fingerprint"
+  },
+  "world/creatures/Magmin.md": {
+    "it": "Magmin",
+    "page": 371,
+    "by": "fingerprint"
+  },
+  "world/creatures/Mammoth.md": {
+    "it": "Mammut",
+    "page": 427,
+    "by": "fingerprint"
+  },
+  "world/creatures/Manticore.md": {
+    "it": "Manticora",
+    "page": 371,
+    "by": "fingerprint"
+  },
+  "world/creatures/Marilith.md": {
+    "it": "Marilith",
+    "page": 312,
+    "by": "fingerprint"
+  },
+  "world/creatures/Mastiff.md": {
+    "it": "Mastino",
+    "page": 428,
+    "by": "fingerprint"
+  },
+  "world/creatures/Medusa.md": {
+    "it": "Medusa",
+    "page": 373,
+    "by": "fingerprint"
+  },
+  "world/creatures/Merfolk.md": {
+    "it": "Marinide",
+    "page": 373,
+    "by": "fingerprint"
+  },
+  "world/creatures/Merrow.md": {
+    "it": "Merrow",
+    "page": 380,
+    "by": "fingerprint"
+  },
+  "world/creatures/Mimic.md": {
+    "it": "Mimic",
+    "page": 380,
+    "by": "fingerprint"
+  },
+  "world/creatures/Minotaur Skeleton.md": {
+    "it": "Scheletro di minotauro",
+    "page": 392,
+    "by": "fingerprint"
+  },
+  "world/creatures/Minotaur.md": {
+    "it": "Minotauro",
+    "page": 380,
+    "by": "fingerprint"
+  },
+  "world/creatures/Mule.md": {
+    "it": "Mulo",
+    "page": 428,
+    "by": "fingerprint"
+  },
+  "world/creatures/Mummy Lord.md": {
+    "it": "Signore delle mummie",
+    "page": 381,
+    "by": "fingerprint"
+  },
+  "world/creatures/Mummy.md": {
+    "it": "Mummia",
+    "page": 381,
+    "by": "fingerprint"
+  },
+  "world/creatures/Nalfeshnee.md": {
+    "it": "Nalfeshnee",
+    "page": 313,
+    "by": "fingerprint"
+  },
+  "world/creatures/Night Hag.md": {
+    "it": "Megera notturna",
+    "page": 375,
+    "by": "fingerprint"
+  },
+  "world/creatures/Nightmare.md": {
+    "it": "Cavallo degli incubi",
+    "page": 307,
+    "by": "fingerprint"
+  },
+  "world/creatures/Noble.md": {
+    "it": "Nobile",
+    "page": 451,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ochre Jelly.md": {
+    "it": "Ameba paglierina",
+    "page": 376,
+    "by": "fingerprint"
+  },
+  "world/creatures/Octopus.md": {
+    "it": "Piovra",
+    "page": 430,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ogre Zombie.md": {
+    "it": "Zombi ogre",
+    "page": 405,
+    "by": "fingerprint"
+  },
+  "world/creatures/Ogre.md": {
+    "it": "Ogre",
+    "page": 385,
+    "by": "fingerprint"
+  },
+  "world/creatures/Oni.md": {
+    "it": "Oni",
+    "page": 386,
+    "by": "fingerprint"
+  },
+  "world/creatures/Orc.md": {
+    "it": "Orco",
+    "page": 387,
+    "by": "fingerprint"
+  },
+  "world/creatures/Otyugh.md": {
+    "it": "Otyugh",
+    "page": 387,
+    "by": "fingerprint"
+  },
+  "world/creatures/Owl.md": {
+    "it": "Gufo",
+    "page": 424,
+    "by": "fingerprint"
+  },
+  "world/creatures/Owlbear.md": {
+    "it": "Orsogufo",
+    "page": 387,
+    "by": "fingerprint"
+  },
+  "world/creatures/Panther.md": {
+    "it": "Pantera",
+    "page": 430,
+    "by": "fingerprint"
+  },
+  "world/creatures/Pegasus.md": {
+    "it": "Pegaso",
+    "page": 388,
+    "by": "fingerprint"
+  },
+  "world/creatures/Phase Spider.md": {
+    "it": "Ragno-fase",
+    "page": 433,
+    "by": "fingerprint"
+  },
+  "world/creatures/Pit Fiend.md": {
+    "it": "Diavolo della fossa",
+    "page": 316,
+    "by": "fingerprint"
+  },
+  "world/creatures/Planetar.md": {
+    "it": "Planetar",
+    "page": 301,
+    "by": "fingerprint"
+  },
+  "world/creatures/Plesiosaurus.md": {
+    "it": "Plesiosauro",
+    "page": 320,
+    "by": "fingerprint"
+  },
+  "world/creatures/Poisonous Snake.md": {
+    "it": "Serpente velenoso",
+    "page": 439,
+    "by": "fingerprint"
+  },
+  "world/creatures/Polar Bear.md": {
+    "it": "Orso polare",
+    "page": 429,
+    "by": "fingerprint"
+  },
+  "world/creatures/Pony.md": {
+    "it": "Pony",
+    "page": 431,
+    "by": "fingerprint"
+  },
+  "world/creatures/Priest.md": {
+    "it": "Sacerdote",
+    "page": 452,
+    "by": "fingerprint"
+  },
+  "world/creatures/Pseudodragon.md": {
+    "it": "Pseudodrago",
+    "page": 388,
+    "by": "fingerprint"
+  },
+  "world/creatures/Purple Worm.md": {
+    "it": "Verme purpureo",
+    "page": 402,
+    "by": "fingerprint"
+  },
+  "world/creatures/Quasit.md": {
+    "it": "Quasit",
+    "page": 313,
+    "by": "fingerprint"
+  },
+  "world/creatures/Quipper.md": {
+    "it": "Quipper",
+    "page": 431,
+    "by": "fingerprint"
+  },
+  "world/creatures/Rakshasa.md": {
+    "it": "Rakshasa",
+    "page": 388,
+    "by": "fingerprint"
+  },
+  "world/creatures/Rat.md": {
+    "it": "Topo",
+    "page": 442,
+    "by": "fingerprint"
+  },
+  "world/creatures/Raven.md": {
+    "it": "Corvo",
+    "page": 421,
+    "by": "fingerprint"
+  },
+  "world/creatures/Red Dragon Wyrmling.md": {
+    "it": "Drago rosso cucciolo",
+    "page": 343,
+    "by": "fingerprint"
+  },
+  "world/creatures/Reef Shark.md": {
+    "it": "Squalo tropicale",
+    "page": 440,
+    "by": "fingerprint"
+  },
+  "world/creatures/Remorhaz.md": {
+    "it": "Remorhaz",
+    "page": 389,
+    "by": "fingerprint"
+  },
+  "world/creatures/Rhinoceros.md": {
+    "it": "Rinoceronte",
+    "page": 434,
+    "by": "fingerprint"
+  },
+  "world/creatures/Riding Horse.md": {
+    "it": "Cavallo da galoppo",
+    "page": 418,
+    "by": "fingerprint"
+  },
+  "world/creatures/Roc.md": {
+    "it": "Roc",
+    "page": 390,
+    "by": "fingerprint"
+  },
+  "world/creatures/Rock Gnome.md": {
+    "it": "Gnomo delle rocce",
+    "page": 6,
+    "by": "place"
+  },
+  "world/creatures/Roper.md": {
+    "it": "Fustigatore",
+    "page": 354,
+    "by": "fingerprint"
+  },
+  "world/creatures/Rug of Smothering.md": {
+    "it": "Tappeto soffocante",
+    "page": 385,
+    "by": "fingerprint"
+  },
+  "world/creatures/Rust Monster.md": {
+    "it": "Rugginofago",
+    "page": 390,
+    "by": "fingerprint"
+  },
+  "world/creatures/Saber-Toothed Tiger.md": {
+    "it": "Tigre dai denti a sciabola",
+    "page": 442,
+    "by": "fingerprint"
+  },
+  "world/creatures/Sahuagin.md": {
+    "it": "Sahuagin",
+    "page": 390,
+    "by": "fingerprint"
+  },
+  "world/creatures/Salamander.md": {
+    "it": "Salamandra",
+    "page": 391,
+    "by": "fingerprint"
+  },
+  "world/creatures/Satyr.md": {
+    "it": "Satiro",
+    "page": 391,
+    "by": "fingerprint"
+  },
+  "world/creatures/Scorpion.md": {
+    "it": "Scorpione",
+    "page": 438,
+    "by": "fingerprint"
+  },
+  "world/creatures/Scout.md": {
+    "it": "Esploratore",
+    "page": 449,
+    "by": "fingerprint"
+  },
+  "world/creatures/Sea Hag.md": {
+    "it": "Megera marina",
+    "page": 374,
+    "by": "fingerprint"
+  },
+  "world/creatures/Sea Horse.md": {
+    "it": "Cavalluccio marino",
+    "page": 419,
+    "by": "fingerprint"
+  },
+  "world/creatures/Shadow.md": {
+    "it": "Ombra",
+    "page": 385,
+    "by": "fingerprint"
+  },
+  "world/creatures/Shambling Mound.md": {
+    "it": "Cumulo strisciante",
+    "page": 310,
+    "by": "fingerprint"
+  },
+  "world/creatures/Shield Guardian.md": {
+    "it": "Guardiano protettore",
+    "page": 364,
+    "by": "fingerprint"
+  },
+  "world/creatures/Shrieker.md": {
+    "it": "Boleto stridente",
+    "page": 353,
+    "by": "fingerprint"
+  },
+  "world/creatures/Silver Dragon Wyrmling.md": {
+    "it": "Drago d'argento cucciolo",
+    "page": 323,
+    "by": "fingerprint"
+  },
+  "world/creatures/Skeleton.md": {
+    "it": "Scheletro",
+    "page": 392,
+    "by": "fingerprint"
+  },
+  "world/creatures/Solar.md": {
+    "it": "Solar",
+    "page": 302,
+    "by": "fingerprint"
+  },
+  "world/creatures/Specter.md": {
+    "it": "Spettro",
+    "page": 395,
+    "by": "fingerprint"
+  },
+  "world/creatures/Spider.md": {
+    "it": "Ragno",
+    "page": 432,
+    "by": "fingerprint"
+  },
+  "world/creatures/Spirit Naga.md": {
+    "it": "Naga spirituale",
+    "page": 383,
+    "by": "fingerprint"
+  },
+  "world/creatures/Sprite.md": {
+    "it": "Spiritello",
+    "page": 395,
+    "by": "fingerprint"
+  },
+  "world/creatures/Spy.md": {
+    "it": "Spia",
+    "page": 452,
+    "by": "fingerprint"
+  },
+  "world/creatures/Steam Mephit.md": {
+    "it": "Mephit del vapore",
+    "page": 379,
+    "by": "fingerprint"
+  },
+  "world/creatures/Stirge.md": {
+    "it": "Uccello stigeo",
+    "page": 399,
+    "by": "fingerprint"
+  },
+  "world/creatures/Stone Giant.md": {
+    "it": "Gigante delle pietre",
+    "page": 358,
+    "by": "fingerprint"
+  },
+  "world/creatures/Stone Golem.md": {
+    "it": "Golem di pietra",
+    "page": 362,
+    "by": "fingerprint"
+  },
+  "world/creatures/Storm Giant.md": {
+    "it": "Gigante delle tempeste",
+    "page": 358,
+    "by": "fingerprint"
+  },
+  "world/creatures/Succubus-Incubus.md": {
+    "it": "Succube/Incubo",
+    "page": 395,
+    "by": "fingerprint"
+  },
+  "world/creatures/Swarm of Bats.md": {
+    "it": "Sciame di pipistrelli",
+    "page": 436,
+    "by": "fingerprint"
+  },
+  "world/creatures/Swarm of Insects.md": {
+    "it": "Sciame di insetti",
+    "page": 436,
+    "by": "fingerprint"
+  },
+  "world/creatures/Swarm of Poisonous Snakes.md": {
+    "it": "Sciame di serpenti velenosi",
+    "page": 437,
+    "by": "fingerprint"
+  },
+  "world/creatures/Swarm of Quippers.md": {
+    "it": "Sciame di quipper",
+    "page": 437,
+    "by": "fingerprint"
+  },
+  "world/creatures/Swarm of Rats.md": {
+    "it": "Sciame di topi",
+    "page": 438,
+    "by": "fingerprint"
+  },
+  "world/creatures/Swarm of Ravens.md": {
+    "it": "Sciame di corvi",
+    "page": 436,
+    "by": "fingerprint"
+  },
+  "world/creatures/Tarrasque.md": {
+    "it": "Tarrasque",
+    "page": 396,
+    "by": "fingerprint"
+  },
+  "world/creatures/Thug.md": {
+    "it": "Malvivente",
+    "page": 451,
+    "by": "fingerprint"
+  },
+  "world/creatures/Tiefling.md": {
+    "it": "Tiefling",
+    "page": 7,
+    "by": "place"
+  },
+  "world/creatures/Tiger.md": {
+    "it": "Tigre",
+    "page": 441,
+    "by": "fingerprint"
+  },
+  "world/creatures/Treant.md": {
+    "it": "Treant",
+    "page": 398,
+    "by": "fingerprint"
+  },
+  "world/creatures/Tribal Warrior.md": {
+    "it": "Combattente tribale",
+    "page": 447,
+    "by": "fingerprint"
+  },
+  "world/creatures/Triceratops.md": {
+    "it": "Triceratopo",
+    "page": 320,
+    "by": "fingerprint"
+  },
+  "world/creatures/Troll.md": {
+    "it": "Troll",
+    "page": 398,
+    "by": "fingerprint"
+  },
+  "world/creatures/Tyrannosaurus Rex.md": {
+    "it": "Tirannosauro",
+    "page": 320,
+    "by": "fingerprint"
+  },
+  "world/creatures/Unicorn.md": {
+    "it": "Unicorno",
+    "page": 399,
+    "by": "fingerprint"
+  },
+  "world/creatures/Vampire Spawn.md": {
+    "it": "Progenie vampirica",
+    "page": 400,
+    "by": "fingerprint"
+  },
+  "world/creatures/Vampire.md": {
+    "it": "Vampiro",
+    "page": 400,
+    "by": "fingerprint"
+  },
+  "world/creatures/Veteran.md": {
+    "it": "Veterano",
+    "page": 453,
+    "by": "fingerprint"
+  },
+  "world/creatures/Violet Fungus.md": {
+    "it": "Fungo viola",
+    "page": 353,
+    "by": "fingerprint"
+  },
+  "world/creatures/Vrock.md": {
+    "it": "Vrock",
+    "page": 314,
+    "by": "fingerprint"
+  },
+  "world/creatures/Vulture.md": {
+    "it": "Avvoltoio",
+    "page": 415,
+    "by": "fingerprint"
+  },
+  "world/creatures/Warhorse Skeleton.md": {
+    "it": "Scheletro di cavallo da guerra",
+    "page": 392,
+    "by": "fingerprint"
+  },
+  "world/creatures/Warhorse.md": {
+    "it": "Cavallo da guerra",
+    "page": 418,
+    "by": "fingerprint"
+  },
+  "world/creatures/Water Elemental.md": {
+    "it": "Elementale dell'acqua",
+    "page": 349,
+    "by": "fingerprint"
+  },
+  "world/creatures/Weasel.md": {
+    "it": "Faina",
+    "page": 422,
+    "by": "fingerprint"
+  },
+  "world/creatures/Werebear.md": {
+    "it": "Orso mannaro",
+    "page": 368,
+    "by": "fingerprint"
+  },
+  "world/creatures/Wereboar.md": {
+    "it": "Cinghiale mannaro",
+    "page": 367,
+    "by": "fingerprint"
+  },
+  "world/creatures/Wererat.md": {
+    "it": "Topo mannaro",
+    "page": 369,
+    "by": "fingerprint"
+  },
+  "world/creatures/Weretiger.md": {
+    "it": "Tigre mannara",
+    "page": 368,
+    "by": "fingerprint"
+  },
+  "world/creatures/Werewolf.md": {
+    "it": "Lupo mannaro",
+    "page": 367,
+    "by": "fingerprint"
+  },
+  "world/creatures/White Dragon Wyrmling.md": {
+    "it": "Drago bianco cucciolo",
+    "page": 337,
+    "by": "fingerprint"
+  },
+  "world/creatures/Wight.md": {
+    "it": "Wight",
+    "page": 403,
+    "by": "fingerprint"
+  },
+  "world/creatures/Will-o'-Wisp.md": {
+    "it": "Fuoco fatuo",
+    "page": 353,
+    "by": "fingerprint"
+  },
+  "world/creatures/Winter Wolf.md": {
+    "it": "Lupo invernale",
+    "page": 427,
+    "by": "fingerprint"
+  },
+  "world/creatures/Wolf.md": {
+    "it": "Lupo",
+    "page": 426,
+    "by": "fingerprint"
+  },
+  "world/creatures/Worg.md": {
+    "it": "Worg",
+    "page": 443,
+    "by": "fingerprint"
+  },
+  "world/creatures/Wraith.md": {
+    "it": "Wraith",
+    "page": 403,
+    "by": "fingerprint"
+  },
+  "world/creatures/Wyvern.md": {
+    "it": "Viverna",
+    "page": 402,
+    "by": "fingerprint"
+  },
+  "world/creatures/Xorn.md": {
+    "it": "Xorn",
+    "page": 404,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young Black Dragon.md": {
+    "it": "Drago nero giovane",
+    "page": 341,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young Blue Dragon.md": {
+    "it": "Drago blu giovane",
+    "page": 339,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young Brass Dragon.md": {
+    "it": "Drago d'ottone giovane",
+    "page": 334,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young Bronze Dragon.md": {
+    "it": "Drago di bronzo giovane",
+    "page": 326,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young Copper Dragon.md": {
+    "it": "Drago di rame giovane",
+    "page": 328,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young Gold Dragon.md": {
+    "it": "Drago d'oro giovane",
+    "page": 331,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young Green Dragon.md": {
+    "it": "Drago verde giovane",
+    "page": 345,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young Red Dragon.md": {
+    "it": "Drago rosso giovane",
+    "page": 343,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young Silver Dragon.md": {
+    "it": "Drago d'argento giovane",
+    "page": 323,
+    "by": "fingerprint"
+  },
+  "world/creatures/Young White Dragon.md": {
+    "it": "Drago bianco giovane",
+    "page": 336,
+    "by": "fingerprint"
+  },
+  "world/creatures/Zombie.md": {
+    "it": "Zombi",
+    "page": 404,
+    "by": "fingerprint"
+  },
+  "world/items/Abacus.md": {
+    "it": "Abaco",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Acid.md": {
+    "it": "Acido",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Adamantine Armor.md": {
+    "it": "Armatura adamantina",
+    "page": 243,
+    "by": "hand"
+  },
+  "world/items/Alchemist's Fire.md": {
+    "it": "Fuoco dell'alchimista",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Alchemist's Supplies.md": {
+    "it": "Scorte da alchimista",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Ammunition, +1, +2, or +3.md": {
+    "it": "Munizione +1, +2 o +3",
+    "page": 270,
+    "by": "hand"
+  },
+  "world/items/Amulet of Health.md": {
+    "it": "Amuleto della salute",
+    "page": 238,
+    "by": "hand"
+  },
+  "world/items/Amulet of Proof against Detection and Location.md": {
+    "it": "Amuleto anti-individuazione e localizzazione",
+    "page": 237,
+    "by": "hand"
+  },
+  "world/items/Amulet of the Planes.md": {
+    "it": "Amuleto dei piani",
+    "page": 238,
+    "by": "fingerprint"
+  },
+  "world/items/Amulet.md": {
+    "it": "Amuleto",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Animated Shield.md": {
+    "it": "Scudo animato",
+    "page": 277,
+    "by": "hand"
+  },
+  "world/items/Antitoxin.md": {
+    "it": "Antitossina",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Apparatus of the Crab.md": {
+    "it": "Apparatus del Granchio",
+    "page": 241,
+    "by": "fingerprint"
+  },
+  "world/items/Armor of Invulnerability.md": {
+    "it": "Armatura dell'invulnerabilità",
+    "page": 244,
+    "by": "hand"
+  },
+  "world/items/Armor of Resistance.md": {
+    "it": "Armatura della resistenza",
+    "page": 243,
+    "by": "hand"
+  },
+  "world/items/Armor of Vulnerability.md": {
+    "it": "Armatura della vulnerabilità",
+    "page": 243,
+    "by": "fingerprint"
+  },
+  "world/items/Armor, +1, +2, or +3.md": {
+    "it": "Armatura +1, +2 o +3",
+    "page": 243,
+    "by": "hand"
+  },
+  "world/items/Arrow of Slaying.md": {
+    "it": "Freccia assassina",
+    "page": 262,
+    "by": "fingerprint"
+  },
+  "world/items/Arrow-Catching Shield.md": {
+    "it": "Scudo catturafrecce",
+    "page": 278,
+    "by": "fingerprint"
+  },
+  "world/items/Arrows.md": {
+    "it": "Frecce",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Backpack.md": {
+    "it": "Zaino",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Bag of Beans.md": {
+    "it": "Borsa dei fagioli magici",
+    "page": 252,
+    "by": "fingerprint"
+  },
+  "world/items/Bag of Devouring.md": {
+    "it": "Borsa divorante",
+    "page": 253,
+    "by": "fingerprint"
+  },
+  "world/items/Bag of Holding.md": {
+    "it": "Borsa conservante",
+    "page": 252,
+    "by": "fingerprint"
+  },
+  "world/items/Bag of Tricks.md": {
+    "it": "Borsa dei trucchi",
+    "page": 253,
+    "by": "fingerprint"
+  },
+  "world/items/Bagpipes.md": {
+    "it": "Cornamusa",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Ball Bearings.md": {
+    "it": "Sfere metalliche",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Barding.md": {
+    "it": "Bardatura",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Barrel.md": {
+    "it": "Barile",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Basic Poison.md": {
+    "it": "Veleno base",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Basket.md": {
+    "it": "Canestro",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Battleaxe.md": {
+    "it": "Ascia da battaglia",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Bead of Force.md": {
+    "it": "Biglia di forza",
+    "page": 251,
+    "by": "fingerprint"
+  },
+  "world/items/Bedroll.md": {
+    "it": "Giaciglio",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Bell.md": {
+    "it": "Campanella",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Belt of Dwarvenkind.md": {
+    "it": "Cintura nanica",
+    "page": 256,
+    "by": "fingerprint"
+  },
+  "world/items/Belt of Giant Strength.md": {
+    "it": "Cintura della forza dei giganti",
+    "page": 256,
+    "by": "fingerprint"
+  },
+  "world/items/Berserker Axe.md": {
+    "it": "Ascia del berserker",
+    "page": 244,
+    "by": "fingerprint"
+  },
+  "world/items/Bit and Bridle.md": {
+    "it": "Morso e briglie",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Blanket.md": {
+    "it": "Coperta",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Block and Tackle.md": {
+    "it": "Carrucola e paranco",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Blowgun Needles.md": {
+    "it": "Aghi da cerbottana",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Blowgun.md": {
+    "it": "Cerbottana",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Book.md": {
+    "it": "Libro",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Boots of Elvenkind.md": {
+    "it": "Stivali elfici",
+    "page": 283,
+    "by": "hand"
+  },
+  "world/items/Boots of Levitation.md": {
+    "it": "Stivali della levitazione",
+    "page": 282,
+    "by": "fingerprint"
+  },
+  "world/items/Boots of Speed.md": {
+    "it": "Stivali della velocità",
+    "page": 282,
+    "by": "fingerprint"
+  },
+  "world/items/Boots of Striding and Springing.md": {
+    "it": "Stivali molleggiati",
+    "page": 283,
+    "by": "hand"
+  },
+  "world/items/Boots of the Winterlands.md": {
+    "it": "Stivali dell'inverno",
+    "page": 282,
+    "by": "hand"
+  },
+  "world/items/Bowl of Commanding Water Elementals.md": {
+    "it": "Boccia del comando degli elementali dell'acqua",
+    "page": 252,
+    "by": "hand"
+  },
+  "world/items/Bracers of Archery.md": {
+    "it": "Bracciali dell'arciere",
+    "page": 254,
+    "by": "hand"
+  },
+  "world/items/Bracers of Defense.md": {
+    "it": "Bracciali della difesa",
+    "page": 254,
+    "by": "hand"
+  },
+  "world/items/Brazier of Commanding Fire Elementals.md": {
+    "it": "Braciere del comando degli elementali del fuoco",
+    "page": 254,
+    "by": "hand"
+  },
+  "world/items/Breastplate.md": {
+    "it": "Corazza di piastre",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Brewer's Supplies.md": {
+    "it": "Scorte da birraio",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Brooch of Shielding.md": {
+    "it": "Fermaglio dello scudo",
+    "page": 261,
+    "by": "fingerprint"
+  },
+  "world/items/Broom of Flying.md": {
+    "it": "Scopa volante",
+    "page": 277,
+    "by": "fingerprint"
+  },
+  "world/items/Bucket.md": {
+    "it": "Secchio",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Bullseye Lantern.md": {
+    "it": "Lanterna a lente sporgente",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Burglar's Pack.md": {
+    "it": "Dotazione da scassinatore",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Calligrapher's Supplies.md": {
+    "it": "Scorte da calligrafo",
+    "page": 78,
+    "by": "hand"
+  },
+  "world/items/Caltrops.md": {
+    "it": "Triboli",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Candle of Invocation.md": {
+    "it": "Candela dell'invocazione",
+    "page": 255,
+    "by": "fingerprint"
+  },
+  "world/items/Candle.md": {
+    "it": "Candela",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Cape of the Mountebank.md": {
+    "it": "Cappa del saltimbanco",
+    "page": 256,
+    "by": "hand"
+  },
+  "world/items/Carpenter's Tools.md": {
+    "it": "Strumenti da falegname",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Carpet of Flying.md": {
+    "it": "Tappeto volante",
+    "page": 284,
+    "by": "hand"
+  },
+  "world/items/Carriage.md": {
+    "it": "Carrozza",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Cart.md": {
+    "it": "Carretto",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Cartographer's Tools.md": {
+    "it": "Strumenti da cartografo",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Censer of Controlling Air Elementals.md": {
+    "it": "Incensiere del controllo degli elementali dell'aria",
+    "page": 264,
+    "by": "hand"
+  },
+  "world/items/Chain Mail.md": {
+    "it": "Cotta di maglia",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Chain Shirt.md": {
+    "it": "Giaco di maglia",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Chain.md": {
+    "it": "Catena",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Chalk.md": {
+    "it": "Gessetto",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Chariot.md": {
+    "it": "Biga",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Chest.md": {
+    "it": "Forziere",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Chime of Opening.md": {
+    "it": "Campana dell'apertura",
+    "page": 255,
+    "by": "fingerprint"
+  },
+  "world/items/Circlet of Blasting.md": {
+    "it": "Diadema incandescente",
+    "page": 259,
+    "by": "hand"
+  },
+  "world/items/Climber's Kit.md": {
+    "it": "Attrezzi da scalatore",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Cloak of Arachnida.md": {
+    "it": "Mantello dell'aracnide",
+    "page": 265,
+    "by": "fingerprint"
+  },
+  "world/items/Cloak of Displacement.md": {
+    "it": "Mantello distorcente",
+    "page": 266,
+    "by": "hand"
+  },
+  "world/items/Cloak of Elvenkind.md": {
+    "it": "Mantello elfico",
+    "page": 266,
+    "by": "hand"
+  },
+  "world/items/Cloak of Protection.md": {
+    "it": "Mantello della protezione",
+    "page": 265,
+    "by": "hand"
+  },
+  "world/items/Cloak of the Bat.md": {
+    "it": "Mantello del pipistrello",
+    "page": 265,
+    "by": "fingerprint"
+  },
+  "world/items/Cloak of the Manta Ray.md": {
+    "it": "Mantello della manta",
+    "page": 265,
+    "by": "hand"
+  },
+  "world/items/Club.md": {
+    "it": "Randello",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Cobbler's Tools.md": {
+    "it": "Strumenti da calzolaio",
+    "page": 78,
+    "by": "hand"
+  },
+  "world/items/Common Clothes.md": {
+    "it": "Abito comune",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Component Pouch.md": {
+    "it": "Borsa per componenti",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Cook's Utensils.md": {
+    "it": "Utensili da cuoco",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Costume Clothes.md": {
+    "it": "Abito costume",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Crossbow Bolt Case.md": {
+    "it": "Custodia per quadrelli da balestra",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Crossbow Bolts.md": {
+    "it": "Quadrelli da balestra",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Crowbar.md": {
+    "it": "Piede di porco",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Crystal Ball.md": {
+    "it": "Sfera di cristallo",
+    "page": 278,
+    "by": "fingerprint"
+  },
+  "world/items/Crystal.md": {
+    "it": "Cristallo",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Cube of Force.md": {
+    "it": "Cubo di forza",
+    "page": 259,
+    "by": "fingerprint"
+  },
+  "world/items/Cubic Gate.md": {
+    "it": "Cubo dei portali",
+    "page": 258,
+    "by": "fingerprint"
+  },
+  "world/items/Dagger of Venom.md": {
+    "it": "Pugnale avvelenato",
+    "page": 277,
+    "by": "fingerprint"
+  },
+  "world/items/Dagger.md": {
+    "it": "Pugnale",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Dancing Sword.md": {
+    "it": "Spada danzante",
+    "page": 279,
+    "by": "fingerprint"
+  },
+  "world/items/Dart.md": {
+    "it": "Dardo",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Decanter of Endless Water.md": {
+    "it": "Caraffa dell'acqua eterna",
+    "page": 256,
+    "by": "hand"
+  },
+  "world/items/Deck of Illusions.md": {
+    "it": "Mazzo delle illusioni",
+    "page": 267,
+    "by": "fingerprint"
+  },
+  "world/items/Deck of Many Things.md": {
+    "it": "Mazzo delle meraviglie",
+    "page": 268,
+    "by": "fingerprint"
+  },
+  "world/items/Defender.md": {
+    "it": "Difensiva",
+    "page": 259,
+    "by": "fingerprint"
+  },
+  "world/items/Demon Armor.md": {
+    "it": "Armastura demoniaca",
+    "page": 243,
+    "by": "fingerprint"
+  },
+  "world/items/Dice Set.md": {
+    "it": "Dadi",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Dimensional Shackles.md": {
+    "it": "Manette dimensionali",
+    "page": 265,
+    "by": "fingerprint"
+  },
+  "world/items/Diplomat's Pack.md": {
+    "it": "Dotazione da diplomatico",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Disguise Kit.md": {
+    "it": "Trucchi per il camuffamento",
+    "page": 78,
+    "by": "hand"
+  },
+  "world/items/Dragon Scale Mail.md": {
+    "it": "Corazza di scaglie di drago",
+    "page": 257,
+    "by": "hand"
+  },
+  "world/items/Dragon Slayer.md": {
+    "it": "Ammazzadraghi",
+    "page": 237,
+    "by": "fingerprint"
+  },
+  "world/items/Drum.md": {
+    "it": "Tamburo",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Dulcimer.md": {
+    "it": "Dulcimer",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Dungeoneer's Pack.md": {
+    "it": "Dotazione da avventuriero",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Dust of Disappearance.md": {
+    "it": "Polvere dell'invisibilità",
+    "page": 274,
+    "by": "fingerprint"
+  },
+  "world/items/Dust of Dryness.md": {
+    "it": "Polvere prosciugante",
+    "page": 274,
+    "by": "fingerprint"
+  },
+  "world/items/Dust of Sneezing and Choking.md": {
+    "it": "Polvere dello starnuto e del soffocamento",
+    "page": 274,
+    "by": "fingerprint"
+  },
+  "world/items/Dwarven Plate.md": {
+    "it": "Armatura completa nanica",
+    "page": 243,
+    "by": "fingerprint"
+  },
+  "world/items/Dwarven Thrower.md": {
+    "it": "Martello nanico da lancio",
+    "page": 267,
+    "by": "fingerprint"
+  },
+  "world/items/Efficient Quiver.md": {
+    "it": "Faretra efficiente",
+    "page": 260,
+    "by": "hand"
+  },
+  "world/items/Efreeti Bottle.md": {
+    "it": "Bottiglia dell'efreeti",
+    "page": 254,
+    "by": "fingerprint"
+  },
+  "world/items/Elemental Gem.md": {
+    "it": "Gemma elementale",
+    "page": 263,
+    "by": "fingerprint"
+  },
+  "world/items/Elven Chain.md": {
+    "it": "Giaco di maglia elfico",
+    "page": 263,
+    "by": "hand"
+  },
+  "world/items/Emblem.md": {
+    "it": "Emblema",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Entertainer's Pack.md": {
+    "it": "Dotazione da intrattenitore",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Eversmoking Bottle.md": {
+    "it": "Bottiglia del fumo perenne",
+    "page": 254,
+    "by": "fingerprint"
+  },
+  "world/items/Exotic Saddle.md": {
+    "it": "Sella esotica",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Explorer's Pack.md": {
+    "it": "Dotazione da esploratore",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Eyes of Charming.md": {
+    "it": "Lenti dello charme",
+    "page": 264,
+    "by": "hand"
+  },
+  "world/items/Eyes of Minute Seeing.md": {
+    "it": "Lenti della visione dettagliata",
+    "page": 264,
+    "by": "hand"
+  },
+  "world/items/Eyes of the Eagle.md": {
+    "it": "Lenti dell'aquila",
+    "page": 264,
+    "by": "hand"
+  },
+  "world/items/Feather Token.md": {
+    "it": "Piuma magica",
+    "page": 273,
+    "by": "fingerprint"
+  },
+  "world/items/Feed.md": {
+    "it": "Nutrimento",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Figurine of Wondrous Power.md": {
+    "it": "Statuina del potere meraviglioso",
+    "page": 281,
+    "by": "fingerprint"
+  },
+  "world/items/Fine Clothes.md": {
+    "it": "Abito pregiato",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Fishing Tackle.md": {
+    "it": "Canna da pesca",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Flail.md": {
+    "it": "Mazzafrusto",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Flame Tongue.md": {
+    "it": "Lingua di fiamme",
+    "page": 265,
+    "by": "fingerprint"
+  },
+  "world/items/Flask or Tankard.md": {
+    "it": "Ampolla o boccale",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Flute.md": {
+    "it": "Flauto",
+    "page": 78,
+    "by": "hand"
+  },
+  "world/items/Folding Boat.md": {
+    "it": "Barca pieghevole",
+    "page": 247,
+    "by": "fingerprint"
+  },
+  "world/items/Forgery Kit.md": {
+    "it": "Arnesi da falsario",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Frost Brand.md": {
+    "it": "Spadone del gelo",
+    "page": 280,
+    "by": "fingerprint"
+  },
+  "world/items/Galley.md": {
+    "it": "Galea",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Gauntlets of Ogre Power.md": {
+    "it": "Guanti del potere orchesco",
+    "page": 263,
+    "by": "hand"
+  },
+  "world/items/Gem of Brightness.md": {
+    "it": "Gemma della luminosità",
+    "page": 262,
+    "by": "fingerprint"
+  },
+  "world/items/Gem of Seeing.md": {
+    "it": "Gemma della visione",
+    "page": 263,
+    "by": "fingerprint"
+  },
+  "world/items/Giant Slayer.md": {
+    "it": "Ammazzagiganti",
+    "page": 237,
+    "by": "fingerprint"
+  },
+  "world/items/Glaive.md": {
+    "it": "Falcione",
+    "page": 73,
+    "by": "hand"
+  },
+  "world/items/Glamoured Studded Leather.md": {
+    "it": "Armatura di cuoio borchiato incantata",
+    "page": 244,
+    "by": "hand"
+  },
+  "world/items/Glass Bottle.md": {
+    "it": "Bottiglia di vetro",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Glassblower's Tools.md": {
+    "it": "Strumenti da soffiatore",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Gloves of Missile Snaring.md": {
+    "it": "Guanti catturaproiettili",
+    "page": 263,
+    "by": "hand"
+  },
+  "world/items/Gloves of Swimming and Climbing.md": {
+    "it": "Guanti del nuotare e scalare",
+    "page": 263,
+    "by": "hand"
+  },
+  "world/items/Goggles of Night.md": {
+    "it": "Occhiali della Notte",
+    "page": 270,
+    "by": "hand"
+  },
+  "world/items/Grappling Hook.md": {
+    "it": "Rampino",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Greataxe.md": {
+    "it": "Ascia bipenne",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Greatclub.md": {
+    "it": "Randello pesante",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Greatsword.md": {
+    "it": "Spadone",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Halberd.md": {
+    "it": "Alabarda",
+    "page": 73,
+    "by": "hand"
+  },
+  "world/items/Half Plate Armor.md": {
+    "it": "Mezza armatura",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Hammer of Thunderbolts.md": {
+    "it": "Martello dei fulmini",
+    "page": 266,
+    "by": "fingerprint"
+  },
+  "world/items/Hammer.md": {
+    "it": "Martello",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Hand Crossbow.md": {
+    "it": "Balestra a mano",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Handaxe.md": {
+    "it": "Ascia",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Handy Haversack.md": {
+    "it": "Zainetto pratico",
+    "page": 288,
+    "by": "fingerprint"
+  },
+  "world/items/Hat of Disguise.md": {
+    "it": "Cappello del camuffamento",
+    "page": 256,
+    "by": "hand"
+  },
+  "world/items/Headband of Intellect.md": {
+    "it": "Fascia dell'intelletto",
+    "page": 261,
+    "by": "hand"
+  },
+  "world/items/Healer's Kit.md": {
+    "it": "Borsa del guaritore",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Heavy Crossbow.md": {
+    "it": "Balestra pesante",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Helm of Brilliance.md": {
+    "it": "Elmo della luminosità",
+    "page": 260,
+    "by": "fingerprint"
+  },
+  "world/items/Helm of Comprehending Languages.md": {
+    "it": "Elmo della comprensione dei linguaggi",
+    "page": 259,
+    "by": "fingerprint"
+  },
+  "world/items/Helm of Telepathy.md": {
+    "it": "Elmo della telepatia",
+    "page": 260,
+    "by": "fingerprint"
+  },
+  "world/items/Helm of Teleportation.md": {
+    "it": "Elmo del teletrasporto",
+    "page": 259,
+    "by": "fingerprint"
+  },
+  "world/items/Hempen Rope.md": {
+    "it": "Corda di canapa",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Herbalism Kit.md": {
+    "it": "Borsa da erborista",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Hide Armor.md": {
+    "it": "Pelle",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Holy Avenger.md": {
+    "it": "Sacro vendicatore",
+    "page": 277,
+    "by": "fingerprint"
+  },
+  "world/items/Holy Water.md": {
+    "it": "Acqua santa",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Hooded Lantern.md": {
+    "it": "Lanterna schermabile",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Horn of Blasting.md": {
+    "it": "Corno della distruzione",
+    "page": 258,
+    "by": "fingerprint"
+  },
+  "world/items/Horn of Valhalla.md": {
+    "it": "Corno del Valhalla",
+    "page": 258,
+    "by": "fingerprint"
+  },
+  "world/items/Horn.md": {
+    "it": "Corno",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Horseshoes of Speed.md": {
+    "it": "Ferri della velocità",
+    "page": 261,
+    "by": "hand"
+  },
+  "world/items/Horseshoes of a Zephyr.md": {
+    "it": "Ferri dello zefiro",
+    "page": 261,
+    "by": "fingerprint"
+  },
+  "world/items/Hourglass.md": {
+    "it": "Clessidra",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Hunting Trap.md": {
+    "it": "Tagliola",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Immovable Rod.md": {
+    "it": "Verga inamovibile",
+    "page": 288,
+    "by": "fingerprint"
+  },
+  "world/items/Ink Pen.md": {
+    "it": "Pennino",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Ink.md": {
+    "it": "Inchiostro",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Instant Fortress.md": {
+    "it": "Fortezza istantanea",
+    "page": 262,
+    "by": "fingerprint"
+  },
+  "world/items/Ioun Stone.md": {
+    "it": "Pietra di Ioun",
+    "page": 272,
+    "by": "fingerprint"
+  },
+  "world/items/Iron Bands of Binding.md": {
+    "it": "Fasce metalliche del legame",
+    "page": 260,
+    "by": "fingerprint"
+  },
+  "world/items/Iron Flask.md": {
+    "it": "Ampolla di ferro",
+    "page": 237,
+    "by": "fingerprint"
+  },
+  "world/items/Iron Pot.md": {
+    "it": "Pentola di ferro",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Iron Spikes.md": {
+    "it": "Spuntoni di ferro",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Javelin of Lightning.md": {
+    "it": "Giavellotto del fulmine",
+    "page": 263,
+    "by": "fingerprint"
+  },
+  "world/items/Javelin.md": {
+    "it": "Giavellotto",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Jeweler's Tools.md": {
+    "it": "Strumenti da gioielliere",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Jug or Pitcher.md": {
+    "it": "Brocca o caraffa",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Keelboat.md": {
+    "it": "Barcone",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Ladder.md": {
+    "it": "Scala a pioli",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Lamp.md": {
+    "it": "Lampada",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Lance.md": {
+    "it": "Lancia da cavaliere",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Lantern of Revealing.md": {
+    "it": "Lanterna della rivelazione",
+    "page": 264,
+    "by": "fingerprint"
+  },
+  "world/items/Leather Armor.md": {
+    "it": "Cuoio",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Leatherworker's Tools.md": {
+    "it": "Strumenti da conciatore",
+    "page": 78,
+    "by": "hand"
+  },
+  "world/items/Light Crossbow.md": {
+    "it": "Balestra leggera",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Light Hammer.md": {
+    "it": "Martello leggero",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Lock.md": {
+    "it": "Serratura",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Longbow.md": {
+    "it": "Arco lungo",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Longship.md": {
+    "it": "Nave lunga",
+    "page": 80,
+    "by": "hand"
+  },
+  "world/items/Longsword.md": {
+    "it": "Spada lunga",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Luck Blade.md": {
+    "it": "Lama della fortuna",
+    "page": 264,
+    "by": "fingerprint"
+  },
+  "world/items/Lute.md": {
+    "it": "Liuto",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Lyre.md": {
+    "it": "Lira",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Mace of Disruption.md": {
+    "it": "Mazza della distruzione",
+    "page": 267,
+    "by": "fingerprint"
+  },
+  "world/items/Mace of Smiting.md": {
+    "it": "Mazza della punizione",
+    "page": 267,
+    "by": "fingerprint"
+  },
+  "world/items/Mace of Terror.md": {
+    "it": "Mazza del terrore",
+    "page": 267,
+    "by": "fingerprint"
+  },
+  "world/items/Mace.md": {
+    "it": "Mazza",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Magnifying Glass.md": {
+    "it": "Lente d'ingrandimento",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Manacles.md": {
+    "it": "Manette",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Mantle of Spell Resistance.md": {
+    "it": "Mantello della resistenza agli incantesimi",
+    "page": 265,
+    "by": "hand"
+  },
+  "world/items/Manual of Bodily Health.md": {
+    "it": "Manuale della salute",
+    "page": 266,
+    "by": "hand"
+  },
+  "world/items/Manual of Gainful Exercise.md": {
+    "it": "Manuale dell'esercizio fisico",
+    "page": 266,
+    "by": "hand"
+  },
+  "world/items/Manual of Golems.md": {
+    "it": "Manuale dei golem",
+    "page": 266,
+    "by": "fingerprint"
+  },
+  "world/items/Manual of Quickness of Action.md": {
+    "it": "Manuale della velocità di azione",
+    "page": 266,
+    "by": "hand"
+  },
+  "world/items/Map or Scroll Case.md": {
+    "it": "Custodia per mappe o pergamene",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Marvelous Pigments.md": {
+    "it": "Pigmenti meravigliosi",
+    "page": 273,
+    "by": "fingerprint"
+  },
+  "world/items/Mason's Tools.md": {
+    "it": "Strumenti da muratore",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Maul.md": {
+    "it": "Maglio",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Medallion of Thoughts.md": {
+    "it": "Medaglione dei pensieri",
+    "page": 270,
+    "by": "fingerprint"
+  },
+  "world/items/Merchant's Scale.md": {
+    "it": "Bilancia da mercante",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Mess Kit.md": {
+    "it": "Gavetta",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Military Saddle.md": {
+    "it": "Sella militare",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Miner's Pick.md": {
+    "it": "Piccone da minatore",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Mirror of Life Trapping.md": {
+    "it": "Specchio imprigionante",
+    "page": 280,
+    "by": "fingerprint"
+  },
+  "world/items/Mithral Armor.md": {
+    "it": "Armatura in Mithral",
+    "page": 244,
+    "by": "hand"
+  },
+  "world/items/Morningstar.md": {
+    "it": "Mazza chiodata",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Navigator's Tools.md": {
+    "it": "Strumenti da navigatore",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Necklace of Adaptation.md": {
+    "it": "Collana dell'adattamento",
+    "page": 257,
+    "by": "hand"
+  },
+  "world/items/Necklace of Fireballs.md": {
+    "it": "Collana delle palle di fuoco",
+    "page": 257,
+    "by": "fingerprint"
+  },
+  "world/items/Necklace of Prayer Beads.md": {
+    "it": "Collana di grani di preghiera",
+    "page": 257,
+    "by": "fingerprint"
+  },
+  "world/items/Net.md": {
+    "it": "Rete",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Nine Lives Stealer.md": {
+    "it": "Spada Ruba nove vite",
+    "page": 280,
+    "by": "fingerprint"
+  },
+  "world/items/Oathbow.md": {
+    "it": "Arco del giuramento",
+    "page": 242,
+    "by": "fingerprint"
+  },
+  "world/items/Oil of Etherealness.md": {
+    "it": "Olio della forma eterea",
+    "page": 270,
+    "by": "fingerprint"
+  },
+  "world/items/Oil of Sharpness.md": {
+    "it": "Olio dell'affilatura",
+    "page": 271,
+    "by": "fingerprint"
+  },
+  "world/items/Oil of Slipperiness.md": {
+    "it": "Olio della scivolosità",
+    "page": 271,
+    "by": "fingerprint"
+  },
+  "world/items/Oil.md": {
+    "it": "Olio",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Orb of Dragonkind.md": {
+    "it": "Sfera della stirpe dei draghi",
+    "page": 290,
+    "by": "fingerprint"
+  },
+  "world/items/Orb.md": {
+    "it": "Globo",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Pack Saddle.md": {
+    "it": "Sella da carico",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Padded Armor.md": {
+    "it": "Imbottita",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Painter's Supplies.md": {
+    "it": "Strumenti da pittore",
+    "page": 78,
+    "by": "hand"
+  },
+  "world/items/Pan Flute.md": {
+    "it": "Flauto di pan",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Paper.md": {
+    "it": "Carta",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Parchment.md": {
+    "it": "Pergamena",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Pearl of Power.md": {
+    "it": "Perla del potere",
+    "page": 271,
+    "by": "hand"
+  },
+  "world/items/Perfume.md": {
+    "it": "Profumo",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Periapt of Health.md": {
+    "it": "Talismano della salute",
+    "page": 283,
+    "by": "hand"
+  },
+  "world/items/Periapt of Proof against Poison.md": {
+    "it": "Talismano di prova contro il veleno",
+    "page": 284,
+    "by": "hand"
+  },
+  "world/items/Periapt of Wound Closure.md": {
+    "it": "Talismano della rimarginazione",
+    "page": 283,
+    "by": "hand"
+  },
+  "world/items/Philter of Love.md": {
+    "it": "Filtro d'amore",
+    "page": 261,
+    "by": "hand"
+  },
+  "world/items/Pike.md": {
+    "it": "Picca",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Pipes of Haunting.md": {
+    "it": "Flauto incantatore",
+    "page": 262,
+    "by": "fingerprint"
+  },
+  "world/items/Pipes of the Sewers.md": {
+    "it": "Flauto dei topi",
+    "page": 261,
+    "by": "fingerprint"
+  },
+  "world/items/Piton.md": {
+    "it": "Chiodo da rocciatore",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Plate Armor of Etherealness.md": {
+    "it": "Armatura a piastre della forma eterea",
+    "page": 243,
+    "by": "hand"
+  },
+  "world/items/Plate Armor.md": {
+    "it": "Armatura a piastre",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Playing Card Set.md": {
+    "it": "Mazzo di carte",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Poisoner's Kit.md": {
+    "it": "Sostanze da avvelenatore",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Pole.md": {
+    "it": "Asta",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Portable Hole.md": {
+    "it": "Buco portatile",
+    "page": 255,
+    "by": "fingerprint"
+  },
+  "world/items/Portable Ram.md": {
+    "it": "Ariete portatile",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Animal Friendship.md": {
+    "it": "Pozione di amicizia con gli animali",
+    "page": 275,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Clairvoyance.md": {
+    "it": "Pozione di chiaroveggenza",
+    "page": 275,
+    "by": "hand"
+  },
+  "world/items/Potion of Climbing.md": {
+    "it": "Pozione di scalare",
+    "page": 276,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Diminution.md": {
+    "it": "Pozione di diminuzione",
+    "page": 275,
+    "by": "hand"
+  },
+  "world/items/Potion of Flying.md": {
+    "it": "Pozione di volare",
+    "page": 276,
+    "by": "hand"
+  },
+  "world/items/Potion of Gaseous Form.md": {
+    "it": "Pozione della forma gassosa",
+    "page": 275,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Giant Strength.md": {
+    "it": "Pozione della forza dei giganti",
+    "page": 275,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Growth.md": {
+    "it": "Pozione di crescita",
+    "page": 275,
+    "by": "hand"
+  },
+  "world/items/Potion of Healing.md": {
+    "it": "Pozione di guarigione",
+    "page": 276,
+    "by": "hand"
+  },
+  "world/items/Potion of Heroism.md": {
+    "it": "Pozione di eroismo",
+    "page": 275,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Invisibility.md": {
+    "it": "Pozione dell'invisibilità",
+    "page": 275,
+    "by": "hand"
+  },
+  "world/items/Potion of Mind Reading.md": {
+    "it": "Pozione di lettura della mente",
+    "page": 276,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Poison.md": {
+    "it": "Pozione velenosa",
+    "page": 276,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Resistance.md": {
+    "it": "Pozione di resistenza",
+    "page": 276,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Speed.md": {
+    "it": "Pozione di velocità",
+    "page": 276,
+    "by": "fingerprint"
+  },
+  "world/items/Potion of Water Breathing.md": {
+    "it": "Pozione del respirare sott'acqua",
+    "page": 275,
+    "by": "hand"
+  },
+  "world/items/Potter's Tools.md": {
+    "it": "Strumenti da vasaio",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Pouch.md": {
+    "it": "Borsa",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Priest's Pack.md": {
+    "it": "Dotazione da sacerdote",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Quarterstaff.md": {
+    "it": "Bastone ferrato",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Quiver.md": {
+    "it": "Faretra",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Rapier.md": {
+    "it": "Stocco",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Rations.md": {
+    "it": "Razioni",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Reliquary.md": {
+    "it": "Reliquiario",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Restorative Ointment.md": {
+    "it": "Unguento rigenerativo",
+    "page": 286,
+    "by": "fingerprint"
+  },
+  "world/items/Riding Saddle.md": {
+    "it": "Sella da galoppo",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Ring Mail.md": {
+    "it": "Corazza ad anelli",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Animal Influence.md": {
+    "it": "Anello di influenza sugli animali",
+    "page": 240,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Djinni Summoning.md": {
+    "it": "Anello di evocazione del djinni",
+    "page": 240,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Elemental Command.md": {
+    "it": "Anello del comando degli elementali",
+    "page": 238,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Evasion.md": {
+    "it": "Anello di eludere",
+    "page": 240,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Feather Falling.md": {
+    "it": "Anello della caduta morbida",
+    "page": 239,
+    "by": "hand"
+  },
+  "world/items/Ring of Free Action.md": {
+    "it": "Anello della libertà di azione",
+    "page": 239,
+    "by": "hand"
+  },
+  "world/items/Ring of Invisibility.md": {
+    "it": "Anello di invisibilità",
+    "page": 241,
+    "by": "hand"
+  },
+  "world/items/Ring of Jumping.md": {
+    "it": "Anello del saltare",
+    "page": 239,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Mind Shielding.md": {
+    "it": "Anello di scudo mentale",
+    "page": 241,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Protection.md": {
+    "it": "Anello di protezione",
+    "page": 241,
+    "by": "hand"
+  },
+  "world/items/Ring of Regeneration.md": {
+    "it": "Anello di rigenerazione",
+    "page": 241,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Resistance.md": {
+    "it": "Anello di resistenza",
+    "page": 241,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Shooting Stars.md": {
+    "it": "Anello delle stelle cadenti",
+    "page": 240,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Spell Storing.md": {
+    "it": "Anello accumula incantesimi",
+    "page": 238,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Spell Turning.md": {
+    "it": "Anello rifletti incantesimo",
+    "page": 241,
+    "by": "hand"
+  },
+  "world/items/Ring of Swimming.md": {
+    "it": "Anello del nuotare",
+    "page": 239,
+    "by": "hand"
+  },
+  "world/items/Ring of Telekinesis.md": {
+    "it": "Anello di telecinesi",
+    "page": 241,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Three Wishes.md": {
+    "it": "Anello dei tre desideri",
+    "page": 238,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of Warmth.md": {
+    "it": "Anello del calore",
+    "page": 238,
+    "by": "hand"
+  },
+  "world/items/Ring of Water Walking.md": {
+    "it": "Anello del camminare sull'acqua",
+    "page": 238,
+    "by": "hand"
+  },
+  "world/items/Ring of X-ray Vision.md": {
+    "it": "Anello della vista a raggi X",
+    "page": 239,
+    "by": "fingerprint"
+  },
+  "world/items/Ring of the Ram.md": {
+    "it": "Anello dell'ariete",
+    "page": 239,
+    "by": "fingerprint"
+  },
+  "world/items/Robe of Eyes.md": {
+    "it": "Tunica degli occhi",
+    "page": 284,
+    "by": "fingerprint"
+  },
+  "world/items/Robe of Scintillating Colors.md": {
+    "it": "Tunica dei colori scintillanti",
+    "page": 285,
+    "by": "fingerprint"
+  },
+  "world/items/Robe of Stars.md": {
+    "it": "Tunica delle stelle",
+    "page": 286,
+    "by": "fingerprint"
+  },
+  "world/items/Robe of Useful Items.md": {
+    "it": "Tunica degli oggetti utili",
+    "page": 285,
+    "by": "fingerprint"
+  },
+  "world/items/Robe of the Archmagi.md": {
+    "it": "Tunica dell'arcimago",
+    "page": 285,
+    "by": "fingerprint"
+  },
+  "world/items/Robes.md": {
+    "it": "Veste",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Rod of Absorption.md": {
+    "it": "Verga dell'assorbimento",
+    "page": 288,
+    "by": "fingerprint"
+  },
+  "world/items/Rod of Alertness.md": {
+    "it": "Verga dell'allerta",
+    "page": 287,
+    "by": "fingerprint"
+  },
+  "world/items/Rod of Lordly Might.md": {
+    "it": "Verga della potenza divina",
+    "page": 286,
+    "by": "fingerprint"
+  },
+  "world/items/Rod of Rulership.md": {
+    "it": "Verga della sovranità",
+    "page": 287,
+    "by": "fingerprint"
+  },
+  "world/items/Rod of Security.md": {
+    "it": "Verga della sicurezza",
+    "page": 287,
+    "by": "fingerprint"
+  },
+  "world/items/Rod.md": {
+    "it": "Verga",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Rope of Climbing.md": {
+    "it": "Corda per scalare",
+    "page": 258,
+    "by": "fingerprint"
+  },
+  "world/items/Rope of Entanglement.md": {
+    "it": "Corda intralciante",
+    "page": 257,
+    "by": "fingerprint"
+  },
+  "world/items/Rowboat.md": {
+    "it": "Barca a remi",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Sack.md": {
+    "it": "Sacco",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Saddlebags.md": {
+    "it": "Bisacce",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Sailing Ship.md": {
+    "it": "Nave a vela",
+    "page": 80,
+    "by": "hand"
+  },
+  "world/items/Scale Mail.md": {
+    "it": "Corazza a scaglie",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Scarab of Protection.md": {
+    "it": "Scarabeo di protezione",
+    "page": 277,
+    "by": "fingerprint"
+  },
+  "world/items/Scholar's Pack.md": {
+    "it": "Dotazione da studioso",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Scimitar of Speed.md": {
+    "it": "Scimitarra della velocità",
+    "page": 277,
+    "by": "fingerprint"
+  },
+  "world/items/Scimitar.md": {
+    "it": "Scimitarra",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Sealing Wax.md": {
+    "it": "Cera per sigillo",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Shawm.md": {
+    "it": "Ciaramella",
+    "page": 78,
+    "by": "hand"
+  },
+  "world/items/Shield of Missile Attraction.md": {
+    "it": "Scudo attiraproiettili",
+    "page": 278,
+    "by": "fingerprint"
+  },
+  "world/items/Shield, +1, +2, or +3.md": {
+    "it": "Scudo +1, +2 o +3",
+    "page": 277,
+    "by": "hand"
+  },
+  "world/items/Shield.md": {
+    "it": "Scudo",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Shortbow.md": {
+    "it": "Arco corto",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Shortsword.md": {
+    "it": "Spada corta",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Shovel.md": {
+    "it": "Vanga o badile",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Sickle.md": {
+    "it": "Falcetto",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Signal Whistle.md": {
+    "it": "Fischietto da richiamo",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Signet Ring.md": {
+    "it": "Anello con sigillo",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Silk Rope.md": {
+    "it": "Corda di seta",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Sled.md": {
+    "it": "Slitta",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Sledgehammer.md": {
+    "it": "Martello da demolitore",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Sling Bullets.md": {
+    "it": "Proiettili da fionda",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Sling.md": {
+    "it": "Fionda",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Slippers of Spider Climbing.md": {
+    "it": "Pantofole del ragno",
+    "page": 271,
+    "by": "hand"
+  },
+  "world/items/Smith's Tools.md": {
+    "it": "Strumenti da fabbro",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Soap.md": {
+    "it": "Sapone",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Sovereign Glue.md": {
+    "it": "Colla meravigliosa",
+    "page": 256,
+    "by": "fingerprint"
+  },
+  "world/items/Spear.md": {
+    "it": "Lancia",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Spell Scroll.md": {
+    "it": "Pergamena magica",
+    "page": 271,
+    "by": "fingerprint"
+  },
+  "world/items/Spellbook.md": {
+    "it": "Libro degli incantesimi",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Spellguard Shield.md": {
+    "it": "Scudo anti-incantesimi",
+    "page": 278,
+    "by": "hand"
+  },
+  "world/items/Sphere of Annihilation.md": {
+    "it": "Sfera annientatrice",
+    "page": 278,
+    "by": "fingerprint"
+  },
+  "world/items/Splint Armor.md": {
+    "it": "Corazza a strisce",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Sprig of Mistletoe.md": {
+    "it": "Rametto di vischio",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Spyglass.md": {
+    "it": "Cannocchiale",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of Charming.md": {
+    "it": "Bastone dello charme",
+    "page": 251,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of Fire.md": {
+    "it": "Bastone del fuoco",
+    "page": 250,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of Frost.md": {
+    "it": "Bastone del gelo",
+    "page": 250,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of Healing.md": {
+    "it": "Bastone della guarigione",
+    "page": 251,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of Power.md": {
+    "it": "Bastone del potere",
+    "page": 250,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of Striking.md": {
+    "it": "Bastone del colpo possente",
+    "page": 249,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of Swarming Insects.md": {
+    "it": "Bastone dello sciame di insetti",
+    "page": 251,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of Thunder and Lightning.md": {
+    "it": "Bastone dei tuoni e fulmini",
+    "page": 249,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of Withering.md": {
+    "it": "Bastone del deperimento",
+    "page": 249,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of the Magi.md": {
+    "it": "Bastone dei magi",
+    "page": 248,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of the Python.md": {
+    "it": "Bastone del pitone",
+    "page": 250,
+    "by": "fingerprint"
+  },
+  "world/items/Staff of the Woodlands.md": {
+    "it": "Bastone dei boschi",
+    "page": 248,
+    "by": "fingerprint"
+  },
+  "world/items/Staff.md": {
+    "it": "Bastone",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Steel Mirror.md": {
+    "it": "Specchio di metallo",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Stone of Controlling Earth Elementals.md": {
+    "it": "Pietra del controllo degli elementali della terra",
+    "page": 272,
+    "by": "hand"
+  },
+  "world/items/Stone of Good Luck.md": {
+    "it": "Pietra della buona fortuna (pietrafortuna)",
+    "page": 272,
+    "by": "hand"
+  },
+  "world/items/Studded Leather Armor.md": {
+    "it": "Cuoio borchiato",
+    "page": 70,
+    "by": "fingerprint"
+  },
+  "world/items/Sun Blade.md": {
+    "it": "Lama del sole",
+    "page": 264,
+    "by": "fingerprint"
+  },
+  "world/items/Sword of Life Stealing.md": {
+    "it": "Spada del furto vitale",
+    "page": 280,
+    "by": "fingerprint"
+  },
+  "world/items/Sword of Sharpness.md": {
+    "it": "Spada affilata",
+    "page": 279,
+    "by": "fingerprint"
+  },
+  "world/items/Sword of Wounding.md": {
+    "it": "Spada del ferimento",
+    "page": 279,
+    "by": "fingerprint"
+  },
+  "world/items/Talisman of Pure Good.md": {
+    "it": "Talismano del bene puro",
+    "page": 283,
+    "by": "hand"
+  },
+  "world/items/Talisman of Ultimate Evil.md": {
+    "it": "Talismano del male estremo",
+    "page": 283,
+    "by": "hand"
+  },
+  "world/items/Talisman of the Sphere.md": {
+    "it": "Talismano della sfera",
+    "page": 284,
+    "by": "fingerprint"
+  },
+  "world/items/Thieves' Tools.md": {
+    "it": "Arnesi da scasso",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Tinderbox.md": {
+    "it": "Acciarino e pietra focaia",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Tinker's Tools.md": {
+    "it": "Strumenti da inventore",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Tome of Clear Thought.md": {
+    "it": "Tomo del nitido pensiero",
+    "page": 284,
+    "by": "hand"
+  },
+  "world/items/Tome of Leadership and Influence.md": {
+    "it": "Tomo del comando e dell'influenza",
+    "page": 284,
+    "by": "hand"
+  },
+  "world/items/Tome of Understanding.md": {
+    "it": "Tomo della comprensione",
+    "page": 284,
+    "by": "hand"
+  },
+  "world/items/Torch.md": {
+    "it": "Torcia",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Totem.md": {
+    "it": "Totem",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Traveler's Clothes.md": {
+    "it": "Abito da viaggiatore",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Trident of Fish Command.md": {
+    "it": "Tridente del comando dei pesci",
+    "page": 284,
+    "by": "fingerprint"
+  },
+  "world/items/Trident.md": {
+    "it": "Tridente",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Two-Person Tent.md": {
+    "it": "Tenda per due persone",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Unarmed Strike.md": {
+    "it": "Colpo senz'armi",
+    "page": 108,
+    "by": "place"
+  },
+  "world/items/Universal Solvent.md": {
+    "it": "Solvente universale",
+    "page": 279,
+    "by": "fingerprint"
+  },
+  "world/items/Vial.md": {
+    "it": "Fiala",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/Vicious Weapon.md": {
+    "it": "Arma spietata",
+    "page": 243,
+    "by": "fingerprint"
+  },
+  "world/items/Viol.md": {
+    "it": "Viola",
+    "page": 78,
+    "by": "fingerprint"
+  },
+  "world/items/Vorpal Sword.md": {
+    "it": "Spada vorpal",
+    "page": 280,
+    "by": "fingerprint"
+  },
+  "world/items/Wagon.md": {
+    "it": "Carro",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Binding.md": {
+    "it": "Bacchetta del legame",
+    "page": 245,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Enemy Detection.md": {
+    "it": "Bacchetta di individuazione dei nemici",
+    "page": 247,
+    "by": "hand"
+  },
+  "world/items/Wand of Fear.md": {
+    "it": "Bacchetta della paura",
+    "page": 245,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Fireballs.md": {
+    "it": "Bacchetta delle palle di fuoco",
+    "page": 247,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Lightning Bolts.md": {
+    "it": "Bacchetta dei fulmini",
+    "page": 244,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Magic Detection.md": {
+    "it": "Bacchetta di individuazione del magico",
+    "page": 247,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Magic Missiles.md": {
+    "it": "Bacchetta di missili magici",
+    "page": 247,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Paralysis.md": {
+    "it": "Bacchetta della paralisi",
+    "page": 245,
+    "by": "hand"
+  },
+  "world/items/Wand of Polymorph.md": {
+    "it": "Bacchetta della metamorfosi",
+    "page": 245,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Secrets.md": {
+    "it": "Bacchetta dei segreti",
+    "page": 245,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Web.md": {
+    "it": "Bacchetta della ragnatela",
+    "page": 246,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of Wonder.md": {
+    "it": "Bacchetta delle meraviglie",
+    "page": 246,
+    "by": "fingerprint"
+  },
+  "world/items/Wand of the War Mage, +1, +2, or +3.md": {
+    "it": "Bacchetta del mago da guerra +1, +2 o +3",
+    "page": 245,
+    "by": "fingerprint"
+  },
+  "world/items/Wand.md": {
+    "it": "Bacchetta",
+    "page": 76,
+    "by": "hand"
+  },
+  "world/items/War Pick.md": {
+    "it": "Piccone da guerra",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Warhammer.md": {
+    "it": "Martello da guerra",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Warship.md": {
+    "it": "Nave da guerra",
+    "page": 80,
+    "by": "fingerprint"
+  },
+  "world/items/Waterskin.md": {
+    "it": "Otre",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Weapon, +1, +2, or +3.md": {
+    "it": "Arma +1, +2 o +3",
+    "page": 243,
+    "by": "hand"
+  },
+  "world/items/Weaver's Tools.md": {
+    "it": "Strumenti da tessitore",
+    "page": 78,
+    "by": "hand"
+  },
+  "world/items/Well of Many Worlds.md": {
+    "it": "Pozzo dei mondi",
+    "page": 276,
+    "by": "fingerprint"
+  },
+  "world/items/Whetstone.md": {
+    "it": "Cote per affilare",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Whip.md": {
+    "it": "Frusta",
+    "page": 73,
+    "by": "fingerprint"
+  },
+  "world/items/Wind Fan.md": {
+    "it": "Ventaglio",
+    "page": 286,
+    "by": "fingerprint"
+  },
+  "world/items/Winged Boots.md": {
+    "it": "Stivali alati",
+    "page": 282,
+    "by": "fingerprint"
+  },
+  "world/items/Wings of Flying.md": {
+    "it": "Ali del volo",
+    "page": 237,
+    "by": "fingerprint"
+  },
+  "world/items/Woodcarver's Tools.md": {
+    "it": "Strumenti da intagliatore",
+    "page": 78,
+    "by": "hand"
+  },
+  "world/items/Wooden Staff.md": {
+    "it": "Bastone di legno",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/items/Yew Wand.md": {
+    "it": "Bacchetta in legno di tasso",
+    "page": 76,
+    "by": "fingerprint"
+  },
+  "world/topics/Acid Arrow.md": {
+    "it": "Freccia acida",
+    "page": 162,
+    "by": "fingerprint"
+  },
+  "world/topics/Acid Splash.md": {
+    "it": "Fiotto acido",
+    "page": 160,
+    "by": "fingerprint"
+  },
+  "world/topics/Acolyte (background).md": {
+    "it": "Accolito",
+    "page": 66,
+    "by": "place"
+  },
+  "world/topics/Aid.md": {
+    "it": "Aiuto",
+    "page": 129,
+    "by": "fingerprint"
+  },
+  "world/topics/Alarm.md": {
+    "it": "Allarme",
+    "page": 129,
+    "by": "fingerprint"
+  },
+  "world/topics/Alter Self.md": {
+    "it": "Alterare se stesso",
+    "page": 130,
+    "by": "fingerprint"
+  },
+  "world/topics/Animal Friendship.md": {
+    "it": "Amicizia con gli animali",
+    "page": 130,
+    "by": "fingerprint"
+  },
+  "world/topics/Animal Messenger.md": {
+    "it": "Animale messaggero",
+    "page": 131,
+    "by": "fingerprint"
+  },
+  "world/topics/Animal Shapes.md": {
+    "it": "Forme animali",
+    "page": 161,
+    "by": "fingerprint"
+  },
+  "world/topics/Animate Dead.md": {
+    "it": "Animare morti",
+    "page": 131,
+    "by": "fingerprint"
+  },
+  "world/topics/Animate Objects.md": {
+    "it": "Animare oggetti",
+    "page": 132,
+    "by": "fingerprint"
+  },
+  "world/topics/Antilife Shell.md": {
+    "it": "Guscio anti-vita",
+    "page": 166,
+    "by": "fingerprint"
+  },
+  "world/topics/Antimagic Field.md": {
+    "it": "Campo anti-magia",
+    "page": 138,
+    "by": "fingerprint"
+  },
+  "world/topics/Antipathy-Sympathy.md": {
+    "it": "Antipatia/Simpatia",
+    "page": 132,
+    "by": "fingerprint"
+  },
+  "world/topics/Arcane Eye.md": {
+    "it": "Occhio arcano",
+    "page": 185,
+    "by": "fingerprint"
+  },
+  "world/topics/Arcane Hand.md": {
+    "it": "Mano arcana",
+    "page": 177,
+    "by": "fingerprint"
+  },
+  "world/topics/Arcane Lock.md": {
+    "it": "Serratura arcana",
+    "page": 205,
+    "by": "fingerprint"
+  },
+  "world/topics/Arcane Sword.md": {
+    "it": "Spada arcana",
+    "page": 210,
+    "by": "fingerprint"
+  },
+  "world/topics/Arcanist's Magic Aura.md": {
+    "it": "Aura magica dell'arcanista",
+    "page": 134,
+    "by": "fingerprint"
+  },
+  "world/topics/Astral Projection.md": {
+    "it": "Proiezione astrale",
+    "page": 193,
+    "by": "fingerprint"
+  },
+  "world/topics/Augury.md": {
+    "it": "Presagio",
+    "page": 191,
+    "by": "fingerprint"
+  },
+  "world/topics/Awaken.md": {
+    "it": "Risveglio",
+    "page": 199,
+    "by": "fingerprint"
+  },
+  "world/topics/Bane.md": {
+    "it": "Anatema",
+    "page": 130,
+    "by": "fingerprint"
+  },
+  "world/topics/Banishment.md": {
+    "it": "Esilio",
+    "page": 155,
+    "by": "fingerprint"
+  },
+  "world/topics/Barbarian.md": {
+    "it": "Barbaro",
+    "page": 8,
+    "by": "place"
+  },
+  "world/topics/Bard Spells.md": {
+    "it": "Incantesimi da bardo",
+    "page": 120,
+    "by": "place"
+  },
+  "world/topics/Bard.md": {
+    "it": "Bardo",
+    "page": 11,
+    "by": "place"
+  },
+  "world/topics/Barkskin.md": {
+    "it": "Pelle coriacea",
+    "page": 190,
+    "by": "fingerprint"
+  },
+  "world/topics/Beacon of Hope.md": {
+    "it": "Faro di speranza",
+    "page": 159,
+    "by": "fingerprint"
+  },
+  "world/topics/Bestow Curse.md": {
+    "it": "Scagliare maledizione",
+    "page": 201,
+    "by": "fingerprint"
+  },
+  "world/topics/Black Tentacles.md": {
+    "it": "Tentacoli neri",
+    "page": 215,
+    "by": "fingerprint"
+  },
+  "world/topics/Blade Barrier.md": {
+    "it": "Barriera di lame",
+    "page": 136,
+    "by": "fingerprint"
+  },
+  "world/topics/Bless.md": {
+    "it": "Benedizione",
+    "page": 136,
+    "by": "fingerprint"
+  },
+  "world/topics/Blight.md": {
+    "it": "Inaridire",
+    "page": 169,
+    "by": "fingerprint"
+  },
+  "world/topics/Blindness-Deafness.md": {
+    "it": "Cecità/Sordità",
+    "page": 140,
+    "by": "fingerprint"
+  },
+  "world/topics/Blink.md": {
+    "it": "Intermittenza",
+    "page": 172,
+    "by": "fingerprint"
+  },
+  "world/topics/Blur.md": {
+    "it": "Sfocatura",
+    "page": 207,
+    "by": "fingerprint"
+  },
+  "world/topics/Branding Smite.md": {
+    "it": "Punizione marchiante",
+    "page": 194,
+    "by": "fingerprint"
+  },
+  "world/topics/Burning Hands.md": {
+    "it": "Mani brucianti",
+    "page": 177,
+    "by": "fingerprint"
+  },
+  "world/topics/Call Lightning.md": {
+    "it": "Invocare il fulmine",
+    "page": 173,
+    "by": "fingerprint"
+  },
+  "world/topics/Calm Emotions.md": {
+    "it": "Calmare emozioni",
+    "page": 137,
+    "by": "fingerprint"
+  },
+  "world/topics/Chain Lightning.md": {
+    "it": "Catena di fulmini",
+    "page": 140,
+    "by": "fingerprint"
+  },
+  "world/topics/Champion.md": {
+    "it": "Campione",
+    "page": 25,
+    "by": "place"
+  },
+  "world/topics/Charm Person.md": {
+    "it": "Charme su persone",
+    "page": 141,
+    "by": "fingerprint"
+  },
+  "world/topics/Chill Touch.md": {
+    "it": "Tocco gelido",
+    "page": 216,
+    "by": "fingerprint"
+  },
+  "world/topics/Circle of Death.md": {
+    "it": "Cerchio di morte",
+    "page": 141,
+    "by": "fingerprint"
+  },
+  "world/topics/Circle of the Land.md": {
+    "it": "Circolo della Terra",
+    "page": 22,
+    "by": "place"
+  },
+  "world/topics/Clairvoyance.md": {
+    "it": "Chiaroveggenza",
+    "page": 142,
+    "by": "fingerprint"
+  },
+  "world/topics/Cleric Spells.md": {
+    "it": "Incantesimi da chierico",
+    "page": 121,
+    "by": "place"
+  },
+  "world/topics/Cleric.md": {
+    "it": "Chierico",
+    "page": 15,
+    "by": "place"
+  },
+  "world/topics/Clone.md": {
+    "it": "Clone",
+    "page": 142,
+    "by": "fingerprint"
+  },
+  "world/topics/Cloudkill.md": {
+    "it": "Nube mortale",
+    "page": 185,
+    "by": "fingerprint"
+  },
+  "world/topics/College of Lore.md": {
+    "it": "Collegio della Sapienza",
+    "page": 13,
+    "by": "place"
+  },
+  "world/topics/Color Spray.md": {
+    "it": "Spruzzo colorato",
+    "page": 210,
+    "by": "fingerprint"
+  },
+  "world/topics/Command.md": {
+    "it": "Comando",
+    "page": 143,
+    "by": "fingerprint"
+  },
+  "world/topics/Commune with Nature.md": {
+    "it": "Comunione con la natura",
+    "page": 144,
+    "by": "fingerprint"
+  },
+  "world/topics/Commune.md": {
+    "it": "Comunione",
+    "page": 144,
+    "by": "fingerprint"
+  },
+  "world/topics/Comprehend Languages.md": {
+    "it": "Comprensione dei linguaggi",
+    "page": 143,
+    "by": "fingerprint"
+  },
+  "world/topics/Compulsion.md": {
+    "it": "Compulsione",
+    "page": 143,
+    "by": "fingerprint"
+  },
+  "world/topics/Cone of Cold.md": {
+    "it": "Cono di freddo",
+    "page": 145,
+    "by": "fingerprint"
+  },
+  "world/topics/Confusion.md": {
+    "it": "Confusione",
+    "page": 144,
+    "by": "fingerprint"
+  },
+  "world/topics/Conjure Animals.md": {
+    "it": "Evoca animali",
+    "page": 156,
+    "by": "fingerprint"
+  },
+  "world/topics/Conjure Celestial.md": {
+    "it": "Evoca celestiale",
+    "page": 156,
+    "by": "fingerprint"
+  },
+  "world/topics/Conjure Elemental.md": {
+    "it": "Evoca elementale",
+    "page": 157,
+    "by": "fingerprint"
+  },
+  "world/topics/Conjure Fey.md": {
+    "it": "Evoca folletto",
+    "page": 158,
+    "by": "fingerprint"
+  },
+  "world/topics/Conjure Minor Elementals.md": {
+    "it": "Evoca elementali minori",
+    "page": 157,
+    "by": "fingerprint"
+  },
+  "world/topics/Conjure Woodland Beings.md": {
+    "it": "Evoca creature boschive",
+    "page": 157,
+    "by": "fingerprint"
+  },
+  "world/topics/Contact Other Plane.md": {
+    "it": "Contattare altri piani",
+    "page": 146,
+    "by": "fingerprint"
+  },
+  "world/topics/Contagion.md": {
+    "it": "Contagio",
+    "page": 145,
+    "by": "fingerprint"
+  },
+  "world/topics/Contingency.md": {
+    "it": "Contingenza",
+    "page": 146,
+    "by": "fingerprint"
+  },
+  "world/topics/Continual Flame.md": {
+    "it": "Fiamma perenne",
+    "page": 160,
+    "by": "fingerprint"
+  },
+  "world/topics/Control Water.md": {
+    "it": "Controllare acqua",
+    "page": 146,
+    "by": "fingerprint"
+  },
+  "world/topics/Control Weather.md": {
+    "it": "Controllare tempo atmosferico",
+    "page": 147,
+    "by": "fingerprint"
+  },
+  "world/topics/Counterspell.md": {
+    "it": "Controincantesimo",
+    "page": 146,
+    "by": "fingerprint"
+  },
+  "world/topics/Create Food and Water.md": {
+    "it": "Creare cibo e acqua",
+    "page": 148,
+    "by": "fingerprint"
+  },
+  "world/topics/Create Undead.md": {
+    "it": "Creare non morti",
+    "page": 148,
+    "by": "fingerprint"
+  },
+  "world/topics/Create or Destroy Water.md": {
+    "it": "Creare o distruggere acqua",
+    "page": 149,
+    "by": "fingerprint"
+  },
+  "world/topics/Creation.md": {
+    "it": "Creazione",
+    "page": 149,
+    "by": "fingerprint"
+  },
+  "world/topics/Cure Wounds.md": {
+    "it": "Cura ferite",
+    "page": 150,
+    "by": "fingerprint"
+  },
+  "world/topics/Dancing Lights.md": {
+    "it": "Luci danzanti",
+    "page": 177,
+    "by": "fingerprint"
+  },
+  "world/topics/Darkness.md": {
+    "it": "Oscurità",
+    "page": 186,
+    "by": "fingerprint"
+  },
+  "world/topics/Darkvision.md": {
+    "it": "Scurovisione",
+    "page": 204,
+    "by": "fingerprint"
+  },
+  "world/topics/Daylight.md": {
+    "it": "Luce diurna",
+    "page": 177,
+    "by": "fingerprint"
+  },
+  "world/topics/Death Ward.md": {
+    "it": "Interdizione alla morte",
+    "page": 172,
+    "by": "fingerprint"
+  },
+  "world/topics/Delayed Blast Fireball.md": {
+    "it": "Palla di fuoco ritardata",
+    "page": 186,
+    "by": "fingerprint"
+  },
+  "world/topics/Demiplane.md": {
+    "it": "Semipiano",
+    "page": 205,
+    "by": "fingerprint"
+  },
+  "world/topics/Detect Evil and Good.md": {
+    "it": "Individuazione del bene e del male",
+    "page": 170,
+    "by": "fingerprint"
+  },
+  "world/topics/Detect Magic.md": {
+    "it": "Individuazione del magico",
+    "page": 170,
+    "by": "fingerprint"
+  },
+  "world/topics/Detect Poison and Disease.md": {
+    "it": "Individuazione delle malattie e dei veleni",
+    "page": 170,
+    "by": "fingerprint"
+  },
+  "world/topics/Detect Thoughts.md": {
+    "it": "Individuazione dei pensieri",
+    "page": 170,
+    "by": "fingerprint"
+  },
+  "world/topics/Dimension Door.md": {
+    "it": "Porta dimensionale",
+    "page": 190,
+    "by": "fingerprint"
+  },
+  "world/topics/Disguise Self.md": {
+    "it": "Camuffare se stesso",
+    "page": 139,
+    "by": "fingerprint"
+  },
+  "world/topics/Disintegrate.md": {
+    "it": "Disintegrazione",
+    "page": 152,
+    "by": "fingerprint"
+  },
+  "world/topics/Dispel Evil and Good.md": {
+    "it": "Dissolvi il bene e il male",
+    "page": 153,
+    "by": "fingerprint"
+  },
+  "world/topics/Dispel Magic.md": {
+    "it": "Dissolvi magie",
+    "page": 153,
+    "by": "fingerprint"
+  },
+  "world/topics/Divination.md": {
+    "it": "Divinazione",
+    "page": 154,
+    "by": "fingerprint"
+  },
+  "world/topics/Divine Favor.md": {
+    "it": "Favore divino",
+    "page": 159,
+    "by": "fingerprint"
+  },
+  "world/topics/Divine Word.md": {
+    "it": "Parola divina",
+    "page": 188,
+    "by": "fingerprint"
+  },
+  "world/topics/Dominate Beast.md": {
+    "it": "Dominare bestie",
+    "page": 154,
+    "by": "fingerprint"
+  },
+  "world/topics/Dominate Monster.md": {
+    "it": "Dominare mostri",
+    "page": 154,
+    "by": "fingerprint"
+  },
+  "world/topics/Dominate Person.md": {
+    "it": "Dominare persone",
+    "page": 155,
+    "by": "fingerprint"
+  },
+  "world/topics/Draconic Bloodline.md": {
+    "it": "Discendenza draconica",
+    "page": 51,
+    "by": "place"
+  },
+  "world/topics/Dream.md": {
+    "it": "Sogno",
+    "page": 209,
+    "by": "fingerprint"
+  },
+  "world/topics/Druid Spells.md": {
+    "it": "Incantesimi da druido",
+    "page": 122,
+    "by": "place"
+  },
+  "world/topics/Druid.md": {
+    "it": "Druido",
+    "page": 19,
+    "by": "place"
+  },
+  "world/topics/Druidcraft.md": {
+    "it": "Artificio druidico",
+    "page": 134,
+    "by": "fingerprint"
+  },
+  "world/topics/Earthquake.md": {
+    "it": "Terremoto",
+    "page": 215,
+    "by": "fingerprint"
+  },
+  "world/topics/Eldritch Blast.md": {
+    "it": "Deflagrazione occulta",
+    "page": 151,
+    "by": "fingerprint"
+  },
+  "world/topics/Enhance Ability.md": {
+    "it": "Caratteristica potenziata",
+    "page": 139,
+    "by": "fingerprint"
+  },
+  "world/topics/Enlarge-Reduce.md": {
+    "it": "Ingrandire/Ridurre",
+    "page": 171,
+    "by": "fingerprint"
+  },
+  "world/topics/Entangle.md": {
+    "it": "Intralciare",
+    "page": 172,
+    "by": "fingerprint"
+  },
+  "world/topics/Enthrall.md": {
+    "it": "Estasiare",
+    "page": 156,
+    "by": "fingerprint"
+  },
+  "world/topics/Etherealness.md": {
+    "it": "Forma eterea",
+    "page": 161,
+    "by": "fingerprint"
+  },
+  "world/topics/Expeditious Retreat.md": {
+    "it": "Ritirata rapida",
+    "page": 199,
+    "by": "fingerprint"
+  },
+  "world/topics/Eyebite.md": {
+    "it": "Sguardo penetrante",
+    "page": 207,
+    "by": "fingerprint"
+  },
+  "world/topics/Fabricate.md": {
+    "it": "Fabbricare",
+    "page": 158,
+    "by": "fingerprint"
+  },
+  "world/topics/Faerie Fire.md": {
+    "it": "Luminescenza",
+    "page": 177,
+    "by": "fingerprint"
+  },
+  "world/topics/Faithful Hound.md": {
+    "it": "Segugio fedele",
+    "page": 204,
+    "by": "fingerprint"
+  },
+  "world/topics/False Life.md": {
+    "it": "Vita falsata",
+    "page": 221,
+    "by": "fingerprint"
+  },
+  "world/topics/Fear.md": {
+    "it": "Paura",
+    "page": 189,
+    "by": "fingerprint"
+  },
+  "world/topics/Feather Fall.md": {
+    "it": "Caduta morbida",
+    "page": 137,
+    "by": "fingerprint"
+  },
+  "world/topics/Feeblemind.md": {
+    "it": "Regressione mentale",
+    "page": 196,
+    "by": "fingerprint"
+  },
+  "world/topics/Fighter.md": {
+    "it": "Guerriero",
+    "page": 24,
+    "by": "place"
+  },
+  "world/topics/Find Familiar.md": {
+    "it": "Trova famiglio",
+    "page": 218,
+    "by": "fingerprint"
+  },
+  "world/topics/Find Steed.md": {
+    "it": "Trova cavalcatura",
+    "page": 218,
+    "by": "fingerprint"
+  },
+  "world/topics/Find Traps.md": {
+    "it": "Scopri trappole",
+    "page": 202,
+    "by": "fingerprint"
+  },
+  "world/topics/Find the Path.md": {
+    "it": "Scopri il percorso",
+    "page": 202,
+    "by": "fingerprint"
+  },
+  "world/topics/Finger of Death.md": {
+    "it": "Dito della morte",
+    "page": 153,
+    "by": "fingerprint"
+  },
+  "world/topics/Fire Bolt.md": {
+    "it": "Dardo di fuoco",
+    "page": 150,
+    "by": "fingerprint"
+  },
+  "world/topics/Fire Shield.md": {
+    "it": "Scudo di fuoco",
+    "page": 204,
+    "by": "fingerprint"
+  },
+  "world/topics/Fire Storm.md": {
+    "it": "Tempesta di fuoco",
+    "page": 214,
+    "by": "fingerprint"
+  },
+  "world/topics/Fireball.md": {
+    "it": "Palla di fuoco",
+    "page": 186,
+    "by": "fingerprint"
+  },
+  "world/topics/Flame Blade.md": {
+    "it": "Lama infuocata",
+    "page": 174,
+    "by": "fingerprint"
+  },
+  "world/topics/Flame Strike.md": {
+    "it": "Colpo infuocato",
+    "page": 143,
+    "by": "fingerprint"
+  },
+  "world/topics/Flaming Sphere.md": {
+    "it": "Sfera infuocata",
+    "page": 207,
+    "by": "fingerprint"
+  },
+  "world/topics/Flesh to Stone.md": {
+    "it": "Carne in pietra",
+    "page": 139,
+    "by": "fingerprint"
+  },
+  "world/topics/Floating Disk.md": {
+    "it": "Disco fluttuante",
+    "page": 152,
+    "by": "fingerprint"
+  },
+  "world/topics/Fly.md": {
+    "it": "Volare",
+    "page": 221,
+    "by": "fingerprint"
+  },
+  "world/topics/Fog Cloud.md": {
+    "it": "Nube di nebbia",
+    "page": 184,
+    "by": "fingerprint"
+  },
+  "world/topics/Forbiddance.md": {
+    "it": "Proibizione",
+    "page": 192,
+    "by": "fingerprint"
+  },
+  "world/topics/Forcecage.md": {
+    "it": "Gabbia di forza",
+    "page": 163,
+    "by": "fingerprint"
+  },
+  "world/topics/Foresight.md": {
+    "it": "Previsione",
+    "page": 192,
+    "by": "fingerprint"
+  },
+  "world/topics/Freedom of Movement.md": {
+    "it": "Libertà di movimento",
+    "page": 175,
+    "by": "fingerprint"
+  },
+  "world/topics/Freezing Sphere.md": {
+    "it": "Sfera congelante",
+    "page": 206,
+    "by": "fingerprint"
+  },
+  "world/topics/Gaseous Form.md": {
+    "it": "Forma gassosa",
+    "page": 161,
+    "by": "fingerprint"
+  },
+  "world/topics/Gate.md": {
+    "it": "Portale",
+    "page": 190,
+    "by": "fingerprint"
+  },
+  "world/topics/Geas.md": {
+    "it": "Costrizione",
+    "page": 148,
+    "by": "fingerprint"
+  },
+  "world/topics/Gentle Repose.md": {
+    "it": "Riposo inviolato",
+    "page": 198,
+    "by": "fingerprint"
+  },
+  "world/topics/Giant Insect.md": {
+    "it": "Insetto gigante",
+    "page": 171,
+    "by": "fingerprint"
+  },
+  "world/topics/Glibness.md": {
+    "it": "Loquacità",
+    "page": 176,
+    "by": "fingerprint"
+  },
+  "world/topics/Globe of Invulnerability.md": {
+    "it": "Globo di invulnerabilità",
+    "page": 164,
+    "by": "fingerprint"
+  },
+  "world/topics/Glyph of Warding.md": {
+    "it": "Glifo di interdizione",
+    "page": 164,
+    "by": "fingerprint"
+  },
+  "world/topics/Goodberry.md": {
+    "it": "Bacche benefiche",
+    "page": 135,
+    "by": "fingerprint"
+  },
+  "world/topics/Grappler.md": {
+    "it": "Lottatore",
+    "page": 84,
+    "by": "place"
+  },
+  "world/topics/Grease.md": {
+    "it": "Unto",
+    "page": 219,
+    "by": "fingerprint"
+  },
+  "world/topics/Greater Invisibility.md": {
+    "it": "Invisibilità superiore",
+    "page": 173,
+    "by": "fingerprint"
+  },
+  "world/topics/Greater Restoration.md": {
+    "it": "Ristorare superiore",
+    "page": 199,
+    "by": "fingerprint"
+  },
+  "world/topics/Guardian of Faith.md": {
+    "it": "Guardiano della fede",
+    "page": 165,
+    "by": "fingerprint"
+  },
+  "world/topics/Guards and Wards.md": {
+    "it": "Vigilanza e interdizione",
+    "page": 220,
+    "by": "fingerprint"
+  },
+  "world/topics/Guidance.md": {
+    "it": "Guida",
+    "page": 166,
+    "by": "fingerprint"
+  },
+  "world/topics/Guiding Bolt.md": {
+    "it": "Dardo tracciante",
+    "page": 151,
+    "by": "fingerprint"
+  },
+  "world/topics/Gust of Wind.md": {
+    "it": "Folata di vento",
+    "page": 160,
+    "by": "fingerprint"
+  },
+  "world/topics/Hallow.md": {
+    "it": "Santificare",
+    "page": 200,
+    "by": "fingerprint"
+  },
+  "world/topics/Hallucinatory Terrain.md": {
+    "it": "Terreno illusorio",
+    "page": 216,
+    "by": "fingerprint"
+  },
+  "world/topics/Harm.md": {
+    "it": "Ferire",
+    "page": 159,
+    "by": "fingerprint"
+  },
+  "world/topics/Haste.md": {
+    "it": "Velocità",
+    "page": 220,
+    "by": "fingerprint"
+  },
+  "world/topics/Heal.md": {
+    "it": "Guarigione",
+    "page": 165,
+    "by": "fingerprint"
+  },
+  "world/topics/Healing Word.md": {
+    "it": "Parola guaritrice",
+    "page": 188,
+    "by": "fingerprint"
+  },
+  "world/topics/Heat Metal.md": {
+    "it": "Riscaldare il metallo",
+    "page": 199,
+    "by": "fingerprint"
+  },
+  "world/topics/Hellish Rebuke.md": {
+    "it": "Intimorire infernale",
+    "page": 172,
+    "by": "fingerprint"
+  },
+  "world/topics/Heroes' Feast.md": {
+    "it": "Banchetto degli eroi",
+    "page": 135,
+    "by": "fingerprint"
+  },
+  "world/topics/Heroism.md": {
+    "it": "Eroismo",
+    "page": 155,
+    "by": "fingerprint"
+  },
+  "world/topics/Hideous Laughter.md": {
+    "it": "Risata incontenibile",
+    "page": 198,
+    "by": "fingerprint"
+  },
+  "world/topics/Hold Monster.md": {
+    "it": "Blocca mostri",
+    "page": 136,
+    "by": "fingerprint"
+  },
+  "world/topics/Hold Person.md": {
+    "it": "Blocca persone",
+    "page": 136,
+    "by": "fingerprint"
+  },
+  "world/topics/Holy Aura.md": {
+    "it": "Aura sacra",
+    "page": 134,
+    "by": "fingerprint"
+  },
+  "world/topics/Hunter's Mark.md": {
+    "it": "Marchio del cacciatore",
+    "page": 178,
+    "by": "fingerprint"
+  },
+  "world/topics/Hunter.md": {
+    "it": "Cacciatore",
+    "page": 46,
+    "by": "place"
+  },
+  "world/topics/Hypnotic Pattern.md": {
+    "it": "Trama ipnotica",
+    "page": 217,
+    "by": "fingerprint"
+  },
+  "world/topics/Ice Storm.md": {
+    "it": "Tempesta di ghiaccio",
+    "page": 214,
+    "by": "fingerprint"
+  },
+  "world/topics/Identify.md": {
+    "it": "Identificare",
+    "page": 166,
+    "by": "fingerprint"
+  },
+  "world/topics/Illusory Script.md": {
+    "it": "Scritto illusorio",
+    "page": 203,
+    "by": "fingerprint"
+  },
+  "world/topics/Imprisonment.md": {
+    "it": "Imprigionare",
+    "page": 168,
+    "by": "fingerprint"
+  },
+  "world/topics/Incendiary Cloud.md": {
+    "it": "Nube incendiaria",
+    "page": 185,
+    "by": "fingerprint"
+  },
+  "world/topics/Inflict Wounds.md": {
+    "it": "Infliggi ferite",
+    "page": 171,
+    "by": "fingerprint"
+  },
+  "world/topics/Insect Plague.md": {
+    "it": "Piaga degli insetti",
+    "page": 190,
+    "by": "fingerprint"
+  },
+  "world/topics/Instant Summons.md": {
+    "it": "Evocazioni istantanee",
+    "page": 158,
+    "by": "fingerprint"
+  },
+  "world/topics/Invisibility.md": {
+    "it": "Invisibilità",
+    "page": 173,
+    "by": "fingerprint"
+  },
+  "world/topics/Irresistible Dance.md": {
+    "it": "Danza irresistibile",
+    "page": 150,
+    "by": "fingerprint"
+  },
+  "world/topics/Jump.md": {
+    "it": "Saltare",
+    "page": 200,
+    "by": "fingerprint"
+  },
+  "world/topics/Knock.md": {
+    "it": "Scassinare",
+    "page": 201,
+    "by": "fingerprint"
+  },
+  "world/topics/Legend Lore.md": {
+    "it": "Conoscenza delle legende",
+    "page": 145,
+    "by": "fingerprint"
+  },
+  "world/topics/Lesser Restoration.md": {
+    "it": "Ristorare inferiore",
+    "page": 199,
+    "by": "fingerprint"
+  },
+  "world/topics/Levitate.md": {
+    "it": "Levitazione",
+    "page": 175,
+    "by": "fingerprint"
+  },
+  "world/topics/Life Domain.md": {
+    "it": "Dominio della Vita",
+    "page": 18,
+    "by": "place"
+  },
+  "world/topics/Light.md": {
+    "it": "Luce",
+    "page": 176,
+    "by": "fingerprint"
+  },
+  "world/topics/Lightning Bolt.md": {
+    "it": "Fulmine",
+    "page": 162,
+    "by": "fingerprint"
+  },
+  "world/topics/Locate Animals or Plants.md": {
+    "it": "Localizza animali o vegetali",
+    "page": 176,
+    "by": "fingerprint"
+  },
+  "world/topics/Locate Creature.md": {
+    "it": "Localizza creatura",
+    "page": 176,
+    "by": "fingerprint"
+  },
+  "world/topics/Locate Object.md": {
+    "it": "Localizza oggetto",
+    "page": 176,
+    "by": "fingerprint"
+  },
+  "world/topics/Longstrider.md": {
+    "it": "Passo veloce",
+    "page": 189,
+    "by": "fingerprint"
+  },
+  "world/topics/Mage Armor.md": {
+    "it": "Armatura magica",
+    "page": 134,
+    "by": "fingerprint"
+  },
+  "world/topics/Mage Hand.md": {
+    "it": "Mano magica",
+    "page": 178,
+    "by": "fingerprint"
+  },
+  "world/topics/Magic Circle.md": {
+    "it": "Cerchio magico",
+    "page": 141,
+    "by": "fingerprint"
+  },
+  "world/topics/Magic Jar.md": {
+    "it": "Giara magica",
+    "page": 163,
+    "by": "fingerprint"
+  },
+  "world/topics/Magic Missile.md": {
+    "it": "Dardo incantato",
+    "page": 151,
+    "by": "fingerprint"
+  },
+  "world/topics/Magic Mouth.md": {
+    "it": "Bocca magica",
+    "page": 137,
+    "by": "fingerprint"
+  },
+  "world/topics/Magic Weapon.md": {
+    "it": "Arma magica",
+    "page": 133,
+    "by": "fingerprint"
+  },
+  "world/topics/Magnificent Mansion.md": {
+    "it": "Reggia meravigliosa",
+    "page": 195,
+    "by": "fingerprint"
+  },
+  "world/topics/Major Image.md": {
+    "it": "Immagine maggiore",
+    "page": 167,
+    "by": "fingerprint"
+  },
+  "world/topics/Mass Cure Wounds.md": {
+    "it": "Cura ferite di massa",
+    "page": 150,
+    "by": "fingerprint"
+  },
+  "world/topics/Mass Heal.md": {
+    "it": "Guarigione di massa",
+    "page": 165,
+    "by": "fingerprint"
+  },
+  "world/topics/Mass Healing Word.md": {
+    "it": "Parola guaritrice di massa",
+    "page": 189,
+    "by": "fingerprint"
+  },
+  "world/topics/Mass Suggestion.md": {
+    "it": "Suggestione di massa",
+    "page": 212,
+    "by": "fingerprint"
+  },
+  "world/topics/Maze.md": {
+    "it": "Labirinto",
+    "page": 174,
+    "by": "fingerprint"
+  },
+  "world/topics/Meld into Stone.md": {
+    "it": "Fondersi nella pietra",
+    "page": 160,
+    "by": "fingerprint"
+  },
+  "world/topics/Mending.md": {
+    "it": "Riparare",
+    "page": 198,
+    "by": "fingerprint"
+  },
+  "world/topics/Message.md": {
+    "it": "Messaggio",
+    "page": 179,
+    "by": "fingerprint"
+  },
+  "world/topics/Meteor Swarm.md": {
+    "it": "Sciame di meteore",
+    "page": 202,
+    "by": "fingerprint"
+  },
+  "world/topics/Mind Blank.md": {
+    "it": "Vuoto mentale",
+    "page": 221,
+    "by": "fingerprint"
+  },
+  "world/topics/Minor Illusion.md": {
+    "it": "Illusione minore",
+    "page": 166,
+    "by": "fingerprint"
+  },
+  "world/topics/Mirage Arcane.md": {
+    "it": "Miraggio arcano",
+    "page": 180,
+    "by": "fingerprint"
+  },
+  "world/topics/Mirror Image.md": {
+    "it": "Immagine speculare",
+    "page": 168,
+    "by": "fingerprint"
+  },
+  "world/topics/Mislead.md": {
+    "it": "Fuorviare",
+    "page": 162,
+    "by": "fingerprint"
+  },
+  "world/topics/Misty Step.md": {
+    "it": "Passo velato",
+    "page": 189,
+    "by": "fingerprint"
+  },
+  "world/topics/Modify Memory.md": {
+    "it": "Modificare memoria",
+    "page": 180,
+    "by": "fingerprint"
+  },
+  "world/topics/Monk.md": {
+    "it": "Monaco",
+    "page": 34,
+    "by": "place"
+  },
+  "world/topics/Moonbeam.md": {
+    "it": "Bagliore lunare",
+    "page": 135,
+    "by": "fingerprint"
+  },
+  "world/topics/Move Earth.md": {
+    "it": "Muovere il terreno",
+    "page": 181,
+    "by": "fingerprint"
+  },
+  "world/topics/Nondetection.md": {
+    "it": "Anti-individuazione",
+    "page": 132,
+    "by": "fingerprint"
+  },
+  "world/topics/Oath of Devotion.md": {
+    "it": "Giuramento di Devozione",
+    "page": 41,
+    "by": "place"
+  },
+  "world/topics/Paladin Spells.md": {
+    "it": "Incantesimi da paladino",
+    "page": 125,
+    "by": "place"
+  },
+  "world/topics/Paladin.md": {
+    "it": "Paladino",
+    "page": 38,
+    "by": "place"
+  },
+  "world/topics/Pass without Trace.md": {
+    "it": "Passare senza tracce",
+    "page": 189,
+    "by": "fingerprint"
+  },
+  "world/topics/Passwall.md": {
+    "it": "Passapareti",
+    "page": 189,
+    "by": "fingerprint"
+  },
+  "world/topics/Path of the Berserker.md": {
+    "it": "Cammino del Berserker",
+    "page": 10,
+    "by": "place"
+  },
+  "world/topics/Phantasmal Killer.md": {
+    "it": "Allucinazione mortale",
+    "page": 130,
+    "by": "fingerprint"
+  },
+  "world/topics/Phantom Steed.md": {
+    "it": "Destriero fantomatico",
+    "page": 152,
+    "by": "fingerprint"
+  },
+  "world/topics/Planar Ally.md": {
+    "it": "Alleato planare",
+    "page": 129,
+    "by": "fingerprint"
+  },
+  "world/topics/Planar Binding.md": {
+    "it": "Legame planare",
+    "page": 174,
+    "by": "fingerprint"
+  },
+  "world/topics/Plane Shift.md": {
+    "it": "Spostamento planare",
+    "page": 210,
+    "by": "fingerprint"
+  },
+  "world/topics/Plant Growth.md": {
+    "it": "Crescita vegetale",
+    "page": 149,
+    "by": "fingerprint"
+  },
+  "world/topics/Poison Spray.md": {
+    "it": "Spruzzo velenoso",
+    "page": 211,
+    "by": "fingerprint"
+  },
+  "world/topics/Polymorph.md": {
+    "it": "Metamorfosi",
+    "page": 179,
+    "by": "fingerprint"
+  },
+  "world/topics/Power Word Kill.md": {
+    "it": "Parola del potere uccidere",
+    "page": 188,
+    "by": "fingerprint"
+  },
+  "world/topics/Power Word Stun.md": {
+    "it": "Parola del potere stordire",
+    "page": 188,
+    "by": "fingerprint"
+  },
+  "world/topics/Prayer of Healing.md": {
+    "it": "Preghiera di guarigione",
+    "page": 191,
+    "by": "fingerprint"
+  },
+  "world/topics/Prestidigitation.md": {
+    "it": "Prestidigitazione",
+    "page": 191,
+    "by": "fingerprint"
+  },
+  "world/topics/Prismatic Spray.md": {
+    "it": "Spruzzo prismatico",
+    "page": 211,
+    "by": "fingerprint"
+  },
+  "world/topics/Prismatic Wall.md": {
+    "it": "Muro prismatico",
+    "page": 184,
+    "by": "fingerprint"
+  },
+  "world/topics/Private Sanctum.md": {
+    "it": "Santuario privato",
+    "page": 201,
+    "by": "fingerprint"
+  },
+  "world/topics/Produce Flame.md": {
+    "it": "Produrre fiamma",
+    "page": 192,
+    "by": "fingerprint"
+  },
+  "world/topics/Programmed Illusion.md": {
+    "it": "Illusione programmata",
+    "page": 167,
+    "by": "fingerprint"
+  },
+  "world/topics/Project Image.md": {
+    "it": "Immagine proiettata",
+    "page": 167,
+    "by": "fingerprint"
+  },
+  "world/topics/Protection from Energy.md": {
+    "it": "Protezione dall'energia",
+    "page": 194,
+    "by": "fingerprint"
+  },
+  "world/topics/Protection from Evil and Good.md": {
+    "it": "Protezione dal bene e dal male",
+    "page": 193,
+    "by": "fingerprint"
+  },
+  "world/topics/Protection from Poison.md": {
+    "it": "Protezione dai veleni",
+    "page": 193,
+    "by": "fingerprint"
+  },
+  "world/topics/Purify Food and Drink.md": {
+    "it": "Purificare cibo e bevande",
+    "page": 194,
+    "by": "fingerprint"
+  },
+  "world/topics/Raise Dead.md": {
+    "it": "Rianimare morti",
+    "page": 197,
+    "by": "fingerprint"
+  },
+  "world/topics/Ranger Spells.md": {
+    "it": "Incantesimi da ranger",
+    "page": 126,
+    "by": "place"
+  },
+  "world/topics/Ranger.md": {
+    "it": "Ranger",
+    "page": 43,
+    "by": "place"
+  },
+  "world/topics/Ray of Enfeeblement.md": {
+    "it": "Raggio di affaticamento",
+    "page": 194,
+    "by": "fingerprint"
+  },
+  "world/topics/Ray of Frost.md": {
+    "it": "Raggio di gelo",
+    "page": 194,
+    "by": "fingerprint"
+  },
+  "world/topics/Regenerate.md": {
+    "it": "Rigenerazione",
+    "page": 197,
+    "by": "fingerprint"
+  },
+  "world/topics/Reincarnate.md": {
+    "it": "Reincarnazione",
+    "page": 196,
+    "by": "hand"
+  },
+  "world/topics/Remove Curse.md": {
+    "it": "Rimuovi maledizione",
+    "page": 198,
+    "by": "fingerprint"
+  },
+  "world/topics/Resilient Sphere.md": {
+    "it": "Sfera elastica",
+    "page": 206,
+    "by": "fingerprint"
+  },
+  "world/topics/Resistance.md": {
+    "it": "Resistenza",
+    "page": 196,
+    "by": "fingerprint"
+  },
+  "world/topics/Resurrection.md": {
+    "it": "Resurrezione",
+    "page": 197,
+    "by": "fingerprint"
+  },
+  "world/topics/Reverse Gravity.md": {
+    "it": "Inversione della gravità",
+    "page": 172,
+    "by": "fingerprint"
+  },
+  "world/topics/Revivify.md": {
+    "it": "Rinascita",
+    "page": 198,
+    "by": "fingerprint"
+  },
+  "world/topics/Rogue.md": {
+    "it": "Ladro",
+    "page": 27,
+    "by": "place"
+  },
+  "world/topics/Rope Trick.md": {
+    "it": "Trucco della corda",
+    "page": 219,
+    "by": "fingerprint"
+  },
+  "world/topics/Sacred Flame.md": {
+    "it": "Fiamma sacra",
+    "page": 160,
+    "by": "fingerprint"
+  },
+  "world/topics/Sanctuary.md": {
+    "it": "Santuario",
+    "page": 200,
+    "by": "fingerprint"
+  },
+  "world/topics/School of Evocation.md": {
+    "it": "Scuola di invocazione",
+    "page": 32,
+    "by": "place"
+  },
+  "world/topics/Scorching Ray.md": {
+    "it": "Raggio rovente",
+    "page": 194,
+    "by": "fingerprint"
+  },
+  "world/topics/Scrying.md": {
+    "it": "Scrutare",
+    "page": 203,
+    "by": "fingerprint"
+  },
+  "world/topics/Secret Chest.md": {
+    "it": "Scrigno segreto",
+    "page": 203,
+    "by": "fingerprint"
+  },
+  "world/topics/See Invisibility.md": {
+    "it": "Vedere invisibilità",
+    "page": 219,
+    "by": "fingerprint"
+  },
+  "world/topics/Seeming.md": {
+    "it": "Sembrare",
+    "page": 205,
+    "by": "fingerprint"
+  },
+  "world/topics/Sending.md": {
+    "it": "Inviare",
+    "page": 173,
+    "by": "fingerprint"
+  },
+  "world/topics/Sequester.md": {
+    "it": "Celare",
+    "page": 140,
+    "by": "fingerprint"
+  },
+  "world/topics/Shapechange.md": {
+    "it": "Trasformazione",
+    "page": 217,
+    "by": "fingerprint"
+  },
+  "world/topics/Shatter.md": {
+    "it": "Frantumare",
+    "page": 162,
+    "by": "fingerprint"
+  },
+  "world/topics/Shield (spell).md": {
+    "it": "Scudo",
+    "page": 204,
+    "by": "fingerprint"
+  },
+  "world/topics/Shield of Faith.md": {
+    "it": "Scudo della fede",
+    "page": 204,
+    "by": "fingerprint"
+  },
+  "world/topics/Shillelagh.md": {
+    "it": "Randello incantato",
+    "page": 195,
+    "by": "fingerprint"
+  },
+  "world/topics/Shocking Grasp.md": {
+    "it": "Stretta folgorante",
+    "page": 211,
+    "by": "fingerprint"
+  },
+  "world/topics/Silence.md": {
+    "it": "Silenzio",
+    "page": 207,
+    "by": "fingerprint"
+  },
+  "world/topics/Silent Image.md": {
+    "it": "Immagine silenziosa",
+    "page": 168,
+    "by": "fingerprint"
+  },
+  "world/topics/Simulacrum.md": {
+    "it": "Simulacro",
+    "page": 208,
+    "by": "fingerprint"
+  },
+  "world/topics/Sleep.md": {
+    "it": "Sonno",
+    "page": 209,
+    "by": "fingerprint"
+  },
+  "world/topics/Sleet Storm.md": {
+    "it": "Tempesta di nevischio",
+    "page": 214,
+    "by": "fingerprint"
+  },
+  "world/topics/Slow.md": {
+    "it": "Lentezza",
+    "page": 175,
+    "by": "fingerprint"
+  },
+  "world/topics/Sorcerer Spells.md": {
+    "it": "Incantesimi da stregone",
+    "page": 126,
+    "by": "place"
+  },
+  "world/topics/Sorcerer.md": {
+    "it": "Stregone",
+    "page": 48,
+    "by": "place"
+  },
+  "world/topics/Spare the Dying.md": {
+    "it": "Salvare i morenti",
+    "page": 200,
+    "by": "fingerprint"
+  },
+  "world/topics/Speak with Animals.md": {
+    "it": "Parlare con gli animali",
+    "page": 187,
+    "by": "fingerprint"
+  },
+  "world/topics/Speak with Dead.md": {
+    "it": "Parlare con i morti",
+    "page": 187,
+    "by": "fingerprint"
+  },
+  "world/topics/Speak with Plants.md": {
+    "it": "Parlare con i vegetali",
+    "page": 187,
+    "by": "fingerprint"
+  },
+  "world/topics/Spider Climb.md": {
+    "it": "Movimenti del ragno",
+    "page": 181,
+    "by": "fingerprint"
+  },
+  "world/topics/Spike Growth.md": {
+    "it": "Crescita di spine",
+    "page": 149,
+    "by": "fingerprint"
+  },
+  "world/topics/Spirit Guardians.md": {
+    "it": "Guardiani spirituali",
+    "page": 165,
+    "by": "fingerprint"
+  },
+  "world/topics/Spiritual Weapon.md": {
+    "it": "Arma spirituale",
+    "page": 133,
+    "by": "fingerprint"
+  },
+  "world/topics/Stinking Cloud.md": {
+    "it": "Nube maleodorante",
+    "page": 185,
+    "by": "fingerprint"
+  },
+  "world/topics/Stone Shape.md": {
+    "it": "Scolpire pietra",
+    "page": 202,
+    "by": "fingerprint"
+  },
+  "world/topics/Stoneskin.md": {
+    "it": "Pelle di pietra",
+    "page": 190,
+    "by": "fingerprint"
+  },
+  "world/topics/Storm of Vengeance.md": {
+    "it": "Tempesta di vendetta",
+    "page": 215,
+    "by": "fingerprint"
+  },
+  "world/topics/Suggestion.md": {
+    "it": "Suggestione",
+    "page": 211,
+    "by": "fingerprint"
+  },
+  "world/topics/Sunbeam.md": {
+    "it": "Bagliore solare",
+    "page": 135,
+    "by": "fingerprint"
+  },
+  "world/topics/Sunburst.md": {
+    "it": "Esplosione solare",
+    "page": 156,
+    "by": "fingerprint"
+  },
+  "world/topics/Symbol.md": {
+    "it": "Simbolo",
+    "page": 208,
+    "by": "fingerprint"
+  },
+  "world/topics/Telekinesis.md": {
+    "it": "Telecinesi",
+    "page": 212,
+    "by": "fingerprint"
+  },
+  "world/topics/Telepathic Bond.md": {
+    "it": "Legame telepatico",
+    "page": 174,
+    "by": "fingerprint"
+  },
+  "world/topics/Teleport.md": {
+    "it": "Teletrasporto",
+    "page": 213,
+    "by": "fingerprint"
+  },
+  "world/topics/Teleportation Circle.md": {
+    "it": "Cerchio di teletrasporto",
+    "page": 141,
+    "by": "fingerprint"
+  },
+  "world/topics/Thaumaturgy.md": {
+    "it": "Taumaturgia",
+    "page": 212,
+    "by": "fingerprint"
+  },
+  "world/topics/The Fiend.md": {
+    "it": "L'Immondo",
+    "page": 58,
+    "by": "place"
+  },
+  "world/topics/Thief.md": {
+    "it": "Furfante",
+    "page": 29,
+    "by": "place"
+  },
+  "world/topics/Thunderwave.md": {
+    "it": "Onda tonante",
+    "page": 186,
+    "by": "fingerprint"
+  },
+  "world/topics/Time Stop.md": {
+    "it": "Fermare il tempo",
+    "page": 159,
+    "by": "fingerprint"
+  },
+  "world/topics/Tiny Hut.md": {
+    "it": "Capanna",
+    "page": 139,
+    "by": "fingerprint"
+  },
+  "world/topics/Tongues.md": {
+    "it": "Linguaggi",
+    "page": 176,
+    "by": "fingerprint"
+  },
+  "world/topics/Transport via Plants.md": {
+    "it": "Trasporto vegetale",
+    "page": 218,
+    "by": "fingerprint"
+  },
+  "world/topics/Tree Stride.md": {
+    "it": "Traslazione arborea",
+    "page": 217,
+    "by": "fingerprint"
+  },
+  "world/topics/True Polymorph.md": {
+    "it": "Metamorfosi pura",
+    "page": 179,
+    "by": "fingerprint"
+  },
+  "world/topics/True Resurrection.md": {
+    "it": "Resurrezione pura",
+    "page": 197,
+    "by": "fingerprint"
+  },
+  "world/topics/True Seeing.md": {
+    "it": "Visione del vero",
+    "page": 221,
+    "by": "fingerprint"
+  },
+  "world/topics/True Strike.md": {
+    "it": "Colpo accurato",
+    "page": 142,
+    "by": "fingerprint"
+  },
+  "world/topics/Unseen Servant.md": {
+    "it": "Servitore inosservato",
+    "page": 206,
+    "by": "fingerprint"
+  },
+  "world/topics/Vampiric Touch.md": {
+    "it": "Tocco del vampiro",
+    "page": 216,
+    "by": "fingerprint"
+  },
+  "world/topics/Vicious Mockery.md": {
+    "it": "Beffa crudele",
+    "page": 136,
+    "by": "fingerprint"
+  },
+  "world/topics/Wall of Fire.md": {
+    "it": "Muro di fuoco",
+    "page": 182,
+    "by": "fingerprint"
+  },
+  "world/topics/Wall of Force.md": {
+    "it": "Muro di forza",
+    "page": 181,
+    "by": "fingerprint"
+  },
+  "world/topics/Wall of Ice.md": {
+    "it": "Muro di ghiaccio",
+    "page": 182,
+    "by": "fingerprint"
+  },
+  "world/topics/Wall of Stone.md": {
+    "it": "Muro di pietra",
+    "page": 182,
+    "by": "fingerprint"
+  },
+  "world/topics/Wall of Thorns.md": {
+    "it": "Muro di spine",
+    "page": 183,
+    "by": "fingerprint"
+  },
+  "world/topics/Warding Bond.md": {
+    "it": "Vincolo di interdizione",
+    "page": 221,
+    "by": "fingerprint"
+  },
+  "world/topics/Warlock Spells.md": {
+    "it": "Incantesimi da warlock",
+    "page": 128,
+    "by": "place"
+  },
+  "world/topics/Warlock.md": {
+    "it": "Warlock",
+    "page": 53,
+    "by": "place"
+  },
+  "world/topics/Water Breathing.md": {
+    "it": "Respirare sott'acqua",
+    "page": 196,
+    "by": "fingerprint"
+  },
+  "world/topics/Water Walk.md": {
+    "it": "Camminare sull'acqua",
+    "page": 138,
+    "by": "fingerprint"
+  },
+  "world/topics/Way of the Open Hand.md": {
+    "it": "Via della Mano Aperta",
+    "page": 37,
+    "by": "place"
+  },
+  "world/topics/Web.md": {
+    "it": "Ragnatela",
+    "page": 195,
+    "by": "fingerprint"
+  },
+  "world/topics/Weird.md": {
+    "it": "Fatale",
+    "page": 159,
+    "by": "fingerprint"
+  },
+  "world/topics/Wind Walk.md": {
+    "it": "Camminare nel vento",
+    "page": 137,
+    "by": "fingerprint"
+  },
+  "world/topics/Wind Wall.md": {
+    "it": "Muro di vento",
+    "page": 183,
+    "by": "fingerprint"
+  },
+  "world/topics/Wish.md": {
+    "it": "Desiderio",
+    "page": 151,
+    "by": "fingerprint"
+  },
+  "world/topics/Wizard Spells.md": {
+    "it": "Incantesimi da mago",
+    "page": 123,
+    "by": "place"
+  },
+  "world/topics/Wizard.md": {
+    "it": "Mago",
+    "page": 30,
+    "by": "place"
+  },
+  "world/topics/Word of Recall.md": {
+    "it": "Parola del ritiro",
+    "page": 188,
+    "by": "fingerprint"
+  },
+  "world/topics/Zone of Truth.md": {
+    "it": "Zona di verità",
+    "page": 222,
+    "by": "fingerprint"
+  }
+}

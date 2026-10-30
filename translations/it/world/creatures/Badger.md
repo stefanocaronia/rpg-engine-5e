@@ -1,0 +1,13 @@
+---
+name: Tasso
+---
+
+## Tratti
+
+### Olfatto acuto
+Il tasso dispone di vantaggio alle prove di Saggezza (Percezione) basate sull'olfatto.
+
+## Azioni
+
+### Morso
+*Attacco con arma da mischia:* +2 al tiro per colpire, portata 1,5 m, un bersaglio. *Colpito:* 1 danno perforante.

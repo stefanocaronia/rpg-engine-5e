@@ -1,0 +1,5 @@
+---
+name: Respirare sott'acqua
+---
+
+Questo incantesimo concede a un massimo di dieci creature consenzienti, che si trovano entro gittata e che l'incantatore è in grado di vedere, la capacità di respirare sott'acqua per tutta la sua durata. Le creature influenzate conservano inoltre la loro normale modalità di respirazione.

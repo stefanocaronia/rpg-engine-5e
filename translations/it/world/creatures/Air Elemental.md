@@ -1,0 +1,21 @@
+---
+name: Elementale dell'aria
+---
+
+## Tratti
+
+### Forma d'aria
+L'elementale può entrare nello spazio di una creatura ostile e soffermarvisi. Può muoversi attraverso uno spazio stretto fino a 2,5 centimetri senza doversi stringere.
+
+## Azioni
+
+### Multiattacco
+L'elementale effettua due attacchi con schianto.
+
+### Schianto
+*Attacco con arma da mischia:* +8 al tiro per colpire, portata 1,5 m, un bersaglio. *Colpito:* 14 (2d8 + 5) danni contundenti.
+
+### Vortice (ricarica 4–6)
+Ogni creatura nello spazio dell'elementale deve effettuare un tiro salvezza su Forza con CD 13; se lo fallisce, subisce 15 (3d8 + 2) danni contundenti, viene scagliata a 6 metri di distanza dall'elementale in una direzione casuale e cade a terra prona. Se un bersaglio scagliato colpisce un oggetto, come per esempio un muro o una porta, quel bersaglio subisce 3 (1d6) danni contundenti per ogni 3 metri di cui è stato scagliato. Se il bersaglio viene lanciato contro un'altra creatura, quest'ultima deve superare un tiro salvezza su Destrezza con CD 13, altrimenti subirà gli stessi danni e cadrà a terra prona.
+
+Se supera il tiro salvezza, il bersaglio subisce la metà dei danni contundenti, non viene scagliato via e non cade a terra prono.

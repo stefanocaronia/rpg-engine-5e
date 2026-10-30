@@ -1,0 +1,24 @@
+---
+name: Ragno gigante
+---
+
+Per catturare la sua preda, un **ragno gigante** tesse elaborate ragnatele o lancia filamenti viscosi di ragnatela dall'addome. I ragni giganti si annidano generalmente sottoterra, dove fanno la tana sui soffitti o all'interno di crepe immerse nel buio e ricoperte di ragnatele. Spesso queste tane sono piene di bozzoli in cui sono intrappolate le loro vittime.
+
+## Tratti
+
+### Arrampicatele
+Il ragno ignora le restrizioni di movimento causate dalle ragnatele.
+
+### Movimenti del ragno
+Il ragno può scalare le superfici difficili, compresi i soffitti (lungo i quali si muove a testa in giù), senza effettuare una prova di caratteristica.
+
+### Percezione della Ragnatela
+Finché è in contatto con una ragnatela, il ragno conosce l'ubicazione esatta di ogni altra creatura a contatto con la stessa ragnatela.
+
+## Azioni
+
+### Morso
+*Attacco con arma da mischia:* +5 al tiro per colpire, portata 1,5 m, una creatura. *Colpito:* 7 (1d8 + 3) danni perforanti e il bersaglio deve effettuare un tiro salvezza su Costituzione con CD 11, subendo 9 (2d8) danni da veleno in caso di fallimento, o la metà in caso di successo. Se i danni da veleno riducono i punti ferita del bersaglio a 0, esso è stabile ma avvelenato per 1 ora anche dopo aver recuperato punti ferita e, mentre è avvelenato in questo modo, è paralizzato.
+
+### Ragnatela (ricarica 5–6)
+*Attacco con arma a distanza:* +5 al tiro per colpire, gittata 9/18 m, una creatura. *Colpito:* il bersaglio è trattenuto dalle ragnatele. Con un'azione, il bersaglio trattenuto può effettuare una prova di Forza con CD 12. Se la supera, strappa le ragnatele. La ragnatela può anche essere attaccata e distrutta (CA 10; 5 punti ferita; vulnerabilità ai danni da fuoco; immunità ai danni contundenti, da veleno e psichici).

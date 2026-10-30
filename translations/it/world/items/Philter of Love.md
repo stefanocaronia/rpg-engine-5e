@@ -1,0 +1,5 @@
+---
+name: Filtro d'amore
+---
+
+La prossima volta che un personaggio vede una creatura entro 10 minuti dal momento in cui ha bevuto il filtro, diventa affascinato da essa per 1 ora. Se la creatura appartiene a una specie e a un sesso dai quali il personaggio è normalmente attratto, egli considera la creatura il suo vero amore per tutta la durata dell'effetto. Il liquido rosato ed effervescente di questa pozione contiene una bolla a forma di cuore alquanto difficile da individuare.

@@ -1,0 +1,5 @@
+---
+name: Armatura a piastre
+---
+
+Un'armatura a piastre è composta da piastre di metallo modellate e interconnesse che coprono tutto il corpo. Include guanti d'arme, pesanti stivali di cuoio, un elmo con visiera e uno spesso strato di imbottitura sotto l'armatura. Una serie di fibbie e di cinghie consente di distribuire il peso su tutto il corpo.

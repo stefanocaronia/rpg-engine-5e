@@ -1,0 +1,15 @@
+---
+name: Tempesta di vendetta
+---
+
+L'incantatore genera una minacciosa nube tempestosa che si espande fino a una raggio di 110 metri centrata su un punto che è in grado di vedere. Sull'area si abbattono tuoni, fulmini e venti forti. Ogni creatura sotto la nube (a non più di 1,5 km sotto di essa) nel momento in cui compare deve effettuare un tiro salvezza su Costituzione. Se lo fallisce, subisce 2d6 danni da tuono e diventa assordata per 5 minuti.
+
+Per ogni round in cui l'incantatore mantiene la concentrazione su questo incantesimo, la tempesta produce effetti differenti nel suo turno.
+
+***Round 2.*** Dalla nube cade pioggia acida. Ogni creatura e ogni oggetto sotto di essa subisce 1d6 danni da acido.
+
+***Round 3.*** L'incantatore invoca sei fulmini che scendono dalla nube e colpiscono sei creature o oggetti a sua scelta situati sotto di essa. Una creatura o un oggetto particolare non può essere colpito da più di un fulmine. Una creatura colpita deve effettuare un tiro salvezza su Destrezza e subisce 10d6 danni da fulmine in caso di fallimento, o la metà dei danni in caso di successo.
+
+***Round 4.*** Dalla nube si rovescia una violenta grandinata e ogni creatura sotto di essa subisce 2d6 danni contundenti.
+
+***Round 5–10.*** L'area sotto la nube è attraversata da raffiche di vento e pioggia gelida, diventa terreno difficile ed è pesantemente oscurata. Ogni creatura sotto la nube subisce 1d6 danni da freddo. Gli attacchi con le armi a distanza all'interno dell'area sono impossibili e il vento e la pioggia contano come forte distrazione al fine di mantenere la concentrazione sugli incantesimi. Infine, le raffiche di vento (variabili da 30 a 75 km orari) disperdono automaticamente nebbia, foschia e fenomeni simili nell'area, sia comuni che magici.

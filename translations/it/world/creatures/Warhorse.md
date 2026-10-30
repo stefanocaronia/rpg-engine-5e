@@ -1,0 +1,13 @@
+---
+name: Cavallo da guerra
+---
+
+## Tratti
+
+### Carica travolgente
+Se il cavallo si muove di almeno 6 metri in linea retta verso una creatura e poi la colpisce con un attacco con gli zoccoli nello stesso turno, quel bersaglio deve superare un tiro salvezza su Forza con CD 14, altrimenti cade a terra prono. Se il bersaglio è prono, il cavallo può effettuare un altro attacco con gli zoccoli contro di esso come azione bonus.
+
+## Azioni
+
+### Zoccoli
+*Attacco con arma da mischia:* +6 al tiro per colpire, portata 1,5 m, un bersaglio. *Colpito:* 11 (2d6 + 4) danni contundenti.

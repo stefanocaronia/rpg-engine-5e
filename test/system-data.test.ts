@@ -146,8 +146,9 @@ describe("thresholds (DAT-3)", () => {
         expect(await ok("change", "Ennio", "exhaustion", "--by", "1")).not.toContain("Precedents");
         await ok("config", "precedents", "--add", "Exhaustion: chi dorme all'aperto d'inverno ne prende un livello.", "--add", "Exhaustion: anche chi non mangia.", "--add", "Flanking: ai lati.");
         const output = await ok("change", "Ennio", "exhaustion", "--by", "1");
-        expect(output).toContain("exhaustion changed: Exhaustion, from the rules of 5e:\n## Exhaustion");
-        expect(output).toContain("| 4 | Hit point maximum halved |");
+        // The rule's text in Italian, the chapter the 5e has in the campaign's language.
+        expect(output).toContain("exhaustion changed: Exhaustion, from the rules of 5e:\n## Indebolimento");
+        expect(output).toContain("| 4 | Punti ferita massimi dimezzati |");
         expect(output).toContain(
             "Precedents of the table: Exhaustion: chi dorme all'aperto d'inverno ne prende un livello. · Exhaustion: anche chi non mangia.\nWhen the text and a precedent disagree, tell the player",
         );
@@ -289,9 +290,9 @@ describe("a game system that is not installed, or not chosen yet (SYS-1, D-167)"
 describe("conditions and rounds (DAT-6, DAT-7)", () => {
     it("show the text of a condition of the system when an effect bears its name, or its word in the campaign's language, and nothing for another name", async () => {
         expect(await ok("effect", "add", "Ennio", "Poisoned", "--for", "1h")).toBe(
-            "Ennio: Poisoned until day 1, 19:00.\n\nPoisoned is a condition of the system 5e:\n## Poisoned\n\n- A poisoned creature has disadvantage on attack rolls and ability checks.",
+            "Ennio: Poisoned until day 1, 19:00.\n\nPoisoned is a condition of the system 5e:\n## Avvelenato\n\n- Una creatura avvelenata subisce svantaggio ai tiri per colpire e alle prove di caratteristica.",
         );
-        expect(await ok("effect", "add", "Ennio", "Avvelenato", "--for", "1h")).toContain("\n\nPoisoned (Avvelenato) is a condition of the system 5e:\n## Poisoned");
+        expect(await ok("effect", "add", "Ennio", "Avvelenato", "--for", "1h")).toContain("\n\nPoisoned (Avvelenato) is a condition of the system 5e:\n## Avvelenato");
         expect(await ok("effect", "add", "Ennio", "Veleno di ragno", "--for", "1h")).not.toContain("condition");
     });
 

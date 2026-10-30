@@ -1,0 +1,7 @@
+---
+name: Identificare
+---
+
+L'incantatore sceglie un oggetto che deve toccare durante il lancio dell'incantesimo. Se si tratta di un oggetto magico o di un altro oggetto infuso di magia, apprende le sue proprietà e come usarlo, se è necessaria la sintonia per usarlo e quante cariche contiene, se ce ne sono. Apprende anche se l'oggetto è influenzato da eventuali incantesimi e di quali si tratta. Se l'oggetto è stato creato da un incantesimo, l'incantatore apprende quale incantesimo l'ha creato.
+
+Se invece durante il lancio dell'incantesimo tocca una creatura, apprende quali incantesimi la stanno attualmente influenzando, se ce ne sono.

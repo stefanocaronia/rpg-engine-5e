@@ -1,0 +1,5 @@
+---
+name: Ristorare inferiore
+---
+
+L'incantatore tocca una creatura e può porre termine a una malattia o una condizione che lo affligge tra accecato, assordato, avvelenato o paralizzato.

@@ -1,0 +1,5 @@
+---
+name: Mezza armatura
+---
+
+Una mezza armatura è composta da una serie di piastre di metallo modellate che coprono la maggior parte del corpo. Non include una protezione per le gambe, al di là di due semplici gambiere fissate da cinghie di cuoio.

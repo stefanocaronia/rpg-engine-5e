@@ -1,0 +1,9 @@
+---
+name: Levitazione
+---
+
+Una creatura o un oggetto a scelta dell'incantatore, situato entro gittata e che è in grado di vedere, si solleva verticalmente fino a 6 metri rimanendo sospeso per la durata dell'incantesimo. L'incantesimo può far levitare un bersaglio che pesa fino a 250 kg. Una creatura non consenziente che supera un tiro salvezza su Costituzione non subisce l'effetto dell'incantesimo.
+
+Il bersaglio può muoversi soltanto spingendosi o aggrappandosi a un oggetto fisso o a una superficie entro portata (come per esempio una parete o un soffitto), che gli permetta di muoversi come se ne stesse scalando la superficie. Nel proprio turno, l'incantatore può variare l'altitudine del bersaglio per un massimo di 6 metri in ogni direzione. Se il bersaglio è l'incantatore stesso, può muoversi verso l'alto o verso il basso come parte del suo movimento. Altrimenti può usare la sua azione per muovere il bersaglio, che deve rimanere entro gittata.
+
+Il bersaglio, se è ancora sospeso, al termine dell'incantesimo fluttua dolcemente fino a terra.

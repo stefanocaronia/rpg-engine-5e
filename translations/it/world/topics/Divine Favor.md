@@ -1,0 +1,5 @@
+---
+name: Favore divino
+---
+
+Intonando una preghiera, l'incantatore è pervaso da radianza divina. Finché l'incantesimo non termina, i suoi attacchi con le armi infliggono 1d4 danni radiosi extra se il colpo va a segno.

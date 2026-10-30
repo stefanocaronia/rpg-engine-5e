@@ -1,0 +1,7 @@
+---
+name: Dito della morte
+---
+
+L'incantatore trasmette un flusso di energia negativa a una creatura entro gittata che è in grado di vedere, causandole dolori lancinanti. Il bersaglio deve effettuare un tiro salvezza su Costituzione e subisce 7d8 + 30 danni necrotici in caso di fallimento, o la metà dei danni in caso di successo.
+
+All'inizio del turno successivo dell'incantatore, un umanoide ucciso da questo incantesimo si rianima come uno zombi, permanentemente al suo comando: obbedirà ai suoi ordini verbali al meglio delle sue capacità.

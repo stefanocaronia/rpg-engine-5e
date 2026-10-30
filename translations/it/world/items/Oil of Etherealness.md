@@ -1,0 +1,5 @@
+---
+name: Olio della forma eterea
+---
+
+All'esterno del contenitore di questo torbido olio grigiastro si formano in continuazione delle bolle che evaporano velocemente. L'olio può coprire una creatura di taglia Media o inferiore, nonché ogni oggetto che indossa e trasporta (per ogni categoria di taglia superiore, è necessario usare una fiala aggiuntiva). L'applicazione dell'olio richiede 10 minuti. La creatura cosparsa d'olio ottiene gli effetti dell'incantesimo *forma eterea* per 1 ora.

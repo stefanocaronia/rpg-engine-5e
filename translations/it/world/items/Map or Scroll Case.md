@@ -1,0 +1,5 @@
+---
+name: Custodia per mappe o pergamene
+---
+
+Questa custodia cilindrica in cuoio può contenere fino a dieci fogli di carta arrotolati o fino a cinque fogli di pergamena arrotolati.

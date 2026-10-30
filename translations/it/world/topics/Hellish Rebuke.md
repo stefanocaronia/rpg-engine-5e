@@ -1,0 +1,7 @@
+---
+name: Intimorire infernale
+---
+
+L'incantatore punta il dito contro la creatura che gli ha inferto danni, la quale viene momentaneamente avvolta da fiamme infernali. La creatura deve effettuare un tiro salvezza su Destrezza e subisce 2d10 danni da fuoco in caso di fallimento, o la metà dei danni in caso di successo.
+
+***Ai livelli superiori.*** Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 2° livello o superiore, i danni aumentano di 1d10 per ogni slot di livello superiore al 1°.

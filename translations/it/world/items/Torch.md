@@ -1,0 +1,5 @@
+---
+name: Torcia
+---
+
+Una torcia arde per 1 ora e proietta luce intensa in un raggio di 6 metri e luce fioca per ulteriori 6 metri. Se un personaggio effettua un attacco in mischia con una torcia accesa e colpisce, infligge 1 danno da fuoco.

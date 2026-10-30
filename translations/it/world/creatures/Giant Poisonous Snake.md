@@ -1,0 +1,8 @@
+---
+name: Serpente velenoso gigante
+---
+
+## Azioni
+
+### Morso
+*Attacco con arma da mischia*: +6 al tiro per colpire, portata 3 m, un bersaglio. *Colpito:* 6 (1d4 + 4) danni perforanti e il bersaglio deve effettuare un tiro salvezza su Costituzione con CD 11 subendo 10 (3d6) danni da veleno in caso di fallimento, o la metà in caso di successo.

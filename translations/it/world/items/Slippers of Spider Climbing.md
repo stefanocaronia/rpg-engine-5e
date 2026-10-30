@@ -1,0 +1,5 @@
+---
+name: Pantofole del ragno
+---
+
+Mentre indossa queste scarpe leggere, il personaggio può muoversi in alto, in basso e lateralmente sulle superfici verticali e a testa in giù sui soffitti mantenendo le mani libere. Inoltre, possiede velocità di scalare pari alla propria velocità base sul terreno. Tuttavia, le pantofole non gli permettono di muoversi in questo modo su una superficie scivolosa, come per esempio una superficie ricoperta di ghiaccio o d'olio.

@@ -1,0 +1,5 @@
+---
+name: Corazza di piastre
+---
+
+Quest'armatura è composta da un pettorale di metallo montato su uno strato di cuoio flessibile. Anche se lascia le gambe e le braccia relativamente scoperte, fornisce una buona protezione degli organi vitali del portatore, con un ingombro modesto.

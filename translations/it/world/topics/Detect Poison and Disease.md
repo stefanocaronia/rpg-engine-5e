@@ -1,0 +1,7 @@
+---
+name: Individuazione delle malattie e dei veleni
+---
+
+Per la durata dell'incantesimo, l'incantatore può percepire la presenza o l'ubicazione di veleni, creature velenose o malattie entro 9 metri. Inoltre, in ciascun caso può identificare il tipo di pozione, di creatura velenosa o di malattia.
+
+L'incantesimo può penetrare la maggior parte delle barriere, ma viene bloccato da 30 cm di pietra, 2,5 cm di metallo comune, una sottile lamina di piombo o 90 cm di legno o terriccio.

@@ -1,0 +1,5 @@
+---
+name: Passo velato
+---
+
+L'incantatore è avvolto per un istante da una foschia argentata e si teletrasporta di un massimo di 9 metri fino a uno spazio libero che è in grado di vedere.

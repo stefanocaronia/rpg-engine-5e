@@ -1,0 +1,3 @@
+---
+name: Proiettili da fionda
+---

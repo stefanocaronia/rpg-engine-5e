@@ -1,0 +1,9 @@
+---
+name: Cubo dei portali
+---
+
+Questo cubo ha uno spigolo di 7,5 cm e irradia un'energia magica quasi palpabile. Ognuna delle sei facce è collegata a un piano di esistenza diverso, uno dei quali è il Piano Materiale. I piani a cui sono collegate le altre facce sono determinati dal GM.
+
+Il personaggio può usare un'azione per premere una delle facce del cubo e lanciare l'incantesimo *portale*, che si apre sul piano di esistenza collegato alla faccia premuta. In alternativa, se usa un'azione per premere una faccia due volte, può usare il cubo per lanciare l'incantesimo *spostamento planare* (CD del tiro salvezza 17) e trasportare i bersagli sul piano di esistenza collegato a tale faccia.
+
+Il cubo ha 3 cariche. Ogni uso del cubo consuma 1 carica. Il cubo recupera 1d3 cariche consumate all'alba di ogni giorno.

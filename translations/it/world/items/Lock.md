@@ -1,0 +1,5 @@
+---
+name: Serratura
+---
+
+Insieme alla serratura viene fornita una chiave. Senza di essa, una creatura competente negli arnesi da scasso può scassinare la serratura superando una prova di Destrezza con CD 15. Il GM può permettere che siano disponibili serrature migliori a prezzi più alti.

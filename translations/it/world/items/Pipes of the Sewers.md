@@ -1,0 +1,9 @@
+---
+name: Flauto dei topi
+---
+
+Per usare questo flauto, il personaggio deve essere competente negli strumenti a fiato. Finché il personaggio è in sintonia con esso, i topi comuni e i topi giganti lo ignorano e non lo attaccano, a meno che il personaggio non li minacci o non li ferisca.
+
+Il flauto possiede 3 cariche. Se il personaggio usa un'azione per suonarlo, può usare un'azione bonus per consumare da 1 a 3 cariche e richiamare uno sciame di topi per ogni carica consumata, purché entro un raggio di 750 metri ci siano topi sufficienti (sarà il GM a determinarlo). Se non ci sono abbastanza topi per formare uno sciame, la carica viene sprecata. Gli sciami così chiamati si muovono verso la musica seguendo il percorso più breve disponibile, ma sotto ogni altro aspetto non sono sotto il controllo del personaggio. Il flauto recupera 1d3 cariche consumate all'all'alba di ogni giorno.
+
+Ogni volta che uno sciame di topi che non è sotto il controllo di altre creature giunge entro 9 metri dal personaggio mentre suona il flauto, quest'ultimo può effettuare una prova di Carisma contrapposta alla prova di Saggezza dello sciame. Se perde, lo sciame si comporta normalmente e non può essere controllato dalla musica del flauto per le 24 ore successive. Se vince, lo sciame è controllato dalla musica del flauto e diventa amichevole nei confronti del personaggio e dei suoi compagni, finché il personaggio continua a usare un'azione a ogni round per suonare il flauto. Uno sciame amichevole obbedisce ai comandi del personaggio. Se il personaggio non impartisce alcun comando allo sciame amichevole, questo si difende, ma non effettua altre azioni. Se uno sciame amichevole inizia il suo turno mentre non può sentire la musica del flauto, il controllo che il personaggio esercita su di esso si interrompe, lo sciame torna a comportarsi secondo la sua natura e non può essere soggetto all'influsso della musica del flauto per le 24 ore successive.

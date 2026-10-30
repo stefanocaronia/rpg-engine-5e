@@ -1,0 +1,3 @@
+---
+name: Cote per affilare
+---

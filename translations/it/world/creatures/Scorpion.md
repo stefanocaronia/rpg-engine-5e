@@ -1,0 +1,8 @@
+---
+name: Scorpione
+---
+
+## Azioni
+
+### Pungiglione
+*Attacco con arma da mischia:* +2 al tiro per colpire, portata 1,5 m, una creatura. *Colpito:* 1 danno perforante e il bersaglio deve effettuare un tiro salvezza su Costituzione con CD 9, subendo 4 (1d8) danni da veleno in caso di fallimento, o la metà in caso di successo.

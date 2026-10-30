@@ -1,0 +1,5 @@
+---
+name: Sfere metalliche
+---
+
+Con un'azione, un personaggio può versare queste minuscole sfere di metallo fuori dal sacchetto per coprire un'area quadrata regolare e piana con lato di 3 metri. Una creatura che si muove attraverso l'area coperta dalle sfere deve superare un tiro salvezza su Destrezza con CD 10, o cade a terra prona. Se la creatura si muove attraverso l'area a velocità dimezzata, non deve effettuare il tiro salvezza.

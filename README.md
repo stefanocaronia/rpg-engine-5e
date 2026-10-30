@@ -8,6 +8,10 @@ This package works only inside [RPG Engine](https://github.com/stefanocaronia/rp
 
 With RPG Engine 0.6.0 or later: the master offers it when a campaign is set up, or `rpg package install 5e`; then `rpg config system 5e` in the campaign. A campaign keeps its system once its first character is made.
 
+## Languages
+
+The dashboard shows the system's words in 26 languages. In a campaign in Italian, the master and the dashboard read the text of its pages and its rules in the official Italian translation of the SRD 5.1 (`translations/it/`, rebuilt with `build/lines-it.py` and `build/translations.mjs`); the pages keep their English names and fields.
+
 ## Versions of the rules
 
 The rules of the SRD 5.1 are the version `srd-5.1`, and for now the only one. Each version is a folder in `versions/`, read over the common part; a campaign plays the one its `ruleset` setting names, which the player chooses.
@@ -29,4 +33,4 @@ Raise `version` in `package.json`, commit, and push a tag `v<version>`: the work
 
 ## Licence
 
-The material from the SRD 5.1 and the chapter Combat Encounters from the SRD 5.2.1, and our changes to them, the words in every language included, are under CC BY 4.0; the icons from game-icons.net under CC BY 3.0; the code and the instructions under MIT. See [LICENSE.md](LICENSE.md) for the attribution, what was changed, and the MIT license's text. This package is compatible with fifth edition.
+The material from the SRD 5.1, in English and in its official Italian translation, and the chapter Combat Encounters from the SRD 5.2.1, and our changes to them, the words in every language included, are under CC BY 4.0; the icons from game-icons.net under CC BY 3.0; the code and the instructions under MIT. See [LICENSE.md](LICENSE.md) for the attribution, what was changed, and the MIT license's text. This package is compatible with fifth edition.

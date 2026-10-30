@@ -1,0 +1,5 @@
+---
+name: Scudo
+---
+
+Uno scudo può essere fatto di legno o di metallo ed è impugnato con una mano. Impugnare uno scudo aumenta di 2 la Classe Armatura del personaggio. È possibile beneficiare di un solo scudo alla volta.

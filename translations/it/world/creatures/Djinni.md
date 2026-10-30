@@ -1,0 +1,28 @@
+---
+name: Djinni
+---
+
+## Tratti
+
+### Dipartita elementale
+Se il djinni muore, il suo corpo si disintegra in una calda brezza, lasciando dietro di sé solo gli oggetti che la creatura indossava o trasportava.
+
+### Incantesimi innati
+La caratteristica innata da incantatore del djinni è Carisma (CD del tiro salvezza sull'incantesimo 17, +9 al tiro per colpire con attacco con incantesimo). Per sua natura, è in grado di lanciare gli incantesimi indicati di seguito senza aver bisogno di componenti materiali:
+
+- A volontà: *individuazione del bene e del male, individuazione del magico, onda tonante*
+- 3/giorno ciascuno: *camminare nel vento, creare cibo e bevande* (può creare vino anziché acqua)*, linguaggi*
+- 1/giorno ciascuno: *creazione, evoca elementale* (solo elementale dell'aria)*, forma gassosa, immagine maggiore, invisibilità, spostamento planare*
+
+## Azioni
+
+### Multiattacco
+Il djinni effettua tre attacchi con la scimitarra.
+
+### Scimitarra
+*Attacco con arma da mischia:* +9 al tiro per colpire, portata 1,5 m, un bersaglio. *Colpito:* 12 (2d6 + 5) danni taglienti più 3 (1d6) danni da fulmine o da tuono (a scelta del djinni).
+
+### Creare vortice
+Un cilindro di aria turbinante del raggio di 1,5 metri e alto 9 metri si forma magicamente in un punto che il djinni può vedere entro 36 metri. Il vortice permane finché il djinni mantiene la concentrazione (come se si concentrasse su un incantesimo). Ogni creatura a eccezione del djinni che entri nel vortice deve superare un tiro salvezza su Forza con CD 18, altrimenti è trattenuta dal vortice. Il djinni può muovere il vortice di un massimo di 18 metri con un'azione e le creature trattenute dal vortice si muovono insieme a esso. Il vortice termina se il djinni lo perde di vista.
+
+Una creatura può usare la sua azione per liberare una creatura trattenuta dal vortice, inclusa se stessa, effettuando una prova di Forza con CD 18. In caso di successo, la creatura non è più trattenuta e si muove nello spazio più vicino al di fuori del vortice.

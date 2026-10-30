@@ -1,0 +1,7 @@
+---
+name: Bacche benefiche
+---
+
+Per la durata dell'incantesimo, nella mano dell'incantatore appaiono fino a dieci bacche infuse di magia. Una creatura può usare la sua azione per mangiare una bacca, recuperando così 1 punto ferita e ottenendo nutrimento sufficiente per una giornata intera.
+
+Le bacche perdono la loro potenza se non vengono consumate entro 24 ore dal lancio di questo incantesimo.

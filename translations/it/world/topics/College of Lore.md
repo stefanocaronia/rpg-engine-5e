@@ -1,0 +1,25 @@
+---
+name: Collegio della Sapienza
+---
+
+I bardi del Collegio della Sapienza hanno conoscenze su qualsiasi argomento e raccolgono informazioni dalle fonti più disparate, che possono variare dai tomi accademici ai racconti dei contadini. Che si tratti di intonare ballate popolari da taverna o di poemi nelle corti reali, questi bardi usano sempre i loro doni per ammaliare il pubblico. Quando gli applausi si spengono, il pubblico si ritrova a dubitare di tutto ciò che fino ad allora aveva dato per certo, dalla sua fede nel sacerdozio locale alla sua lealtà al re.
+
+Questi bardi sono votati innanzitutto alla ricerca della bellezza e della verità, e non a un monarca o ai precetti di una divinità. Un nobile che tiene presso di sé un bardo del genere come araldo o consigliere farà bene a sapere che tale bardo tende a essere più onesto che diplomatico.
+
+I membri di questo collegio si radunano nelle biblioteche e a volte in alcuni collegi veri e propri, con tanto di aule e dormitori, dove condividono liberamente le proprie conoscenze. Si incontrano anche in occasione di feste popolari e ricevimenti di stato, dove possono denunciare casi di corruzione, smascherare bugie e farsi beffe dei più pomposi esponenti delle autorità.
+
+### Competenze bonus
+
+Quando un bardo si unisce al Collegio della Sapienza al 3° livello, ottiene competenza in tre abilità a sua scelta.
+
+### Parole Taglienti
+
+Sempre al 3° livello, il bardo impara anche a fare buon uso del suo ingegno per distrarre, confondere e fiaccare la determinazione e la competenza altrui. Quando una creatura situata entro 18 metri e che il bardo è in grado di vedere effettua un tiro per colpire, una prova di caratteristica o un tiro per i danni, il bardo può usare la sua reazione per spendere uno dei suoi utilizzi di Ispirazione Bardica, tirare un dado di Ispirazione Bardica e sottrarre il numero ottenuto dal tiro della creatura. Può scegliere di utilizzare questo privilegio dopo che la creatura ha effettuato il suo tiro, ma prima che il GM dichiari se il tiro per colpire o la prova di caratteristica abbia avuto successo o meno, o prima che la creatura infligga i danni. La creatura è immune se non è in grado di sentire il bardo o se non può essere affascinata.
+
+### Segreti Magici Aggiuntivi
+
+Al 6° livello, un bardo impara due incantesimi a sua scelta da qualsiasi classe. Ogni incantesimo scelto deve essere di un livello che il bardo sia in grado di lanciare, come indicato dalla tabella "Bardo", oppure deve essere un trucchetto. Gli incantesimi scelti contano come incantesimi da bardo, ma non contano al fine di determinare il numero di incantesimi da bardo conosciuti.
+
+### Abilità Impareggiabile
+
+A partire dal 14° livello, quando un bardo effettua una prova di caratteristica, può spendere un utilizzo di Ispirazione Bardica. Se lo fa, tira un dado di Ispirazione Bardica e aggiunge il risultato ottenuto alla sua prova di caratteristica. Può scegliere di farlo dopo avere tirato il dado per la prova di caratteristica, ma prima che il GM dichiari se la prova abbia avuto successo o meno.

@@ -1,0 +1,14 @@
+---
+name: Prestidigitazione
+---
+
+Questo incantesimo è un trucco magico che gli incantatori novizi usano per fare pratica. Crei uno degli effetti magici seguenti entro gittata:
+
+- Crea un effetto sensoriale innocuo e istantaneo, come una pioggia di scintille, una folata di vento, una tenue melodia musicale o uno strano odore.
+- Accendi o spegni istantaneamente una candela, una torcia o un piccolo fuoco da campo.
+- Pulisci o sporca istantaneamente un oggetto non più grande di un cubo con spigolo di 30 cm.
+- Riscalda, raffredda o condisci materiale non vivente del volume massimo di un cubo con spigolo di 30 cm per 1 ora.
+- Fai comparire un colore, un piccolo segno o un simbolo su un oggetto o una superficie per 1 ora.
+- Crea un ninnolo non magico o un'immagine illusoria che può stare nel palmo della tua mano e che permane fino alla fine del tuo turno successivo.
+
+Se l'incantatore lancia questo incantesimo più volte, può tenere attivi fino a tre dei suoi effetti non istantanei contemporaneamente e può eliminare ognuno di questi effetti con un'azione.

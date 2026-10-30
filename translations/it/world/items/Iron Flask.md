@@ -1,0 +1,32 @@
+---
+name: Ampolla di ferro
+---
+
+Questa bottiglia di ferro è chiusa da un tappo d'ottone. Il personaggio può usare un'azione per pronunciarne la parola d'ordine puntandola verso una creatura che è in grado di vedere e che è situata entro 18 metri da lui. Se il bersaglio è originario di un piano di esistenza diverso da quello in cui si trova ora, deve superare un tiro salvezza su Saggezza con CD 17, altrimenti viene intrappolato all'interno dell'ampolla. Se il bersaglio è stato intrappolato nell'ampolla in precedenza, dispone di vantaggio al tiro salvezza. Una volta intrappolata, la creatura rimane nell'ampolla finché non viene liberata. L'ampolla può contenere una sola creatura alla volta. Una creatura intrappolata nell'ampolla non ha bisogno di respirare, mangiare o bere e non invecchia.
+
+Il personaggio può usare un'azione per rimuovere il tappo dell'ampolla e liberare la creatura prigioniera al suo interno. La creatura è amichevole nei confronti del personaggio e dei suoi compagni per 1 ora, durante la quale ubbidisce ai suoi comandi. Se non riceve alcun comando o riceve un comando che potrebbe portarla alla morte, si limita a difendersi senza eseguire alcuna azione. Alla fine dell'ora, la creatura torna a comportarsi come previsto dalla sua natura e dal suo allineamento.
+
+Un incantesimo *identificare* rivela se l'ampolla contiene una creatura, ma l'unico modo per determinare di che tipo di creatura si tratta è aprirla. Quando viene trovata, l'ampolla può contenere già una creatura, scelta o determinata a caso dal GM.
+
+| d100 | Contenuto |
+|---|---|
+| 1–50 | Vuota |
+| 51–53 | Cacciatore invisibile |
+| 54–57 | Demone (tipo 1) |
+| 58–61 | Demone (tipo 2) |
+| 62–65 | Demone (tipo 3) |
+| 66–67 | Demone (tipo 4) |
+| 68 | Demone (tipo 5) |
+| 69 | Demone (tipo 6) |
+| 70 | Deva |
+| 71–72 | Diavolo (maggiore) |
+| 73–76 | Diavolo (minore) |
+| 77–78 | Djinni |
+| 79–80 | Efreeti |
+| 81–86 | Elementale (qualsiasi) |
+| 87–90 | Megera notturna |
+| 91 | Planetar |
+| 92–95 | Salamandra |
+| 96 | Solar |
+| 97–99 | Succube/incubo |
+| 100 | Xorn |

@@ -1,0 +1,5 @@
+---
+name: Parola del potere uccidere
+---
+
+L'incantatore pronuncia una parola del potere che può uccidere istantaneamente una creatura entro gittata che è in grado di vedere. Se la creatura scelta possiede 100 punti ferita o meno, muore. Altrimenti, l'incantesimo non sortisce alcun effetto.

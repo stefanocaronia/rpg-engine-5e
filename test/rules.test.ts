@@ -1,5 +1,7 @@
-// The rules command on the 5e's chapters (MECCANICHE, RUL-2, RUL-6–RUL-8), in a campaign played in Italian: a section by its title or its path, cut when too
-// long, the system's own names in Italian, a page or a section of pages by the name searched, the house rules and the precedents beside it.
+// The rules command on the 5e's chapters (MECCANICHE, RUL-2, RUL-6–RUL-8), in a campaign played in Italian, whose chapters the 5e has in Italian (D-542): a
+// section by its title or its path, cut when too long, the system's English names searched in Italian, a page or a section of pages by the name searched, the
+// house rules and the precedents beside it. The English book, with the campaign's words searched in it, in a campaign played in German, a language of the
+// system's words without its text.
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type { TestCampaign } from "rpg-engine/testing";
@@ -26,43 +28,44 @@ describe("the rules command (RUL-2, RUL-6, RUL-7)", () => {
 
     function sectionOf(file: string, heading: string, next: string): string
     {
-        // As the engine reads it, whatever ends its lines.
-        const text = readFileSync(join(repository, "rules", `${file}.md`), "utf8").replaceAll("\r\n", "\n");
+        // As the engine reads it, whatever ends its lines: the chapter in Italian.
+        const text = readFileSync(join(repository, "translations", "it", "rules", `${file}.md`), "utf8").replaceAll("\r\n", "\n");
         return text.slice(text.indexOf(heading), text.indexOf(next)).trimEnd();
     }
 
-    it("searches the system by its own names too, as its words in the campaign's language give them (RUL-8)", async () => {
-        const output = await ok("rules", "afferrato");
-        expect(output).toMatch(/^5e searched by its own names too: Grappled\.\n\n/);
-        expect(output).toContain("Conditions › Grappled (5e)");
-        // A word the list lacks finds nothing in the system, which says how to search it.
-        expect(await ok("rules", "lotta")).toContain("The system 5e writes its rules in English");
-        // Never by a field's id, as cha for Carisma, which finds Chain Shirt; nor a name the search already says.
+    it("searches the Italian chapters by the system's English names too, as its words in the campaign's language give them (RUL-8)", async () => {
+        const output = await ok("rules", "grappled");
+        expect(output).toMatch(/^5e searched by its own names too: Lottatore, Afferrato\.\n\n/);
+        expect(output).toContain("Appendice A del Manuale del Giocatore: Condizioni › Afferrato (5e)");
+        // The campaign's own word finds the section by its title, with nothing to say of the search.
+        const italian = await ok("rules", "afferrato");
+        expect(italian.startsWith("Appendice A del Manuale del Giocatore: Condizioni › Afferrato (5e):")).toBe(true);
+        expect(italian).not.toContain("searched by its own names too");
+        // Never by a field's id, as cha for Carisma; nor a name the search already says, nor the words a foe's hits are heard in, which name no rule.
         expect(await ok("rules", "prova di carisma")).not.toContain("searched by its own names too");
         expect(await ok("rules", "goblin")).not.toContain("searched by its own names too");
-        // Nor by the words a foe's hits are heard in, which name no rule: a terra is no down.
         expect(await ok("rules", "a terra")).not.toMatch(/searched by its own names too: .*\bdown\b/);
     });
 
     it("gives the exact text of the system's rule, with its path, and names the other sections found", async () => {
-        const output = await ok("rules", "grappled");
-        expect(output).toContain("Appendix PH-A: Conditions › Grappled (5e):\n" + sectionOf("Conditions", "## Grappled", "## Incapacitated"));
-        expect(output).toContain("Also: Combat › Making an Attack › Melee Attacks › Grappling");
+        const output = await ok("rules", "afferrato");
+        expect(output).toContain("Appendice A del Manuale del Giocatore: Condizioni › Afferrato (5e):\n" + sectionOf("Conditions", "## Afferrato", "## Assordato"));
+        expect(output).toMatch(/\n\nAlso: .*Combattimento › Effettuare un attacco › Attacchi in mischia › Lottare;/);
         expect(output).not.toMatch(/Precedents|House rules|not installed|more\)|Its parts|No rule matches|disagree|also a page/);
     });
 
     it("cuts a section too long to its own text and names its parts", async () => {
-        const output = await ok("rules", "Combat");
-        expect(output.startsWith("Combat (5e):\n# Combat\n(Its parts: The Order of Combat; Movement and Position; Actions in Combat;")).toBe(true);
+        const output = await ok("rules", "Combattimento");
+        expect(output.startsWith("Combattimento (5e):\n# Combattimento\n(Its parts: L'ordine di combattimento; Movimento e posizione; Azioni in combattimento;")).toBe(true);
     });
 
     it("gives the system's rules the words the house rules leave, and always shows the first of them", async () => {
         mkdirSync(join(folder, "rules"));
-        writeFileSync(join(folder, "rules", "Lotta.md"), `# Lotta\n\nGrappling al nostro tavolo. ${"parola ".repeat(790)}\n`);
-        const output = await ok("rules", "grappling");
+        writeFileSync(join(folder, "rules", "Lotta.md"), `# Lotta\n\nLottare al nostro tavolo. ${"parola ".repeat(790)}\n`);
+        const output = await ok("rules", "lottare");
         expect(output.startsWith("Lotta (house rule):\n# Lotta")).toBe(true);
-        expect(output).toContain("Combat › Making an Attack › Melee Attacks › Grappling (5e):\n#### Grappling");
-        expect(output).toContain("(Its parts: Escaping a Grapple; Moving a Grappled Creature. Read one by its heading.)");
+        expect(output).toContain("Combattimento › Effettuare un attacco › Attacchi in mischia › Lottare (5e):\n#### Lottare");
+        expect(output).toContain("(Its parts: Sfuggire a una lotta; Trasportare una creatura afferrata. Read one by its heading.)");
     });
 
     it("says first when a page of the system or of the campaign has the name searched, by its name or an alias, and adds little of the rules (D-195)", async () => {
@@ -87,19 +90,9 @@ describe("the rules command (RUL-2, RUL-6, RUL-7)", () => {
     });
 
     it("reads a section named by its headings, with its parts", async () => {
-        const output = await ok("rules", "Combat › Grappling");
-        expect(output).toContain("***Escaping a Grapple.***");
-        expect(output.startsWith("Combat › Making an Attack › Melee Attacks › Grappling (5e):\n#### Grappling")).toBe(true);
-    });
-
-    it("says when nothing matches: the language of the book, its chapters and how to record a precedent", async () => {
-        const output = await ok("rules", "flanking");
-        expect(output).toContain('No rule matches "flanking". The system 5e writes its rules in English');
-        expect(output).toContain(
-            "The chapters of 5e: Adventuring, Beyond 1st Level, Combat Encounters, Combat, Conditions, Diseases, Equipment, Fantasy-Historical Pantheons, Madness, Magic Items, Monsters, "
-                + "Nonplayer Characters, Objects, Poisons, Races, Spellcasting, The Planes of Existence, Traps, Using Ability Scores.",
-        );
-        expect(output).toContain('config, setting precedents, add "<the rule\'s name in English>: what you said"');
+        const output = await ok("rules", "Combattimento › Lottare");
+        expect(output).toContain("***Sfuggire a una lotta.***");
+        expect(output.startsWith("Combattimento › Effettuare un attacco › Attacchi in mischia › Lottare (5e):\n#### Lottare")).toBe(true);
     });
 
     it("reads a precedent or an agreement written by hand without quotes as text, and keeps reading when another setting breaks campaign.yaml", async () => {
@@ -124,17 +117,22 @@ describe("the rules command (RUL-2, RUL-6, RUL-7)", () => {
         rmSync(join(folder, "rules"), { recursive: true });
         writeFileSync(join(folder, "rules"), "not a folder");
         expect(await ok("status")).not.toContain("House rules");
-        expect(await ok("rules", "grappled")).toContain("Appendix PH-A: Conditions › Grappled (5e)");
+        expect(await ok("rules", "afferrato")).toContain("Appendice A del Manuale del Giocatore: Condizioni › Afferrato (5e)");
     });
 
     it("finds the tables of the system by their caption, with their rows", async () => {
-        const output = await ok("rules", "Weapons");
-        expect(output).toContain("Equipment › Weapons › Weapon Properties › Special Weapons › Weapons (5e):\n**Weapons**\n\n| Name | Cost | Damage | Weight | Properties |");
-        expect(output).toContain("| Dagger | 2 gp | 1d4 piercing | 1 lb. | Finesse, light, thrown (range 20/60) |");
+        const output = await ok("rules", "Dadi Vita in base alla taglia");
+        expect(output).toContain("Mostri › Punti ferita › Dadi Vita in base alla taglia (5e):\n**Dadi Vita in base alla taglia**\n\n| Taglia del mostro | Dado Vita | Media dei PF per dado |");
+        expect(output).toContain("| Media | d8 | 4½ |");
+        expect(await ok("rules", "pugnale")).toContain("| Pugnale | 2 mo | 1d4 perforanti | 0,5 kg | Accurata, Lancio (gittata 6/18), Leggera |");
         expect(await ok("rules", "dagger")).toContain("Dagger is a page of the system 5e (item): show Dagger reads it.");
     });
 
-    it("names no language when the campaign plays in the system's own", async () => {
+    it("names no language when the campaign plays in a language the system has its rules in, or in the system's own", async () => {
+        const italian = await ok("rules", "flanking");
+        expect(italian).toContain('No rule matches "flanking". Search with the book\'s words, such as a condition, an action or a heading. The chapters of 5e:');
+        expect(italian).toContain('config, setting precedents, add "<the rule\'s name>: what you said"');
+        expect(italian).not.toContain("in English");
         writeFileSync(join(folder, "campaign.yaml"), readFileSync(join(folder, "campaign.yaml"), "utf8").replace("language: it", "language: en-GB"));
         expect(await ok("rules", "flanking")).toContain('No rule matches "flanking". Search with the book\'s words, such as a condition, an action or a heading. The chapters of 5e:');
         expect(await ok("rules")).toContain("The rules of the system 5e, by chapter:");
@@ -143,19 +141,19 @@ describe("the rules command (RUL-2, RUL-6, RUL-7)", () => {
 
     it("lists the chapters with their sections without a text", async () => {
         const output = await ok("rules");
-        expect(output).toContain("The rules of the system 5e, in English, by chapter:");
-        expect(output).toContain("Adventuring: Time, Movement, The Environment, Resting, Between Adventures");
+        expect(output).toContain("The rules of the system 5e, by chapter:");
+        expect(output).toContain("Adventuring: Tempo, Movimento, L'ambiente, Riposare, Tra un'avventura e l'altra");
     });
 
     it("finds a precedent written in Italian by the name of its rule, beside that rule, and status shows it at every session (RUL-7)", async () => {
-        await ok("config", "precedents", "--add", "Poisoned: la benda bagnata sulla bocca dà vantaggio contro il gas.");
-        const beside = await ok("rules", "poisoned");
-        expect(beside).toContain("Appendix PH-A: Conditions › Poisoned (5e)");
-        expect(beside).toContain("Precedents: Poisoned: la benda bagnata sulla bocca dà vantaggio contro il gas.");
+        await ok("config", "precedents", "--add", "Avvelenato: la benda bagnata sulla bocca dà vantaggio contro il gas.");
+        const beside = await ok("rules", "avvelenato");
+        expect(beside).toContain("Appendice A del Manuale del Giocatore: Condizioni › Avvelenato (5e)");
+        expect(beside).toContain("Precedents: Avvelenato: la benda bagnata sulla bocca dà vantaggio contro il gas.");
         expect(beside).toContain("When the text and a precedent disagree, tell the player and ask whether to keep the precedent: if so, write it again saying it is a house rule, against the book; if not, remove it. Both with config.");
-        expect(await ok("rules", "poison gas")).toContain("Precedents: Poisoned: la benda");
-        expect(await ok("rules", "grappled")).not.toContain("Precedents:");
-        expect(await ok("status")).toContain("Precedents: Poisoned: la benda bagnata sulla bocca dà vantaggio contro il gas.");
+        expect(await ok("rules", "avvelenato gas")).toContain("Precedents: Avvelenato: la benda");
+        expect(await ok("rules", "afferrato")).not.toContain("Precedents:");
+        expect(await ok("status")).toContain("Precedents: Avvelenato: la benda bagnata sulla bocca dà vantaggio contro il gas.");
     });
 
     it("shows a precedent whose rule the search names, or that names a section shown, and holds it when no text matches (RUL-7)", async () => {
@@ -171,11 +169,63 @@ describe("the rules command (RUL-2, RUL-6, RUL-7)", () => {
 
     it("reads the campaign's house rules first, and always names them, also in status (RUL-2)", async () => {
         mkdirSync(join(folder, "rules"));
-        writeFileSync(join(folder, "rules", "Scasso.md"), "# Scasso\n\nUna serratura semplice si apre con una prova di Destrezza CD 12, come a Grappling.\n");
-        const both = await ok("rules", "grappling");
+        writeFileSync(join(folder, "rules", "Scasso.md"), "# Scasso\n\nUna serratura semplice si apre con una prova di Destrezza CD 12, come a Lottare.\n");
+        const both = await ok("rules", "lottare");
         expect(both.indexOf("Scasso (house rule)")).toBe(0);
-        expect(both).toContain("Combat › Making an Attack › Melee Attacks › Grappling (5e)");
+        expect(both).toContain("Combattimento › Effettuare un attacco › Attacchi in mischia › Lottare (5e)");
         expect(await ok("rules", "lockpicking")).toContain("House rules of the campaign: Scasso.");
         expect(await ok("status")).toContain("House rules (rules): Scasso");
+    });
+});
+
+describe("the English book, in a campaign played in a language the system has words in but not its text (RUL-8)", () => {
+    let campaign: TestCampaign;
+
+    beforeEach(async () => {
+        campaign = await fifthEdition({ language: "de", play: false });
+    });
+
+    afterEach(() => campaign.close());
+
+    async function ok(...args: string[]): Promise<string>
+    {
+        const result = await campaign.run(...args);
+        expect(result.exitCode, result.output).toBe(0);
+        return result.output;
+    }
+
+    function sectionOf(file: string, heading: string, next: string): string
+    {
+        // As the engine reads it, whatever ends its lines: the chapter in English.
+        const text = readFileSync(join(repository, "rules", `${file}.md`), "utf8").replaceAll("\r\n", "\n");
+        return text.slice(text.indexOf(heading), text.indexOf(next)).trimEnd();
+    }
+
+    it("searches the system by its own names too, as its words in the campaign's language give them (RUL-8)", async () => {
+        const output = await ok("rules", "gepackt");
+        expect(output).toMatch(/^5e searched by its own names too: Grappled\.\n\n/);
+        expect(output).toContain("Appendix PH-A: Conditions › Grappled (5e):\n" + sectionOf("Conditions", "## Grappled", "## Incapacitated"));
+        // A word the list lacks finds nothing in the system, which says how to search it.
+        expect(await ok("rules", "Ringkampf")).toContain("The system 5e writes its rules in English");
+        // Never a name the search already says, nor the words a foe's hits are heard in, which name no rule: am Boden is no down.
+        expect(await ok("rules", "Charisma")).not.toContain("searched by its own names too");
+        expect(await ok("rules", "goblin")).not.toContain("searched by its own names too");
+        expect(await ok("rules", "am Boden")).not.toMatch(/searched by its own names too: .*\bdown\b/);
+    });
+
+    it("says when nothing matches: the language of the book, its chapters and how to record a precedent", async () => {
+        const output = await ok("rules", "flanking");
+        expect(output).toContain('No rule matches "flanking". The system 5e writes its rules in English');
+        expect(output).toContain(
+            "The chapters of 5e: Adventuring, Beyond 1st Level, Combat Encounters, Combat, Conditions, Diseases, Equipment, Fantasy-Historical Pantheons, Madness, Magic Items, Monsters, "
+                + "Nonplayer Characters, Objects, Poisons, Races, Spellcasting, The Planes of Existence, Traps, Using Ability Scores.",
+        );
+        expect(output).toContain('config, setting precedents, add "<the rule\'s name in English>: what you said"');
+    });
+
+    it("lists the chapters in English, with their sections", async () => {
+        const output = await ok("rules");
+        expect(output).toContain("The rules of the system 5e, in English, by chapter:");
+        expect(output).toContain("Adventuring: Time, Movement, The Environment, Resting, Between Adventures");
     });
 });

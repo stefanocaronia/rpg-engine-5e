@@ -1,0 +1,13 @@
+---
+name: Dominare mostri
+---
+
+L'incantatore tenta di soggiogare una creatura entro gittata che è in grado di vedere e che deve superare un tiro salvezza su Saggezza, altrimenti rimarrà affascinata per la durata dell'incantesimo. Se l'incantatore o le creature a lui amichevoli stanno combattendo questa bestia, essa dispone di vantaggio al tiro salvezza.
+
+Mentre la creatura è affascinata, l'incantatore ha con essa un legame telepatico finché si trovano sullo stesso piano di esistenza. L'incantatore può utilizzare questo legame telepatico per impartire comandi alla creatura mentre è cosciente (nessuna azione richiesta), la quale fa del suo meglio per obbedire. L'incantatore può specificare una linea d'azione semplice e generale, come "attacca quella creatura", "corri fin laggiù" o "portami quell'oggetto". Se la creatura completa l'ordine e non riceve ulteriori indicazioni da parte dell'incantatore, si difende e si protegge al meglio delle sue abilità.
+
+L'incantatore può usare la sua azione per assumere il controllo totale e preciso del bersaglio. Fino al termine del turno successivo dell'incantatore, la creatura compie solamente le azioni decise da lui e non fa nulla che l'incantatore non le consenta di fare. Durante questo periodo, l'incantatore può anche fare in modo che la creatura utilizzi una reazione, ma per riuscirci lui dovrà fare altrettanto.
+
+Ogni volta che il bersaglio subisce danni, effettua un tiro salvezza su Saggezza contro l'incantesimo: in caso di successo, l'incantesimo termina.
+
+***Ai livelli superiori.*** Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 9° livello, la durata diventa concentrazione, fino a 8 ore.

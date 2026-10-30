@@ -1,0 +1,5 @@
+---
+name: Antitossina
+---
+
+Una creatura che beve questa fiala di liquido dispone di vantaggio ai tiri salvezza contro il veleno per 1 ora. Non conferisce alcun beneficio ai costrutti o ai non morti.

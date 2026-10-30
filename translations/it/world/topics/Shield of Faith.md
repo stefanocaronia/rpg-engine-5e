@@ -1,0 +1,5 @@
+---
+name: Scudo della fede
+---
+
+Un campo di energia scintillante si materializza attorno a una creatura scelta dall'incantatore entro gittata, conferendole un bonus di +2 alla CA per la durata dell'incantesimo.

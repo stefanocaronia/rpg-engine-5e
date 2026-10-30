@@ -1,0 +1,8 @@
+---
+name: Cockatrice
+---
+
+## Azioni
+
+### Morso
+*Attacco con arma da mischia:* +3 al tiro per colpire, portata 1,5 m, una creatura. *Colpito:* 3 (1d4 + 1) danni perforanti e il bersaglio deve superare un tiro salvezza su Costituzione con CD 11 per non essere pietrificato magicamente. Se la creatura fallisce il tiro salvezza, inizia a trasformarsi in pietra ed è trattenuta. Deve ripetere il tiro salvezza alla fine del suo turno successivo. Se lo supera, l'effetto svanisce. Se lo fallisce, è pietrificata per 24 ore.

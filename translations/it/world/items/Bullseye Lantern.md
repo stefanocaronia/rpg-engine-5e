@@ -1,0 +1,5 @@
+---
+name: Lanterna a lente sporgente
+---
+
+Una lanterna a lente sporgente proietta luce intensa in un cono di 18 metri e luce fioca per ulteriori 18 metri. Una volta accesa, arde per 6 ore consumando 1 ampolla (0,5 litri) di olio.

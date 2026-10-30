@@ -1,0 +1,5 @@
+---
+name: Acciarino e pietra focaia
+---
+
+Un piccolo contenitore usato per accendere il fuoco, che contiene acciarino, pietra focaia e materiale combustibile (solitamente stracci essiccati e bagnati d'olio). Per accendere una torcia (o qualsiasi altra cosa che faccia uso di abbondante combustibile scoperto) usando acciarino e pietra focaia è richiesta un'azione. Per accendere un fuoco di qualsiasi altro tipo è richiesto 1 minuto.

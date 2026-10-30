@@ -1,0 +1,3 @@
+---
+name: Specchio di metallo
+---

@@ -1,0 +1,5 @@
+---
+name: Carrucola e paranco
+---
+
+Questa serie di carrucole è dotata di un cavo che le attraversa e che si collega a un uncino da agganciare a un oggetto. Consente a un personaggio di sollevare fino al quadruplo del peso che normalmente potrebbe sollevare.

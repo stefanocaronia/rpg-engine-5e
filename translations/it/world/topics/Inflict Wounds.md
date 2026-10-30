@@ -1,0 +1,7 @@
+---
+name: Infliggi ferite
+---
+
+Con questo incantesimo l'incantatore effettua un attacco in mischia contro una creatura entro la sua portata. Se il colpo va a segno, il bersaglio subisce 3d10 danni necrotici.
+
+***Ai livelli superiori.*** Quando l'incantatore lancia questo incantesimo usando uno slot incantesimo di 2° livello o superiore, i danni aumentano di 1d10 per ogni slot di livello superiore al 1°.

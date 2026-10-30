@@ -1,0 +1,5 @@
+---
+name: Candela
+---
+
+Per 1 ora, una candela proietta luce intensa entro un raggio di 1,5 metri e luce fioca per altri 1,5 metri.

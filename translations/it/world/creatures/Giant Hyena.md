@@ -1,0 +1,13 @@
+---
+name: Iena gigante
+---
+
+## Tratti
+
+### Furia
+Quando la iena riduce una creatura a 0 punti ferita con un attacco in mischia nel suo turno, la iena può effettuare un'azione bonus per muoversi fino a metà della sua velocità ed effettuare un attacco con il morso.
+
+## Azioni
+
+### Morso
+*Attacco con arma da mischia:* +5 al tiro per colpire, portata 1,5 m, un bersaglio. *Colpito:* 10 (2d6 + 3) danni perforanti.

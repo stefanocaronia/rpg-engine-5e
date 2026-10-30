@@ -1,0 +1,19 @@
+---
+name: Segugio infernale
+---
+
+## Tratti
+
+### Tattiche del branco
+Il segugio dispone di vantaggio nel tiro per colpire contro una creatura se almeno uno degli alleati del segugio si trova entro 1,5 metri dalla creatura e non è incapacitato.
+
+### Udito e olfatto acuti
+Il segugio dispone di vantaggio alle prove di Saggezza (Percezione) basate sull'olfatto o sull'udito.
+
+## Azioni
+
+### Morso
+*Attacco con arma da mischia:* +5 al tiro per colpire, portata 1,5 m, un bersaglio. *Colpito:* 7 (1d8 + 3) danni perforanti più 7 (2d6) danni da fuoco.
+
+### Soffio di fuoco (ricarica 5–6)
+Il segugio esala fuoco in un cono di 4,5 metri. Ogni creatura in quell'area deve effettuare un tiro salvezza su Destrezza con CD 12, subendo 21 (6d6) danni da fuoco in caso di fallimento, o la metà dei danni in caso di successo.

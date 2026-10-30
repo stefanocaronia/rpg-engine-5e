@@ -1,0 +1,3 @@
+---
+name: Anello con sigillo
+---

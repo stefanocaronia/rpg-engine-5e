@@ -1,0 +1,5 @@
+---
+name: Gavetta
+---
+
+Questa scatola di stagno contiene un bicchiere e delle semplici posate. Le due metà della scatola, una volta aperte, possono essere usate rispettivamente come padella e come piatto o scodella.

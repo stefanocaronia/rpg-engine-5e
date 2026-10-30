@@ -1,0 +1,5 @@
+---
+name: Pietra del controllo degli elementali della terra
+---
+
+Se la pietra tocca il terreno, il personaggio può usare un'azione per pronunciare la parola d'ordine ed evocare un elementale della terra, come se avesse lanciato l'incantesimo *evoca elementale*. La pietra non può più essere utilizzata in questo modo fino all'alba successiva. La pietra pesa 2,5 kg.

@@ -1,0 +1,7 @@
+---
+name: Fiotto acido
+---
+
+L'incantatore scaglia una bolla di acido, scegliendo una creatura entro gittata o scegliendone due entro gittata che si trovano a non più di 1,5 metri l'una dall'altra. Un bersaglio deve superare un tiro salvezza su Destrezza, altrimenti subisce 1d6 danni da acido.
+
+I danni di questo incantesimo aumentano di 1d6 quando l'incantatore raggiunge il 5° livello (2d6), l'11° livello (3d6) e il 17° livello (4d6).

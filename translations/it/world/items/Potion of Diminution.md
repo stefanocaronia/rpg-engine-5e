@@ -1,0 +1,5 @@
+---
+name: Pozione di diminuzione
+---
+
+Quando il personaggio beve questa pozione, ottiene l'effetto "ridurre" dell'incantesimo *ingrandire/ridurre*, per 1d4 ore (non è richiesta la concentrazione). All'interno della pozione è visibile un nucleo rosso che si contrae progressivamente fino a diventare un granello minuscolo per poi esplodere e tingere tutto il liquido trasparente intorno a esso. Agitare la bottiglia non interrompe il processo.

@@ -1,0 +1,9 @@
+---
+name: Corda intralciante
+---
+
+Questa corda è lunga 9 metri e pesa 1,5 kg. Se il personaggio ne impugna un'estremità e usa un'azione per pronunciare la parola d'ordine, l'altra estremità guizza in avanti per intralciare una creatura che il personaggio è in grado di vedere situata entro 6 metri da lui. Il bersaglio deve superare un tiro salvezza su Destrezza con CD 15, altrimenti viene trattenuto.
+
+Il personaggio può liberare la creatura usando un'azione bonus per pronunciare una seconda parola d'ordine. Un bersaglio trattenuto dalla corda può usare un'azione per effettuare una prova di Forza o di Destrezza (a sua scelta) con CD 15. In caso di successo, la creatura non è più trattenuta dalla corda.
+
+La corda possiede CA 20 e 20 punti ferita. Recupera 1 punto ferita ogni 5 minuti, purché le rimanga almeno 1 punto ferita. Se la corda scende a 0 punti ferita, viene distrutta.

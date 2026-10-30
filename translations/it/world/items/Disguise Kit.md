@@ -1,0 +1,5 @@
+---
+name: Trucchi per il camuffamento
+---
+
+Questa borsa di cosmetici, tinture per capelli e piccoli accessori consente a chi la usa di alterare il proprio aspetto fisico. La competenza in questi trucchi permette a un personaggio di aggiungere il proprio bonus di competenza a ogni prova di caratteristica che effettua per creare un travestimento visivo.
