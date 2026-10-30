@@ -4,7 +4,7 @@
 // with the dashboard's kit and tokens; its own layout and motion in its style sheet (page-style.ts).
 import type { JSX } from "preact";
 import { useEffect, useRef, useState } from "preact/hooks";
-import { type BodyProps, Dice, type FigureProps, Icon, type PageModule, Portrait } from "rpg-engine/page";
+import { type BodyProps, Dice, type FigureProps, Icon, type PageModule, Portrait, statusIcons } from "rpg-engine/page";
 import { pageStyle } from "./page-style.ts";
 import { type DyingData, type DyingState, type SaveData, type SaveOutcome, saveOutcome } from "./shown.ts";
 
@@ -30,10 +30,6 @@ const heartLines = {
 
 // The line of each state that stays.
 const stateLines: Record<DyingState, HeartLineKind> = { dying: "faint", stable: "beat", dead: "flat" };
-
-// The drawing of the skull of the dead, as the dashboard's own.
-const skull = "M12 2.5C7 2.5 3.5 6 3.5 10.6c0 2.7 1.2 4.8 3.2 6.1V19.5c0 1.1.9 2 2 2h6.6c1.1 0 2-.9 2-2v-2.8c2-1.3 3.2-3.4 3.2-6.1C20.5 6 17 2.5 12 2.5Z "
-    + "M8.6 8.8a2.3 2.4 0 1 0 0 4.8a2.3 2.4 0 1 0 0-4.8Z M15.4 8.8a2.3 2.4 0 1 0 0 4.8a2.3 2.4 0 1 0 0-4.8Z M12 13.8l-1.4 2.5h2.8Z M10.1 18.4h1.1v3.4h-1.1Z M12.8 18.4h1.1v3.4h-1.1Z";
 
 /** The line of the heart over the word of one at 0, in the tint of their panel: faint dying, a beat stable, flat dead. */
 function HeartbeatFigure({ data }: FigureProps)
@@ -94,7 +90,7 @@ function DeathSaveBody({ data, before, rolled, buttons, sent, answer, words, fie
                                 {outcome === undefined ? rolled.total : `${rolled.total} · `}
                                 {outcome?.kind === "dead" && (
                                     <svg class="person-skull" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d={skull} />
+                                        <path d={statusIcons.dead} />
                                     </svg>
                                 )}
                                 {said}
@@ -257,7 +253,10 @@ function HitDiceBody({ rest, buttons, sent, answer, words, field, number, reduce
                                     ? (
                                         <span class="pips spend-pips" role="img" aria-label={`${label}: ${words("{value} of {max}", { value: dice.value, max: dice.max })}`}>
                                             {Array.from({ length: dice.max }, (_, pip) => (
-                                                <span key={pip} class={["pip", pip < dice.value ? "on" : "", last?.field === dice.field && pip === dice.value ? "fresh" : ""].filter((name) => name !== "").join(" ")} />
+                                                <span
+                                                    key={pip}
+                                                    class={["pip", pip < dice.value ? "on" : "", last?.field === dice.field && pip === dice.value ? "fresh" : ""].filter((name) => name !== "").join(" ")}
+                                                />
                                             ))}
                                         </span>
                                     )
@@ -283,16 +282,19 @@ function HitDiceBody({ rest, buttons, sent, answer, words, field, number, reduce
                     ? <p class="spend-hint">{words("One die at a time: stop when you like.")}</p>
                     : (
                         <ol class="spend-chips" aria-label={words("Dice rolled")}>
-                            {rest.rolls.map((roll) => (
-                                <li key={roll.id} class={roll.id === last?.id ? "spend-chip fresh" : "spend-chip"}>
-                                    <span class="die-chip">
-                                        <Dice notation={`1d${rest.dice.find((dice) => dice.field === roll.field)?.sides ?? 6}`} />
-                                        {roll.face}
-                                    </span>
-                                    {roll.adds !== 0 && <span class="spend-chip-adds">{signed(roll.adds)}</span>}
-                                    <span class="spend-chip-total">= {roll.total}</span>
-                                </li>
-                            ))}
+                            {rest.rolls.map((roll) => {
+                                const sides = rest.dice.find((dice) => dice.field === roll.field)?.sides;
+                                return (
+                                    <li key={roll.id} class={roll.id === last?.id ? "spend-chip fresh" : "spend-chip"}>
+                                        <span class="die-chip">
+                                            {sides !== undefined && <Dice notation={`1d${sides}`} />}
+                                            {roll.face}
+                                        </span>
+                                        {roll.adds !== 0 && <span class="spend-chip-adds">{signed(roll.adds)}</span>}
+                                        <span class="spend-chip-total">= {roll.total}</span>
+                                    </li>
+                                );
+                            })}
                         </ol>
                     )}
                 <button ref={done} type="button" class={left ? "spend-done" : "spend-done last"} aria-disabled={busy ? "true" : undefined} onClick={end}>

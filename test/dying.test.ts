@@ -71,9 +71,14 @@ describe("the dying", () => {
         );
         await ok("effect", "add", "Ettore", "Stable");
         expect(await ok("change", "Ettore", "hp", "--by=5")).toContain("Ettore is no longer dying: death-successes 3 → 0, Unconscious ended, Stable ended.");
-        // Initiative read from the sheet is no death save, though a d20 (playtest 08).
+        // Initiative read from the sheet is no death save, though a d20 (playtest 08); the master is told it was not counted.
         await ok("change", "Ettore", "hp", "--to", "0");
-        expect(await ok("roll", "1d20+2", "--who", "Ettore", "--why", "iniziativa")).not.toContain("death save");
+        const initiative = await ok("roll", "1d20+2", "--who", "Ettore", "--why", "iniziativa");
+        expect(initiative).not.toContain("Ettore's death save");
+        expect(initiative).toContain(
+            "Ettore is dying, and 1d20+2 was not counted as a death save, which is 1d20 alone, with dice added but no number: nothing was written. "
+                + "If it was one, write its outcome with change death-successes or death-failures.",
+        );
     });
 
     it("clears the failures at the third success, reads d20 as the save, and says death when damage or instant death ends one stable (review of 17 October)", async () => {
@@ -118,6 +123,23 @@ describe("the dying", () => {
         expect(campaign.log().slice(before).filter((entry) => entry.type === "counter-changed")).toEqual([]);
     });
 
+    it("takes one written dead as dead: no death saves, no card, and hit points bring them back only once written alive (DIE-7, review of 30 October)", async () => {
+        await ok("change", "Ettore", "hp", "--to", "0");
+        await ok("write", "Ettore", "--set", "status=dead");
+        const rolled = await withContext(campaign, { random: () => 20 }, () => campaign.run("roll", "1d20", "--who", "Ettore"));
+        expect(rolled.output).not.toContain("death save");
+        expect(await ok("change", "Ettore", "hp", "--by=5")).toContain(
+            "Ettore is dead, written status=dead: what this change gave is undone, hp back to 0, as hp regained brings no one back. To bring Ettore back as the rules say, as a spell does: "
+                + "first write status=alive, then give the hp.",
+        );
+        expect(await ok("show", "Ettore")).toContain("hp 0/20");
+        const struck = campaign.log().length;
+        await ok("change", "Ettore", "hp", "--by=-4");
+        expect(campaign.log().slice(struck).filter((entry) => entry.data.field === "death-failures")).toEqual([]);
+        await ok("write", "Ettore", "--set", "status=alive");
+        expect(await ok("change", "Ettore", "hp", "--by=5")).toContain("Ettore is no longer dying");
+    });
+
     it("leaves a party member as they are when a form that gives hit points goes to 0, what goes past for its text to say (DIE-8, D-454)", async () => {
         await ok("effect", "add", "Ettore", "Forma selvatica", "--set", "hp=11/11");
         const hit = await ok("change", "Ettore", "hp", "--by=-15");
@@ -135,7 +157,7 @@ describe("the dying", () => {
         await ok("scene", "order", "--order", "Ettore", "--order", "Lena");
         expect(await ok("scene", "next")).toContain(
             "Lena is dying: the engine rolled its death save, 1d20 = 4 [4], so never roll it again. Lena's death save: 4, a failure; death-failures 0 → 1. Tell it in a sentence, the roll in brackets. "
-                + "To stabilize Lena, as Medicine or a spell does: effect add Stable, which sets the death saves itself. Read rules Death Saving Throws.",
+                + "To stabilize Lena, as Medicine or a spell does: effect add Lena Stable, which sets the death saves itself. Read rules Death Saving Throws.",
         );
         await ok("config", "mentor", "off");
         await ok("change", "Lena", "death-successes", "--to", "2");

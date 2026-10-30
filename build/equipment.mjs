@@ -1,11 +1,10 @@
 // Writes the armor, shield and weapons of the SRD 5.1 as pages in world/items, from the tables of rules/Equipment.md (pp. 62–66): node build/equipment.mjs
 // Each armor gives its Armor Class and each weapon its attack and damage as formulas worked out on who has it equipped (PRO-5, D-231).
-import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { pageText } from "./pages.mjs";
+import { writePage } from "./pages.mjs";
 
 const system = join(import.meta.dirname, "..");
-const items = join(system, "world", "items");
 const chapter = readFileSync(join(system, "rules", "Equipment.md"), "utf8").replaceAll("\r\n", "\n");
 
 // The names in natural order, as the tables of play write them; the SRD's stays as an alias when it differs.
@@ -30,7 +29,7 @@ for (const page of written) {
         throw new Error(`${page.name} is already the name of another page of the system: give it another.`);
     }
 
-    writeFileSync(join(items, `${page.name}.md`), page.text);
+    writePage("items", page.name, page.fields, page.body);
 }
 
 console.log(`${written.length} pages written: ${written.map((page) => page.name).join(", ")}.`);
@@ -82,7 +81,7 @@ function armorPage({ category, cells })
         ...(stealth === "Disadvantage" ? { "stealth-disadvantage": true } : {}),
         weight: weight.replace(/\.$/, ""),
     };
-    return { name, text: pageText(fields, description(shield ? "Shields" : srdName)) };
+    return { name, fields, body: description(shield ? "Shields" : srdName) };
 }
 
 /**
@@ -114,7 +113,7 @@ function weaponPage({ category, cells })
         attack: `${ability} + ${proficient} + bonus${archery}`,
         ...(amount === undefined ? {} : { "damage-roll": `${monk ? `dice(${amount}, martial-arts)` : amount} + ${ability} + bonus${dueling} ${type}` }),
     };
-    return { name, text: pageText(fields, ["Lance", "Net"].includes(srdName) ? description(srdName) : "") };
+    return { name, fields, body: ["Lance", "Net"].includes(srdName) ? description(srdName) : "" };
 }
 
 /** The SRD's name as an alias, when it is not the page's name but for case. */

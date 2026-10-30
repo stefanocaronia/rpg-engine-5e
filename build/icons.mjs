@@ -24,11 +24,19 @@ const kinds = ["creatures", "items"].map((folder) => {
     return { folder, icons, pages };
 });
 
-rmSync(images, { recursive: true, force: true });
-mkdirSync(images);
 const used = [...new Set(kinds.flatMap((kind) => Object.values(kind.icons)))];
 const fileOf = new Map(used.map((icon) => [icon, fileName(icon, used)]));
 const authors = [...new Set(used.map((icon) => icon.split("/")[0]))];
+// Every author named before anything is written, so that a failure leaves the icons, the pages and the licence as they were.
+const names = authorNames(join(source, "..", "..", "..", "license.txt"));
+const unnamed = authors.filter((folder) => !names.has(folderKey(folder)));
+
+if (unnamed.length > 0) {
+    throw new Error(`license.txt does not name the author of ${unnamed.join(", ")}: choose icons by authors it credits.`);
+}
+
+rmSync(images, { recursive: true, force: true });
+mkdirSync(images);
 
 for (const icon of used) {
     copyFileSync(join(source, `${icon}.svg`), join(images, fileOf.get(icon)));
@@ -39,13 +47,6 @@ for (const { folder, icons, pages } of kinds) {
         const path = join(system, "world", folder, `${page}.md`);
         writeFileSync(path, withImage(readFileSync(path, "utf8"), fileOf.get(icons[page])));
     }
-}
-
-const names = authorNames(join(source, "..", "..", "..", "license.txt"));
-const unnamed = authors.filter((folder) => !names.has(folderKey(folder)));
-
-if (unnamed.length > 0) {
-    throw new Error(`license.txt does not name the author of ${unnamed.join(", ")}: choose icons by authors it credits.`);
 }
 
 writeFileSync(licensePath, withCredit(readFileSync(licensePath, "utf8"), authors.map((folder) => names.get(folderKey(folder)))));

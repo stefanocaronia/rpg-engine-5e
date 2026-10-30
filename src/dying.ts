@@ -44,7 +44,13 @@ export const dyingCode: PackageCode = {
 function isDying(page: GamePage | undefined): page is GamePage
 {
     const counter = page?.counter(hp);
-    return page !== undefined && page.party && counter !== undefined && counter.value <= 0 && counted(page, successes.field) < successes.most && counted(page, failures.field) < failures.most;
+    return page !== undefined && page.party && counter !== undefined && counter.value <= 0 && counted(page, successes.field) < successes.most && !isDead(page);
+}
+
+/** Whether one of the party is dead (DIE-7): at their most failures, or written dead, as the master writes status=dead. */
+function isDead(page: GamePage): boolean
+{
+    return counted(page, failures.field) >= failures.most || page.value("status") === "dead";
 }
 
 function counted(page: GamePage, field: string): number
@@ -67,12 +73,14 @@ function afterHitPoints(change: CounterChange, game: Game): string[]
     const name = page.name;
     const failed = counted(page, failures.field);
 
-    // The dead, at their most failures, are not brought back by hit points: they go back to 0, and only what the rules say brings them back (DIE-7).
-    if (change.after > 0 && change.before <= 0 && failed >= failures.most) {
+    // The dead are not brought back by hit points: they go back to 0, and only what the rules say brings them back (DIE-7).
+    if (change.after > 0 && change.before <= 0 && isDead(page)) {
         setCounters(game, name, { [hp]: 0 }, "the dead regain nothing");
+        const why = failed >= failures.most ? `with ${failures.field} ${failed}` : "written status=dead";
+        const first = failed >= failures.most ? `change ${failures.field} to 0` : "write status=alive";
         return [
-            `${name} is dead, with ${failures.field} ${failed}: what this change gave is undone, ${hp} back to 0, as ${hp} regained brings no one back. To bring ${name} back as the rules say, as a spell does: `
-            + `first change ${failures.field} to 0, then give the ${hp}.`,
+            `${name} is dead, ${why}: what this change gave is undone, ${hp} back to 0, as ${hp} regained brings no one back. To bring ${name} back as the rules say, as a spell does: `
+            + `first ${first}, then give the ${hp}.`,
         ];
     }
 
@@ -82,7 +90,7 @@ function afterHitPoints(change: CounterChange, game: Game): string[]
     }
 
     // Nor do the dead take more failures, or die again (review of 17 October).
-    if (change.after > 0 || failed >= failures.most) {
+    if (change.after > 0 || isDead(page)) {
         return [];
     }
 
@@ -149,7 +157,7 @@ function turnOf(who: string, game: Game): string[]
 
     const read = ` Read rules ${rules.saves}.`;
     // The master set the counters by hand before Stable, which sets them itself (playtest 11).
-    const stabilize = ` To stabilize ${page.name}, as Medicine or a spell does: effect add ${stableEffect}, which sets the death saves itself.`;
+    const stabilize = ` To stabilize ${page.name}, as Medicine or a spell does: effect add ${page.name} ${stableEffect}, which sets the death saves itself.`;
 
     if (page.pc) {
         return [`${page.name} is dying: the turn starts with their death save, the player's to roll: ask them, with ask, a check of ${save.dice}; the engine writes its outcome.${stabilize}${read}`];
@@ -161,11 +169,26 @@ function turnOf(who: string, game: Game): string[]
     return [`${page.name} is dying: the engine rolled its death save, ${rolled.text}, so never roll it again. ${lines.join(" ")} ${tellingOf(game.setting("mentor"))}${still}${read}`];
 }
 
-/** The death save the player rolled for their character, with ask or roll (DIE-4); anyone else's is rolled as its turn starts (DIE-5). */
+/**
+ * The death save the player rolled for their character, with ask or roll (DIE-4); anyone else's is rolled as its turn starts (DIE-5). A d20 with a number added
+ * is not counted, and the master is told so.
+ */
 function playersSave(roll: RollMade, game: Game): string[]
 {
     const page = game.page(roll.who);
-    return page === undefined || !page.pc ? [] : saved(page, roll, game);
+
+    if (page === undefined || !page.pc) {
+        return [];
+    }
+
+    if (isDying(page) && roll.dice.some((die) => die.sides === save.sides) && !isSaveRoll(roll.notation)) {
+        return [
+            `${page.name} is dying, and ${roll.notation} was not counted as a death save, which is ${save.dice} alone, with dice added but no number: nothing was written. `
+            + `If it was one, write its outcome with change ${successes.field} or ${failures.field}.`,
+        ];
+    }
+
+    return saved(page, roll, game);
 }
 
 /**
@@ -299,7 +322,7 @@ function saveWidget(game: GameView, who: string | undefined): Widget | undefined
         successes: { value: counted(page, successes.field), most: successes.most },
         failures: { value: failed, most: failures.most },
         down: (page.counter(hp)?.value ?? 0) <= 0,
-        dead: failed >= failures.most || page.value("status") === "dead",
+        dead: isDead(page),
         sides: save.sides,
         atLeast: save.atLeast,
         lowest: save.lowest,

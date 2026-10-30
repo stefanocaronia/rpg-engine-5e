@@ -1,5 +1,5 @@
 // The pages of the 5e system that its converters write: a page's file, the system's pages they write again or must not take the name of, and a page's name.
-import { readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse, stringify } from "yaml";
 
@@ -16,16 +16,18 @@ export function pageText(fields, body)
 export function systemPages()
 {
     return readdirSync(world, { withFileTypes: true }).filter((entry) => entry.isDirectory()).flatMap((folder) =>
-        readdirSync(join(world, folder.name)).filter((file) => file.endsWith(".md")).map((file) => {
-            const text = readFileSync(join(world, folder.name, file), "utf8").replaceAll("\r\n", "\n");
-            return { name: file.slice(0, -3), folder: folder.name, fields: parse(/^---\n([\s\S]*?)\n---/.exec(text)?.[1] ?? "") ?? {} };
-        })
+        readdirSync(join(world, folder.name)).filter((file) => file.endsWith(".md")).map((file) => ({
+            name: file.slice(0, -3),
+            folder: folder.name,
+            fields: fieldsOf(readFileSync(join(world, folder.name, file), "utf8")),
+        }))
     );
 }
 
 /**
- * Writes the pages a converter makes in a folder of world/, in place of those it made before, which `own` picks among the system's pages. A name that another
- * page has, or that two of them share, throws: such a page takes a specification in parentheses, as Shield (spell) beside the item Shield.
+ * Writes the pages a converter makes in a folder of world/, in place of those it made before, which `own` picks among the system's pages; the fields a page
+ * had that the converter does not write, given by hand after it ran, stay. A name that another page has, or that two of them share, throws: such a page takes
+ * a specification in parentheses, as Shield (spell) beside the item Shield.
  */
 export function writePages(folder, pages, own)
 {
@@ -38,21 +40,42 @@ export function writePages(folder, pages, own)
         throw new Error(`${clashing.map((page) => page.name).join(", ")}: the name of another page. Give it a specification in parentheses, as Shield (spell) beside the item Shield.`);
     }
 
+    const before = new Map(all.filter(own).map((page) => [page.name.toLowerCase(), page.fields]));
+
     for (const page of all.filter(own)) {
         rmSync(join(world, page.folder, `${page.name}.md`));
     }
 
     for (const page of pages) {
-        writeFileSync(join(world, folder, `${page.name}.md`), pageText(page.fields, page.body));
+        writeFileSync(join(world, folder, `${page.name}.md`), pageText(keptFields(before.get(page.name.toLowerCase()) ?? {}, page.fields), page.body));
     }
 
     return pages;
+}
+
+/** Writes a page in a folder of world/, keeping the fields its file had that the converter does not write, given by hand after it ran. */
+export function writePage(folder, name, fields, body)
+{
+    const path = join(world, folder, `${name}.md`);
+    writeFileSync(path, pageText(keptFields(existsSync(path) ? fieldsOf(readFileSync(path, "utf8")) : {}, fields), body));
 }
 
 /** A page name: a straight apostrophe, as every page of the system has. */
 export function pageName(title)
 {
     return title.replaceAll("’", "'");
+}
+
+/** The fields a converter writes, then those the page had that it does not write. */
+function keptFields(had, fields)
+{
+    return { ...fields, ...Object.fromEntries(Object.entries(had).filter(([field]) => !(field in fields))) };
+}
+
+/** The fields of a page's text, its frontmatter. */
+function fieldsOf(text)
+{
+    return parse(/^---\n([\s\S]*?)\n---/.exec(text.replaceAll("\r\n", "\n"))?.[1] ?? "") ?? {};
 }
 
 function scalar(value)
