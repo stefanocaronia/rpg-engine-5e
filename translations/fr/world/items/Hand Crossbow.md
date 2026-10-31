@@ -1,0 +1,3 @@
+---
+name: Arbalète de poing
+---

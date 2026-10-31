@@ -182,7 +182,8 @@ describe("the English book, in a campaign played in a language the system has wo
     let campaign: TestCampaign;
 
     beforeEach(async () => {
-        campaign = await fifthEdition({ language: "de", play: false });
+        // Dutch: the system has its words, not its text, which French, German, Italian and Spanish have (D-542).
+        campaign = await fifthEdition({ language: "nl", play: false });
     });
 
     afterEach(() => campaign.close());
@@ -202,15 +203,15 @@ describe("the English book, in a campaign played in a language the system has wo
     }
 
     it("searches the system by its own names too, as its words in the campaign's language give them (RUL-8)", async () => {
-        const output = await ok("rules", "gepackt");
+        const output = await ok("rules", "vastgegrepen");
         expect(output).toMatch(/^5e searched by its own names too: Grappled\.\n\n/);
         expect(output).toContain("Appendix PH-A: Conditions › Grappled (5e):\n" + sectionOf("Conditions", "## Grappled", "## Incapacitated"));
         // A word the list lacks finds nothing in the system, which says how to search it.
-        expect(await ok("rules", "Ringkampf")).toContain("The system 5e writes its rules in English");
-        // Never a name the search already says, nor the words a foe's hits are heard in, which name no rule: am Boden is no down.
+        expect(await ok("rules", "worstelpartij")).toContain("The system 5e writes its rules in English");
+        // Never a name the search already says, nor the words a foe's hits are heard in, which name no rule: neergegaan is no down.
         expect(await ok("rules", "Charisma")).not.toContain("searched by its own names too");
         expect(await ok("rules", "goblin")).not.toContain("searched by its own names too");
-        expect(await ok("rules", "am Boden")).not.toMatch(/searched by its own names too: .*\bdown\b/);
+        expect(await ok("rules", "neergegaan")).not.toMatch(/searched by its own names too: .*\bdown\b/);
     });
 
     it("says when nothing matches: the language of the book, its chapters and how to record a precedent", async () => {

@@ -1,163 +1,45 @@
-// Writes the Italian text of the 5e's pages and rules chapters into translations/it, from the official Italian SRD 5.1 (CC BY 4.0, SRD_CC_v5.1_IT.pdf):
-// node build/translations.mjs <srd51-it.jsonl>, from lines-it.py. Each page of world/ gets translations/it/world/<folder>/<its file>: its Italian name, the
-// SRD's, and its text, as the English page has it; each chapter of rules/ gets translations/it/rules/<its file>. The Italian SRD sorts its lists by the
-// Italian names, so a page is matched to its Italian section by what it holds (D-542): a spell by its header, a creature by its stat block, an item by its
-// table row or type line; races, classes and chapters by their place. translations-it.json keeps every match, with those fixed by hand ("by": "hand"),
-// which a run keeps, and those a run is not sure of ("uncertain"), which it prints.
+// Writes the text of the 5e's pages and rules chapters in a language into translations/<code>, from the official translation of the SRD 5.1 in it (CC BY
+// 4.0): node build/translations.mjs <code> <srd51-code.jsonl>, from translation-lines.py; build/languages/<code>.mjs says where the parts of that PDF are and
+// the words it writes them with. Each page of world/ gets translations/<code>/world/<folder>/<its file>: its name, the SRD's, and its text, as the English
+// page has it; each chapter of rules/ gets translations/<code>/rules/<its file>. A translated SRD sorts its lists by its own names, so a page is matched to
+// its section by what it holds (D-542): a spell by its header, a creature by its stat block, an item by its table row or type line; races, classes and
+// chapters by their place. translations-<code>.json keeps every match, with those fixed by hand ("by": "hand"), which a run keeps, and those a run is not
+// sure of ("uncertain"), which it prints.
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse } from "yaml";
-import { blockText, joinRuns, markdown, plainText, readBlocks, readItalian, runsText } from "./italian-markdown.mjs";
 import { pageText } from "./pages.mjs";
+import { blockText, joinRuns, markdown, plainText, readBlocks, readTranslation, runsText } from "./translation-markdown.mjs";
 
 const system = join(import.meta.dirname, "..");
-const target = join(system, "translations", "it");
-const tablePath = join(import.meta.dirname, "translations-it.json");
-const italianWords = parse(readFileSync(join(system, "words", "it.yaml"), "utf8")).words;
-// The game's terms in both languages, from words/it.yaml and the abilities' names, as a text holds them: Stealth and Furtività, poison and veleno. A term in
-// capitals is matched as it is written, as Forza (Strength) apart from forza (force).
-const abilities = { Strength: "Forza", Dexterity: "Destrezza", Constitution: "Costituzione", Intelligence: "Intelligenza", Wisdom: "Saggezza", Charisma: "Carisma" };
-const terms = Object.entries({ ...italianWords, ...abilities })
-    .filter(([english, italian]) => typeof italian === "string" && !/[{}]/.test(english + italian) && english.split(" ").length <= 3 && english.length >= 4)
-    .map(([english, italian]) => [termPattern(english), termPattern(italian.split(" (")[0])]);
+const [code, linesPath] = process.argv.slice(2);
 
-// The pages and chapters without an Italian SRD text, and why.
-const exceptions = {
-    "rules/Combat Encounters.md": "from the SRD 5.2.1, which has no official Italian translation",
-};
-// What the English pages say that the SRD does not, in Italian: the lines our converters add.
-const ourLines = {
-    "On a sheet, a pack is what it holds: write each kind with how many, never the pack itself.": "Su una scheda, una dotazione è ciò che contiene: scrivi ogni oggetto che contiene, con la sua quantità, mai la dotazione stessa.",
-};
-// The sections of a rules chapter the Italian SRD lacks, in our Italian from the English SRD's text, with its terms: its Appendix A ends with Privo di sensi
-// (p. 407), without Prone, Frightened, Stunned and Restrained. Each goes among its chapter's sections of the same type, in alphabetical order.
-const ourSections = {
-    "Conditions.md": [
-        {
-            title: "Prono",
-            items: [
-                "L'unica opzione di movimento di una creatura prona è strisciare, a meno che non si rialzi, ponendo così fine alla condizione.",
-                "La creatura subisce svantaggio ai tiri per colpire.",
-                "Un tiro per colpire contro la creatura ottiene vantaggio se l'attaccante si trova entro 1,5 metri dalla creatura. Altrimenti, il tiro per colpire subisce svantaggio.",
-            ],
-        },
-        {
-            title: "Spaventato",
-            items: [
-                "Una creatura spaventata subisce svantaggio alle prove di caratteristica e ai tiri per colpire finché la fonte della sua paura si trova nel suo campo visivo.",
-                "La creatura non può avvicinarsi volontariamente alla fonte della sua paura.",
-            ],
-        },
-        {
-            title: "Stordito",
-            items: [
-                "Una creatura stordita è incapacitata (vedi la relativa condizione), non può muoversi e riesce a parlare solo in modo incerto.",
-                "La creatura fallisce automaticamente i tiri salvezza su Forza e Destrezza.",
-                "I tiri per colpire contro la creatura ottengono vantaggio.",
-            ],
-        },
-        {
-            title: "Trattenuto",
-            items: [
-                "La velocità di una creatura trattenuta diventa 0 e la creatura non può beneficiare di alcun bonus alla velocità.",
-                "I tiri per colpire contro la creatura ottengono vantaggio, mentre i tiri per colpire della creatura subiscono svantaggio.",
-                "La creatura subisce svantaggio ai tiri salvezza su Destrezza.",
-            ],
-        },
-    ],
-};
-// The errors of the Italian SRD that change a rule, against the English SRD: in a file written, its wrong text, every time, and the right one.
-const errata = [
-    {
-        file: "world/creatures/Dragonborn.md",
-        wrong: "(TS Conoscenza)",
-        right: "(TS Costituzione)",
-        why: "the breath of the silver, white and green ancestries: a Constitution saving throw (Con. save) in English; Conoscenza is no ability",
-    },
-    {
-        file: "world/items/Orb of Dragonkind.md",
-        wrong: "tiro salvezza su Carisma con CD 15",
-        right: "prova di Carisma con CD 15",
-        why: "to control the orb: a DC 15 Charisma check in English, as the Italian's next sentence says (Se la prova viene superata)",
-    },
-];
-// Where each rules chapter is in the Italian PDF: from the heading that opens it, on its page, to the one that opens what follows, and the sections it takes
-// from elsewhere; a chapter title the Italian SRD lacks is ours.
-const chapters = {
-    "Races.md": { from: ["Razze", 2], to: ["Elfo", 2] },
-    "Beyond 1st Level.md": { from: ["Oltre il 1° livello", 60], to: ["Background", 65] },
-    "Equipment.md": { from: ["Equipaggiamento", 68], to: ["Talenti", 84] },
-    "Using Ability Scores.md": { from: ["Usare i punteggi di caratteristica", 85], to: ["Tempo", 95] },
-    "Adventuring.md": { title: "Avventura", from: ["Tempo", 95], to: ["L'ordine di combattimento", 102] },
-    "Combat.md": { title: "Combattimento", from: ["L'ordine di combattimento", 102], to: ["Incantesimi", 114] },
-    "Spellcasting.md": { from: ["Incantesimi", 114], to: ["Liste degli incantesimi", 120] },
-    "Traps.md": { from: ["Trappole", 223], to: ["Malattie", 228] },
-    "Diseases.md": { from: ["Malattie", 228], to: ["Follia", 230] },
-    "Madness.md": { from: ["Follia", 230], to: ["Oggetti", 232] },
-    "Objects.md": { from: ["Oggetti", 232], to: ["Veleni", 233] },
-    "Poisons.md": { from: ["Veleni", 233], to: ["Oggetti magici", 235] },
-    "Magic Items.md": { from: ["Oggetti magici", 235], to: ["Mostri", 292], without: "magic items" },
-    "Monsters.md": {
-        from: ["Mostri", 292],
-        to: ["Mostri (A)", 300],
-        with: [{ from: ["Archetipo del Mezzodrago", 303], to: ["Mezzodrago rosso veterano", 303] }],
-        // The sidebar the Italian SRD sets among the senses is a section after them in English, as its headings' levels follow.
-        move: { from: ["Competenze in armi, armature e strumenti", 295], before: ["Linguaggi", 296] },
-    },
-    "Conditions.md": { from: ["Appendice A del Manuale del Giocatore: Condizioni", 406], to: ["Appendice B del Manuale del Giocatore: Pantheon fantasy-storici", 408] },
-    "Fantasy-Historical Pantheons.md": { from: ["Appendice B del Manuale del Giocatore: Pantheon fantasy-storici", 408], to: ["Appendice C del Manuale del Giocatore: I piani di esistenza", 411] },
-    "The Planes of Existence.md": { from: ["Appendice C del Manuale del Giocatore: I piani di esistenza", 411], to: ["Appendice MM-A: Creature varie", 414] },
-    "Nonplayer Characters.md": { from: ["Appendice MM-B: Personaggi non giocanti", 444], to: ["Accolito", 444] },
-};
-// The pages of the PDF that hold each kind of section.
-const spellPages = { first: 129, last: 222 };
-const magicItemPages = { first: 237, last: 291 };
-const creaturePages = [{ first: 300, last: 405 }, { first: 414, last: 453 }];
-const equipmentPages = { first: 68, last: 83 };
-// The measures of a text in metric, by language: the Italian SRD writes 1,5 m for 5 feet and half a kilogram for a pound.
-const italianMeasures = [
-    [/(\d+(?:[.,]\d+)?)\s*(?:chilometri|km)\b/g, "km", 1],
-    [/(\d+(?:[.,]\d+)?)\s*(?:metri|metro|m)\b/g, "m", 1],
-    [/(\d+(?:[.,]\d+)?)\s*(?:centimetri|cm)\b/g, "cm", 1],
-    [/(\d+(?:[.,]\d+)?)\s*(?:chilogrammi|chili|kg)\b/g, "kg", 1],
-];
+if (code === undefined || linesPath === undefined || !existsSync(join(import.meta.dirname, "languages", `${code}.mjs`))) {
+    console.error("Usage: node build/translations.mjs <it|fr|de|es> <srd51-code.jsonl>, from python build/translation-lines.py <SRD_CC_v5.1_CODE.pdf> <srd51-code.jsonl>");
+    process.exit(1);
+}
+
+const language = (await import(`./languages/${code}.mjs`)).default;
+const target = join(system, "translations", code);
+const tablePath = join(import.meta.dirname, `translations-${code}.json`);
+const localWords = parse(readFileSync(join(system, "words", `${code}.yaml`), "utf8")).words;
+// The game's terms in both languages, from words/<code>.yaml and the abilities' names, as a text holds them: Stealth and Furtività, poison and veleno. A
+// term in capitals is matched as it is written, as Forza (Strength) apart from forza (force).
+const terms = Object.entries({ ...localWords, ...language.abilities })
+    .filter(([english, local]) => typeof local === "string" && !/[{}]/.test(english + local) && english.split(" ").length <= 3 && english.length >= 4)
+    .map(([english, local]) => [termPattern(english), termPattern(local.split(" (")[0])]);
+const { exceptions, ourLines, ourSections, errata, chapters, headingSizes, typos, raceHeadings, variants } = language;
 const englishMeasures = [
     [/(\d+(?:,\d{3})*(?:\.\d+)?)(?:\s+|-)(?:miles?)\b/g, "km", 1.5],
     [/(\d+(?:,\d{3})*(?:\.\d+)?)(?:\s+|-)(?:feet|foot|ft\.?)(?=\W|$)/g, "m", 0.3],
     [/(\d+(?:,\d{3})*(?:\.\d+)?)(?:\s+|-)(?:inch|inches)\b/g, "cm", 2.5],
     [/(\d+(?:,\d{3})*(?:\.\d+)?)(?:\s+|-)(?:pounds?|lb\.?)(?=\W|$)/g, "kg", 0.5],
 ];
-// The headings the Italian SRD sets at another size than their siblings': Indebolimento, at a sidebar's 11 pt among the conditions at 12.
-const headingSizes = { "Indebolimento (p. 406)": 12 };
-// The typos of the Italian SRD that its sections are read through: the text keeps them, as the SRD writes it.
-const typos = { "Ammaliamento di 5° li Eroismoello": "Ammaliamento di 5° livello" };
-// The races whose heading in the Italian SRD is not their name, which its text and words/it.yaml give: the subrace heading of its race's section.
-const raceHeadings = { "Lightfoot Halfling": "Piedelesto" };
-// The tables of the equipment whose rows are items, by caption: the English category of each group of rows, "" for the rows of none.
-const itemTables = {
-    Armature: { "Armature leggere": "light armor", "Armature medie": "medium armor", "Armature pesanti": "heavy armor", Scudi: "shield" },
-    Armi: { "Armi da mischia semplici": "simple melee weapon", "Armi a distanza semplici": "simple ranged weapon", "Armi da mischia da guerra": "martial melee weapon", "Armi a distanza da guerra": "martial ranged weapon" },
-    "Equipaggiamento d'avventura": { "": "adventuring gear", Munizioni: "ammunition", "Focus arcano": "arcane focus", "Focus druidico": "druidic focus", "Simbolo sacro": "holy symbol" },
-    Strumenti: { "": "tool", "Strumenti da artigiano": "artisan's tools", "Strumenti musicali": "musical instrument", Giochi: "gaming set" },
-    "Finimenti e veicoli da tiro": { "": ["tack and harness", "drawn vehicle"], Sella: "saddle" },
-    Imbarcazioni: { "": "waterborne vehicle" },
-};
-// The descriptions an item takes from a title other than its own or its group's, as gear.mjs gives them in English.
-const describedBy = { Sella: "Selle", Barcone: "Imbarcazioni a remi", "Barca a remi": "Imbarcazioni a remi" };
-// The groups whose rows name only a kind of their group, as Da carico under Sella: their name is the group's and the row's.
-const composedGroups = ["Sella"];
-// A variant of a creature, a sidebar in the Italian SRD, as a section of the page of the creature it varies.
-const variants = { "Variante: sciami di insetti": "Swarm of Insects", "Variante: topi giganti contagiosi": "Giant Rat" };
 
-const [linesPath] = process.argv.slice(2);
+const { lines, fills } = readTranslation(linesPath);
+const blocks = readBlocks(lines, fills, language);
 
-if (linesPath === undefined) {
-    console.error("Usage: node build/translations.mjs <srd51-it.jsonl>, from python build/lines-it.py <SRD_CC_v5.1_IT.pdf> <srd51-it.jsonl>");
-    process.exit(1);
-}
-
-const { lines, fills } = readItalian(linesPath);
-const blocks = readBlocks(lines, fills);
+movedBlocks(language.movedBlocks ?? []);
 
 for (const block of blocks.filter((one) => one.kind === "heading")) {
     block.size = headingSizes[`${block.text} (p. ${block.page})`] ?? block.size;
@@ -170,6 +52,32 @@ const matches = matched(english, sections, before);
 const written = writeTranslations(english, matches);
 writeFileSync(tablePath, `${JSON.stringify(tableOf(matches), undefined, 2)}\n`);
 report(english, written);
+
+/**
+ * Moves the paragraphs a PDF sets away from their section to its end, as the gorgon's breath the French SRD sets after the ghoul: each the paragraph that
+ * opens with a text on a page, to the end of the section of a heading on a page.
+ */
+function movedBlocks(moves)
+{
+    for (const move of moves) {
+        const from = blocks.findIndex((block) => block.kind === "paragraph" && block.page === move.from[1] && plainText(block.runs).startsWith(move.from[0]));
+        const heading = blocks.findIndex((block) => block.kind === "heading" && block.text === move.to[0] && block.page === move.to[1]);
+
+        if (from === -1 || heading === -1) {
+            throw new Error(`No paragraph "${move.from[0]}" on p. ${move.from[1]}, or no heading "${move.to[0]}" on p. ${move.to[1]}, in the ${language.name} SRD: fix movedBlocks in languages/${code}.mjs.`);
+        }
+
+        const [block] = blocks.splice(from, 1);
+        const end = blocks.findIndex((one, index) => index > heading && one.kind === "heading" && one.size >= 12);
+        blocks.splice(end, 0, block);
+    }
+}
+
+/** The name of a race, class or subclass as the SRD's headings write it. */
+function localName(englishName)
+{
+    return language.names[englishName] ?? localWords[englishName];
+}
 
 /** The system's pages and rules chapters, each with its path, kind, fields and text. */
 function englishPages()
@@ -209,32 +117,36 @@ function kindOf(folder, fields)
 // The spells (pp. 129–222): a heading, then its level and school in italics, then Casting Time, Range, Components and Duration in bold.
 function spellSections()
 {
-    return startsOf(spellPages, (block, next) => block.kind === "heading" && !block.bold && isItalicLine(next) && levelOf(plainText(next.runs)) !== undefined).map(({ start, body }) => {
+    const spell = language.spell;
+    const durationLine = new RegExp(`^(?:${spell.labels.duration.join("|")})\\s*:`);
+    return startsOf(language.pages.spells, (block, next) => block.kind === "heading" && !block.bold && isItalicLine(next) && levelOf(plainText(next.runs)) !== undefined).map(({ start, body }) => {
         const header = levelOf(plainText(body[0].runs));
-        // The header ends with Durata; a line of it the PDF does not indent, as the end of a reaction's casting time, is a paragraph of its own.
-        const end = body.findIndex((block) => block.kind === "paragraph" && /^Durata:/.test(plainText(block.runs))) + 1;
+        // The header ends with its duration; a line of it the PDF does not indent, as the end of a reaction's casting time, is a paragraph of its own.
+        const end = body.findIndex((block) => block.kind === "paragraph" && durationLine.test(plainText(block.runs))) + 1;
         const labels = {};
         let last;
 
         for (const block of body.slice(1, end)) {
-            const label = block.runs[0]?.style === "**" ? block.runs[0].text.trim() : "";
+            const first = joinRuns(block.runs)[0];
+            const label = first?.style === "**" ? first.text.trim() : "";
 
             if (label === "" && last !== undefined) {
                 labels[last] = `${labels[last]} ${plainText(block.runs)}`;
             } else {
-                last = label.replace(/:$/, "");
+                last = label.replace(/\s*:$/, "");
                 labels[last] = plainText(block.runs).slice(label.length).trim();
             }
         }
 
+        const labelled = (names) => names.map((name) => labels[name]).find((text) => text !== undefined) ?? "";
         const features = new Map([
             [`level ${header.level}`, 3],
             [`school ${header.school}`, 3],
             ...(header.ritual ? [["ritual", 2]] : []),
-            [`time ${castingTime(labels["Tempo di lancio"] ?? "")}`, 2],
-            [`range ${spellRange(labels.Gittata ?? "")}`, 2],
-            [`components ${components(labels.Componenti ?? labels.Componente ?? "")}`, 2],
-            [`duration ${spellDuration(labels.Durata ?? "")}`, 2],
+            [`time ${castingTime(labelled(spell.labels.time))}`, 2],
+            [`range ${spellRange(labelled(spell.labels.range))}`, 2],
+            [`components ${components(labelled(spell.labels.components), spell.components)}`, 2],
+            [`duration ${spellDuration(labelled(spell.labels.duration))}`, 2],
         ]);
         return section("spell", start, body.slice(end), features);
     });
@@ -243,7 +155,7 @@ function spellSections()
 // The magic items (pp. 237–291): a heading, then its kind and rarity in italics.
 function magicItemSections()
 {
-    return startsOf(magicItemPages, (block, next) => block.kind === "heading" && !block.bold && block.size >= 12 && isItalicLine(next) && itemType(plainText(next.runs)) !== undefined)
+    return startsOf(language.pages.magicItems, (block, next) => block.kind === "heading" && !block.bold && block.size >= 12 && isItalicLine(next) && itemType(plainText(next.runs)) !== undefined)
         .map(({ start, body }) => {
             const type = itemType(plainText(body[0].runs));
             const features = new Map([[`category ${type.category}`, 3], [`rarity ${type.rarity}`, 3], ...(type.attunement ? [["attunement", 2]] : [])]);
@@ -251,11 +163,11 @@ function magicItemSections()
         });
 }
 
-// The stat blocks (pp. 300–405 and the appendices MM-A and MM-B): a name in bold, then size, type and alignment in italics, then Armor Class.
+// The stat blocks (the bestiary and the appendices MM-A and MM-B): a name in bold, then size, type and alignment in italics, then Armor Class.
 function creatureSections()
 {
-    return creaturePages.flatMap((pages) =>
-        // A stat block ends at the next heading but its own Azioni and Reazioni, at 11 pt in bold: a family's, as Drago rosso, or a variant's sidebar.
+    return language.pages.creatures.flatMap((pages) =>
+        // A stat block ends at the next heading but its own actions and reactions, at 11 pt in bold: a family's, as the red dragon, or a variant's sidebar.
         startsOf(pages, (block, next) =>
             block.kind === "heading" && block.bold && block.size === 12 && isItalicLine(next) && creatureType(plainText(next.runs)) !== undefined, (block) =>
             block.kind === "heading" && !(block.bold && block.size === 11)).map(({ start, body }) => {
@@ -277,41 +189,48 @@ function variantSections()
     });
 }
 
-// The races (pp. 2–7): a race's heading, then its traits; a subrace's heading, smaller, after them.
+// The races: a race's heading, then its traits; a subrace's heading, smaller, after them.
 function raceSections()
 {
     const races = english.filter((page) => page.kind === "race");
+    const pages = language.pages.races;
     return races.map((page) => {
-        const name = italianWords[page.name];
+        const name = localName(page.name);
         const heading = raceHeadings[page.name] ?? name;
-        const start = blocks.findIndex((block) => block.kind === "heading" && block.page <= 7 && block.text === heading && block.size >= 12);
+        const start = blocks.findIndex((block) => block.kind === "heading" && block.page >= pages.first && block.page <= pages.last && block.text === heading && block.size >= 12);
 
         if (start === -1) {
-            throw new Error(`No race ${heading} (${page.name}) in pp. 2–7 of the Italian SRD: give its Italian name in words/it.yaml as the SRD writes it, or its heading in raceHeadings.`);
+            throw new Error(`No race ${heading} (${page.name}) in pp. ${pages.first}–${pages.last} of the ${language.name} SRD: give its name in the names of languages/${code}.mjs as the SRD writes it, or its heading in raceHeadings.`);
         }
 
-        // A race ends at its subrace, a subrace at the next race; a table's caption in bold, as Discendenza draconica, is part of it.
-        const end = blocks.findIndex((block, index) => index > start && block.kind === "heading" && block.size >= 12 && !block.bold && !/^Tratti /.test(block.text));
+        // A race ends at its subrace, a subrace at the next race; a table's caption in bold, as the draconic ancestry's, is part of it.
+        const end = blocks.findIndex((block, index) => index > start && block.kind === "heading" && block.size >= 12 && !block.bold && !language.race.traits.test(block.text));
         return { ...section("race", { ...blocks[start], text: name }, blocks.slice(start + 1, end), new Map()), fixed: page.path };
     });
 }
 
-// The classes (pp. 8–59): a class's chapter, from its title to its subclass's heading, then the subclass to the next chapter.
+// The classes: a class's chapter, from its title to its subclass's heading, then the subclass to the next chapter.
 function classSections()
 {
-    const titles = blocks.flatMap((block, index) => (block.kind === "heading" && block.size === 26 && block.page >= 8 && block.page <= 60 ? [index] : []));
+    const pages = language.pages.classes;
+    const titles = blocks.flatMap((block, index) => (block.kind === "heading" && block.size === 26 && block.page >= pages.first && block.page <= pages.last ? [index] : []));
     return english.filter((page) => page.kind === "class").flatMap((page) => {
-        const start = titles.find((index) => blocks[index].text === italianWords[page.name]);
+        const start = titles.find((index) => blocks[index].text === localName(page.name));
 
         if (start === undefined) {
-            throw new Error(`No class ${italianWords[page.name]} (${page.name}) in pp. 8–59 of the Italian SRD.`);
+            throw new Error(`No class ${localName(page.name)} (${page.name}) in pp. ${pages.first}–${pages.last} of the ${language.name} SRD: give its name in the names of languages/${code}.mjs.`);
         }
 
-        const end = titles.find((index) => index > start) ?? blocks.findIndex((block) => block.kind === "heading" && block.size === 26 && block.page >= 60);
-        const subclassPage = english.find((other) => other.kind === "subclass" && blocks.slice(start, end).some((block) => block.kind === "heading" && block.text === italianWords[other.name]));
-        const middle = blocks.findIndex((block, index) => index > start && index < end && block.kind === "heading" && block.text === italianWords[subclassPage.name]);
+        const end = titles.find((index) => index > start) ?? blocks.findIndex((block) => block.kind === "heading" && block.size === 26 && block.page >= pages.last);
+        const subclassPage = english.find((other) => other.kind === "subclass" && blocks.slice(start, end).some((block) => block.kind === "heading" && block.text === localName(other.name)));
+
+        if (subclassPage === undefined) {
+            throw new Error(`No subclass of ${page.name} in the ${language.name} SRD's chapter ${localName(page.name)}: give its name in the names of languages/${code}.mjs.`);
+        }
+
+        const middle = blocks.findIndex((block, index) => index > start && index < end && block.kind === "heading" && block.text === localName(subclassPage.name));
         const sidebars = sidebarsOf(blocks.slice(middle + 1, end));
-        // The Italian SRD sets a class's sidebars after its subclass; the English pages keep in the subclass only those it has, as its last sections.
+        // The SRD sets a class's sidebars after its subclass; the English pages keep in the subclass only those it has, as its last sections.
         const kept = sidebars.slice(sidebars.length - headingLevels(subclassPage.body).filter((level) => level === 2).length);
         const moved = sidebars.filter((sidebar) => !kept.includes(sidebar)).flat();
         return [
@@ -322,12 +241,12 @@ function classSections()
 }
 
 /**
- * A class's blocks with the list of a feature under the feature, as the English page has it: the warlock's Suppliche Occulte, a section of its own after the
- * features in the Italian SRD, goes on under the feature that names it.
+ * A class's blocks with the list of a feature under the feature, as the English page has it: the warlock's Eldritch Invocations, a section of its own after
+ * the features in the SRD, goes on under the feature that names it.
  */
 function movedSection(body)
 {
-    const start = body.findIndex((block) => block.kind === "heading" && block.size === 18 && block.text === "Suppliche Occulte");
+    const start = body.findIndex((block) => block.kind === "heading" && block.size === 18 && block.text === language.invocations);
 
     if (start === -1) {
         return body;
@@ -336,7 +255,7 @@ function movedSection(body)
     const end = body.findIndex((block, index) => index > start && block.kind === "heading" && block.size >= 18);
     const list = body.slice(start + 1, end === -1 ? undefined : end);
     const rest = body.filter((block, index) => index < start || (end !== -1 && index >= end));
-    const feature = rest.findIndex((block) => block.kind === "heading" && block.text === "Suppliche Occulte");
+    const feature = rest.findIndex((block) => block.kind === "heading" && block.text === language.invocations);
     const next = rest.findIndex((block, index) => index > feature && block.kind === "heading" && block.size >= rest[feature].size);
     return [...rest.slice(0, next), ...list, ...rest.slice(next)];
 }
@@ -344,7 +263,7 @@ function movedSection(body)
 /** A background's label, as "**Linguaggi:** due a scelta", as the English page's heading with its text: ### Linguaggi, then "due a scelta". */
 function labelHeading(block)
 {
-    const label = block.kind === "paragraph" && block.runs[0]?.style === "**" && /:\s*$/.test(block.runs[0].text) ? block.runs[0].text.trim().replace(/:$/, "") : undefined;
+    const label = block.kind === "paragraph" && block.runs[0]?.style === "**" && /:\s*$/.test(block.runs[0].text) ? block.runs[0].text.trim().replace(/\s*:$/, "") : undefined;
     return label === undefined ? [block] : [{ kind: "heading", size: 12, bold: false, text: label, page: block.page }, { ...block, runs: trimmedRuns(block.runs.slice(1)) }];
 }
 
@@ -367,73 +286,94 @@ function sidebarsOf(body)
     });
 }
 
-// The equipment (pp. 68–83): every row of its tables, with its description, the run-in title of its name, of the first part of its name or of its group.
+// The equipment: every row of its tables, with its description, the run-in title of its name, of the first part of its name or of its group.
 function gearSections()
 {
-    const chapter = blocks.filter((block) => block.page >= equipmentPages.first && block.page <= equipmentPages.last);
+    const { pages, gear } = language;
+    const chapter = blocks.filter((block) => block.page >= pages.equipment.first && block.page <= pages.equipment.last);
     const descriptions = descriptionsOf(chapter);
     const rows = chapter.filter((block) => block.kind === "table" && block.header !== undefined).flatMap((table) => tableItems(table, chapter));
-    const packs = chapter.filter((block) => block.kind === "paragraph" && block.runs[0]?.style === "***" && /^Dotazione .+ \([\d.]+ mo\)\.$/.test(block.runs[0].text.trim()));
-    const healing = descriptions.get("pozione di guarigione");
+    const packs = chapter.filter((block) => block.kind === "paragraph" && block.runs[0]?.style === "***" && gear.pack.test(block.runs[0].text.trim()));
+    const healing = descriptions.get(titleKey(gear.healing.title));
+
+    if (healing === undefined) {
+        throw new Error(`No description "${gear.healing.title}" in the ${language.name} SRD's equipment: fix gear.healing in languages/${code}.mjs.`);
+    }
+
     return [
         ...rows.map((row) => {
-            const key = [describedBy[row.name], describedBy[row.group], ...namePrefixes(row.name), row.group].filter((title) => title !== undefined).map(titleKey).find((title) => descriptions.has(title));
-            return { ...section("gear", { text: row.name, page: row.page }, descriptions.get(key) ?? [], row.features), name: itemName(row.name), describedBy: key };
+            const key = [gear.describedBy[row.name], gear.describedBy[row.group], ...namePrefixes(row.name), row.group].filter((title) => title !== undefined).map(titleKey).find((title) => descriptions.has(title));
+            return { ...section("gear", { text: row.name, page: row.page }, descriptions.get(key) ?? [], row.features), name: language.gear.name?.(row.name) ?? itemName(row.name), describedBy: key };
         }),
         ...packs.map((block) => {
-            const [, name, cost] = /^(.+) \(([\d.]+ mo)\)\.$/.exec(block.runs[0].text.trim());
+            const [, name, cost] = gear.pack.exec(block.runs[0].text.trim());
             const body = [{ ...block, runs: trimmedRuns(block.runs.slice(1)) }];
             return section("gear", { text: name, page: block.page }, body, new Map([[`cost ${coins(cost)}`, 3], ["category equipment pack", 3]]));
         }),
-        // Of the gear's Pozione di guarigione, the magic item's page takes its sentence on drinking it, as the English page (magic-items.mjs).
+        // Of the gear's potion of healing, the magic item's page takes its sentence on drinking it, as the English page (magic-items.mjs).
         {
-            ...section("joined", { text: "Pozione di guarigione", page: healing[0].page }, [{ ...healing[0], runs: [{ text: /Per bere o somministrare[^.]*\./.exec(plainText(healing[0].runs))[0], style: "" }] }], new Map()),
+            ...section("joined", { text: gear.healing.title, page: healing[0].page }, [{ ...healing[0], runs: [{ text: gear.healing.sentence.exec(plainText(healing[0].runs))[0], style: "" }] }], new Map()),
             joins: "world/items/Potion of Healing.md",
         },
     ];
 }
 
-// The background, the feat, the spell lists and the unarmed strike, the paragraph of Combat that tells it: by their place in the Italian SRD.
+// The background, the feat, the spell lists and the unarmed strike, the paragraph of Combat that tells it: by their place in the SRD.
 function otherTopicSections()
 {
-    const background = blocks.findIndex((block) => block.kind === "heading" && block.text === "Background" && block.page === 65);
-    const acolyte = blocks.findIndex((block) => block.kind === "heading" && block.text === "Accolito" && block.page === 66);
-    const backgroundEnd = blocks.findIndex((block) => block.kind === "heading" && block.size === 26 && block.page >= 68);
-    const feats = blocks.findIndex((block) => block.kind === "heading" && block.text === "Talenti" && block.page === 84);
+    const at = ([text, page]) => {
+        const index = blocks.findIndex((block) => block.kind === "heading" && block.text === text && block.page === page);
+
+        if (index === -1) {
+            throw new Error(`No heading "${text}" on p. ${page} of the ${language.name} SRD: fix its place in languages/${code}.mjs.`);
+        }
+
+        return index;
+    };
+
+    const background = at(language.background.heading);
+    const acolyte = at(language.background.acolyte);
+    const backgroundEnd = blocks.findIndex((block) => block.kind === "heading" && block.size === 26 && block.page >= language.background.end);
+    const feats = at(language.feats);
     const featsEnd = blocks.findIndex((block, index) => index > feats && block.kind === "heading" && block.size === 26);
-    const unarmed = blocks.find((block) => block.kind === "paragraph" && block.page === 108 && plainText(block.runs).includes("colpo senz'armi:"));
+    const unarmed = blocks.find((block) => block.kind === "paragraph" && block.page === language.unarmedStrike.page && plainText(block.runs).includes(language.unarmedStrike.text));
+
+    if (unarmed === undefined) {
+        throw new Error(`No paragraph with "${language.unarmedStrike.text}" on p. ${language.unarmedStrike.page} of the ${language.name} SRD: fix unarmedStrike in languages/${code}.mjs.`);
+    }
+
     const generalPart = blocks.slice(background + 1, acolyte);
     const acolytePart = blocks.slice(acolyte + 1, backgroundEnd);
     return [
         { ...section("topic", blocks[acolyte], [...acolytePart.flatMap(labelHeading), { ...blocks[background], kind: "heading" }, ...generalPart.map(boldHeading)], new Map()), fixed: "world/topics/Acolyte (background).md" },
         { ...section("topic", blocks.find((block, index) => index > feats && block.kind === "heading"), blocks.slice(feats + 1, featsEnd), new Map()), fixed: "world/topics/Grappler.md" },
-        { ...section("gear", { text: italianWords["Unarmed Strike"], page: unarmed.page }, [unarmed], new Map()), fixed: "world/items/Unarmed Strike.md" },
+        { ...section("gear", { text: language.names["Unarmed Strike"] ?? localWords["Unarmed Strike"], page: unarmed.page }, [unarmed], new Map()), fixed: "world/items/Unarmed Strike.md" },
         ...spellListSections(),
     ];
 }
 
-// The spell lists (pp. 120–128): a class's heading, its levels, a spell a line.
+// The spell lists: a class's heading, its levels, a spell a line.
 function spellListSections()
 {
     const lists = english.filter((page) => page.kind === "spell list");
-    const listLines = lines.filter((line) => line.page >= 120 && line.page <= 128);
+    const pages = language.pages.spellLists;
+    const listLines = lines.filter((line) => line.page >= pages.first && line.page <= pages.last);
     return lists.map((page) => {
-        const className = italianWords[page.name.replace(/ Spells$/, "")].toLowerCase();
-        const title = `Incantesimi da ${className}`;
+        const title = language.spellLists.title(localName(page.name.replace(/ Spells$/, "")));
         const start = listLines.findIndex((line) => lineText(line) === title);
 
         if (start === -1) {
-            throw new Error(`No list "${title}" in pp. 120–128 of the Italian SRD.`);
+            throw new Error(`No list "${title}" in pp. ${pages.first}–${pages.last} of the ${language.name} SRD.`);
         }
 
-        const end = listLines.findIndex((line, index) => index > start && /^Incantesimi da /.test(lineText(line)));
+        const end = listLines.findIndex((line, index) => index > start && language.spellLists.start.test(lineText(line)));
         const levels = [];
 
         for (const line of listLines.slice(start + 1, end === -1 ? undefined : end)) {
             const text = lineText(line);
 
             if (line.spans.some((span) => span.size >= 11 && span.text.trim() !== "")) {
-                levels.push({ title: text.replace(/^(\d)\s+livello$/, "$1° livello"), names: [] });
+                levels.push({ title: language.spellLists.level(text), names: [] });
             } else if (text !== "") {
                 levels.at(-1).names.push(text);
             }
@@ -468,14 +408,14 @@ function section(kind, heading, body, features)
 
 function isItalicLine(block)
 {
-    return block?.kind === "paragraph" && block.runs.every((run) => run.style === "*" || run.text.trim() === "");
+    // A comma in bold italics between italic words, as the German SRD sets some, is italic too.
+    return block?.kind === "paragraph" && block.runs.every((run) => run.style === "*" || /^[\s,]*$/.test(run.text));
 }
 
 /** A spell's level, school and ritual, from its italic line: "Invocazione di 3° livello", "Trucchetto di Evocazione". */
 function levelOf(text)
 {
-    const match = /^(?:Trucchetto di (\p{L}+)|(\p{L}+) di (\d)° livello)( \(rituale\))?$/u.exec(typos[text.trim()] ?? text.trim());
-    return match === null ? undefined : { level: match[3] ?? "0", school: (match[1] ?? match[2]).toLowerCase(), ritual: match[4] !== undefined };
+    return language.spell.header(typos[text.trim()] ?? text.trim());
 }
 
 function castingTime(text)
@@ -486,49 +426,48 @@ function castingTime(text)
 
 function unitOf(text)
 {
-    const words = [["azione bonus", "bonus action"], ["azion", "action"], ["reazion", "reaction"], ["round", "round"], ["minut", "minute"], ["or", "hour"], ["giorn", "day"]];
-    return words.find(([italian]) => text.trim().toLowerCase().startsWith(italian))?.[1] ?? text.trim().toLowerCase();
+    return language.spell.units.find(([local]) => text.trim().toLowerCase().startsWith(local))?.[1] ?? text.trim().toLowerCase();
 }
 
 function spellRange(text)
 {
     const lower = text.toLowerCase();
-    const words = [["incantatore", "self"], ["contatto", "touch"], ["vista", "sight"], ["illimitat", "unlimited"], ["speciale", "special"]];
-    const word = words.find(([italian]) => lower.startsWith(italian));
+    const word = language.spell.ranges.find(([local]) => lower.startsWith(local));
     return word?.[1] ?? measure(lower);
 }
 
-/** A distance in metres, as the Italian SRD writes them: "45 metri", "1,5 km". */
+/** A distance in metres, as the translated SRDs write them: "45 metri", "1,5 km". */
 function measure(text)
 {
-    const match = /^([\d.]+(?:,\d+)?)\s*(metri|metro|m|km|chilometri)\b/.exec(text);
+    const match = language.spell.distance.exec(text);
     return match === null ? text : `${Number(match[1].replaceAll(".", "").replace(",", ".")) * (/^k|^c/.test(match[2]) ? 1000 : 1)}`;
 }
 
-function components(text)
+/** A spell's components in English letters, from the local ones: V, S, M, as the German V, G, M. */
+function components(text, letters = { V: "V", S: "S", M: "M" })
 {
-    return [...text.replace(/\(.*$/, "").matchAll(/\b([VSM])\b/g)].map((match) => match[1]).join("");
+    const pattern = new RegExp(`\\b([${Object.keys(letters).join("")}])\\b`, "g");
+    return [...text.replace(/\(.*$/, "").matchAll(pattern)].map((match) => letters[match[1]]).join("");
 }
 
 function spellDuration(text)
 {
     const lower = text.toLowerCase();
-    const concentration = lower.startsWith("concentrazione") ? "concentration " : "";
+    const concentration = lower.startsWith(language.spell.concentration) ? "concentration " : "";
     const amount = /(\d+)\s+(\p{L}+)/u.exec(lower);
 
     if (amount !== null) {
         return `${concentration}${amount[1]} ${unitOf(amount[2])}`;
     }
 
-    const words = [["istantane", "instantaneous"], ["speciale", "special"], ["finché non viene dissolto o innescato", "until dispelled or triggered"], ["finché non viene dissolto", "until dispelled"]];
-    return `${concentration}${words.find(([italian]) => lower.startsWith(italian))?.[1] ?? lower}`;
+    return `${concentration}${language.spell.durations.find(([local]) => lower.startsWith(local))?.[1] ?? lower}`;
 }
 
 /**
- * What a text holds that a translation keeps, as weighted features: its dice, its measures in metric (the Italian SRD's 1,5 m for 5 feet, half a kilogram a
+ * What a text holds that a translation keeps, as weighted features: its dice, its measures in metric (the translations' 1,5 m for 5 feet, half a kilogram a
  * pound), its other numbers, the spells it names in italics, by their English names, and how many paragraphs, list items and table rows it has.
  */
-function textFeatures(text, italics, counts, language)
+function textFeatures(text, italics, counts, local)
 {
     const features = new Map();
 
@@ -542,8 +481,8 @@ function textFeatures(text, italics, counts, language)
         features.set(`${key} #${index}`, weight);
     };
 
-    const measures = language === "it" ? italianMeasures : englishMeasures;
-    let rest = text.replace(/\b(\d*)d(\d+)\b/g, (_, count, faces) => {
+    const measures = local ? language.measures : englishMeasures;
+    let rest = text.replace(local ? language.dice : /\b(\d*)d(\d+)\b/g, (_, count, faces) => {
         add(`dice ${count || "1"}d${faces}`, 1);
         return " ";
     });
@@ -559,8 +498,8 @@ function textFeatures(text, italics, counts, language)
         add(`number ${match[0]}`, 0.5);
     }
 
-    for (const [english, italian] of terms) {
-        if (language === "it" ? italian.test(text) : english.test(text)) {
+    for (const [english, translated] of terms) {
+        if (local ? translated.test(text) : english.test(text)) {
             features.set(`term ${english.source}`, 1);
         }
     }
@@ -588,19 +527,19 @@ function termPattern(term)
     return new RegExp(`(?<!\\p{L})${escaped}(?!\\p{L})`, /^\p{Lu}/u.test(term) ? "u" : "iu");
 }
 
-/** The text features of an Italian section's blocks, its italics read as the English names of the spells they name. */
-function italianTextFeatures(body, spellNames)
+/** The text features of a translated section's blocks, its italics read as the English names of the spells they name. */
+function localTextFeatures(body, spellNames)
 {
     const runs = body.flatMap((block) => (block.kind === "table" ? block.rows.flat().flat() : joinRuns(block.runs ?? [])));
     const text = runs.map((run) => run.text).join(" ");
-    const italics = runs.filter((run) => run.style === "*").flatMap((run) => run.text.split(/,|\s+[oe]\s+/)).map((name) => spellNames.get(name.trim().toLowerCase())).filter((name) => name !== undefined);
+    const italics = runs.filter((run) => run.style === "*").flatMap((run) => run.text.split(language.conjunctions)).map((name) => spellNames.get(name.trim().toLowerCase())).filter((name) => name !== undefined);
     const counts = {
         paragraphs: body.filter((block) => block.kind === "paragraph").length,
         captions: body.filter((block) => block.kind === "heading" && block.bold).length,
         items: body.filter((block) => block.kind === "item").length,
         rows: body.filter((block) => block.kind === "table").reduce((sum, table) => sum + table.rows.length, 0),
     };
-    return textFeatures(text, italics, counts, "it");
+    return textFeatures(text, italics, counts, true);
 }
 
 /** The text features of an English page's text. */
@@ -612,38 +551,33 @@ function englishTextFeatures(body, spellNames)
         paragraphs: lines.filter((line) => line.trim() !== "" && !/^(#|- |\||\d+\. |\*\*[^*]+\*\*$)/.test(line)).length,
         items: lines.filter((line) => line.startsWith("- ")).length,
         rows: lines.filter((line) => line.startsWith("|")).length - 2 * lines.filter((line) => /^\|(-+\|)+$/.test(line)).length,
-        // A caption in bold is a heading in the Italian PDF.
+        // A caption in bold is a heading in the translated PDF.
         captions: lines.filter((line) => /^\*\*[^*]+\*\*$/.test(line)).length,
     };
-    return textFeatures(body.replace(/[*#|]/g, " "), italics, counts, "en");
+    return textFeatures(body.replace(/[*#|]/g, " "), italics, counts, false);
 }
 
 /** A magic item's kind, rarity and attunement, from its italic line: "Anello, raro (richiede sintonia)". */
 function itemType(text)
 {
-    const match = /^(.+?), (.+?)(?: \((richiede sintonia[^)]*)\))?$/.exec(text.trim());
+    const { type, categories, rarities, varies } = language.magicItem;
+    const match = type.exec(text.trim());
 
     if (match === null) {
         return undefined;
     }
 
-    const categories = [["oggetto meraviglioso", "wondrous item"], ["anello", "ring"], ["bacchetta", "wand"], ["bastone", "staff"], ["pozione", "potion"], ["verga", "rod"], ["pergamena", "scroll"], ["armatura", "armor"], [
-        "arma",
-        "weapon",
-    ]];
-    const rarities = [["non comun", "uncommon"], ["comun", "common"], ["molto rar", "very rare"], ["rar", "rare"], ["leggendari", "legendary"], ["manufatto", "artifact"], ["variabile", "varies"]];
-    const category = categories.find(([italian]) => match[1].toLowerCase().startsWith(italian))?.[1];
+    const category = categories.find(([local]) => match[1].toLowerCase().startsWith(local))?.[1];
     // A rarity by its bonus or its kind, as "non comune (+1), raro (+2) o molto raro (+3)", varies.
-    const rarity = / o /.test(match[2]) ? "varies" : rarities.find(([italian]) => match[2].toLowerCase().startsWith(italian))?.[1];
+    const rarity = varies.test(match[2]) ? "varies" : rarities.find(([local]) => match[2].toLowerCase().startsWith(local))?.[1];
     return category === undefined ? undefined : { category, rarity: rarity ?? match[2], attunement: match[3] !== undefined };
 }
 
 /** A creature's size, from its italic line: "Aberrazione Grande, legale malvagio". */
 function creatureType(text)
 {
-    const sizes = [["minuscol", "Tiny"], ["piccol", "Small"], ["medi", "Medium"], ["grande", "Large"], ["enorme", "Huge"], ["mastodontic", "Gargantuan"]];
     const words = text.split(",")[0].toLowerCase().split(/[\s(]+/);
-    const size = words.map((word) => sizes.find(([italian]) => word.startsWith(italian))?.[1]).find((found) => found !== undefined);
+    const size = language.creature.size?.(text) ?? words.map((word) => language.creature.sizes.find(([local]) => word.startsWith(local))?.[1]).find((found) => found !== undefined);
     return size === undefined || !text.includes(",") ? undefined : { size };
 }
 
@@ -652,15 +586,16 @@ function statsOf(body)
 {
     const labelled = (label) => {
         const block = body.find((one) => one.kind === "paragraph" && plainText(one.runs).startsWith(label));
-        return block === undefined ? "" : plainText(block.runs).slice(label.length).trim();
+        return block === undefined ? "" : plainText(block.runs).slice(label.length).replace(/^\s*:/, "").trim();
     };
 
-    const end = body.findIndex((block) => block.kind === "paragraph" && /^(Tiri Salvezza|Abilità|Vulnerabilità|Resistenz|Immunità|Sensi)/.test(plainText(block.runs)));
+    const { creature } = language;
+    const end = body.findIndex((block) => block.kind === "paragraph" && creature.afterAbilities.test(plainText(block.runs)));
     const scores = body.slice(0, end).map((block) => (block.kind === "paragraph" ? plainText(block.runs) : "")).join(" ");
     return {
-        ac: /^\d+/.exec(labelled("Classe Armatura"))?.[0],
-        hp: labelled("Punti Ferita").replace(/\s+/g, ""),
-        cr: /^[\d/]+/.exec(labelled("Sfida"))?.[0],
+        ac: /^\d+/.exec(labelled(creature.armorClass))?.[0],
+        hp: labelled(creature.hitPoints).replace(/\s+/g, "").replace(language.dice, (_, count, faces) => `${count}d${faces}`),
+        cr: /^[\d/]+/.exec(labelled(creature.challenge))?.[0],
         abilities: [...scores.matchAll(/(\d+) \([+\-–−]\d+\)/g)].map((match) => match[1]),
     };
 }
@@ -672,7 +607,7 @@ function descriptionsOf(chapter)
     let paragraphs;
 
     for (const block of chapter) {
-        const title = block.kind === "paragraph" && block.runs[0]?.style === "***" ? block.runs[0].text.trim().replace(/\.$/, "") : undefined;
+        const title = block.kind === "paragraph" && block.runs[0]?.style === "***" ? block.runs[0].text.trim().replace(language.runInEnd, "") : undefined;
 
         if (title !== undefined) {
             paragraphs = [{ ...block, runs: trimmedRuns(block.runs.slice(1)) }];
@@ -692,7 +627,7 @@ function tableItems(table, chapter)
 {
     const columns = table.header.map((cell) => plainText(cell).toLowerCase());
     const caption = chapter[chapter.indexOf(table) - 1];
-    const categories = itemTables[caption?.kind === "heading" ? caption.text : ""];
+    const categories = language.gear.tables[caption?.kind === "heading" ? caption.text : ""];
 
     if (categories === undefined) {
         return [];
@@ -712,8 +647,10 @@ function tableItems(table, chapter)
             group = undefined;
         }
 
+        const names = language.gear.columns;
         const value = (name) => cells[columns.findIndex((column) => column.startsWith(name))] ?? "";
-        const cost = coins(value("costo")) ?? value("costo");
+        // A price without coins, as the French Barde's 4, is a multiple of another's: ×4.
+        const cost = coins(value(names.cost)) ?? value(names.cost).replace(/^[x×]?\s*(\d+)$/, "×$1");
 
         // A row without a price, as Veicoli (terrestri o acquatici), sends to another table; Bardatura costs ×4.
         if (typeof cost === "string" && !cost.startsWith("×")) {
@@ -722,20 +659,20 @@ function tableItems(table, chapter)
 
         const category = [categories[group] ?? categories[""]].flat();
         const bundle = /\((\d+)\)$/.exec(cells[0])?.[1];
-        const features = new Map([...(bundle === undefined ? [] : [[`bundle ${bundle}`, 2]]), [`cost ${cost}`, 3], [`weight ${kilograms(value("peso"))}`, 2], ...category.map((one) => [`category ${one}`, 2])]);
-        const damage = /^(\d+d\d+|\d+)/.exec(value("danni"))?.[1];
+        const features = new Map([...(bundle === undefined ? [] : [[`bundle ${bundle}`, 2]]), [`cost ${cost}`, 3], [`weight ${kilograms(value(names.weight))}`, 2], ...category.map((one) => [`category ${one}`, 2])]);
+        const damage = /^(\d+d\d+|\d+)/.exec(value(names.damage).replace(language.dice, (_, count, faces) => `${count}d${faces}`))?.[1];
 
         if (damage !== undefined) {
             features.set(`damage ${damage}`, 2);
         }
 
-        const armorClass = /^[+]?\d+/.exec(value("classe armatura"))?.[0];
+        const armorClass = /^[+]?\d+/.exec(value(names.armorClass))?.[0];
 
         if (armorClass !== undefined) {
             features.set(`ac ${armorClass}`, 2);
         }
 
-        return [{ name: composedGroups.includes(group) ? `${group} ${cells[0].toLowerCase()}` : cells[0], group, page: table.page, features }];
+        return [{ name: language.gear.composedGroups.includes(group) ? `${group} ${cells[0].toLowerCase()}` : cells[0], group, page: table.page, features }];
     });
 }
 
@@ -743,11 +680,13 @@ function tableItems(table, chapter)
 function namePrefixes(name)
 {
     const words = name.replace(/ \(.*\)$/, "").split(",")[0].split(" ");
-    return words.map((_, index) => words.slice(0, words.length - index).join(" "));
+    const prefixes = words.map((_, index) => words.slice(0, words.length - index).join(" "));
+    // Where the parentheses name a kind, as the German Laterne (abdeckbar), the whole name first.
+    return language.gear.kindsInParentheses ? [name, ...prefixes] : prefixes;
 }
 
 /**
- * An item's name as the Italian SRD's text writes it, from its table row: without what it measures in parentheses, its kind after the comma joined to it, and
+ * An item's name as the SRD's text writes it, from its table row: without what it measures in parentheses, its kind after the comma joined to it, and
  * in lower case but its first letter, as the tables capitalize their words: "Corda di Canapa (15 metri)" is Corda di canapa, "Abito, Comune" Abito comune.
  */
 function itemName(row)
@@ -756,18 +695,19 @@ function itemName(row)
     return `${name.charAt(0).toUpperCase()}${name.slice(1).toLowerCase()}`;
 }
 
-/** A price in copper pieces: "5 mo" is 500. */
-function coins(text)
+/** A price in copper pieces, in the SRD's coins or in English ones: "5 mo" is 500, as "5 gp". */
+function coins(text, local = true)
 {
-    const match = /^([\d.]+)\s*(mr|ma|me|mo|mp|cp|sp|ep|gp|pp)\b/.exec(text.trim().replace(/,(?=\d{3})/g, "."));
-    const values = { mr: 1, cp: 1, ma: 10, sp: 10, me: 50, ep: 50, mo: 100, gp: 100, mp: 1000, pp: 1000 };
+    const values = local ? language.gear.coins : { cp: 1, sp: 10, ep: 50, gp: 100, pp: 1000 };
+    // A thousand as 1,000, 1.000 or 1 000.
+    const match = new RegExp(`^([\\d.]+)\\s*(${Object.keys(values).join("|")})(?!\\p{L})`, "u").exec(text.trim().replace(/,(?=\d{3})/g, ".").replace(/(\d)[\s  ](?=\d{3}(?!\d))/gu, "$1."));
     return match === null ? undefined : Number(match[1].replaceAll(".", "")) * values[match[2]];
 }
 
-/** A weight in kilograms, as the Italian SRD gives half a kilogram a pound: "1,5 kg", or "3 lb" in English. */
+/** A weight in kilograms, as the translated SRDs give half a kilogram a pound: "1,5 kg", or "3 lb" in English. */
 function kilograms(text)
 {
-    const match = /^(?:(\d+) )?(\d+(?:[,.]\d+)?|\d+\/\d+)\s*(kg|lb)/.exec(text.trim());
+    const match = /^(?:(\d+) )?(\d+(?:[,.]\d+)?|\d+\/\d+)\s*(kg|lb|g)\b/.exec(text.trim());
 
     if (match === null) {
         return "none";
@@ -775,12 +715,12 @@ function kilograms(text)
 
     const [numerator, denominator] = match[2].replace(",", ".").split("/").map(Number);
     const value = Number(match[1] ?? 0) + (denominator === undefined ? numerator : numerator / denominator);
-    return `${match[3] === "lb" ? value / 2 : value}`;
+    return `${match[3] === "lb" ? value / 2 : match[3] === "g" ? value / 1000 : value}`;
 }
 
 function titleKey(title)
 {
-    return title.replace(/ \(.*\)$/, "").replaceAll("’", "'").toLowerCase().trim();
+    return (language.gear.kindsInParentheses ? title : title.replace(/ \(.*\)$/, "")).replaceAll("’", "'").toLowerCase().trim();
 }
 
 function trimmedRuns(runs)
@@ -799,25 +739,15 @@ function lineText(line)
     return line.spans.map((span) => span.text).join("").replace(/\s+/g, " ").trim();
 }
 
-/** The English page's fingerprint, as its Italian section's: the fields of its kind. */
+/** The English page's fingerprint, as its translated section's: the fields of its kind. */
 function englishFeatures(page)
 {
     const fields = page.fields;
 
     if (page.kind === "spell") {
-        const schools = {
-            abjuration: "abiurazione",
-            conjuration: "evocazione",
-            divination: "divinazione",
-            enchantment: "ammaliamento",
-            evocation: "invocazione",
-            illusion: "illusione",
-            necromancy: "necromanzia",
-            transmutation: "trasmutazione",
-        };
         return new Map([
             [`level ${fields["spell-level"] ?? 0}`, 3],
-            [`school ${schools[fields.school]}`, 3],
+            [`school ${language.spell.schools[fields.school]}`, 3],
             ...(fields.ritual === true ? [["ritual", 2]] : []),
             [`time ${englishTime(fields["casting-time"])}`, 2],
             [`range ${englishRange(fields.range)}`, 2],
@@ -848,7 +778,7 @@ function englishFeatures(page)
     }
 
     if (page.kind === "gear") {
-        const features = new Map([[`cost ${coins(String(fields.cost ?? "")) ?? fields.cost}`, 3], [`weight ${kilograms(String(fields.weight ?? "—"))}`, 2], [`category ${fields.category}`, 2]]);
+        const features = new Map([[`cost ${coins(String(fields.cost ?? ""), false) ?? fields.cost}`, 3], [`weight ${kilograms(String(fields.weight ?? "—"))}`, 2], [`category ${fields.category}`, 2]]);
         const damage = /^(\d+d\d+|\d+)/.exec(String(fields.damage ?? ""))?.[1];
 
         if (damage !== undefined) {
@@ -912,7 +842,7 @@ function englishDuration(text = "")
 }
 
 /**
- * Each English page matched to its Italian section: by hand, as the table kept it; by place, as races, classes and lists are found; else by fingerprint,
+ * Each English page matched to its translated section: by hand, as the table kept it; by place, as races, classes and lists are found; else by fingerprint,
  * the most alike first, each section to one page. A match is uncertain when another section is almost as alike.
  */
 function matched(pages, all, kept)
@@ -924,10 +854,10 @@ function matched(pages, all, kept)
         const hand = kept[page.path];
 
         if (hand?.by === "hand") {
-            const found = hand.none === undefined ? all.find((one) => one.kind === page.kind && one.page === hand.page && (one.name === hand.it || one.id === `${hand.it} (p. ${hand.page})`)) : undefined;
+            const found = hand.none === undefined ? all.find((one) => one.kind === page.kind && one.page === hand.page && (one.name === hand[code] || one.id === `${hand[code]} (p. ${hand.page})`)) : undefined;
 
             if (hand.none === undefined && found === undefined) {
-                throw new Error(`translations-it.json matches ${page.path} by hand to ${hand.it} on p. ${hand.page}, which is no ${page.kind} of the Italian SRD: fix the entry.`);
+                throw new Error(`translations-${code}.json matches ${page.path} by hand to ${hand[code]} on p. ${hand.page}, which is no ${page.kind} of the ${language.name} SRD: fix the entry.`);
             }
 
             result.set(page.path, { section: found, by: "hand", none: hand.none });
@@ -945,20 +875,20 @@ function matched(pages, all, kept)
 
     const lists = spellListMembers(all);
     const spellNames = new Map(pages.filter((page) => page.kind === "spell").map((page) => [page.name.toLowerCase(), page.name.toLowerCase()]));
-    const italianSpells = new Map();
+    const localSpells = new Map();
 
     for (const kind of ["spell", "magic item", "creature", "gear"]) {
         const open = pages.filter((page) => page.kind === kind && !result.has(page.path));
         const candidates = all.filter((one) => one.kind === kind && !taken.has(one));
         const withText = kind !== "creature";
         const english = (page) => (withText ? merged(englishFeatures(page), englishTextFeatures(page.body, spellNames)) : englishFeatures(page));
-        const italian = (one) => merged(one.features, withText ? italianTextFeatures(one.body, italianSpells) : new Map(), kind === "spell" ? lists.get(one.name.toLowerCase()) : new Map());
-        matchByFingerprint(open, candidates, result, english, italian);
+        const local = (one) => merged(one.features, withText ? localTextFeatures(one.body, localSpells) : new Map(), kind === "spell" ? lists.get(one.name.toLowerCase()) : new Map());
+        matchByFingerprint(open, candidates, result, english, local);
 
         if (kind === "spell") {
             for (const [path, match] of result) {
                 if (match.section?.kind === "spell") {
-                    italianSpells.set(match.section.name.toLowerCase(), path.slice("world/topics/".length, -3).toLowerCase());
+                    localSpells.set(match.section.name.toLowerCase(), path.slice("world/topics/".length, -3).toLowerCase());
                 }
             }
         }
@@ -967,7 +897,7 @@ function matched(pages, all, kept)
     return result;
 }
 
-/** Each spell's lists, by its Italian name, as the lists of the Italian SRD give them: "list Wizard". */
+/** Each spell's lists, by its translated name, as the lists of the SRD give them: "list Wizard". */
 function spellListMembers(all)
 {
     const members = new Map();
@@ -994,13 +924,13 @@ function merged(...maps)
  * Matches the open pages of a kind to its sections, the most alike pair first, each once; a name words/it.yaml gives counts as much as a whole fingerprint.
  * A match is uncertain when it is little alike, or when a page or a section still free is almost as alike to it.
  */
-function matchByFingerprint(open, candidates, result, englishOf, italianOf)
+function matchByFingerprint(open, candidates, result, englishOf, localOf)
 {
-    const names = new Map(open.map((page) => [page.path, italianWords[page.name]?.toLowerCase()]));
-    const italian = new Map(candidates.map((candidate) => [candidate, italianOf(candidate)]));
+    const names = new Map(open.map((page) => [page.path, (language.names[page.name] ?? localWords[page.name])?.toLowerCase()]));
+    const local = new Map(candidates.map((candidate) => [candidate, localOf(candidate)]));
     const scores = open.map((page) => {
         const features = englishOf(page);
-        return candidates.map((candidate) => ({ page, candidate, score: similarity(features, italian.get(candidate)) + (names.get(page.path) === candidate.name.toLowerCase() ? 1 : 0) }));
+        return candidates.map((candidate) => ({ page, candidate, score: similarity(features, local.get(candidate)) + (names.get(page.path) === candidate.name.toLowerCase() ? 1 : 0) }));
     });
     const pairs = scores.flat().sort((first, second) => second.score - first.score || ordered(first.page.path, second.page.path) || ordered(first.candidate.id, second.candidate.id));
     const usedPages = new Set();
@@ -1066,30 +996,44 @@ function writeTranslations(pages, matches)
         const body = corrected(page.path, text);
         const path = join(target, page.path);
         mkdirSync(join(path, ".."), { recursive: true });
-        writeFileSync(path, name === undefined ? `${body}\n` : pageText({ name }, body));
+        // A name the SRD gives two pages, as the German Anhänger der Gesundheit, is ours for one of them, as its text names it.
+        const renamed = language.renames?.[page.path]?.name ?? name;
+        writeFileSync(path, name === undefined ? `${body}\n` : pageText({ name: renamed }, body));
         written.push(page.path);
     }
 
     return written;
 }
 
-/** A file's text with the errata of the Italian SRD corrected; an erratum whose wrong text is not there throws, as the PDF or the build changed. */
+/** A file's text with the errata of the SRD corrected; an erratum whose wrong text is not there throws, as the PDF or the build changed. */
 function corrected(path, text)
 {
     let result = text;
 
     for (const erratum of errata.filter((one) => one.file === path)) {
         if (!result.includes(erratum.wrong)) {
-            throw new Error(`The erratum of ${path} finds no "${erratum.wrong}": fix it in the errata of translations.mjs.`);
+            throw new Error(`The erratum of ${path} finds no "${erratum.wrong}": fix it in the errata of languages/${code}.mjs.`);
         }
 
         result = result.replaceAll(erratum.wrong, erratum.right);
     }
 
+    // A part of a page the SRD lacks, in our words, after the part it follows in English: the German erinyes' longbow.
+    for (const feature of (language.ourFeatures ?? []).filter((one) => one.file === path)) {
+        const at = result.indexOf(`${feature.after}\n`);
+
+        if (at === -1) {
+            throw new Error(`The page ${path} has no "${feature.after}" for our part to follow: fix ourFeatures in languages/${code}.mjs.`);
+        }
+
+        const end = result.indexOf("\n\n#", at);
+        result = end === -1 ? `${result}\n\n${feature.text}` : `${result.slice(0, end)}\n\n${feature.text}${result.slice(end)}`;
+    }
+
     return result;
 }
 
-/** A page's Italian name and text, from its section. */
+/** A page's translated name and text, from its section. */
 function pageTranslation(page, section)
 {
     if (page.kind === "creature") {
@@ -1104,7 +1048,7 @@ function pageTranslation(page, section)
         return { name: section.name, body: spellListText(page, section) };
     }
 
-    // Only the text the English page has: an item of a table without one, as a weapon, has none in Italian either.
+    // Only the text the English page has: an item of a table without one, as a weapon, has none in translation either.
     if (page.body === "") {
         return { name: section.name, body: "" };
     }
@@ -1129,6 +1073,8 @@ function bodyText(body, englishBody)
 function quotedStatBlocks(body)
 {
     const result = [];
+    const names = language.creature.abilities.join("|");
+    const abilityLine = new RegExp(`^(${names})( (${names}))*$`);
     let quoting = false;
     let abilities;
 
@@ -1148,7 +1094,7 @@ function quotedStatBlocks(body)
 
         const text = block.kind === "heading" ? block.text : plainText(block.runs ?? []);
 
-        if (block.kind === "paragraph" && /^(FOR|DES|COS|INT|SAG|CAR)( (FOR|DES|COS|INT|SAG|CAR))*$/.test(text)) {
+        if (block.kind === "paragraph" && abilityLine.test(text)) {
             abilities ??= { kind: "table", quoted: true, header: [], rows: [[]], columns: [] };
 
             if (abilities.header.length === 0) {
@@ -1209,10 +1155,11 @@ function headingRank(heading)
 /** A creature's text: its description, then its traits, actions, reactions and legendary actions, each with a heading of its own, as the English page. */
 function creatureText(page, section)
 {
-    const sfida = section.body.findIndex((block) => block.kind === "paragraph" && plainText(block.runs).startsWith("Sfida"));
-    const after = captioned(section.body.slice(sfida + 1));
+    const { creature } = language;
+    const challenge = section.body.findIndex((block) => block.kind === "paragraph" && plainText(block.runs).startsWith(creature.challenge));
+    const after = captioned(section.body.slice(challenge + 1));
     const description = after.filter((block) => block.kind === "paragraph" && block.font === "Cambria");
-    const parts = [{ title: "Tratti", blocks: [] }];
+    const parts = [{ title: creature.traits, blocks: [] }];
 
     for (const block of after.filter((one) => !description.includes(one))) {
         if (block.kind === "heading" && block.bold && block.size === 11) {
@@ -1227,7 +1174,7 @@ function creatureText(page, section)
     for (const part of parts.filter((one) => one.blocks.length > 0)) {
         lines.push(`## ${part.title}`);
         // The options of the legendary actions are in bold, the features in bold italics: a breath's kinds, in bold, stay paragraphs of their action.
-        lines.push(...featureLines(part.blocks, ["Azioni leggendarie", "Tratti"].includes(part.title) ? ["***", "**"] : ["***"]));
+        lines.push(...featureLines(part.blocks, [creature.legendaryActions, creature.traits].includes(part.title) ? ["***", "**"] : ["***"]));
     }
 
     const variant = sections.find((one) => one.kind === "variant" && one.of === page.name);
@@ -1249,15 +1196,15 @@ function featureLines(body, styles = ["***"])
         const runs = joinRuns(block.runs ?? []);
         const first = runs[0];
         // A title in bold italics, with its full stop or without, as Nube fetida (1/giorno); one in bold only with it.
-        const runIn = block.kind === "paragraph" && styles.includes(first?.style) && (first.style === "***" || /\.\s*$/.test(first.text)) && runs.length > 1;
+        const runIn = block.kind === "paragraph" && styles.includes(first?.style) && (first.style === "***" || language.runInEnd.test(first.text.trim())) && runs.length > 1;
 
         if (runIn) {
-            const title = first.text.trim().replace(/\.$/, "").replace(/\s+/g, " ");
+            const title = first.text.trim().replace(language.runInEnd, "").replace(/\s+/g, " ");
             const text = runsText(trimmedRuns(runs.slice(1)));
             open = { heading: `### ${title}`, text: [text] };
             lines.push(open);
-        } else if (block.kind === "paragraph" && /^(Trucchetti|A volontà|\d+\/giorno|\d+° livello)/.test(plainText(block.runs))) {
-            (open?.text ?? lines).push(`- ${runsText(block.runs)}`);
+        } else if (block.kind === "paragraph" && language.creature.spellItems.test(plainText(block.runs))) {
+            (open?.text ?? lines).push(`- ${spellItem(runsText(block.runs))}`);
         } else if (open !== undefined) {
             open.text.push(blockText(block));
         } else {
@@ -1266,6 +1213,13 @@ function featureLines(body, styles = ["***"])
     }
 
     return lines.map((line) => (typeof line === "string" ? line : `${line.heading}\n${joinedText(line.text)}`));
+}
+
+/** A stat block's line of spells, each spell in italics of its own where the SRD sets two in one, as the German *Einflüsterung, Nebelschritt*. */
+function spellItem(text)
+{
+    const split = (match, inner) => inner.split(/,\s*/).filter((name) => name.trim() !== "").map((name) => `*${name.trim()}*`).join(", ");
+    return language.creature.splitItalics ? text.replace(/(?<!\\)\*([^*]+?)(?<!\\)\*/g, split) : text;
 }
 
 /** Paragraphs a blank line apart, list items one after the other. */
@@ -1277,21 +1231,21 @@ function joinedText(texts)
 /** A race's text: what it says before its traits, then each trait as a heading, as the English page. */
 function raceText(page, section)
 {
-    const body = captioned(section.body).filter((block) => !(block.kind === "heading" && /^Tratti /.test(block.text)));
+    const body = captioned(section.body).filter((block) => !(block.kind === "heading" && language.race.traits.test(block.text)));
     const first = body.findIndex((block) => block.kind === "paragraph" && block.runs[0]?.style === "***");
     const intro = body.slice(0, first);
     const traits = featureLines(body.slice(first)).map((line) => {
         const english = /\(([^)]+)\)$/.exec(page.body.split("\n").find((one) => one.startsWith("### ") && one.includes("(")) ?? "")?.[1];
-        return english === page.name && line.startsWith("### Incremento dei punteggi di caratteristica\n") ? line.replace("\n", ` (${section.name})\n`) : line;
+        return english === page.name && line.startsWith(`### ${language.race.abilityScoreIncrease}\n`) ? line.replace("\n", ` (${section.name})\n`) : line;
     });
-    return [...intro.map(blockText), "## Tratti", ...traits].join("\n\n");
+    return [...intro.map(blockText), `## ${language.race.traitsHeading}`, ...traits].join("\n\n");
 }
 
-/** A spell list: its levels, each spell linked to its page by its English name and shown by its Italian one. */
+/** A spell list: its levels, each spell linked to its page by its English name and shown by its translated one. */
 function spellListText(page, section)
 {
     const spells = new Map([...matches].filter(([, match]) => match.section?.kind === "spell").map(([path, match]) => [match.section.name.toLowerCase(), path.slice("world/topics/".length, -3)]));
-    const parts = [ourLines[page.body.split("\n")[0]] ?? `Gli incantesimi da ${italianWords[page.name.replace(/ Spells$/, "")].toLowerCase()}, per livello.`];
+    const parts = [ourLines[page.body.split("\n")[0]] ?? language.spellListLine(localName(page.name.replace(/ Spells$/, "")))];
 
     for (const level of section.levels) {
         parts.push(`## ${level.title}`);
@@ -1320,7 +1274,7 @@ function joinedNames(names, spells)
     return result;
 }
 
-/** A rules chapter's Italian text: its blocks from its first heading to the next chapter's, its headings at the English chapter's levels. */
+/** A rules chapter's translated text: its blocks from its first heading to the next chapter's, its headings at the English chapter's levels. */
 function chapterMatch(page)
 {
     const file = `${page.name}.md`;
@@ -1335,7 +1289,7 @@ function chapterMatch(page)
         const end = blocks.findIndex((block, index) => index > start && block.kind === "heading" && block.text === part.to[0] && block.page === part.to[1]);
 
         if (start === -1 || end === -1) {
-            throw new Error(`The chapter ${file} should run from "${part.from[0]}" (p. ${part.from[1]}) to "${part.to[0]}" (p. ${part.to[1]}) in the Italian SRD: fix its place.`);
+            throw new Error(`The chapter ${file} should run from "${part.from[0]}" (p. ${part.from[1]}) to "${part.to[0]}" (p. ${part.to[1]}) in the ${language.name} SRD: fix its place in languages/${code}.mjs.`);
         }
 
         return blocks.slice(start, end);
@@ -1402,14 +1356,14 @@ function moved(body, move)
     return [...rest.slice(0, before), ...part, ...rest.slice(before)];
 }
 
-/** The table of matches as translations-it.json keeps it, by English path: the Italian heading and its page, how it was matched, and why it is uncertain. */
+/** The table of matches as translations-<code>.json keeps it, by English path: the translated heading and its page, how it was matched, and why it is uncertain. */
 function tableOf(matches)
 {
     const entries = [...matches].sort(([first], [second]) => ordered(first, second)).map(([path, match]) => [
         path,
         match.none !== undefined
             ? { none: match.none, by: match.by }
-            : { it: match.section.name, page: match.section.page, by: match.by, ...(match.uncertain === undefined ? {} : { uncertain: match.uncertain }) },
+            : { [code]: match.section.name, page: match.section.page, by: match.by, ...(match.uncertain === undefined ? {} : { uncertain: match.uncertain }) },
     ]);
     const chapterEntries = english.filter((page) => page.kind === "chapter").map((page) => {
         const match = chapterMatch(page);
@@ -1418,11 +1372,11 @@ function tableOf(matches)
             match?.none !== undefined
                 ? { none: match.none, by: "place" }
                 : {
-                    it: match.section.name,
+                    [code]: match.section.name,
                     page: match.section.page,
                     by: "place",
                     ...(match.aligned ? {} : { uncertain: "its headings are not as many as the English chapter's" }),
-                    ...(match.ours === undefined ? {} : { title: "ours: the Italian SRD has no title for this chapter" }),
+                    ...(match.ours === undefined ? {} : { title: `ours: the ${language.name} SRD has no title for this chapter` }),
                 },
         ];
     });
@@ -1431,8 +1385,8 @@ function tableOf(matches)
 }
 
 /**
- * What a run wrote, the pages without an Italian text, and what it is not sure of: the matches and chapters translations-it.json marks, and the pages whose
- * English text has no Italian one.
+ * What a run wrote, the pages without a translated text, and what it is not sure of: the matches and chapters translations-<code>.json marks, and the pages
+ * whose English text has no translated one.
  */
 function report(pages, written)
 {
@@ -1440,7 +1394,7 @@ function report(pages, written)
     const table = JSON.parse(readFileSync(tablePath, "utf8"));
     const uncertain = Object.entries(table).filter(([, entry]) => entry.uncertain !== undefined || entry.title !== undefined).map((
         [path, entry],
-    ) => [path, { section: { id: `${entry.it} (p. ${entry.page})` }, uncertain: entry.uncertain ?? entry.title }]);
+    ) => [path, { section: { id: `${entry[code]} (p. ${entry.page})` }, uncertain: entry.uncertain ?? entry.title }]);
     const empty = written.filter((path) => path.startsWith("world/") && pages.find((page) => page.path === path).body !== "" && /^---\n[\s\S]*?\n---\n?\s*$/.test(readFileSync(join(target, path), "utf8")));
     const folders = ["world/creatures", "world/items", "world/topics", "rules"].map((folder) => `${folder} ${written.filter((path) => path.startsWith(`${folder}/`)).length}`);
     console.log(`${written.length} translations written: ${folders.join(", ")}.`);
@@ -1451,10 +1405,10 @@ function report(pages, written)
     }
 
     if (missing.length > 0) {
-        console.log(`${missing.length} pages without an Italian text: ${missing.map((page) => page.path).join(", ")}`);
+        console.log(`${missing.length} pages without a ${language.name} text: ${missing.map((page) => page.path).join(", ")}`);
     }
 
     if (empty.length > 0) {
-        console.log(`${empty.length} pages with an English text but no Italian one: ${empty.join(", ")}`);
+        console.log(`${empty.length} pages with an English text but no ${language.name} one: ${empty.join(", ")}`);
     }
 }

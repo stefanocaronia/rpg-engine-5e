@@ -1,0 +1,7 @@
+---
+name: Brasero para controlar elementales de fuego
+---
+
+Mientras arda un fuego en este brasero de latón, podrás utilizar una acción para pronunciar su palabra de activación e invocar un elemental de fuego, como si hubieras lanzado *conjurar elemental*. El brasero no puede volver a emplearse de esta manera hasta el siguiente amanecer.
+
+El brasero pesa 2,5 kg.

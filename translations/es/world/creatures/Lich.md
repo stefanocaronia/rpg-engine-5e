@@ -1,0 +1,49 @@
+---
+name: Liche
+---
+
+## Atributos
+
+### Lanzamiento de Conjuros
+El liche es un lanzador de conjuros de nivel 18. Su aptitud mágica es la Inteligencia (CD de salvación de conjuros 20, +12 a impactar con ataques de conjuro). Tiene los siguientes conjuros de mago preparados:
+
+- Trucos (a voluntad): *mano de mago*, *prestidigitación*, *rayo de escarcha*
+- Nivel 1 (4 espacios): *detectar magia*, *escudo*, *ola atronadora*, *proyectil mágico*
+- Nivel 2 (3 espacios): *detectar pensamientos*, *flecha ácida*, *imagen múltiple*, *invisibilidad*
+- Nivel 3 (3 espacios): *animar a los muertos*, *bola de fuego*, *contrahechizo*, *disipar magia*
+- Nivel 4 (3 espacios): *marchitar*, *puerta dimensional*
+- Nivel 5 (3 espacios): *escudriñar*, *nube aniquiladora*
+- Nivel 6 (1 espacio): *desintegrar*, *globo de invulnerabilidad*
+- Nivel 7 (1 espacio): *dedo de la muerte*, *desplazamiento entre planos*
+- Nivel 8 (1 espacio): *dominar monstruo*, *palabra de poder: aturdir*
+- Nivel 9 (1 espacio): *palabra de poder: matar*
+
+### Rejuvenecimiento
+Si posee una filacteria y es destruido, el liche obtendrá un cuerpo nuevo al cabo de 1d10 días, recuperará todos sus puntos de golpe y volverá a estar activo. El nuevo cuerpo aparecerá a 1,5 m o menos de la filacteria.
+
+### Resistencia a Expulsión
+El liche tiene ventaja en las tiradas de salvación contra cualquier efecto que expulse muertos vivientes.
+
+### Resistencia Legendaria (3/día)
+El liche puede elegir tener éxito en una tirada de salvación que haya fallado.
+
+## Acciones
+
+### Toque paralizante
+*Ataque de conjuro cuerpo a cuerpo:* +12 a impactar, alcance 1,5 m, una criatura. *Impacto:* 10 (3d6) de daño de frío. El objetivo deberá superar una tirada de salvación de Constitución con CD 18 o quedará paralizado durante 1 minuto. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos y, si tiene éxito, se librará del efecto.
+
+## Acciones legendarias
+
+El liche puede realizar 3 acciones legendarias de entre las opciones presentadas a continuación. Solo puede utilizar una acción legendaria cada vez y solo al final del turno de otra criatura. El liche recupera las acciones legendarias gastadas al principio de su turno.
+
+### Truco
+El liche lanza un truco.
+
+### Mirada aterradora (cuesta 2 acciones)
+El liche fija su mirada en una criatura que pueda ver a 3 m o menos de él. El objetivo deberá superar una tirada de salvación de Sabiduría con CD 18 contra este efecto mágico o quedará asustado durante 1 minuto. El objetivo asustado puede repetir la tirada de salvación al final de cada uno de sus turnos y, si tiene éxito, se librará del efecto. Si un objetivo tiene éxito en la tirada de salvación o el efecto termina para él, será inmune a la mirada del liche durante las siguientes 24 horas.
+
+### Toque paralizante (cuesta 2 acciones)
+El liche utiliza su toque paralizante.
+
+### Perturbar vida (cuesta 3 acciones)
+Todas las criaturas que no sean muertos vivientes que estén a 6 m o menos del liche deberán realizar una tirada de salvación de Constitución con CD 18 contra este efecto mágico; sufrirán 21 (6d6) de daño necrótico si la fallan o la mitad del daño si la superan.

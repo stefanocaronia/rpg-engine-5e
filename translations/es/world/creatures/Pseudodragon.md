@@ -1,0 +1,22 @@
+---
+name: Pseudodragón
+---
+
+## Atributos
+
+### Resistencia Mágica
+El pseudodragón tiene ventaja en las tiradas de salvación contra conjuros y otros efectos mágicos.
+
+### Sentidos Agudos
+El pseudodragón tiene ventaja en las pruebas de Sabiduría (Percepción) que dependan de la vista, el oído o el olfato.
+
+### Telepatía Limitada
+El pseudodragón puede comunicarse mediante ideas, emociones o imágenes simples, mágicamente y de forma telepática, con cualquier criatura que esté a 30 m o menos de él y pueda entender al menos un idioma.
+
+## Acciones
+
+### Aguijón
+*Ataque con arma cuerpo a cuerpo:* +4 a impactar, alcance 1,5 m, una criatura. *Impacto:* 4 (1d4 + 2) de daño perforante y el objetivo deberá superar una tirada de salvación de Constitución con CD 11 o quedará envenenado durante 1 hora. Si la falla por 5 o más, también quedará inconsciente durante ese periodo de tiempo, o hasta que sufra daño u otra criatura use una acción para despertarlo.
+
+### Mordisco
+*Ataque con arma cuerpo a cuerpo:* +4 a impactar, alcance 1,5 m, un objetivo. *Impacto:* 4 (1d4 + 2) de daño perforante.

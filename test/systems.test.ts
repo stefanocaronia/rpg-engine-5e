@@ -108,7 +108,9 @@ describe("SYS-2, SYS-3: the system's pages, found after the campaign's", () => {
         expect(wolf).toContain("### Morso\n*Attacco con arma da mischia:* +4 al tiro per colpire");
         expect(wolf).not.toContain("Melee Weapon Attack");
         expect(wolf).not.toContain("world/creatures/Wolf.md");
-        const wolves = "Wolf (creature, system 5e)\nDire Wolf (creature, system 5e)\nGiant Wolf Spider (creature, system 5e)\nWerewolf (creature, system 5e)\nWinter Wolf (creature, system 5e)";
+        // Each with its name in the campaign's language beside it (D-542).
+        const wolves =
+            "Wolf «Lupo» (creature, system 5e)\nDire Wolf «Lupo feroce» (creature, system 5e)\nGiant Wolf Spider «Ragno lupo gigante» (creature, system 5e)\nWerewolf «Lupo mannaro» (creature, system 5e)\nWinter Wolf «Lupo invernale» (creature, system 5e)";
         expect(await ok("find", "wolf")).toBe(wolves);
         await ok("write", "Lupo della valle", "--type", "creature", "--set", "creature=[[Wolf]]");
         expect(await ok("find", "wol")).toBe(`Lupo della valle (creature): creature: [[Wolf]]\n${wolves}`);
@@ -360,8 +362,8 @@ describe("after the round on the code: the system missing, and the remedies (SYS
 
     it("finds the system's pages by their fields too, with the field that matched", async () => {
         const found = await ok("find", "undead");
-        expect(found).toContain("Zombie (creature, system 5e): category: undead");
-        expect(found).toContain("Skeleton (creature, system 5e): category: undead");
+        expect(found).toContain("Ghoul «Ghoul» (creature, system 5e): category: undead");
+        expect(found).toContain("Mummy «Mummia» (creature, system 5e): category: undead");
     });
 
     it("says a new item may be a kind of one of the system only when it writes a field of the system, and never sends magic to item", async () => {

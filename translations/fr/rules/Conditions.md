@@ -1,0 +1,110 @@
+# Annexe MdJ-A : États
+
+Les états spéciaux (ou simplement « états ») influent sur les capacités d’une créature de diverses façons. Ils peuvent résulter d’un sort, d’une aptitude de classe, d’une attaque de monstre ou d’un autre effet. La plupart, comme l’état aveuglé, défavorisent le sujet, mais certains, comme l’état invisible, sont plutôt bénéfiques.
+
+Un état persiste jusqu’à ce qu’on y mette fin (comme en se relevant pour l’état à terre) ou jusqu’à ce qu’on arrive au terme de la durée indiquée par l’effet qui a imposé l’état.
+
+Si plusieurs effets imposent le même état à une créature donnée, chaque application de l’état a sa propre durée mais les effets de l’état n’empirent pas pour autant. L’état affecte la créature ou il ne l’affecte pas.
+
+Les définitions suivantes indiquent ce qu’il advient d’une créature soumise à un état donné.
+
+## À terre
+
+- Une créature à terre ne peut se déplacer qu’en rampant, sauf si elle se relève et met ainsi fin à l’état.
+- La créature est désavantagée aux jets d’attaque.
+- Un jet d’attaque contre la créature est avantagé si l’assaillant se trouve dans un rayon de 1,50 m d’elle. Sans cela, le jet d’attaque est désavantagé.
+
+## Agrippé
+
+- Une créature agrippée voit sa vitesse tomber à 0 et ne peut profiter d’aucun bonus en vitesse.
+- L’état prend fin si l’« agrippeur » est neutralisé (cf. état correspondant).
+- L’état prend également fin si un effet extrait la créature agrippée de la zone d’allonge de l’agrippeur ou de l’effet qui agrippe, par exemple lorsqu’une créature est repoussée par le sort *vague tonnante*.
+
+## Assourdi
+
+- Une créature assourdie n’entend rien et rate automatiquement tout test de caractéristique impliquant l’ouïe.
+
+## Aveuglé
+
+- Une créature aveuglée ne voit rien et rate automatiquement tout test de caractéristique demandant d’y voir.
+- Les jets d’attaque contre la créature sont avantagés, tandis que ceux de la créature sont désavantagés.
+
+## Charmé
+
+- Une créature charmée ne peut pas attaquer son « charmeur » ni le cibler avec des aptitudes ou effets magiques nuisibles.
+- Le charmeur est avantagé aux tests de caractéristique d’interaction sociale avec la créature.
+
+## Effrayé
+
+- Une créature effrayée est désavantagée aux tests de caractéristique et aux jets d’attaque tant que la source de sa peur est dans son champ de vision.
+- La créature ne peut pas se rapprocher volontairement de la source de sa peur.
+
+## Empoisonné
+
+- Une créature empoisonnée est désavantagée aux jets d’attaque et aux tests de caractéristique.
+
+## Entravé
+
+- Une créature entravée voit sa vitesse tomber à 0 et ne peut profiter d’aucun bonus en vitesse.
+- Les jets d’attaque contre la créature sont avantagés, tandis que ceux de la créature sont désavantagés.
+- La créature est désavantagée aux jets de sauvegarde de Dextérité.
+
+## Épuisement
+
+Certaines facultés et quelques dangers de l’environnement, comme la privation alimentaire ou l’exposition prolongée au froid ou la chaleur extrême, peuvent entraîner un état spécial appelé épuisement. L’épuisement est gradué selon six niveaux. Quand une créature subit de l’épuisement, elle en reçoit un ou plusieurs niveaux, comme indiqué dans la description de l’effet.
+
+| Niveau | Effet |
+|---|---|
+| 1 | Désavantage aux tests de caractéristique |
+| 2 | Vitesse réduite de moitié |
+| 3 | Désavantage aux jets d’attaque et aux jets de sauvegarde |
+| 4 | Maximum de points de vie réduit de moitié |
+| 5 | Vitesse réduite à 0 |
+| 6 | Mort |
+
+Quand une créature déjà épuisée subit un nouvel effet qui entraîne de l’épuisement, son niveau actuel d’épuisement augmente du montant spécifié dans la description de l’effet.
+
+La créature subit alors les effets de son niveau actuel d’épuisement, en plus de tous ceux des niveaux inférieurs. Ainsi une créature qui souffre d’un épuisement de niveau 2 voit-elle sa vitesse réduite de moitié en plus de subir le désavantage aux tests de caractéristique.
+
+Un effet qui élimine de l’épuisement en réduit le niveau comme indiqué dans sa description, tous les effets liés à l’épuisement disparaissant quand le niveau d’épuisement de la créature passe en dessous de 1.
+
+Une créature qui termine un repos long voit son niveau d’épuisement réduire de 1, à condition qu’elle se soit correctement alimentée et hydratée.
+
+## Étourdi
+
+- Une créature étourdie est neutralisée (cf. état correspondant), ne peut pas bouger et bredouille si elle tente de parler.
+- Elle rate automatiquement ses jets de sauvegarde de Dextérité et de Force.
+- Les jets d’attaque contre la créature sont avantagés.
+
+## Inconscient
+
+- Une créature inconsciente est neutralisée (cf. état correspondant), ne peut ni parler ni bouger et n’est pas consciente de son environnement.
+- La créature lâche tout ce qu’elle tient et tombe à terre.
+- Elle rate automatiquement ses jets de sauvegarde de Dextérité et de Force.
+- Les jets d’attaque contre la créature sont avantagés.
+- Toute attaque qui touche la créature est un coup critique si l’assaillant se trouve dans un rayon de 1,50 m d’elle.
+
+## Invisible
+
+- On ne peut pas voir une créature invisible, à moins de disposer d’une magie adaptée ou de sens spécifiques. Si elle tente de se cacher, la créature est considérée comme en zone de visibilité nulle. On peut détecter la position de la créature en fonction des bruits qu’elle produit ou des traces qu’elle laisse.
+- Les jets d’attaque contre la créature sont désavantagés, tandis que ceux de la créature sont avantagés.
+
+## Neutralisé
+
+- Une créature neutralisée ne peut pas entreprendre d’action ni jouer de réaction.
+
+## Paralysé
+
+- Une créature paralysée est neutralisée (cf. état correspondant) et ne peut ni parler ni bouger.
+- Elle rate automatiquement ses jets de sauvegarde de Dextérité et de Force.
+- Les jets d’attaque contre la créature sont avantagés.
+- Toute attaque qui touche la créature est un coup critique si l’assaillant se trouve dans un rayon de 1,50 m d’elle.
+
+## Pétrifié
+
+- Une créature pétrifiée est transformée en matière solide et inerte (généralement de la pierre), ainsi que tout l’équipement non magique qu’elle porte. Son poids est décuplé et la créature n’est plus soumise au vieillissement.
+- La créature est neutralisée (cf. état correspondant), ne peut ni parler ni bouger, et n’est pas consciente de son environnement.
+- Les jets d’attaque contre la créature sont avantagés.
+- Elle rate automatiquement ses jets de sauvegarde de Dextérité et de Force.
+- La créature est dotée de la résistance à tous les dégâts.
+- Elle est immunisée contre le poison et les maladies, mais un poison ou une maladie affectant déjà son organisme n’est qu’interrompu, et non définitivement jugulé.

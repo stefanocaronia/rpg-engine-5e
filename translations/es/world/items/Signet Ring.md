@@ -1,0 +1,3 @@
+---
+name: Anillo de sellar
+---

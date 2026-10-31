@@ -1,0 +1,3 @@
+---
+name: Bâton de combat
+---

@@ -1,0 +1,9 @@
+---
+name: Flûte des égouts
+---
+
+Vous devez avoir la maîtrise des instruments à vent pour pouvoir utiliser cette flûte. Tant que vous êtes harmonisé avec la flûte, les rats ordinaires et les rats géants sont indifférents envers vous et ne vous attaquent que si vous les menacez ou les blessez.
+
+La flûte dispose de 3 charges. Si vous jouez de la flûte au prix d’une action, vous pouvez dépenser 1 à 3 charges par une action bonus, appelant à vous une nuée de rats pour chaque charge dépensée, à condition qu’il y ait suffisamment de rats dans un rayon de 750 m susceptibles de répondre à cet appel (cette décision appartient au MJ). S’il n’y a pas assez de rats dans les environs pour former une nuée, la charge est perdue. Les nuées appelées se déplacent vers l’origine de la mélodie par le chemin le plus sûr, mais elles ne sont pas sous votre contrôle. La flûte récupère quotidiennement 1d3 charges dépensées à l’aube.
+
+Chaque fois qu’une nuée de rats qui n’est pas sous le contrôle d’une autre créature arrive dans un rayon de 9 m de vous alors que vous jouez de la flûte, vous pouvez effectuer un test de Charisme opposé à un test de Sagesse de la nuée. Si vous perdez cette opposition, la nuée se comporte normalement et ne peut plus être influencée par la musique de la flûte pendant 24 heures. Si vous remportez l’opposition, la nuée, envoûtée par cette mélodie, devient amicale envers vous et vos compagnons tant que vous consacrez votre action du round à jouer de la flûte. Une nuée amicale obéit à vos ordres. En l’absence d’instructions précises, une nuée amicale se défend au besoin, mais n’entreprend pas d’autre action. Si une nuée amicale commence son tour sans entendre la musique de la flûte, votre contrôle sur elle prend fin et la nuée se comporte normalement. Elle ne peut plus être influencée par la musique de la flûte pendant 24 heures.

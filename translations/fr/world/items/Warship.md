@@ -1,0 +1,3 @@
+---
+name: Navire de guerre
+---

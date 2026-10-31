@@ -1,0 +1,3 @@
+---
+name: Armbrust (leicht)
+---

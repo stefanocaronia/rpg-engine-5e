@@ -1,0 +1,3 @@
+---
+name: Spiegel (Stahl)
+---

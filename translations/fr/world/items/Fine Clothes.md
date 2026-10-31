@@ -1,0 +1,3 @@
+---
+name: Vêtements de qualité
+---

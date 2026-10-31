@@ -1,0 +1,3 @@
+---
+name: Pico de minero
+---

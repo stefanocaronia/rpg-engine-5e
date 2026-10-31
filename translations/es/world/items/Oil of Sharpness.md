@@ -1,0 +1,5 @@
+---
+name: Aceite de afilado
+---
+
+Este aceite transparente y gelatinoso brilla debido a las minúsculas esquirlas de plata que contiene. Puede impregnar un arma cortante o perforante o hasta 5 unidades de munición cortante o perforante. Aplicar el aceite lleva 1 minuto. Durante 1 hora, el objeto impregnado es mágico y tiene un bonificador de +3 a las tiradas de ataque y de daño.
