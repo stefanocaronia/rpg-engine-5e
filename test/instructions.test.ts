@@ -92,7 +92,7 @@ describe("the 5e's instructions", () => {
             const ended = await campaign.ok("write", "Il guado", "--set", "status=done");
             const core = ended.indexOf("An adventure is a quest with its secrets and events");
             expect(core).toBeGreaterThan(-1);
-            expect(ended.indexOf("In the fifth edition:\n\n- A full rest is a long rest: at difficulty normal, two to four fights between two long rests.")).toBeGreaterThan(core);
+            expect(ended.indexOf("In the fifth edition:\n\n- A full rest is a long rest.")).toBeGreaterThan(core);
             expect(ended).toContain("count the party a level higher: a rule of this table, not of the SRD, said as ours if the player asks.");
         } finally {
             await campaign.close();
