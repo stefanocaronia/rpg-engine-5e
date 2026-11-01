@@ -1,4 +1,4 @@
-// The text of the SRD 5.1 as markdown, from the lines of its PDF that lines.py writes: headings by their size, paragraphs by their indent, run-in titles in
+// The text of the SRD 5.1 as markdown, from the lines of its PDF that pdf.py writes: headings by their size, paragraphs by their indent, run-in titles in
 // bold italics, italics and bold, lists, tables by the columns of their header, the sidebars, and the stat blocks set inside a text.
 import { readFileSync } from "node:fs";
 
@@ -17,11 +17,11 @@ const listGap = 13.5;
 // A line of text runs to about 225 pt: one that ends before this is the last of its block, as the last item of a list at the foot of a column.
 const shortLine = 150;
 
-/** The lines of the SRD's pages from first to last, as lines.py writes them, without the footer of each page; positions are from the column's left edge. */
+/** The lines of the SRD's pages from first to last, as pdf.py writes them, without the footer of each page; positions are from the column's left edge. */
 export function readLines(path, first, last)
 {
     return readFileSync(path, "utf8").split("\n").filter((text) => text !== "").map((text) => JSON.parse(text))
-        .filter((line) => line.page >= first && line.page <= last)
+        .filter((line) => line.words !== undefined && line.page >= first && line.page <= last)
         .map((line) => ({ ...line, words: line.words.map(([text, x0, x1, font, size]) => ({ text: clean(text), x0: x0 - margins[line.column], x1: x1 - margins[line.column], font, size })) }))
         .filter((line) => !/^System Reference Document 5\.1 \d+$/.test(line.words.map((word) => word.text).join(" ")));
 }

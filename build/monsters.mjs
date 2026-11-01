@@ -1,10 +1,11 @@
 // Writes the creatures of the SRD 5.1 as pages in world/creatures, from the stat blocks of its Monsters chapter (pp. 261–357) and of its appendices MM-A,
-// Miscellaneous Creatures (pp. 366–394), and MM-B, Nonplayer Characters (pp. 395–403): node build/monsters.mjs <srd51-layout.tsv>
-// Its input comes from the SRD's PDF with pdfplumber: layout.py writes each line of its text with its place, size and font, and the style of each
-// character, which keeps the SRD's italics.
+// Miscellaneous Creatures (pp. 366–394), and MM-B, Nonplayer Characters (pp. 395–403): node build/monsters.mjs <srd51.jsonl>
+// Its input comes from the SRD's PDF with pdfplumber: pdf.py writes each row of its text with its place, size and font, and the style of each character,
+// which keeps the SRD's italics.
 import { readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse, stringify } from "yaml";
+import { readRows } from "./srd-rows.mjs";
 
 const world = join(import.meta.dirname, "..", "world");
 const creatures = join(world, "creatures");
@@ -40,14 +41,14 @@ const abilities = ["str", "dex", "con", "int", "wis", "cha"];
 const spellListLine = /^(At will|\d+\/day(?: each)?|Cantrips \(at will\)|\d+(?:st|nd|rd|th) level \(\d+ slots?\)):/;
 const slotsLine = /^(\d)(?:st|nd|rd|th) level \((\d+) slots?\):/;
 
-const [layoutPath] = process.argv.slice(2);
+const [pdfPath] = process.argv.slice(2);
 
-if (layoutPath === undefined) {
-    console.error("Usage: node build/monsters.mjs <srd51-layout.tsv>");
+if (pdfPath === undefined) {
+    console.error("Usage: node build/monsters.mjs <srd51.jsonl>, from python -I build/pdf.py <SRD_CC_v5.1.pdf> <srd51.jsonl>");
     process.exit(1);
 }
 
-const { blocks, texts } = readSource(readLines(readFileSync(layoutPath, "utf8")));
+const { blocks, texts } = readSource(readLines(readRows(pdfPath)));
 const pages = blocks.map((block) => readCreature(block, texts));
 const taken = otherPageNames();
 const written = new Set();
@@ -74,17 +75,10 @@ for (const page of pages) {
 report(pages, taken);
 
 /** The lines of the stat blocks' pages, a column after the other, without the pages' footers; each indented or not from the margin of its column. */
-function readLines(layout)
+function readLines(rows)
 {
-    const lines = [];
-
-    for (const row of layout.replaceAll("\r\n", "\n").split("\n")) {
-        const [page, column, x, size, font, text, styles] = row.split("\t");
-
-        if (row !== "" && chapters.some((range) => Number(page) >= range.first && Number(page) <= range.last) && !/^System Reference Document 5\.1 \d+$/.test(text)) {
-            lines.push({ page: Number(page), column: Number(column), x: Number(x), size: Number(size), font, ...cleaned(text, styles) });
-        }
-    }
+    const lines = rows.filter((row) => chapters.some((range) => row.page >= range.first && row.page <= range.last))
+        .map(({ page, column, x, size, font, text, styles }) => ({ page, column, x, size, font, ...cleaned(text, styles) }));
 
     const margins = new Map();
 

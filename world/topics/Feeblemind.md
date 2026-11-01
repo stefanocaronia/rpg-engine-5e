@@ -15,4 +15,4 @@ On a failed save, the creature’s Intelligence and Charisma scores become 1. Th
 
 At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends.
 
-The spell can also be ended by greater restoration, heal, or wish.
+The spell can also be ended by *greater restoration*, *heal*, or *wish*.

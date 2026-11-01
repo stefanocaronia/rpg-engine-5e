@@ -1,9 +1,9 @@
-// Writes the spells of the SRD 5.1 as pages in world/topics, from the text and the outline of its PDF: node build/spells.mjs <srd51-norm.txt> <srd51-outline.tsv>
-// Its inputs come from the SRD's PDF with pdfplumber: outline.py writes the headings (srd51-outline.tsv), extract.py the text by columns, which
-// normalize.mjs cleans into srd51-norm.txt.
+// Writes the spells of the SRD 5.1 as pages in world/topics, from the rows of its PDF: node build/spells.mjs <srd51.jsonl>
+// Its input comes from the SRD's PDF with pdfplumber: pdf.py writes each row of its text with its size and font, which give the spells' headings.
 import { readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse, stringify } from "yaml";
+import { readRows } from "./srd-rows.mjs";
 
 const world = join(import.meta.dirname, "..", "world");
 const listPages = { first: 105, last: 113 };
@@ -99,15 +99,16 @@ const tables = {
     ],
 };
 
-const [textPath, outlinePath] = process.argv.slice(2);
+const [pdfPath] = process.argv.slice(2);
 
-if (textPath === undefined || outlinePath === undefined) {
-    console.error("Usage: node build/spells.mjs <srd51-norm.txt> <srd51-outline.tsv>");
+if (pdfPath === undefined) {
+    console.error("Usage: node build/spells.mjs <srd51.jsonl>, from python -I build/pdf.py <SRD_CC_v5.1.pdf> <srd51.jsonl>");
     process.exit(1);
 }
 
-const pages = readPages(readFileSync(textPath, "utf8"));
-const headings = readHeadings(readFileSync(outlinePath, "utf8"));
+const rows = readRows(pdfPath);
+const pages = readPages(rows);
+const headings = readHeadings(rows);
 const spells = readSpells(linesOf(pages, descriptionPages), headings);
 const lists = readSpellLists(linesOf(pages, listPages), new Set(spells.map((spell) => spell.name)));
 const taken = otherPageNames();
@@ -127,37 +128,39 @@ for (const [owner, levels] of readClassLists(linesOf(pages, listPages))) {
 
 report(spells, lists, taken);
 
-/** The text of the PDF by page number, without the footer of each page. */
-function readPages(text)
+/** The rows of the PDF by page number, each with the style of each character. */
+function readPages(rows)
 {
     const result = new Map();
-    let page = 0;
 
-    for (const line of text.replaceAll("\r\n", "\n").split("\n")) {
-        const marker = /^=== page (\d+)$/.exec(line);
-
-        if (marker !== null) {
-            page = Number(marker[1]);
-            result.set(page, []);
-        } else if (page > 0 && !/^System Reference Document 5\.1 \d+$/.test(line)) {
-            result.get(page).push(line);
-        }
+    for (const row of rows) {
+        result.set(row.page, [...(result.get(row.page) ?? []), oneHyphen(row)]);
     }
 
     return result;
 }
 
-/** The spell headings of the descriptions, by page: in the outline, the 12 pt GillSans titles. */
-function readHeadings(outline)
+/** A row with the SRD's hyphen, a hyphen-minus followed by up to three others, as one, and the style of each character beside it. */
+function oneHyphen({ text, styles })
+{
+    let result = { text: "", styles: "" };
+
+    for (let index = 0; index < text.length; index++) {
+        result = { text: result.text + text[index], styles: result.styles + styles[index] };
+        index += (/^-[­‐‑]+/.exec(text.slice(index))?.[0].length ?? 1) - 1;
+    }
+
+    return result;
+}
+
+/** The spell headings of the descriptions, by page: the rows in 12 pt Gill Sans. */
+function readHeadings(rows)
 {
     const result = new Map();
 
-    for (const row of outline.replaceAll("\r\n", "\n").split("\n")) {
-        const [page, size, font, title] = row.split("\t");
-        const number = Number(page);
-
-        if (number >= descriptionPages.first && number <= descriptionPages.last && size === "12.0" && font === "GillSans-SemiBold") {
-            result.set(number, [...(result.get(number) ?? []), clean(title)]);
+    for (const { page, size, font, text } of rows) {
+        if (page >= descriptionPages.first && page <= descriptionPages.last && size === 12 && font === "GillSans-SemiBold") {
+            result.set(page, [...(result.get(page) ?? []), clean(text)]);
         }
     }
 
@@ -169,7 +172,7 @@ function linesOf(pages, range)
     const lines = [];
 
     for (let page = range.first; page <= range.last; page++) {
-        lines.push(...pages.get(page).map((text) => ({ page, text: clean(text) })));
+        lines.push(...pages.get(page).map((row) => ({ page, text: clean(row.text), italics: italicRuns(row) })));
     }
 
     return lines;
@@ -184,10 +187,11 @@ function readSpells(lines, headings)
         const { page, text } = lines[index];
 
         if ((headings.get(page) ?? []).includes(text) && levelLine.test(lines[index + 1]?.text ?? "")) {
-            spells.push({ name: pageName(text), heading: text, level: lines[index + 1].text, lines: [] });
+            spells.push({ name: pageName(text), heading: text, level: lines[index + 1].text, lines: [], italics: [] });
             index++;
         } else if (spells.length > 0) {
             spells.at(-1).lines.push(text);
+            spells.at(-1).italics.push(lines[index].italics);
         }
     }
 
@@ -224,7 +228,8 @@ function readSpell(spell)
         fields.concentration = true;
     }
 
-    return { name: spell.name, heading: spell.heading, fields, body: bodyText(spell.name, lines) };
+    const phrases = italicPhrases(spell.italics.slice(spell.lines.length - lines.length));
+    return { name: spell.name, heading: spell.heading, fields, body: italicized(bodyText(spell.name, lines), phrases) };
 }
 
 /** The classes whose list names each spell (pp. 105–113), by spell name; a name the lists give that is no spell is reported. */
@@ -401,6 +406,63 @@ function tableText(spec, lines)
 function joinLines(text, line)
 {
     return /[-—]$/.test(text) ? `${text}${line}` : `${text} ${line}`;
+}
+
+/** The runs of a row in italics, such as the name of another spell, each saying whether it opens or closes its line, where a run may go on to the next. */
+function italicRuns({ text, styles })
+{
+    return [...styles.matchAll(/i+(?: i+)*/g)].map((match) => ({
+        text: clean(text.slice(match.index, match.index + match[0].length)),
+        opens: text.slice(0, match.index).trim() === "",
+        closes: text.slice(match.index + match[0].length).trim() === "",
+    }));
+}
+
+/** The phrases in italics of a description, in order: a run that closes its line and one that opens the next are one phrase, without their punctuation. */
+function italicPhrases(lines)
+{
+    const phrases = [];
+    let open = false;
+
+    for (const runs of lines) {
+        runs.forEach((run, index) => {
+            if (open && index === 0 && run.opens) {
+                phrases.push(joinLines(phrases.pop(), run.text));
+            } else {
+                phrases.push(run.text);
+            }
+        });
+        open = runs.at(-1)?.closes ?? false;
+    }
+
+    return phrases.map((phrase) => phrase.replace(/^[(“]+|[.,;:)”]+$/g, "")).filter((phrase) => phrase !== "");
+}
+
+/** A description with its phrases in italics, each at its first place after the one before that is a whole phrase, outside another style. */
+function italicized(body, phrases)
+{
+    let result = body;
+    let from = 0;
+
+    for (const phrase of phrases) {
+        let index = result.indexOf(phrase, from);
+
+        while (index !== -1 && !standsAlone(result, index, phrase.length)) {
+            index = result.indexOf(phrase, index + 1);
+        }
+
+        if (index !== -1) {
+            result = `${result.slice(0, index)}*${phrase}*${result.slice(index + phrase.length)}`;
+            from = index + phrase.length + 2;
+        }
+    }
+
+    return result;
+}
+
+function standsAlone(text, index, length)
+{
+    return !/[w*’'-]/.test(text[index - 1] ?? "") && !/[w*’'-]/.test(text[index + length] ?? "");
 }
 
 /** The page: its fields in the order of the header, the lists that name it, and its description. */

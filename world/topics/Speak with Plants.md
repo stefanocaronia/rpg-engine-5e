@@ -17,4 +17,4 @@ Plants might be able to perform other tasks on your behalf, at the GM’s discre
 
 If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it.
 
-This spell can cause the plants created by the entangle spell to release a restrained creature.
+This spell can cause the plants created by the *entangle* spell to release a restrained creature.

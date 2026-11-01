@@ -1,5 +1,5 @@
 // Writes the rest of the SRD 5.1's Equipment chapter, after the weapons (pp. 66–74), from the lines of its PDF: its text into rules/Equipment.md, and its
-// gear, equipment packs, tools, tack and vehicles as pages in world/items. node build/gear.mjs <srd51-lines.jsonl>, from lines.py.
+// gear, equipment packs, tools, tack and vehicles as pages in world/items. node build/gear.mjs <srd51.jsonl>, from pdf.py.
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { pageName, writePages } from "./pages.mjs";
@@ -32,7 +32,7 @@ const smallWords = new Set(["a", "an", "and", "in", "of", "or", "the", "to"]);
 const [linesPath] = process.argv.slice(2);
 
 if (linesPath === undefined) {
-    console.error("Usage: node build/gear.mjs <srd51-lines.jsonl>");
+    console.error("Usage: node build/gear.mjs <srd51.jsonl>, from python -I build/pdf.py <SRD_CC_v5.1.pdf> <srd51.jsonl>");
     process.exit(1);
 }
 
