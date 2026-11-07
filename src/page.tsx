@@ -2,7 +2,7 @@
 // save (D-460, D-461), the portrait greyed in a ring that beats between the successes and the failures, the one button, the outcome once the dice land; the
 // inside of the card of the hit dice of a rest (D-492), who rests and the points the dice give, a row for each die with its button, the dice rolled. Drawn
 // with the dashboard's kit and tokens; its own layout and motion in its style sheet (page-style.ts).
-import type { JSX } from "preact";
+import type { CSSProperties } from "preact";
 import { useEffect, useRef, useState } from "preact/hooks";
 import { type BodyProps, Dice, type FigureProps, Icon, type PageModule, Portrait, statusIcons } from "rpg-engine/page";
 import { pageStyle } from "./page-style.ts";
@@ -236,8 +236,8 @@ function HitDiceBody({ rest, buttons, sent, answer, words, field, number, reduce
                                 aria-valuenow={gives.value}
                                 aria-valuetext={words("{value} of {max}", { value: gives.value, max: gives.max })}
                             >
-                                <span class="fill spend-now" style={{ "--fill": String(share(gives.value, gives.max)) } as JSX.CSSProperties} />
-                                {gives.from > 0 && <span class="fill spend-before" style={{ "--fill": String(share(gives.from, gives.max)) } as JSX.CSSProperties} />}
+                                <span class="fill spend-now" style={{ "--fill": String(share(gives.value, gives.max)) } as CSSProperties} />
+                                {gives.from > 0 && <span class="fill spend-before" style={{ "--fill": String(share(gives.from, gives.max)) } as CSSProperties} />}
                             </span>
                         )}
                     </div>
