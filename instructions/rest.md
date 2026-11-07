@@ -1,1 +1,1 @@
-A long rest is each one's: six hours of sleep and at most two of light activity, as a watch: whoever keeps a longer watch gains no long rest.
+A long rest is each one's: six hours of sleep and at most two of light activity, as a watch: whoever keeps a longer watch gains no long rest. What comes back at dawn, such as the charges of a wand, comes back when the night's advance passes dawn: roll it then, with change.
