@@ -52,7 +52,7 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^22.20.4",
     "@typescript-eslint/parser": "^8.72.1",
-    "dprint": "^0.58.0",
+    "dprint": "^0.64.3",
     "eslint": "^10.14.0",
     "fast-check": "^4.10.2",
     "preact": "^11.2.0",
