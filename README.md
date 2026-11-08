@@ -18,7 +18,7 @@ The rules of the SRD 5.1 are the version `srd-5.1`, and for now the only one. Ea
 
 ## Develop and test
 
-You need Node 22.4 or later, and the engine for its test kit, `rpg-engine/testing`:
+You need Node 24 or later, and the engine for its test kit, `rpg-engine/testing`:
 
 ```sh
 npm install
