@@ -556,7 +556,7 @@ fields:
   flaw: text
   # The sheet as choices (pp. 12, 15, 77–78): the hit points the dice gave without Constitution, and what the character is proficient in, by the SRD's names.
   hp-base: number
-  # Hit points at every level from a race or a class, such as a hill dwarf's Dwarven Toughness (p. 4) or Draconic Resilience (p. 45).
+  # Hit points at every level from a race or a class, such as a hill dwarf's Dwarven Toughness (p. 4).
   hp-per-level: bonus
   save-proficiencies: list
   # What a race or a class gives beside the numbers (pp. 3–7): advantages on saving throws, as the race says them, and the proficiencies it grants.
