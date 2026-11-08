@@ -66,7 +66,7 @@ describe("SYS-1: the campaign's system is one of those installed", () => {
         const result = await rpg("init", other, "--system", "Quinta edizione");
         expect(result.output).toMatch(listing('"Quinta edizione" is not an installed system. ', " Give one of them, such as system 5e. Nothing changed."));
         expect(existsSync(join(other, "campaign.yaml"))).toBe(false);
-        expect((await rpg("init", other, "--system", "5E")).output).toContain(
+        expect((await rpg("init", other, "--system", "5E", "--master")).output).toContain(
             "Still to agree with the player: language (a code, such as it), mentor (ask how well the player knows the game: never played, tutorial; a little, hints; well, off), premise (",
         );
         expect(readFileSync(join(other, "campaign.yaml"), "utf8")).toContain("system: 5e");

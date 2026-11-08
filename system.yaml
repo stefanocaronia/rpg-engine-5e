@@ -217,7 +217,7 @@ progression:
   # A subclass adds to prepared the spells it lists by its class's level, always prepared and not counted: a domain's or an oath's (pp. 16, 32; PRO-7).
   parts: {list: subclasses, field: class, lists: [prepared]}
   # The experience points each level needs (p. 56, D-205, PRO-6): the line says how many the next one needs, and status when one is due.
-  experience: {field: xp, table: xp-by-level, rules: Beyond 1st Level}
+  experience: {field: xp, table: xp-by-level, rules: Character Advancement}
 # The fields whose value on the page of each item of a list is a formula worked out on the character, once for each item (PRO-5, D-227): a class's save DC,
 # attack and prepared spells, since each spell uses its class's ability (p. 58).
 item-formulas:

@@ -89,7 +89,7 @@ describe("the experience points (PRO-6, D-205, D-234)", () => {
         expect(await ok("status")).toContain("PC: Ennio: level 1 · xp 0 (300 to level 2) · hp 12/12");
         expect(await ok("show", "Ennio")).toContain("classes Fighter 1 · level 1 · xp 0 (300 to level 2)");
         const due = "Ennio has the xp for level 2: level up with the player, out of the story, now or at the next rest as they prefer; they choose what the new level asks: "
-            + 'read rules "Beyond 1st Level".';
+            + 'read rules "Character Advancement".';
         expect(await ok("change", "Ennio", "xp", "--by", "200", "--why", "i lupi")).not.toContain("has the xp");
         const reached = await ok("change", "Ennio", "xp", "--by", "150", "--why", "la missione");
         // When the points reach it, the system's note on what a level gives comes with it: where the hit points go.
@@ -104,12 +104,12 @@ describe("the experience points (PRO-6, D-205, D-234)", () => {
         expect(await ok("status")).not.toContain("has the xp");
     });
 
-    it("leave a companion's choices to the master, say the highest level they reach, and nothing at the last level of the table", async () => {
+    it("leave a companion's choices to the master, one level at a time up to the highest they reach, and nothing at the last level of the table", async () => {
         await character("Lena", "companion", "classes=[[Wizard]] 1", "xp=2800");
         expect(await ok("show", "Lena")).toContain("xp 2800 (level 4 due)");
         expect(await ok("status")).toContain(
-            "Lena has the xp for level 4: level up the companion: what the new level asks is yours to choose, as the story has shaped the companion, or the player's if they made it: "
-                + 'read rules "Beyond 1st Level".',
+            "Lena has the xp for level 2, then up to level 4, one level at a time: level up the companion: what the new level asks is yours to choose, as the story has shaped the companion, or the player's if they made it: "
+                + 'read rules "Character Advancement".',
         );
         await ok("write", "Lena", "--set", "classes=[[Wizard]] 20");
         await ok("change", "Lena", "xp", "--to", "355000");
