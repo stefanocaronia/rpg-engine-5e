@@ -256,10 +256,10 @@ describe("SYS-8: the fields the system declares", () => {
         expect(await ok("status")).toContain("copies: Wolf 1: hp 11/11");
         expect(await refused("change", "Wolf 1", "cr", "--by=-1")).toBe('cr is text in the system 5e, never counted: write it instead, such as write "Wolf 1", set cr=<value>. Nothing changed.');
         expect(await refused("change", "Ennio", "str", "--by=1")).toBe(
-            'str is a number in the system 5e, never counted: for a while, such as a spell, effect, action add, page "Ennio", set str=17; for good, write "Ennio", set str=17. Nothing changed.',
+            'str is a number in the system 5e, never counted: for a while, effect, action add, page "Ennio", set str=17; for good, write "Ennio", set str=17. Nothing changed.',
         );
         expect(await refused("change", "Ennio", "dex", "--to", "14")).toBe(
-            'dex is a number in the system 5e, never counted: for a while, such as a spell, effect, action add, page "Ennio", set dex=14; for good, write "Ennio", set dex=14. Nothing changed.',
+            'dex is a number in the system 5e, never counted: for a while, effect, action add, page "Ennio", set dex=14; for good, write "Ennio", set dex=14. Nothing changed.',
         );
         expect(await refused("change", "Spada di Ennio", "cost", "--spend", "1 gp")).toBe(
             'cost is text in the system 5e, never counted: write it instead, such as write "Spada di Ennio", set cost=<value>. Nothing changed.',
@@ -321,7 +321,7 @@ describe("after the round on the code: the system missing, and the remedies (SYS
         await ok("scene", "open", "--title", "Bosco", "--type", "combat", "--creatures", "Wolf");
         expect(await refused("change", "Wolf 1", "mana", "--by=-1")).toContain("If you meant a counter of the system 5e, give its name, such as hp; only one it lacks is added, with write, such as set mana=");
         expect(await refused("change", "Ennio", "str", "--by=1")).toBe(
-            'str is a number in the system 5e, never counted: for a while, such as a spell, effect, action add, page "Ennio", set str=<value>; for good, write "Ennio", set str=<value>. Nothing changed.',
+            'str is a number in the system 5e, never counted: for a while, effect, action add, page "Ennio", set str=<value>; for good, write "Ennio", set str=<value>. Nothing changed.',
         );
     });
 
