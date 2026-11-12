@@ -175,11 +175,11 @@ describe("SYS-6: the system's pages are read-only, and in no place", () => {
     it("refuses to write one, with a page of the campaign that derives from it instead, and the fields given", async () => {
         expect(await refused("write", "Wolf", "--set", "hp=15/15")).toBe(
             'Wolf is a creature of the system 5e: read-only. For a kind of your own, create a creature that derives from it, under a name in the campaign\'s language: write "<name>", type creature, '
-                + "set creature=[[Wolf]], hp=15/15; for one in particular, a character with creature=[[Wolf]]. Nothing changed.",
+                + 'set creature=[[Wolf]], hp=15/15; for one in particular, a character with creature=[[Wolf]]. To change Wolf itself for the whole campaign, write it with layer: write "Wolf", layer, set hp=15/15. Nothing changed.',
         );
         expect(await refused("write", "Longsword", "--set", "cost=10 gp")).toBe(
             'Longsword is an item of the system 5e: read-only. For one that someone has, create an item that derives from it, under a name in the campaign\'s language: write "<name>", type item, '
-                + "set item=[[Longsword]], cost=10 gp, then move it to them. Nothing changed.",
+                + 'set item=[[Longsword]], cost=10 gp, then move it to them. To change Longsword itself for the whole campaign, write it with layer: write "Longsword", layer, set cost=10 gp. Nothing changed.',
         );
     });
 

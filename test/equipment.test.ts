@@ -233,9 +233,10 @@ describe("the unarmed strike and the Martial Arts die (D-235)", () => {
         const reason = "Unarmed Strike is an item of the system 5e that it puts in the equipped of every character with a sheet, worked out on each from their own fields: "
             + "read-only, and never equipped, carried or derived from by hand, which would count it twice.";
         const already = `${reason} Nothing changed.`;
+        const layered = `${reason} To change Unarmed Strike itself for the whole campaign, write it with layer: write "Unarmed Strike", layer, set bonus=1. Nothing changed.`;
         expect(await refused("write", "Gara", "--add", "equipped=[[Unarmed Strike]]")).toBe(already);
-        expect(await refused("write", "Unarmed Strike", "--set", "bonus=1")).toBe(already);
-        expect(await refused("write", "Unarmed Strike", "--type", "item", "--set", "bonus=1")).toBe(already);
+        expect(await refused("write", "Unarmed Strike", "--set", "bonus=1")).toBe(layered);
+        expect(await refused("write", "Unarmed Strike", "--type", "item", "--set", "bonus=1")).toBe(layered);
         expect(await refused("effect", "add", "Unarmed Strike", "Furia", "--set", "bonus=1")).toBe(already);
         expect(await refused("move", "Unarmed Strike", "--to", "Gara")).toBe(`${reason} Nothing moved.`);
         expect(await refused("write", "Gara", "--add", "inventory=[[Unarmed Strike]]")).toBe(already);
