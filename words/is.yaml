@@ -549,6 +549,222 @@ words:
   "Prepare": "Undirbúðu"
   "Prepare {item}": "Undirbúðu {item}"
   "I prepare {item}.": "Ég undirbý {item}."
+  Rage: Ofsi
+  Unarmored Defense: Vörn án brynju
+  Reckless Attack: Ófyrirleitin árás
+  Danger Sense: Hættuskyn
+  Primal Path: Frumstæður vegur
+  Ability Score Improvement: Hækkun hæfileikagilda
+  Extra Attack: Aukaárás
+  Fast Movement: Hröð hreyfing
+  Feral Instinct: Villieðli
+  Brutal Critical: Grimmt rothögg
+  Brutal Critical (1 die): Grimmt rothögg (1 teningur)
+  Relentless Rage: Linnulaus ofsi
+  Brutal Critical (2 dice): Grimmt rothögg (2 teningar)
+  Persistent Rage: Þrálátur ofsi
+  Brutal Critical (3 dice): Grimmt rothögg (3 teningar)
+  Indomitable Might: Óbugandi máttur
+  Primal Champion: Frumstæður kappi
+  Spellcasting: Galdraiðkun
+  Bardic Inspiration: Innblástur skálds
+  Bardic Inspiration (d6): Innblástur skálds (d6)
+  Jack of All Trades: Allra handa maður
+  Song of Rest: Söngur hvíldar
+  Song of Rest (d6): Söngur hvíldar (d6)
+  Bard College: Skóli skálda
+  Expertise: Sérfræðiþekking
+  Bardic Inspiration (d8): Innblástur skálds (d8)
+  Font of Inspiration: Lind innblásturs
+  Countercharm: Gagnheillun
+  Song of Rest (d8): Söngur hvíldar (d8)
+  Song of Rest (d10): Söngur hvíldar (d10)
+  Magical Secrets: Galdraleyndarmál
+  Bardic Inspiration (d12): Innblástur skálds (d12)
+  Song of Rest (d12): Söngur hvíldar (d12)
+  Superior Inspiration: Æðri innblástur
+  Improved Critical: Bætt rothögg
+  Remarkable Athlete: Einstakur íþróttamaður
+  Additional Fighting Style: Aukabardagastíll
+  Superior Critical: Æðra rothögg
+  Survivor: Eftirlifandi
+  Bonus Cantrip: Aukasmágaldur
+  Natural Recovery: Náttúrubati
+  Circle Spells: Galdrar hringsins
+  Land's Stride: Skref landsins
+  Nature's Ward: Vörn náttúrunnar
+  Nature's Sanctuary: Griðastaður náttúrunnar
+  Divine Domain: Guðlegt svið
+  Channel Divinity: Beina guðmætti
+  Channel Divinity (1/rest): Beina guðmætti (1/hvíld)
+  Destroy Undead: Eyða ódauðum
+  Destroy Undead (CR 1/2): Eyða ódauðum (áskorun 1/2)
+  Channel Divinity (2/rest): Beina guðmætti (2/hvíld)
+  Destroy Undead (CR 1): Eyða ódauðum (áskorun 1)
+  Divine Intervention: Guðleg íhlutun
+  Destroy Undead (CR 2): Eyða ódauðum (áskorun 2)
+  Destroy Undead (CR 3): Eyða ódauðum (áskorun 3)
+  Destroy Undead (CR 4): Eyða ódauðum (áskorun 4)
+  Channel Divinity (3/rest): Beina guðmætti (3/hvíld)
+  Bonus Proficiencies: Aukaleikni
+  Cutting Words: Bitur orð
+  Additional Magical Secrets: Fleiri galdraleyndarmál
+  Peerless Skill: Óviðjafnanleg færni
+  Dragon Ancestor: Drekaforfaðir
+  Draconic Resilience: Drekaseigla
+  Elemental Affinity: Skyldleiki við frumöflin
+  Dragon Wings: Drekavængir
+  Draconic Presence: Drekanálægð
+  Wild Shape: Villiform
+  Druid Circle: Drúðahringur
+  Timeless Body: Tímalaus líkami
+  Beast Spells: Dýragaldrar
+  Archdruid: Erkidrúði
+  Fighting Style: Bardagastíll
+  Second Wind: Annar vindur
+  Action Surge: Aðgerðarbylgja
+  Action Surge (one use): Aðgerðarbylgja (ein notkun)
+  Martial Archetype: Hernaðarfyrirmynd
+  Indomitable: Óbugandi
+  Indomitable (one use): Óbugandi (ein notkun)
+  Extra Attack (2): Aukaárás (2)
+  Indomitable (two uses): Óbugandi (tvær notkanir)
+  Action Surge (two uses): Aðgerðarbylgja (tvær notkanir)
+  Indomitable (three uses): Óbugandi (þrjár notkanir)
+  Extra Attack (3): Aukaárás (3)
+  Hunter's Prey: Bráð veiðimannsins
+  Defensive Tactics: Varnarbrögð
+  Multiattack: Fjölárás
+  Superior Hunter's Defense: Æðri vörn veiðimannsins
+  Bonus Proficiency: Aukaleikni
+  Disciple of Life: Lærisveinn lífsins
+  "Channel Divinity: Preserve Life": "Beina guðmætti: Varðveita líf"
+  Blessed Healer: Blessaður læknir
+  Divine Strike: Guðlegt högg
+  Supreme Healing: Æðsta lækning
+  Martial Arts: Bardagalistir
+  Ki: Ki
+  Unarmored Movement: Hreyfing án brynju
+  Monastic Tradition: Klausturhefð
+  Deflect Missiles: Bægja frá skeytum
+  Slow Fall: Hægt fall
+  Stunning Strike: Rotandi högg
+  Ki-Empowered Strikes: Ki-efld högg
+  Evasion: Undanbrögð
+  Stillness of Mind: Hugarró
+  Purity of Body: Hreinleiki líkamans
+  Tongue of the Sun and Moon: Tunga sólar og tungls
+  Diamond Soul: Demantssál
+  Empty Body: Tómur líkami
+  Perfect Self: Fullkomið sjálf
+  Tenets of Devotion: Kenningar helgunar
+  Oath Spells: Eiðagaldrar
+  Aura of Devotion: Ára helgunar
+  Purity of Spirit: Hreinleiki andans
+  Holy Nimbus: Heilagur ljómi
+  Divine Sense: Guðskynjun
+  Lay on Hands: Handayfirlagning
+  Divine Smite: Guðleg refsing
+  Divine Health: Guðleg heilsa
+  Sacred Oath: Heilagur eiður
+  Aura of Protection: Ára verndar
+  Aura of Courage: Ára hugrekkis
+  Improved Divine Smite: Bætt guðleg refsing
+  Cleansing Touch: Hreinsandi snerting
+  Frenzy: Æði
+  Mindless Rage: Óðs manns ofsi
+  Intimidating Presence: Ógnandi nærvera
+  Retaliation: Hefnd
+  Favored Enemy: Útvalinn óvinur
+  Natural Explorer: Náttúrulegur landkönnuður
+  Ranger Archetype: Fyrirmynd skógarvarðar
+  Primeval Awareness: Frumvitund
+  Hide in Plain Sight: Fela sig í augsýn
+  Vanish: Hverfa
+  Feral Senses: Villiskynfæri
+  Foe Slayer: Óvinabani
+  Sneak Attack: Launárás
+  Cunning Action: Slægðaraðgerð
+  Roguish Archetype: Fyrirmynd skúrks
+  Uncanny Dodge: Undraverð undanskot
+  Reliable Talent: Áreiðanleg hæfileikagáfa
+  Blindsense: Blindskyn
+  Slippery Mind: Hál hugsun
+  Elusive: Torfangaður
+  Stroke of Luck: Lukkuhögg
+  Evocation Savant: Fræðimaður bráðagaldra
+  Sculpt Spells: Móta galdra
+  Potent Cantrip: Öflugur smágaldur
+  Empowered Evocation: Efldir bráðagaldrar
+  Overchannel: Ofbeining
+  Sorcerous Origin: Galdrauppruni
+  Font of Magic: Lind galdra
+  Metamagic: Metagaldur
+  Sorcerous Restoration: Galdraendurheimt
+  Expanded Spell List: Víkkaður galdralisti
+  Dark One's Blessing: Blessun myrkrahöfðingjans
+  Dark One's Own Luck: Lukka myrkrahöfðingjans
+  Fiendish Resilience: Djöfulleg seigla
+  Hurl Through Hell: Slöngva gegnum helvíti
+  Fast Hands: Fljótar hendur
+  Second-Story Work: Vinna á annarri hæð
+  Supreme Sneak: Æðsta læðupokaleikni
+  Use Magic Device: Nota galdragripi
+  Thief's Reflexes: Viðbrögð þjófsins
+  Otherworldly Patron: Verndari handan heima
+  Pact Magic: Sáttmálagaldur
+  Eldritch Invocations: Dulrænar særingar
+  Pact Boon: Sáttmálagjöf
+  Mystic Arcanum: Dulargaldur
+  Mystic Arcanum (6th level): Dulargaldur (6. stig)
+  Mystic Arcanum (7th level): Dulargaldur (7. stig)
+  Mystic Arcanum (8th level): Dulargaldur (8. stig)
+  Mystic Arcanum (9th level): Dulargaldur (9. stig)
+  Eldritch Master: Meistari hins dulræna
+  Open Hand Technique: Tækni opinnar handar
+  Wholeness of Body: Heilleiki líkamans
+  Tranquility: Friðsæld
+  Quivering Palm: Titrandi lófi
+  Arcane Recovery: Galdrabati
+  Arcane Tradition: Galdrahefð
+  Spell Mastery: Galdrameistaratök
+  Signature Spells: Sérgaldrar
+  Bardic Inspiration (d10): Innblástur skálds (d10)
+  alchemist's supplies: efni gullgerðarmanns
+  brewer's supplies: efni bruggara
+  calligrapher's supplies: efni skrautritara
+  carpenter's tools: verkfæri smiðs
+  cartographer's tools: verkfæri kortagerðarmanns
+  cobbler's tools: verkfæri skósmiðs
+  cook's utensils: áhöld kokks
+  glassblower's tools: verkfæri glerblásara
+  jeweler's tools: verkfæri gullsmiðs
+  leatherworker's tools: verkfæri sútara
+  mason's tools: verkfæri steinsmiðs
+  painter's supplies: efni málara
+  potter's tools: verkfæri leirkerasmiðs
+  smith's tools: verkfæri járnsmiðs
+  weaver's tools: verkfæri vefara
+  woodcarver's tools: verkfæri tréskera
+  disguise kit: dulargervasett
+  forgery kit: falsarasett
+  dice set: teningasett
+  playing card set: spilastokkur
+  bagpipes: sekkjapípur
+  drum: tromma
+  dulcimer: hamarsílófónn
+  flute: flauta
+  lute: lúta
+  lyre: lýra
+  horn: horn
+  pan flute: panflauta
+  shawm: skalmei
+  viol: víóla
+  navigator's tools: verkfæri siglingafræðings
+  poisoner's kit: eitrarasett
+  vehicles: farartæki
+  vehicles (land): farartæki (land)
+  vehicles (water): farartæki (vatn)
 names:
   str: Styrkur
   str-mod: Styrkur

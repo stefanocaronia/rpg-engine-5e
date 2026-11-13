@@ -549,6 +549,222 @@ words:
   "Prepare": "Valmistele"
   "Prepare {item}": "Valmistele: {item}"
   "I prepare {item}.": "Valmistelen: {item}."
+  Rage: Raivo
+  Unarmored Defense: Panssaroimaton puolustus
+  Reckless Attack: Holtiton hyökkäys
+  Danger Sense: Vaaran aistiminen
+  Primal Path: Alkuvoiman polku
+  Ability Score Improvement: Ominaisuuksien parannus
+  Extra Attack: Lisähyökkäys
+  Fast Movement: Nopea liike
+  Feral Instinct: Villi vaisto
+  Brutal Critical: Raaka kriittinen osuma
+  Brutal Critical (1 die): Raaka kriittinen osuma (1 noppa)
+  Relentless Rage: Väsymätön raivo
+  Brutal Critical (2 dice): Raaka kriittinen osuma (2 noppaa)
+  Persistent Rage: Sitkeä raivo
+  Brutal Critical (3 dice): Raaka kriittinen osuma (3 noppaa)
+  Indomitable Might: Lannistumaton voima
+  Primal Champion: Alkuvoiman mestari
+  Spellcasting: Loitsiminen
+  Bardic Inspiration: Bardin inspiraatio
+  Bardic Inspiration (d6): Bardin inspiraatio (d6)
+  Jack of All Trades: Yleismies
+  Song of Rest: Levon laulu
+  Song of Rest (d6): Levon laulu (d6)
+  Bard College: Bardin kollegio
+  Expertise: Asiantuntemus
+  Bardic Inspiration (d8): Bardin inspiraatio (d8)
+  Font of Inspiration: Inspiraation lähde
+  Countercharm: Vastaviehätys
+  Song of Rest (d8): Levon laulu (d8)
+  Song of Rest (d10): Levon laulu (d10)
+  Magical Secrets: Maagiset salaisuudet
+  Bardic Inspiration (d12): Bardin inspiraatio (d12)
+  Song of Rest (d12): Levon laulu (d12)
+  Superior Inspiration: Ylivertainen inspiraatio
+  Improved Critical: Parannettu kriittinen osuma
+  Remarkable Athlete: Merkittävä urheilija
+  Additional Fighting Style: Lisätaistelutyyli
+  Superior Critical: Ylivertainen kriittinen osuma
+  Survivor: Selviytyjä
+  Bonus Cantrip: Bonustaikatemppu
+  Natural Recovery: Luonnollinen palautuminen
+  Circle Spells: Kehän loitsut
+  Land's Stride: Maan askel
+  Nature's Ward: Luonnon suoja
+  Nature's Sanctuary: Luonnon pyhäkkö
+  Divine Domain: Jumalallinen domeeni
+  Channel Divinity: Jumalallisen voiman kanavointi
+  Channel Divinity (1/rest): Jumalallisen voiman kanavointi (1/lepo)
+  Destroy Undead: Tuhoa epäkuolleet
+  Destroy Undead (CR 1/2): Tuhoa epäkuolleet (HT 1/2)
+  Channel Divinity (2/rest): Jumalallisen voiman kanavointi (2/lepo)
+  Destroy Undead (CR 1): Tuhoa epäkuolleet (HT 1)
+  Divine Intervention: Jumalallinen väliintulo
+  Destroy Undead (CR 2): Tuhoa epäkuolleet (HT 2)
+  Destroy Undead (CR 3): Tuhoa epäkuolleet (HT 3)
+  Destroy Undead (CR 4): Tuhoa epäkuolleet (HT 4)
+  Channel Divinity (3/rest): Jumalallisen voiman kanavointi (3/lepo)
+  Bonus Proficiencies: Bonustaitavuudet
+  Cutting Words: Viiltävät sanat
+  Additional Magical Secrets: Lisää maagisia salaisuuksia
+  Peerless Skill: Vertaansa vailla oleva taito
+  Dragon Ancestor: Lohikäärmeen esi-isä
+  Draconic Resilience: Lohikäärmeen sitkeys
+  Elemental Affinity: Elementtiaffiniteetti
+  Dragon Wings: Lohikäärmeen siivet
+  Draconic Presence: Lohikäärmeen läsnäolo
+  Wild Shape: Villi muoto
+  Druid Circle: Druidin kehä
+  Timeless Body: Ajaton keho
+  Beast Spells: Petoloitsut
+  Archdruid: Arkkidruidi
+  Fighting Style: Taistelutyyli
+  Second Wind: Toinen tuulahdus
+  Action Surge: Toimintapuuska
+  Action Surge (one use): Toimintapuuska (yksi käyttökerta)
+  Martial Archetype: Sotilaallinen arkkityyppi
+  Indomitable: Lannistumaton
+  Indomitable (one use): Lannistumaton (yksi käyttökerta)
+  Extra Attack (2): Lisähyökkäys (2)
+  Indomitable (two uses): Lannistumaton (kaksi käyttökertaa)
+  Action Surge (two uses): Toimintapuuska (kaksi käyttökertaa)
+  Indomitable (three uses): Lannistumaton (kolme käyttökertaa)
+  Extra Attack (3): Lisähyökkäys (3)
+  Hunter's Prey: Metsästäjän saalis
+  Defensive Tactics: Puolustustaktiikat
+  Multiattack: Monihyökkäys
+  Superior Hunter's Defense: Metsästäjän ylivertainen puolustus
+  Bonus Proficiency: Bonustaitavuus
+  Disciple of Life: Elämän opetuslapsi
+  "Channel Divinity: Preserve Life": "Jumalallisen voiman kanavointi: elämän säilyttäminen"
+  Blessed Healer: Siunattu parantaja
+  Divine Strike: Jumalallinen isku
+  Supreme Healing: Ylin parannus
+  Martial Arts: Kamppailulajit
+  Ki: Ki
+  Unarmored Movement: Panssaroimaton liike
+  Monastic Tradition: Luostariperinne
+  Deflect Missiles: Ammusten torjunta
+  Slow Fall: Hidas putoaminen
+  Stunning Strike: Tyrmistyttävä isku
+  Ki-Empowered Strikes: Ki-vahvistetut iskut
+  Evasion: Väistö
+  Stillness of Mind: Mielen tyyneys
+  Purity of Body: Ruumiin puhtaus
+  Tongue of the Sun and Moon: Auringon ja kuun kieli
+  Diamond Soul: Timanttisielu
+  Empty Body: Tyhjä ruumis
+  Perfect Self: Täydellinen minä
+  Tenets of Devotion: Omistautumisen periaatteet
+  Oath Spells: Valan loitsut
+  Aura of Devotion: Omistautumisen aura
+  Purity of Spirit: Hengen puhtaus
+  Holy Nimbus: Pyhä sädekehä
+  Divine Sense: Jumalallinen aisti
+  Lay on Hands: Käsien päällepanu
+  Divine Smite: Jumalallinen kuritus
+  Divine Health: Jumalallinen terveys
+  Sacred Oath: Pyhä vala
+  Aura of Protection: Suojelun aura
+  Aura of Courage: Rohkeuden aura
+  Improved Divine Smite: Parannettu jumalallinen kuritus
+  Cleansing Touch: Puhdistava kosketus
+  Frenzy: Hurmos
+  Mindless Rage: Mieletön raivo
+  Intimidating Presence: Pelottava läsnäolo
+  Retaliation: Kosto
+  Favored Enemy: Suosikkivihollinen
+  Natural Explorer: Luonnonkulkija
+  Ranger Archetype: Rangerin arkkityyppi
+  Primeval Awareness: Muinainen tietoisuus
+  Hide in Plain Sight: Piiloutuminen näkyville
+  Vanish: Katoaminen
+  Feral Senses: Villit aistit
+  Foe Slayer: Vihollisten surmaaja
+  Sneak Attack: Salahyökkäys
+  Cunning Action: Ovela toiminto
+  Roguish Archetype: Veijarin arkkityyppi
+  Uncanny Dodge: Käsittämätön väistö
+  Reliable Talent: Luotettava lahjakkuus
+  Blindsense: Sokea aisti
+  Slippery Mind: Liukas mieli
+  Elusive: Vaikeasti tavoitettava
+  Stroke of Luck: Onnenkantamoinen
+  Evocation Savant: Evokaation oppinut
+  Sculpt Spells: Loitsujen muovaus
+  Potent Cantrip: Voimakas taikatemppu
+  Empowered Evocation: Vahvistettu evokaatio
+  Overchannel: Ylikanavointi
+  Sorcerous Origin: Sorcererin alkuperä
+  Font of Magic: Magian lähde
+  Metamagic: Metamagia
+  Sorcerous Restoration: Sorcererin palautuminen
+  Expanded Spell List: Laajennettu loitsulista
+  Dark One's Blessing: Pimeän siunaus
+  Dark One's Own Luck: Pimeän oma onni
+  Fiendish Resilience: Paholaismainen sitkeys
+  Hurl Through Hell: Syöksy helvetin läpi
+  Fast Hands: Nopeat kädet
+  Second-Story Work: Ylikerrosten työ
+  Supreme Sneak: Ylin hiiviskely
+  Use Magic Device: Taikaesineen käyttö
+  Thief's Reflexes: Varkaan refleksit
+  Otherworldly Patron: Toisen maailman suojelija
+  Pact Magic: Sopimusmagia
+  Eldritch Invocations: Yliluonnolliset invokaatiot
+  Pact Boon: Sopimuksen lahja
+  Mystic Arcanum: Mystinen arkanum
+  Mystic Arcanum (6th level): Mystinen arkanum (6. taso)
+  Mystic Arcanum (7th level): Mystinen arkanum (7. taso)
+  Mystic Arcanum (8th level): Mystinen arkanum (8. taso)
+  Mystic Arcanum (9th level): Mystinen arkanum (9. taso)
+  Eldritch Master: Yliluonnollinen mestari
+  Open Hand Technique: Avoimen käden tekniikka
+  Wholeness of Body: Ruumiin eheys
+  Tranquility: Tyyneys
+  Quivering Palm: Värisevä kämmen
+  Arcane Recovery: Arkaaninen palautuminen
+  Arcane Tradition: Arkaaninen perinne
+  Spell Mastery: Loitsujen mestaruus
+  Signature Spells: Tunnusloitsut
+  Bardic Inspiration (d10): Bardin inspiraatio (d10)
+  alchemist's supplies: alkemistin tarvikkeet
+  brewer's supplies: panimomestarin tarvikkeet
+  calligrapher's supplies: kalligrafin tarvikkeet
+  carpenter's tools: puusepän työkalut
+  cartographer's tools: kartanpiirtäjän työkalut
+  cobbler's tools: suutarin työkalut
+  cook's utensils: kokin välineet
+  glassblower's tools: lasinpuhaltajan työkalut
+  jeweler's tools: jalokivisepän työkalut
+  leatherworker's tools: nahkurin työkalut
+  mason's tools: kivenhakkaajan työkalut
+  painter's supplies: maalarin tarvikkeet
+  potter's tools: savenvalajan työkalut
+  smith's tools: sepän työkalut
+  weaver's tools: kutojan työkalut
+  woodcarver's tools: puunveistäjän työkalut
+  disguise kit: valepukutarvikkeet
+  forgery kit: väärennystarvikkeet
+  dice set: noppasetti
+  playing card set: korttipakka
+  bagpipes: säkkipilli
+  drum: rumpu
+  dulcimer: dulcimer
+  flute: huilu
+  lute: luuttu
+  lyre: lyyra
+  horn: torvi
+  pan flute: panhuilu
+  shawm: shawm
+  viol: viola
+  navigator's tools: navigoijan työkalut
+  poisoner's kit: myrkyttäjän tarvikkeet
+  vehicles: ajoneuvot
+  vehicles (land): ajoneuvot (maa)
+  vehicles (water): ajoneuvot (vesi)
 names:
   str: Voima
   str-mod: Voima

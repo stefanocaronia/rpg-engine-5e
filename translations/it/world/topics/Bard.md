@@ -48,7 +48,7 @@ Inizia con l'equipaggiamento seguente, in aggiunta all'equipaggiamento conferito
 | 7° | +3 | — | 3 | 10 | 4 | 3 | 3 | 1 | — | — | — | — | — |
 | 8° | +3 | Aumento dei Punteggi di Caratteristica | 3 | 11 | 4 | 3 | 3 | 2 | — | — | — | — | — |
 | 9° | +4 | Canto di Riposo (d8) | 3 | 12 | 4 | 3 | 3 | 3 | 1 | — | — | — | — |
-| 10° | +4 | Ispirazione Bardica (d10) Maestria, Segreti Magici | 4 | 14 | 4 | 3 | 3 | 3 | 2 | — | — | — | — |
+| 10° | +4 | Ispirazione Bardica (d10), Maestria, Segreti Magici | 4 | 14 | 4 | 3 | 3 | 3 | 2 | — | — | — | — |
 | 11° | +4 | — | 4 | 15 | 4 | 3 | 3 | 3 | 2 | 1 | — | — | — |
 | 12° | +4 | Aumento dei Punteggi di Caratteristica | 4 | 15 | 4 | 3 | 3 | 3 | 2 | 1 | — | — | — |
 | 13° | +5 | Canto di Riposo (d10) | 4 | 16 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | — | — |

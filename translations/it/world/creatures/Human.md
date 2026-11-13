@@ -19,7 +19,7 @@ Un umano raggiunge la maturità tra i 18 e i 20 anni e vive meno di un secolo.
 L'altezza e la corporatura possono variare drasticamente da un umano all'altro, oscillando tra 1,5 e 1,8 metri o più. A prescindere dalla sua effettiva altezza, un umano è una creatura di taglia Media.
 
 ### Velocità
-La velocità base sul terreno di un elfo è di 9 metri.
+La velocità base sul terreno di un umano è di 9 metri.
 
 ### Linguaggi
 Gli umani parlano, leggono e scrivono in Comune e in un linguaggio extra a scelta. In genere imparano la lingua del popolo con cui hanno più contatti, anche quando si tratta di dialetti sconosciuti ai più. Amano molto impreziosire la loro parlata con parole prese da altri linguaggi: imprecazioni in Orchesco, espressioni elfiche dal suono melodioso, termini militari nanici e così via.

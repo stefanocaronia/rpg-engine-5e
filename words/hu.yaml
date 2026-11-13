@@ -549,6 +549,222 @@ words:
   "Prepare": "Előkészítés"
   "Prepare {item}": "Előkészítés: {item}"
   "I prepare {item}.": "Előkészítem: {item}."
+  Rage: Dühöngés
+  Unarmored Defense: Páncél nélküli védekezés
+  Reckless Attack: Vakmerő támadás
+  Danger Sense: Veszélyérzék
+  Primal Path: Ősi ösvény
+  Ability Score Improvement: Tulajdonságnövelés
+  Extra Attack: Extra támadás
+  Fast Movement: Gyors mozgás
+  Feral Instinct: Vadállati ösztön
+  Brutal Critical: Brutális kritikus
+  Brutal Critical (1 die): Brutális kritikus (1 kocka)
+  Relentless Rage: Könyörtelen dühöngés
+  Brutal Critical (2 dice): Brutális kritikus (2 kocka)
+  Persistent Rage: Kitartó dühöngés
+  Brutal Critical (3 dice): Brutális kritikus (3 kocka)
+  Indomitable Might: Megtörhetetlen erő
+  Primal Champion: Ősi bajnok
+  Spellcasting: Varázslás
+  Bardic Inspiration: Bárdi inspiráció
+  Bardic Inspiration (d6): Bárdi inspiráció (d6)
+  Jack of All Trades: Mindenhez értő
+  Song of Rest: Pihenés dala
+  Song of Rest (d6): Pihenés dala (d6)
+  Bard College: Bárd kollégium
+  Expertise: Szakértelem
+  Bardic Inspiration (d8): Bárdi inspiráció (d8)
+  Font of Inspiration: Inspiráció forrása
+  Countercharm: Ellenbűbáj
+  Song of Rest (d8): Pihenés dala (d8)
+  Song of Rest (d10): Pihenés dala (d10)
+  Magical Secrets: Mágikus titkok
+  Bardic Inspiration (d12): Bárdi inspiráció (d12)
+  Song of Rest (d12): Pihenés dala (d12)
+  Superior Inspiration: Felsőbbrendű inspiráció
+  Improved Critical: Továbbfejlesztett kritikus
+  Remarkable Athlete: Figyelemre méltó atléta
+  Additional Fighting Style: További harcstílus
+  Superior Critical: Felsőbbrendű kritikus
+  Survivor: Túlélő
+  Bonus Cantrip: Bónusz trükk
+  Natural Recovery: Természetes visszanyerés
+  Circle Spells: Kör varázslatai
+  Land's Stride: Terepjáró léptek
+  Nature's Ward: A természet oltalma
+  Nature's Sanctuary: A természet menedéke
+  Divine Domain: Isteni szféra
+  Channel Divinity: Isteni csatornázás
+  Channel Divinity (1/rest): Isteni csatornázás (1/pihenés)
+  Destroy Undead: Élőhalottak elpusztítása
+  Destroy Undead (CR 1/2): Élőhalottak elpusztítása (KL 1/2)
+  Channel Divinity (2/rest): Isteni csatornázás (2/pihenés)
+  Destroy Undead (CR 1): Élőhalottak elpusztítása (KL 1)
+  Divine Intervention: Isteni beavatkozás
+  Destroy Undead (CR 2): Élőhalottak elpusztítása (KL 2)
+  Destroy Undead (CR 3): Élőhalottak elpusztítása (KL 3)
+  Destroy Undead (CR 4): Élőhalottak elpusztítása (KL 4)
+  Channel Divinity (3/rest): Isteni csatornázás (3/pihenés)
+  Bonus Proficiencies: Bónusz jártasságok
+  Cutting Words: Éles szavak
+  Additional Magical Secrets: További mágikus titkok
+  Peerless Skill: Utolérhetetlen képesség
+  Dragon Ancestor: Sárkány ős
+  Draconic Resilience: Sárkányi ellenálló képesség
+  Elemental Affinity: Elemi affinitás
+  Dragon Wings: Sárkányszárnyak
+  Draconic Presence: Sárkányi jelenlét
+  Wild Shape: Vadalak
+  Druid Circle: Druida kör
+  Timeless Body: Időtlen test
+  Beast Spells: Vadállat-varázslatok
+  Archdruid: Fődruida
+  Fighting Style: Harcstílus
+  Second Wind: Második szél
+  Action Surge: Akcióhullám
+  Action Surge (one use): Akcióhullám (egy használat)
+  Martial Archetype: Harci archetípus
+  Indomitable: Megtörhetetlen
+  Indomitable (one use): Megtörhetetlen (egy használat)
+  Extra Attack (2): Extra támadás (2)
+  Indomitable (two uses): Megtörhetetlen (két használat)
+  Action Surge (two uses): Akcióhullám (két használat)
+  Indomitable (three uses): Megtörhetetlen (három használat)
+  Extra Attack (3): Extra támadás (3)
+  Hunter's Prey: Vadász zsákmánya
+  Defensive Tactics: Védekező taktikák
+  Multiattack: Többszörös támadás
+  Superior Hunter's Defense: Felsőbbrendű vadászvédelem
+  Bonus Proficiency: Bónusz jártasság
+  Disciple of Life: Az élet tanítványa
+  "Channel Divinity: Preserve Life": "Isteni csatornázás: Élet megőrzése"
+  Blessed Healer: Áldott gyógyító
+  Divine Strike: Isteni csapás
+  Supreme Healing: Legfőbb gyógyítás
+  Martial Arts: Harcművészet
+  Ki: Ki
+  Unarmored Movement: Páncél nélküli mozgás
+  Monastic Tradition: Szerzetesi hagyomány
+  Deflect Missiles: Lövedékek elhárítása
+  Slow Fall: Lassú esés
+  Stunning Strike: Kábító csapás
+  Ki-Empowered Strikes: Ki-erősítette csapások
+  Evasion: Kitérés
+  Stillness of Mind: Elme nyugalma
+  Purity of Body: Test tisztasága
+  Tongue of the Sun and Moon: Nap és Hold nyelve
+  Diamond Soul: Gyémántlélek
+  Empty Body: Üres test
+  Perfect Self: Tökéletes én
+  Tenets of Devotion: Odaadás alapelvei
+  Oath Spells: Eskü varázslatai
+  Aura of Devotion: Odaadás aurája
+  Purity of Spirit: Lélek tisztasága
+  Holy Nimbus: Szent nimbusz
+  Divine Sense: Isteni érzék
+  Lay on Hands: Kézrátétel
+  Divine Smite: Isteni sújtás
+  Divine Health: Isteni egészség
+  Sacred Oath: Szent eskü
+  Aura of Protection: Védelem aurája
+  Aura of Courage: Bátorság aurája
+  Improved Divine Smite: Továbbfejlesztett isteni sújtás
+  Cleansing Touch: Megtisztító érintés
+  Frenzy: Tombolás
+  Mindless Rage: Esztelen dühöngés
+  Intimidating Presence: Félelmetes jelenlét
+  Retaliation: Megtorlás
+  Favored Enemy: Kedvenc ellenség
+  Natural Explorer: Született felfedező
+  Ranger Archetype: Vadőr archetípus
+  Primeval Awareness: Ősi éberség
+  Hide in Plain Sight: Elrejtőzés szem előtt
+  Vanish: Eltűnés
+  Feral Senses: Vadállati érzékek
+  Foe Slayer: Ellenségölő
+  Sneak Attack: Settenkedő támadás
+  Cunning Action: Ravasz akció
+  Roguish Archetype: Zsivány archetípus
+  Uncanny Dodge: Természetfeletti kitérés
+  Reliable Talent: Megbízható tehetség
+  Blindsense: Vakérzékelés
+  Slippery Mind: Csúszós elme
+  Elusive: Megfoghatatlan
+  Stroke of Luck: Szerencsecsapás
+  Evocation Savant: Evokációs szaktekintély
+  Sculpt Spells: Varázslatok formálása
+  Potent Cantrip: Erőteljes trükk
+  Empowered Evocation: Megerősített evokáció
+  Overchannel: Túlcsatornázás
+  Sorcerous Origin: Bűvölő eredet
+  Font of Magic: Mágia forrása
+  Metamagic: Metamágia
+  Sorcerous Restoration: Bűvölői helyreállítás
+  Expanded Spell List: Kibővített varázslatlista
+  Dark One's Blessing: A Sötét áldása
+  Dark One's Own Luck: A sötét saját szerencséje
+  Fiendish Resilience: Pokolfajzat-ellenállás
+  Hurl Through Hell: Pokolba hajítás
+  Fast Hands: Gyors kezek
+  Second-Story Work: Emeleti munka
+  Supreme Sneak: Legfőbb settenkedés
+  Use Magic Device: Mágikus eszköz használata
+  Thief's Reflexes: Tolvaj reflexei
+  Otherworldly Patron: Túlvilági pártfogó
+  Pact Magic: Paktummágia
+  Eldritch Invocations: Kísérteties idézések
+  Pact Boon: Paktumajándék
+  Mystic Arcanum: Misztikus arkánum
+  Mystic Arcanum (6th level): Misztikus arkánum (6. szint)
+  Mystic Arcanum (7th level): Misztikus arkánum (7. szint)
+  Mystic Arcanum (8th level): Misztikus arkánum (8. szint)
+  Mystic Arcanum (9th level): Misztikus arkánum (9. szint)
+  Eldritch Master: Kísérteties mester
+  Open Hand Technique: Nyitott tenyér technika
+  Wholeness of Body: Test épsége
+  Tranquility: Nyugalom
+  Quivering Palm: Remegő tenyér
+  Arcane Recovery: Arkánum-visszanyerés
+  Arcane Tradition: Arkánus hagyomány
+  Spell Mastery: Varázslat-mesteri tudás
+  Signature Spells: Védjegyvarázslatok
+  Bardic Inspiration (d10): Bárdi inspiráció (d10)
+  alchemist's supplies: alkimista-felszerelés
+  brewer's supplies: sörfőző-felszerelés
+  calligrapher's supplies: kalligráfus-felszerelés
+  carpenter's tools: ácsszerszámok
+  cartographer's tools: térképészszerszámok
+  cobbler's tools: cipészszerszámok
+  cook's utensils: szakácsfelszerelés
+  glassblower's tools: üvegfúvó-szerszámok
+  jeweler's tools: ékszerészszerszámok
+  leatherworker's tools: bőrműves-szerszámok
+  mason's tools: kőművesszerszámok
+  painter's supplies: festőfelszerelés
+  potter's tools: fazekasszerszámok
+  smith's tools: kovácsszerszámok
+  weaver's tools: szövőszerszámok
+  woodcarver's tools: faragószerszámok
+  disguise kit: álcázókészlet
+  forgery kit: hamisítókészlet
+  dice set: kockakészlet
+  playing card set: kártyapakli
+  bagpipes: duda
+  drum: dob
+  dulcimer: cimbalom
+  flute: fuvola
+  lute: lant
+  lyre: líra
+  horn: kürt
+  pan flute: pánsíp
+  shawm: tárogató
+  viol: viola
+  navigator's tools: navigátorszerszámok
+  poisoner's kit: méregkeverő-készlet
+  vehicles: járművek
+  vehicles (land): járművek (szárazföldi)
+  vehicles (water): járművek (vízi)
 names:
   str: Erő
   str-mod: Erő

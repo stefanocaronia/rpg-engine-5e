@@ -549,6 +549,222 @@ words:
   "Prepare": "Voorbereiden"
   "Prepare {item}": "{item} voorbereiden"
   "I prepare {item}.": "Ik bereid {item} voor."
+  Rage: Woede
+  Unarmored Defense: Verdediging zonder pantser
+  Reckless Attack: Roekeloze aanval
+  Danger Sense: Gevaarzin
+  Primal Path: Oerpad
+  Ability Score Improvement: Eigenschapsverbetering
+  Extra Attack: Extra aanval
+  Fast Movement: Snelle beweging
+  Feral Instinct: Wild instinct
+  Brutal Critical: Brutale kritieke treffer
+  Brutal Critical (1 die): Brutale kritieke treffer (1 dobbelsteen)
+  Relentless Rage: Meedogenloze woede
+  Brutal Critical (2 dice): Brutale kritieke treffer (2 dobbelstenen)
+  Persistent Rage: Aanhoudende woede
+  Brutal Critical (3 dice): Brutale kritieke treffer (3 dobbelstenen)
+  Indomitable Might: Onverzettelijke macht
+  Primal Champion: Oerkampioen
+  Spellcasting: Spreukvermogen
+  Bardic Inspiration: Bardische inspiratie
+  Bardic Inspiration (d6): Bardische inspiratie (d6)
+  Jack of All Trades: Manusje-van-alles
+  Song of Rest: Lied van rust
+  Song of Rest (d6): Lied van rust (d6)
+  Bard College: Bardencollege
+  Expertise: Expertise
+  Bardic Inspiration (d8): Bardische inspiratie (d8)
+  Font of Inspiration: Bron van inspiratie
+  Countercharm: Tegenbetovering
+  Song of Rest (d8): Lied van rust (d8)
+  Song of Rest (d10): Lied van rust (d10)
+  Magical Secrets: Magische geheimen
+  Bardic Inspiration (d12): Bardische inspiratie (d12)
+  Song of Rest (d12): Lied van rust (d12)
+  Superior Inspiration: Superieure inspiratie
+  Improved Critical: Verbeterde kritieke treffer
+  Remarkable Athlete: Opmerkelijke atleet
+  Additional Fighting Style: Extra gevechtsstijl
+  Superior Critical: Superieure kritieke treffer
+  Survivor: Overlever
+  Bonus Cantrip: Bonuscantrip
+  Natural Recovery: Natuurlijk herstel
+  Circle Spells: Kringspreuken
+  Land's Stride: Stap van het land
+  Nature's Ward: Bescherming van de natuur
+  Nature's Sanctuary: Toevluchtsoord van de natuur
+  Divine Domain: Goddelijk domein
+  Channel Divinity: Goddelijkheid kanaliseren
+  Channel Divinity (1/rest): Goddelijkheid kanaliseren (1/rust)
+  Destroy Undead: Ondoden vernietigen
+  Destroy Undead (CR 1/2): Ondoden vernietigen (CR 1/2)
+  Channel Divinity (2/rest): Goddelijkheid kanaliseren (2/rust)
+  Destroy Undead (CR 1): Ondoden vernietigen (CR 1)
+  Divine Intervention: Goddelijke tussenkomst
+  Destroy Undead (CR 2): Ondoden vernietigen (CR 2)
+  Destroy Undead (CR 3): Ondoden vernietigen (CR 3)
+  Destroy Undead (CR 4): Ondoden vernietigen (CR 4)
+  Channel Divinity (3/rest): Goddelijkheid kanaliseren (3/rust)
+  Bonus Proficiencies: Bonusbekwaamheden
+  Cutting Words: Snijdende woorden
+  Additional Magical Secrets: Extra magische geheimen
+  Peerless Skill: Weergaloze vaardigheid
+  Dragon Ancestor: Drakenvoorouder
+  Draconic Resilience: Draconische veerkracht
+  Elemental Affinity: Elementaire affiniteit
+  Dragon Wings: Drakenvleugels
+  Draconic Presence: Draconische aanwezigheid
+  Wild Shape: Wilde gedaante
+  Druid Circle: Druïdenkring
+  Timeless Body: Tijdloos lichaam
+  Beast Spells: Beestspreuken
+  Archdruid: Aartsdruïde
+  Fighting Style: Gevechtsstijl
+  Second Wind: Tweede adem
+  Action Surge: Actiegolf
+  Action Surge (one use): Actiegolf (één gebruik)
+  Martial Archetype: Krijgsarchetype
+  Indomitable: Onverzettelijk
+  Indomitable (one use): Onverzettelijk (één gebruik)
+  Extra Attack (2): Extra aanval (2)
+  Indomitable (two uses): Onverzettelijk (twee gebruiken)
+  Action Surge (two uses): Actiegolf (twee gebruiken)
+  Indomitable (three uses): Onverzettelijk (drie gebruiken)
+  Extra Attack (3): Extra aanval (3)
+  Hunter's Prey: Prooi van de jager
+  Defensive Tactics: Defensieve tactieken
+  Multiattack: Meervoudige aanval
+  Superior Hunter's Defense: Superieure verdediging van de jager
+  Bonus Proficiency: Bonusbekwaamheid
+  Disciple of Life: Leerling van het leven
+  "Channel Divinity: Preserve Life": "Goddelijkheid kanaliseren: leven behouden"
+  Blessed Healer: Gezegende heler
+  Divine Strike: Goddelijke slag
+  Supreme Healing: Opperste genezing
+  Martial Arts: Krijgskunst
+  Ki: Ki
+  Unarmored Movement: Beweging zonder pantser
+  Monastic Tradition: Kloostertraditie
+  Deflect Missiles: Projectielen afweren
+  Slow Fall: Langzame val
+  Stunning Strike: Verdovende slag
+  Ki-Empowered Strikes: Door ki versterkte slagen
+  Evasion: Ontwijking
+  Stillness of Mind: Stilte van de geest
+  Purity of Body: Zuiverheid van lichaam
+  Tongue of the Sun and Moon: Tong van zon en maan
+  Diamond Soul: Diamanten ziel
+  Empty Body: Leeg lichaam
+  Perfect Self: Perfect zelf
+  Tenets of Devotion: Beginselen van toewijding
+  Oath Spells: Eedspreuken
+  Aura of Devotion: Aura van toewijding
+  Purity of Spirit: Zuiverheid van geest
+  Holy Nimbus: Heilige nimbus
+  Divine Sense: Goddelijke zin
+  Lay on Hands: Handoplegging
+  Divine Smite: Goddelijke afstraffing
+  Divine Health: Goddelijke gezondheid
+  Sacred Oath: Heilige eed
+  Aura of Protection: Aura van bescherming
+  Aura of Courage: Aura van moed
+  Improved Divine Smite: Verbeterde goddelijke afstraffing
+  Cleansing Touch: Reinigende aanraking
+  Frenzy: Razernij
+  Mindless Rage: Hersenloze woede
+  Intimidating Presence: Intimiderende aanwezigheid
+  Retaliation: Vergelding
+  Favored Enemy: Favoriete vijand
+  Natural Explorer: Natuurlijke verkenner
+  Ranger Archetype: Rangerarchetype
+  Primeval Awareness: Oeroud bewustzijn
+  Hide in Plain Sight: Schuilen in het volle zicht
+  Vanish: Verdwijnen
+  Feral Senses: Wilde zintuigen
+  Foe Slayer: Vijandendoder
+  Sneak Attack: Sluipaanval
+  Cunning Action: Sluwe actie
+  Roguish Archetype: Schurkenarchetype
+  Uncanny Dodge: Bovennatuurlijke ontwijking
+  Reliable Talent: Betrouwbaar talent
+  Blindsense: Blindzin
+  Slippery Mind: Ontglippende geest
+  Elusive: Ongrijpbaar
+  Stroke of Luck: Geluksslag
+  Evocation Savant: Evocatiegeleerde
+  Sculpt Spells: Spreuken vormgeven
+  Potent Cantrip: Krachtige cantrip
+  Empowered Evocation: Versterkte evocatie
+  Overchannel: Overkanaliseren
+  Sorcerous Origin: Tovenaarsoorsprong
+  Font of Magic: Bron van magie
+  Metamagic: Metamagie
+  Sorcerous Restoration: Tovenaarsherstel
+  Expanded Spell List: Uitgebreide spreuklijst
+  Dark One's Blessing: Zegen van de duistere
+  Dark One's Own Luck: Geluk van de duistere
+  Fiendish Resilience: Fiendische veerkracht
+  Hurl Through Hell: Door de hel slingeren
+  Fast Hands: Snelle handen
+  Second-Story Work: Werk op de tweede verdieping
+  Supreme Sneak: Opperste sluiper
+  Use Magic Device: Magisch voorwerp gebruiken
+  Thief's Reflexes: Reflexen van de dief
+  Otherworldly Patron: Bovenwereldse beschermheer
+  Pact Magic: Pactmagie
+  Eldritch Invocations: Occulte invocaties
+  Pact Boon: Pactgave
+  Mystic Arcanum: Mystiek arcanum
+  Mystic Arcanum (6th level): Mystiek arcanum (niveau 6)
+  Mystic Arcanum (7th level): Mystiek arcanum (niveau 7)
+  Mystic Arcanum (8th level): Mystiek arcanum (niveau 8)
+  Mystic Arcanum (9th level): Mystiek arcanum (niveau 9)
+  Eldritch Master: Occulte meester
+  Open Hand Technique: Techniek van de open hand
+  Wholeness of Body: Heelheid van lichaam
+  Tranquility: Sereniteit
+  Quivering Palm: Trillende handpalm
+  Arcane Recovery: Arcaan herstel
+  Arcane Tradition: Arcane traditie
+  Spell Mastery: Spreukbeheersing
+  Signature Spells: Kenmerkende spreuken
+  Bardic Inspiration (d10): Bardische inspiratie (d10)
+  alchemist's supplies: alchemistenbenodigdheden
+  brewer's supplies: brouwersbenodigdheden
+  calligrapher's supplies: kalligrafiebenodigdheden
+  carpenter's tools: timmermansgereedschap
+  cartographer's tools: cartografengereedschap
+  cobbler's tools: schoenmakersgereedschap
+  cook's utensils: kookgerei
+  glassblower's tools: glasblazersgereedschap
+  jeweler's tools: juweliersgereedschap
+  leatherworker's tools: leerbewerkersgereedschap
+  mason's tools: metselaarsgereedschap
+  painter's supplies: schildersbenodigdheden
+  potter's tools: pottenbakkersgereedschap
+  smith's tools: smidsgereedschap
+  weaver's tools: wevergereedschap
+  woodcarver's tools: houtsnijgereedschap
+  disguise kit: vermommingsset
+  forgery kit: vervalsersset
+  dice set: dobbelstenenset
+  playing card set: kaartspel
+  bagpipes: doedelzak
+  drum: trommel
+  dulcimer: hakkebord
+  flute: fluit
+  lute: luit
+  lyre: lier
+  horn: hoorn
+  pan flute: panfluit
+  shawm: schalmei
+  viol: viool
+  navigator's tools: navigatiegereedschap
+  poisoner's kit: gifmengersset
+  vehicles: voertuigen
+  vehicles (land): voertuigen (land)
+  vehicles (water): voertuigen (water)
 names:
   str: Kracht
   str-mod: Kracht

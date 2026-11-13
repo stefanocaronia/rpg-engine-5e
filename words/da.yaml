@@ -549,6 +549,222 @@ words:
   "Prepare": "Gør klar"
   "Prepare {item}": "Gør {item} klar"
   "I prepare {item}.": "Jeg gør {item} klar."
+  Rage: Raseri
+  Unarmored Defense: Forsvar uden rustning
+  Reckless Attack: Hensynsløst angreb
+  Danger Sense: Farefølelse
+  Primal Path: Urtidsvej
+  Ability Score Improvement: Forbedring af egenskabsværdier
+  Extra Attack: Ekstra angreb
+  Fast Movement: Hurtig bevægelse
+  Feral Instinct: Vildt instinkt
+  Brutal Critical: Brutalt kritisk slag
+  Brutal Critical (1 die): Brutalt kritisk slag (1 terning)
+  Relentless Rage: Ubønhørligt raseri
+  Brutal Critical (2 dice): Brutalt kritisk slag (2 terninger)
+  Persistent Rage: Vedholdende raseri
+  Brutal Critical (3 dice): Brutalt kritisk slag (3 terninger)
+  Indomitable Might: Ubøjelig styrke
+  Primal Champion: Urtidschampion
+  Spellcasting: Besværgelseskasting
+  Bardic Inspiration: Bardisk inspiration
+  Bardic Inspiration (d6): Bardisk inspiration (d6)
+  Jack of All Trades: Altmuligmand
+  Song of Rest: Hvilens sang
+  Song of Rest (d6): Hvilens sang (d6)
+  Bard College: Bardeskole
+  Expertise: Ekspertise
+  Bardic Inspiration (d8): Bardisk inspiration (d8)
+  Font of Inspiration: Inspirationens kilde
+  Countercharm: Modcharme
+  Song of Rest (d8): Hvilens sang (d8)
+  Song of Rest (d10): Hvilens sang (d10)
+  Magical Secrets: Magiske hemmeligheder
+  Bardic Inspiration (d12): Bardisk inspiration (d12)
+  Song of Rest (d12): Hvilens sang (d12)
+  Superior Inspiration: Overlegen inspiration
+  Improved Critical: Forbedret kritisk slag
+  Remarkable Athlete: Bemærkelsesværdig atlet
+  Additional Fighting Style: Ekstra kampstil
+  Superior Critical: Overlegent kritisk slag
+  Survivor: Overlever
+  Bonus Cantrip: Bonussmåbesværgelse
+  Natural Recovery: Naturlig genopretning
+  Circle Spells: Cirkelbesværgelser
+  Land's Stride: Landets skridt
+  Nature's Ward: Naturens værn
+  Nature's Sanctuary: Naturens fristed
+  Divine Domain: Guddommeligt domæne
+  Channel Divinity: Kanaliser guddommelighed
+  Channel Divinity (1/rest): Kanaliser guddommelighed (1/hvile)
+  Destroy Undead: Tilintetgør udøde
+  Destroy Undead (CR 1/2): Tilintetgør udøde (udfordring 1/2)
+  Channel Divinity (2/rest): Kanaliser guddommelighed (2/hvile)
+  Destroy Undead (CR 1): Tilintetgør udøde (udfordring 1)
+  Divine Intervention: Guddommelig indgriben
+  Destroy Undead (CR 2): Tilintetgør udøde (udfordring 2)
+  Destroy Undead (CR 3): Tilintetgør udøde (udfordring 3)
+  Destroy Undead (CR 4): Tilintetgør udøde (udfordring 4)
+  Channel Divinity (3/rest): Kanaliser guddommelighed (3/hvile)
+  Bonus Proficiencies: Bonusmestringer
+  Cutting Words: Skærende ord
+  Additional Magical Secrets: Ekstra magiske hemmeligheder
+  Peerless Skill: Mageløs færdighed
+  Dragon Ancestor: Drageforfader
+  Draconic Resilience: Drakonisk sejhed
+  Elemental Affinity: Elementær affinitet
+  Dragon Wings: Dragevinger
+  Draconic Presence: Drakonisk tilstedeværelse
+  Wild Shape: Vild skikkelse
+  Druid Circle: Druidecirkel
+  Timeless Body: Tidløs krop
+  Beast Spells: Dyrebesværgelser
+  Archdruid: Ærkedruide
+  Fighting Style: Kampstil
+  Second Wind: Andet pust
+  Action Surge: Handlingsboost
+  Action Surge (one use): Handlingsboost (én anvendelse)
+  Martial Archetype: Kamparketype
+  Indomitable: Ubøjelig
+  Indomitable (one use): Ubøjelig (én anvendelse)
+  Extra Attack (2): Ekstra angreb (2)
+  Indomitable (two uses): Ubøjelig (to anvendelser)
+  Action Surge (two uses): Handlingsboost (to anvendelser)
+  Indomitable (three uses): Ubøjelig (tre anvendelser)
+  Extra Attack (3): Ekstra angreb (3)
+  Hunter's Prey: Jægerens bytte
+  Defensive Tactics: Defensive taktikker
+  Multiattack: Multiangreb
+  Superior Hunter's Defense: Overlegent jægerforsvar
+  Bonus Proficiency: Bonusmestring
+  Disciple of Life: Livets discipel
+  "Channel Divinity: Preserve Life": "Kanaliser guddommelighed: Bevar livet"
+  Blessed Healer: Velsignet læge
+  Divine Strike: Guddommeligt slag
+  Supreme Healing: Højeste helbredelse
+  Martial Arts: Kampsport
+  Ki: Ki
+  Unarmored Movement: Bevægelse uden rustning
+  Monastic Tradition: Klostertradition
+  Deflect Missiles: Afvis projektiler
+  Slow Fall: Langsomt fald
+  Stunning Strike: Bedøvende slag
+  Ki-Empowered Strikes: Ki-styrkede slag
+  Evasion: Undvigelse
+  Stillness of Mind: Sindets stilhed
+  Purity of Body: Kroppens renhed
+  Tongue of the Sun and Moon: Solens og månens tunge
+  Diamond Soul: Diamantsjæl
+  Empty Body: Tom krop
+  Perfect Self: Det perfekte selv
+  Tenets of Devotion: Hengivenhedens grundsætninger
+  Oath Spells: Edsbesværgelser
+  Aura of Devotion: Hengivenhedens aura
+  Purity of Spirit: Åndens renhed
+  Holy Nimbus: Hellig nimbus
+  Divine Sense: Guddommelig sans
+  Lay on Hands: Håndspålæggelse
+  Divine Smite: Guddommeligt hug
+  Divine Health: Guddommeligt helbred
+  Sacred Oath: Hellig ed
+  Aura of Protection: Beskyttelsens aura
+  Aura of Courage: Modets aura
+  Improved Divine Smite: Forbedret guddommeligt hug
+  Cleansing Touch: Rensende berøring
+  Frenzy: Vanvid
+  Mindless Rage: Tankeløst raseri
+  Intimidating Presence: Intimiderende tilstedeværelse
+  Retaliation: Gengældelse
+  Favored Enemy: Foretrukken fjende
+  Natural Explorer: Naturlig opdagelsesrejsende
+  Ranger Archetype: Rangerarketype
+  Primeval Awareness: Urtidsbevidsthed
+  Hide in Plain Sight: Skjul i åbent syn
+  Vanish: Forsvind
+  Feral Senses: Vilde sanser
+  Foe Slayer: Fjendeslagter
+  Sneak Attack: Snigangreb
+  Cunning Action: Snedig handling
+  Roguish Archetype: Slyngelarketype
+  Uncanny Dodge: Uhyggelig undvigelse
+  Reliable Talent: Pålideligt talent
+  Blindsense: Blindsans
+  Slippery Mind: Glat sind
+  Elusive: Undvigende
+  Stroke of Luck: Heldigt slag
+  Evocation Savant: Evokationslærd
+  Sculpt Spells: Form besværgelser
+  Potent Cantrip: Kraftfuld småbesværgelse
+  Empowered Evocation: Styrket evokation
+  Overchannel: Overkanalisering
+  Sorcerous Origin: Troldmandsophav
+  Font of Magic: Magiens kilde
+  Metamagic: Metamagi
+  Sorcerous Restoration: Troldmandsgenopretning
+  Expanded Spell List: Udvidet besværgelsesliste
+  Dark One's Blessing: Den mørkes velsignelse
+  Dark One's Own Luck: Den mørkes held
+  Fiendish Resilience: Ondskabsfuld sejhed
+  Hurl Through Hell: Slyng gennem helvede
+  Fast Hands: Hurtige hænder
+  Second-Story Work: Førstesalsarbejde
+  Supreme Sneak: Højeste snig
+  Use Magic Device: Brug magisk genstand
+  Thief's Reflexes: Tyvens reflekser
+  Otherworldly Patron: Overjordisk protektor
+  Pact Magic: Pagtmagi
+  Eldritch Invocations: Uhyggelige invokationer
+  Pact Boon: Pagtgave
+  Mystic Arcanum: Mystisk Arkanum
+  Mystic Arcanum (6th level): Mystisk Arkanum (niveau 6)
+  Mystic Arcanum (7th level): Mystisk Arkanum (niveau 7)
+  Mystic Arcanum (8th level): Mystisk Arkanum (niveau 8)
+  Mystic Arcanum (9th level): Mystisk Arkanum (niveau 9)
+  Eldritch Master: Uhyggelig mester
+  Open Hand Technique: Den åbne hånds teknik
+  Wholeness of Body: Kroppens helhed
+  Tranquility: Ro
+  Quivering Palm: Dirrende håndflade
+  Arcane Recovery: Arkan genopretning
+  Arcane Tradition: Arkan tradition
+  Spell Mastery: Besværgelsesmestring
+  Signature Spells: Signaturbesværgelser
+  Bardic Inspiration (d10): Bardisk inspiration (d10)
+  alchemist's supplies: alkymistudstyr
+  brewer's supplies: brygudstyr
+  calligrapher's supplies: kalligrafiudstyr
+  carpenter's tools: tømrerværktøj
+  cartographer's tools: kartografværktøj
+  cobbler's tools: skomagerværktøj
+  cook's utensils: kokkeredskaber
+  glassblower's tools: glaspusterværktøj
+  jeweler's tools: juvelerværktøj
+  leatherworker's tools: læderarbejderværktøj
+  mason's tools: murerværktøj
+  painter's supplies: malerudstyr
+  potter's tools: pottemagerværktøj
+  smith's tools: smedeværktøj
+  weaver's tools: væverværktøj
+  woodcarver's tools: træskærerværktøj
+  disguise kit: forklædningsudstyr
+  forgery kit: forfalskerudstyr
+  dice set: terningesæt
+  playing card set: kortspil
+  bagpipes: sækkepibe
+  drum: tromme
+  dulcimer: hakkebræt
+  flute: fløjte
+  lute: lut
+  lyre: lyre
+  horn: horn
+  pan flute: panfløjte
+  shawm: skalmeje
+  viol: viol
+  navigator's tools: navigatørværktøj
+  poisoner's kit: giftblanderudstyr
+  vehicles: køretøjer
+  vehicles (land): køretøjer (land)
+  vehicles (water): køretøjer (vand)
 names:
   str: Styrke
   str-mod: Styrke

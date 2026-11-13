@@ -549,6 +549,222 @@ words:
   "Prepare": "Ετοίμασε"
   "Prepare {item}": "Ετοίμασε {item}"
   "I prepare {item}.": "Ετοιμάζω {item}."
+  Rage: Οργή
+  Unarmored Defense: Άμυνα χωρίς πανοπλία
+  Reckless Attack: Απερίσκεπτη επίθεση
+  Danger Sense: Αίσθηση κινδύνου
+  Primal Path: Αρχέγονο μονοπάτι
+  Ability Score Improvement: Βελτίωση βαθμολογίας ικανότητας
+  Extra Attack: Επιπλέον επίθεση
+  Fast Movement: Γρήγορη κίνηση
+  Feral Instinct: Άγριο ένστικτο
+  Brutal Critical: Βάναυσο κρίσιμο χτύπημα
+  Brutal Critical (1 die): Βάναυσο κρίσιμο χτύπημα (1 ζάρι)
+  Relentless Rage: Αδυσώπητη οργή
+  Brutal Critical (2 dice): Βάναυσο κρίσιμο χτύπημα (2 ζάρια)
+  Persistent Rage: Επίμονη οργή
+  Brutal Critical (3 dice): Βάναυσο κρίσιμο χτύπημα (3 ζάρια)
+  Indomitable Might: Ακατάβλητη ισχύς
+  Primal Champion: Αρχέγονος πρωταθλητής
+  Spellcasting: Ρίψη ξορκιών
+  Bardic Inspiration: Έμπνευση βάρδου
+  Bardic Inspiration (d6): Έμπνευση βάρδου (d6)
+  Jack of All Trades: Πολυτεχνίτης
+  Song of Rest: Τραγούδι της ανάπαυσης
+  Song of Rest (d6): Τραγούδι της ανάπαυσης (d6)
+  Bard College: Κολέγιο βάρδων
+  Expertise: Ειδίκευση
+  Bardic Inspiration (d8): Έμπνευση βάρδου (d8)
+  Font of Inspiration: Πηγή έμπνευσης
+  Countercharm: Αντιγοητεία
+  Song of Rest (d8): Τραγούδι της ανάπαυσης (d8)
+  Song of Rest (d10): Τραγούδι της ανάπαυσης (d10)
+  Magical Secrets: Μαγικά μυστικά
+  Bardic Inspiration (d12): Έμπνευση βάρδου (d12)
+  Song of Rest (d12): Τραγούδι της ανάπαυσης (d12)
+  Superior Inspiration: Ανώτερη έμπνευση
+  Improved Critical: Βελτιωμένο κρίσιμο χτύπημα
+  Remarkable Athlete: Αξιοσημείωτος αθλητής
+  Additional Fighting Style: Επιπλέον στυλ μάχης
+  Superior Critical: Ανώτερο κρίσιμο χτύπημα
+  Survivor: Επιζών
+  Bonus Cantrip: Επιπλέον μικροξόρκι
+  Natural Recovery: Φυσική ανάκτηση
+  Circle Spells: Ξόρκια του κύκλου
+  Land's Stride: Βήμα της γης
+  Nature's Ward: Φρουρά της φύσης
+  Nature's Sanctuary: Καταφύγιο της φύσης
+  Divine Domain: Θεϊκή επικράτεια
+  Channel Divinity: Διοχέτευση θεότητας
+  Channel Divinity (1/rest): Διοχέτευση θεότητας (1/ανάπαυση)
+  Destroy Undead: Καταστροφή νεκροζώντανων
+  Destroy Undead (CR 1/2): Καταστροφή νεκροζώντανων (πρόκληση 1/2)
+  Channel Divinity (2/rest): Διοχέτευση θεότητας (2/ανάπαυση)
+  Destroy Undead (CR 1): Καταστροφή νεκροζώντανων (πρόκληση 1)
+  Divine Intervention: Θεϊκή παρέμβαση
+  Destroy Undead (CR 2): Καταστροφή νεκροζώντανων (πρόκληση 2)
+  Destroy Undead (CR 3): Καταστροφή νεκροζώντανων (πρόκληση 3)
+  Destroy Undead (CR 4): Καταστροφή νεκροζώντανων (πρόκληση 4)
+  Channel Divinity (3/rest): Διοχέτευση θεότητας (3/ανάπαυση)
+  Bonus Proficiencies: Επιπλέον επάρκειες
+  Cutting Words: Κοφτερά λόγια
+  Additional Magical Secrets: Επιπλέον μαγικά μυστικά
+  Peerless Skill: Απαράμιλλη δεξιότητα
+  Dragon Ancestor: Πρόγονος δράκος
+  Draconic Resilience: Δρακονική ανθεκτικότητα
+  Elemental Affinity: Στοιχειακή συγγένεια
+  Dragon Wings: Φτερά δράκου
+  Draconic Presence: Δρακονική παρουσία
+  Wild Shape: Άγρια μορφή
+  Druid Circle: Κύκλος δρυίδων
+  Timeless Body: Άχρονο σώμα
+  Beast Spells: Ξόρκια θηρίου
+  Archdruid: Αρχιδρυίδης
+  Fighting Style: Στυλ μάχης
+  Second Wind: Δεύτερη ανάσα
+  Action Surge: Έκρηξη δράσης
+  Action Surge (one use): Έκρηξη δράσης (μία χρήση)
+  Martial Archetype: Πολεμικό αρχέτυπο
+  Indomitable: Ακατάβλητος
+  Indomitable (one use): Ακατάβλητος (μία χρήση)
+  Extra Attack (2): Επιπλέον επίθεση (2)
+  Indomitable (two uses): Ακατάβλητος (δύο χρήσεις)
+  Action Surge (two uses): Έκρηξη δράσης (δύο χρήσεις)
+  Indomitable (three uses): Ακατάβλητος (τρεις χρήσεις)
+  Extra Attack (3): Επιπλέον επίθεση (3)
+  Hunter's Prey: Θήραμα του κυνηγού
+  Defensive Tactics: Αμυντικές τακτικές
+  Multiattack: Πολλαπλή επίθεση
+  Superior Hunter's Defense: Ανώτερη άμυνα του κυνηγού
+  Bonus Proficiency: Επιπλέον επάρκεια
+  Disciple of Life: Μαθητής της ζωής
+  "Channel Divinity: Preserve Life": "Διοχέτευση θεότητας: Διατήρηση ζωής"
+  Blessed Healer: Ευλογημένος θεραπευτής
+  Divine Strike: Θεϊκό χτύπημα
+  Supreme Healing: Υπέρτατη θεραπεία
+  Martial Arts: Πολεμικές τέχνες
+  Ki: Κι
+  Unarmored Movement: Κίνηση χωρίς πανοπλία
+  Monastic Tradition: Μοναστική παράδοση
+  Deflect Missiles: Εκτροπή βλημάτων
+  Slow Fall: Αργή πτώση
+  Stunning Strike: Ζαλιστικό χτύπημα
+  Ki-Empowered Strikes: Χτυπήματα ενισχυμένα με κι
+  Evasion: Αποφυγή
+  Stillness of Mind: Ηρεμία του νου
+  Purity of Body: Αγνότητα του σώματος
+  Tongue of the Sun and Moon: Γλώσσα του ήλιου και του φεγγαριού
+  Diamond Soul: Διαμαντένια ψυχή
+  Empty Body: Κενό σώμα
+  Perfect Self: Τέλειο εγώ
+  Tenets of Devotion: Αρχές της αφοσίωσης
+  Oath Spells: Ξόρκια όρκου
+  Aura of Devotion: Αύρα αφοσίωσης
+  Purity of Spirit: Αγνότητα πνεύματος
+  Holy Nimbus: Ιερό φωτοστέφανο
+  Divine Sense: Θεϊκή αίσθηση
+  Lay on Hands: Επίθεση χεριών
+  Divine Smite: Θεϊκή τιμωρία
+  Divine Health: Θεϊκή υγεία
+  Sacred Oath: Ιερός όρκος
+  Aura of Protection: Αύρα προστασίας
+  Aura of Courage: Αύρα θάρρους
+  Improved Divine Smite: Βελτιωμένη θεϊκή τιμωρία
+  Cleansing Touch: Καθαρτική αφή
+  Frenzy: Μανία
+  Mindless Rage: Άμυαλη οργή
+  Intimidating Presence: Εκφοβιστική παρουσία
+  Retaliation: Αντεκδίκηση
+  Favored Enemy: Αγαπημένος εχθρός
+  Natural Explorer: Φυσικός εξερευνητής
+  Ranger Archetype: Αρχέτυπο ρέιντζερ
+  Primeval Awareness: Αρχέγονη επίγνωση
+  Hide in Plain Sight: Απόκρυψη σε κοινή θέα
+  Vanish: Εξαφάνιση
+  Feral Senses: Άγριες αισθήσεις
+  Foe Slayer: Φονιάς εχθρών
+  Sneak Attack: Ύπουλη επίθεση
+  Cunning Action: Πονηρή ενέργεια
+  Roguish Archetype: Αρχέτυπο απατεώνα
+  Uncanny Dodge: Απόκοσμη αποφυγή
+  Reliable Talent: Αξιόπιστο ταλέντο
+  Blindsense: Τυφλή αίσθηση
+  Slippery Mind: Γλιστερό μυαλό
+  Elusive: Άπιαστος
+  Stroke of Luck: Χτύπημα τύχης
+  Evocation Savant: Σοφός της επίκλησης
+  Sculpt Spells: Πλάσιμο ξορκιών
+  Potent Cantrip: Ισχυρό μικροξόρκι
+  Empowered Evocation: Ενισχυμένη επίκληση
+  Overchannel: Υπερδιοχέτευση
+  Sorcerous Origin: Καταγωγή γόη
+  Font of Magic: Πηγή μαγείας
+  Metamagic: Μεταμαγεία
+  Sorcerous Restoration: Αποκατάσταση γόη
+  Expanded Spell List: Διευρυμένη λίστα ξορκιών
+  Dark One's Blessing: Ευλογία του σκοτεινού
+  Dark One's Own Luck: Τύχη του σκοτεινού
+  Fiendish Resilience: Δαιμονική ανθεκτικότητα
+  Hurl Through Hell: Εκτόξευση μέσα από την κόλαση
+  Fast Hands: Γρήγορα χέρια
+  Second-Story Work: Δουλειά στον δεύτερο όροφο
+  Supreme Sneak: Υπέρτατη αθόρυβη κίνηση
+  Use Magic Device: Χρήση μαγικής συσκευής
+  Thief's Reflexes: Αντανακλαστικά κλέφτη
+  Otherworldly Patron: Προστάτης από άλλον κόσμο
+  Pact Magic: Μαγεία συμφώνου
+  Eldritch Invocations: Απόκοσμες επικλήσεις
+  Pact Boon: Δώρο συμφώνου
+  Mystic Arcanum: Μυστικιστικό αρκάνουμ
+  Mystic Arcanum (6th level): Μυστικιστικό αρκάνουμ (επίπεδο 6)
+  Mystic Arcanum (7th level): Μυστικιστικό αρκάνουμ (επίπεδο 7)
+  Mystic Arcanum (8th level): Μυστικιστικό αρκάνουμ (επίπεδο 8)
+  Mystic Arcanum (9th level): Μυστικιστικό αρκάνουμ (επίπεδο 9)
+  Eldritch Master: Μάστορας του απόκοσμου
+  Open Hand Technique: Τεχνική του ανοιχτού χεριού
+  Wholeness of Body: Ακεραιότητα σώματος
+  Tranquility: Γαλήνη
+  Quivering Palm: Τρεμάμενη παλάμη
+  Arcane Recovery: Αρκάνα ανάκτηση
+  Arcane Tradition: Αρκάνα παράδοση
+  Spell Mastery: Κυριαρχία ξορκιών
+  Signature Spells: Χαρακτηριστικά ξόρκια
+  Bardic Inspiration (d10): Έμπνευση βάρδου (d10)
+  alchemist's supplies: εφόδια αλχημιστή
+  brewer's supplies: εφόδια ζυθοποιού
+  calligrapher's supplies: εφόδια καλλιγράφου
+  carpenter's tools: εργαλεία ξυλουργού
+  cartographer's tools: εργαλεία χαρτογράφου
+  cobbler's tools: εργαλεία τσαγκάρη
+  cook's utensils: σκεύη μάγειρα
+  glassblower's tools: εργαλεία υαλουργού
+  jeweler's tools: εργαλεία κοσμηματοποιού
+  leatherworker's tools: εργαλεία βυρσοδέψη
+  mason's tools: εργαλεία χτίστη
+  painter's supplies: εφόδια ζωγράφου
+  potter's tools: εργαλεία κεραμίστα
+  smith's tools: εργαλεία σιδερά
+  weaver's tools: εργαλεία υφαντή
+  woodcarver's tools: εργαλεία ξυλογλύπτη
+  disguise kit: κιτ μεταμφίεσης
+  forgery kit: κιτ πλαστογραφίας
+  dice set: σετ ζαριών
+  playing card set: τράπουλα
+  bagpipes: γκάιντα
+  drum: τύμπανο
+  dulcimer: σαντούρι
+  flute: φλάουτο
+  lute: λαούτο
+  lyre: λύρα
+  horn: κέρας
+  pan flute: φλογέρα του Πάνα
+  shawm: ζουρνάς
+  viol: βιόλα
+  navigator's tools: εργαλεία πλοηγού
+  poisoner's kit: κιτ δηλητηριαστή
+  vehicles: οχήματα
+  vehicles (land): οχήματα (χερσαία)
+  vehicles (water): οχήματα (υδάτινα)
 names:
   str: Δύναμη
   str-mod: Δύναμη

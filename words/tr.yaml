@@ -549,6 +549,222 @@ words:
   "Prepare": "Hazırla"
   "Prepare {item}": "{item} hazırla"
   "I prepare {item}.": "{item} hazırlıyorum."
+  Rage: Öfke
+  Unarmored Defense: Zırhsız Savunma
+  Reckless Attack: Pervasız Saldırı
+  Danger Sense: Tehlike Sezgisi
+  Primal Path: İlkel Yol
+  Ability Score Improvement: Yetenek Puanı Artışı
+  Extra Attack: Ek Saldırı
+  Fast Movement: Hızlı Hareket
+  Feral Instinct: Vahşi İçgüdü
+  Brutal Critical: Acımasız Kritik
+  Brutal Critical (1 die): Acımasız Kritik (1 zar)
+  Relentless Rage: Amansız Öfke
+  Brutal Critical (2 dice): Acımasız Kritik (2 zar)
+  Persistent Rage: Kalıcı Öfke
+  Brutal Critical (3 dice): Acımasız Kritik (3 zar)
+  Indomitable Might: Yenilmez Güç
+  Primal Champion: İlkel Şampiyon
+  Spellcasting: Büyü Yapma
+  Bardic Inspiration: Ozan İlhamı
+  Bardic Inspiration (d6): Ozan İlhamı (d6)
+  Jack of All Trades: Her İşin Ustası
+  Song of Rest: Dinlenme Şarkısı
+  Song of Rest (d6): Dinlenme Şarkısı (d6)
+  Bard College: Ozan Koleji
+  Expertise: Uzmanlık
+  Bardic Inspiration (d8): Ozan İlhamı (d8)
+  Font of Inspiration: İlham Kaynağı
+  Countercharm: Karşı Büyü
+  Song of Rest (d8): Dinlenme Şarkısı (d8)
+  Song of Rest (d10): Dinlenme Şarkısı (d10)
+  Magical Secrets: Büyülü Sırlar
+  Bardic Inspiration (d12): Ozan İlhamı (d12)
+  Song of Rest (d12): Dinlenme Şarkısı (d12)
+  Superior Inspiration: Üstün İlham
+  Improved Critical: Gelişmiş Kritik
+  Remarkable Athlete: Olağanüstü Atlet
+  Additional Fighting Style: Ek Dövüş Stili
+  Superior Critical: Üstün Kritik
+  Survivor: Hayatta Kalan
+  Bonus Cantrip: Bonus Küçük Büyü
+  Natural Recovery: Doğal Toparlanma
+  Circle Spells: Çember Büyüleri
+  Land's Stride: Arazi Adımı
+  Nature's Ward: Doğanın Koruması
+  Nature's Sanctuary: Doğanın Sığınağı
+  Divine Domain: İlahi Alan
+  Channel Divinity: İlahi Güç Aktarımı
+  Channel Divinity (1/rest): İlahi Güç Aktarımı (1/dinlenme)
+  Destroy Undead: Ölümsüzleri Yok Etme
+  Destroy Undead (CR 1/2): Ölümsüzleri Yok Etme (TD 1/2)
+  Channel Divinity (2/rest): İlahi Güç Aktarımı (2/dinlenme)
+  Destroy Undead (CR 1): Ölümsüzleri Yok Etme (TD 1)
+  Divine Intervention: İlahi Müdahale
+  Destroy Undead (CR 2): Ölümsüzleri Yok Etme (TD 2)
+  Destroy Undead (CR 3): Ölümsüzleri Yok Etme (TD 3)
+  Destroy Undead (CR 4): Ölümsüzleri Yok Etme (TD 4)
+  Channel Divinity (3/rest): İlahi Güç Aktarımı (3/dinlenme)
+  Bonus Proficiencies: Bonus Yeterlilikler
+  Cutting Words: Keskin Sözler
+  Additional Magical Secrets: Ek Büyülü Sırlar
+  Peerless Skill: Eşsiz Beceri
+  Dragon Ancestor: Ejderha Atası
+  Draconic Resilience: Ejderha Dayanıklılığı
+  Elemental Affinity: Element Yakınlığı
+  Dragon Wings: Ejderha Kanatları
+  Draconic Presence: Ejderha Varlığı
+  Wild Shape: Vahşi Biçim
+  Druid Circle: Druid Çemberi
+  Timeless Body: Zamansız Beden
+  Beast Spells: Hayvan Büyüleri
+  Archdruid: Baş Druid
+  Fighting Style: Dövüş Stili
+  Second Wind: İkinci Nefes
+  Action Surge: Eylem Atılımı
+  Action Surge (one use): Eylem Atılımı (bir kullanım)
+  Martial Archetype: Savaş Arketipi
+  Indomitable: Yılmaz
+  Indomitable (one use): Yılmaz (bir kullanım)
+  Extra Attack (2): Ek Saldırı (2)
+  Indomitable (two uses): Yılmaz (iki kullanım)
+  Action Surge (two uses): Eylem Atılımı (iki kullanım)
+  Indomitable (three uses): Yılmaz (üç kullanım)
+  Extra Attack (3): Ek Saldırı (3)
+  Hunter's Prey: Avcının Av Hayvanı
+  Defensive Tactics: Savunma Taktikleri
+  Multiattack: Çoklu Saldırı
+  Superior Hunter's Defense: Üstün Avcı Savunması
+  Bonus Proficiency: Bonus Yeterlilik
+  Disciple of Life: Yaşam Müridi
+  "Channel Divinity: Preserve Life": "İlahi Güç Aktarımı: Yaşamı Koru"
+  Blessed Healer: Kutsanmış Şifacı
+  Divine Strike: İlahi Vuruş
+  Supreme Healing: Yüce Şifa
+  Martial Arts: Dövüş Sanatları
+  Ki: Ki
+  Unarmored Movement: Zırhsız Hareket
+  Monastic Tradition: Manastır Geleneği
+  Deflect Missiles: Mermileri Saptırma
+  Slow Fall: Yavaş Düşüş
+  Stunning Strike: Sersemletici Vuruş
+  Ki-Empowered Strikes: Ki ile Güçlenmiş Vuruşlar
+  Evasion: Sıyrılma
+  Stillness of Mind: Zihin Sükûneti
+  Purity of Body: Beden Saflığı
+  Tongue of the Sun and Moon: Güneş ve Ay Dili
+  Diamond Soul: Elmas Ruh
+  Empty Body: Boş Beden
+  Perfect Self: Kusursuz Benlik
+  Tenets of Devotion: Bağlılık İlkeleri
+  Oath Spells: Yemin Büyüleri
+  Aura of Devotion: Bağlılık Aurası
+  Purity of Spirit: Ruh Saflığı
+  Holy Nimbus: Kutsal Hale
+  Divine Sense: İlahi His
+  Lay on Hands: Şifa Eli
+  Divine Smite: İlahi Darbe
+  Divine Health: İlahi Sağlık
+  Sacred Oath: Kutsal Yemin
+  Aura of Protection: Koruma Aurası
+  Aura of Courage: Cesaret Aurası
+  Improved Divine Smite: Gelişmiş İlahi Darbe
+  Cleansing Touch: Arındıran Dokunuş
+  Frenzy: Çılgınlık
+  Mindless Rage: Akılsız Öfke
+  Intimidating Presence: Gözdağı Veren Varlık
+  Retaliation: Karşılık
+  Favored Enemy: Gözde Düşman
+  Natural Explorer: Doğal Kâşif
+  Ranger Archetype: Korucu Arketipi
+  Primeval Awareness: İlkel Farkındalık
+  Hide in Plain Sight: Gözler Önünde Saklanma
+  Vanish: Yok Olma
+  Feral Senses: Vahşi Duyular
+  Foe Slayer: Düşman Katili
+  Sneak Attack: Sinsi Saldırı
+  Cunning Action: Kurnaz Eylem
+  Roguish Archetype: Haydut Arketipi
+  Uncanny Dodge: Tekinsiz Sıyrılma
+  Reliable Talent: Güvenilir Yetenek
+  Blindsense: Kör His
+  Slippery Mind: Kaygan Zihin
+  Elusive: Yakalanmaz
+  Stroke of Luck: Şans Darbesi
+  Evocation Savant: Evokasyon Bilgesi
+  Sculpt Spells: Büyüleri Şekillendirme
+  Potent Cantrip: Güçlü Küçük Büyü
+  Empowered Evocation: Güçlendirilmiş Evokasyon
+  Overchannel: Aşırı Aktarım
+  Sorcerous Origin: Büyücü Kökeni
+  Font of Magic: Büyü Kaynağı
+  Metamagic: Metabüyü
+  Sorcerous Restoration: Büyücü Yenilenmesi
+  Expanded Spell List: Genişletilmiş Büyü Listesi
+  Dark One's Blessing: Karanlık Varlığın Kutsaması
+  Dark One's Own Luck: Karanlık Varlığın Şansı
+  Fiendish Resilience: Cehennemi Dayanıklılık
+  Hurl Through Hell: Cehenneme Fırlatma
+  Fast Hands: Hızlı Eller
+  Second-Story Work: Üst Kat Hırsızlığı
+  Supreme Sneak: Yüce Sinsilik
+  Use Magic Device: Büyülü Eşya Kullanma
+  Thief's Reflexes: Hırsız Refleksleri
+  Otherworldly Patron: Öte Alem Hamisi
+  Pact Magic: Pakt Büyüsü
+  Eldritch Invocations: Tekinsiz Çağrılar
+  Pact Boon: Pakt Armağanı
+  Mystic Arcanum: Mistik Arkanum
+  Mystic Arcanum (6th level): Mistik Arkanum (6. seviye)
+  Mystic Arcanum (7th level): Mistik Arkanum (7. seviye)
+  Mystic Arcanum (8th level): Mistik Arkanum (8. seviye)
+  Mystic Arcanum (9th level): Mistik Arkanum (9. seviye)
+  Eldritch Master: Tekinsiz Usta
+  Open Hand Technique: Açık El Tekniği
+  Wholeness of Body: Beden Bütünlüğü
+  Tranquility: Dinginlik
+  Quivering Palm: Titreyen Avuç
+  Arcane Recovery: Arkan Toparlanma
+  Arcane Tradition: Arkan Gelenek
+  Spell Mastery: Büyü Ustalığı
+  Signature Spells: İmza Büyüleri
+  Bardic Inspiration (d10): Ozan İlhamı (d10)
+  alchemist's supplies: simyacı malzemeleri
+  brewer's supplies: bira yapımcısı malzemeleri
+  calligrapher's supplies: hattat malzemeleri
+  carpenter's tools: marangoz aletleri
+  cartographer's tools: haritacı aletleri
+  cobbler's tools: ayakkabı tamircisi aletleri
+  cook's utensils: aşçı gereçleri
+  glassblower's tools: cam üfleyici aletleri
+  jeweler's tools: kuyumcu aletleri
+  leatherworker's tools: deri işçisi aletleri
+  mason's tools: taş ustası aletleri
+  painter's supplies: ressam malzemeleri
+  potter's tools: çömlekçi aletleri
+  smith's tools: demirci aletleri
+  weaver's tools: dokumacı aletleri
+  woodcarver's tools: ahşap oymacı aletleri
+  disguise kit: kılık değiştirme seti
+  forgery kit: sahtecilik seti
+  dice set: zar seti
+  playing card set: iskambil destesi
+  bagpipes: gayda
+  drum: davul
+  dulcimer: dulcimer
+  flute: flüt
+  lute: lavta
+  lyre: lir
+  horn: boru
+  pan flute: pan flütü
+  shawm: zurna
+  viol: viyol
+  navigator's tools: seyrüsefer aletleri
+  poisoner's kit: zehirci seti
+  vehicles: araçlar
+  vehicles (land): araçlar (kara)
+  vehicles (water): araçlar (su)
 names:
   str: Güç
   str-mod: Güç

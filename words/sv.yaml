@@ -549,6 +549,222 @@ words:
   "Prepare": "Förbered"
   "Prepare {item}": "Förbered {item}"
   "I prepare {item}.": "Jag förbereder {item}."
+  Rage: Raserianfall
+  Unarmored Defense: Försvar utan rustning
+  Reckless Attack: Hänsynslös attack
+  Danger Sense: Farosinne
+  Primal Path: Urstig
+  Ability Score Improvement: Egenskapshöjning
+  Extra Attack: Extra attack
+  Fast Movement: Snabb rörelse
+  Feral Instinct: Vild instinkt
+  Brutal Critical: Brutal kritisk träff
+  Brutal Critical (1 die): Brutal kritisk träff (1 tärning)
+  Relentless Rage: Obevekligt raserianfall
+  Brutal Critical (2 dice): Brutal kritisk träff (2 tärningar)
+  Persistent Rage: Ihållande raserianfall
+  Brutal Critical (3 dice): Brutal kritisk träff (3 tärningar)
+  Indomitable Might: Oböjlig kraft
+  Primal Champion: Urkämpe
+  Spellcasting: Besvärjelsekastning
+  Bardic Inspiration: Bardisk inspiration
+  Bardic Inspiration (d6): Bardisk inspiration (d6)
+  Jack of All Trades: Mångsysslare
+  Song of Rest: Vilosång
+  Song of Rest (d6): Vilosång (d6)
+  Bard College: Bardkollegium
+  Expertise: Expertis
+  Bardic Inspiration (d8): Bardisk inspiration (d8)
+  Font of Inspiration: Inspirationens källa
+  Countercharm: Motförtrollning
+  Song of Rest (d8): Vilosång (d8)
+  Song of Rest (d10): Vilosång (d10)
+  Magical Secrets: Magiska hemligheter
+  Bardic Inspiration (d12): Bardisk inspiration (d12)
+  Song of Rest (d12): Vilosång (d12)
+  Superior Inspiration: Överlägsen inspiration
+  Improved Critical: Förbättrad kritisk träff
+  Remarkable Athlete: Anmärkningsvärd atlet
+  Additional Fighting Style: Ytterligare stridsstil
+  Superior Critical: Överlägsen kritisk träff
+  Survivor: Överlevare
+  Bonus Cantrip: Bonustrick
+  Natural Recovery: Naturlig återhämtning
+  Circle Spells: Cirkelbesvärjelser
+  Land's Stride: Landets steg
+  Nature's Ward: Naturens skydd
+  Nature's Sanctuary: Naturens fristad
+  Divine Domain: Gudomlig domän
+  Channel Divinity: Kanalisera gudomlighet
+  Channel Divinity (1/rest): Kanalisera gudomlighet (1/vila)
+  Destroy Undead: Förgör odöda
+  Destroy Undead (CR 1/2): Förgör odöda (utmaningsnivå 1/2)
+  Channel Divinity (2/rest): Kanalisera gudomlighet (2/vila)
+  Destroy Undead (CR 1): Förgör odöda (utmaningsnivå 1)
+  Divine Intervention: Gudomligt ingripande
+  Destroy Undead (CR 2): Förgör odöda (utmaningsnivå 2)
+  Destroy Undead (CR 3): Förgör odöda (utmaningsnivå 3)
+  Destroy Undead (CR 4): Förgör odöda (utmaningsnivå 4)
+  Channel Divinity (3/rest): Kanalisera gudomlighet (3/vila)
+  Bonus Proficiencies: Bonuskunskaper
+  Cutting Words: Skärande ord
+  Additional Magical Secrets: Ytterligare magiska hemligheter
+  Peerless Skill: Oöverträffad skicklighet
+  Dragon Ancestor: Drakförfader
+  Draconic Resilience: Drakisk seghet
+  Elemental Affinity: Elementär affinitet
+  Dragon Wings: Drakvingar
+  Draconic Presence: Drakisk närvaro
+  Wild Shape: Vild gestalt
+  Druid Circle: Druidcirkel
+  Timeless Body: Tidlös kropp
+  Beast Spells: Bestbesvärjelser
+  Archdruid: Ärkedruid
+  Fighting Style: Stridsstil
+  Second Wind: Andrum
+  Action Surge: Handlingsutbrott
+  Action Surge (one use): Handlingsutbrott (en användning)
+  Martial Archetype: Stridsarketyp
+  Indomitable: Oböjlig
+  Indomitable (one use): Oböjlig (en användning)
+  Extra Attack (2): Extra attack (2)
+  Indomitable (two uses): Oböjlig (två användningar)
+  Action Surge (two uses): Handlingsutbrott (två användningar)
+  Indomitable (three uses): Oböjlig (tre användningar)
+  Extra Attack (3): Extra attack (3)
+  Hunter's Prey: Jägarens byte
+  Defensive Tactics: Defensiv taktik
+  Multiattack: Multiattack
+  Superior Hunter's Defense: Jägarens överlägsna försvar
+  Bonus Proficiency: Bonuskunskap
+  Disciple of Life: Livets lärjunge
+  "Channel Divinity: Preserve Life": "Kanalisera gudomlighet: Bevara liv"
+  Blessed Healer: Välsignad helare
+  Divine Strike: Gudomligt slag
+  Supreme Healing: Högsta helande
+  Martial Arts: Kampsport
+  Ki: Ki
+  Unarmored Movement: Rörelse utan rustning
+  Monastic Tradition: Klostertradition
+  Deflect Missiles: Avvärja projektiler
+  Slow Fall: Långsamt fall
+  Stunning Strike: Bedövande slag
+  Ki-Empowered Strikes: Kiförstärkta slag
+  Evasion: Undanmanöver
+  Stillness of Mind: Sinnets stillhet
+  Purity of Body: Kroppens renhet
+  Tongue of the Sun and Moon: Solens och månens tunga
+  Diamond Soul: Diamantsjäl
+  Empty Body: Tom kropp
+  Perfect Self: Fulländat jag
+  Tenets of Devotion: Hängivenhetens grundsatser
+  Oath Spells: Edsbesvärjelser
+  Aura of Devotion: Hängivenhetens aura
+  Purity of Spirit: Andens renhet
+  Holy Nimbus: Helig gloria
+  Divine Sense: Gudomlig känsla
+  Lay on Hands: Handpåläggning
+  Divine Smite: Gudomlig bestraffning
+  Divine Health: Gudomlig hälsa
+  Sacred Oath: Helig ed
+  Aura of Protection: Beskyddets aura
+  Aura of Courage: Modets aura
+  Improved Divine Smite: Förbättrad gudomlig bestraffning
+  Cleansing Touch: Renande beröring
+  Frenzy: Vansinne
+  Mindless Rage: Sinnslöst raserianfall
+  Intimidating Presence: Skrämmande närvaro
+  Retaliation: Vedergällning
+  Favored Enemy: Favoritfiende
+  Natural Explorer: Naturlig upptäcktsresande
+  Ranger Archetype: Rangerarketyp
+  Primeval Awareness: Urtida medvetenhet
+  Hide in Plain Sight: Dölja sig i fullt dagsljus
+  Vanish: Försvinna
+  Feral Senses: Vilda sinnen
+  Foe Slayer: Fiendedräpare
+  Sneak Attack: Hinderlös attack
+  Cunning Action: Listig handling
+  Roguish Archetype: Skurkarketyp
+  Uncanny Dodge: Övernaturlig undanmanöver
+  Reliable Talent: Pålitlig talang
+  Blindsense: Blindsinne
+  Slippery Mind: Slipprigt sinne
+  Elusive: Svårfångad
+  Stroke of Luck: Lyckoträff
+  Evocation Savant: Evokationslärd
+  Sculpt Spells: Forma besvärjelser
+  Potent Cantrip: Kraftfullt trick
+  Empowered Evocation: Förstärkt evokation
+  Overchannel: Överkanalisera
+  Sorcerous Origin: Besvärjarursprung
+  Font of Magic: Magins källa
+  Metamagic: Metamagi
+  Sorcerous Restoration: Besvärjarens återhämtning
+  Expanded Spell List: Utökad besvärjelselista
+  Dark One's Blessing: Den mörkes välsignelse
+  Dark One's Own Luck: Den mörkes egen tur
+  Fiendish Resilience: Djävulsk seghet
+  Hurl Through Hell: Slunga genom helvetet
+  Fast Hands: Snabba händer
+  Second-Story Work: Fasadklättring
+  Supreme Sneak: Högsta smygkonst
+  Use Magic Device: Använda magiska föremål
+  Thief's Reflexes: Tjuvens reflexer
+  Otherworldly Patron: Övervärldslig beskyddare
+  Pact Magic: Paktmagi
+  Eldritch Invocations: Övernaturliga åkallanden
+  Pact Boon: Paktgåva
+  Mystic Arcanum: Mystiskt arkanum
+  Mystic Arcanum (6th level): Mystiskt arkanum (nivå 6)
+  Mystic Arcanum (7th level): Mystiskt arkanum (nivå 7)
+  Mystic Arcanum (8th level): Mystiskt arkanum (nivå 8)
+  Mystic Arcanum (9th level): Mystiskt arkanum (nivå 9)
+  Eldritch Master: Övernaturlig mästare
+  Open Hand Technique: Öppna handens teknik
+  Wholeness of Body: Kroppens helhet
+  Tranquility: Stillhet
+  Quivering Palm: Darrande handflata
+  Arcane Recovery: Arkan återhämtning
+  Arcane Tradition: Arkan tradition
+  Spell Mastery: Besvärjelsemästerskap
+  Signature Spells: Signaturbesvärjelser
+  Bardic Inspiration (d10): Bardisk inspiration (d10)
+  alchemist's supplies: alkemistutrustning
+  brewer's supplies: bryggarutrustning
+  calligrapher's supplies: kalligrafiutrustning
+  carpenter's tools: snickarverktyg
+  cartographer's tools: kartografverktyg
+  cobbler's tools: skomakarverktyg
+  cook's utensils: kockredskap
+  glassblower's tools: glasblåsarverktyg
+  jeweler's tools: juvelerarverktyg
+  leatherworker's tools: läderarbetarverktyg
+  mason's tools: murarverktyg
+  painter's supplies: målarutrustning
+  potter's tools: krukmakarverktyg
+  smith's tools: smedsverktyg
+  weaver's tools: vävarverktyg
+  woodcarver's tools: träsnidarverktyg
+  disguise kit: förklädnadsutrustning
+  forgery kit: förfalskningsutrustning
+  dice set: tärningsset
+  playing card set: kortlek
+  bagpipes: säckpipa
+  drum: trumma
+  dulcimer: hammarspel
+  flute: flöjt
+  lute: luta
+  lyre: lyra
+  horn: horn
+  pan flute: panflöjt
+  shawm: skalmeja
+  viol: viol
+  navigator's tools: navigatörsverktyg
+  poisoner's kit: giftblandarutrustning
+  vehicles: fordon
+  vehicles (land): fordon (land)
+  vehicles (water): fordon (vatten)
 names:
   str: Styrka
   str-mod: Styrka

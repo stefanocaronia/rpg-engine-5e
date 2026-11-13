@@ -549,6 +549,222 @@ words:
   "Prepare": "準備"
   "Prepare {item}": "{item}を準備"
   "I prepare {item}.": "{item}を準備します。"
+  Rage: 激怒
+  Unarmored Defense: 鎧なし防御
+  Reckless Attack: 無謀な攻撃
+  Danger Sense: 危険感知
+  Primal Path: 原初の道
+  Ability Score Improvement: 能力値上昇
+  Extra Attack: 追加攻撃
+  Fast Movement: 高速移動
+  Feral Instinct: 野性の本能
+  Brutal Critical: 無慈悲なる一撃
+  Brutal Critical (1 die): 無慈悲なる一撃(ダイス1個)
+  Relentless Rage: 止まらぬ激怒
+  Brutal Critical (2 dice): 無慈悲なる一撃(ダイス2個)
+  Persistent Rage: 持続する激怒
+  Brutal Critical (3 dice): 無慈悲なる一撃(ダイス3個)
+  Indomitable Might: 不屈の剛力
+  Primal Champion: 原初の勇者
+  Spellcasting: 呪文発動
+  Bardic Inspiration: バードのインスピレーション
+  Bardic Inspiration (d6): バードのインスピレーション(d6)
+  Jack of All Trades: 万能の達人
+  Song of Rest: 安らぎの歌
+  Song of Rest (d6): 安らぎの歌(d6)
+  Bard College: バードの学院
+  Expertise: 達人
+  Bardic Inspiration (d8): バードのインスピレーション(d8)
+  Font of Inspiration: インスピレーションの源泉
+  Countercharm: 対抗魅惑
+  Song of Rest (d8): 安らぎの歌(d8)
+  Song of Rest (d10): 安らぎの歌(d10)
+  Magical Secrets: 魔法の秘密
+  Bardic Inspiration (d12): バードのインスピレーション(d12)
+  Song of Rest (d12): 安らぎの歌(d12)
+  Superior Inspiration: 優れたインスピレーション
+  Improved Critical: 強化クリティカル
+  Remarkable Athlete: 驚異的な運動能力
+  Additional Fighting Style: 追加の戦闘スタイル
+  Superior Critical: 上位クリティカル
+  Survivor: 生還者
+  Bonus Cantrip: ボーナス・キャントリップ
+  Natural Recovery: 自然回復
+  Circle Spells: サークル呪文
+  Land's Stride: 大地の歩み
+  Nature's Ward: 自然の守り
+  Nature's Sanctuary: 自然の聖域
+  Divine Domain: 神聖領域
+  Channel Divinity: 神性の発動
+  Channel Divinity (1/rest): 神性の発動(1回/レスト)
+  Destroy Undead: アンデッド破壊
+  Destroy Undead (CR 1/2): アンデッド破壊(脅威度1/2)
+  Channel Divinity (2/rest): 神性の発動(2回/レスト)
+  Destroy Undead (CR 1): アンデッド破壊(脅威度1)
+  Divine Intervention: 神の介入
+  Destroy Undead (CR 2): アンデッド破壊(脅威度2)
+  Destroy Undead (CR 3): アンデッド破壊(脅威度3)
+  Destroy Undead (CR 4): アンデッド破壊(脅威度4)
+  Channel Divinity (3/rest): 神性の発動(3回/レスト)
+  Bonus Proficiencies: ボーナス習熟
+  Cutting Words: 痛烈な言葉
+  Additional Magical Secrets: 追加の魔法の秘密
+  Peerless Skill: 比類なき技量
+  Dragon Ancestor: ドラゴンの祖先
+  Draconic Resilience: ドラゴンの強靭さ
+  Elemental Affinity: 元素との親和
+  Dragon Wings: ドラゴンの翼
+  Draconic Presence: ドラゴンの威容
+  Wild Shape: 野生変身
+  Druid Circle: ドルイドのサークル
+  Timeless Body: 不老の肉体
+  Beast Spells: 野獣呪文
+  Archdruid: 大ドルイド
+  Fighting Style: 戦闘スタイル
+  Second Wind: 呼吸の整え
+  Action Surge: アクション・サージ
+  Action Surge (one use): アクション・サージ(1回)
+  Martial Archetype: 武芸の型
+  Indomitable: 不屈
+  Indomitable (one use): 不屈(1回)
+  Extra Attack (2): 追加攻撃(2)
+  Indomitable (two uses): 不屈(2回)
+  Action Surge (two uses): アクション・サージ(2回)
+  Indomitable (three uses): 不屈(3回)
+  Extra Attack (3): 追加攻撃(3)
+  Hunter's Prey: 狩人の獲物
+  Defensive Tactics: 防御戦術
+  Multiattack: 連続攻撃
+  Superior Hunter's Defense: 優れた狩人の防御
+  Bonus Proficiency: ボーナス習熟
+  Disciple of Life: 生命の弟子
+  "Channel Divinity: Preserve Life": 神性の発動:生命の保持
+  Blessed Healer: 祝福された癒し手
+  Divine Strike: 神聖なる一撃
+  Supreme Healing: 至高の癒し
+  Martial Arts: マーシャルアーツ
+  Ki: 気
+  Unarmored Movement: 鎧なしの移動
+  Monastic Tradition: 修道の伝統
+  Deflect Missiles: 矢弾逸らし
+  Slow Fall: 落下緩和
+  Stunning Strike: 朦朧化打撃
+  Ki-Empowered Strikes: 気による強化打撃
+  Evasion: 回避
+  Stillness of Mind: 心の静寂
+  Purity of Body: 肉体の純潔
+  Tongue of the Sun and Moon: 太陽と月の言葉
+  Diamond Soul: ダイヤの魂
+  Empty Body: 空の身体
+  Perfect Self: 完全なる自己
+  Tenets of Devotion: 献身の教義
+  Oath Spells: 誓いの呪文
+  Aura of Devotion: 献身のオーラ
+  Purity of Spirit: 精神の純潔
+  Holy Nimbus: 聖なる光輪
+  Divine Sense: 神聖な感知
+  Lay on Hands: 癒しの手
+  Divine Smite: 神聖なる打撃
+  Divine Health: 神聖なる健康
+  Sacred Oath: 聖なる誓い
+  Aura of Protection: 守りのオーラ
+  Aura of Courage: 勇気のオーラ
+  Improved Divine Smite: 強化神聖なる打撃
+  Cleansing Touch: 浄化の接触
+  Frenzy: 狂乱
+  Mindless Rage: 無心の激怒
+  Intimidating Presence: 威圧的な存在感
+  Retaliation: 報復
+  Favored Enemy: 得意な敵
+  Natural Explorer: 生来の探索者
+  Ranger Archetype: レンジャーの型
+  Primeval Awareness: 原初の感知
+  Hide in Plain Sight: 目前の隠密
+  Vanish: 消失
+  Feral Senses: 野性の感覚
+  Foe Slayer: 敵の殺し手
+  Sneak Attack: 急所攻撃
+  Cunning Action: 巧みなアクション
+  Roguish Archetype: ローグの型
+  Uncanny Dodge: 見切り
+  Reliable Talent: 信頼できる才能
+  Blindsense: 盲感知
+  Slippery Mind: 捉えがたい精神
+  Elusive: 捉えがたき者
+  Stroke of Luck: 幸運の一撃
+  Evocation Savant: 力術の賢者
+  Sculpt Spells: 呪文形成
+  Potent Cantrip: 強力なキャントリップ
+  Empowered Evocation: 強化された力術
+  Overchannel: 過剰魔力
+  Sorcerous Origin: ソーサラーの起源
+  Font of Magic: 魔力の源泉
+  Metamagic: メタマジック
+  Sorcerous Restoration: ソーサラーの回復
+  Expanded Spell List: 拡張呪文リスト
+  Dark One's Blessing: 闇の者の祝福
+  Dark One's Own Luck: 闇の者の幸運
+  Fiendish Resilience: 邪悪なる強靭さ
+  Hurl Through Hell: 地獄への投擲
+  Fast Hands: 素早い手
+  Second-Story Work: 屋上の技
+  Supreme Sneak: 至高の忍び足
+  Use Magic Device: 魔法の道具の使用
+  Thief's Reflexes: 盗賊の反射神経
+  Otherworldly Patron: 異界の庇護者
+  Pact Magic: 契約魔法
+  Eldritch Invocations: 祈願
+  Pact Boon: 契約の恩恵
+  Mystic Arcanum: 神秘の秘術
+  Mystic Arcanum (6th level): 神秘の秘術(6レベル)
+  Mystic Arcanum (7th level): 神秘の秘術(7レベル)
+  Mystic Arcanum (8th level): 神秘の秘術(8レベル)
+  Mystic Arcanum (9th level): 神秘の秘術(9レベル)
+  Eldritch Master: 魔術の達人
+  Open Hand Technique: 開かれた手の技
+  Wholeness of Body: 肉体の完全性
+  Tranquility: 静謐
+  Quivering Palm: 振動掌
+  Arcane Recovery: 秘術回復
+  Arcane Tradition: 秘術の伝統
+  Spell Mastery: 呪文の達人
+  Signature Spells: 得意呪文
+  Bardic Inspiration (d10): バードのインスピレーション(d10)
+  alchemist's supplies: 錬金術用具
+  brewer's supplies: 醸造用具
+  calligrapher's supplies: 書道用具
+  carpenter's tools: 大工道具
+  cartographer's tools: 地図製作者道具
+  cobbler's tools: 靴屋道具
+  cook's utensils: 料理人道具
+  glassblower's tools: ガラス吹き道具
+  jeweler's tools: 宝石細工道具
+  leatherworker's tools: 革細工道具
+  mason's tools: 石工道具
+  painter's supplies: 画家用具
+  potter's tools: 陶工道具
+  smith's tools: 鍛冶道具
+  weaver's tools: 織工道具
+  woodcarver's tools: 木彫り道具
+  disguise kit: 変装用具
+  forgery kit: 偽造用具
+  dice set: ダイス・セット
+  playing card set: トランプ・セット
+  bagpipes: バグパイプ
+  drum: ドラム
+  dulcimer: ダルシマー
+  flute: フルート
+  lute: リュート
+  lyre: リラ
+  horn: ホルン
+  pan flute: パンフルート
+  shawm: ショーム
+  viol: ヴィオール
+  navigator's tools: 航海者道具
+  poisoner's kit: 毒物師用具
+  vehicles: 乗り物
+  vehicles (land): 乗り物(陸上)
+  vehicles (water): 乗り物(水上)
 names:
   str: 筋力
   str-mod: 筋力

@@ -19,7 +19,7 @@ Un halfling raggiunge la maturità a 20 anni e generalmente vive circa fino alla
 Un halfling è alto circa 90 cm e pesa circa 20 kg. È una creatura di taglia Piccola.
 
 ### Velocità
-La velocità base sul terreno di un nano è di 7,5 metri.
+La velocità base sul terreno di un halfling è di 7,5 metri.
 
 ### Fortunato
 Quando ottiene 1 con un d20 a un tiro per colpire, a una prova di caratteristica o a un tiro salvezza, un halfling può ripetere il tiro del dado e deve usare il nuovo risultato.

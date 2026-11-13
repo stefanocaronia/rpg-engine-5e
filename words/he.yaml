@@ -549,6 +549,222 @@ words:
   "Prepare": "להכין"
   "Prepare {item}": "להכין {item}"
   "I prepare {item}.": "אכין את {item}."
+  Rage: זעם
+  Unarmored Defense: הגנה ללא שריון
+  Reckless Attack: התקפה פזיזה
+  Danger Sense: חוש סכנה
+  Primal Path: דרך קדמונית
+  Ability Score Improvement: שיפור ערכי תכונות
+  Extra Attack: התקפה נוספת
+  Fast Movement: תנועה מהירה
+  Feral Instinct: אינסטינקט פראי
+  Brutal Critical: פגיעה קריטית אכזרית
+  Brutal Critical (1 die): פגיעה קריטית אכזרית (קובייה אחת)
+  Relentless Rage: זעם בלתי פוסק
+  Brutal Critical (2 dice): פגיעה קריטית אכזרית (2 קוביות)
+  Persistent Rage: זעם מתמשך
+  Brutal Critical (3 dice): פגיעה קריטית אכזרית (3 קוביות)
+  Indomitable Might: עוצמה בלתי נכנעת
+  Primal Champion: אלוף קדמוני
+  Spellcasting: הטלת כישופים
+  Bardic Inspiration: השראת בארד
+  Bardic Inspiration (d6): השראת בארד (d6)
+  Jack of All Trades: שבע מלאכות
+  Song of Rest: שיר מנוחה
+  Song of Rest (d6): שיר מנוחה (d6)
+  Bard College: קולג׳ בארדים
+  Expertise: מומחיות
+  Bardic Inspiration (d8): השראת בארד (d8)
+  Font of Inspiration: מעיין השראה
+  Countercharm: קסם נגדי
+  Song of Rest (d8): שיר מנוחה (d8)
+  Song of Rest (d10): שיר מנוחה (d10)
+  Magical Secrets: סודות קסומים
+  Bardic Inspiration (d12): השראת בארד (d12)
+  Song of Rest (d12): שיר מנוחה (d12)
+  Superior Inspiration: השראה עליונה
+  Improved Critical: פגיעה קריטית משופרת
+  Remarkable Athlete: ספורטאי יוצא דופן
+  Additional Fighting Style: סגנון לחימה נוסף
+  Superior Critical: פגיעה קריטית עליונה
+  Survivor: שורד
+  Bonus Cantrip: קסמון בונוס
+  Natural Recovery: התאוששות טבעית
+  Circle Spells: כישופי המעגל
+  Land's Stride: צעידה על האדמה
+  Nature's Ward: מגן הטבע
+  Nature's Sanctuary: מקלט הטבע
+  Divine Domain: תחום אלוהי
+  Channel Divinity: תעלת אלוהות
+  Channel Divinity (1/rest): תעלת אלוהות (1/מנוחה)
+  Destroy Undead: השמדת מת-חי
+  Destroy Undead (CR 1/2): השמדת מת-חי (דרג״א 1/2)
+  Channel Divinity (2/rest): תעלת אלוהות (2/מנוחה)
+  Destroy Undead (CR 1): השמדת מת-חי (דרג״א 1)
+  Divine Intervention: התערבות אלוהית
+  Destroy Undead (CR 2): השמדת מת-חי (דרג״א 2)
+  Destroy Undead (CR 3): השמדת מת-חי (דרג״א 3)
+  Destroy Undead (CR 4): השמדת מת-חי (דרג״א 4)
+  Channel Divinity (3/rest): תעלת אלוהות (3/מנוחה)
+  Bonus Proficiencies: הכשרות בונוס
+  Cutting Words: מילים חותכות
+  Additional Magical Secrets: סודות קסומים נוספים
+  Peerless Skill: מיומנות ללא תחרות
+  Dragon Ancestor: אב קדמון דרקוני
+  Draconic Resilience: עמידות דרקונית
+  Elemental Affinity: קרבה ליסוד
+  Dragon Wings: כנפי דרקון
+  Draconic Presence: נוכחות דרקונית
+  Wild Shape: צורת פרא
+  Druid Circle: מעגל דרואידים
+  Timeless Body: גוף על-זמני
+  Beast Spells: כישופי חיה
+  Archdruid: ארכי-דרואיד
+  Fighting Style: סגנון לחימה
+  Second Wind: רוח שנייה
+  Action Surge: פרץ פעולה
+  Action Surge (one use): פרץ פעולה (שימוש אחד)
+  Martial Archetype: אבטיפוס לוחם
+  Indomitable: בלתי נכנע
+  Indomitable (one use): בלתי נכנע (שימוש אחד)
+  Extra Attack (2): התקפה נוספת (2)
+  Indomitable (two uses): בלתי נכנע (שני שימושים)
+  Action Surge (two uses): פרץ פעולה (שני שימושים)
+  Indomitable (three uses): בלתי נכנע (שלושה שימושים)
+  Extra Attack (3): התקפה נוספת (3)
+  Hunter's Prey: טרף הצייד
+  Defensive Tactics: טקטיקות הגנה
+  Multiattack: התקפה מרובה
+  Superior Hunter's Defense: הגנת צייד עליונה
+  Bonus Proficiency: הכשרת בונוס
+  Disciple of Life: תלמיד החיים
+  "Channel Divinity: Preserve Life": "תעלת אלוהות: שימור חיים"
+  Blessed Healer: מרפא מבורך
+  Divine Strike: מכה אלוהית
+  Supreme Healing: ריפוי עליון
+  Martial Arts: אמנויות לחימה
+  Ki: קי
+  Unarmored Movement: תנועה ללא שריון
+  Monastic Tradition: מסורת נזירית
+  Deflect Missiles: הדיית קליעים
+  Slow Fall: נפילה איטית
+  Stunning Strike: מכה מדהימה
+  Ki-Empowered Strikes: מכות מוגברות בקי
+  Evasion: התחמקות
+  Stillness of Mind: שקט הנפש
+  Purity of Body: טוהר הגוף
+  Tongue of the Sun and Moon: לשון השמש והירח
+  Diamond Soul: נשמת יהלום
+  Empty Body: גוף ריק
+  Perfect Self: האני המושלם
+  Tenets of Devotion: עקרונות המסירות
+  Oath Spells: כישופי השבועה
+  Aura of Devotion: הילת מסירות
+  Purity of Spirit: טוהר הרוח
+  Holy Nimbus: הילה קדושה
+  Divine Sense: חוש אלוהי
+  Lay on Hands: הנחת ידיים
+  Divine Smite: מחץ אלוהי
+  Divine Health: בריאות אלוהית
+  Sacred Oath: שבועה קדושה
+  Aura of Protection: הילת הגנה
+  Aura of Courage: הילת אומץ
+  Improved Divine Smite: מחץ אלוהי משופר
+  Cleansing Touch: מגע מטהר
+  Frenzy: טירוף
+  Mindless Rage: זעם חסר דעת
+  Intimidating Presence: נוכחות מאיימת
+  Retaliation: תגמול
+  Favored Enemy: אויב מועדף
+  Natural Explorer: מגלה ארצות טבעי
+  Ranger Archetype: אבטיפוס ריינג׳ר
+  Primeval Awareness: מודעות קדמונית
+  Hide in Plain Sight: הסתתרות לעיני כול
+  Vanish: היעלמות
+  Feral Senses: חושים פראיים
+  Foe Slayer: קטלן אויבים
+  Sneak Attack: התקפה ערמומית
+  Cunning Action: פעולה ערמומית
+  Roguish Archetype: אבטיפוס נוכל
+  Uncanny Dodge: התחמקות מופלאה
+  Reliable Talent: כישרון אמין
+  Blindsense: חוש עיוור
+  Slippery Mind: תודעה חלקלקה
+  Elusive: חמקמק
+  Stroke of Luck: מכת מזל
+  Evocation Savant: מלומד ההזעקה
+  Sculpt Spells: עיצוב כישופים
+  Potent Cantrip: קסמון עוצמתי
+  Empowered Evocation: הזעקה מוגברת
+  Overchannel: תעלות יתר
+  Sorcerous Origin: מקור קסם
+  Font of Magic: מעיין קסם
+  Metamagic: מטא-קסם
+  Sorcerous Restoration: התאוששות קסם
+  Expanded Spell List: רשימת כישופים מורחבת
+  Dark One's Blessing: ברכת האפל
+  Dark One's Own Luck: מזלו של האפל
+  Fiendish Resilience: עמידות שטנית
+  Hurl Through Hell: השלכה דרך הגיהנום
+  Fast Hands: ידיים מהירות
+  Second-Story Work: עבודת קומה שנייה
+  Supreme Sneak: התגנבות עליונה
+  Use Magic Device: שימוש בחפץ קסום
+  Thief's Reflexes: רפלקסים של גנב
+  Otherworldly Patron: פטרון מעולם אחר
+  Pact Magic: קסם הברית
+  Eldritch Invocations: הפצרות
+  Pact Boon: מתת הברית
+  Mystic Arcanum: ארקנום מיסטי
+  Mystic Arcanum (6th level): ארקנום מיסטי (רמה 6)
+  Mystic Arcanum (7th level): ארקנום מיסטי (רמה 7)
+  Mystic Arcanum (8th level): ארקנום מיסטי (רמה 8)
+  Mystic Arcanum (9th level): ארקנום מיסטי (רמה 9)
+  Eldritch Master: אדון הכישוף האפל
+  Open Hand Technique: טכניקת כף היד הפתוחה
+  Wholeness of Body: שלמות הגוף
+  Tranquility: שלווה
+  Quivering Palm: כף יד רועדת
+  Arcane Recovery: התאוששות מיסטית
+  Arcane Tradition: מסורת מיסטית
+  Spell Mastery: שליטה בכישופים
+  Signature Spells: כישופים מזוהים
+  Bardic Inspiration (d10): השראת בארד (d10)
+  alchemist's supplies: ציוד אלכימאי
+  brewer's supplies: ציוד מבשל בירה
+  calligrapher's supplies: ציוד קליגרף
+  carpenter's tools: כלי נגר
+  cartographer's tools: כלי קרטוגרף
+  cobbler's tools: כלי סנדלר
+  cook's utensils: כלי טבח
+  glassblower's tools: כלי מפוחית זכוכית
+  jeweler's tools: כלי צורף
+  leatherworker's tools: כלי עובד עור
+  mason's tools: כלי בנאי
+  painter's supplies: ציוד צייר
+  potter's tools: כלי קדר
+  smith's tools: כלי נפח
+  weaver's tools: כלי אורג
+  woodcarver's tools: כלי פסל עץ
+  disguise kit: ערכת הסוואה
+  forgery kit: ערכת זיוף
+  dice set: סט קוביות
+  playing card set: חפיסת קלפים
+  bagpipes: חלילית
+  drum: תוף
+  dulcimer: דולסימר
+  flute: חליל
+  lute: לאוטה
+  lyre: נבל
+  horn: קרן
+  pan flute: חליל פאן
+  shawm: שאום
+  viol: ויולה
+  navigator's tools: כלי נווט
+  poisoner's kit: ערכת מרעיל
+  vehicles: כלי רכב
+  vehicles (land): כלי רכב (יבשתיים)
+  vehicles (water): כלי רכב (ימיים)
 names:
   str: כוח
   str-mod: כוח

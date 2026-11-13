@@ -549,6 +549,222 @@ words:
   "Prepare": "准备"
   "Prepare {item}": "准备{item}"
   "I prepare {item}.": "我准备{item}。"
+  Rage: 狂暴
+  Unarmored Defense: 无甲防御
+  Reckless Attack: 鲁莽攻击
+  Danger Sense: 危险感知
+  Primal Path: 原初道途
+  Ability Score Improvement: 属性值提升
+  Extra Attack: 额外攻击
+  Fast Movement: 快速移动
+  Feral Instinct: 野性本能
+  Brutal Critical: 残暴重击
+  Brutal Critical (1 die): 残暴重击（1个骰子）
+  Relentless Rage: 无情狂暴
+  Brutal Critical (2 dice): 残暴重击（2个骰子）
+  Persistent Rage: 持久狂暴
+  Brutal Critical (3 dice): 残暴重击（3个骰子）
+  Indomitable Might: 不屈勇武
+  Primal Champion: 原初勇者
+  Spellcasting: 施法
+  Bardic Inspiration: 诗人激励
+  Bardic Inspiration (d6): 诗人激励（d6）
+  Jack of All Trades: 万事通
+  Song of Rest: 休憩之歌
+  Song of Rest (d6): 休憩之歌（d6）
+  Bard College: 吟游诗人学院
+  Expertise: 专精
+  Bardic Inspiration (d8): 诗人激励（d8）
+  Font of Inspiration: 激励之泉
+  Countercharm: 反魅惑
+  Song of Rest (d8): 休憩之歌（d8）
+  Song of Rest (d10): 休憩之歌（d10）
+  Magical Secrets: 魔法奥秘
+  Bardic Inspiration (d12): 诗人激励（d12）
+  Song of Rest (d12): 休憩之歌（d12）
+  Superior Inspiration: 高等激励
+  Improved Critical: 精进重击
+  Remarkable Athlete: 卓越运动员
+  Additional Fighting Style: 额外战斗风格
+  Superior Critical: 高等重击
+  Survivor: 幸存者
+  Bonus Cantrip: 额外戏法
+  Natural Recovery: 自然回复
+  Circle Spells: 结社法术
+  Land's Stride: 陆地行者
+  Nature's Ward: 自然守护
+  Nature's Sanctuary: 自然庇护
+  Divine Domain: 神圣领域
+  Channel Divinity: 引导神力
+  Channel Divinity (1/rest): 引导神力（每次休息1次）
+  Destroy Undead: 摧毁不死生物
+  Destroy Undead (CR 1/2): 摧毁不死生物（挑战等级 1/2）
+  Channel Divinity (2/rest): 引导神力（每次休息2次）
+  Destroy Undead (CR 1): 摧毁不死生物（挑战等级 1）
+  Divine Intervention: 神圣干预
+  Destroy Undead (CR 2): 摧毁不死生物（挑战等级 2）
+  Destroy Undead (CR 3): 摧毁不死生物（挑战等级 3）
+  Destroy Undead (CR 4): 摧毁不死生物（挑战等级 4）
+  Channel Divinity (3/rest): 引导神力（每次休息3次）
+  Bonus Proficiencies: 额外熟练项
+  Cutting Words: 尖刻言辞
+  Additional Magical Secrets: 额外魔法奥秘
+  Peerless Skill: 无双技艺
+  Dragon Ancestor: 龙族先祖
+  Draconic Resilience: 龙族韧性
+  Elemental Affinity: 元素亲和
+  Dragon Wings: 龙翼
+  Draconic Presence: 龙族威仪
+  Wild Shape: 野性形态
+  Druid Circle: 德鲁伊结社
+  Timeless Body: 永葆青春
+  Beast Spells: 野兽法术
+  Archdruid: 大德鲁伊
+  Fighting Style: 战斗风格
+  Second Wind: 复苏之风
+  Action Surge: 动作如潮
+  Action Surge (one use): 动作如潮（1次）
+  Martial Archetype: 武术范型
+  Indomitable: 不屈
+  Indomitable (one use): 不屈（1次）
+  Extra Attack (2): 额外攻击（2次）
+  Indomitable (two uses): 不屈（2次）
+  Action Surge (two uses): 动作如潮（2次）
+  Indomitable (three uses): 不屈（3次）
+  Extra Attack (3): 额外攻击（3次）
+  Hunter's Prey: 猎人的猎物
+  Defensive Tactics: 防御战术
+  Multiattack: 多重攻击
+  Superior Hunter's Defense: 高等猎人防御
+  Bonus Proficiency: 额外熟练项
+  Disciple of Life: 生命门徒
+  "Channel Divinity: Preserve Life": 引导神力：保全生命
+  Blessed Healer: 受祝疗者
+  Divine Strike: 神圣打击
+  Supreme Healing: 至高治疗
+  Martial Arts: 武艺
+  Ki: 气
+  Unarmored Movement: 无甲移动
+  Monastic Tradition: 武僧传承
+  Deflect Missiles: 偏转投射物
+  Slow Fall: 缓降
+  Stunning Strike: 震慑打击
+  Ki-Empowered Strikes: 气强化打击
+  Evasion: 回避
+  Stillness of Mind: 心如止水
+  Purity of Body: 身体纯净
+  Tongue of the Sun and Moon: 日月之语
+  Diamond Soul: 钻石之魂
+  Empty Body: 虚空之身
+  Perfect Self: 完美自我
+  Tenets of Devotion: 奉献信条
+  Oath Spells: 誓言法术
+  Aura of Devotion: 奉献光环
+  Purity of Spirit: 灵魂纯净
+  Holy Nimbus: 神圣光辉
+  Divine Sense: 神圣感知
+  Lay on Hands: 圣疗
+  Divine Smite: 神圣惩击
+  Divine Health: 神圣健康
+  Sacred Oath: 神圣誓言
+  Aura of Protection: 守护光环
+  Aura of Courage: 勇气光环
+  Improved Divine Smite: 精进神圣惩击
+  Cleansing Touch: 净化之触
+  Frenzy: 狂乱
+  Mindless Rage: 无心狂暴
+  Intimidating Presence: 威吓威仪
+  Retaliation: 反击
+  Favored Enemy: 偏好敌人
+  Natural Explorer: 自然探索者
+  Ranger Archetype: 游侠范型
+  Primeval Awareness: 原初感知
+  Hide in Plain Sight: 隐于众目
+  Vanish: 消失
+  Feral Senses: 野性感官
+  Foe Slayer: 屠敌者
+  Sneak Attack: 偷袭
+  Cunning Action: 灵巧动作
+  Roguish Archetype: 游荡者范型
+  Uncanny Dodge: 奇妙闪避
+  Reliable Talent: 可靠才能
+  Blindsense: 盲感
+  Slippery Mind: 滑溜心智
+  Elusive: 难以捉摸
+  Stroke of Luck: 幸运一击
+  Evocation Savant: 塑能学者
+  Sculpt Spells: 塑形法术
+  Potent Cantrip: 强效戏法
+  Empowered Evocation: 强化塑能
+  Overchannel: 超限引导
+  Sorcerous Origin: 术法起源
+  Font of Magic: 魔法之泉
+  Metamagic: 超魔
+  Sorcerous Restoration: 术法回复
+  Expanded Spell List: 扩展法术列表
+  Dark One's Blessing: 黑暗者的祝福
+  Dark One's Own Luck: 黑暗者的运气
+  Fiendish Resilience: 邪魔韧性
+  Hurl Through Hell: 投入地狱
+  Fast Hands: 快手
+  Second-Story Work: 攀墙行窃
+  Supreme Sneak: 至尊潜行
+  Use Magic Device: 使用魔法装置
+  Thief's Reflexes: 盗贼反射
+  Otherworldly Patron: 异界宗主
+  Pact Magic: 契约魔法
+  Eldritch Invocations: 魔能祈请
+  Pact Boon: 契约恩赐
+  Mystic Arcanum: 秘法玄奥
+  Mystic Arcanum (6th level): 秘法玄奥（6环）
+  Mystic Arcanum (7th level): 秘法玄奥（7环）
+  Mystic Arcanum (8th level): 秘法玄奥（8环）
+  Mystic Arcanum (9th level): 秘法玄奥（9环）
+  Eldritch Master: 魔能大师
+  Open Hand Technique: 空手技巧
+  Wholeness of Body: 身体完整
+  Tranquility: 宁静
+  Quivering Palm: 颤抖之掌
+  Arcane Recovery: 奥术回复
+  Arcane Tradition: 奥术传承
+  Spell Mastery: 法术精通
+  Signature Spells: 招牌法术
+  Bardic Inspiration (d10): 诗人激励（d10）
+  alchemist's supplies: 炼金术士工具
+  brewer's supplies: 酿酒师工具
+  calligrapher's supplies: 书法家工具
+  carpenter's tools: 木匠工具
+  cartographer's tools: 制图师工具
+  cobbler's tools: 鞋匠工具
+  cook's utensils: 厨师用具
+  glassblower's tools: 玻璃工工具
+  jeweler's tools: 珠宝匠工具
+  leatherworker's tools: 皮匠工具
+  mason's tools: 石匠工具
+  painter's supplies: 画家工具
+  potter's tools: 陶工工具
+  smith's tools: 铁匠工具
+  weaver's tools: 织工工具
+  woodcarver's tools: 木雕工具
+  disguise kit: 伪装工具包
+  forgery kit: 伪造工具包
+  dice set: 骰子套组
+  playing card set: 纸牌套组
+  bagpipes: 风笛
+  drum: 鼓
+  dulcimer: 扬琴
+  flute: 长笛
+  lute: 鲁特琴
+  lyre: 里拉琴
+  horn: 号角
+  pan flute: 排箫
+  shawm: 肖姆管
+  viol: 维奥尔琴
+  navigator's tools: 导航工具
+  poisoner's kit: 毒药工具包
+  vehicles: 载具
+  vehicles (land): 载具（陆地）
+  vehicles (water): 载具（水上）
 names:
   str: 力量
   str-mod: 力量

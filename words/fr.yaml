@@ -549,6 +549,222 @@ words:
   "Prepare": "Préparer"
   "Prepare {item}": "Préparer {item}"
   "I prepare {item}.": "Je prépare {item}."
+  Rage: Rage
+  Unarmored Defense: Défense sans armure
+  Reckless Attack: Attaque imprudente
+  Danger Sense: Sens du danger
+  Primal Path: Voie primitive
+  Ability Score Improvement: Amélioration de caractéristiques
+  Extra Attack: Attaque supplémentaire
+  Fast Movement: Déplacement rapide
+  Feral Instinct: Instinct sauvage
+  Brutal Critical: Critique brutal
+  Brutal Critical (1 die): Critique brutal (1 dé)
+  Relentless Rage: Rage implacable
+  Brutal Critical (2 dice): Critique brutal (2 dés)
+  Persistent Rage: Rage persistante
+  Brutal Critical (3 dice): Critique brutal (3 dés)
+  Indomitable Might: Puissance indomptable
+  Primal Champion: Champion primitif
+  Spellcasting: Incantation
+  Bardic Inspiration: Inspiration bardique
+  Bardic Inspiration (d6): Inspiration bardique (d6)
+  Jack of All Trades: Touche-à-tout
+  Song of Rest: Chant reposant
+  Song of Rest (d6): Chant reposant (d6)
+  Bard College: Collège bardique
+  Expertise: Expertise
+  Bardic Inspiration (d8): Inspiration bardique (d8)
+  Font of Inspiration: Source d'inspiration
+  Countercharm: Contre-charme
+  Song of Rest (d8): Chant reposant (d8)
+  Song of Rest (d10): Chant reposant (d10)
+  Magical Secrets: Secrets magiques
+  Bardic Inspiration (d12): Inspiration bardique (d12)
+  Song of Rest (d12): Chant reposant (d12)
+  Superior Inspiration: Inspiration supérieure
+  Improved Critical: Critique amélioré
+  Remarkable Athlete: Athlète remarquable
+  Additional Fighting Style: Style de combat supplémentaire
+  Superior Critical: Critique supérieur
+  Survivor: Survivant
+  Bonus Cantrip: Sort mineur bonus
+  Natural Recovery: Restauration naturelle
+  Circle Spells: Sorts de cercle
+  Land's Stride: Foulée terrestre
+  Nature's Ward: Protection de la nature
+  Nature's Sanctuary: Sanctuaire de la nature
+  Divine Domain: Domaine divin
+  Channel Divinity: Conduit divin
+  Channel Divinity (1/rest): Conduit divin (1/repos)
+  Destroy Undead: Destruction des morts-vivants
+  Destroy Undead (CR 1/2): Destruction des morts-vivants (FP 1/2)
+  Channel Divinity (2/rest): Conduit divin (2/repos)
+  Destroy Undead (CR 1): Destruction des morts-vivants (FP 1)
+  Divine Intervention: Intervention divine
+  Destroy Undead (CR 2): Destruction des morts-vivants (FP 2)
+  Destroy Undead (CR 3): Destruction des morts-vivants (FP 3)
+  Destroy Undead (CR 4): Destruction des morts-vivants (FP 4)
+  Channel Divinity (3/rest): Conduit divin (3/repos)
+  Bonus Proficiencies: Maîtrises bonus
+  Cutting Words: Mots cinglants
+  Additional Magical Secrets: Secrets magiques supplémentaires
+  Peerless Skill: Talent sans égal
+  Dragon Ancestor: Ancêtre draconique
+  Draconic Resilience: Résilience draconique
+  Elemental Affinity: Affinité élémentaire
+  Dragon Wings: Ailes de dragon
+  Draconic Presence: Présence draconique
+  Wild Shape: Forme sauvage
+  Druid Circle: Cercle druidique
+  Timeless Body: Corps intemporel
+  Beast Spells: Sorts de bête
+  Archdruid: Archidruide
+  Fighting Style: Style de combat
+  Second Wind: Second souffle
+  Action Surge: Action supplémentaire
+  Action Surge (one use): Action supplémentaire (une utilisation)
+  Martial Archetype: Archétype martial
+  Indomitable: Indomptable
+  Indomitable (one use): Indomptable (une utilisation)
+  Extra Attack (2): Attaque supplémentaire (2)
+  Indomitable (two uses): Indomptable (deux utilisations)
+  Action Surge (two uses): Action supplémentaire (deux utilisations)
+  Indomitable (three uses): Indomptable (trois utilisations)
+  Extra Attack (3): Attaque supplémentaire (3)
+  Hunter's Prey: Proie du chasseur
+  Defensive Tactics: Tactiques défensives
+  Multiattack: Attaques multiples
+  Superior Hunter's Defense: Défense supérieure du chasseur
+  Bonus Proficiency: Maîtrise bonus
+  Disciple of Life: Disciple de la vie
+  "Channel Divinity: Preserve Life": "Conduit divin : préservation de la vie"
+  Blessed Healer: Guérisseur béni
+  Divine Strike: Frappe divine
+  Supreme Healing: Guérison suprême
+  Martial Arts: Arts martiaux
+  Ki: Ki
+  Unarmored Movement: Déplacement sans armure
+  Monastic Tradition: Tradition monastique
+  Deflect Missiles: Parade de projectiles
+  Slow Fall: Chute ralentie
+  Stunning Strike: Frappe étourdissante
+  Ki-Empowered Strikes: Frappes de ki
+  Evasion: Esquive totale
+  Stillness of Mind: Tranquillité de l'esprit
+  Purity of Body: Pureté physique
+  Tongue of the Sun and Moon: Langage du soleil et de la lune
+  Diamond Soul: Âme de diamant
+  Empty Body: Corps vide
+  Perfect Self: Perfection de soi
+  Tenets of Devotion: Préceptes de dévotion
+  Oath Spells: Sorts de serment
+  Aura of Devotion: Aura de dévotion
+  Purity of Spirit: Pureté d'esprit
+  Holy Nimbus: Halo sacré
+  Divine Sense: Sens divin
+  Lay on Hands: Imposition des mains
+  Divine Smite: Châtiment divin
+  Divine Health: Santé divine
+  Sacred Oath: Serment sacré
+  Aura of Protection: Aura de protection
+  Aura of Courage: Aura de courage
+  Improved Divine Smite: Châtiment divin amélioré
+  Cleansing Touch: Toucher purificateur
+  Frenzy: Frénésie
+  Mindless Rage: Rage aveugle
+  Intimidating Presence: Présence intimidante
+  Retaliation: Représailles
+  Favored Enemy: Ennemi juré
+  Natural Explorer: Explorateur né
+  Ranger Archetype: Archétype de rôdeur
+  Primeval Awareness: Perception primitive
+  Hide in Plain Sight: Camouflage
+  Vanish: Disparition
+  Feral Senses: Sens sauvages
+  Foe Slayer: Tueur d'ennemis
+  Sneak Attack: Attaque sournoise
+  Cunning Action: Ruse
+  Roguish Archetype: Archétype de roublard
+  Uncanny Dodge: Esquive instinctive
+  Reliable Talent: Talent fiable
+  Blindsense: Perception aveugle
+  Slippery Mind: Esprit fuyant
+  Elusive: Insaisissable
+  Stroke of Luck: Coup de chance
+  Evocation Savant: Savant de l'évocation
+  Sculpt Spells: Sculpter les sorts
+  Potent Cantrip: Sort mineur puissant
+  Empowered Evocation: Évocation renforcée
+  Overchannel: Surcanalisation
+  Sorcerous Origin: Origine magique
+  Font of Magic: Source de magie
+  Metamagic: Métamagie
+  Sorcerous Restoration: Restauration magique
+  Expanded Spell List: Liste de sorts étendue
+  Dark One's Blessing: Bénédiction du ténébreux
+  Dark One's Own Luck: Chance du ténébreux
+  Fiendish Resilience: Résilience fiélone
+  Hurl Through Hell: Projection infernale
+  Fast Hands: Mains lestes
+  Second-Story Work: Agilité du cambrioleur
+  Supreme Sneak: Discrétion suprême
+  Use Magic Device: Utilisation d'objets magiques
+  Thief's Reflexes: Réflexes du voleur
+  Otherworldly Patron: Patron d'outre-monde
+  Pact Magic: Magie de pacte
+  Eldritch Invocations: Manifestations occultes
+  Pact Boon: Faveur du pacte
+  Mystic Arcanum: Arcanum mystique
+  Mystic Arcanum (6th level): Arcanum mystique (niveau 6)
+  Mystic Arcanum (7th level): Arcanum mystique (niveau 7)
+  Mystic Arcanum (8th level): Arcanum mystique (niveau 8)
+  Mystic Arcanum (9th level): Arcanum mystique (niveau 9)
+  Eldritch Master: Maître occulte
+  Open Hand Technique: Technique de la Main ouverte
+  Wholeness of Body: Plénitude physique
+  Tranquility: Tranquillité
+  Quivering Palm: Paume vibratoire
+  Arcane Recovery: Restauration arcanique
+  Arcane Tradition: Tradition arcanique
+  Spell Mastery: Maîtrise des sorts
+  Signature Spells: Sorts de prédilection
+  Bardic Inspiration (d10): Inspiration bardique (d10)
+  alchemist's supplies: matériel d'alchimiste
+  brewer's supplies: matériel de brasseur
+  calligrapher's supplies: matériel de calligraphe
+  carpenter's tools: outils de charpentier
+  cartographer's tools: outils de cartographe
+  cobbler's tools: outils de cordonnier
+  cook's utensils: ustensiles de cuisinier
+  glassblower's tools: outils de souffleur de verre
+  jeweler's tools: outils de joaillier
+  leatherworker's tools: outils de tanneur
+  mason's tools: outils de maçon
+  painter's supplies: matériel de peintre
+  potter's tools: outils de potier
+  smith's tools: outils de forgeron
+  weaver's tools: outils de tisserand
+  woodcarver's tools: outils de sculpteur sur bois
+  disguise kit: matériel de déguisement
+  forgery kit: matériel de contrefaçon
+  dice set: jeu de dés
+  playing card set: jeu de cartes
+  bagpipes: cornemuse
+  drum: tambour
+  dulcimer: tympanon
+  flute: flûte
+  lute: luth
+  lyre: lyre
+  horn: cor
+  pan flute: flûte de pan
+  shawm: chalemie
+  viol: viole
+  navigator's tools: outils de navigateur
+  poisoner's kit: matériel d'empoisonneur
+  vehicles: véhicules
+  vehicles (land): véhicules (terrestres)
+  vehicles (water): véhicules (aquatiques)
 names:
   str: Force
   str-mod: Force

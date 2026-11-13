@@ -140,7 +140,7 @@ describe("the experience points (PRO-6, D-205, D-234)", () => {
         await ok("change", "Rasco", "hp", "--to", "0");
         const closed = await ok("scene", "close", "--summary", "I lupi cadono.");
         expect(closed).toContain(
-            "xp of those overcome: Wolf 2 50, Wolf 1 50, Rasco 25, 125 in all; 62 each to Ennio, Lena: change Ennio, field xp, by 62; change Lena, field xp, by 62. "
+            "xp of those overcome: Wolf 2 50, Wolf 1 50, Rasco 25, 125 in all; 62 each to Ennio, Lena: change Ennio, field xp, by 62; change Lena, field xp, by 62. Then tell the player what each got: 62 xp each. "
                 + "Rasco is a character: leave out any who fought on your side, and share again. Fled: Goblin 1 50, to count if the party overcame them. "
                 + "Leave out what the party summoned; count those overcome another way and what the story rewards, as you judge, and tell the player only what each gained.",
         );

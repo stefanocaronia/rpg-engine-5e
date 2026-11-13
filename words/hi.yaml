@@ -549,6 +549,222 @@ words:
   "Prepare": "तैयार करें"
   "Prepare {item}": "{item} तैयार करें"
   "I prepare {item}.": "मैं {item} तैयार करता हूँ।"
+  Rage: क्रोध
+  Unarmored Defense: कवच-रहित रक्षा
+  Reckless Attack: लापरवाह हमला
+  Danger Sense: ख़तरे की आहट
+  Primal Path: आदिम मार्ग
+  Ability Score Improvement: क्षमता अंकों में वृद्धि
+  Extra Attack: अतिरिक्त हमला
+  Fast Movement: तेज़ गति
+  Feral Instinct: जंगली सहज-बोध
+  Brutal Critical: क्रूर क्रिटिकल
+  Brutal Critical (1 die): क्रूर क्रिटिकल (1 पासा)
+  Relentless Rage: अथक क्रोध
+  Brutal Critical (2 dice): क्रूर क्रिटिकल (2 पासे)
+  Persistent Rage: अटल क्रोध
+  Brutal Critical (3 dice): क्रूर क्रिटिकल (3 पासे)
+  Indomitable Might: अदम्य बल
+  Primal Champion: आदिम चैंपियन
+  Spellcasting: मंत्र चलाना
+  Bardic Inspiration: बार्ड प्रेरणा
+  Bardic Inspiration (d6): बार्ड प्रेरणा (d6)
+  Jack of All Trades: हरफ़नमौला
+  Song of Rest: आराम का गीत
+  Song of Rest (d6): आराम का गीत (d6)
+  Bard College: बार्ड कॉलेज
+  Expertise: विशेषज्ञता
+  Bardic Inspiration (d8): बार्ड प्रेरणा (d8)
+  Font of Inspiration: प्रेरणा का स्रोत
+  Countercharm: प्रति-मोहन
+  Song of Rest (d8): आराम का गीत (d8)
+  Song of Rest (d10): आराम का गीत (d10)
+  Magical Secrets: जादुई रहस्य
+  Bardic Inspiration (d12): बार्ड प्रेरणा (d12)
+  Song of Rest (d12): आराम का गीत (d12)
+  Superior Inspiration: श्रेष्ठ प्रेरणा
+  Improved Critical: उन्नत क्रिटिकल
+  Remarkable Athlete: असाधारण एथलीट
+  Additional Fighting Style: अतिरिक्त लड़ाई की शैली
+  Superior Critical: श्रेष्ठ क्रिटिकल
+  Survivor: उत्तरजीवी
+  Bonus Cantrip: बोनस कैंट्रिप
+  Natural Recovery: प्राकृतिक पुनर्प्राप्ति
+  Circle Spells: मंडल के मंत्र
+  Land's Stride: भूमि की चाल
+  Nature's Ward: प्रकृति का रक्षा-कवच
+  Nature's Sanctuary: प्रकृति की शरण
+  Divine Domain: दिव्य डोमेन
+  Channel Divinity: दिव्यता का आह्वान
+  Channel Divinity (1/rest): दिव्यता का आह्वान (1/आराम)
+  Destroy Undead: अनडेड का विनाश
+  Destroy Undead (CR 1/2): अनडेड का विनाश (चुनौती 1/2)
+  Channel Divinity (2/rest): दिव्यता का आह्वान (2/आराम)
+  Destroy Undead (CR 1): अनडेड का विनाश (चुनौती 1)
+  Divine Intervention: दिव्य हस्तक्षेप
+  Destroy Undead (CR 2): अनडेड का विनाश (चुनौती 2)
+  Destroy Undead (CR 3): अनडेड का विनाश (चुनौती 3)
+  Destroy Undead (CR 4): अनडेड का विनाश (चुनौती 4)
+  Channel Divinity (3/rest): दिव्यता का आह्वान (3/आराम)
+  Bonus Proficiencies: बोनस दक्षताएँ
+  Cutting Words: चुभते शब्द
+  Additional Magical Secrets: अतिरिक्त जादुई रहस्य
+  Peerless Skill: बेजोड़ कौशल
+  Dragon Ancestor: ड्रैगन पूर्वज
+  Draconic Resilience: ड्रैगन-सा लचीलापन
+  Elemental Affinity: तत्व अनुराग
+  Dragon Wings: ड्रैगन के पंख
+  Draconic Presence: ड्रैगन-सा प्रभाव
+  Wild Shape: वन्य रूप
+  Druid Circle: ड्रुइड मंडल
+  Timeless Body: कालातीत शरीर
+  Beast Spells: पशु मंत्र
+  Archdruid: आर्कड्रुइड
+  Fighting Style: लड़ाई की शैली
+  Second Wind: सेकंड विंड
+  Action Surge: एक्शन सर्ज
+  Action Surge (one use): एक्शन सर्ज (एक उपयोग)
+  Martial Archetype: युद्ध आदर्श
+  Indomitable: अदम्य
+  Indomitable (one use): अदम्य (एक उपयोग)
+  Extra Attack (2): अतिरिक्त हमला (2)
+  Indomitable (two uses): अदम्य (दो उपयोग)
+  Action Surge (two uses): एक्शन सर्ज (दो उपयोग)
+  Indomitable (three uses): अदम्य (तीन उपयोग)
+  Extra Attack (3): अतिरिक्त हमला (3)
+  Hunter's Prey: शिकारी का शिकार
+  Defensive Tactics: रक्षात्मक रणनीतियाँ
+  Multiattack: बहु-हमला
+  Superior Hunter's Defense: शिकारी की श्रेष्ठ रक्षा
+  Bonus Proficiency: बोनस दक्षता
+  Disciple of Life: जीवन का शिष्य
+  "Channel Divinity: Preserve Life": "दिव्यता का आह्वान: जीवन की रक्षा"
+  Blessed Healer: धन्य उपचारक
+  Divine Strike: दिव्य प्रहार
+  Supreme Healing: परम उपचार
+  Martial Arts: मार्शल आर्ट्स
+  Ki: की
+  Unarmored Movement: कवच-रहित गति
+  Monastic Tradition: मठ परंपरा
+  Deflect Missiles: प्रक्षेपास्त्र मोड़ना
+  Slow Fall: धीमा पतन
+  Stunning Strike: स्तब्ध करने वाला वार
+  Ki-Empowered Strikes: की-सशक्त वार
+  Evasion: चकमा
+  Stillness of Mind: मन की स्थिरता
+  Purity of Body: शरीर की शुद्धता
+  Tongue of the Sun and Moon: सूर्य और चंद्र की भाषा
+  Diamond Soul: हीरक आत्मा
+  Empty Body: रिक्त शरीर
+  Perfect Self: पूर्ण स्वरूप
+  Tenets of Devotion: समर्पण के सिद्धांत
+  Oath Spells: शपथ के मंत्र
+  Aura of Devotion: समर्पण का आभामंडल
+  Purity of Spirit: आत्मा की शुद्धता
+  Holy Nimbus: पवित्र आभामंडल
+  Divine Sense: दिव्य बोध
+  Lay on Hands: हाथों से उपचार
+  Divine Smite: दिव्य प्रहार-दंड
+  Divine Health: दिव्य स्वास्थ्य
+  Sacred Oath: पवित्र शपथ
+  Aura of Protection: सुरक्षा का आभामंडल
+  Aura of Courage: साहस का आभामंडल
+  Improved Divine Smite: उन्नत दिव्य प्रहार-दंड
+  Cleansing Touch: शुद्धिकारी स्पर्श
+  Frenzy: उन्माद
+  Mindless Rage: बेकाबू क्रोध
+  Intimidating Presence: डरावनी उपस्थिति
+  Retaliation: प्रतिशोध
+  Favored Enemy: प्रिय शत्रु
+  Natural Explorer: प्राकृतिक अन्वेषक
+  Ranger Archetype: रेंजर आदर्श
+  Primeval Awareness: आदिम सजगता
+  Hide in Plain Sight: सामने रहकर छिपना
+  Vanish: ओझल होना
+  Feral Senses: जंगली इंद्रियाँ
+  Foe Slayer: शत्रु-संहारक
+  Sneak Attack: छिपकर हमला
+  Cunning Action: चालाक क्रिया
+  Roguish Archetype: रोग आदर्श
+  Uncanny Dodge: अद्भुत चकमा
+  Reliable Talent: भरोसेमंद प्रतिभा
+  Blindsense: अंध-बोध
+  Slippery Mind: फिसलन भरा मन
+  Elusive: अप्राप्य
+  Stroke of Luck: किस्मत का दाँव
+  Evocation Savant: आह्वान विद्वान
+  Sculpt Spells: मंत्र गढ़ना
+  Potent Cantrip: प्रबल कैंट्रिप
+  Empowered Evocation: सशक्त आह्वान
+  Overchannel: अतिप्रवाह
+  Sorcerous Origin: सॉर्सरर उद्गम
+  Font of Magic: जादू का स्रोत
+  Metamagic: मेटामैजिक
+  Sorcerous Restoration: सॉर्सरर पुनर्स्थापना
+  Expanded Spell List: विस्तारित मंत्र सूची
+  Dark One's Blessing: अंधेरे वाले का आशीर्वाद
+  Dark One's Own Luck: अंधेरे वाले की अपनी किस्मत
+  Fiendish Resilience: दानवी लचीलापन
+  Hurl Through Hell: नरक में फेंकना
+  Fast Hands: तेज़ हाथ
+  Second-Story Work: ऊपरी मंज़िल का काम
+  Supreme Sneak: परम छिपाव
+  Use Magic Device: जादुई उपकरण का उपयोग
+  Thief's Reflexes: चोर की फुर्ती
+  Otherworldly Patron: परलोकी संरक्षक
+  Pact Magic: संधि जादू
+  Eldritch Invocations: रहस्यमय आह्वान
+  Pact Boon: संधि वरदान
+  Mystic Arcanum: रहस्यमय आर्कनम
+  Mystic Arcanum (6th level): रहस्यमय आर्कनम (लेवल 6)
+  Mystic Arcanum (7th level): रहस्यमय आर्कनम (लेवल 7)
+  Mystic Arcanum (8th level): रहस्यमय आर्कनम (लेवल 8)
+  Mystic Arcanum (9th level): रहस्यमय आर्कनम (लेवल 9)
+  Eldritch Master: रहस्यमय महारथी
+  Open Hand Technique: खुले हाथ की तकनीक
+  Wholeness of Body: शरीर की संपूर्णता
+  Tranquility: शांति
+  Quivering Palm: कंपित हथेली
+  Arcane Recovery: तांत्रिक पुनर्प्राप्ति
+  Arcane Tradition: तांत्रिक परंपरा
+  Spell Mastery: मंत्र में महारत
+  Signature Spells: विशिष्ट मंत्र
+  Bardic Inspiration (d10): बार्ड प्रेरणा (d10)
+  alchemist's supplies: कीमियागर की सामग्री
+  brewer's supplies: शराब बनाने वाले की सामग्री
+  calligrapher's supplies: सुलेखक की सामग्री
+  carpenter's tools: बढ़ई के औज़ार
+  cartographer's tools: मानचित्रकार के औज़ार
+  cobbler's tools: मोची के औज़ार
+  cook's utensils: रसोइये के बर्तन
+  glassblower's tools: काँच-शिल्पी के औज़ार
+  jeweler's tools: जौहरी के औज़ार
+  leatherworker's tools: चर्मकार के औज़ार
+  mason's tools: राजमिस्त्री के औज़ार
+  painter's supplies: चित्रकार की सामग्री
+  potter's tools: कुम्हार के औज़ार
+  smith's tools: लोहार के औज़ार
+  weaver's tools: बुनकर के औज़ार
+  woodcarver's tools: लकड़ी-नक्काश के औज़ार
+  disguise kit: भेष बदलने की किट
+  forgery kit: जालसाज़ी किट
+  dice set: पासों का सेट
+  playing card set: ताश की गड्डी
+  bagpipes: बैगपाइप
+  drum: ढोल
+  dulcimer: डल्सीमर
+  flute: बाँसुरी
+  lute: ल्यूट
+  lyre: लायर
+  horn: सींग-बाजा
+  pan flute: पैन फ़्लूट
+  shawm: शॉम
+  viol: वायल
+  navigator's tools: नाविक के औज़ार
+  poisoner's kit: ज़हर बनाने वाले की किट
+  vehicles: वाहन
+  vehicles (land): वाहन (भूमि)
+  vehicles (water): वाहन (जल)
 names:
   str: शक्ति
   str-mod: शक्ति

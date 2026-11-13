@@ -549,6 +549,222 @@ words:
   "Prepare": "Підготувати"
   "Prepare {item}": "Підготувати {item}"
   "I prepare {item}.": "Готую {item}."
+  Rage: Гнів
+  Unarmored Defense: Захист без броні
+  Reckless Attack: Нерозважна атака
+  Danger Sense: Чуття небезпеки
+  Primal Path: Первісний шлях
+  Ability Score Improvement: Покращення характеристик
+  Extra Attack: Додаткова атака
+  Fast Movement: Швидке пересування
+  Feral Instinct: Звірячий інстинкт
+  Brutal Critical: Жорстокий критичний удар
+  Brutal Critical (1 die): Жорстокий критичний удар (1 кубик)
+  Relentless Rage: Невпинний гнів
+  Brutal Critical (2 dice): Жорстокий критичний удар (2 кубики)
+  Persistent Rage: Стійкий гнів
+  Brutal Critical (3 dice): Жорстокий критичний удар (3 кубики)
+  Indomitable Might: Незламна міць
+  Primal Champion: Первісний чемпіон
+  Spellcasting: Накладання заклять
+  Bardic Inspiration: Бардівське натхнення
+  Bardic Inspiration (d6): Бардівське натхнення (d6)
+  Jack of All Trades: Майстер на всі руки
+  Song of Rest: Пісня відпочинку
+  Song of Rest (d6): Пісня відпочинку (d6)
+  Bard College: Бардівський коледж
+  Expertise: Експертність
+  Bardic Inspiration (d8): Бардівське натхнення (d8)
+  Font of Inspiration: Джерело натхнення
+  Countercharm: Контрчарівність
+  Song of Rest (d8): Пісня відпочинку (d8)
+  Song of Rest (d10): Пісня відпочинку (d10)
+  Magical Secrets: Магічні таємниці
+  Bardic Inspiration (d12): Бардівське натхнення (d12)
+  Song of Rest (d12): Пісня відпочинку (d12)
+  Superior Inspiration: Найвище натхнення
+  Improved Critical: Покращений критичний удар
+  Remarkable Athlete: Видатний атлет
+  Additional Fighting Style: Додатковий стиль бою
+  Superior Critical: Найвищий критичний удар
+  Survivor: Той, хто вижив
+  Bonus Cantrip: Бонусне замовляння
+  Natural Recovery: Природне відновлення
+  Circle Spells: Закляття кола
+  Land's Stride: Хода по землі
+  Nature's Ward: Опіка природи
+  Nature's Sanctuary: Святилище природи
+  Divine Domain: Божественний домен
+  Channel Divinity: Божественний канал
+  Channel Divinity (1/rest): Божественний канал (1/відпочинок)
+  Destroy Undead: Знищення нежиті
+  Destroy Undead (CR 1/2): Знищення нежиті (небезпека 1/2)
+  Channel Divinity (2/rest): Божественний канал (2/відпочинок)
+  Destroy Undead (CR 1): Знищення нежиті (небезпека 1)
+  Divine Intervention: Божественне втручання
+  Destroy Undead (CR 2): Знищення нежиті (небезпека 2)
+  Destroy Undead (CR 3): Знищення нежиті (небезпека 3)
+  Destroy Undead (CR 4): Знищення нежиті (небезпека 4)
+  Channel Divinity (3/rest): Божественний канал (3/відпочинок)
+  Bonus Proficiencies: Бонусна майстерність
+  Cutting Words: Дошкульні слова
+  Additional Magical Secrets: Додаткові магічні таємниці
+  Peerless Skill: Неперевершена майстерність
+  Dragon Ancestor: Драконячий предок
+  Draconic Resilience: Драконяча витривалість
+  Elemental Affinity: Спорідненість зі стихією
+  Dragon Wings: Драконячі крила
+  Draconic Presence: Драконяча велич
+  Wild Shape: Дика форма
+  Druid Circle: Коло друїдів
+  Timeless Body: Позачасове тіло
+  Beast Spells: Звірині закляття
+  Archdruid: Верховний друїд
+  Fighting Style: Стиль бою
+  Second Wind: Друге дихання
+  Action Surge: Сплеск дій
+  Action Surge (one use): Сплеск дій (одне використання)
+  Martial Archetype: Воєнний архетип
+  Indomitable: Незламність
+  Indomitable (one use): Незламність (одне використання)
+  Extra Attack (2): Додаткова атака (2)
+  Indomitable (two uses): Незламність (два використання)
+  Action Surge (two uses): Сплеск дій (два використання)
+  Indomitable (three uses): Незламність (три використання)
+  Extra Attack (3): Додаткова атака (3)
+  Hunter's Prey: Здобич мисливця
+  Defensive Tactics: Оборонна тактика
+  Multiattack: Мультиатака
+  Superior Hunter's Defense: Найвищий захист мисливця
+  Bonus Proficiency: Бонусна майстерність
+  Disciple of Life: Учень життя
+  "Channel Divinity: Preserve Life": "Божественний канал: збереження життя"
+  Blessed Healer: Благословенний цілитель
+  Divine Strike: Божественний удар
+  Supreme Healing: Найвище зцілення
+  Martial Arts: Бойові мистецтва
+  Ki: Ці
+  Unarmored Movement: Рух без броні
+  Monastic Tradition: Монастирська традиція
+  Deflect Missiles: Відбиття снарядів
+  Slow Fall: Повільне падіння
+  Stunning Strike: Приголомшливий удар
+  Ki-Empowered Strikes: Удари, посилені ці
+  Evasion: Ухиляння
+  Stillness of Mind: Спокій розуму
+  Purity of Body: Чистота тіла
+  Tongue of the Sun and Moon: Мова Сонця та Місяця
+  Diamond Soul: Алмазна душа
+  Empty Body: Порожнє тіло
+  Perfect Self: Досконале єство
+  Tenets of Devotion: Заповіді відданості
+  Oath Spells: Закляття обітниці
+  Aura of Devotion: Аура відданості
+  Purity of Spirit: Чистота духу
+  Holy Nimbus: Священний німб
+  Divine Sense: Божественне чуття
+  Lay on Hands: Накладання рук
+  Divine Smite: Божественна кара
+  Divine Health: Божественне здоров'я
+  Sacred Oath: Священна обітниця
+  Aura of Protection: Аура захисту
+  Aura of Courage: Аура відваги
+  Improved Divine Smite: Покращена божественна кара
+  Cleansing Touch: Очищувальний дотик
+  Frenzy: Шаленство
+  Mindless Rage: Бездумний гнів
+  Intimidating Presence: Лякаюча присутність
+  Retaliation: Відплата
+  Favored Enemy: Улюблений ворог
+  Natural Explorer: Природний дослідник
+  Ranger Archetype: Архетип рейнджера
+  Primeval Awareness: Первісна обізнаність
+  Hide in Plain Sight: Ховання на видноті
+  Vanish: Зникнення
+  Feral Senses: Звірині чуття
+  Foe Slayer: Убивця ворогів
+  Sneak Attack: Підступна атака
+  Cunning Action: Підступна дія
+  Roguish Archetype: Архетип шахрая
+  Uncanny Dodge: Неймовірне ухиляння
+  Reliable Talent: Надійний талант
+  Blindsense: Сліпе чуття
+  Slippery Mind: Невловимий розум
+  Elusive: Невловимість
+  Stroke of Luck: Удар удачі
+  Evocation Savant: Знавець евокації
+  Sculpt Spells: Ліплення заклять
+  Potent Cantrip: Потужне замовляння
+  Empowered Evocation: Посилена евокація
+  Overchannel: Перевантаження каналу
+  Sorcerous Origin: Чародійське походження
+  Font of Magic: Джерело магії
+  Metamagic: Метамагія
+  Sorcerous Restoration: Чародійське відновлення
+  Expanded Spell List: Розширений список заклять
+  Dark One's Blessing: Благословення Темного
+  Dark One's Own Luck: Везіння Темного
+  Fiendish Resilience: Бісівська стійкість
+  Hurl Through Hell: Кидок крізь пекло
+  Fast Hands: Швидкі руки
+  Second-Story Work: Робота на другому поверсі
+  Supreme Sneak: Найвища крадькуватість
+  Use Magic Device: Використання магічних пристроїв
+  Thief's Reflexes: Рефлекси злодія
+  Otherworldly Patron: Потойбічний покровитель
+  Pact Magic: Магія угоди
+  Eldritch Invocations: Потойбічні прикликання
+  Pact Boon: Дар угоди
+  Mystic Arcanum: Містичний аркан
+  Mystic Arcanum (6th level): Містичний аркан (6-й рівень)
+  Mystic Arcanum (7th level): Містичний аркан (7-й рівень)
+  Mystic Arcanum (8th level): Містичний аркан (8-й рівень)
+  Mystic Arcanum (9th level): Містичний аркан (9-й рівень)
+  Eldritch Master: Майстер потойбічного
+  Open Hand Technique: Техніка відкритої долоні
+  Wholeness of Body: Цілісність тіла
+  Tranquility: Спокій
+  Quivering Palm: Тремтяча долоня
+  Arcane Recovery: Магічне відновлення
+  Arcane Tradition: Магічна традиція
+  Spell Mastery: Майстерність заклять
+  Signature Spells: Фірмові закляття
+  Bardic Inspiration (d10): Бардівське натхнення (d10)
+  alchemist's supplies: приладдя алхіміка
+  brewer's supplies: приладдя пивовара
+  calligrapher's supplies: приладдя каліграфа
+  carpenter's tools: інструменти тесляра
+  cartographer's tools: інструменти картографа
+  cobbler's tools: інструменти шевця
+  cook's utensils: кухарське начиння
+  glassblower's tools: інструменти склодува
+  jeweler's tools: інструменти ювеліра
+  leatherworker's tools: інструменти шкіряника
+  mason's tools: інструменти муляра
+  painter's supplies: приладдя художника
+  potter's tools: інструменти гончаря
+  smith's tools: інструменти коваля
+  weaver's tools: інструменти ткача
+  woodcarver's tools: інструменти різьбяра по дереву
+  disguise kit: набір для маскування
+  forgery kit: набір фальсифікатора
+  dice set: набір кубиків
+  playing card set: набір гральних карт
+  bagpipes: волинка
+  drum: барабан
+  dulcimer: цимбали
+  flute: флейта
+  lute: лютня
+  lyre: ліра
+  horn: ріг
+  pan flute: сопілка Пана
+  shawm: шалмей
+  viol: віола
+  navigator's tools: інструменти навігатора
+  poisoner's kit: набір отруйника
+  vehicles: транспорт
+  vehicles (land): транспорт (наземний)
+  vehicles (water): транспорт (водний)
 names:
   str: Сила
   str-mod: Сила

@@ -549,6 +549,222 @@ words:
   "Prepare": "Pregătește"
   "Prepare {item}": "Pregătește {item}"
   "I prepare {item}.": "Pregătesc {item}."
+  Rage: Furie
+  Unarmored Defense: Apărare fără armură
+  Reckless Attack: Atac nechibzuit
+  Danger Sense: Simțul pericolului
+  Primal Path: Calea primordială
+  Ability Score Improvement: Creșterea caracteristicilor
+  Extra Attack: Atacuri suplimentare
+  Fast Movement: Mișcare rapidă
+  Feral Instinct: Instinct sălbatic
+  Brutal Critical: Critic brutal
+  Brutal Critical (1 die): Critic brutal (1 zar)
+  Relentless Rage: Furie necruțătoare
+  Brutal Critical (2 dice): Critic brutal (2 zaruri)
+  Persistent Rage: Furie persistentă
+  Brutal Critical (3 dice): Critic brutal (3 zaruri)
+  Indomitable Might: Forță indomabilă
+  Primal Champion: Campion primordial
+  Spellcasting: Lansare de vrăji
+  Bardic Inspiration: Inspirație bardică
+  Bardic Inspiration (d6): Inspirație bardică (d6)
+  Jack of All Trades: Bun la toate
+  Song of Rest: Cântec de odihnă
+  Song of Rest (d6): Cântec de odihnă (d6)
+  Bard College: Colegiul bardului
+  Expertise: Măiestrie
+  Bardic Inspiration (d8): Inspirație bardică (d8)
+  Font of Inspiration: Izvor de inspirație
+  Countercharm: Contra-farmec
+  Song of Rest (d8): Cântec de odihnă (d8)
+  Song of Rest (d10): Cântec de odihnă (d10)
+  Magical Secrets: Secrete magice
+  Bardic Inspiration (d12): Inspirație bardică (d12)
+  Song of Rest (d12): Cântec de odihnă (d12)
+  Superior Inspiration: Inspirație superioară
+  Improved Critical: Critic îmbunătățit
+  Remarkable Athlete: Atlet remarcabil
+  Additional Fighting Style: Stil de luptă suplimentar
+  Superior Critical: Critic superior
+  Survivor: Supraviețuitor
+  Bonus Cantrip: Truc bonus
+  Natural Recovery: Recuperare naturală
+  Circle Spells: Vrăjile cercului
+  Land's Stride: Pasul pământului
+  Nature's Ward: Ocrotirea naturii
+  Nature's Sanctuary: Sanctuarul naturii
+  Divine Domain: Domeniu divin
+  Channel Divinity: Canalizarea divinității
+  Channel Divinity (1/rest): Canalizarea divinității (1/odihnă)
+  Destroy Undead: Distrugerea mort-viilor
+  Destroy Undead (CR 1/2): Distrugerea mort-viilor (NP 1/2)
+  Channel Divinity (2/rest): Canalizarea divinității (2/odihnă)
+  Destroy Undead (CR 1): Distrugerea mort-viilor (NP 1)
+  Divine Intervention: Intervenție divină
+  Destroy Undead (CR 2): Distrugerea mort-viilor (NP 2)
+  Destroy Undead (CR 3): Distrugerea mort-viilor (NP 3)
+  Destroy Undead (CR 4): Distrugerea mort-viilor (NP 4)
+  Channel Divinity (3/rest): Canalizarea divinității (3/odihnă)
+  Bonus Proficiencies: Competențe bonus
+  Cutting Words: Cuvinte tăioase
+  Additional Magical Secrets: Secrete magice suplimentare
+  Peerless Skill: Abilitate fără egal
+  Dragon Ancestor: Strămoș dragon
+  Draconic Resilience: Reziliență draconică
+  Elemental Affinity: Afinitate elementară
+  Dragon Wings: Aripi de dragon
+  Draconic Presence: Prezență draconică
+  Wild Shape: Formă sălbatică
+  Druid Circle: Cercul druidului
+  Timeless Body: Corp fără vârstă
+  Beast Spells: Vrăji de fiară
+  Archdruid: Arhidruid
+  Fighting Style: Stil de luptă
+  Second Wind: Al doilea suflu
+  Action Surge: Val de acțiune
+  Action Surge (one use): Val de acțiune (o utilizare)
+  Martial Archetype: Arhetip marțial
+  Indomitable: Indomabil
+  Indomitable (one use): Indomabil (o utilizare)
+  Extra Attack (2): Atacuri suplimentare (2)
+  Indomitable (two uses): Indomabil (două utilizări)
+  Action Surge (two uses): Val de acțiune (două utilizări)
+  Indomitable (three uses): Indomabil (trei utilizări)
+  Extra Attack (3): Atacuri suplimentare (3)
+  Hunter's Prey: Prada vânătorului
+  Defensive Tactics: Tactici defensive
+  Multiattack: Atac multiplu
+  Superior Hunter's Defense: Apărarea superioară a vânătorului
+  Bonus Proficiency: Competență bonus
+  Disciple of Life: Discipolul vieții
+  "Channel Divinity: Preserve Life": "Canalizarea divinității: Păstrarea vieții"
+  Blessed Healer: Vindecător binecuvântat
+  Divine Strike: Lovitură divină
+  Supreme Healing: Vindecare supremă
+  Martial Arts: Arte marțiale
+  Ki: Ki
+  Unarmored Movement: Mișcare fără armură
+  Monastic Tradition: Tradiție monastică
+  Deflect Missiles: Deviere de proiectile
+  Slow Fall: Cădere lentă
+  Stunning Strike: Lovitură amețitoare
+  Ki-Empowered Strikes: Lovituri întărite cu ki
+  Evasion: Evaziune
+  Stillness of Mind: Liniștea minții
+  Purity of Body: Puritatea corpului
+  Tongue of the Sun and Moon: Limba soarelui și a lunii
+  Diamond Soul: Suflet de diamant
+  Empty Body: Corp gol
+  Perfect Self: Sine perfect
+  Tenets of Devotion: Principiile devotării
+  Oath Spells: Vrăjile jurământului
+  Aura of Devotion: Aura devotării
+  Purity of Spirit: Puritatea spiritului
+  Holy Nimbus: Nimb sfânt
+  Divine Sense: Simț divin
+  Lay on Hands: Punerea mâinilor
+  Divine Smite: Pedeapsă divină
+  Divine Health: Sănătate divină
+  Sacred Oath: Jurământ sacru
+  Aura of Protection: Aura protecției
+  Aura of Courage: Aura curajului
+  Improved Divine Smite: Pedeapsă divină îmbunătățită
+  Cleansing Touch: Atingere purificatoare
+  Frenzy: Frenezie
+  Mindless Rage: Furie fără minte
+  Intimidating Presence: Prezență intimidantă
+  Retaliation: Represalii
+  Favored Enemy: Dușman favorit
+  Natural Explorer: Explorator înnăscut
+  Ranger Archetype: Arhetip de ranger
+  Primeval Awareness: Conștiință primordială
+  Hide in Plain Sight: Ascunderea la vedere
+  Vanish: Dispariție
+  Feral Senses: Simțuri sălbatice
+  Foe Slayer: Ucigaș de dușmani
+  Sneak Attack: Atac pe la spate
+  Cunning Action: Acțiune șireată
+  Roguish Archetype: Arhetip de pungaș
+  Uncanny Dodge: Eschivă supranaturală
+  Reliable Talent: Talent de încredere
+  Blindsense: Simț orb
+  Slippery Mind: Minte alunecoasă
+  Elusive: Evaziv
+  Stroke of Luck: Lovitură de noroc
+  Evocation Savant: Savant al evocării
+  Sculpt Spells: Modelarea vrăjilor
+  Potent Cantrip: Truc puternic
+  Empowered Evocation: Evocare întărită
+  Overchannel: Supracanalizare
+  Sorcerous Origin: Origine vrăjitorească
+  Font of Magic: Izvor de magie
+  Metamagic: Metamagie
+  Sorcerous Restoration: Refacere vrăjitorească
+  Expanded Spell List: Listă extinsă de vrăji
+  Dark One's Blessing: Binecuvântarea celui întunecat
+  Dark One's Own Luck: Norocul celui întunecat
+  Fiendish Resilience: Reziliență necurată
+  Hurl Through Hell: Aruncare prin iad
+  Fast Hands: Mâini rapide
+  Second-Story Work: Lucru la etaj
+  Supreme Sneak: Furtivitate supremă
+  Use Magic Device: Folosirea obiectelor magice
+  Thief's Reflexes: Reflexele hoțului
+  Otherworldly Patron: Patron din altă lume
+  Pact Magic: Magia pactului
+  Eldritch Invocations: Invocații mistice
+  Pact Boon: Darul pactului
+  Mystic Arcanum: Arcanum mistic
+  Mystic Arcanum (6th level): Arcanum mistic (nivel 6)
+  Mystic Arcanum (7th level): Arcanum mistic (nivel 7)
+  Mystic Arcanum (8th level): Arcanum mistic (nivel 8)
+  Mystic Arcanum (9th level): Arcanum mistic (nivel 9)
+  Eldritch Master: Maestrul misticului
+  Open Hand Technique: Tehnica mâinii deschise
+  Wholeness of Body: Integritatea corpului
+  Tranquility: Tihnă
+  Quivering Palm: Palmă tremurătoare
+  Arcane Recovery: Recuperare arcană
+  Arcane Tradition: Tradiție arcană
+  Spell Mastery: Măiestria vrăjilor
+  Signature Spells: Vrăji emblematice
+  Bardic Inspiration (d10): Inspirație bardică (d10)
+  alchemist's supplies: materiale de alchimist
+  brewer's supplies: materiale de berar
+  calligrapher's supplies: materiale de caligraf
+  carpenter's tools: unelte de tâmplar
+  cartographer's tools: unelte de cartograf
+  cobbler's tools: unelte de cizmar
+  cook's utensils: ustensile de bucătar
+  glassblower's tools: unelte de sticlar
+  jeweler's tools: unelte de bijutier
+  leatherworker's tools: unelte de pielar
+  mason's tools: unelte de zidar
+  painter's supplies: materiale de pictor
+  potter's tools: unelte de olar
+  smith's tools: unelte de fierar
+  weaver's tools: unelte de țesător
+  woodcarver's tools: unelte de sculptor în lemn
+  disguise kit: trusă de deghizare
+  forgery kit: trusă de falsificator
+  dice set: set de zaruri
+  playing card set: set de cărți de joc
+  bagpipes: cimpoi
+  drum: tobă
+  dulcimer: țambal
+  flute: flaut
+  lute: lăută
+  lyre: liră
+  horn: corn
+  pan flute: nai
+  shawm: șalmău
+  viol: violă
+  navigator's tools: unelte de navigator
+  poisoner's kit: trusă de otrăvitor
+  vehicles: vehicule
+  vehicles (land): vehicule (terestre)
+  vehicles (water): vehicule (acvatice)
 names:
   str: Forță
   str-mod: Forță

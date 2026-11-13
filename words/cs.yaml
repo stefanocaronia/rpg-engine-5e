@@ -549,6 +549,222 @@ words:
   "Prepare": "Připravit"
   "Prepare {item}": "Připravit {item}"
   "I prepare {item}.": "Připravuji {item}."
+  Rage: Zuřivost
+  Unarmored Defense: Obrana bez zbroje
+  Reckless Attack: Bezohledný útok
+  Danger Sense: Smysl pro nebezpečí
+  Primal Path: Prvotní cesta
+  Ability Score Improvement: Zlepšení hodnot vlastností
+  Extra Attack: Extra útok
+  Fast Movement: Rychlý pohyb
+  Feral Instinct: Zvířecí instinkt
+  Brutal Critical: Brutální kritický zásah
+  Brutal Critical (1 die): Brutální kritický zásah (1 kostka)
+  Relentless Rage: Neutuchající zuřivost
+  Brutal Critical (2 dice): Brutální kritický zásah (2 kostky)
+  Persistent Rage: Vytrvalá zuřivost
+  Brutal Critical (3 dice): Brutální kritický zásah (3 kostky)
+  Indomitable Might: Nezdolná mohutnost
+  Primal Champion: Prvotní šampion
+  Spellcasting: Sesílání kouzel
+  Bardic Inspiration: Bardská inspirace
+  Bardic Inspiration (d6): Bardská inspirace (d6)
+  Jack of All Trades: Mistr všeho druhu
+  Song of Rest: Píseň odpočinku
+  Song of Rest (d6): Píseň odpočinku (d6)
+  Bard College: Bardská kolej
+  Expertise: Mistrovství
+  Bardic Inspiration (d8): Bardská inspirace (d8)
+  Font of Inspiration: Zdroj inspirace
+  Countercharm: Protikouzlo
+  Song of Rest (d8): Píseň odpočinku (d8)
+  Song of Rest (d10): Píseň odpočinku (d10)
+  Magical Secrets: Magická tajemství
+  Bardic Inspiration (d12): Bardská inspirace (d12)
+  Song of Rest (d12): Píseň odpočinku (d12)
+  Superior Inspiration: Vyšší inspirace
+  Improved Critical: Vylepšený kritický zásah
+  Remarkable Athlete: Pozoruhodný atlet
+  Additional Fighting Style: Další styl boje
+  Superior Critical: Vyšší kritický zásah
+  Survivor: Přeživší
+  Bonus Cantrip: Bonusový trik
+  Natural Recovery: Přirozené zotavení
+  Circle Spells: Kouzla kruhu
+  Land's Stride: Chůze krajinou
+  Nature's Ward: Ochrana přírody
+  Nature's Sanctuary: Útočiště přírody
+  Divine Domain: Božská doména
+  Channel Divinity: Usměrnění božství
+  Channel Divinity (1/rest): Usměrnění božství (1/odpočinek)
+  Destroy Undead: Zničení nemrtvých
+  Destroy Undead (CR 1/2): Zničení nemrtvých (výzva 1/2)
+  Channel Divinity (2/rest): Usměrnění božství (2/odpočinek)
+  Destroy Undead (CR 1): Zničení nemrtvých (výzva 1)
+  Divine Intervention: Božský zásah
+  Destroy Undead (CR 2): Zničení nemrtvých (výzva 2)
+  Destroy Undead (CR 3): Zničení nemrtvých (výzva 3)
+  Destroy Undead (CR 4): Zničení nemrtvých (výzva 4)
+  Channel Divinity (3/rest): Usměrnění božství (3/odpočinek)
+  Bonus Proficiencies: Bonusové zdatnosti
+  Cutting Words: Ostrá slova
+  Additional Magical Secrets: Další magická tajemství
+  Peerless Skill: Nesrovnatelná dovednost
+  Dragon Ancestor: Dračí předek
+  Draconic Resilience: Dračí odolnost
+  Elemental Affinity: Elementární spřízněnost
+  Dragon Wings: Dračí křídla
+  Draconic Presence: Dračí přítomnost
+  Wild Shape: Divoký tvar
+  Druid Circle: Druidský kruh
+  Timeless Body: Nestárnoucí tělo
+  Beast Spells: Kouzla ve zvířecí podobě
+  Archdruid: Arcidruid
+  Fighting Style: Styl boje
+  Second Wind: Popadnutí dechu
+  Action Surge: Příval akce
+  Action Surge (one use): Příval akce (jedno použití)
+  Martial Archetype: Bojový archetyp
+  Indomitable: Nezdolnost
+  Indomitable (one use): Nezdolnost (jedno použití)
+  Extra Attack (2): Extra útok (2)
+  Indomitable (two uses): Nezdolnost (dvě použití)
+  Action Surge (two uses): Příval akce (dvě použití)
+  Indomitable (three uses): Nezdolnost (tři použití)
+  Extra Attack (3): Extra útok (3)
+  Hunter's Prey: Lovcova kořist
+  Defensive Tactics: Obranná taktika
+  Multiattack: Vícenásobný útok
+  Superior Hunter's Defense: Vyšší lovcova obrana
+  Bonus Proficiency: Bonusová zdatnost
+  Disciple of Life: Učedník života
+  "Channel Divinity: Preserve Life": "Usměrnění božství: Zachování života"
+  Blessed Healer: Požehnaný léčitel
+  Divine Strike: Božský úder
+  Supreme Healing: Nejvyšší léčení
+  Martial Arts: Bojová umění
+  Ki: Ki
+  Unarmored Movement: Pohyb bez zbroje
+  Monastic Tradition: Klášterní tradice
+  Deflect Missiles: Odražení střel
+  Slow Fall: Zpomalení pádu
+  Stunning Strike: Omračující úder
+  Ki-Empowered Strikes: Údery posílené ki
+  Evasion: Únik
+  Stillness of Mind: Klid mysli
+  Purity of Body: Čistota těla
+  Tongue of the Sun and Moon: Jazyk slunce a měsíce
+  Diamond Soul: Diamantová duše
+  Empty Body: Prázdné tělo
+  Perfect Self: Dokonalé já
+  Tenets of Devotion: Zásady zbožnosti
+  Oath Spells: Kouzla přísahy
+  Aura of Devotion: Aura zbožnosti
+  Purity of Spirit: Čistota ducha
+  Holy Nimbus: Svatá aureola
+  Divine Sense: Božské vnímání
+  Lay on Hands: Pokládání rukou
+  Divine Smite: Božský trest
+  Divine Health: Božské zdraví
+  Sacred Oath: Posvátná přísaha
+  Aura of Protection: Aura ochrany
+  Aura of Courage: Aura odvahy
+  Improved Divine Smite: Vylepšený božský trest
+  Cleansing Touch: Očistný dotek
+  Frenzy: Třeštění
+  Mindless Rage: Bezduchá zuřivost
+  Intimidating Presence: Zastrašující přítomnost
+  Retaliation: Odveta
+  Favored Enemy: Oblíbený nepřítel
+  Natural Explorer: Přirozený průzkumník
+  Ranger Archetype: Archetyp hraničáře
+  Primeval Awareness: Prvotní bdělost
+  Hide in Plain Sight: Skrytí před očima
+  Vanish: Zmizení
+  Feral Senses: Zvířecí smysly
+  Foe Slayer: Zabiják nepřátel
+  Sneak Attack: Záludný útok
+  Cunning Action: Mazaná akce
+  Roguish Archetype: Archetyp tuláka
+  Uncanny Dodge: Nadpřirozený úhyb
+  Reliable Talent: Spolehlivý talent
+  Blindsense: Slepé vnímání
+  Slippery Mind: Vyklouzavá mysl
+  Elusive: Nepolapitelný
+  Stroke of Luck: Štěstí v pravý čas
+  Evocation Savant: Znalec evokace
+  Sculpt Spells: Tvarování kouzel
+  Potent Cantrip: Mocný trik
+  Empowered Evocation: Posílená evokace
+  Overchannel: Přetížené usměrnění
+  Sorcerous Origin: Čarodějný původ
+  Font of Magic: Zdroj magie
+  Metamagic: Metamagie
+  Sorcerous Restoration: Čarodějné obnovení
+  Expanded Spell List: Rozšířený seznam kouzel
+  Dark One's Blessing: Požehnání temného
+  Dark One's Own Luck: Štěstí temného
+  Fiendish Resilience: Běsovská odolnost
+  Hurl Through Hell: Vrhnutí peklem
+  Fast Hands: Hbité ruce
+  Second-Story Work: Práce v patrech
+  Supreme Sneak: Dokonalá nenápadnost
+  Use Magic Device: Použití magických předmětů
+  Thief's Reflexes: Zlodějovy reflexy
+  Otherworldly Patron: Patron z jiného světa
+  Pact Magic: Magie paktu
+  Eldritch Invocations: Tajemná vzývání
+  Pact Boon: Dar paktu
+  Mystic Arcanum: Mystické arkánum
+  Mystic Arcanum (6th level): Mystické arkánum (6. úroveň)
+  Mystic Arcanum (7th level): Mystické arkánum (7. úroveň)
+  Mystic Arcanum (8th level): Mystické arkánum (8. úroveň)
+  Mystic Arcanum (9th level): Mystické arkánum (9. úroveň)
+  Eldritch Master: Mistr tajemna
+  Open Hand Technique: Technika otevřené dlaně
+  Wholeness of Body: Celistvost těla
+  Tranquility: Poklid
+  Quivering Palm: Chvějící se dlaň
+  Arcane Recovery: Arkánní zotavení
+  Arcane Tradition: Arkánní tradice
+  Spell Mastery: Mistrovství kouzel
+  Signature Spells: Osobitá kouzla
+  Bardic Inspiration (d10): Bardská inspirace (d10)
+  alchemist's supplies: alchymistické potřeby
+  brewer's supplies: pivovarnické potřeby
+  calligrapher's supplies: kaligrafické potřeby
+  carpenter's tools: tesařské nářadí
+  cartographer's tools: kartografické náčiní
+  cobbler's tools: švcovské nářadí
+  cook's utensils: kuchařské nádobí
+  glassblower's tools: sklářské nářadí
+  jeweler's tools: klenotnické nářadí
+  leatherworker's tools: koželužské nářadí
+  mason's tools: zednické nářadí
+  painter's supplies: malířské potřeby
+  potter's tools: hrnčířské nářadí
+  smith's tools: kovářské nářadí
+  weaver's tools: tkalcovské nářadí
+  woodcarver's tools: řezbářské nářadí
+  disguise kit: maskovací souprava
+  forgery kit: padělatelská souprava
+  dice set: sada kostek
+  playing card set: sada hracích karet
+  bagpipes: dudy
+  drum: buben
+  dulcimer: cimbál
+  flute: flétna
+  lute: loutna
+  lyre: lyra
+  horn: roh
+  pan flute: panova flétna
+  shawm: šalmaj
+  viol: viola da gamba
+  navigator's tools: navigační náčiní
+  poisoner's kit: travičská souprava
+  vehicles: vozidla
+  vehicles (land): vozidla (pozemní)
+  vehicles (water): vozidla (vodní)
 names:
   str: Síla
   str-mod: Síla

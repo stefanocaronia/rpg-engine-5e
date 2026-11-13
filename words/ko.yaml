@@ -549,6 +549,222 @@ words:
   "Prepare": "준비"
   "Prepare {item}": "{item} 준비"
   "I prepare {item}.": "{item}을(를) 준비한다."
+  Rage: 분노
+  Unarmored Defense: 비무장 방어
+  Reckless Attack: 무모한 공격
+  Danger Sense: 위험 감지
+  Primal Path: 원초의 길
+  Ability Score Improvement: 능력치 향상
+  Extra Attack: 추가 공격
+  Fast Movement: 빠른 이동
+  Feral Instinct: 야생의 본능
+  Brutal Critical: 잔혹한 치명타
+  Brutal Critical (1 die): 잔혹한 치명타 (주사위 1개)
+  Relentless Rage: 끈질긴 분노
+  Brutal Critical (2 dice): 잔혹한 치명타 (주사위 2개)
+  Persistent Rage: 지속되는 분노
+  Brutal Critical (3 dice): 잔혹한 치명타 (주사위 3개)
+  Indomitable Might: 불굴의 괴력
+  Primal Champion: 원초의 챔피언
+  Spellcasting: 주문 시전
+  Bardic Inspiration: 바드의 영감
+  Bardic Inspiration (d6): 바드의 영감 (d6)
+  Jack of All Trades: 팔방미인
+  Song of Rest: 휴식의 노래
+  Song of Rest (d6): 휴식의 노래 (d6)
+  Bard College: 바드 학파
+  Expertise: 전문화
+  Bardic Inspiration (d8): 바드의 영감 (d8)
+  Font of Inspiration: 영감의 원천
+  Countercharm: 반매혹
+  Song of Rest (d8): 휴식의 노래 (d8)
+  Song of Rest (d10): 휴식의 노래 (d10)
+  Magical Secrets: 마법의 비밀
+  Bardic Inspiration (d12): 바드의 영감 (d12)
+  Song of Rest (d12): 휴식의 노래 (d12)
+  Superior Inspiration: 상위 영감
+  Improved Critical: 향상된 치명타
+  Remarkable Athlete: 뛰어난 운동선수
+  Additional Fighting Style: 추가 전투 방식
+  Superior Critical: 상위 치명타
+  Survivor: 생존자
+  Bonus Cantrip: 보너스 캔트립
+  Natural Recovery: 자연 회복
+  Circle Spells: 회합 주문
+  Land's Stride: 땅 걸음
+  Nature's Ward: 자연의 수호
+  Nature's Sanctuary: 자연의 성역
+  Divine Domain: 신권
+  Channel Divinity: 신성 전환
+  Channel Divinity (1/rest): 신성 전환 (휴식당 1회)
+  Destroy Undead: 언데드 파괴
+  Destroy Undead (CR 1/2): 언데드 파괴 (도전 지수 1/2)
+  Channel Divinity (2/rest): 신성 전환 (휴식당 2회)
+  Destroy Undead (CR 1): 언데드 파괴 (도전 지수 1)
+  Divine Intervention: 신의 개입
+  Destroy Undead (CR 2): 언데드 파괴 (도전 지수 2)
+  Destroy Undead (CR 3): 언데드 파괴 (도전 지수 3)
+  Destroy Undead (CR 4): 언데드 파괴 (도전 지수 4)
+  Channel Divinity (3/rest): 신성 전환 (휴식당 3회)
+  Bonus Proficiencies: 보너스 숙련
+  Cutting Words: 날카로운 말
+  Additional Magical Secrets: 추가 마법의 비밀
+  Peerless Skill: 비길 데 없는 기량
+  Dragon Ancestor: 용 조상
+  Draconic Resilience: 용족의 회복력
+  Elemental Affinity: 원소 친화
+  Dragon Wings: 용의 날개
+  Draconic Presence: 용족의 위압
+  Wild Shape: 야생 변신
+  Druid Circle: 드루이드 회합
+  Timeless Body: 영원한 육체
+  Beast Spells: 야수 주문
+  Archdruid: 대드루이드
+  Fighting Style: 전투 방식
+  Second Wind: 재정비
+  Action Surge: 액션 서지
+  Action Surge (one use): 액션 서지 (1회)
+  Martial Archetype: 무술 원형
+  Indomitable: 불굴
+  Indomitable (one use): 불굴 (1회)
+  Extra Attack (2): 추가 공격 (2)
+  Indomitable (two uses): 불굴 (2회)
+  Action Surge (two uses): 액션 서지 (2회)
+  Indomitable (three uses): 불굴 (3회)
+  Extra Attack (3): 추가 공격 (3)
+  Hunter's Prey: 사냥꾼의 먹이
+  Defensive Tactics: 방어 전술
+  Multiattack: 다중 공격
+  Superior Hunter's Defense: 상위 사냥꾼의 방어
+  Bonus Proficiency: 보너스 숙련
+  Disciple of Life: 생명의 제자
+  "Channel Divinity: Preserve Life": "신성 전환: 생명 보존"
+  Blessed Healer: 축복받은 치유자
+  Divine Strike: 신성한 일격
+  Supreme Healing: 최상의 치유
+  Martial Arts: 무술
+  Ki: 기
+  Unarmored Movement: 비무장 이동
+  Monastic Tradition: 수도 전통
+  Deflect Missiles: 투사체 쳐내기
+  Slow Fall: 느린 낙하
+  Stunning Strike: 기절시키는 일격
+  Ki-Empowered Strikes: 기로 강화된 타격
+  Evasion: 회피
+  Stillness of Mind: 평온한 마음
+  Purity of Body: 신체의 순수
+  Tongue of the Sun and Moon: 해와 달의 언어
+  Diamond Soul: 다이아몬드 영혼
+  Empty Body: 텅 빈 몸
+  Perfect Self: 완벽한 자아
+  Tenets of Devotion: 헌신의 교리
+  Oath Spells: 맹세 주문
+  Aura of Devotion: 헌신의 오라
+  Purity of Spirit: 영혼의 순수
+  Holy Nimbus: 신성한 후광
+  Divine Sense: 신성 감지
+  Lay on Hands: 안수
+  Divine Smite: 신성한 강타
+  Divine Health: 신성한 건강
+  Sacred Oath: 신성한 맹세
+  Aura of Protection: 보호의 오라
+  Aura of Courage: 용기의 오라
+  Improved Divine Smite: 향상된 신성한 강타
+  Cleansing Touch: 정화의 손길
+  Frenzy: 광란
+  Mindless Rage: 이성 없는 분노
+  Intimidating Presence: 위압적인 존재감
+  Retaliation: 보복
+  Favored Enemy: 선호하는 적
+  Natural Explorer: 타고난 탐험가
+  Ranger Archetype: 레인저 원형
+  Primeval Awareness: 원시의 인지
+  Hide in Plain Sight: 눈앞에서 숨기
+  Vanish: 사라짐
+  Feral Senses: 야생의 감각
+  Foe Slayer: 적 학살자
+  Sneak Attack: 암습
+  Cunning Action: 교활한 행동
+  Roguish Archetype: 로그 원형
+  Uncanny Dodge: 기이한 회피
+  Reliable Talent: 확실한 재능
+  Blindsense: 맹감각
+  Slippery Mind: 미끄러운 정신
+  Elusive: 붙잡기 힘든
+  Stroke of Luck: 행운의 일격
+  Evocation Savant: 방출 학자
+  Sculpt Spells: 주문 조형
+  Potent Cantrip: 강력한 캔트립
+  Empowered Evocation: 강화된 방출
+  Overchannel: 과충전
+  Sorcerous Origin: 술법 기원
+  Font of Magic: 마법의 원천
+  Metamagic: 메타매직
+  Sorcerous Restoration: 술법 회복
+  Expanded Spell List: 확장 주문 목록
+  Dark One's Blessing: 어둠의 존재의 축복
+  Dark One's Own Luck: 어둠의 존재의 행운
+  Fiendish Resilience: 마귀의 회복력
+  Hurl Through Hell: 지옥으로 던지기
+  Fast Hands: 빠른 손
+  Second-Story Work: 이층 침입
+  Supreme Sneak: 최상의 은밀
+  Use Magic Device: 마법 도구 사용
+  Thief's Reflexes: 도둑의 반사신경
+  Otherworldly Patron: 이계의 후원자
+  Pact Magic: 서약 마법
+  Eldritch Invocations: 비전 간청
+  Pact Boon: 서약의 선물
+  Mystic Arcanum: 신비한 비전
+  Mystic Arcanum (6th level): 신비한 비전 (6레벨)
+  Mystic Arcanum (7th level): 신비한 비전 (7레벨)
+  Mystic Arcanum (8th level): 신비한 비전 (8레벨)
+  Mystic Arcanum (9th level): 신비한 비전 (9레벨)
+  Eldritch Master: 섬뜩한 달인
+  Open Hand Technique: 열린 손 기술
+  Wholeness of Body: 신체의 온전함
+  Tranquility: 평온
+  Quivering Palm: 떨리는 손바닥
+  Arcane Recovery: 비전 회복
+  Arcane Tradition: 비전 전통
+  Spell Mastery: 주문 숙달
+  Signature Spells: 시그니처 주문
+  Bardic Inspiration (d10): 바드의 영감 (d10)
+  alchemist's supplies: 연금술사 용품
+  brewer's supplies: 양조사 용품
+  calligrapher's supplies: 서예가 용품
+  carpenter's tools: 목수 도구
+  cartographer's tools: 지도 제작자 도구
+  cobbler's tools: 제화공 도구
+  cook's utensils: 요리사 도구
+  glassblower's tools: 유리공 도구
+  jeweler's tools: 보석공 도구
+  leatherworker's tools: 가죽공 도구
+  mason's tools: 석공 도구
+  painter's supplies: 화가 용품
+  potter's tools: 도공 도구
+  smith's tools: 대장장이 도구
+  weaver's tools: 직공 도구
+  woodcarver's tools: 목공예가 도구
+  disguise kit: 변장 키트
+  forgery kit: 위조 키트
+  dice set: 주사위 세트
+  playing card set: 카드 세트
+  bagpipes: 백파이프
+  drum: 북
+  dulcimer: 덜시머
+  flute: 플루트
+  lute: 류트
+  lyre: 리라
+  horn: 호른
+  pan flute: 팬플루트
+  shawm: 숌
+  viol: 비올
+  navigator's tools: 항해사 도구
+  poisoner's kit: 독살 키트
+  vehicles: 탈것
+  vehicles (land): 탈것 (육상)
+  vehicles (water): 탈것 (수상)
 names:
   str: 근력
   str-mod: 근력

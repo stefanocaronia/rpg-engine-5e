@@ -549,6 +549,222 @@ words:
   "Prepare": "تحضير"
   "Prepare {item}": "تحضير {item}"
   "I prepare {item}.": "أحضّر {item}."
+  Rage: الغضب
+  Unarmored Defense: الدفاع بلا درع
+  Reckless Attack: الهجوم المتهور
+  Danger Sense: حس الخطر
+  Primal Path: الطريق البدائي
+  Ability Score Improvement: تحسين درجات القدرات
+  Extra Attack: هجوم إضافي
+  Fast Movement: الحركة السريعة
+  Feral Instinct: الغريزة الوحشية
+  Brutal Critical: الضربة الحاسمة الوحشية
+  Brutal Critical (1 die): الضربة الحاسمة الوحشية (حجر نرد واحد)
+  Relentless Rage: الغضب الدؤوب
+  Brutal Critical (2 dice): الضربة الحاسمة الوحشية (حجرا نرد)
+  Persistent Rage: الغضب المستمر
+  Brutal Critical (3 dice): الضربة الحاسمة الوحشية (3 أحجار نرد)
+  Indomitable Might: القوة التي لا تُقهر
+  Primal Champion: البطل البدائي
+  Spellcasting: إلقاء التعويذات
+  Bardic Inspiration: إلهام الشاعر
+  Bardic Inspiration (d6): إلهام الشاعر (d6)
+  Jack of All Trades: متعدد المواهب
+  Song of Rest: أنشودة الراحة
+  Song of Rest (d6): أنشودة الراحة (d6)
+  Bard College: كلية الشعراء
+  Expertise: الخبرة المتقنة
+  Bardic Inspiration (d8): إلهام الشاعر (d8)
+  Font of Inspiration: ينبوع الإلهام
+  Countercharm: الحلية المضادة
+  Song of Rest (d8): أنشودة الراحة (d8)
+  Song of Rest (d10): أنشودة الراحة (d10)
+  Magical Secrets: الأسرار السحرية الخفية
+  Bardic Inspiration (d12): إلهام الشاعر (d12)
+  Song of Rest (d12): أنشودة الراحة (d12)
+  Superior Inspiration: الإلهام الفائق
+  Improved Critical: الضربة الحاسمة المحسّنة
+  Remarkable Athlete: الرياضي المتميز
+  Additional Fighting Style: أسلوب قتال إضافي
+  Superior Critical: الضربة الحاسمة الفائقة
+  Survivor: الناجي
+  Bonus Cantrip: تعويذة صغرى إضافية
+  Natural Recovery: الاستعادة الطبيعية
+  Circle Spells: تعويذات الحلقة
+  Land's Stride: خطى الأرض
+  Nature's Ward: حماية الطبيعة
+  Nature's Sanctuary: ملاذ الطبيعة
+  Divine Domain: المجال الإلهي
+  Channel Divinity: توجيه الألوهية
+  Channel Divinity (1/rest): توجيه الألوهية (1/راحة)
+  Destroy Undead: تدمير الموتى الأحياء
+  Destroy Undead (CR 1/2): تدمير الموتى الأحياء (مستوى التحدي 1/2)
+  Channel Divinity (2/rest): توجيه الألوهية (2/راحة)
+  Destroy Undead (CR 1): تدمير الموتى الأحياء (مستوى التحدي 1)
+  Divine Intervention: التدخل الإلهي
+  Destroy Undead (CR 2): تدمير الموتى الأحياء (مستوى التحدي 2)
+  Destroy Undead (CR 3): تدمير الموتى الأحياء (مستوى التحدي 3)
+  Destroy Undead (CR 4): تدمير الموتى الأحياء (مستوى التحدي 4)
+  Channel Divinity (3/rest): توجيه الألوهية (3/راحة)
+  Bonus Proficiencies: إتقانات إضافية
+  Cutting Words: كلمات جارحة
+  Additional Magical Secrets: أسرار سحرية إضافية
+  Peerless Skill: مهارة لا مثيل لها
+  Dragon Ancestor: السلف التنين
+  Draconic Resilience: الصلابة التنينية
+  Elemental Affinity: الألفة العنصرية
+  Dragon Wings: أجنحة التنين
+  Draconic Presence: الحضور التنيني
+  Wild Shape: الهيئة البرية
+  Druid Circle: حلقة الدرويد
+  Timeless Body: الجسد الخالد
+  Beast Spells: تعويذات الوحوش
+  Archdruid: كبير الدرويد
+  Fighting Style: أسلوب القتال
+  Second Wind: النفَس الثاني
+  Action Surge: اندفاع الفعل
+  Action Surge (one use): اندفاع الفعل (استخدام واحد)
+  Martial Archetype: النموذج القتالي
+  Indomitable: الصمود
+  Indomitable (one use): الصمود (استخدام واحد)
+  Extra Attack (2): هجوم إضافي (2)
+  Indomitable (two uses): الصمود (استخدامان)
+  Action Surge (two uses): اندفاع الفعل (استخدامان)
+  Indomitable (three uses): الصمود (3 استخدامات)
+  Extra Attack (3): هجوم إضافي (3)
+  Hunter's Prey: فريسة الصياد
+  Defensive Tactics: تكتيكات دفاعية
+  Multiattack: الهجوم المتعدد
+  Superior Hunter's Defense: دفاع الصياد الفائق
+  Bonus Proficiency: إتقان إضافي
+  Disciple of Life: تلميذ الحياة
+  "Channel Divinity: Preserve Life": "توجيه الألوهية: حفظ الحياة"
+  Blessed Healer: المعالج المبارك
+  Divine Strike: الضربة الإلهية
+  Supreme Healing: الشفاء الأسمى
+  Martial Arts: الفنون القتالية
+  Ki: كي
+  Unarmored Movement: الحركة بلا درع
+  Monastic Tradition: التقليد الرهباني
+  Deflect Missiles: صد المقذوفات
+  Slow Fall: السقوط البطيء
+  Stunning Strike: الضربة المذهلة
+  Ki-Empowered Strikes: ضربات مدعومة بالكي
+  Evasion: المراوغة
+  Stillness of Mind: سكون العقل
+  Purity of Body: طهارة الجسد
+  Tongue of the Sun and Moon: لسان الشمس والقمر
+  Diamond Soul: الروح الماسية
+  Empty Body: الجسد الفارغ
+  Perfect Self: الذات الكاملة
+  Tenets of Devotion: مبادئ التفاني
+  Oath Spells: تعويذات القسم
+  Aura of Devotion: هالة التفاني
+  Purity of Spirit: طهارة الروح
+  Holy Nimbus: الهالة المقدسة
+  Divine Sense: الحس الإلهي
+  Lay on Hands: وضع اليدين
+  Divine Smite: الضربة الإلهية القاصمة
+  Divine Health: الصحة الإلهية
+  Sacred Oath: القسم المقدس
+  Aura of Protection: هالة الحماية
+  Aura of Courage: هالة الشجاعة
+  Improved Divine Smite: الضربة الإلهية القاصمة المحسّنة
+  Cleansing Touch: اللمسة المطهِّرة
+  Frenzy: الهياج
+  Mindless Rage: الغضب الأعمى
+  Intimidating Presence: الحضور المرهِب
+  Retaliation: الانتقام
+  Favored Enemy: العدو المفضل
+  Natural Explorer: المستكشف الطبيعي
+  Ranger Archetype: نموذج الحارس
+  Primeval Awareness: الوعي البدائي
+  Hide in Plain Sight: الاختباء على مرأى من الجميع
+  Vanish: الاختفاء
+  Feral Senses: الحواس الوحشية
+  Foe Slayer: قاتل الأعداء
+  Sneak Attack: الهجمة الخفية
+  Cunning Action: الفعل الماكر
+  Roguish Archetype: نموذج اللص
+  Uncanny Dodge: المراوغة الخارقة
+  Reliable Talent: الموهبة الموثوقة
+  Blindsense: الحس الأعمى
+  Slippery Mind: العقل الزلق
+  Elusive: المراوغ
+  Stroke of Luck: ضربة الحظ
+  Evocation Savant: عالِم الاستحضار
+  Sculpt Spells: نحت التعويذات
+  Potent Cantrip: التعويذة الصغرى القوية
+  Empowered Evocation: الاستحضار المعزَّز
+  Overchannel: التوجيه المفرط
+  Sorcerous Origin: الأصل السحري الفطري
+  Font of Magic: ينبوع السحر
+  Metamagic: ما وراء السحر
+  Sorcerous Restoration: الاستعادة السحرية الفطرية
+  Expanded Spell List: قائمة التعويذات الموسَّعة
+  Dark One's Blessing: بركة الظلام
+  Dark One's Own Luck: حظ الظلام
+  Fiendish Resilience: الصلابة الشيطانية
+  Hurl Through Hell: الرمي عبر الجحيم
+  Fast Hands: اليدان السريعتان
+  Second-Story Work: عمل الطابق الثاني
+  Supreme Sneak: التسلل الأسمى
+  Use Magic Device: استخدام الأدوات السحرية
+  Thief's Reflexes: ردود فعل السارق
+  Otherworldly Patron: الراعي من عالم آخر
+  Pact Magic: سحر العهد
+  Eldritch Invocations: استحضارات غامضة
+  Pact Boon: منحة العهد
+  Mystic Arcanum: السر الغامض
+  Mystic Arcanum (6th level): السر الغامض (المستوى 6)
+  Mystic Arcanum (7th level): السر الغامض (المستوى 7)
+  Mystic Arcanum (8th level): السر الغامض (المستوى 8)
+  Mystic Arcanum (9th level): السر الغامض (المستوى 9)
+  Eldritch Master: سيد الغموض
+  Open Hand Technique: تقنية اليد المفتوحة
+  Wholeness of Body: سلامة الجسد
+  Tranquility: السكينة
+  Quivering Palm: الكف المرتجفة
+  Arcane Recovery: الاستعادة السحرية
+  Arcane Tradition: التقليد السحري
+  Spell Mastery: إتقان التعويذات
+  Signature Spells: التعويذات المميزة
+  Bardic Inspiration (d10): إلهام الشاعر (d10)
+  alchemist's supplies: لوازم الكيميائي
+  brewer's supplies: لوازم صانع الجعة
+  calligrapher's supplies: لوازم الخطاط
+  carpenter's tools: أدوات النجار
+  cartographer's tools: أدوات رسام الخرائط
+  cobbler's tools: أدوات الإسكافي
+  cook's utensils: أواني الطباخ
+  glassblower's tools: أدوات نافخ الزجاج
+  jeweler's tools: أدوات الصائغ
+  leatherworker's tools: أدوات الدباغ
+  mason's tools: أدوات البنّاء
+  painter's supplies: لوازم الرسام
+  potter's tools: أدوات الخزّاف
+  smith's tools: أدوات الحداد
+  weaver's tools: أدوات النساج
+  woodcarver's tools: أدوات نحات الخشب
+  disguise kit: عدة التنكر
+  forgery kit: عدة التزوير
+  dice set: طقم نرد
+  playing card set: طقم أوراق اللعب
+  bagpipes: مزمار القربة
+  drum: طبل
+  dulcimer: السنطور
+  flute: ناي
+  lute: عود
+  lyre: قيثارة
+  horn: بوق
+  pan flute: ناي الراعي
+  shawm: المزمار
+  viol: الكمان القديم
+  navigator's tools: أدوات الملاح
+  poisoner's kit: عدة السمّام
+  vehicles: المركبات
+  vehicles (land): المركبات (برية)
+  vehicles (water): المركبات (مائية)
 names:
   str: القوة
   str-mod: القوة
