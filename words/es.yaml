@@ -191,6 +191,44 @@ fields:
   load: Carga
   attuned: sintonizado
   days-without-food: días sin comida
+  image: imagen
+  spell-level: nivel del conjuro
+  school: escuela de magia
+  ritual: ritual
+  casting-time: tiempo de lanzamiento
+  range: alcance
+  components: componentes
+  duration: duración
+  concentration: concentración
+  spell-lists: listas de conjuros
+  cost: coste
+  armor-class: clase de armadura
+  armor-class-bonus: bonificador a la clase de armadura
+  strength-required: fuerza requerida
+  stealth-disadvantage: desventaja en sigilo
+  speed-slowed: velocidad reducida
+  damage: daño
+  properties: propiedades
+  length: longitud
+  bundle: piezas por paquete
+  uses: usos
+  extradimensional: espacio extradimensional
+  rarity: rareza
+  attunement: requiere sintonización
+  charges: cargas
+  bonus: bonificador
+  bonus-ac: bonificador a la CA
+  bonus-saves: bonificador a las tiradas de salvación
+  bonus-skills: bonificador a las habilidades
+  bonus-initiative: bonificador a la iniciativa
+  bonus-spell-attack: bonificador al ataque de conjuro
+  bonus-spell-dc: bonificador a la CD de conjuros
+  hp-per-level: PG por nivel
+  armor-unhindered: sin penalización por armadura
+  class: clase
+  hit-die: dado de golpe
+  spellcasting: lanzamiento de conjuros
+  unarmored-ac: CA sin armadura
 words:
   unhurt: ileso
   hurt: herido

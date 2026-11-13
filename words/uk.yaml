@@ -191,6 +191,44 @@ fields:
   load: Навантаження
   attuned: налаштовано
   days-without-food: днів без їжі
+  image: зображення
+  spell-level: рівень закляття
+  school: школа магії
+  ritual: ритуал
+  casting-time: час накладання
+  range: дистанція
+  components: компоненти
+  duration: тривалість
+  concentration: концентрація
+  spell-lists: списки заклять
+  cost: вартість
+  armor-class: клас броні
+  armor-class-bonus: бонус до класу броні
+  strength-required: потрібна сила
+  stealth-disadvantage: перешкода до непомітності
+  speed-slowed: швидкість знижена
+  damage: шкода
+  properties: властивості
+  length: довжина
+  bundle: штук у пачці
+  uses: використання
+  extradimensional: позавимірний простір
+  rarity: рідкісність
+  attunement: потребує налаштування
+  charges: заряди
+  bonus: бонус
+  bonus-ac: бонус до КБ
+  bonus-saves: бонус до рятівних кидків
+  bonus-skills: бонус до навичок
+  bonus-initiative: бонус до ініціативи
+  bonus-spell-attack: бонус до атаки закляттям
+  bonus-spell-dc: бонус до СЛ заклять
+  hp-per-level: ПЗ за рівень
+  armor-unhindered: броня не сповільнює
+  class: клас
+  hit-die: кубик здоров'я
+  spellcasting: прогресія заклинача
+  unarmored-ac: КБ без броні
 words:
   unhurt: неушкоджений
   hurt: поранений

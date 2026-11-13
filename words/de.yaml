@@ -191,6 +191,44 @@ fields:
   load: Traglast
   attuned: Eingestimmt
   days-without-food: Tage ohne Nahrung
+  image: Bild
+  spell-level: Grad des Zaubers
+  school: Schule
+  ritual: Ritual
+  casting-time: Zeitaufwand
+  range: Reichweite
+  components: Komponenten
+  duration: Wirkungsdauer
+  concentration: Konzentration
+  spell-lists: Zauberlisten
+  cost: Kosten
+  armor-class: Rüstungsklasse
+  armor-class-bonus: Bonus auf die Rüstungsklasse
+  strength-required: Benötigte Stärke
+  stealth-disadvantage: Nachteil auf Heimlichkeit
+  speed-slowed: Bewegungsrate verringert
+  damage: Schaden
+  properties: Eigenschaften
+  length: Länge
+  bundle: Stück pro Packung
+  uses: Anwendungen
+  extradimensional: Extradimensionaler Raum
+  rarity: Seltenheit
+  attunement: Einstimmung erforderlich
+  charges: Ladungen
+  bonus: Bonus
+  bonus-ac: Bonus auf RK
+  bonus-saves: Bonus auf Rettungswürfe
+  bonus-skills: Bonus auf Fertigkeiten
+  bonus-initiative: Bonus auf Initiative
+  bonus-spell-attack: Bonus auf Zauberangriff
+  bonus-spell-dc: Bonus auf SG für Zauberrettungswürfe
+  hp-per-level: TP pro Stufe
+  armor-unhindered: Von Rüstung unbehindert
+  class: Klasse
+  hit-die: Trefferwürfel
+  spellcasting: Zauberwirken
+  unarmored-ac: RK ohne Rüstung
 words:
   unhurt: unverletzt
   hurt: verletzt

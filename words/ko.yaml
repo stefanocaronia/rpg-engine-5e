@@ -191,6 +191,44 @@ fields:
   load: 적재량
   attuned: 조율
   days-without-food: 식량 없이 보낸 일수
+  image: 이미지
+  spell-level: 주문 레벨
+  school: 학파
+  ritual: 의식
+  casting-time: 시전 시간
+  range: 사거리
+  components: 구성 요소
+  duration: 지속 시간
+  concentration: 집중
+  spell-lists: 주문 목록
+  cost: 가격
+  armor-class: 방어 등급
+  armor-class-bonus: 방어 등급 보너스
+  strength-required: 요구 근력
+  stealth-disadvantage: 은신 불이익
+  speed-slowed: 속도 감소
+  damage: 피해
+  properties: 특성
+  length: 길이
+  bundle: 묶음 수량
+  uses: 사용 횟수
+  extradimensional: 차원 외 공간
+  rarity: 희귀도
+  attunement: 조율 필요
+  charges: 충전
+  bonus: 보너스
+  bonus-ac: AC 보너스
+  bonus-saves: 내성 굴림 보너스
+  bonus-skills: 기술 보너스
+  bonus-initiative: 이니셔티브 보너스
+  bonus-spell-attack: 주문 공격 보너스
+  bonus-spell-dc: 주문 DC 보너스
+  hp-per-level: 레벨당 HP
+  armor-unhindered: 방어구에 방해받지 않음
+  class: 클래스
+  hit-die: 생명 주사위
+  spellcasting: 주문 시전
+  unarmored-ac: 비무장 AC
 words:
   unhurt: 멀쩡함
   hurt: 부상

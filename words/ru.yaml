@@ -191,6 +191,44 @@ fields:
   load: Нагрузка
   attuned: настроено
   days-without-food: дни без еды
+  image: Изображение
+  spell-level: Уровень заклинания
+  school: Школа магии
+  ritual: Ритуал
+  casting-time: Время накладывания
+  range: Дистанция
+  components: Компоненты
+  duration: Длительность
+  concentration: Концентрация
+  spell-lists: Списки заклинаний
+  cost: Стоимость
+  armor-class: Класс доспеха
+  armor-class-bonus: Бонус к классу доспеха
+  strength-required: Требуемая сила
+  stealth-disadvantage: Помеха на скрытность
+  speed-slowed: Скорость снижена
+  damage: Урон
+  properties: Свойства
+  length: Длина
+  bundle: Штук в связке
+  uses: Использования
+  extradimensional: Внепространственное пространство
+  rarity: Редкость
+  attunement: Требует настройки
+  charges: Заряды
+  bonus: Бонус
+  bonus-ac: Бонус к КД
+  bonus-saves: Бонус к спасброскам
+  bonus-skills: Бонус к навыкам
+  bonus-initiative: Бонус к инициативе
+  bonus-spell-attack: Бонус к атаке заклинанием
+  bonus-spell-dc: Бонус к СЛ заклинаний
+  hp-per-level: Хиты за уровень
+  armor-unhindered: Доспех не замедляет
+  class: Класс
+  hit-die: Кубик хитов
+  spellcasting: Прогрессия заклинателя
+  unarmored-ac: КД без доспеха
 words:
   unhurt: невредим
   hurt: ранен

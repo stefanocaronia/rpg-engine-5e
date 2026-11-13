@@ -205,6 +205,50 @@ fields:
   load: Carico
   attuned: Sintonia
   days-without-food: Giorni senza cibo
+  # The fields of the system's pages, as the dashboard labels one the campaign changed: any page's picture
+  image: Immagine  # ours
+  # A spell's header, as the SRD lists its lines: "il nome, il livello, la scuola di magia, il tempo di lancio, la gittata, le componenti e la durata" (Incantesimi)
+  spell-level: Livello dell'incantesimo
+  school: Scuola di magia
+  ritual: Rituale
+  casting-time: Tempo di lancio
+  range: Gittata
+  components: Componenti
+  duration: Durata
+  concentration: Concentrazione
+  spell-lists: Liste degli incantesimi
+  # The columns of the Armor and Weapons tables (Equipaggiamento): "Costo", "Classe Armatura (CA)", "Forza", "Furtività", "Danni", "Proprietà"
+  cost: Costo
+  armor-class: Classe Armatura
+  armor-class-bonus: Bonus alla Classe Armatura  # ours: a shield's +2
+  strength-required: Forza richiesta  # ours: the column says "Forza"
+  stealth-disadvantage: Svantaggio a Furtività  # ours: the column says "Furtività", its value "Svantaggio"
+  speed-slowed: Velocità ridotta  # ours: what a heavy armor takes from the speed of who lacks the Strength
+  damage: Danni
+  properties: Proprietà
+  length: Lunghezza
+  bundle: Pezzi per confezione  # ours: the 20 of Frecce (20)
+  uses: Utilizzi
+  extradimensional: Spazio extradimensionale  # ours: what it holds weighs nothing
+  # A magic item (Oggetti magici): its rarity, "richiede sintonia", its charges, and the +1 of a weapon or an armor
+  rarity: Rarità
+  attunement: Richiede sintonia
+  charges: Cariche
+  bonus: Bonus
+  # What an item or a trait adds to the sheet's numbers: ours, with the sheet's words
+  bonus-ac: Bonus alla CA  # ours
+  bonus-saves: Bonus ai tiri salvezza  # ours
+  bonus-skills: Bonus alle abilità  # ours
+  bonus-initiative: Bonus all'iniziativa  # ours
+  bonus-spell-attack: Bonus all'attacco con incantesimi  # ours
+  bonus-spell-dc: Bonus alla CD incantesimi  # ours
+  hp-per-level: PF per livello  # ours: a hill dwarf's 1
+  armor-unhindered: Non rallentato dall'armatura  # ours: a dwarf's speed in heavy armor
+  # A class and a subclass: "Dadi Vita: 1d8 per ogni livello" (Classi)
+  class: Classe
+  hit-die: Dado vita
+  spellcasting: Progressione da incantatore  # ours: full or half, how the class's levels count for its spell slots
+  unarmored-ac: CA senza armatura  # ours, from the feature Difesa senza armatura
 # The whole name of a field whose label is short, as a roll tells it (D-431)
 names:
   str: Forza

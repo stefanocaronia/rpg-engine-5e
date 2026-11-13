@@ -191,6 +191,44 @@ fields:
   load: भार
   attuned: अभिमंत्रित
   days-without-food: भोजन के बिना दिन
+  image: छवि
+  spell-level: मंत्र लेवल
+  school: मंत्र शाखा
+  ritual: अनुष्ठान
+  casting-time: मंत्र चलाने का समय
+  range: सीमा
+  components: सामग्री
+  duration: अवधि
+  concentration: एकाग्रता
+  spell-lists: मंत्र सूचियाँ
+  cost: मूल्य
+  armor-class: कवच श्रेणी
+  armor-class-bonus: कवच श्रेणी बोनस
+  strength-required: आवश्यक शक्ति
+  stealth-disadvantage: छिपने में डिसएडवांटेज
+  speed-slowed: गति घटी
+  damage: डैमेज
+  properties: गुण
+  length: लंबाई
+  bundle: प्रति बंडल संख्या
+  uses: उपयोग
+  extradimensional: अतिआयामी स्थान
+  rarity: दुर्लभता
+  attunement: अभिमंत्रण आवश्यक
+  charges: चार्ज
+  bonus: बोनस
+  bonus-ac: AC बोनस
+  bonus-saves: सेविंग थ्रो बोनस
+  bonus-skills: कौशल बोनस
+  bonus-initiative: इनिशिएटिव बोनस
+  bonus-spell-attack: मंत्र हमला बोनस
+  bonus-spell-dc: मंत्र DC बोनस
+  hp-per-level: प्रति लेवल HP
+  armor-unhindered: कवच से बेरोक
+  class: क्लास
+  hit-die: हिट पासा
+  spellcasting: मंत्र चलाने की प्रगति
+  unarmored-ac: कवच-रहित AC
 words:
   unhurt: सही-सलामत
   hurt: घायल

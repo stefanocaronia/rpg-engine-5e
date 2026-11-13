@@ -191,6 +191,44 @@ fields:
   load: Încărcătură
   attuned: sincronizat
   days-without-food: zile fără hrană
+  image: imagine
+  spell-level: nivelul vrăjii
+  school: școală de magie
+  ritual: ritual
+  casting-time: timp de lansare
+  range: rază de acțiune
+  components: componente
+  duration: durată
+  concentration: concentrare
+  spell-lists: liste de vrăji
+  cost: cost
+  armor-class: clasa armurii
+  armor-class-bonus: bonus la clasa armurii
+  strength-required: forță necesară
+  stealth-disadvantage: dezavantaj la furtivitate
+  speed-slowed: viteză redusă
+  damage: daune
+  properties: proprietăți
+  length: lungime
+  bundle: bucăți per pachet
+  uses: utilizări
+  extradimensional: spațiu extradimensional
+  rarity: raritate
+  attunement: necesită sincronizare
+  charges: încărcături
+  bonus: bonus
+  bonus-ac: bonus la CA
+  bonus-saves: bonus la aruncările de salvare
+  bonus-skills: bonus la abilități
+  bonus-initiative: bonus la inițiativă
+  bonus-spell-attack: bonus la atacul cu vrăji
+  bonus-spell-dc: bonus la CD vrăji
+  hp-per-level: PV per nivel
+  armor-unhindered: neîncetinit de armură
+  class: clasă
+  hit-die: zar de viață
+  spellcasting: progresia de lansator
+  unarmored-ac: CA fără armură
 words:
   unhurt: nevătămat
   hurt: rănit

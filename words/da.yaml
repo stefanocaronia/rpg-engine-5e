@@ -191,6 +191,44 @@ fields:
   load: Last
   attuned: tunet
   days-without-food: dage uden mad
+  image: billede
+  spell-level: besværgelsesniveau
+  school: skole
+  ritual: ritual
+  casting-time: kasttid
+  range: rækkevidde
+  components: komponenter
+  duration: varighed
+  concentration: koncentration
+  spell-lists: besværgelseslister
+  cost: pris
+  armor-class: rustningsklasse
+  armor-class-bonus: bonus til rustningsklasse
+  strength-required: krævet styrke
+  stealth-disadvantage: ulempe på snig
+  speed-slowed: hastighed nedsat
+  damage: skade
+  properties: egenskaber
+  length: længde
+  bundle: bundt
+  uses: anvendelser
+  extradimensional: ekstradimensionelt rum
+  rarity: sjældenhed
+  attunement: tuning
+  charges: ladninger
+  bonus: bonus
+  bonus-ac: bonus til RK
+  bonus-saves: bonus til redningskast
+  bonus-skills: bonus til færdigheder
+  bonus-initiative: bonus til initiativ
+  bonus-spell-attack: bonus til besværgelsesangreb
+  bonus-spell-dc: bonus til besværgelsesvanskelighed
+  hp-per-level: LP pr. niveau
+  armor-unhindered: upåvirket af rustning
+  class: klasse
+  hit-die: livsterning
+  spellcasting: besværgelseskasting
+  unarmored-ac: RK uden rustning
 words:
   unhurt: uskadt
   hurt: såret

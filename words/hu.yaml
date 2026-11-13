@@ -191,6 +191,44 @@ fields:
   load: Teher
   attuned: Rákötve
   days-without-food: étel nélküli napok
+  image: kép
+  spell-level: varázslat szintje
+  school: iskola
+  ritual: rituálé
+  casting-time: megidézési idő
+  range: hatótáv
+  components: komponensek
+  duration: időtartam
+  concentration: koncentráció
+  spell-lists: varázslatlisták
+  cost: ár
+  armor-class: védelmi érték
+  armor-class-bonus: VÉ bónusz
+  strength-required: szükséges erő
+  stealth-disadvantage: hátrány lopakodásra
+  speed-slowed: lelassított sebesség
+  damage: sebzés
+  properties: tulajdonságok
+  length: hossz
+  bundle: csomag
+  uses: használatok
+  extradimensional: extradimenzionális tér
+  rarity: ritkaság
+  attunement: rákötés
+  charges: töltetek
+  bonus: bónusz
+  bonus-ac: VÉ bónusz
+  bonus-saves: mentődobás-bónusz
+  bonus-skills: képzettségbónusz
+  bonus-initiative: kezdeményezésbónusz
+  bonus-spell-attack: varázslattámadás-bónusz
+  bonus-spell-dc: varázslat NK bónusz
+  hp-per-level: ÉP szintenként
+  armor-unhindered: páncél nem akadályozza
+  class: kaszt
+  hit-die: életkocka
+  spellcasting: varázslás
+  unarmored-ac: VÉ páncél nélkül
 words:
   unhurt: sértetlen
   hurt: sebesült

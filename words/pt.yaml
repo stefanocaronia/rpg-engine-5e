@@ -191,6 +191,44 @@ fields:
   load: Carga
   attuned: sintonizado
   days-without-food: dias sem comida
+  image: imagem
+  spell-level: nível da magia
+  school: escola de magia
+  ritual: ritual
+  casting-time: tempo de conjuração
+  range: alcance
+  components: componentes
+  duration: duração
+  concentration: concentração
+  spell-lists: listas de magias
+  cost: custo
+  armor-class: classe de armadura
+  armor-class-bonus: bônus na classe de armadura
+  strength-required: força necessária
+  stealth-disadvantage: desvantagem em furtividade
+  speed-slowed: deslocamento reduzido
+  damage: dano
+  properties: propriedades
+  length: comprimento
+  bundle: peças por pacote
+  uses: usos
+  extradimensional: espaço extradimensional
+  rarity: raridade
+  attunement: requer sintonização
+  charges: cargas
+  bonus: bônus
+  bonus-ac: bônus na CA
+  bonus-saves: bônus nas resistências
+  bonus-skills: bônus nas perícias
+  bonus-initiative: bônus na iniciativa
+  bonus-spell-attack: bônus no ataque de magia
+  bonus-spell-dc: bônus na CD de magia
+  hp-per-level: PV por nível
+  armor-unhindered: sem atrapalho da armadura
+  class: classe
+  hit-die: dado de vida
+  spellcasting: conjuração
+  unarmored-ac: CA sem armadura
 words:
   unhurt: ileso
   hurt: ferido

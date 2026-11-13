@@ -191,6 +191,44 @@ fields:
   load: Last
   attuned: afgestemd
   days-without-food: dagen zonder voedsel
+  image: afbeelding
+  spell-level: niveau van de spreuk
+  school: school
+  ritual: ritueel
+  casting-time: werptijd
+  range: bereik
+  components: componenten
+  duration: duur
+  concentration: concentratie
+  spell-lists: spreuklijsten
+  cost: kosten
+  armor-class: pantserklasse
+  armor-class-bonus: bonus op pantserklasse
+  strength-required: vereiste kracht
+  stealth-disadvantage: nadeel op heimelijkheid
+  speed-slowed: snelheid verlaagd
+  damage: schade
+  properties: eigenschappen
+  length: lengte
+  bundle: stuks per bundel
+  uses: gebruiken
+  extradimensional: extradimensionale ruimte
+  rarity: zeldzaamheid
+  attunement: afstemming
+  charges: ladingen
+  bonus: bonus
+  bonus-ac: bonus PK
+  bonus-saves: bonus reddingsworpen
+  bonus-skills: bonus vaardigheden
+  bonus-initiative: bonus initiatief
+  bonus-spell-attack: bonus spreukaanval
+  bonus-spell-dc: bonus spreuk-DC
+  hp-per-level: HP per niveau
+  armor-unhindered: niet gehinderd door pantser
+  class: klasse
+  hit-die: levensdobbelsteen
+  spellcasting: spreukvermogen
+  unarmored-ac: PK zonder pantser
 words:
   unhurt: ongedeerd
   hurt: gewond

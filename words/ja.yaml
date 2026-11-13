@@ -191,6 +191,44 @@ fields:
   load: 積載量
   attuned: 同調
   days-without-food: 食料なしの日数
+  image: 画像
+  spell-level: 呪文レベル
+  school: 学派
+  ritual: 儀式
+  casting-time: 発動時間
+  range: 射程
+  components: 構成要素
+  duration: 持続時間
+  concentration: 精神集中
+  spell-lists: 呪文リスト
+  cost: 価格
+  armor-class: アーマー・クラス
+  armor-class-bonus: ACボーナス
+  strength-required: 必要筋力
+  stealth-disadvantage: 隠密に不利
+  speed-slowed: 移動速度低下
+  damage: ダメージ
+  properties: 特性
+  length: 長さ
+  bundle: 1束の個数
+  uses: 使用回数
+  extradimensional: 異次元空間
+  rarity: 希少度
+  attunement: 同調
+  charges: チャージ
+  bonus: ボーナス
+  bonus-ac: ACボーナス
+  bonus-saves: セーヴィングスローのボーナス
+  bonus-skills: 技能のボーナス
+  bonus-initiative: イニシアチブのボーナス
+  bonus-spell-attack: 呪文攻撃のボーナス
+  bonus-spell-dc: 呪文セーヴ難易度のボーナス
+  hp-per-level: レベルごとのHP
+  armor-unhindered: 鎧で移動速度が落ちない
+  class: クラス
+  hit-die: ヒット・ダイス
+  spellcasting: 呪文発動
+  unarmored-ac: 鎧なしのAC
 words:
   unhurt: 無傷
   hurt: 負傷

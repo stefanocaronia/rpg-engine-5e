@@ -191,6 +191,44 @@ fields:
   load: משא
   attuned: מכוון
   days-without-food: ימים ללא אוכל
+  image: תמונה
+  spell-level: רמת כישוף
+  school: אסכולה
+  ritual: טקס
+  casting-time: זמן הטלה
+  range: טווח
+  components: רכיבים
+  duration: משך
+  concentration: ריכוז
+  spell-lists: רשימות כישופים
+  cost: עלות
+  armor-class: דרגת שריון
+  armor-class-bonus: בונוס לדרגת שריון
+  strength-required: כוח נדרש
+  stealth-disadvantage: חיסרון בהתגנבות
+  speed-slowed: מהירות מואטת
+  damage: נזק
+  properties: תכונות
+  length: אורך
+  bundle: חבילה
+  uses: שימושים
+  extradimensional: מרחב חוץ-ממדי
+  rarity: נדירות
+  attunement: כיוון
+  charges: מטענים
+  bonus: בונוס
+  bonus-ac: בונוס לדרג״ש
+  bonus-saves: בונוס להטלות הצלה
+  bonus-skills: בונוס למיומנויות
+  bonus-initiative: בונוס ליוזמה
+  bonus-spell-attack: בונוס להתקפת כישוף
+  bonus-spell-dc: בונוס לדרגת קושי לכישופים
+  hp-per-level: נק״ח לרמה
+  armor-unhindered: ללא הפרעה משריון
+  class: מקצוע
+  hit-die: קובייה חיים
+  spellcasting: הטלת כישופים
+  unarmored-ac: דרג״ש ללא שריון
 words:
   unhurt: בלי פגע
   hurt: פצוע

@@ -191,6 +191,44 @@ fields:
   load: Last
   attuned: inställd
   days-without-food: dagar utan mat
+  image: bild
+  spell-level: besvärjelsenivå
+  school: skola
+  ritual: ritual
+  casting-time: kasttid
+  range: räckvidd
+  components: komponenter
+  duration: varaktighet
+  concentration: koncentration
+  spell-lists: besvärjelselistor
+  cost: kostnad
+  armor-class: pansarklass
+  armor-class-bonus: bonus på pansarklass
+  strength-required: krävd styrka
+  stealth-disadvantage: nackdel på smyga
+  speed-slowed: hastighet sänkt
+  damage: skada
+  properties: egenskaper
+  length: längd
+  bundle: antal per bunt
+  uses: användningar
+  extradimensional: extradimensionellt utrymme
+  rarity: sällsynthet
+  attunement: inställning
+  charges: laddningar
+  bonus: bonus
+  bonus-ac: PK-bonus
+  bonus-saves: bonus på räddningsslag
+  bonus-skills: bonus på färdigheter
+  bonus-initiative: bonus på initiativ
+  bonus-spell-attack: bonus på besvärjelseattack
+  bonus-spell-dc: bonus på svårighet för besvärjelse
+  hp-per-level: LP per nivå
+  armor-unhindered: hindras inte av rustning
+  class: klass
+  hit-die: livstärning
+  spellcasting: besvärjelsekastning
+  unarmored-ac: PK utan rustning
 words:
   unhurt: oskadd
   hurt: skadad

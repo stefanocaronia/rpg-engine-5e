@@ -191,6 +191,44 @@ fields:
   load: Byrði
   attuned: Stillt
   days-without-food: Dagar án matar
+  image: Mynd
+  spell-level: Stig galdurs
+  school: Galdraskóli
+  ritual: Helgisiður
+  casting-time: Kasttími
+  range: Drægi
+  components: Þættir
+  duration: Tímalengd
+  concentration: Einbeiting
+  spell-lists: Galdralistar
+  cost: Verð
+  armor-class: Brynjustig
+  armor-class-bonus: Bónus á brynjustig
+  strength-required: Áskilinn styrkur
+  stealth-disadvantage: Ókostur í laumuspili
+  speed-slowed: Hraði minnkaður
+  damage: Skaði
+  properties: Séreinkenni
+  length: Lengd
+  bundle: Búnt
+  uses: Notkun
+  extradimensional: Utanvíddarrými
+  rarity: Sjaldgæfni
+  attunement: Stilling
+  charges: Hleðslur
+  bonus: Bónus
+  bonus-ac: Bónus á BS
+  bonus-saves: Bónus á björgunarköst
+  bonus-skills: Bónus á færni
+  bonus-initiative: Bónus á frumkvæði
+  bonus-spell-attack: Bónus á galdraárás
+  bonus-spell-dc: Bónus á erfiðleikastig galdra
+  hp-per-level: LP á stig
+  armor-unhindered: Óhindraður af brynju
+  class: Stétt
+  hit-die: Lífteningur
+  spellcasting: Galdraiðkun
+  unarmored-ac: BS án brynju
 words:
   unhurt: ósærður
   hurt: særður

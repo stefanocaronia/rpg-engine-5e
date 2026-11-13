@@ -191,6 +191,44 @@ fields:
   load: Kuorma
   attuned: viritetty
   days-without-food: päivää ilman ruokaa
+  image: kuva
+  spell-level: loitsun taso
+  school: koulukunta
+  ritual: rituaali
+  casting-time: lausumisaika
+  range: kantama
+  components: komponentit
+  duration: kesto
+  concentration: keskittyminen
+  spell-lists: loitsulistat
+  cost: hinta
+  armor-class: panssariluokka
+  armor-class-bonus: panssariluokan bonus
+  strength-required: vaadittu voima
+  stealth-disadvantage: haitta hiiviskelyyn
+  speed-slowed: nopeus hidastunut
+  damage: vahinko
+  properties: ominaisuudet
+  length: pituus
+  bundle: nippu
+  uses: käyttökerrat
+  extradimensional: ulottuvuuksien ulkopuolinen tila
+  rarity: harvinaisuus
+  attunement: viritys
+  charges: varaukset
+  bonus: bonus
+  bonus-ac: PL-bonus
+  bonus-saves: pelastusheittobonus
+  bonus-skills: taitobonus
+  bonus-initiative: aloitebonus
+  bonus-spell-attack: loitsuhyökkäysbonus
+  bonus-spell-dc: loitsujen VT-bonus
+  hp-per-level: HP tasoa kohti
+  armor-unhindered: panssari ei haittaa
+  class: luokka
+  hit-die: osumanoppa
+  spellcasting: loitsiminen
+  unarmored-ac: PL ilman panssaria
 words:
   unhurt: vahingoittumaton
   hurt: haavoittunut

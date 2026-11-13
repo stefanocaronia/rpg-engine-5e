@@ -191,6 +191,44 @@ fields:
   load: Φορτίο
   attuned: Εναρμονισμένο
   days-without-food: Ημέρες χωρίς τροφή
+  image: εικόνα
+  spell-level: επίπεδο ξορκιού
+  school: σχολή
+  ritual: τελετουργία
+  casting-time: χρόνος ρίψης
+  range: εμβέλεια
+  components: συστατικά
+  duration: διάρκεια
+  concentration: συγκέντρωση
+  spell-lists: λίστες ξορκιών
+  cost: κόστος
+  armor-class: κλάση πανοπλίας
+  armor-class-bonus: μπόνους κλάσης πανοπλίας
+  strength-required: απαιτούμενη δύναμη
+  stealth-disadvantage: μειονέκτημα στην αθόρυβη κίνηση
+  speed-slowed: μειωμένη ταχύτητα
+  damage: ζημιά
+  properties: ιδιότητες
+  length: μήκος
+  bundle: τεμάχια ανά πακέτο
+  uses: χρήσεις
+  extradimensional: εξωδιαστατικός χώρος
+  rarity: σπανιότητα
+  attunement: εναρμόνιση
+  charges: φορτίσεις
+  bonus: μπόνους
+  bonus-ac: μπόνους ΚΠ
+  bonus-saves: μπόνους σωτήριων ρίψεων
+  bonus-skills: μπόνους δεξιοτήτων
+  bonus-initiative: μπόνους πρωτοβουλίας
+  bonus-spell-attack: μπόνους επίθεσης ξορκιού
+  bonus-spell-dc: μπόνους ΒΔ ξορκιών
+  hp-per-level: ΠΖ ανά επίπεδο
+  armor-unhindered: χωρίς εμπόδιο από την πανοπλία
+  class: τάξη
+  hit-die: ζάρι ζωής
+  spellcasting: ρίψη ξορκιών
+  unarmored-ac: ΚΠ χωρίς πανοπλία
 words:
   unhurt: χωρίς τραύματα
   hurt: τραυματίστηκε

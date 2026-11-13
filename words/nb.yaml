@@ -191,6 +191,44 @@ fields:
   load: Last
   attuned: innstilt
   days-without-food: dager uten mat
+  image: bilde
+  spell-level: formelnivå
+  school: magiskole
+  ritual: ritual
+  casting-time: tid for kasting
+  range: rekkevidde
+  components: komponenter
+  duration: varighet
+  concentration: konsentrasjon
+  spell-lists: formellister
+  cost: kostnad
+  armor-class: rustningsklasse
+  armor-class-bonus: bonus til rustningsklasse
+  strength-required: nødvendig styrke
+  stealth-disadvantage: ulempe på snikning
+  speed-slowed: redusert fart
+  damage: skade
+  properties: egenskaper
+  length: lengde
+  bundle: pakke
+  uses: bruk
+  extradimensional: ekstradimensjonal
+  rarity: sjeldenhet
+  attunement: innstilling
+  charges: ladninger
+  bonus: bonus
+  bonus-ac: bonus til RK
+  bonus-saves: bonus til redningskast
+  bonus-skills: bonus til ferdigheter
+  bonus-initiative: bonus til initiativ
+  bonus-spell-attack: bonus til trollformelangrep
+  bonus-spell-dc: bonus til VG for trollformler
+  hp-per-level: LP per nivå
+  armor-unhindered: upåvirket av rustning
+  class: klasse
+  hit-die: treffterning
+  spellcasting: trollformelkasting
+  unarmored-ac: RK uten rustning
 words:
   unhurt: uskadd
   hurt: skadd

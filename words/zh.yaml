@@ -191,6 +191,44 @@ fields:
   load: 负重
   attuned: 已调谐
   days-without-food: 无食天数
+  image: 图片
+  spell-level: 法术环阶
+  school: 学派
+  ritual: 仪式
+  casting-time: 施法时间
+  range: 射程
+  components: 构材
+  duration: 持续时间
+  concentration: 专注
+  spell-lists: 法术列表
+  cost: 价格
+  armor-class: 护甲等级
+  armor-class-bonus: 护甲等级加值
+  strength-required: 力量需求
+  stealth-disadvantage: 隐匿劣势
+  speed-slowed: 速度降低
+  damage: 伤害
+  properties: 特性
+  length: 长度
+  bundle: 每捆数量
+  uses: 使用次数
+  extradimensional: 异次元空间
+  rarity: 稀有度
+  attunement: 调谐
+  charges: 充能
+  bonus: 加值
+  bonus-ac: 护甲等级加值
+  bonus-saves: 豁免加值
+  bonus-skills: 技能加值
+  bonus-initiative: 先攻加值
+  bonus-spell-attack: 法术攻击加值
+  bonus-spell-dc: 法术豁免DC加值
+  hp-per-level: 每级生命值
+  armor-unhindered: 不受护甲限制
+  class: 职业
+  hit-die: 生命骰
+  spellcasting: 施法进阶
+  unarmored-ac: 无甲护甲等级
 words:
   unhurt: 未受伤
   hurt: 受伤

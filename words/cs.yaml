@@ -191,6 +191,44 @@ fields:
   load: Náklad
   attuned: naladěno
   days-without-food: dny bez jídla
+  image: obrázek
+  spell-level: úroveň kouzla
+  school: škola magie
+  ritual: rituál
+  casting-time: doba sesílání
+  range: dosah
+  components: složky
+  duration: trvání
+  concentration: soustředění
+  spell-lists: seznamy kouzel
+  cost: cena
+  armor-class: obranné číslo
+  armor-class-bonus: bonus k obrannému číslu
+  strength-required: požadovaná síla
+  stealth-disadvantage: nevýhoda k nenápadnosti
+  speed-slowed: snížená rychlost
+  damage: zranění
+  properties: vlastnosti
+  length: délka
+  bundle: počet v balení
+  uses: použití
+  extradimensional: mimorozměrný prostor
+  rarity: vzácnost
+  attunement: vyžaduje naladění
+  charges: náboje
+  bonus: bonus
+  bonus-ac: bonus k OČ
+  bonus-saves: bonus k záchranným hodům
+  bonus-skills: bonus k dovednostem
+  bonus-initiative: bonus k iniciativě
+  bonus-spell-attack: bonus k útoku kouzlem
+  bonus-spell-dc: bonus k SO záchrany kouzel
+  hp-per-level: životy za úroveň
+  armor-unhindered: zbroj nezpomaluje
+  class: povolání
+  hit-die: kostka životů
+  spellcasting: sesílání kouzel
+  unarmored-ac: OČ bez zbroje
 words:
   unhurt: beze zranění
   hurt: zraněný

@@ -191,6 +191,44 @@ fields:
   load: الحمولة
   attuned: متناغم
   days-without-food: أيام بلا طعام
+  image: الصورة
+  spell-level: مستوى التعويذة
+  school: مدرسة السحر
+  ritual: طقس
+  casting-time: زمن الإلقاء
+  range: المدى
+  components: المكوّنات
+  duration: المدة
+  concentration: التركيز
+  spell-lists: قوائم التعويذات
+  cost: التكلفة
+  armor-class: فئة الدرع
+  armor-class-bonus: مكافأة فئة الدرع
+  strength-required: القوة المطلوبة
+  stealth-disadvantage: إعاقة في التسلل
+  speed-slowed: السرعة مخفَّضة
+  damage: الضرر
+  properties: الخصائص
+  length: الطول
+  bundle: القطع في الحزمة
+  uses: الاستخدامات
+  extradimensional: مساحة خارج الأبعاد
+  rarity: الندرة
+  attunement: يتطلب التناغم
+  charges: الشحنات
+  bonus: مكافأة
+  bonus-ac: مكافأة الدرع
+  bonus-saves: مكافأة رميات الإنقاذ
+  bonus-skills: مكافأة المهارات
+  bonus-initiative: مكافأة المبادرة
+  bonus-spell-attack: مكافأة هجوم التعويذات
+  bonus-spell-dc: مكافأة صعوبة التعويذات
+  hp-per-level: نقاط الحياة لكل مستوى
+  armor-unhindered: غير معاق بالدرع
+  class: الصنف
+  hit-die: نرد الحياة
+  spellcasting: تقدم إلقاء التعويذات
+  unarmored-ac: الدرع بلا درع
 words:
   unhurt: سليم
   hurt: مصاب

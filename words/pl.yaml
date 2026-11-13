@@ -191,6 +191,44 @@ fields:
   load: Obciążenie
   attuned: dostrojony
   days-without-food: dni bez jedzenia
+  image: obraz
+  spell-level: poziom czaru
+  school: szkoła magii
+  ritual: rytuał
+  casting-time: czas rzucania
+  range: zasięg
+  components: komponenty
+  duration: czas trwania
+  concentration: koncentracja
+  spell-lists: listy czarów
+  cost: koszt
+  armor-class: klasa pancerza
+  armor-class-bonus: bonus do klasy pancerza
+  strength-required: wymagana siła
+  stealth-disadvantage: utrudnienie skradania się
+  speed-slowed: szybkość zmniejszona
+  damage: obrażenia
+  properties: właściwości
+  length: długość
+  bundle: sztuk w pakiecie
+  uses: użycia
+  extradimensional: przestrzeń pozawymiarowa
+  rarity: rzadkość
+  attunement: dostrojenie
+  charges: ładunki
+  bonus: bonus
+  bonus-ac: bonus do KP
+  bonus-saves: bonus do rzutów obronnych
+  bonus-skills: bonus do umiejętności
+  bonus-initiative: bonus do inicjatywy
+  bonus-spell-attack: bonus do ataku czarem
+  bonus-spell-dc: bonus do ST czarów
+  hp-per-level: PW na poziom
+  armor-unhindered: pancerz nie spowalnia
+  class: klasa
+  hit-die: kość wytrzymałości
+  spellcasting: progresja czarowania
+  unarmored-ac: KP bez pancerza
 words:
   unhurt: bez ran
   hurt: ranny

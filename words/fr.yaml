@@ -191,6 +191,44 @@ fields:
   load: Charge
   attuned: harmonisé
   days-without-food: jours sans nourriture
+  image: image
+  spell-level: niveau du sort
+  school: école de magie
+  ritual: rituel
+  casting-time: temps d'incantation
+  range: portée
+  components: composantes
+  duration: durée
+  concentration: concentration
+  spell-lists: listes de sorts
+  cost: coût
+  armor-class: classe d'armure
+  armor-class-bonus: bonus à la classe d'armure
+  strength-required: Force requise
+  stealth-disadvantage: désavantage en discrétion
+  speed-slowed: vitesse réduite
+  damage: dégâts
+  properties: propriétés
+  length: longueur
+  bundle: pièces par lot
+  uses: utilisations
+  extradimensional: espace extradimensionnel
+  rarity: rareté
+  attunement: harmonisation requise
+  charges: charges
+  bonus: bonus
+  bonus-ac: bonus à la CA
+  bonus-saves: bonus aux jets de sauvegarde
+  bonus-skills: bonus aux compétences
+  bonus-initiative: bonus à l'initiative
+  bonus-spell-attack: bonus à l'attaque de sort
+  bonus-spell-dc: bonus au DD des sorts
+  hp-per-level: PV par niveau
+  armor-unhindered: non ralenti par l'armure
+  class: classe
+  hit-die: dé de vie
+  spellcasting: incantation
+  unarmored-ac: CA sans armure
 words:
   unhurt: indemne
   hurt: blessé

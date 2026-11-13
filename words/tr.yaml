@@ -191,6 +191,44 @@ fields:
   load: Yük
   attuned: uyumlanmış
   days-without-food: Yemeksiz geçen gün
+  image: görsel
+  spell-level: büyü seviyesi
+  school: büyü okulu
+  ritual: ritüel
+  casting-time: büyü yapma süresi
+  range: menzil
+  components: bileşenler
+  duration: süre
+  concentration: konsantrasyon
+  spell-lists: büyü listeleri
+  cost: maliyet
+  armor-class: zırh sınıfı
+  armor-class-bonus: ZS bonusu
+  strength-required: gereken güç
+  stealth-disadvantage: gizlilikte dezavantaj
+  speed-slowed: yavaşlatılmış hız
+  damage: hasar
+  properties: nitelikler
+  length: uzunluk
+  bundle: paket başına adet
+  uses: kullanım
+  extradimensional: boyutlar ötesi alan
+  rarity: nadirlik
+  attunement: uyumlanma
+  charges: şarj
+  bonus: bonus
+  bonus-ac: ZS bonusu
+  bonus-saves: kurtarma atışı bonusu
+  bonus-skills: beceri bonusu
+  bonus-initiative: inisiyatif bonusu
+  bonus-spell-attack: büyü saldırısı bonusu
+  bonus-spell-dc: büyü kurtarma zorluğu bonusu
+  hp-per-level: seviye başına CP
+  armor-unhindered: zırhtan etkilenmez
+  class: sınıf
+  hit-die: can zarı
+  spellcasting: büyü yapma ilerlemesi
+  unarmored-ac: zırhsız ZS
 words:
   unhurt: sağlam
   hurt: yaralı
