@@ -36,7 +36,7 @@
   },
   "rpg-engine": {
     "kind": "system",
-    "api": 7,
+    "api": 9,
     "page": "dist/page.js"
   },
   "engines": {
@@ -56,7 +56,7 @@
     "eslint": "^10.14.0",
     "fast-check": "^4.10.2",
     "preact": "^11.2.0",
-    "rpg-engine": "^0.18.0",
+    "rpg-engine": "^0.19.0",
     "typescript": "^6.0.3",
     "vitest": "^5.0.3",
     "yaml": "^2.9.1"

@@ -241,6 +241,9 @@ thresholds:
   exhaustion: Exhaustion
   # Temporary hit points, named when they come and when they go (p. 98, D-266, D-268); damage takes them first (shields, below).
   temp-hp 0: Temporary Hit Points
+# Dawn, when what a magic item's text brings back "daily at dawn" comes back (D-571): an advance through it names what the party carries below its maximum, and
+# who had no long rest in 24 hours.
+dawn: "06:00"
 # The rests (pp. 87, 99, 100): the fields they bring to their maximum or to a value, the effects they end, and the titles of the rules for what they leave to the master.
 # The uses below come back with the rests they name; a long rest brings back up to half the hit dice, at least one, of any kind (pp. 57, 87).
 recipes:
