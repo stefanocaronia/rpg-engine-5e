@@ -195,6 +195,8 @@ values:
   # The sizes (p. 92, Size Categories): the space on the map and the load come from them (D-435).
   size: [Tiny, Small, Medium, Large, Huge, Gargantuan]
   save-proficiencies: [str, dex, con, int, wis, cha]
+  # The armor a class or a feat names (pp. 45–46, 62): the sheet's rolls count only these, so "heavy" alone would leave plate unworn.
+  armor-proficiencies: [light armor, medium armor, heavy armor, all armor, shields]
   skill-proficiencies: [Acrobatics, Animal Handling, Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Sleight of Hand, Stealth, Survival]
 # The names a list takes on the sheet of the player character and of a companion, where the master writes them (D-435): the languages (p. 59, and the
 # Primordial's dialects the creatures speak), the tools (pp. 70–71; vehicles, land or water in parentheses) and the damage types (p. 97). A campaign adds

@@ -82,7 +82,7 @@ describe("the character sheet (DAT-2)", () => {
                 + "armor-proficiencies, tool-proficiencies, fighting-styles, invocations, money, lifestyle, attuned, inventory, spells, prepared. It works out "
                 + "level, str-mod, dex-mod, con-mod, int-mod, wis-mod, cha-mod, proficiency, Saving Throws, Skills, ac, initiative, walking, flying, swimming, climbing, burrowing, extra-attacks, passive-perception, passive-insight, passive-investigation, long-jump, high-jump, push-drag, hold-breath, Features, Attacks, "
                 + "caster-level, spell-save-dc, spell-attack, max-prepared: never write them. Only its names go in alignment (such as lawful good, neutral good), size (Tiny, Small, Medium, Large, Huge, Gargantuan), save-proficiencies "
-                + "(str, dex, con, int, wis, cha), skill-proficiencies (such as Acrobatics, Animal Handling), lifestyle (such as Wretched, Squalid), languages (such as Common, Dwarvish), "
+                + "(str, dex, con, int, wis, cha), armor-proficiencies (light armor, medium armor, heavy armor, all armor, shields), skill-proficiencies (such as Acrobatics, Animal Handling), lifestyle (such as Wretched, Squalid), languages (such as Common, Dwarvish), "
                 + "tool-proficiencies (such as alchemist's supplies, brewer's supplies), damage-resistances (such as acid, bludgeoning), damage-immunities (such as acid, bludgeoning), as it writes them: "
                 + "write lists them if a name is not one.",
         );
