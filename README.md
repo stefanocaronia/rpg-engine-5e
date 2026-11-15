@@ -18,6 +18,10 @@ The dashboard shows the system's words in 26 languages. In a campaign in Italian
 
 The rules of the SRD 5.1 are the version `srd-5.1`, and for now the only one. Each version is a folder in `versions/`, read over the common part; a campaign plays the one its `ruleset` setting names, which the player chooses.
 
+## Tell us
+
+A problem goes to this repository's [issues](https://github.com/stefanocaronia/rpg-engine-5e/issues/new/choose); questions and ideas to RPG Engine's [Discussions](https://github.com/stefanocaronia/rpg-engine/discussions). This repository takes no pull requests: to add something to the game, make a package of your own, a [game system](https://github.com/stefanocaronia/rpg-engine/blob/main/docs/game-systems.md) or an [extension](https://github.com/stefanocaronia/rpg-engine/blob/main/docs/extensions.md), in a repository of yours.
+
 ## Develop and test
 
 You need Node 24 or later, and the engine for its test kit, `rpg-engine/testing`:
