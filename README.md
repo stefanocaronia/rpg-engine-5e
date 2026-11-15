@@ -2,6 +2,8 @@
 
 A game system for [RPG Engine](https://github.com/stefanocaronia/rpg-engine), compatible with fifth edition, from the System Reference Document 5.1: its rules as chapters the master looks up, its creatures, items, spells, classes, races and backgrounds as pages, and the numbers of a character's sheet worked out from them, as the abilities, the proficiency bonus, the saves and skills, the hit points, the spell slots and the uses of features that the rests bring back. The master rules with the exact text at hand; the engine keeps the sheet. On the dashboard it adds the death saves, the panel of a character at 0 hit points and the card of the hit dice in a short rest.
 
+It holds only the SRD 5.1, the open part of fifth edition, and nothing from the books: we cannot add them. A subclass, a feat or a monster the SRD lacks, your master writes into your campaign from a book you own, and RPG Engine treats it as its own.
+
 This package works only inside [RPG Engine](https://github.com/stefanocaronia/rpg-engine): it is a game system the engine installs on this computer for a campaign, not a library of its own.
 
 ## Install

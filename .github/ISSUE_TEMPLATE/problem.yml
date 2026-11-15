@@ -1,7 +1,10 @@
 name: Something went wrong
-description: A rule ruled wrong, a sheet's number that is off, a creature, spell or item page that is wrong or missing.
+description: A rule ruled wrong, a sheet's number that is off, a page of the SRD 5.1 that is wrong.
 labels: [bug]
 body:
+  - type: markdown
+    attributes:
+      value: This system holds only the SRD 5.1, the open part of fifth edition. Content from the books, such as other subclasses, feats or monsters, cannot be added here; your master can write it into your campaign from a book you own.
   - type: textarea
     id: did
     attributes:
