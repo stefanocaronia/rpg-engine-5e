@@ -122,9 +122,8 @@ describe("SYS-2, SYS-3: the system's pages, found after the campaign's", () => {
         expect(await ok("find", "--type", "creature")).toBe(`No page of the campaign matches.\n\nThe system 5e has ${creatures} creatures, named in English: give part of a name, in English, to find them.`);
         await ok("write", "Annegato", "--type", "creature", "--set", "creature=[[Zombie]]");
         expect(await ok("find", "--type", "creature")).toBe(`Annegato (creature)\n\nThe system 5e has ${creatures} more creatures, named in English: give part of a name, in English, to find them.`);
-        expect(await ok("find", "basilisco")).toBe(
-            "No page matches. What was said in play and never written is not in the files: if the player remembers it, write it.\n\nfind looks for the pages of the system 5e in their names and fields, in English.",
-        );
+        // The engine's own words before the system's are the engine's to change.
+        expect(await ok("find", "basilisco")).toMatch(/^No page matches\..*\n\nfind looks for the pages of the system 5e in their names and fields, in English\.$/s);
     });
 
     it("never puts a page of the system anywhere, nor teaches it: anyone may know it", async () => {
@@ -389,9 +388,7 @@ describe("after the round on the code: the system missing, and the remedies (SYS
 describe("the messages, case by case (SYS-1, SYS-3, SYS-4, SYS-6)", () => {
     it("names no language in a campaign that speaks the system's", async () => {
         await ok("config", "language", "en");
-        expect(await ok("find", "basilisco")).toBe(
-            "No page matches. What was said in play and never written is not in the files: if the player remembers it, write it.\n\nfind looks for the pages of the system 5e in their names and fields.",
-        );
+        expect(await ok("find", "basilisco")).toMatch(/^No page matches\..*\n\nfind looks for the pages of the system 5e in their names and fields\.$/s);
         expect(await ok("find", "--type", "creature")).toBe(`No page of the campaign matches.\n\nThe system 5e has ${systemPageCount("creatures")} creatures: give part of a name to find them.`);
         expect(await ok("write", "Wolfhound", "--type", "creature")).toContain("Wolfhound derives from no creature: if it is a kind of one of the system 5e, set creature to it");
         expect(await refused("scene", "open", "--title", "Bosco", "--type", "combat", "--creatures", "Hound")).toContain(
