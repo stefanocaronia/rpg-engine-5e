@@ -19,10 +19,17 @@
   ],
   "keywords": [
     "rpg-engine-package",
-    "5e",
     "rpg-engine",
+    "5e",
+    "fifth-edition",
     "srd",
-    "ttrpg"
+    "game-system",
+    "ai-game-master",
+    "rpg",
+    "ttrpg",
+    "tabletop",
+    "role-playing",
+    "solo-rpg"
   ],
   "author": "Stefano Caronia",
   "license": "(MIT AND CC-BY-4.0 AND CC-BY-3.0)",
